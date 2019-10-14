@@ -28,11 +28,13 @@ public class Shaker : MonoBehaviour
     }
 
     private IEnumerator Shake(List<ShakePower> powers){
+        Debug.Log("start");
         foreach(ShakePower power in powers){
-            // Debug.Log(power.ns + " , " + power.ew + " , " + power.ud);
+            Debug.Log(power.ns + " , " + power.ew + " , " + power.ud);
             Vector3 force = Vector3.forward * power.ns + Vector3.right * power.ew + Vector3.up * power.ud;
             rigidPlane.AddForce(force);
             yield return new WaitForSeconds(0.01f);
         }
+        Debug.Log("finish");
     }
 }
