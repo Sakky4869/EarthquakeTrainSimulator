@@ -9,7 +9,9 @@ public class Shaker : MonoBehaviour
     private List<ShakePower> powers;
 
     private Rigidbody rigidPlane;
-    [SerializeField] private float timeScale;
+    [Header("タイムスケール"),SerializeField] private float timeScale;
+    [Header("地震のパワーバイアス"),SerializeField] private float powerBias;
+
 
     void Start()
     {
@@ -25,15 +27,17 @@ public class Shaker : MonoBehaviour
     void Update()
     {
         Time.timeScale = timeScale;
+        // Debug.Log(Time.timeScale);
     }
 
     private IEnumerator Shake(List<ShakePower> powers){
         Debug.Log("start");
         foreach(ShakePower power in powers){
-            Debug.Log(power.ns + " , " + power.ew + " , " + power.ud);
-            Vector3 force = Vector3.forward * power.ns + Vector3.right * power.ew + Vector3.up * power.ud;
+            // Debug.Log(power.ns + " , " + power.ew + " , " + power.ud);
+            Vector3 force = Vector3.forward * power.ns * powerBias + Vector3.right * power.ew * powerBias + Vector3.up * power.ud * powerBias;
             rigidPlane.AddForce(force);
-            yield return new WaitForSeconds(0.01f);
+            // yield return new WaitForSeconds(0.01f);
+            yield return null;
         }
         Debug.Log("finish");
     }
