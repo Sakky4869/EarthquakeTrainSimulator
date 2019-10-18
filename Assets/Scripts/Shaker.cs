@@ -9,8 +9,8 @@ public class Shaker : MonoBehaviour
     private List<ShakePower> powers;
 
     private Rigidbody rigidPlane;
-    [Header("タイムスケール"),SerializeField] private float timeScale;
-    [Header("地震のパワーバイアス"),SerializeField] private float powerBias;
+    [Header("タイムスケール"),SerializeField] private float timeScale = 1;
+    [Header("地震のパワーバイアス"),SerializeField] private float powerBias = 1;
 
 
     void Start()
@@ -19,7 +19,6 @@ public class Shaker : MonoBehaviour
         powers = dataReader.ReadCSVData("2011_03_11_14_46_miyagi");
         rigidPlane = GameObject.Find("Plane").GetComponent<Rigidbody>();
         StartCoroutine(Shake(powers));
-        
     }
 
 
@@ -27,17 +26,14 @@ public class Shaker : MonoBehaviour
     void Update()
     {
         Time.timeScale = timeScale;
-        // Debug.Log(Time.timeScale);
     }
 
     private IEnumerator Shake(List<ShakePower> powers){
         Debug.Log("start");
         foreach(ShakePower power in powers){
-            // Debug.Log(power.ns + " , " + power.ew + " , " + power.ud);
             Vector3 force = Vector3.forward * power.ns * powerBias + Vector3.right * power.ew * powerBias + Vector3.up * power.ud * powerBias;
             rigidPlane.AddForce(force);
-            // yield return new WaitForSeconds(0.01f);
-            yield return null;
+            yield return new WaitForSeconds(1 / 100);
         }
         Debug.Log("finish");
     }
