@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eebbca41bb0b40d298ef201735d08616, type: 3}
-  m_Name: Cloned_DefaultMixedRealityRegisteredServiceProvidersProfile
+  m_Script: {fileID: 11500000, guid: a4bfaeddd29192346a49a6428a89a682, type: 3}
+  m_Name: MixedRealitySpatialAwarenessSystemProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  configurations: []
+  observerConfigurations: []

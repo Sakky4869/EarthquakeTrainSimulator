@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c2d00f2d26cc124caed106ffbfe3f06, type: 3}
-  m_Name: Cloned_DefaultMixedRealityDiagnosticsProfile
+  m_Script: {fileID: 11500000, guid: 4dcb3c7d26d318a40ac63313b4cb15ac, type: 3}
+  m_Name: MixedRealityDiagnosticsProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
   showDiagnostics: 1
@@ -22,5 +22,4 @@ MonoBehaviour:
   windowOffset: {x: 0.1, y: 0.1}
   windowScale: 1
   windowFollowSpeed: 5
-  defaultInstancedMaterial: {fileID: 2100000, guid: 5b6fc83077d74fd4ca4c675623942a3e,
-    type: 2}
+  defaultInstancedMaterial: {fileID: 0}
