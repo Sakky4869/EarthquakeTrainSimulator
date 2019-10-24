@@ -26,6 +26,7 @@ public class TrainingObjectBase : MonoBehaviour
 		isClear = true;
 	}
 	
+	protected virtual void GetInformationOfEarthquake();
 	
 
 }
