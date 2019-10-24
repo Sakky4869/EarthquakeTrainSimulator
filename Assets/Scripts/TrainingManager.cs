@@ -6,12 +6,11 @@ public class TrainingManager : MonoBehaviour
 {
     
     [SerializeField] private List<TrainingObjectBase> trainingObjects;
-    private int objectiveCount;
     
     
     void Start()
     {
-        objectiveCount = 0;
+
     }
 
     
@@ -22,7 +21,7 @@ public class TrainingManager : MonoBehaviour
     
     public void Train()
     {
-    	StartCoroutime( TrainCor() );
+    	StartCoroutine( TrainCor() );
     }
     
     private IEnumerator TrainCor()
@@ -31,7 +30,7 @@ public class TrainingManager : MonoBehaviour
     	// Start Training
     	for(int i = 0; i < trainingObjects.Count; i++)
     	{
-   		if( trainingObjects[ i ].isClear_prop == false )
+   		if( trainingObjects[ i ].isClear == false )
    			yield return null;
     	}
     	Debug.Log("Finish Training");

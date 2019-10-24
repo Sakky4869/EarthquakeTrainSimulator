@@ -1,20 +1,25 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class TrainingObjectBase : MonoBehaviour
 {
-	private bool isClear;
-	[HideInInspector] public bool isClear_prop {get {return isClear;} private set;}
+	[HideInInspector] public bool isClear { get; private set; }
 	void Start()
 	{
-		isClear = false;
+        StartSetting();
 	}
 	
 	void Update()
 	{
 	
 	}
+
+    protected void StartSetting()
+    {
+        isClear = false;
+    }
 	
 	protected void Clear()
 	{
