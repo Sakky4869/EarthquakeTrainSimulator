@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class SmartPhone : TrainingObject
+public class TV : TrainingObject
 {
-	
-
 	void Start()
 	{
 		StartSetting();
@@ -16,6 +13,7 @@ public class SmartPhone : TrainingObject
 	{
 		base.Clear();
 	}
-	
+
+
 
 }
