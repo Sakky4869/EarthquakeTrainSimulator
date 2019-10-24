@@ -4,15 +4,37 @@ using UnityEngine;
 
 public class TrainingManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
+    [SerializeField] private List<TrainingObjectBase> trainingObjects;
+    private int objectiveCount;
+    
+    
     void Start()
     {
-        
+        objectiveCount = 0;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
     }
+    
+    public void Train()
+    {
+    	StartCoroutime( TrainCor() );
+    }
+    
+    private IEnumerator TrainCor()
+    {
+    	Debug.Log( "Start Training" );
+    	// Start Training
+    	for(int i = 0; i < trainingObjects.Count; i++)
+    	{
+   		if( trainingObjects[ i ].isClear_prop == false )
+   			yield return null;
+    	}
+    	Debug.Log("Finish Training");
+    }
+    
 }
