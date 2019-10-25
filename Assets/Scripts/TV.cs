@@ -14,6 +14,10 @@ public class TV : TrainingObjectBase
 		base.GetInformationOfEarthquake();
 	}
 
-
+    //ƒeƒŒƒr‚ð‚Â‚¯‚é
+    public void TurnOn()
+    {
+        Debug.Log("Turn On");
+    }
 
 }
