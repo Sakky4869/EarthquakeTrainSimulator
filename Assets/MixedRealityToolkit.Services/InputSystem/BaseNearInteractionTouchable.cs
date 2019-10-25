@@ -26,6 +26,19 @@ namespace Microsoft.MixedReality.Toolkit.Input
         /// </summary>
         public TouchableEventType EventsToReceive { get => eventsToReceive; set => eventsToReceive = value; }
 
+        [Tooltip("Distance behind the surface at which you will receive a touch started event")]
+        [SerializeField]
+        [FormerlySerializedAs("distBack")]
+        protected float pokeThreshold = 0.25f;
+        /// <summary>
+        /// Distance behind the surface at which the touchable becomes active.
+        /// </summary>
+        /// <remarks>
+        /// When the pointer distance to the touchable object becomes less than -PokeThreshold (i.e. behind the surface),
+        /// then the Touch Started event is raised and the touchable object becomes tracked by the pointer.
+        /// </remarks>
+        public float PokeThreshold => pokeThreshold;
+
         [Tooltip("Distance in front of the surface at which you will receive a touch completed event")]
         [SerializeField]
         protected float debounceThreshold = 0.01f;
@@ -36,10 +49,11 @@ namespace Microsoft.MixedReality.Toolkit.Input
         /// When the touchable is active and the pointer distance becomes greater than +DebounceThreshold (i.e. in front of the surface),
         /// then the Touch Completed event is raised and the touchable object is released by the pointer.
         /// </remarks>
-        public float DebounceThreshold { get => debounceThreshold; set => debounceThreshold = value; }
+        public float DebounceThreshold => debounceThreshold;
 
-        protected virtual void OnValidate()
+        protected void OnValidate()
         {
+            pokeThreshold = Math.Max(pokeThreshold, 0);
             debounceThreshold = Math.Max(debounceThreshold, 0);
         }
 
@@ -47,11 +61,9 @@ namespace Microsoft.MixedReality.Toolkit.Input
     }
 
     /// <summary>
-    /// Obsolete base class for all touchables using colliders.
-    /// Use <see cref="BaseNearInteractionTouchable"/> instead.
+    /// Base class for all touchables using colliders.
     /// </summary>
     [RequireComponent(typeof(Collider))]
-    [System.Obsolete("Use BaseNearIntearctionTouchable instead of ColliderNearInteractionTouchable", true)]
     public abstract class ColliderNearInteractionTouchable : BaseNearInteractionTouchable
     {
         public bool ColliderEnabled { get { return touchableCollider.enabled && touchableCollider.gameObject.activeInHierarchy; } }
@@ -64,12 +76,11 @@ namespace Microsoft.MixedReality.Toolkit.Input
         private Collider touchableCollider;
         public Collider TouchableCollider => touchableCollider;
 
-        protected override void OnValidate()
+        protected new void OnValidate()
         {
             base.OnValidate();
 
             touchableCollider = GetComponent<Collider>();
         }
     }
-
 }

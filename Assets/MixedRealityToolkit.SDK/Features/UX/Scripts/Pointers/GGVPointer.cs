@@ -158,7 +158,6 @@ namespace Microsoft.MixedReality.Toolkit.Input
             return obj.GetHashCode();
         }
 
-        /// <inheritdoc />
         public override int GetHashCode()
         {
             unchecked
@@ -199,7 +198,12 @@ namespace Microsoft.MixedReality.Toolkit.Input
                 // This caused issues when the head rotated, but the hand stayed where it was.
                 // Now we're returning a rotation based on the vector from the camera position
                 // to the hand. This rotation is not affected by rotating your head.
+                //
+                // The y value is set to 0 here as we want the rotation to be about the y axis.
+                // Without this, one-hand manipulating an object would give it unwanted x/z 
+                // rotations as you move your hand up and down.
                 Vector3 look = Position - CameraCache.Main.transform.position;
+                look.y = 0;
                 return Quaternion.LookRotation(look);
             }
         }
@@ -289,7 +293,6 @@ namespace Microsoft.MixedReality.Toolkit.Input
 
         #region InputSystemGlobalHandlerListener Implementation
 
-        /// <inheritdoc />
         protected override void RegisterHandlers()
         {
             InputSystem?.RegisterHandler<IMixedRealityInputHandler>(this);
@@ -297,7 +300,6 @@ namespace Microsoft.MixedReality.Toolkit.Input
             InputSystem?.RegisterHandler<IMixedRealitySourceStateHandler>(this);
         }
 
-        /// <inheritdoc />
         protected override void UnregisterHandlers()
         {
             InputSystem?.UnregisterHandler<IMixedRealityInputHandler>(this);
@@ -334,7 +336,14 @@ namespace Microsoft.MixedReality.Toolkit.Input
                 }
 
                 // Destroy the pointer since nobody else is destroying us
-                GameObjectExtensions.DestroyGameObject(gameObject);
+                if (!Application.isPlaying)
+                {
+                    DestroyImmediate(gameObject);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
             }
         }
 

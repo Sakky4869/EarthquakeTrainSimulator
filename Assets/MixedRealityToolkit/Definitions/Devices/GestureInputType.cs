@@ -11,7 +11,6 @@ namespace Microsoft.MixedReality.Toolkit.Input
         None = 0,
         Hold,
         Navigation,
-        Manipulation,
-        Select
+        Manipulation
     }
 }

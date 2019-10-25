@@ -12,30 +12,17 @@ namespace Microsoft.MixedReality.Toolkit.UI
     /// </summary>
     public class InteractableOnGrabReceiver : ReceiverBase
     {
-        /// <summary>
-        /// Invoked on grab release
-        /// </summary>
         [InspectorField(Type = InspectorField.FieldTypes.Event, Label = "On Release", Tooltip = "Grab was released")]
         public UnityEvent OnRelease = new UnityEvent();
 
-        /// <summary>
-        /// Invoked on grab start
-        /// </summary>
-        public UnityEvent OnGrab => uEvent;
-
         private bool hadGrab;
+        private State lastState;
 
-        /// <summary>
-        /// Creates a receiver that raises grab start and end events.
-        /// </summary>
-        public InteractableOnGrabReceiver(UnityEvent ev) : base(ev, "OnGrab") { }
+        public InteractableOnGrabReceiver(UnityEvent ev) : base(ev)
+        {
+            Name = "OnGrab";
+        }
 
-        /// <summary>
-        /// Creates a receiver that raises grab start and end events.
-        /// </summary>
-        public InteractableOnGrabReceiver() : this( new UnityEvent()) { }
-
-        /// <inheritdoc />
         public override void OnUpdate(InteractableStates state, Interactable source)
         {
             bool hasGrab = state.GetState(InteractableStates.InteractableStateEnum.Grab).Value > 0;
@@ -53,6 +40,7 @@ namespace Microsoft.MixedReality.Toolkit.UI
             }
 
             hadGrab = hasGrab;
+            lastState = state.CurrentState();
         }
     }
 }

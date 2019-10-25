@@ -109,7 +109,7 @@ namespace Microsoft.MixedReality.Toolkit.Editor
             // Editor settings
             useServiceInspectors = serializedObject.FindProperty("useServiceInspectors");
 
-            SelectedProfileTab = SessionState.GetInt(SelectedTabPreferenceKey, SelectedProfileTab);
+            SelectedProfileTab = EditorPrefs.GetInt(SelectedTabPreferenceKey, SelectedProfileTab);
 
             if (this.RenderProfileFuncs == null)
             {
@@ -286,11 +286,11 @@ namespace Microsoft.MixedReality.Toolkit.Editor
             EditorGUILayout.BeginVertical(EditorStyles.helpBox, GUILayout.Width(100));
             GUI.enabled = true; // Force enable so we can view profile defaults
 
-            int prefsSelectedTab = SessionState.GetInt(SelectedTabPreferenceKey, 0);
+            int prefsSelectedTab = EditorPrefs.GetInt(SelectedTabPreferenceKey);
             SelectedProfileTab = GUILayout.SelectionGrid(prefsSelectedTab, ProfileTabTitles, 1, EditorStyles.boldLabel, GUILayout.MaxWidth(125));
             if (SelectedProfileTab != prefsSelectedTab)
             {
-                SessionState.SetInt(SelectedTabPreferenceKey, SelectedProfileTab);
+                EditorPrefs.SetInt(SelectedTabPreferenceKey, SelectedProfileTab);
             }
 
             GUI.enabled = isGUIEnabled;

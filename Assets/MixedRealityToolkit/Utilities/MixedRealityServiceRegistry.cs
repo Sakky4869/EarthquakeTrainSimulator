@@ -2,9 +2,7 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace Microsoft.MixedReality.Toolkit
@@ -24,31 +22,6 @@ namespace Microsoft.MixedReality.Toolkit
         /// </summary>
         private static Dictionary<Type, List<KeyValuePair<IMixedRealityService, IMixedRealityServiceRegistrar>>> registry =
             new Dictionary<Type, List<KeyValuePair<IMixedRealityService, IMixedRealityServiceRegistrar>>>();
-
-        /// <summary>
-        /// A cache used to power <seealso cref="GetAllServices(IMixedRealityServiceRegistrar)"/>
-        /// </summary>
-        /// <remarks>
-        /// Lists are sorted in ascending priority order (i.e. services with a smaller priority
-        /// value are first in the list).
-        /// </remarks>
-        private static Dictionary<IMixedRealityServiceRegistrar, List<IMixedRealityService>> allServicesByRegistrar =
-            new Dictionary<IMixedRealityServiceRegistrar, List<IMixedRealityService>>();
-
-        /// <summary>
-        /// A cache used to power <seealso cref="GetAllServices"/>
-        /// </summary>
-        /// <remarks>
-        /// The list is sorted in ascending priority order (i.e. services with a smaller priority
-        /// value are first in the list).
-        /// </remarks>
-        private static List<IMixedRealityService> allServices = new List<IMixedRealityService>();
-
-        /// <summary>
-        /// A comparer used to sort the allServices and allServiceByRegistrar lists in-place.
-        /// </summary>
-        private static readonly Comparer<IMixedRealityService> ascendingOrderComparer =
-            Comparer<IMixedRealityService>.Create((i1, i2) => i1.Priority.CompareTo(i2.Priority));
 
         /// <summary>
         /// Static constructor.
@@ -97,7 +70,6 @@ namespace Microsoft.MixedReality.Toolkit
 
             List<KeyValuePair<IMixedRealityService, IMixedRealityServiceRegistrar>> services = registry[interfaceType];
             services.Add(new KeyValuePair<IMixedRealityService, IMixedRealityServiceRegistrar>(serviceInstance, registrar));
-            AddServiceToCache(serviceInstance, registrar);
             return true;
         }
 
@@ -188,50 +160,7 @@ namespace Microsoft.MixedReality.Toolkit
                 registry.Remove(interfaceType);
             }
 
-            RemoveServiceFromCache(serviceInstance, registrar);
-
             return removed;
-        }
-
-        /// <summary>
-        /// Adds the given service/registrar combination to the GetAllServices cache
-        /// </summary>
-        private static void AddServiceToCache(
-            IMixedRealityService service,
-            IMixedRealityServiceRegistrar registrar)
-        {
-            // Services are stored in ascending priority order - adding them to the
-            // list requires that we re-enforce that order. This must happen
-            // in both the allServices and allServicesByRegistrar data structures.
-            allServices.Add(service);
-            allServices.Sort(ascendingOrderComparer);
-
-            if (!allServicesByRegistrar.ContainsKey(registrar))
-            {
-                allServicesByRegistrar.Add(registrar, new List<IMixedRealityService>());
-            }
-
-            allServicesByRegistrar[registrar].Add(service);
-            allServicesByRegistrar[registrar].Sort(ascendingOrderComparer);
-        }
-
-        /// <summary>
-        /// Removes the given service/registrar combination from the GetAllServices cache
-        /// </summary>
-        private static void RemoveServiceFromCache(
-            IMixedRealityService service,
-            IMixedRealityServiceRegistrar registrar)
-        {
-            // Removing from the sorted list keeps sort order, so re-sorting isn't necessary
-            allServices.Remove(service);
-            if (allServicesByRegistrar.ContainsKey(registrar))
-            {
-                allServicesByRegistrar[registrar].Remove(service);
-                if (allServicesByRegistrar[registrar].Count == 0)
-                {
-                    allServicesByRegistrar.Remove(registrar);
-                }
-            }
         }
 
         /// <summary>
@@ -381,43 +310,38 @@ namespace Microsoft.MixedReality.Toolkit
             if (registry != null)
             {
                 registry.Clear();
-                allServices.Clear();
-                allServicesByRegistrar.Clear();
             }
         }
 
         /// <summary>
         /// Returns readonly list of all services registered
         /// </summary>
-        /// <remarks>
-        /// The list is sorted in ascending priority order.
-        /// </remarks>
+        /// <returns>readonly list of all services registered</returns>
         public static IReadOnlyCollection<IMixedRealityService> GetAllServices()
         {
-            return allServices;
+            return GetAllServices(null);
         }
 
         /// <summary>
         /// Returns readonly list of all services registered for given registrar
         /// </summary>
         /// <param name="registrar">Registrar object to filter sevices by</param>
-        /// <remarks>
-        /// The list is sorted in ascending priority order.
-        /// </remarks>
-        /// <returns>Readonly list of all services registered for given registrar, all services if parameter null.
-        /// If given a registrar that the registry is not aware of, returns null.
-        /// </returns>
+        /// <returns>readonly list of all services registered for given registrar, all services if parameter nul</returns>
         public static IReadOnlyCollection<IMixedRealityService> GetAllServices(IMixedRealityServiceRegistrar registrar)
         {
-            if (registrar == null)
+            List<IMixedRealityService> results = new List<IMixedRealityService>();
+            foreach (var entry in registry.Values)
             {
-                return GetAllServices();
+                foreach (var tuple in entry)
+                {
+                    if (registrar == null || tuple.Value == registrar)
+                    {
+                        results.Add(tuple.Key);
+                    }
+                }
             }
-            if (allServicesByRegistrar.TryGetValue(registrar, out List<IMixedRealityService> services))
-            {
-                return services;
-            }
-            return null;
+
+            return results.AsReadOnly();
         }
     }
 }

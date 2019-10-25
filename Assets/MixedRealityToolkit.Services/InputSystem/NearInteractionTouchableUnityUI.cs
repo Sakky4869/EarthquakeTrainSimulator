@@ -11,33 +11,28 @@ namespace Microsoft.MixedReality.Toolkit.Input
     /// Use a Unity UI RectTransform as touchable surface.
     /// </summary>
     [RequireComponent(typeof(RectTransform))]
-    public class NearInteractionTouchableUnityUI : NearInteractionTouchableSurface
+    public class NearInteractionTouchableUnityUI : BaseNearInteractionTouchable
     {
-        private Lazy<RectTransform> rectTransform;
+        private RectTransform rectTransform;
 
         public static IReadOnlyList<NearInteractionTouchableUnityUI> Instances => instances;
-
-        public override Vector3 LocalCenter => Vector3.zero;
-        public override Vector3 LocalPressDirection => Vector3.forward;
-        public override Vector2 Bounds => rectTransform.Value.rect.size;
-
         private static readonly List<NearInteractionTouchableUnityUI> instances = new List<NearInteractionTouchableUnityUI>();
 
-        public NearInteractionTouchableUnityUI()
+        /// <inheritdoc />
+        void Start()
         {
-            rectTransform = new Lazy<RectTransform>(GetComponent<RectTransform>);
+            rectTransform = GetComponent<RectTransform>();
         }
 
-        /// <inheritdoc />
         public override float DistanceToTouchable(Vector3 samplePoint, out Vector3 normal)
         {
-            normal = transform.TransformDirection(-LocalPressDirection);
+            normal = -transform.forward;
 
             Vector3 localPoint = transform.InverseTransformPoint(samplePoint);
 
             // touchables currently can only be touched within the bounds of the rectangle.
             // We return infinity to ensure that any point outside the bounds does not get touched.
-            if (!rectTransform.Value.rect.Contains(localPoint))
+            if (!rectTransform.rect.Contains(localPoint))
             {
                 return float.PositiveInfinity;
             }

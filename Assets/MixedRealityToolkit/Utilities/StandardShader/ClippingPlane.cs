@@ -14,13 +14,11 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
     {
         private int clipPlaneID;
 
-        /// <inheritdoc />
         protected override string Keyword
         {
             get { return "_CLIPPING_PLANE"; }
         }
 
-        /// <inheritdoc />
         protected override string ClippingSideProperty
         {
             get { return "_ClipPlaneSide"; }
@@ -36,7 +34,6 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
             }
         }
 
-        /// <inheritdoc />
         protected override void Initialize()
         {
             base.Initialize();
@@ -44,7 +41,6 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
             clipPlaneID = Shader.PropertyToID("_ClipPlane");
         }
 
-        /// <inheritdoc />
         protected override void UpdateShaderProperties(MaterialPropertyBlock materialPropertyBlock)
         {
             Vector3 up = transform.up;

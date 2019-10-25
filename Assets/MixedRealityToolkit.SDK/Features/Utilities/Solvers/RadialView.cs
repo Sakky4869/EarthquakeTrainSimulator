@@ -234,6 +234,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Solvers
         /// <summary>
         /// Optimized version of GetDesiredOrientation.
         /// </summary>
+        /// <param name="desiredPos"></param>
         private void GetDesiredOrientation_DistanceOnly(ref Vector3 desiredPos)
         {
             // TODO: There should be a different solver for distance constraint.

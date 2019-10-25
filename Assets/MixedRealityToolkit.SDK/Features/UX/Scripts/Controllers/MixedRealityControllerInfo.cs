@@ -145,6 +145,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
         /// thumbstick, and touchpad animation.
         /// </summary>
         /// <param name="childTransforms">The transforms of the glTF model.</param>
+        /// <param name="motionControllerVisualizer"></param>
         public void LoadInfo(Transform[] childTransforms, MixedRealityControllerVisualizer motionControllerVisualizer)
         {
             foreach (Transform child in childTransforms)

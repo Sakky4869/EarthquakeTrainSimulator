@@ -97,7 +97,8 @@ namespace Microsoft.MixedReality.Toolkit.UI
             gameObject.SetActive(visible);
             // Use the interactable theme to make button invisible
             button.enabled = visible;
-            interactable.IsEnabled = visible;
+            interactable.Enabled = visible;
+
         }
     }
 }

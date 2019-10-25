@@ -13,6 +13,8 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
         /// <summary>
         /// Constructor.
         /// </summary>
+        /// <param name="position"></param>
+        /// <param name="rotation"></param>
         public MixedRealityPose(Vector3 position, Quaternion rotation)
         {
             this.position = position;
@@ -22,6 +24,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
         /// <summary>
         /// Constructor.
         /// </summary>
+        /// <param name="position"></param>
         public MixedRealityPose(Vector3 position)
         {
             this.position = position;
@@ -31,6 +34,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
         /// <summary>
         /// Constructor.
         /// </summary>
+        /// <param name="rotation"></param>
         public MixedRealityPose(Quaternion rotation)
         {
             position = Vector3.zero;
@@ -124,7 +128,6 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
             return obj is MixedRealityPose ? ((MixedRealityPose)obj).GetHashCode() : 0;
         }
 
-        /// <inheritdoc />
         public override int GetHashCode()
         {
             return base.GetHashCode();

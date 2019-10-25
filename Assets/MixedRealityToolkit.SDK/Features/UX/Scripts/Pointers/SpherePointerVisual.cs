@@ -6,11 +6,12 @@ using UnityEngine;
 
 namespace Microsoft.MixedReality.Toolkit.Input
 {
+    [ExecuteAlways]
     public class SpherePointerVisual : MonoBehaviour
     {
         public Transform TetherEndPoint => tetherEndPoint;
 
-        public bool TetherVisualsEnabled { get; private set; }
+        public bool TetherVisualsEnabled => tetherVisualsEnabled;
 
         [Tooltip("The pointer these visuals decorate")]
         private SpherePointer pointer;
@@ -28,6 +29,8 @@ namespace Microsoft.MixedReality.Toolkit.Input
         /// Assumption: Tether line is a child of the visuals!
         [SerializeField]
         private BaseMixedRealityLineDataProvider tetherLine = null;
+
+        private bool tetherVisualsEnabled;
 
         public void OnEnable()
         {
@@ -55,7 +58,6 @@ namespace Microsoft.MixedReality.Toolkit.Input
             {
                 pointer = GetComponent<SpherePointer>();
             }
-
             if (pointer == null)
             {
                 Debug.LogError($"No SpherePointer found on {gameObject.name}.");
@@ -76,7 +78,12 @@ namespace Microsoft.MixedReality.Toolkit.Input
 
         public void Update()
         {
-            TetherVisualsEnabled = false;
+            if (!Application.isPlaying)
+            {
+                return;
+            }
+
+            tetherVisualsEnabled = false;
             if (pointer.IsFocusLocked && pointer.IsTargetPositionLockedOnFocusLock && pointer.Result != null)
             {
                 NearInteractionGrabbable grabbedObject = GetGrabbedObject();
@@ -87,14 +94,14 @@ namespace Microsoft.MixedReality.Toolkit.Input
                     tetherLine.FirstPoint = graspPosition;
                     Vector3 endPoint = pointer.Result.Details.Object.transform.TransformPoint(pointer.Result.Details.PointLocalSpace);
                     tetherLine.LastPoint = endPoint;
-                    TetherVisualsEnabled = Vector3.Distance(tetherLine.FirstPoint, tetherLine.LastPoint) > minTetherLength;
-                    tetherLine.enabled = TetherVisualsEnabled;
-                    tetherEndPoint.gameObject.SetActive(TetherVisualsEnabled);
+                    tetherVisualsEnabled = Vector3.Distance(tetherLine.FirstPoint, tetherLine.LastPoint) > minTetherLength;
+                    tetherLine.enabled = tetherVisualsEnabled;
+                    tetherEndPoint.gameObject.SetActive(tetherVisualsEnabled);
                     tetherEndPoint.position = endPoint;
                 }
             }
 
-            visualsRoot.gameObject.SetActive(TetherVisualsEnabled);
+            visualsRoot.gameObject.SetActive(tetherVisualsEnabled);
         }
 
         private NearInteractionGrabbable GetGrabbedObject()

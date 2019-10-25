@@ -167,6 +167,7 @@ namespace Microsoft.MixedReality.Toolkit
         /// </summary>
         /// <param name="source">The source <see href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</see> to be mapped to sphere</param>
         /// <param name="radius">This is a <see cref="float"/> for the radius of the sphere</param>
+        /// <returns></returns>
         public static Vector3 SphericalMapping(Vector3 source, float radius)
         {
             float circ = 2f * Mathf.PI * radius;
@@ -187,6 +188,7 @@ namespace Microsoft.MixedReality.Toolkit
         /// </summary>
         /// <param name="source">The source <see href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</see> to be mapped to cylinder</param>
         /// <param name="radius">This is a <see cref="float"/> for the radius of the cylinder</param>
+        /// <returns></returns>
         public static Vector3 CylindricalMapping(Vector3 source, float radius)
         {
             float circ  = 2f * Mathf.PI * radius;
@@ -211,6 +213,7 @@ namespace Microsoft.MixedReality.Toolkit
         /// <param name="totalRows">The total rows as a <see cref="int"/> for the radial calculation</param>
         /// <param name="column">The current column as a <see cref="int"/> for the radial calculation</param>
         /// <param name="totalColumns">The total columns as a <see cref="int"/> for the radial calculation</param>
+        /// <returns></returns>
         public static Vector3 RadialMapping(Vector3 source, float radialRange, float radius, int row, int totalRows, int column, int totalColumns)
         {
             float radialCellAngle = radialRange / totalColumns;
@@ -232,6 +235,7 @@ namespace Microsoft.MixedReality.Toolkit
         /// </summary>
         /// <param name="source">The source <see href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</see> to be mapped to cylinder</param>
         /// <param name="radius">This is a <see cref="float"/> for the radius of the cylinder</param>
+        /// <returns></returns>
         public static Vector3 ScatterMapping(Vector3 source, float radius)
         {
             source.x = UnityEngine.Random.Range(-radius, radius);

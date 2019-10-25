@@ -159,85 +159,84 @@ namespace Microsoft.MixedReality.Toolkit.Editor
             {
                 foreach (string tag in contentTags)
                 {
-                    using (new EditorGUILayout.VerticalScope(GUILayout.MaxWidth(tagLoadButtonSetWidth)))
-                    {
-                        EditorGUILayout.LabelField(tag, EditorStyles.miniLabel);
-                        using (new EditorGUILayout.HorizontalScope())
-                        {
-                            if (GUILayout.Button("Load", EditorStyles.miniButton, GUILayout.MaxWidth(maxLoadButtonWidth)))
-                            {
-                                if (Application.isPlaying)
-                                {
-                                    ServiceContentLoadByTag(sceneSystem, tag);
-                                }
-                                else
-                                {
-                                    foreach (SceneInfo contentScene in sceneSystemEditor.ContentScenes)
-                                    {
-                                        if (contentScene.Tag == tag)
-                                        {
-                                            EditorSceneManager.OpenScene(contentScene.Path, OpenSceneMode.Additive);
-                                        }
-                                    }
-                                }
-                            }
+                    EditorGUILayout.BeginVertical(GUILayout.MaxWidth(tagLoadButtonSetWidth));
+                    EditorGUILayout.LabelField(tag, EditorStyles.miniLabel);
+                    EditorGUILayout.BeginHorizontal();
 
-                            if (GUILayout.Button("Unload", EditorStyles.miniButton, GUILayout.MaxWidth(maxLoadButtonWidth)))
+                    if (GUILayout.Button("Load", EditorStyles.miniButton, GUILayout.MaxWidth(maxLoadButtonWidth)))
+                    {
+
+                        if (Application.isPlaying)
+                        {
+                            ServiceContentLoadByTag(sceneSystem, tag);
+                        }
+                        else
+                        {
+                            foreach (SceneInfo contentScene in sceneSystemEditor.ContentScenes)
                             {
-                                if (Application.isPlaying)
+                                if (contentScene.Tag == tag)
                                 {
-                                    ServiceContentUnloadByTag(sceneSystem, tag);
-                                }
-                                else
-                                {
-                                    foreach (SceneInfo contentScene in sceneSystemEditor.ContentScenes)
-                                    {
-                                        if (contentScene.Tag == tag)
-                                        {
-                                            Scene scene = EditorSceneManager.GetSceneByName(contentScene.Name);
-                                            EditorSceneManager.CloseScene(scene, false);
-                                        }
-                                    }
+                                    EditorSceneManager.OpenScene(contentScene.Path, OpenSceneMode.Additive);
                                 }
                             }
                         }
                     }
+                    if (GUILayout.Button("Unload", EditorStyles.miniButton, GUILayout.MaxWidth(maxLoadButtonWidth)))
+                    {
+                        if (Application.isPlaying)
+                        {
+                            ServiceContentUnloadByTag(sceneSystem, tag);
+                        }
+                        else
+                        {
+                            foreach (SceneInfo contentScene in sceneSystemEditor.ContentScenes)
+                            {
+                                if (contentScene.Tag == tag)
+                                {
+                                    Scene scene = EditorSceneManager.GetSceneByName(contentScene.Name);
+                                    EditorSceneManager.CloseScene(scene, false);
+                                }
+                            }
+                        }
+                    }
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.EndVertical();
                 }
             }
 
             EditorGUILayout.Space();
             EditorGUILayout.LabelField("Load / Unload by build index order", EditorStyles.miniBoldLabel);
-            using (new EditorGUILayout.HorizontalScope())
+            EditorGUILayout.BeginHorizontal();
+
+            EditorGUI.BeginDisabledGroup(!sceneSystem.PrevContentExists);
+            if (GUILayout.Button("Load Prev Content", EditorStyles.miniButton))
             {
-                EditorGUI.BeginDisabledGroup(!sceneSystem.PrevContentExists);
-                if (GUILayout.Button("Load Prev Content", EditorStyles.miniButton))
+                if (Application.isPlaying)
                 {
-                    if (Application.isPlaying)
-                    {
-                        ServiceContentLoadPrev(sceneSystem);
-                    }
-                    else
-                    {
-                        sceneSystemEditor.EditorLoadPrevContent();
-                    }
+                    ServiceContentLoadPrev(sceneSystem);
                 }
-                EditorGUI.EndDisabledGroup();
-
-                EditorGUI.BeginDisabledGroup(!sceneSystem.NextContentExists);
-                if (GUILayout.Button("Load Next Content", EditorStyles.miniButton))
+                else
                 {
-                    if (Application.isPlaying)
-                    {
-                        ServiceContentLoadNext(sceneSystem);
-                    }
-                    else
-                    {
-                        sceneSystemEditor.EditorLoadNextContent();
-                    }
+                    sceneSystemEditor.EditorLoadPrevContent();
                 }
-                EditorGUI.EndDisabledGroup();
-
             }
+            EditorGUI.EndDisabledGroup();
+
+            EditorGUI.BeginDisabledGroup(!sceneSystem.NextContentExists);
+            if (GUILayout.Button("Load Next Content", EditorStyles.miniButton))
+            {
+                if (Application.isPlaying)
+                {
+                    ServiceContentLoadNext(sceneSystem);
+                }
+                else
+                {
+                    sceneSystemEditor.EditorLoadNextContent();
+                }
+            }
+            EditorGUI.EndDisabledGroup();
+
+            EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.Space();
             EditorGUILayout.LabelField("Load / Unload individually", EditorStyles.miniBoldLabel);

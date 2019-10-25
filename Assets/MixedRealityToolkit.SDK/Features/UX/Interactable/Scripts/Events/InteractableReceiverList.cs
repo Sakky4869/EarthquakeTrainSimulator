@@ -9,12 +9,11 @@ namespace Microsoft.MixedReality.Toolkit.UI
 {
     /// <summary>
     /// An example of building an Interactable receiver that uses built-in receivers that extend ReceiverBase
+    /// This is a mono behavior, place on a gameObject and assign the Interactable
     /// </summary>
     public class InteractableReceiverList : ReceiverBaseMonoBehavior
     {
-        /// <summary>
-        /// List of events added to this interactable
-        /// </summary>
+        // list of events added to this interactable
         [HideInInspector]
         public List<InteractableEvent> Events = new List<InteractableEvent>();
 
@@ -28,9 +27,11 @@ namespace Microsoft.MixedReality.Toolkit.UI
         /// </summary>
         protected virtual void SetupEvents()
         {
+            InteractableTypesContainer interactableTypes = InteractableEvent.GetEventTypes();
+
             for (int i = 0; i < Events.Count; i++)
             {
-                Events[i].Receiver = InteractableEvent.CreateReceiver(Events[i]);
+                Events[i].Receiver = InteractableEvent.GetReceiver(Events[i], interactableTypes);
                 Events[i].Receiver.Host = this;
             }
         }
@@ -38,6 +39,8 @@ namespace Microsoft.MixedReality.Toolkit.UI
         /// <summary>
         /// .A state has changed
         /// </summary>
+        /// <param name="state"></param>
+        /// <param name="source"></param>
         public override void OnStateChange(InteractableStates state, Interactable source)
         {
             base.OnStateChange(state, source);
@@ -49,11 +52,15 @@ namespace Microsoft.MixedReality.Toolkit.UI
                     Events[i].Receiver.OnUpdate(state, source);
                 }
             }
+
         }
 
         /// <summary>
         /// captures click events
         /// </summary>
+        /// <param name="state"></param>
+        /// <param name="source"></param>
+        /// <param name="pointer"></param>
         public override void OnClick(InteractableStates state, Interactable source, IMixedRealityPointer pointer = null)
         {
             base.OnClick(state, source, pointer);
@@ -70,6 +77,9 @@ namespace Microsoft.MixedReality.Toolkit.UI
         /// <summary>
         /// captures voice commands
         /// </summary>
+        /// <param name="state"></param>
+        /// <param name="source"></param>
+        /// <param name="command"></param>
         /// <param name="index">index of the voice command</param>
         /// <param name="length">voice command array length</param>
         public override void OnVoiceCommand(InteractableStates state, Interactable source, string command, int index = 0, int length = 1)

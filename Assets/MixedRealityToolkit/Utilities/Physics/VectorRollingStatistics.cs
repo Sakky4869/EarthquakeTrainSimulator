@@ -69,6 +69,7 @@ namespace Microsoft.MixedReality.Toolkit.Physics
         /// <summary>
         /// Initialize the rolling stats.
         /// </summary>
+        /// <param name="sampleCount"></param>
         public void Init(int sampleCount)
         {
             maxSamples = sampleCount;

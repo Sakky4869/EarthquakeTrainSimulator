@@ -62,7 +62,6 @@ namespace Microsoft.MixedReality.Toolkit.Input
             }
         }
 
-        /// <inheritdoc />
         protected override void SetLinePoints(Vector3 startPoint, Vector3 endPoint, float distance)
         {
             LineBase.FirstPoint = startPoint;

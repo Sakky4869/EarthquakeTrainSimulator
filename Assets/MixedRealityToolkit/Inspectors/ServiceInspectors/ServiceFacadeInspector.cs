@@ -126,6 +126,8 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Facades
         /// <summary>
         /// Draws a list of services that use this as a data provider
         /// </summary>
+        /// <param name="serviceType"></param>
+        /// <returns></returns>
         private bool DrawDataProviders(Type serviceType)
         {
             // If this is a data provider being used by other services, mention that now
@@ -147,6 +149,8 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Facades
         /// <summary>
         /// Draws the custom inspector gui for all of the service's interfaces that have custom inspectors.
         /// </summary>
+        /// <param name="facade"></param>
+        /// <returns></returns>
         private bool DrawInspector(ServiceFacade facade)
         {
             bool drewInspector = false;
@@ -165,6 +169,8 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Facades
         /// <summary>
         /// Draws the profile for all of the service's interfaces that have custom inspectors, if wanted by inspector and found.
         /// </summary>
+        /// <param name="serviceType"></param>
+        /// <returns></returns>
         private bool DrawProfile(Type serviceType)
         {
             bool drawProfileField = true;
@@ -276,7 +282,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Facades
 
             var typesWithMyAttribute =
                  from assembly in AppDomain.CurrentDomain.GetAssemblies().AsParallel()
-                 from classType in assembly.GetLoadableTypes()
+                 from classType in assembly.GetTypes()
                  let attribute = classType.GetCustomAttribute<MixedRealityServiceInspectorAttribute>(true)
                  where attribute != null
                  select new { ClassType = classType, Attribute = attribute };
@@ -292,6 +298,8 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Facades
         /// <summary>
         /// Draws gizmos for facade.
         /// </summary>
+        /// <param name="facade"></param>
+        /// <param name="type"></param>
         [DrawGizmo(GizmoType.NonSelected | GizmoType.Selected | GizmoType.Active)]
         private static void DrawGizmos(ServiceFacade facade, GizmoType type)
         {
@@ -322,6 +330,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Facades
         /// <summary>
         /// Draws scene gui for facade.
         /// </summary>
+        /// <param name="sceneView"></param>
         private static void DrawSceneGUI(SceneView sceneView)
         {
             if (!MixedRealityToolkit.IsInitialized || !MixedRealityToolkit.Instance.HasActiveProfile)
@@ -360,6 +369,9 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Facades
         /// <summary>
         /// Gets an instance of the service type. Returns false if no instance is found.
         /// </summary>
+        /// <param name="interfaceType"></param>
+        /// <param name="inspectorInstance"></param>
+        /// <returns></returns>
         private static bool GetServiceInspectorInstance(Type interfaceType, out IMixedRealityServiceInspector inspectorInstance)
         {
             inspectorInstance = null;

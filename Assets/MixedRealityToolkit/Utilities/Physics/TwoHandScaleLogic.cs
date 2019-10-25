@@ -36,6 +36,7 @@ namespace Microsoft.MixedReality.Toolkit.Physics
         /// <summary>
         /// update GameObject with new Scale state
         /// </summary>
+        /// <param name="handsPressedMap"></param>
         /// <returns>a Vector3 describing the new Scale of the object being manipulated</returns>
         public virtual Vector3 UpdateMap(Dictionary<uint, Vector3> handsPressedMap)
         {

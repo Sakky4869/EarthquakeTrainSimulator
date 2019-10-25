@@ -86,7 +86,6 @@ namespace Microsoft.MixedReality.Toolkit.Physics
             return point;
         }
 
-        /// <inheritdoc />
         protected override Vector3 DistortScaleInternal(Vector3 point, float strength)
         {
             float distanceToCenter = Vector3.Distance(point, BulgeWorldCenter);

@@ -263,10 +263,6 @@ namespace Microsoft.MixedReality.Toolkit.UI
 
             scaleHandler = this.GetComponent<TransformScaleHandler>();
         }
-        private void OnDisable()
-        {
-            ForceEndManipulation();
-        }
         #endregion MonoBehaviour Functions
 
         #region Private Methods

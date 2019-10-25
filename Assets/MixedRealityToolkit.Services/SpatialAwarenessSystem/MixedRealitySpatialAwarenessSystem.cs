@@ -26,9 +26,6 @@ namespace Microsoft.MixedReality.Toolkit.SpatialAwareness
             }
         }
 
-        /// <inheritdoc/>
-        public override string Name { get; protected set; } = "Mixed Reality Spatial Awareness System";
-
         #region IMixedRealityCapabilityCheck Implementation
 
         /// <inheritdoc />

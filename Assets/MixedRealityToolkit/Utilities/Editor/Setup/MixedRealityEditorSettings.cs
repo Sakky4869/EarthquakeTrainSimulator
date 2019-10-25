@@ -6,7 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEngine;
@@ -26,7 +25,6 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Editor
 
         private const string SessionKey = "_MixedRealityToolkit_Editor_ShownSettingsPrompts";
         private const string MSFT_AudioSpatializerPlugin = "MS HRTF Spatializer";
-        private const int SpatialAwarenessDefaultLayer = 31;
 
         [Obsolete("Use the 'MixedRealityToolkitFiles' APIs.")]
         public static string MixedRealityToolkit_AbsoluteFolderPath
@@ -35,12 +33,14 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Editor
             {
                 if (MixedRealityToolkitFiles.AreFoldersAvailable)
                 {
-                    if (Application.isEditor && MixedRealityToolkitFiles.MRTKDirectories.Count() > 1)
+#if UNITY_EDITOR
+                    if (MixedRealityToolkitFiles.MRTKDirectories.Count() > 1)
                     {
                         Debug.LogError($"A deprecated API '{nameof(MixedRealityEditorSettings)}.{nameof(MixedRealityToolkit_AbsoluteFolderPath)}' " +
                             "is being used, and there are more than one MRTK directory in the project; most likely due to ingestion as NuGet. " +
                             $"Update to use the '{nameof(MixedRealityToolkitFiles)}' APIs.");
                     }
+#endif
 
                     return MixedRealityToolkitFiles.MRTKDirectories.First();
                 }
@@ -87,46 +87,38 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Editor
 
             if (!MixedRealityPreferences.IgnoreSettingsPrompt)
             {
-                StringBuilder builder = new StringBuilder();
-                builder.Append("The Mixed Reality Toolkit needs to apply the following settings to your project:\n\n");
+                var message = "The Mixed Reality Toolkit needs to apply the following settings to your project:\n\n";
 
                 var forceTextSerialization = EditorSettings.serializationMode == SerializationMode.ForceText;
 
                 if (!forceTextSerialization)
                 {
-                    builder.AppendLine("- Force Text Serialization");
+                    message += "- Force Text Serialization\n";
                 }
 
                 var visibleMetaFiles = EditorSettings.externalVersionControl.Equals("Visible Meta Files");
 
                 if (!visibleMetaFiles)
                 {
-                    builder.AppendLine("- Visible meta files");
+                    message += "- Visible meta files\n";
                 }
 
                 if (!PlayerSettings.virtualRealitySupported)
                 {
-                    builder.AppendLine("- Enable XR Settings for your current platform");
+                    message += "- Enable XR Settings for your current platform\n";
                 }
 
                 var usingSinglePassInstancing = PlayerSettings.stereoRenderingPath == StereoRenderingPath.Instancing;
                 if (!usingSinglePassInstancing)
                 {
-                    builder.AppendLine("- Set Single Pass Instanced rendering path");
+                    message += "- Set Single Pass Instanced rendering path\n";
                 }
 
-                // Only make change if not already set. Regardless of whether it is already SpatialAwareness or something user set
-                var isSpatialLayerAvailable = string.IsNullOrEmpty(LayerMask.LayerToName(SpatialAwarenessDefaultLayer));
-                if (isSpatialLayerAvailable)
-                {
-                    builder.AppendLine("- Set Default Spatial Awareness Layer");
-                }
+                message += "\nWould you like to make this change?";
 
-                builder.Append("\nWould you like to make these changes?");
-
-                if (!forceTextSerialization || !visibleMetaFiles || !PlayerSettings.virtualRealitySupported || !usingSinglePassInstancing || isSpatialLayerAvailable)
+                if (!forceTextSerialization || !visibleMetaFiles || !PlayerSettings.virtualRealitySupported || !usingSinglePassInstancing)
                 {
-                    var choice = EditorUtility.DisplayDialogComplex("Apply Mixed Reality Toolkit Default Settings?", builder.ToString(), "Apply", "Ignore", "Later");
+                    var choice = EditorUtility.DisplayDialogComplex("Apply Mixed Reality Toolkit Default Settings?", message, "Apply", "Ignore", "Later");
 
                     switch (choice)
                     {
@@ -135,13 +127,6 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Editor
                             EditorSettings.externalVersionControl = "Visible Meta Files";
                             ApplyXRSettings();
                             PlayerSettings.stereoRenderingPath = StereoRenderingPath.Instancing;
-                            if (isSpatialLayerAvailable)
-                            {
-                                if (EditorLayerExtensions.SetupLayer(SpatialAwarenessDefaultLayer, "Spatial Awareness"))
-                                {
-                                    Debug.LogWarning(string.Format($"Can't modify project layers. It's possible the format of the layers and tags data has changed in this version of Unity. Set layer {SpatialAwarenessDefaultLayer} to \"Spatial Awareness\" manually via Project Settings > Tags and Layers window."));
-                                }
-                            }
                             refresh = true;
                             break;
                         case 1:
@@ -220,6 +205,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Editor
         /// <param name="directoryName">
         /// The name of the directory to search for.
         /// </param>
+        /// <param name="path"></param>
         internal static bool FindRelativeDirectory(string directoryPathToSearch, string directoryName, out string path)
         {
             string absolutePath;
@@ -242,6 +228,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Editor
         /// <param name="directoryName">
         /// The name of the directory to search for.
         /// </param>
+        /// <param name="path"></param>
         internal static bool FindDirectory(string directoryPathToSearch, string directoryName, out string path)
         {
             path = string.Empty;

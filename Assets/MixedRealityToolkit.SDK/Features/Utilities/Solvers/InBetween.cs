@@ -93,10 +93,8 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Solvers
             UpdateSecondSolverHandler();
         }
 
-        protected override void Start()
+        protected void Start()
         {
-            base.Start();
-
             // We need to get the secondSolverHandler ready before we tell them both to seek a tracked object.
             secondSolverHandler = gameObject.AddComponent<SolverHandler>();
             secondSolverHandler.UpdateSolvers = false;
@@ -104,7 +102,6 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Solvers
             UpdateSecondSolverHandler();
         }
 
-        /// <inheritdoc />
         public override void SolverUpdate()
         {
             if (SolverHandler != null && secondSolverHandler != null)

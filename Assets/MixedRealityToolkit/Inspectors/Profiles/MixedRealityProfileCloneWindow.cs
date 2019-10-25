@@ -184,19 +184,18 @@ namespace Microsoft.MixedReality.Toolkit.Editor
                                 {
                                     action.CloneName = EditorGUILayout.TextField("Clone name", action.CloneName);
                                 }
-                                using (new EditorGUILayout.HorizontalScope())
+                                EditorGUILayout.BeginHorizontal();
+                                if (action.TargetFolder == null)
                                 {
-                                    if (action.TargetFolder == null)
-                                    {
-                                        action.TargetFolder = targetFolder;
-                                    }
-                                    action.TargetFolder = EditorGUILayout.ObjectField("Target Folder", action.TargetFolder, typeof(DefaultAsset), false);
-                                    if (GUILayout.Button("Put in original folder", EditorStyles.miniButton, GUILayout.MaxWidth(120)))
-                                    {
-                                        string profilePath = AssetDatabase.GetAssetPath(action.Property.objectReferenceValue);
-                                        action.TargetFolder = AssetDatabase.LoadAssetAtPath<Object>(System.IO.Path.GetDirectoryName(profilePath));
-                                    }
+                                    action.TargetFolder = targetFolder;
                                 }
+                                action.TargetFolder = EditorGUILayout.ObjectField("Target Folder", action.TargetFolder, typeof(DefaultAsset), false);
+                                if (GUILayout.Button("Put in original folder", EditorStyles.miniButton, GUILayout.MaxWidth(120)))
+                                {
+                                    string profilePath = AssetDatabase.GetAssetPath(action.Property.objectReferenceValue);
+                                    action.TargetFolder = AssetDatabase.LoadAssetAtPath<Object>(System.IO.Path.GetDirectoryName(profilePath));
+                                }
+                                EditorGUILayout.EndHorizontal();
                                 break;
 
                             case ProfileCloneBehavior.LeaveEmpty:
@@ -216,32 +215,31 @@ namespace Microsoft.MixedReality.Toolkit.Editor
             GUILayout.FlexibleSpace();
 
             // Get the selected folder in the project window
-            using (new EditorGUILayout.HorizontalScope())
+            EditorGUILayout.BeginHorizontal();
+            targetFolder = EditorGUILayout.ObjectField("Target Folder", targetFolder, typeof(DefaultAsset), false);
+            if (GUILayout.Button("Put in original folder", EditorStyles.miniButton, GUILayout.MaxWidth(120)))
             {
-                targetFolder = EditorGUILayout.ObjectField("Target Folder", targetFolder, typeof(DefaultAsset), false);
-                if (GUILayout.Button("Put in original folder", EditorStyles.miniButton, GUILayout.MaxWidth(120)))
-                {
-                    string profilePath = AssetDatabase.GetAssetPath(childProfile);
-                    targetFolder = AssetDatabase.LoadAssetAtPath<Object>(System.IO.Path.GetDirectoryName(profilePath));
-                }
+                string profilePath = AssetDatabase.GetAssetPath(childProfile);
+                targetFolder = AssetDatabase.LoadAssetAtPath<Object>(System.IO.Path.GetDirectoryName(profilePath));
             }
+            EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.HelpBox("If no folder is provided, the profile will be cloned to the Assets/MixedRealityToolkit.Generated/CustomProfiles folder.", MessageType.Info);
             childProfileAssetName = EditorGUILayout.TextField("Profile Name", childProfileAssetName);
 
-            using (new EditorGUILayout.HorizontalScope())
-            {
-                if (GUILayout.Button("Clone"))
-                {
-                    targetFolder = EnsureTargetFolder(targetFolder);
-                    CloneMainProfile();
-                }
+            EditorGUILayout.BeginHorizontal();
 
-                if (GUILayout.Button("Cancel"))
-                {
-                    cloneWindow.Close();
-                }
-            }   
+            if (GUILayout.Button("Clone"))
+            {
+                targetFolder = EnsureTargetFolder(targetFolder);
+                CloneMainProfile();
+            }
+            if (GUILayout.Button("Cancel"))
+            {
+                cloneWindow.Close();
+            }
+
+            EditorGUILayout.EndHorizontal();
 
             // If there are no sub profiles, limit the max so the window isn't spawned too large
             if (subProfileActions.Count <= 0 || !AdvancedMode)
@@ -376,7 +374,7 @@ namespace Microsoft.MixedReality.Toolkit.Editor
             System.Type type = null;
             foreach (Assembly assembly in System.AppDomain.CurrentDomain.GetAssemblies())
             {
-                foreach (System.Type checkType in assembly.GetLoadableTypes())
+                foreach (System.Type checkType in assembly.GetTypes())
                 {
                     if (checkType.Name == profileTypeName)
                     {

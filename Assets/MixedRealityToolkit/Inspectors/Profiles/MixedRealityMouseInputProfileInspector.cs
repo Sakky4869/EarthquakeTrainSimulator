@@ -11,17 +11,14 @@ namespace Microsoft.MixedReality.Toolkit.Input
     [CustomEditor(typeof(MixedRealityMouseInputProfile))]
     public class MixedRealityMouseInputProfileInspector : BaseMixedRealityToolkitConfigurationProfileInspector
     {
+        private SerializedProperty mouseSpeed;
         private const string ProfileTitle = "Mouse Input Settings";
-        private const string ProfileDescription = "Settings used to configure the behavior of mouse controllers.";
-
-        private SerializedProperty cursorSpeed;
-        private SerializedProperty wheelSpeed;
+        private const string ProfileDescription = "Settings for mouse input in the editor.";
 
         protected override void OnEnable()
         {
             base.OnEnable();
-            cursorSpeed = serializedObject.FindProperty("cursorSpeed");
-            wheelSpeed = serializedObject.FindProperty("wheelSpeed");
+            mouseSpeed = serializedObject.FindProperty("mouseSpeed");
         }
 
         public override void OnInspectorGUI()
@@ -31,8 +28,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
             using (new GUIEnabledWrapper(!IsProfileLock((BaseMixedRealityProfile)target), false))
             {
                 serializedObject.Update();
-                EditorGUILayout.PropertyField(cursorSpeed);
-                EditorGUILayout.PropertyField(wheelSpeed);
+                EditorGUILayout.PropertyField(mouseSpeed);
                 serializedObject.ApplyModifiedProperties();
             }
         }
@@ -45,8 +41,8 @@ namespace Microsoft.MixedReality.Toolkit.Input
                 return false;
             }
 
-            var mouseManager = MixedRealityToolkit.Instance.GetService<IMixedRealityMouseDeviceManager>(null, false);
-            return mouseManager != null && profile == mouseManager.ConfigurationProfile;
+            var mouseManager = MixedRealityToolkit.Instance.GetService<MouseDeviceManager>(null, false);
+            return mouseManager != null && profile == mouseManager.MouseInputProfile;
         }
     }
 }

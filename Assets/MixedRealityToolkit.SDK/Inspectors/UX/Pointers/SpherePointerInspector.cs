@@ -11,10 +11,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
     public class SpherePointerInspector : BaseControllerPointerInspector
     {
         private SerializedProperty sphereCastRadius;
-        private SerializedProperty nearObjectMargin;
-        private SerializedProperty grabLayerMasks;
-        private SerializedProperty triggerInteraction;
-
+        private SerializedProperty debugMode;
 
         private bool spherePointerFoldout = true;
 
@@ -23,9 +20,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
             base.OnEnable();
 
             sphereCastRadius = serializedObject.FindProperty("sphereCastRadius");
-            nearObjectMargin = serializedObject.FindProperty("nearObjectMargin");
-            grabLayerMasks = serializedObject.FindProperty("grabLayerMasks");
-            triggerInteraction = serializedObject.FindProperty("triggerInteraction");
+            debugMode = serializedObject.FindProperty("debugMode");
         }
 
         public override void OnInspectorGUI()
@@ -38,13 +33,10 @@ namespace Microsoft.MixedReality.Toolkit.Input
 
             if (spherePointerFoldout)
             {
-                using (new EditorGUI.IndentLevelScope())
-                {
-                    EditorGUILayout.PropertyField(sphereCastRadius);
-                    EditorGUILayout.PropertyField(nearObjectMargin);
-                    EditorGUILayout.PropertyField(triggerInteraction);
-                    EditorGUILayout.PropertyField(grabLayerMasks, true);
-                }
+                EditorGUI.indentLevel++;
+                EditorGUILayout.PropertyField(sphereCastRadius);
+                EditorGUILayout.PropertyField(debugMode);
+                EditorGUI.indentLevel--;
             }
 
             serializedObject.ApplyModifiedProperties();

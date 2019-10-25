@@ -12,9 +12,6 @@ namespace Microsoft.MixedReality.Toolkit.UI
     /// </summary>
     public class InteractableOnHoldReceiver : ReceiverBase
     {
-        /// <summary>
-        /// The amount of time to press before triggering event
-        /// </summary>
         [InspectorField(Type = InspectorField.FieldTypes.Float, Label = "Hold Time", Tooltip = "The amount of time to press before triggering event")]
         public float HoldTime = 1f;
 
@@ -22,22 +19,11 @@ namespace Microsoft.MixedReality.Toolkit.UI
 
         private bool hasDown;
 
-        /// <summary>
-        /// Invoked when interactable has been pressed for HoldTime
-        /// </summary>
-        public UnityEvent OnHold => uEvent;
+        public InteractableOnHoldReceiver(UnityEvent ev): base(ev)
+        {
+            Name = "OnHold";
+        }
 
-        /// <summary>
-        /// Creates receiver that raises OnHold events
-        /// </summary>
-        public InteractableOnHoldReceiver(UnityEvent ev): base(ev, "OnHold") { }
-
-        /// <summary>
-        /// Creates receiver that raises OnHold events
-        /// </summary>
-        public InteractableOnHoldReceiver() : this(new UnityEvent()) { }
-
-        /// <inheritdoc />
         public override void OnUpdate(InteractableStates state, Interactable source)
         {
             if (state.GetState(InteractableStates.InteractableStateEnum.Pressed).Value > 0 && !hasDown)

@@ -68,11 +68,11 @@ namespace Microsoft.MixedReality.Toolkit.Editor
 
                 if (oldShader.name.Contains(TransparentCutoutShadersPath))
                 {
-                    mode = RenderingMode.Cutout;
+                    mode = RenderingMode.TransparentCutout;
                 }
                 else if (oldShader.name.Contains(TransparentShadersPath))
                 {
-                    mode = RenderingMode.Fade;
+                    mode = RenderingMode.Transparent;
                 }
 
                 material.SetFloat(BaseStyles.renderingModeName, (float)mode);

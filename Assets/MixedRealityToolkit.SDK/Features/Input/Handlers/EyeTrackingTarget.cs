@@ -186,14 +186,12 @@ namespace Microsoft.MixedReality.Toolkit.Input
             OnEyeFocusStop();
         }
 
-        /// <inheritdoc />
         protected override void RegisterHandlers()
         {
             InputSystem?.RegisterHandler<IMixedRealityPointerHandler>(this);
             InputSystem?.RegisterHandler<IMixedRealitySpeechHandler>(this);
         }
 
-        /// <inheritdoc />
         protected override void UnregisterHandlers()
         {
             InputSystem?.UnregisterHandler<IMixedRealityPointerHandler>(this);

@@ -14,6 +14,9 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
         /// <summary>
         /// Copies properties of one serialized object to another (without undo)
         /// </summary>
+        /// <param name="source"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public static bool CopySerializedObject(SerializedObject source, SerializedObject target, IEnumerable<string> propsToIgnore = null)
         {
             bool madeChanges = false;
@@ -45,7 +48,11 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
         /// Iterates through a serialized object's fields and sets any accompanying fields in the supplied struct.
         /// </summary>
         /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="target"></param>
         /// <param name="propNamePrefixFilter">Prefix to remove from serialized object field name before searching for match in struct</param>
+        /// <param name="errorOnFieldNotFound"></param>
+        /// <returns></returns>
         public static T CopySerializedObjectToStruct<T>(SerializedObject source, T target, string propNamePrefixFilter = null, bool errorOnFieldNotFound = false) where T : struct
         {
             Type targetType = typeof(T);
@@ -78,6 +85,9 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
         /// <summary>
         /// Sets the target field to the value from property based on property type.
         /// </summary>
+        /// <param name="field"></param>
+        /// <param name="target"></param>
+        /// <param name="property"></param>
         public static void SetTargetFieldToSerializedPropertyValue(FieldInfo field, ref object target, SerializedProperty property)
         {
             switch (property.propertyType)
@@ -121,6 +131,8 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
         /// Uses reflection to set all public fields of a struct in an accompanying serialized property
         /// </summary>
         /// <typeparam name="T"></typeparam>
+        /// <param name="serializedProperty"></param>
+        /// <param name="value"></param>
         public static void SetStructValue<T>(SerializedProperty serializedProperty, T value) where T : struct
         {
             foreach (FieldInfo field in typeof(T).GetFields(BindingFlags.Public | BindingFlags.Instance))
@@ -148,6 +160,8 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
         /// <summary>
         /// Sets a serialized property value based on type of value object.
         /// </summary>
+        /// <param name="value"></param>
+        /// <param name="property"></param>
         public static void SetSerializedPropertyByType(object value, SerializedProperty property)
         {
             switch (property.propertyType)

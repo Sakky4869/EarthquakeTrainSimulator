@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TV : TrainingObject
+public class TV : TrainingObjectBase
 {
 	void Start()
 	{
 		StartSetting();
 	}
 	
-	override void GetInformationOfEarthquake()
+	protected override void GetInformationOfEarthquake()
 	{
-		base.Clear();
+		base.GetInformationOfEarthquake();
 	}
 
 

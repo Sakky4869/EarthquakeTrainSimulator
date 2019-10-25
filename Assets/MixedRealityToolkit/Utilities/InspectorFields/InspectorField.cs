@@ -79,6 +79,9 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Editor
         /// <summary>
         /// Set the value of the propertySetting
         /// </summary>
+        /// <param name="setting"></param>
+        /// <param name="update"></param>
+        /// <returns></returns>
         public static InspectorPropertySetting UpdatePropertySetting(InspectorPropertySetting setting, object update)
         {
             switch (setting.Type)
@@ -149,6 +152,9 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Editor
         /// <summary>
         /// Get the propertySettings value
         /// </summary>
+        /// <param name="settings"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public static object GetSettingValue(List<InspectorPropertySetting> settings, string name)
         {
             InspectorPropertySetting setting = new InspectorPropertySetting();
@@ -239,6 +245,9 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Editor
         /// <summary>
         /// Get the index from a list of strings using string comparison
         /// </summary>
+        /// <param name="option"></param>
+        /// <param name="options"></param>
+        /// <returns></returns>
         public static int ReverseLookup(string option, string[] options)
         {
             for (int i = 0; i < options.Length; i++)

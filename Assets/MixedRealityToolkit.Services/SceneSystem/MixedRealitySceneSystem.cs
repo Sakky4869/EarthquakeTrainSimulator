@@ -55,9 +55,6 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         // Lighting executor instance
         private SceneLightingExecutor lightingExecutor;
 
-        /// <inheritdoc/>
-        public override string Name { get; protected set; } = "Mixed Reality Scene System";
-
         #region Actions
 
         /// <inheritdoc />
@@ -355,6 +352,7 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// <summary>
         /// Loads the manager scene.
         /// </summary>
+        /// <param name="managerSceneName"></param>
         private async void SetManagerScene(string managerSceneName)
         {
             Scene scene = SceneManager.GetSceneByName(managerSceneName);
@@ -369,6 +367,13 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// <summary>
         /// Internal method to handle scene loads
         /// </summary>
+        /// <param name="scenesToLoad"></param>
+        /// <param name="sceneType"></param>
+        /// <param name="activationToken"></param>
+        /// <param name="progressOffset"></param>
+        /// <param name="progressTarget"></param>
+        /// <param name="sceneOpInProgressWhenFinished"></param>
+        /// <returns></returns>
         private async Task LoadScenesInternal(
             IEnumerable<string> scenesToLoad,
             SceneType sceneType,
@@ -506,6 +511,12 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// <summary>
         /// Internal method to handles scene unloads
         /// </summary>
+        /// <param name="scenesToUnload"></param>
+        /// <param name="sceneType"></param>
+        /// <param name="progressOffset"></param>
+        /// <param name="progressTarget"></param>
+        /// <param name="sceneOpInProgressWhenFinished"></param>
+        /// <returns></returns>
         private async Task UnloadScenesInternal(
             IEnumerable<string> scenesToUnload, 
             SceneType sceneType,
@@ -784,6 +795,8 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// Checks whether any content scenes are loaded
         /// If they are, adds them to loadedContentScenes and returns true
         /// </summary>
+        /// <param name="loadedContentScenes"></param>
+        /// <returns></returns>
         private bool GetLoadedContentScenes(out IEnumerable<string> loadedContentScenes)
         {
             List<string> loadedContentScenesList = new List<string>();

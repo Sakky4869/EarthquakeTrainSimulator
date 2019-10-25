@@ -29,7 +29,6 @@ namespace Microsoft.MixedReality.Toolkit
             }
         }
 
-        /// <inheritdoc />
         public override void Enable()
         {
             base.Enable();
@@ -40,7 +39,6 @@ namespace Microsoft.MixedReality.Toolkit
             }
         }
 
-        /// <inheritdoc />
         public override void Update()
         {
             base.Update();
@@ -51,7 +49,6 @@ namespace Microsoft.MixedReality.Toolkit
             }
         }
 
-        /// <inheritdoc />
         public override void LateUpdate()
         {
             base.LateUpdate();

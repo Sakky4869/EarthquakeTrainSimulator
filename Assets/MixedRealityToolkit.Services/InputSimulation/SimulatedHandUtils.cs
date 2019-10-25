@@ -66,6 +66,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
         /// <summary>
         /// Gets vector corresponding to +z.
         /// </summary>
+        /// <returns></returns>
         public static Vector3 GetPalmForwardVector(Vector3[] jointPositions)
         {
             Vector3 indexBase = jointPositions[(int)TrackedHandJoint.IndexKnuckle];
@@ -78,6 +79,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
         /// <summary>
         /// Gets the vector corresponding to +y.
         /// </summary>
+        /// <returns></returns>
         public static Vector3 GetPalmUpVector(Handedness handedness, Vector3[] jointPositions)
         {
             Vector3 indexBase = jointPositions[(int)TrackedHandJoint.IndexKnuckle];

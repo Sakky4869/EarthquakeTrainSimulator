@@ -15,11 +15,11 @@ namespace Microsoft.MixedReality.Toolkit.Inspectors
         private SerializedProperty palmPrefab;
         private SerializedProperty fingertipPrefab;
         private SerializedProperty handMeshPrefab;
-        private SerializedProperty handMeshVisualizationModes;
-        private SerializedProperty handJointVisualizationModes;
+        private SerializedProperty enableHandMeshVisualization;
+        private SerializedProperty enableHandJointVisualization;
 
         private const string ProfileTitle = "Hand Tracking Settings";
-        private const string ProfileDescription = "Use this for hand tracking settings.";
+        private const string ProfileDescription = "Use this for platform-specific hand tracking settings.";
 
         protected override void OnEnable()
         {
@@ -29,8 +29,8 @@ namespace Microsoft.MixedReality.Toolkit.Inspectors
             fingertipPrefab = serializedObject.FindProperty("fingertipPrefab");
             palmPrefab = serializedObject.FindProperty("palmPrefab");
             handMeshPrefab = serializedObject.FindProperty("handMeshPrefab");
-            handMeshVisualizationModes = serializedObject.FindProperty("handMeshVisualizationModes");
-            handJointVisualizationModes = serializedObject.FindProperty("handJointVisualizationModes");
+            enableHandMeshVisualization = serializedObject.FindProperty("enableHandMeshVisualization");
+            enableHandJointVisualization = serializedObject.FindProperty("enableHandJointVisualization");
         }
 
         public override void OnInspectorGUI()
@@ -46,8 +46,8 @@ namespace Microsoft.MixedReality.Toolkit.Inspectors
                 EditorGUILayout.PropertyField(palmPrefab);
                 EditorGUILayout.PropertyField(fingertipPrefab);
                 EditorGUILayout.PropertyField(handMeshPrefab);
-                EditorGUILayout.PropertyField(handMeshVisualizationModes);
-                EditorGUILayout.PropertyField(handJointVisualizationModes);
+                EditorGUILayout.PropertyField(enableHandMeshVisualization);
+                EditorGUILayout.PropertyField(enableHandJointVisualization);
 
                 serializedObject.ApplyModifiedProperties();
             }

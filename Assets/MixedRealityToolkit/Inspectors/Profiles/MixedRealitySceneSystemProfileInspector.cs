@@ -232,6 +232,7 @@ namespace Microsoft.MixedReality.Toolkit.Editor
         /// <summary>
         /// Used to drag-drop scene objects into scene lists. (Currently unused.)
         /// </summary>
+        /// <param name="arrayProperty"></param>
         private void DrawSceneInfoDragAndDrop(SerializedProperty arrayProperty)
         {
             if (!Application.isPlaying)

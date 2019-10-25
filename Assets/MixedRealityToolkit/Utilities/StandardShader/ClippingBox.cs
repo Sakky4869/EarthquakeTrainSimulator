@@ -15,13 +15,11 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
         private int clipBoxSizeID;
         private int clipBoxInverseTransformID;
 
-        /// <inheritdoc />
         protected override string Keyword
         {
             get { return "_CLIPPING_BOX"; }
         }
 
-        /// <inheritdoc />
         protected override string ClippingSideProperty
         {
             get { return "_ClipBoxSide"; }
@@ -36,7 +34,6 @@ namespace Microsoft.MixedReality.Toolkit.Utilities
             }
         }
 
-        /// <inheritdoc />
         protected override void Initialize()
         {
             base.Initialize();

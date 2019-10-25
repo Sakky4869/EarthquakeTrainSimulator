@@ -16,25 +16,25 @@ namespace Microsoft.MixedReality.Toolkit.Editor
     {
         protected enum RenderingMode
         {
-            Opaque = 0,
-            Cutout = 1,
-            Fade = 2,
-            Transparent = 3,
-            Additive = 4,
-            Custom = 5
+            Opaque,
+            TransparentCutout,
+            Transparent,
+            PremultipliedTransparent,
+            Additive,
+            Custom
         }
 
         protected enum CustomRenderingMode
         {
-            Opaque = 0,
-            Cutout = 1,
-            Fade = 2
+            Opaque,
+            TransparentCutout,
+            Transparent
         }
 
         protected enum DepthWrite
         {
-            Off = 0,
-            On = 1
+            Off,
+            On
         }
 
         protected static class BaseStyles
@@ -215,10 +215,10 @@ namespace Microsoft.MixedReality.Toolkit.Editor
                     }
                     break;
 
-                case RenderingMode.Cutout:
+                case RenderingMode.TransparentCutout:
                     {
-                        material.SetOverrideTag(BaseStyles.renderTypeName, BaseStyles.renderingModeNames[(int)RenderingMode.Cutout]);
-                        material.SetInt(BaseStyles.customRenderingModeName, (int)CustomRenderingMode.Cutout);
+                        material.SetOverrideTag(BaseStyles.renderTypeName, BaseStyles.renderingModeNames[(int)RenderingMode.TransparentCutout]);
+                        material.SetInt(BaseStyles.customRenderingModeName, (int)CustomRenderingMode.TransparentCutout);
                         material.SetInt(BaseStyles.sourceBlendName, (int)BlendMode.One);
                         material.SetInt(BaseStyles.destinationBlendName, (int)BlendMode.Zero);
                         material.SetInt(BaseStyles.depthWriteName, (int)DepthWrite.On);
@@ -228,10 +228,10 @@ namespace Microsoft.MixedReality.Toolkit.Editor
                     }
                     break;
 
-                case RenderingMode.Fade:
+                case RenderingMode.Transparent:
                     {
-                        material.SetOverrideTag(BaseStyles.renderTypeName, BaseStyles.renderingModeNames[(int)RenderingMode.Fade]);
-                        material.SetInt(BaseStyles.customRenderingModeName, (int)CustomRenderingMode.Fade);
+                        material.SetOverrideTag(BaseStyles.renderTypeName, BaseStyles.renderingModeNames[(int)RenderingMode.Transparent]);
+                        material.SetInt(BaseStyles.customRenderingModeName, (int)CustomRenderingMode.Transparent);
                         material.SetInt(BaseStyles.sourceBlendName, (int)BlendMode.SrcAlpha);
                         material.SetInt(BaseStyles.destinationBlendName, (int)BlendMode.OneMinusSrcAlpha);
                         material.SetInt(BaseStyles.depthWriteName, (int)DepthWrite.Off);
@@ -241,10 +241,10 @@ namespace Microsoft.MixedReality.Toolkit.Editor
                     }
                     break;
 
-                case RenderingMode.Transparent:
+                case RenderingMode.PremultipliedTransparent:
                     {
-                        material.SetOverrideTag(BaseStyles.renderTypeName, BaseStyles.renderingModeNames[(int)RenderingMode.Fade]);
-                        material.SetInt(BaseStyles.customRenderingModeName, (int)CustomRenderingMode.Fade);
+                        material.SetOverrideTag(BaseStyles.renderTypeName, BaseStyles.renderingModeNames[(int)RenderingMode.Transparent]);
+                        material.SetInt(BaseStyles.customRenderingModeName, (int)CustomRenderingMode.Transparent);
                         material.SetInt(BaseStyles.sourceBlendName, (int)BlendMode.One);
                         material.SetInt(BaseStyles.destinationBlendName, (int)BlendMode.OneMinusSrcAlpha);
                         material.SetInt(BaseStyles.depthWriteName, (int)DepthWrite.Off);
@@ -256,8 +256,8 @@ namespace Microsoft.MixedReality.Toolkit.Editor
 
                 case RenderingMode.Additive:
                     {
-                        material.SetOverrideTag(BaseStyles.renderTypeName, BaseStyles.renderingModeNames[(int)RenderingMode.Fade]);
-                        material.SetInt(BaseStyles.customRenderingModeName, (int)CustomRenderingMode.Fade);
+                        material.SetOverrideTag(BaseStyles.renderTypeName, BaseStyles.renderingModeNames[(int)RenderingMode.Transparent]);
+                        material.SetInt(BaseStyles.customRenderingModeName, (int)CustomRenderingMode.Transparent);
                         material.SetInt(BaseStyles.sourceBlendName, (int)BlendMode.One);
                         material.SetInt(BaseStyles.destinationBlendName, (int)BlendMode.One);
                         material.SetInt(BaseStyles.depthWriteName, (int)DepthWrite.Off);
@@ -281,14 +281,14 @@ namespace Microsoft.MixedReality.Toolkit.Editor
                                 }
                                 break;
 
-                            case CustomRenderingMode.Cutout:
+                            case CustomRenderingMode.TransparentCutout:
                                 {
                                     material.EnableKeyword(BaseStyles.alphaTestOnName);
                                     material.DisableKeyword(BaseStyles.alphaBlendOnName);
                                 }
                                 break;
 
-                            case CustomRenderingMode.Fade:
+                            case CustomRenderingMode.Transparent:
                                 {
                                     material.DisableKeyword(BaseStyles.alphaTestOnName);
                                     material.EnableKeyword(BaseStyles.alphaBlendOnName);

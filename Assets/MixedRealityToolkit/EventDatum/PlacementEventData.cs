@@ -22,6 +22,8 @@ namespace Microsoft.MixedReality.Toolkit
         /// <summary>
         /// Populates the event with data.
         /// </summary>
+        /// <param name="eventSource"></param>
+        /// <param name="objectBeingPlaced"></param>
         public void Initialize(IMixedRealityEventSource eventSource, GameObject objectBeingPlaced)
         {
             BaseInitialize(eventSource);

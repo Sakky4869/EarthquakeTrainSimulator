@@ -23,7 +23,10 @@ namespace Microsoft.MixedReality.Toolkit.Input
         {
             get
             {
-                MixedRealityServiceRegistry.TryGetService<IMixedRealityInputSystem>(out inputSystem);
+                if (inputSystem == null)
+                {
+                    MixedRealityServiceRegistry.TryGetService<IMixedRealityInputSystem>(out inputSystem);
+                }
                 return inputSystem;
             }
         }

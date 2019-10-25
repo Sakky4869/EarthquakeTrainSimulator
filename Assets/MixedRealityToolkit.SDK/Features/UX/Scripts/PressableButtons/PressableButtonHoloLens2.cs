@@ -106,7 +106,6 @@ namespace Microsoft.MixedReality.Toolkit.UI
             }
         }
 
-        /// <inheritdoc />
         protected override void UpdateMovingVisualsPosition()
         {
             base.UpdateMovingVisualsPosition();

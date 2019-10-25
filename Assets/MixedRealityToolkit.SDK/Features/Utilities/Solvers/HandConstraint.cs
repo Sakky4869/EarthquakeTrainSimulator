@@ -347,6 +347,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Solvers
         /// </summary>
         /// <param name="visible">Is the cursor visible?</param>
         /// <param name="frameDelay">Delay one frame before performing the toggle to allow the pointers to instantiate their cursors.</param>
+        /// <returns></returns>
         protected virtual IEnumerator ToggleCursor(bool visible, bool frameDelay = false)
         {
             if (hideHandCursorsOnActivate)
@@ -503,18 +504,6 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Solvers
             return false;
         }
 
-        /// <summary>
-        /// Returns true if the given controller is a valid target for this solver.
-        /// </summary>
-        /// <remarks>
-        /// Certain types of controllers (i.e. Xbox controllers) do not contain a handedness
-        /// and should not trigger the HandConstraint to show its corresponding UX.
-        /// </remarks>
-        private static bool IsApplicableController(IMixedRealityController controller)
-        {
-            return controller.ControllerHandedness != Handedness.None;
-        }
-
         #region MonoBehaviour Implementation
 
         protected override void Awake()
@@ -552,7 +541,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Solvers
         {
             var hand = eventData.Controller;
 
-            if (hand != null && IsApplicableController(hand) && !handStack.Contains(hand))
+            if (hand != null && !handStack.Contains(hand))
             {
                 if (handStack.Count == 0)
                 {
@@ -568,7 +557,7 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Solvers
         {
             var hand = eventData.Controller;
 
-            if (hand != null && IsApplicableController(hand))
+            if (hand != null)
             {
                 handStack.Remove(hand);
 

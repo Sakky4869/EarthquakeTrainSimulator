@@ -76,7 +76,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
         public bool FocusIndividualCompoundCollider
         {
             get { return focusIndividualCompoundCollider; }
-            set { focusIndividualCompoundCollider = value; }
+            internal set { focusIndividualCompoundCollider = value; }
         }
 
         [SerializeField]

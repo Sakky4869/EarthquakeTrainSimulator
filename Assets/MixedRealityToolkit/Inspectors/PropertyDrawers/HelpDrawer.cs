@@ -42,6 +42,7 @@ namespace Microsoft.MixedReality.Toolkit.Editor
         /// <summary>
         /// Gets the height of the decorator
         /// </summary>
+        /// <returns></returns>
         public override float GetHeight()
         {
             HelpAttribute help = attribute as HelpAttribute;

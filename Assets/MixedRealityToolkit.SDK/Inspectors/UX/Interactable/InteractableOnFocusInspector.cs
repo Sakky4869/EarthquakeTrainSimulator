@@ -63,7 +63,7 @@ namespace Microsoft.MixedReality.Toolkit.UI.Editor
                     if (theme.objectReferenceValue != null)
                     {
                         InspectorUIUtility.ListSettings settings = listSettings[i];
-                        settings.Show = InspectorUIUtility.DrawSectionFoldout("Theme Settings (Click to edit)", listSettings[i].Show);
+                        settings.Show = InspectorUIUtility.DrawSectionFoldout("Theme Settings (Click to edit)", listSettings[i].Show, FontStyle.Normal);
                         if (settings.Show)
                         {
                             UnityEditor.Editor themeEditor = UnityEditor.Editor.CreateEditor(theme.objectReferenceValue);

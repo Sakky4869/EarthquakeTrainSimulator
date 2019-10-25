@@ -38,9 +38,6 @@ namespace Microsoft.MixedReality.Toolkit.Teleport
 
         #region IMixedRealityService Implementation
 
-        /// <inheritdoc/>
-        public override string Name { get; protected set; } = "Mixed Reality Teleport System";
-
         /// <inheritdoc />
         public override void Initialize()
         {
@@ -114,6 +111,7 @@ namespace Microsoft.MixedReality.Toolkit.Teleport
         /// <summary>
         /// Unregister a <see href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</see> from listening to Teleport events.
         /// </summary>
+        /// <param name="listener"></param>
         public override void Register(GameObject listener)
         {
             base.Register(listener);
@@ -122,6 +120,7 @@ namespace Microsoft.MixedReality.Toolkit.Teleport
         /// <summary>
         /// Unregister a <see href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</see> from listening to Teleport events.
         /// </summary>
+        /// <param name="listener"></param>
         public override void Unregister(GameObject listener)
         {
             base.Unregister(listener);

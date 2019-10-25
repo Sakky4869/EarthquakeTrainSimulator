@@ -15,6 +15,9 @@ namespace Microsoft.MixedReality.Toolkit.Input
         /// <summary>
         /// Constructor.
         /// </summary>
+        /// <param name="description"></param>
+        /// <param name="gestureType"></param>
+        /// <param name="action"></param>
         public MixedRealityGestureMapping(string description, GestureInputType gestureType, MixedRealityInputAction action)
         {
             this.description = description;

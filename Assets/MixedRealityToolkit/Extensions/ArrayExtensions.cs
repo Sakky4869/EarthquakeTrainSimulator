@@ -6,7 +6,7 @@ using System;
 namespace Microsoft.MixedReality.Toolkit
 {
     /// <summary>
-    /// <see cref="System.Array"/> type method extensions.
+    /// <see cref="Array"/> type method extensions.
     /// </summary>
     public static class ArrayExtensions
     {
@@ -15,6 +15,7 @@ namespace Microsoft.MixedReality.Toolkit
         /// </summary>
         /// <param name="array">The array to wrap the index around.</param>
         /// <param name="index">The index to look for.</param>
+        /// <returns></returns>
         public static int WrapIndex(this Array array, int index)
         {
             int length = array.Length;
@@ -24,6 +25,8 @@ namespace Microsoft.MixedReality.Toolkit
         /// <summary>
         /// Checks whether the given array is not null and has at least one entry
         /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
         public static bool IsValidArray(this Array array)
         {
             return array != null && array.Length > 0;

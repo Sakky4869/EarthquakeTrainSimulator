@@ -7,7 +7,7 @@ using System.Text;
 namespace Microsoft.MixedReality.Toolkit
 {
     /// <summary>
-    /// <see cref="System.String"/> Extensions.
+    /// <see cref="String"/> Extensions.
     /// </summary>
     public static class StringExtensions
     {
@@ -37,6 +37,7 @@ namespace Microsoft.MixedReality.Toolkit
         /// Capitalize the first character and add a space before
         /// each capitalized letter (except the first character).
         /// </summary>
+        /// <param name="value"></param>
         public static string ToProperCase(this string value)
         {
             // If there are 0 or 1 characters, just return the string.

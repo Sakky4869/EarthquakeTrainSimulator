@@ -22,7 +22,10 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// <summary>
         /// Lerps between two settings
         /// </summary>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
         /// <param name="t">Value from 0 to 1</param>
+        /// <returns></returns>
         public static RuntimeSunlightSettings Lerp(RuntimeSunlightSettings from, RuntimeSunlightSettings to, float t)
         {
             bool notStarted     = t <= 0;
@@ -38,6 +41,8 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// <summary>
         /// Sets continuous settings to 'black' without changing any discrete features.
         /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
         public static RuntimeSunlightSettings Black(RuntimeSunlightSettings source)
         {
             source.Color        = Color.clear;

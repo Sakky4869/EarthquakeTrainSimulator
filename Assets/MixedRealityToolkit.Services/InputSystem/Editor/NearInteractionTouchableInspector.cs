@@ -2,19 +2,50 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using System;
-using UnityEditor;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Microsoft.MixedReality.Toolkit.Input
 {
-    [CustomEditor(typeof(NearInteractionTouchable), true)]
-    public class NearInteractionTouchableInspector : NearInteractionTouchableInspectorBase
+    [UnityEditor.CustomEditor(typeof(NearInteractionTouchable), true)]
+    public class NearInteractionTouchableInspector : UnityEditor.Editor
     {
+        private readonly Color handleColor = Color.white;
+        private readonly Color fillColor = new Color(0, 0, 0, 0);
+
+        protected virtual void OnSceneGUI()
+        {
+            NearInteractionTouchable t = (NearInteractionTouchable)target;
+
+            if (Event.current.type == EventType.Repaint)
+            {
+                UnityEditor.Handles.color = handleColor;
+
+                Vector3 center = t.transform.TransformPoint(t.LocalCenter);
+
+                float arrowSize = UnityEditor.HandleUtility.GetHandleSize(center) * 0.75f;
+                UnityEditor.Handles.ArrowHandleCap(0, center, Quaternion.LookRotation(t.transform.rotation * t.LocalForward), arrowSize, EventType.Repaint);
+
+                Vector3 rightDelta = t.transform.localToWorldMatrix.MultiplyVector(t.LocalRight * t.Bounds.x / 2);
+                Vector3 upDelta = t.transform.localToWorldMatrix.MultiplyVector(t.LocalUp * t.Bounds.y / 2);
+
+                Vector3[] points = new Vector3[4];
+                points[0] = center + rightDelta + upDelta;
+                points[1] = center - rightDelta + upDelta;
+                points[2] = center - rightDelta - upDelta;
+                points[3] = center + rightDelta - upDelta;
+
+                UnityEditor.Handles.DrawSolidRectangleWithOutline(points, fillColor, handleColor);
+            }
+        }
+
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
 
-            var t = (NearInteractionTouchable)target;
+            NearInteractionTouchable t = (NearInteractionTouchable)target;
             BoxCollider bc = t.GetComponent<BoxCollider>();
             RectTransform rt = t.GetComponent<RectTransform>();
             if (bc != null)
@@ -27,22 +58,22 @@ namespace Microsoft.MixedReality.Toolkit.Input
                 // Resize helper
                 if (adjustedSize != t.Bounds)
                 {
-                    EditorGUILayout.HelpBox("Bounds do not match the BoxCollider size", MessageType.Warning);
+                    UnityEditor.EditorGUILayout.HelpBox("Bounds do not match the BoxCollider size", UnityEditor.MessageType.Warning);
                     if (GUILayout.Button("Fix Bounds"))
                     {
-                        Undo.RecordObject(t, "Fix Bounds");
-                        t.SetBounds(adjustedSize);
+                        UnityEditor.Undo.RecordObject(t, "Fix Bounds");
+                        t.Bounds = adjustedSize;
                     }
                 }
 
                 // Recentre helper
                 if (t.LocalCenter != bc.center + Vector3.Scale(bc.size / 2.0f, t.LocalForward))
                 {
-                    EditorGUILayout.HelpBox("Center does not match the BoxCollider center", MessageType.Warning);
+                    UnityEditor.EditorGUILayout.HelpBox("Center does not match the BoxCollider center", UnityEditor.MessageType.Warning);
                     if (GUILayout.Button("Fix Center"))
                     {
-                        Undo.RecordObject(t, "Fix Center");
-                        t.SetLocalCenter(bc.center + Vector3.Scale(bc.size / 2.0f, t.LocalForward));
+                        UnityEditor.Undo.RecordObject(t, "Fix Center");
+                        t.LocalCenter = bc.center + Vector3.Scale(bc.size / 2.0f, t.LocalForward);
                     }
                 }
             }
@@ -51,20 +82,20 @@ namespace Microsoft.MixedReality.Toolkit.Input
                 // Resize Helper
                 if (rt.sizeDelta != t.Bounds)
                 {
-                    EditorGUILayout.HelpBox("Bounds do not match the RectTransform size", MessageType.Warning);
+                    UnityEditor.EditorGUILayout.HelpBox("Bounds do not match the RectTransform size", UnityEditor.MessageType.Warning);
                     if (GUILayout.Button("Fix Bounds"))
                     {
-                        Undo.RecordObject(t, "Fix Bounds");
-                        t.SetBounds(rt.sizeDelta);
+                        UnityEditor.Undo.RecordObject(t, "Fix Bounds");
+                        t.Bounds = rt.sizeDelta;
                     }
                 }
 
                 if (t.GetComponentInParent<Canvas>() != null && t.LocalForward != new Vector3(0, 0, -1))
                 {
-                    EditorGUILayout.HelpBox("Unity UI generally has forward facing away from the front. The LocalForward direction specified does not match the expected forward direction.", MessageType.Warning);
+                    UnityEditor.EditorGUILayout.HelpBox("Unity UI generally has forward facing away from the front. The LocalForward direction specified does not match the expected forward direction.", UnityEditor.MessageType.Warning);
                     if (GUILayout.Button("Fix Forward Direction"))
                     {
-                        Undo.RecordObject(t, "Fix Forward Direction");
+                        UnityEditor.Undo.RecordObject(t, "Fix Forward Direction");
                         t.SetLocalForward(new Vector3(0, 0, -1));
                     }
                 }
@@ -73,59 +104,17 @@ namespace Microsoft.MixedReality.Toolkit.Input
             // Perpendicular forward/up vectors helpers
             if (!t.AreLocalVectorsOrthogonal)
             {
-                EditorGUILayout.HelpBox("Local Forward and Local Up are not perpendicular.", MessageType.Warning);
+                UnityEditor.EditorGUILayout.HelpBox("Local Forward and Local Up are not perpendicular.", UnityEditor.MessageType.Warning);
                 if (GUILayout.Button("Fix Local Up"))
                 {
-                    Undo.RecordObject(t, "Fix Local Up");
+                    UnityEditor.Undo.RecordObject(t, "Fix Local Up");
                     t.SetLocalForward(t.LocalForward);
                 }
                 if (GUILayout.Button("Fix Local Forward"))
                 {
-                    Undo.RecordObject(t, "Fix Local Forward");
+                    UnityEditor.Undo.RecordObject(t, "Fix Local Forward");
                     t.SetLocalUp(t.LocalUp);
                 }
-            }
-        }
-    }
-
-    [CustomEditor(typeof(BaseNearInteractionTouchable), true)]
-    public class NearInteractionTouchableInspectorBase : Editor
-    {
-        private readonly Color handleColor = Color.white;
-        private readonly Color fillColor = new Color(0, 0, 0, 0);
-
-        protected virtual void OnSceneGUI()
-        {
-            var t = (NearInteractionTouchableSurface)target;
-
-            if (Event.current.type == EventType.Repaint)
-            {
-                Handles.color = handleColor;
-
-                Vector3 center = t.transform.TransformPoint(t.LocalCenter);
-
-                float arrowSize = HandleUtility.GetHandleSize(center) * 0.75f;
-                Handles.ArrowHandleCap(0, center, Quaternion.LookRotation(t.transform.rotation * -t.LocalPressDirection), arrowSize, EventType.Repaint);
-
-                var localRight = Vector3.right;
-                var localUp = Vector3.up;
-
-                if (t is NearInteractionTouchable touchableConcrete)
-                {
-                    localRight = touchableConcrete.LocalRight;
-                    localUp = touchableConcrete.LocalUp;
-                }
-
-                Vector3 rightDelta = t.transform.localToWorldMatrix.MultiplyVector(localRight * t.Bounds.x / 2);
-                Vector3 upDelta = t.transform.localToWorldMatrix.MultiplyVector(localUp * t.Bounds.y / 2);
-
-                Vector3[] points = new Vector3[4];
-                points[0] = center + rightDelta + upDelta;
-                points[1] = center - rightDelta + upDelta;
-                points[2] = center - rightDelta - upDelta;
-                points[3] = center + rightDelta - upDelta;
-
-                Handles.DrawSolidRectangleWithOutline(points, fillColor, handleColor);
             }
         }
     }

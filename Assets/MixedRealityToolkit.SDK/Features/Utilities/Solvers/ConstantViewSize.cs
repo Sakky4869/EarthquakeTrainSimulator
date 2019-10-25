@@ -141,9 +141,8 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Solvers
         private float fovScalar = 1f;
         private float objectSize = 1f;
 
-        protected override void Start()
+        protected virtual void Start()
         {
-            base.Start();
             RecalculateBounds();
         }
 

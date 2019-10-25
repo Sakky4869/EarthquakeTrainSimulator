@@ -22,6 +22,9 @@ namespace Microsoft.MixedReality.Toolkit.Input
         /// <summary>
         /// Populates the event with data.
         /// </summary>
+        /// <param name="inputSource"></param>
+        /// <param name="controller"></param>
+        /// <param name="data"></param>
         public void Initialize(IMixedRealityInputSource inputSource, IMixedRealityController controller, T data)
         {
             Initialize(inputSource, controller);

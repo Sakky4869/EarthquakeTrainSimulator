@@ -87,6 +87,7 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// Singly loads next content scene (if available) and unloads all other content scenes.
         /// Useful for inspectors.
         /// </summary>
+        /// <param name="wrap"></param>
         public void EditorLoadNextContent(bool wrap = false)
         {
             string contentSceneName;
@@ -112,6 +113,7 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// Singly loads previous content scene (if available) and unloads all other content scenes.
         /// Useful for inspectors.
         /// </summary>
+        /// <param name="wrap"></param>
         public void EditorLoadPrevContent(bool wrap = false)
         {
             string contentSceneName;
@@ -342,6 +344,7 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// <summary>
         /// Loads all lighting scenes, extracts their lighting data, then caches that data in the profile.
         /// </summary>
+        /// <returns></returns>
         private async Task EditorUpdateCachedLighting()
         {
             // Clear out our lighting cache
@@ -408,6 +411,7 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// <summary>
         /// Ensures that if a content scene is loaded, that scene is set active, rather than a lighting or manager scene.
         /// </summary>
+        /// <param name="activeSceneDirty"></param>
         private void EditorUpdateContentScenes(bool activeSceneDirty)
         {
             if (!profile.UseLightingScene || !profile.EditorManageLoadedScenes)
@@ -552,6 +556,7 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// <summary>
         /// If a lighting scene is being used, this ensures that at least one lighting scene is loaded in editor.
         /// </summary>
+        /// <param name="heirarchyDirty"></param>
         private void EditorUpdateLightingScene(bool heirarchyDirty)
         {
             if (!profile.UseLightingScene || !profile.EditorManageLoadedScenes)
@@ -597,6 +602,7 @@ namespace Microsoft.MixedReality.Toolkit.SceneSystem
         /// <summary>
         /// Ensures that only approved component types are present in lighting scenes.
         /// </summary>
+        /// <param name="scene"></param>
         private void EditorEnforceLightingSceneTypes(Scene scene)
         {
             if (EditorSceneManager.sceneCount == 1)

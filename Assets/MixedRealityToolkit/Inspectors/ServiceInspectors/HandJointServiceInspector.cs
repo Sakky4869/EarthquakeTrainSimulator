@@ -10,7 +10,7 @@ using Microsoft.MixedReality.Toolkit.Utilities;
 
 namespace Microsoft.MixedReality.Toolkit.Editor
 {
-    [MixedRealityServiceInspector(typeof(IMixedRealityHandJointService))]
+    [MixedRealityServiceInspector(typeof(HandJointService))]
     public class HandJointServiceInspector : BaseMixedRealityServiceInspector
     {
         private const string ShowHandPreviewInSceneViewKey = "MRTK_HandJointServiceInspector_ShowHandPreviewInSceneViewKey";

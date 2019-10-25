@@ -2,8 +2,7 @@
     "name": "Microsoft.MixedReality.Toolkit.Editor.Utilities",
     "references": [
         "Unity.TextMeshPro.Editor",
-        "Unity.TextMeshPro",
-        "Microsoft.MixedReality.Toolkit.Editor.ClassExtensions"
+        "Unity.TextMeshPro"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [

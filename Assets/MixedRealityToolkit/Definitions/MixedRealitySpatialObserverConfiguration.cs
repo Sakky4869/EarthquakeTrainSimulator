@@ -11,7 +11,7 @@ namespace Microsoft.MixedReality.Toolkit.SpatialAwareness
     public struct MixedRealitySpatialObserverConfiguration : IMixedRealityServiceConfiguration
     {
         [SerializeField]
-        [Implements(typeof(IMixedRealitySpatialAwarenessObserver), TypeGrouping.ByNamespaceFlat)]
+        [Implements(typeof(IMixedRealitySpatialAwarenessMeshObserver), TypeGrouping.ByNamespaceFlat)]
         private SystemType componentType;
 
         /// <inheritdoc />

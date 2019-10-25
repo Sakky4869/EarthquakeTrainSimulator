@@ -59,6 +59,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
 
         protected abstract string ControllerName { get; }
 
+
         private IMixedRealityController controller;
 
         /// <inheritdoc />

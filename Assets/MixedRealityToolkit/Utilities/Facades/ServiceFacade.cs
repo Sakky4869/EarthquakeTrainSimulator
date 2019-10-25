@@ -16,35 +16,41 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Facades
         public static Dictionary<Type, ServiceFacade> FacadeServiceLookup = new Dictionary<Type, ServiceFacade>();
         public static List<ServiceFacade> ActiveFacadeObjects = new List<ServiceFacade>();
 
-        public IMixedRealityService Service { get; private set; } = null;
-        public Type ServiceType { get; private set; } = null;
-        public bool Destroyed { get; private set; } = false;
+        public IMixedRealityService Service { get { return service; } }
+        public Type ServiceType { get { return serviceType; } }
+        public bool Destroyed { get { return destroyed; } }
 
-        public void SetService(IMixedRealityService service)
+        private IMixedRealityService service = null;
+        private Type serviceType = null;
+        private bool destroyed = false;
+        private Transform facadeParent;
+
+        public void SetService(IMixedRealityService service, Transform facadeParent)
         {
-            this.Service = service;
+            this.service = service;
+            this.facadeParent = facadeParent;
 
             if (service == null)
             {
-                ServiceType = null;
+                serviceType = null;
                 name = "(Destroyed)";
                 gameObject.SetActive(false);
                 return;
             }
             else
             {
-                this.ServiceType = service.GetType();
+                this.serviceType = service.GetType();
 
-                name = ServiceType.Name;
+                name = serviceType.Name;
                 gameObject.SetActive(true);
 
-                if (!FacadeServiceLookup.ContainsKey(ServiceType))
+                if (!FacadeServiceLookup.ContainsKey(serviceType))
                 {
-                    FacadeServiceLookup.Add(ServiceType, this);
+                    FacadeServiceLookup.Add(serviceType, this);
                 }
                 else
                 {
-                    FacadeServiceLookup[ServiceType] = this;
+                    FacadeServiceLookup[serviceType] = this;
                 }
 
                 if (!ActiveFacadeObjects.Contains(this))
@@ -54,13 +60,28 @@ namespace Microsoft.MixedReality.Toolkit.Utilities.Facades
             }
         }
 
+        public void CheckIfStillValid()
+        {
+            if (service == null || transform.parent != facadeParent)
+            {
+                if (Application.isPlaying)
+                {
+                    GameObject.Destroy(gameObject);
+                }
+                else
+                {
+                    GameObject.DestroyImmediate(gameObject);
+                }
+            }
+        }
+
         private void OnDestroy()
         {
-            Destroyed = true;
+            destroyed = true;
 
-            if (FacadeServiceLookup != null && ServiceType != null)
+            if (FacadeServiceLookup != null && serviceType != null)
             {
-                FacadeServiceLookup.Remove(ServiceType);
+                FacadeServiceLookup.Remove(serviceType);
             }
 
             ActiveFacadeObjects.Remove(this);

@@ -41,6 +41,7 @@ namespace Microsoft.MixedReality.Toolkit.Boundary
         /// <summary>
         /// Constructor.
         /// </summary>
+        /// <param name="eventSystem"></param>
         public BoundaryEventData(EventSystem eventSystem) : base(eventSystem) { }
 
         public void Initialize(
