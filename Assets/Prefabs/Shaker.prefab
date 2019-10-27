@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6645859197333868926}
-  - component: {fileID: 6645859197333868927}
+  - component: {fileID: 8305665271994828977}
   m_Layer: 0
   m_Name: Shaker
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6645859197333868927
+--- !u!114 &8305665271994828977
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6645859197333868925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f1cf7bc53e0e1c418f7c54dfe86bfa8, type: 3}
+  m_Script: {fileID: 11500000, guid: 932d0e019dbc6f44dba1488a0fcfc8e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeScale: 1
