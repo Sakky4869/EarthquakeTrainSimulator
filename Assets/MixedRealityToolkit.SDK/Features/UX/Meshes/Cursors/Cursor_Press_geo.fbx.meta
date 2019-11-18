@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c8ab27991c8db63459235e90df36b775
+guid: caf154e80e62ac7439f2b35a96114c28
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -10,9 +10,19 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cursor_Press
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light
+    second: {fileID: 2100000, guid: d7c7db2cf580ab94084f0561d16ded07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shadow
+    second: {fileID: 2100000, guid: fc1b6cd8da653e3448dcdb722ada2ebc, type: 2}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

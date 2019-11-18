@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 2496ce5434008b54f9e70f10538f4e80
+guid: 57c53da2552a8114ab6d68e0cd31b1eb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: lambert1
+    2100002: No Name
     2300000: //RootNode
     3300000: //RootNode
     4300000: shl_adjustBoxRotateWidget_Sq_16mmx2mm

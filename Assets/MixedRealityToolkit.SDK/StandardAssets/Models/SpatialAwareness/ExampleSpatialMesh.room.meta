@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 672524f5d17ff8c42a2dbd57e80bf2d1
+guid: 2d029f2a1321676428ce89872882c605
 ScriptedImporter:
   fileIDToRecycleName:
     100000: ExampleSpatialMesh/ExampleSpatialMesh
@@ -1244,4 +1244,4 @@ ScriptedImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  script: {fileID: 11500000, guid: 2e7ad3321c7001a45bd16e8d50ea21af, type: 3}
+  script: {fileID: 11500000, guid: 3e312619098114845b63f18fff5c4d91, type: 3}

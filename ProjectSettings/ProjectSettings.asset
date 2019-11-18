@@ -536,7 +536,7 @@ PlayerSettings:
   scriptingDefineSymbols: {}
   platformArchitecture: {}
   scriptingBackend:
-    Metro: 2
+    Metro: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
@@ -548,11 +548,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: EarthquakeTrainSimulator
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\yoslab\Documents\Sakai\Git\Sakky4869\EarthquakeTrainSimulator\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: Sakky
+  metroCertificateIssuer: Sakky
+  metroCertificateNotAfter: 00ca1855ecbcd601
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: 

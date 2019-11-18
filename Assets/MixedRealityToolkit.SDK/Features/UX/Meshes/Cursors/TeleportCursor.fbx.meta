@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 1a89b1b06a7202049ab6aa484aedcb5e
+guid: 63df887775f744ff81b5498f43f24074
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Camera
     100002: Directional Light
-    100004: //RootNode
-    100006: TeleportPadArrow
-    100008: TeleportPadBase
+    100004: TeleportPadArrow
+    100006: TeleportPadBase
+    100008: //RootNode
     100010: TeleportPadMid
     400000: Camera
     400002: Directional Light
-    400004: //RootNode
-    400006: TeleportPadArrow
-    400008: TeleportPadBase
+    400004: TeleportPadArrow
+    400006: TeleportPadBase
+    400008: //RootNode
     400010: TeleportPadMid
     2000000: Camera
     2100000: Default
@@ -64,10 +64,10 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -88,7 +88,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   importAnimation: 1

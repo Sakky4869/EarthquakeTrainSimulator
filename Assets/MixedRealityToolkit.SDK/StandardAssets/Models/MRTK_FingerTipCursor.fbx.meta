@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d1c382b9e11fdd468353d0c8833dc38
+guid: 53f3b56542efab947876d4aae08d36c2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -9,7 +9,12 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: thick_ring
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: aa5119690ae21f44cbf896a1ee51d015, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -71,7 +76,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
