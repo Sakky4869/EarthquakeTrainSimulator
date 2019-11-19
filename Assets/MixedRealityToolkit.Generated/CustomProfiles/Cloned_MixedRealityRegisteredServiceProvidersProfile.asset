@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: Cloned_MixedRealityRegisteredServiceProvidersProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  configurations: []
+  configurations:
+  - componentType:
+      reference: 
+    componentName: FirstService
+    priority: 10
+    runtimePlatform: -1
+    configurationProfile: {fileID: 0}

@@ -548,7 +548,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: EarthquakeTrainSimulator
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: C:\Users\yoslab\Documents\Sakai\Git\Sakky4869\EarthquakeTrainSimulator\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: Sakky
   metroCertificateIssuer: Sakky
