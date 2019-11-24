@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MR/Shake_MR.unity
-    guid: 76ec338e241c29b498b8cc3dc87ca9e7
+    path: Assets/MixedRealityToolkit.Examples/Demos/SpatialAwareness/Scenes/SpatialAwarenessMeshDemo.unity
+    guid: 9db181581e617224e962601f062da844
   m_configObjects: {}

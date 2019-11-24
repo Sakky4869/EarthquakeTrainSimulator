@@ -313,16 +313,12 @@ struct Dictionary_2_tBA5388DBB42BF620266F9A48E8B859BBBB224E25;
 struct IEnumerable_1_t2F75FCBEC68AFE08982DA43985F9D04056E2BE73;
 // System.Collections.Generic.IEnumerable`1<UnityEngine.Events.BaseInvokableCall>
 struct IEnumerable_1_tA277DF3D05CABC059E6137D5CD3EE743BE673A2E;
-// System.Collections.Generic.List`1<System.Int32>
-struct List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D;
 // System.Collections.Generic.List`1<System.Type>
 struct List_1_tE9D3AD6B1DEE5D980D8D2F6C31987453E6E1C1E0;
 // System.Collections.Generic.List`1<UnityEngine.BeforeRenderHelper/OrderBlock>
 struct List_1_t53AD896B2509A4686D143641030CF022753D3B04;
-// System.Collections.Generic.List`1<UnityEngine.Color32>
-struct List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5;
 // System.Collections.Generic.List`1<UnityEngine.Component>
 struct List_1_tAAE8BF32F260E5939A1EAF05F4C38C7841B64300;
 // System.Collections.Generic.List`1<UnityEngine.Events.BaseInvokableCall>
@@ -331,10 +327,6 @@ struct List_1_tB6CB50ED979D7494123AC5ADF0C1C587142B5694;
 struct List_1_t6B8F9A15E77B7ADDEC3517ABF412688958E810C2;
 // System.Collections.Generic.List`1<UnityEngine.Matrix4x4>
 struct List_1_tEB5A83AED8C110BD9C7C0230388DC70C83A6B4D7;
-// System.Collections.Generic.List`1<UnityEngine.Vector2>
-struct List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB;
-// System.Collections.Generic.List`1<UnityEngine.Vector3>
-struct List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5;
 // System.Collections.Generic.List`1<UnityEngine.Vector4>
 struct List_1_tFF4005B40E5BA433006DA11C56DB086B1E2FC955;
 // System.Collections.IDictionary
@@ -373,8 +365,6 @@ struct Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7;
 struct ReadWriteTask_tFA17EEE8BC5C4C83EAEFCC3662A30DE351ABAA80;
 // System.IndexOutOfRangeException
 struct IndexOutOfRangeException_tEC7665FC66525AB6A6916A7EB505E5591683F0CF;
-// System.Int32[]
-struct Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83;
 // System.IntPtr[]
 struct IntPtrU5BU5D_t4DC01DCB9A6DF6C9792A6513595D7A11E637DCDD;
 // System.InvalidOperationException
@@ -437,8 +427,6 @@ struct AsyncOperation_t304C51ABED8AE734CC8DDDFE13013D8D5A44641D;
 struct OrderBlockU5BU5D_t1C62FB945EC1F218FB6301A770FBF3C67B0AA101;
 // UnityEngine.Behaviour
 struct Behaviour_tBDC7E9C3C898AD8348891B82D3E345801D920CA8;
-// UnityEngine.BoneWeight[]
-struct BoneWeightU5BU5D_t0CFB75EF43257A99CDCF393A069504F365A13F8D;
 // UnityEngine.BootConfigData
 struct BootConfigData_tDAD0635222140DCA86FC3C27BA41140D7ACD3500;
 // UnityEngine.Camera
@@ -447,14 +435,8 @@ struct Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34;
 struct CameraCallback_t8BBB42AA08D7498DFC11F4128117055BC7F0B9D0;
 // UnityEngine.Camera[]
 struct CameraU5BU5D_t2A1957E88FB79357C12B87941970D776D30E90F9;
-// UnityEngine.Color32[]
-struct Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983;
 // UnityEngine.ColorUsageAttribute
 struct ColorUsageAttribute_t42922412257F820E685FAC4C4E17A044E391DA77;
-// UnityEngine.Color[]
-struct ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399;
-// UnityEngine.CombineInstance[]
-struct CombineInstanceU5BU5D_t3865A4038A85A764FCE1EE0C134B77C42F4610DA;
 // UnityEngine.Component
 struct Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621;
 // UnityEngine.Component[]
@@ -629,8 +611,6 @@ struct TouchU5BU5D_t38D94C6D76F3094870385FAC3A56D30651B41571;
 struct Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA;
 // UnityEngine.UnityException
 struct UnityException_t513F7D97037DB40AE78D7C3AAA2F9E011D050C28;
-// UnityEngine.Vector2[]
-struct Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6;
 // UnityEngine.Vector3[]
 struct Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28;
 // UnityEngine.Vector4[]
@@ -689,7 +669,6 @@ extern RuntimeClass* IRenderPipelineAsset_tD337D8556267C1348960FCC250EA1BA0FC635
 extern RuntimeClass* IRenderPipeline_t8EF590EEEC1C2078F8F61296569841619584051E_il2cpp_TypeInfo_var;
 extern RuntimeClass* IScriptableRuntimeReflectionSystem_t3635F81D0F014A163A32492F27885B589F491CFD_il2cpp_TypeInfo_var;
 extern RuntimeClass* IndexOutOfRangeException_tEC7665FC66525AB6A6916A7EB505E5591683F0CF_il2cpp_TypeInfo_var;
-extern RuntimeClass* Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83_il2cpp_TypeInfo_var;
 extern RuntimeClass* Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var;
 extern RuntimeClass* IntPtr_t_il2cpp_TypeInfo_var;
 extern RuntimeClass* InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1_il2cpp_TypeInfo_var;
@@ -733,25 +712,21 @@ extern String_t* _stringLiteral048B0CB1B94379C74E7E8C8EDE496E3EDBEA3386;
 extern String_t* _stringLiteral06F698F91B91896BF75FB59AAB15C32EE16915B5;
 extern String_t* _stringLiteral0B0C6F90D172B22857FDB7C4E16D3DD858581ACC;
 extern String_t* _stringLiteral0E8A3AD980EC179856012B7EECF4327E99CD44CD;
-extern String_t* _stringLiteral107D5821A0DB5D8832BC2CA4B1077C727E1DFE31;
 extern String_t* _stringLiteral109085BEAAA80AC89858B283A64F7C75D7E5BB12;
 extern String_t* _stringLiteral11A5592FF03FA0D18EC479A9E093D40148A2D26E;
 extern String_t* _stringLiteral1B40E2583CF06A80CF10FAF11EA02E9055EFE33F;
 extern String_t* _stringLiteral1C8D81506A5291DBB0387C737FDF626D63480060;
 extern String_t* _stringLiteral1CC32B259A41E8B8DD0597C9B8219D0230AECB9E;
-extern String_t* _stringLiteral1E01512B1E7D3EA5B69D1F71AC90A9451071D646;
 extern String_t* _stringLiteral1E99EFAFA01D35F97926E2BBE328610919F36659;
 extern String_t* _stringLiteral264F39CC9BCB314C51EEFF1A9C09A4458087705F;
 extern String_t* _stringLiteral26BC9FCC4A22AC826376FD5B01994A9E68FF20C6;
 extern String_t* _stringLiteral283DC162F559BF50910DB3C25284CB429E9EE14A;
-extern String_t* _stringLiteral304A1E2F234F03D8786B9EE52C73F08670574139;
 extern String_t* _stringLiteral34719D16D6F53307F509A1D99E0FDD956F80F142;
 extern String_t* _stringLiteral36BDCAB142B91EE6C030073C24B3B2A5605ED74A;
 extern String_t* _stringLiteral3FD40955BCA4AE3989BB067FF4FB1364E5A9D835;
 extern String_t* _stringLiteral429E5FA4D1D7144F34D28671D44DCF82BA6A3ADD;
 extern String_t* _stringLiteral42A57E9753A1AFFFE949244ED042966A087A8C2F;
 extern String_t* _stringLiteral49FAEE9DE7455777E94433D660E9CA3CE263BD85;
-extern String_t* _stringLiteral50D1B2A6B03878A10979D602AECFA9BB26E78C47;
 extern String_t* _stringLiteral52DA7846E396FF38CD6729BEC21B6F9159F9BD1C;
 extern String_t* _stringLiteral591D0B341B32F9831431DC8FD2F0D5E954AACEE2;
 extern String_t* _stringLiteral5BD57818C2DF3B445AC86A6C4B50ECBB3F4721F9;
@@ -763,23 +738,19 @@ extern String_t* _stringLiteral713B2D8D54AF9939A7F37A46B27B5814313F1F5E;
 extern String_t* _stringLiteral74576FED5C59241DD0FDF64D0CA13849CA887B85;
 extern String_t* _stringLiteral7E493E42997D8BF6BAD12EDC42A763008C83B810;
 extern String_t* _stringLiteral87FCC6DBB03A66D222D43C3DDB39600F4225FF3B;
-extern String_t* _stringLiteral92F9201EE50CA286022631136DE6385E481B8C77;
 extern String_t* _stringLiteral97912524F34763AB6302E4B51BE6391C8A4F6200;
 extern String_t* _stringLiteral9D99F6AA5297EFC4FF08A3382AAECE4F25A4C7AE;
 extern String_t* _stringLiteralA28E0E257FBF0B2A2322682E5107D0883DA67B04;
-extern String_t* _stringLiteralA4A619AD40531127CDE9B2FB5B8C9E69C1E10098;
 extern String_t* _stringLiteralA9BB0EF2F1E06136DCF1BA6255AC08D6FBCD3D9E;
 extern String_t* _stringLiteralAD4B41A314A57C614C6AAC576837796B98D7F5A8;
 extern String_t* _stringLiteralB245F58149930DBC70CF0AA7D270B51BF8AD5B2F;
 extern String_t* _stringLiteralB2508706F03454C318CD2A078CC572987C2C6B5D;
-extern String_t* _stringLiteralB584924AE37A395C153495B3B47772CC0410415A;
 extern String_t* _stringLiteralB5E13566AA93EC76B029981582479BF4E654B374;
 extern String_t* _stringLiteralB8373CBEA40A930C450DFED4F188CBE81298B0CB;
 extern String_t* _stringLiteralB858CB282617FB0956D960215C8E84D1CCF909C6;
 extern String_t* _stringLiteralB8FF02892916FF59F7FBD4E617FCCD01F6BCA576;
 extern String_t* _stringLiteralBCDD51CC9F8CB6B408AA795D76539161DBE19FF2;
 extern String_t* _stringLiteralBE54B2A1DE3657CE39CBFEC5A3861C97B54378E1;
-extern String_t* _stringLiteralBE61A82DC2C94347C3937480003FDF860E3565FA;
 extern String_t* _stringLiteralC218E39EFA2E1AAE69F39D2054528369CE1E1F46;
 extern String_t* _stringLiteralC510EA100EEE1C261FE63B56E1F3390BFB85F481;
 extern String_t* _stringLiteralC5F1320E0B09089C9596AEE42493121EE1A0D4E6;
@@ -787,13 +758,11 @@ extern String_t* _stringLiteralC82E3D7279EFA3ECA576370AF952C815D48CE41F;
 extern String_t* _stringLiteralCC8224F01DC58430D691E89A87BA837BE4E6D283;
 extern String_t* _stringLiteralCEBD95D917358FFFF2A41BE08CC4518416DABCA7;
 extern String_t* _stringLiteralD066FC085455ED98DB6AC1BADC818019C77C44AB;
-extern String_t* _stringLiteralD0F2CF01D2531C8B4616DDF415A4015DBDB35ED7;
 extern String_t* _stringLiteralD16E4C58CF049A6CC42E4A9AA7CEDB1CE1103E03;
 extern String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 extern String_t* _stringLiteralDEFD5E9B261ED78A5B2BDEBE8237B5CA376F31BD;
 extern String_t* _stringLiteralEE9F38E186BA06F57B7B74D7E626B94E13CE2556;
 extern String_t* _stringLiteralF24E0551B0BFBBC74CD72577388E7BBD172DB16B;
-extern String_t* _stringLiteralFBE7D7BAACDD551E1D80CFB0BB0A04C017956FCC;
 extern String_t* _stringLiteralFF4B9F7DF0427C1EB1FAD117C889234A0314B61E;
 extern const RuntimeMethod* Action_1_Invoke_m45E8F9900F9DB395C48A868A7C6A83BDD7FC692F_RuntimeMethod_var;
 extern const RuntimeMethod* Action_1_Invoke_m5A882D685B08943847510936E0C7EA3F00C0B599_RuntimeMethod_var;
@@ -844,26 +813,8 @@ extern const RuntimeMethod* Material_SetFloatArray_m62969A8282FA26EBA3996A5F9B75
 extern const RuntimeMethod* Matrix4x4_GetColumn_m34D9081FB464BB7CF124C50BB5BE4C22E2DBFA9E_RuntimeMethod_var;
 extern const RuntimeMethod* Matrix4x4_get_Item_m3F051969B5275A3EA6F3C620CBE0A19FD48BE70E_RuntimeMethod_var;
 extern const RuntimeMethod* Matrix4x4_set_Item_m63E67A0D3E7C3CFEA191C2E73D4380A07C9046AE_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_DefaultDimensionForChannel_mF943AF434BB9F54DBB3B3DE65F7B816E617A89C9_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_GetAllocArrayFromChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mBD28E289F6DA9261F8B48C346E498E4CE24131C9_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_GetAllocArrayFromChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m2A198BF0F2DF179DF0C126C5A0BAFA1B75765F4E_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_GetAllocArrayFromChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mBDD94A90E9F34CAC60C6B772992E35F66EF2D64D_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_GetUVChannel_m15BB0A6CC8E32867621A78627CD5FF2CAEA163CC_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_GetUVsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mA206B788DD8FE703CB5F4AA3F61CE981407D8D62_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetArrayForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB9E837ECF9A328CD3B40632B6E5DF7CD0DB5132B_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetArrayForChannel_TisColor_t119BCA590009762C7223FDD3AF9706653AC84ED2_m09493B4E16A5C5767139466422D26B8D1F1E2589_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetArrayForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m904FEE0DE052D08A303E8BD4C858085F0D46F274_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetArrayForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_m9DCA0F6914F5735D0B865846569B5F958A34AD00_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetListForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB7B6EAB6E8B2908650E4ECBDF0E1412A72D09DBE_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetListForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_mE31ACFD0411A7877C5A24536B6C589BAD844E825_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetListForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mEAC1E80DE7B69F1F85C02591C37350C5AEE292F0_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetUvsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m67576E41684A71A434A5236E3FEDAB1C5261DF9E_RuntimeMethod_var;
-extern const RuntimeMethod* Mesh_SetUvsImpl_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m81B52673DA9C552B5A9017CD73216B4CD299DC09_RuntimeMethod_var;
 extern const RuntimeMethod* NoAllocHelpers_ExtractArrayFromListT_TisMatrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA_m3F4D7A90A21AB7E2CB7C9415F454FB1AF1E92B4F_RuntimeMethod_var;
 extern const RuntimeMethod* NoAllocHelpers_ExtractArrayFromListT_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_m853C6F703156A3DD8E35F6F207655A277145623B_RuntimeMethod_var;
-extern const RuntimeMethod* NoAllocHelpers_SafeLength_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_mAB99F87F48EF2561002200C769D115010830F1CC_RuntimeMethod_var;
 extern const RuntimeMethod* Predicate_1__ctor_m0BF07A3A1C1DBB82B5F98ABC86FE98958CCB138B_RuntimeMethod_var;
 extern const RuntimeMethod* RenderPipeline_Render_m6F569FDF85F276FDA96400155E4F976BBAA92B91_RuntimeMethod_var;
 extern const RuntimeType* Boolean_tB53F6830F670160873277339AA58F15CAED4399C_0_0_0_var;
@@ -941,8 +892,12 @@ extern const uint32_t Camera_ScreenPointToRay_m7069BC09C3D802595AC1FBAEFB3C59C8F
 extern const uint32_t Color32_ToString_m217F2AD5C02E630E37BE5CFB0933630F6D0C3555_MetadataUsageId;
 extern const uint32_t Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30_MetadataUsageId;
 extern const uint32_t Color_Equals_m63ECBA87A0F27CD7D09EEA36BCB697652E076F4E_MetadataUsageId;
+extern const uint32_t Color_HSVToRGB_mAA0ABF40600699DC136E65487B0F2F8AAA87D223_MetadataUsageId;
 extern const uint32_t Color_Lerp_mD37EF718F1BAC65A7416655F0BC902CE76559C46_MetadataUsageId;
 extern const uint32_t Color_ToString_m17A27E0CFB20D9946D130DAEDB5BDCACA5A4473F_MetadataUsageId;
+extern const uint32_t Color_get_gamma_m38A0BB5A9A0A7F860BEEB3BD9F69F72CFA926A79_MetadataUsageId;
+extern const uint32_t Color_get_linear_mB10CD29D56ADE2C811AD74A605BA11F6656E9D1A_MetadataUsageId;
+extern const uint32_t Color_get_maxColorComponent_mBA8595CB2790747F42145CB696C10E64C9BBD76D_MetadataUsageId;
 extern const uint32_t Color_op_Equality_m71B1A2F64AD6228F10E20149EF6440460D2C748E_MetadataUsageId;
 extern const uint32_t CombineInstance_set_mesh_m3AA954895BEED57612CB873638776D8087303F5F_MetadataUsageId;
 extern const uint32_t Component__ctor_m5E2740C0ACA4B368BC460315FAA2EDBFEAC0B8EF_MetadataUsageId;
@@ -980,6 +935,7 @@ extern const uint32_t Display_FireDisplaysUpdated_m1655DF7464EA901E47BCDD6C3BBB9
 extern const uint32_t Display_RecreateDisplayList_mA7E2B69AF4BD88A0C45B9A0BB7E1FFDDA5C60FE8_MetadataUsageId;
 extern const uint32_t Display_RelativeMouseAt_mABDA4BAC2C1B328A2C6A205D552AA5488BFFAA93_MetadataUsageId;
 extern const uint32_t Display__cctor_mC1A1851D26DD51ECF2C09DBB1147A7CF05EEEC9D_MetadataUsageId;
+extern const uint32_t Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA_MetadataUsageId;
 extern const uint32_t Display_get_renderingHeight_m1496BF9D66501280B4F75A31A515D8CF416838B0_MetadataUsageId;
 extern const uint32_t Display_get_renderingWidth_mA02F65BF724686D7A0CD0C192954CA22592C3B12_MetadataUsageId;
 extern const uint32_t Display_get_systemHeight_m0D7950CB39015167C175634EF8A5E0C52FBF5EC7_MetadataUsageId;
@@ -1028,6 +984,7 @@ extern const uint32_t Material_SetFloatArray_m62969A8282FA26EBA3996A5F9B752761A9
 extern const uint32_t Material__ctor_m0171C6D4D3FD04D58C70808F255DBA67D0ED2BDE_MetadataUsageId;
 extern const uint32_t Material__ctor_m02F4232D67F46B1EE84441089306E867B1788924_MetadataUsageId;
 extern const uint32_t Material__ctor_m81E76B5C1316004F25D4FE9CEC0E78A7428DABA8_MetadataUsageId;
+extern const uint32_t Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9_MetadataUsageId;
 extern const uint32_t Material_get_mainTextureScale_m882447FB9D8EF5873279BF15C62AD977EEEFE062_MetadataUsageId;
 extern const uint32_t Material_get_mainTexture_mE85CF647728AD145D7E03A172EFD5930773E514E_MetadataUsageId;
 extern const uint32_t Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3_MetadataUsageId;
@@ -1047,6 +1004,7 @@ extern const uint32_t Mathf_Floor_mD447D35DE1D81DE09C2EFE21A75F0444E2AEF9E1_Meta
 extern const uint32_t Mathf_InverseLerp_m7054CDF25056E9B27D2467F91C95D628508F1F31_MetadataUsageId;
 extern const uint32_t Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364_MetadataUsageId;
 extern const uint32_t Mathf_Log_mD0CFD1242805BD697B5156AA46FBB43E7636A19B_MetadataUsageId;
+extern const uint32_t Mathf_PingPong_m531DFAB96635B14C932754377C4D12927EDA0ECE_MetadataUsageId;
 extern const uint32_t Mathf_Pow_mC1BFA8F6235567CBB31F3D9507A6275635A38B5F_MetadataUsageId;
 extern const uint32_t Mathf_Repeat_m8459F4AAFF92DB770CC892BF71EE9438D9D0F779_MetadataUsageId;
 extern const uint32_t Mathf_RoundToInt_m0EAD8BD38FCB72FA1D8A04E96337C820EC83F041_MetadataUsageId;
@@ -1071,39 +1029,6 @@ extern const uint32_t Matrix4x4_get_transpose_mD7983388309D5C806DF8E79A76FF02099
 extern const uint32_t Matrix4x4_get_zero_m0998BBFF9505014951817FEDB16FAED8C5791A39_MetadataUsageId;
 extern const uint32_t Matrix4x4_op_Equality_m0584BD8992BBD5F9CE588FBECF1863154A2549A4_MetadataUsageId;
 extern const uint32_t Matrix4x4_set_Item_m63E67A0D3E7C3CFEA191C2E73D4380A07C9046AE_MetadataUsageId;
-extern const uint32_t Mesh_CheckCanAccessSubmesh_mF86EBD1C9EC3FE557880FA138510F7761585D227_MetadataUsageId;
-extern const uint32_t Mesh_DefaultDimensionForChannel_mF943AF434BB9F54DBB3B3DE65F7B816E617A89C9_MetadataUsageId;
-extern const uint32_t Mesh_GetIndices_m4260DCF1026449C4E8C4C40229D12AF8CAB26EAF_MetadataUsageId;
-extern const uint32_t Mesh_GetUVChannel_m15BB0A6CC8E32867621A78627CD5FF2CAEA163CC_MetadataUsageId;
-extern const uint32_t Mesh_GetUVs_m69A297BE5FF5A8BD3202B2007035A738247BF367_MetadataUsageId;
-extern const uint32_t Mesh_PrintErrorCantAccessIndices_mA45D3609288655A328AEB0F2F436403B1ECE5077_MetadataUsageId;
-extern const uint32_t Mesh_RecalculateBounds_m1BF701FE2CEA4E8E1183FF878B812808ED1EBA49_MetadataUsageId;
-extern const uint32_t Mesh_RecalculateNormals_m9F5DF412F81F250419D9887C76F549B692B7D027_MetadataUsageId;
-extern const uint32_t Mesh_SetColors_m237E41213E82D4BB882ED96FD81A17D9366590CF_MetadataUsageId;
-extern const uint32_t Mesh_SetNormals_m76D71A949B9288FA8ED17DDADC530365307B9797_MetadataUsageId;
-extern const uint32_t Mesh_SetTangents_m6EEAB861C9286B1DA4935B87A883045ADD3955E5_MetadataUsageId;
-extern const uint32_t Mesh_SetTriangles_m39FB983B90F36D724CC1C21BA7821C9697F86116_MetadataUsageId;
-extern const uint32_t Mesh_SetUVs_m0210150B0387289B823488D421BDF9CBF9769116_MetadataUsageId;
-extern const uint32_t Mesh_SetUVs_m77D1A7716863887E08F876DF12C45AE3967CEE5F_MetadataUsageId;
-extern const uint32_t Mesh_SetVertices_m5F487FC255C9CAF4005B75CFE67A88C8C0E7BB06_MetadataUsageId;
-extern const uint32_t Mesh__ctor_m3AEBC82AB71D4F9498F6E254174BEBA8372834B4_MetadataUsageId;
-extern const uint32_t Mesh_get_colors32_m24C6C6BC1A40B7F09FF390F304A96728A4C99246_MetadataUsageId;
-extern const uint32_t Mesh_get_normals_m3CE4668899836CBD17C3F85EB24261CBCEB3EABB_MetadataUsageId;
-extern const uint32_t Mesh_get_tangents_mFF92BD7D6EBA8C7EB8340E1529B1CB98006F44DD_MetadataUsageId;
-extern const uint32_t Mesh_get_uv2_m3E70D5DD7A5C6910A074A78296269EBF2CBAE97F_MetadataUsageId;
-extern const uint32_t Mesh_get_uv3_mC56484D8B69A65DA948C7F23B06ED490BCFBE8B0_MetadataUsageId;
-extern const uint32_t Mesh_get_uv4_m1C5734938A443D8004339E8D8DDDC33B3E0935F6_MetadataUsageId;
-extern const uint32_t Mesh_get_uv_m0EBA5CA4644C9D5F1B2125AF3FE3873EFC8A4616_MetadataUsageId;
-extern const uint32_t Mesh_get_vertices_m7D07DC0F071C142B87F675B148FC0F7A243238B9_MetadataUsageId;
-extern const uint32_t Mesh_set_colors32_m29459AFE2843D67E95D60E5A13B6F6AF7670230C_MetadataUsageId;
-extern const uint32_t Mesh_set_colors_m704D0EF58B7AED0D64AE4763EA375638FB08E026_MetadataUsageId;
-extern const uint32_t Mesh_set_normals_m4054D319A67DAAA25A794D67AD37278A84406589_MetadataUsageId;
-extern const uint32_t Mesh_set_tangents_mE66D8020B76E43A5CA3C4E60DB61CD962D7D3C57_MetadataUsageId;
-extern const uint32_t Mesh_set_uv2_m8D37F9622B68D4CEA7FCF96BE4F8E442155DB038_MetadataUsageId;
-extern const uint32_t Mesh_set_uv3_mDDBCCD5C65CC6F9378561C56E89DD7D0C3DF183D_MetadataUsageId;
-extern const uint32_t Mesh_set_uv4_m2EBB956F121C204AE03250CE4F81D6926D129C3D_MetadataUsageId;
-extern const uint32_t Mesh_set_uv_m56E4B52315669FBDA89DC9C550AC89EEE8A4E7C8_MetadataUsageId;
-extern const uint32_t Mesh_set_vertices_mC1406AE08BC3495F3B0E29B53BACC9FD7BA685C6_MetadataUsageId;
 extern const uint32_t OrderBlock_t3B2BBCE8320FAEC3DB605F7DC9AB641102F53727_com_FromNativeMethodDefinition_MetadataUsageId;
 extern const uint32_t OrderBlock_t3B2BBCE8320FAEC3DB605F7DC9AB641102F53727_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
 extern const uint32_t PersistentCallGroup_Initialize_m9F47B3D16F78FD424D50E9AE41EB066BA9C681A3_MetadataUsageId;
@@ -1162,7 +1087,6 @@ struct PlayerLoopSystem_t89BC6208BDD3B7C57FED7B0201341A7D4E846A6D_marshaled_pinv
 
 struct ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821;
 struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86;
-struct Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83;
 struct IntPtrU5BU5D_t4DC01DCB9A6DF6C9792A6513595D7A11E637DCDD;
 struct ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A;
 struct ParameterInfoU5BU5D_t9F6F38E4A0B0A78E2F463D1B2C0031716CA7A694;
@@ -1170,11 +1094,7 @@ struct ParameterModifierU5BU5D_t63EC46F14F048DC9EF6BF1362E8AEBEA1A05A5EA;
 struct SingleU5BU5D_tA7139B7CAA40EAEF9178E2C386C8A5993754FDD5;
 struct StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E;
 struct TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F;
-struct BoneWeightU5BU5D_t0CFB75EF43257A99CDCF393A069504F365A13F8D;
 struct CameraU5BU5D_t2A1957E88FB79357C12B87941970D776D30E90F9;
-struct Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983;
-struct ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399;
-struct CombineInstanceU5BU5D_t3865A4038A85A764FCE1EE0C134B77C42F4610DA;
 struct ComponentU5BU5D_t7BE50AFB6301C06D990819B3D8F35CA326CDD155;
 struct DisallowMultipleComponentU5BU5D_t59E317D853AAC982D5D18D4C1581422FC151F7E3;
 struct DisplayU5BU5D_tB2AB0FDB3B2E9FD784D5100C18EB0ED489A2CCC9;
@@ -1185,7 +1105,6 @@ struct KeyframeU5BU5D_tF4DC3E9BD9E6DB77FFF7BDC0B1545B5D6071513D;
 struct Matrix4x4U5BU5D_t1C64F7A0C34058334A8A95BF165F0027690598C9;
 struct RequireComponentU5BU5D_t4295259AA991FCAA75878E4731813266CFC5351D;
 struct TouchU5BU5D_t38D94C6D76F3094870385FAC3A56D30651B41571;
-struct Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6;
 struct Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28;
 struct Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66;
 
@@ -1259,84 +1178,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ATTRIBUTE_TF048C13FB3C8CFCC53F82290E4A3F621089F9A74_H
-#ifndef LIST_1_TE1526161A558A17A39A8B69D8EEF3801393B6226_H
-#define LIST_1_TE1526161A558A17A39A8B69D8EEF3801393B6226_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.List`1<System.Int32>
-struct  List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226  : public RuntimeObject
-{
-public:
-	// T[] System.Collections.Generic.List`1::_items
-	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* ____items_1;
-	// System.Int32 System.Collections.Generic.List`1::_size
-	int32_t ____size_2;
-	// System.Int32 System.Collections.Generic.List`1::_version
-	int32_t ____version_3;
-	// System.Object System.Collections.Generic.List`1::_syncRoot
-	RuntimeObject * ____syncRoot_4;
-
-public:
-	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226, ____items_1)); }
-	inline Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* get__items_1() const { return ____items_1; }
-	inline Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83** get_address_of__items_1() { return &____items_1; }
-	inline void set__items_1(Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* value)
-	{
-		____items_1 = value;
-		Il2CppCodeGenWriteBarrier((&____items_1), value);
-	}
-
-	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226, ____size_2)); }
-	inline int32_t get__size_2() const { return ____size_2; }
-	inline int32_t* get_address_of__size_2() { return &____size_2; }
-	inline void set__size_2(int32_t value)
-	{
-		____size_2 = value;
-	}
-
-	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226, ____version_3)); }
-	inline int32_t get__version_3() const { return ____version_3; }
-	inline int32_t* get_address_of__version_3() { return &____version_3; }
-	inline void set__version_3(int32_t value)
-	{
-		____version_3 = value;
-	}
-
-	inline static int32_t get_offset_of__syncRoot_4() { return static_cast<int32_t>(offsetof(List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226, ____syncRoot_4)); }
-	inline RuntimeObject * get__syncRoot_4() const { return ____syncRoot_4; }
-	inline RuntimeObject ** get_address_of__syncRoot_4() { return &____syncRoot_4; }
-	inline void set__syncRoot_4(RuntimeObject * value)
-	{
-		____syncRoot_4 = value;
-		Il2CppCodeGenWriteBarrier((&____syncRoot_4), value);
-	}
-};
-
-struct List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226_StaticFields
-{
-public:
-	// T[] System.Collections.Generic.List`1::_emptyArray
-	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* ____emptyArray_5;
-
-public:
-	inline static int32_t get_offset_of__emptyArray_5() { return static_cast<int32_t>(offsetof(List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226_StaticFields, ____emptyArray_5)); }
-	inline Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* get__emptyArray_5() const { return ____emptyArray_5; }
-	inline Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83** get_address_of__emptyArray_5() { return &____emptyArray_5; }
-	inline void set__emptyArray_5(Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* value)
-	{
-		____emptyArray_5 = value;
-		Il2CppCodeGenWriteBarrier((&____emptyArray_5), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LIST_1_TE1526161A558A17A39A8B69D8EEF3801393B6226_H
 #ifndef LIST_1_TE9D3AD6B1DEE5D980D8D2F6C31987453E6E1C1E0_H
 #define LIST_1_TE9D3AD6B1DEE5D980D8D2F6C31987453E6E1C1E0_H
 #ifdef __clang__
@@ -1493,84 +1334,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // LIST_1_T53AD896B2509A4686D143641030CF022753D3B04_H
-#ifndef LIST_1_T749ADA5233D9B421293A000DCB83608A24C3D5D5_H
-#define LIST_1_T749ADA5233D9B421293A000DCB83608A24C3D5D5_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.List`1<UnityEngine.Color32>
-struct  List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5  : public RuntimeObject
-{
-public:
-	// T[] System.Collections.Generic.List`1::_items
-	Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* ____items_1;
-	// System.Int32 System.Collections.Generic.List`1::_size
-	int32_t ____size_2;
-	// System.Int32 System.Collections.Generic.List`1::_version
-	int32_t ____version_3;
-	// System.Object System.Collections.Generic.List`1::_syncRoot
-	RuntimeObject * ____syncRoot_4;
-
-public:
-	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5, ____items_1)); }
-	inline Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* get__items_1() const { return ____items_1; }
-	inline Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983** get_address_of__items_1() { return &____items_1; }
-	inline void set__items_1(Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* value)
-	{
-		____items_1 = value;
-		Il2CppCodeGenWriteBarrier((&____items_1), value);
-	}
-
-	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5, ____size_2)); }
-	inline int32_t get__size_2() const { return ____size_2; }
-	inline int32_t* get_address_of__size_2() { return &____size_2; }
-	inline void set__size_2(int32_t value)
-	{
-		____size_2 = value;
-	}
-
-	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5, ____version_3)); }
-	inline int32_t get__version_3() const { return ____version_3; }
-	inline int32_t* get_address_of__version_3() { return &____version_3; }
-	inline void set__version_3(int32_t value)
-	{
-		____version_3 = value;
-	}
-
-	inline static int32_t get_offset_of__syncRoot_4() { return static_cast<int32_t>(offsetof(List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5, ____syncRoot_4)); }
-	inline RuntimeObject * get__syncRoot_4() const { return ____syncRoot_4; }
-	inline RuntimeObject ** get_address_of__syncRoot_4() { return &____syncRoot_4; }
-	inline void set__syncRoot_4(RuntimeObject * value)
-	{
-		____syncRoot_4 = value;
-		Il2CppCodeGenWriteBarrier((&____syncRoot_4), value);
-	}
-};
-
-struct List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5_StaticFields
-{
-public:
-	// T[] System.Collections.Generic.List`1::_emptyArray
-	Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* ____emptyArray_5;
-
-public:
-	inline static int32_t get_offset_of__emptyArray_5() { return static_cast<int32_t>(offsetof(List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5_StaticFields, ____emptyArray_5)); }
-	inline Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* get__emptyArray_5() const { return ____emptyArray_5; }
-	inline Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983** get_address_of__emptyArray_5() { return &____emptyArray_5; }
-	inline void set__emptyArray_5(Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* value)
-	{
-		____emptyArray_5 = value;
-		Il2CppCodeGenWriteBarrier((&____emptyArray_5), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LIST_1_T749ADA5233D9B421293A000DCB83608A24C3D5D5_H
 #ifndef LIST_1_TAAE8BF32F260E5939A1EAF05F4C38C7841B64300_H
 #define LIST_1_TAAE8BF32F260E5939A1EAF05F4C38C7841B64300_H
 #ifdef __clang__
@@ -1883,162 +1646,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // LIST_1_TEB5A83AED8C110BD9C7C0230388DC70C83A6B4D7_H
-#ifndef LIST_1_T0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB_H
-#define LIST_1_T0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.List`1<UnityEngine.Vector2>
-struct  List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB  : public RuntimeObject
-{
-public:
-	// T[] System.Collections.Generic.List`1::_items
-	Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* ____items_1;
-	// System.Int32 System.Collections.Generic.List`1::_size
-	int32_t ____size_2;
-	// System.Int32 System.Collections.Generic.List`1::_version
-	int32_t ____version_3;
-	// System.Object System.Collections.Generic.List`1::_syncRoot
-	RuntimeObject * ____syncRoot_4;
-
-public:
-	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB, ____items_1)); }
-	inline Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* get__items_1() const { return ____items_1; }
-	inline Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6** get_address_of__items_1() { return &____items_1; }
-	inline void set__items_1(Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* value)
-	{
-		____items_1 = value;
-		Il2CppCodeGenWriteBarrier((&____items_1), value);
-	}
-
-	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB, ____size_2)); }
-	inline int32_t get__size_2() const { return ____size_2; }
-	inline int32_t* get_address_of__size_2() { return &____size_2; }
-	inline void set__size_2(int32_t value)
-	{
-		____size_2 = value;
-	}
-
-	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB, ____version_3)); }
-	inline int32_t get__version_3() const { return ____version_3; }
-	inline int32_t* get_address_of__version_3() { return &____version_3; }
-	inline void set__version_3(int32_t value)
-	{
-		____version_3 = value;
-	}
-
-	inline static int32_t get_offset_of__syncRoot_4() { return static_cast<int32_t>(offsetof(List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB, ____syncRoot_4)); }
-	inline RuntimeObject * get__syncRoot_4() const { return ____syncRoot_4; }
-	inline RuntimeObject ** get_address_of__syncRoot_4() { return &____syncRoot_4; }
-	inline void set__syncRoot_4(RuntimeObject * value)
-	{
-		____syncRoot_4 = value;
-		Il2CppCodeGenWriteBarrier((&____syncRoot_4), value);
-	}
-};
-
-struct List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB_StaticFields
-{
-public:
-	// T[] System.Collections.Generic.List`1::_emptyArray
-	Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* ____emptyArray_5;
-
-public:
-	inline static int32_t get_offset_of__emptyArray_5() { return static_cast<int32_t>(offsetof(List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB_StaticFields, ____emptyArray_5)); }
-	inline Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* get__emptyArray_5() const { return ____emptyArray_5; }
-	inline Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6** get_address_of__emptyArray_5() { return &____emptyArray_5; }
-	inline void set__emptyArray_5(Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* value)
-	{
-		____emptyArray_5 = value;
-		Il2CppCodeGenWriteBarrier((&____emptyArray_5), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LIST_1_T0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB_H
-#ifndef LIST_1_TFCCBEDAA56D8F7598520FB136A9F8D713033D6B5_H
-#define LIST_1_TFCCBEDAA56D8F7598520FB136A9F8D713033D6B5_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.List`1<UnityEngine.Vector3>
-struct  List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5  : public RuntimeObject
-{
-public:
-	// T[] System.Collections.Generic.List`1::_items
-	Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* ____items_1;
-	// System.Int32 System.Collections.Generic.List`1::_size
-	int32_t ____size_2;
-	// System.Int32 System.Collections.Generic.List`1::_version
-	int32_t ____version_3;
-	// System.Object System.Collections.Generic.List`1::_syncRoot
-	RuntimeObject * ____syncRoot_4;
-
-public:
-	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5, ____items_1)); }
-	inline Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* get__items_1() const { return ____items_1; }
-	inline Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28** get_address_of__items_1() { return &____items_1; }
-	inline void set__items_1(Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* value)
-	{
-		____items_1 = value;
-		Il2CppCodeGenWriteBarrier((&____items_1), value);
-	}
-
-	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5, ____size_2)); }
-	inline int32_t get__size_2() const { return ____size_2; }
-	inline int32_t* get_address_of__size_2() { return &____size_2; }
-	inline void set__size_2(int32_t value)
-	{
-		____size_2 = value;
-	}
-
-	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5, ____version_3)); }
-	inline int32_t get__version_3() const { return ____version_3; }
-	inline int32_t* get_address_of__version_3() { return &____version_3; }
-	inline void set__version_3(int32_t value)
-	{
-		____version_3 = value;
-	}
-
-	inline static int32_t get_offset_of__syncRoot_4() { return static_cast<int32_t>(offsetof(List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5, ____syncRoot_4)); }
-	inline RuntimeObject * get__syncRoot_4() const { return ____syncRoot_4; }
-	inline RuntimeObject ** get_address_of__syncRoot_4() { return &____syncRoot_4; }
-	inline void set__syncRoot_4(RuntimeObject * value)
-	{
-		____syncRoot_4 = value;
-		Il2CppCodeGenWriteBarrier((&____syncRoot_4), value);
-	}
-};
-
-struct List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5_StaticFields
-{
-public:
-	// T[] System.Collections.Generic.List`1::_emptyArray
-	Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* ____emptyArray_5;
-
-public:
-	inline static int32_t get_offset_of__emptyArray_5() { return static_cast<int32_t>(offsetof(List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5_StaticFields, ____emptyArray_5)); }
-	inline Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* get__emptyArray_5() const { return ____emptyArray_5; }
-	inline Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28** get_address_of__emptyArray_5() { return &____emptyArray_5; }
-	inline void set__emptyArray_5(Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* value)
-	{
-		____emptyArray_5 = value;
-		Il2CppCodeGenWriteBarrier((&____emptyArray_5), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LIST_1_TFCCBEDAA56D8F7598520FB136A9F8D713033D6B5_H
 #ifndef LIST_1_TFF4005B40E5BA433006DA11C56DB086B1E2FC955_H
 #define LIST_1_TFF4005B40E5BA433006DA11C56DB086B1E2FC955_H
 #ifdef __clang__
@@ -12386,64 +11993,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MATERIALPROPERTYBLOCK_T72A481768111C6F11DCDCD44F0C7F99F1CA79E13_H
-#ifndef INTERNALVERTEXCHANNELTYPE_T6E7BF24C2E6B97B01F96625DBAF6A2CF402CFF9D_H
-#define INTERNALVERTEXCHANNELTYPE_T6E7BF24C2E6B97B01F96625DBAF6A2CF402CFF9D_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.Mesh_InternalVertexChannelType
-struct  InternalVertexChannelType_t6E7BF24C2E6B97B01F96625DBAF6A2CF402CFF9D 
-{
-public:
-	// System.Int32 UnityEngine.Mesh_InternalVertexChannelType::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(InternalVertexChannelType_t6E7BF24C2E6B97B01F96625DBAF6A2CF402CFF9D, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // INTERNALVERTEXCHANNELTYPE_T6E7BF24C2E6B97B01F96625DBAF6A2CF402CFF9D_H
-#ifndef MESHTOPOLOGY_T717F086F9A66000F22E1A30D7F2328BB96726C32_H
-#define MESHTOPOLOGY_T717F086F9A66000F22E1A30D7F2328BB96726C32_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.MeshTopology
-struct  MeshTopology_t717F086F9A66000F22E1A30D7F2328BB96726C32 
-{
-public:
-	// System.Int32 UnityEngine.MeshTopology::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(MeshTopology_t717F086F9A66000F22E1A30D7F2328BB96726C32, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MESHTOPOLOGY_T717F086F9A66000F22E1A30D7F2328BB96726C32_H
 #ifndef MIXEDLIGHTINGMODE_TD50D086A6C9F7CC6A40199CA74FCED3FAAF7150C_H
 #define MIXEDLIGHTINGMODE_TD50D086A6C9F7CC6A40199CA74FCED3FAAF7150C_H
 #ifdef __clang__
@@ -12735,35 +12284,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RENDERTEXTUREFORMAT_T2AB1B77FBD247648292FBBE1182F12B5FC47AF85_H
-#ifndef INDEXFORMAT_T92C58F1C3C12C24A5F430966267EA43F6C4C16EB_H
-#define INDEXFORMAT_T92C58F1C3C12C24A5F430966267EA43F6C4C16EB_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.Rendering.IndexFormat
-struct  IndexFormat_t92C58F1C3C12C24A5F430966267EA43F6C4C16EB 
-{
-public:
-	// System.Int32 UnityEngine.Rendering.IndexFormat::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(IndexFormat_t92C58F1C3C12C24A5F430966267EA43F6C4C16EB, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // INDEXFORMAT_T92C58F1C3C12C24A5F430966267EA43F6C4C16EB_H
 #ifndef LIGHTPROBEUSAGE_TC8F0DD8098B4ED548AEAD72D6B39089CE68CBBD8_H
 #define LIGHTPROBEUSAGE_TC8F0DD8098B4ED548AEAD72D6B39089CE68CBBD8_H
 #ifdef __clang__
@@ -12822,35 +12342,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SHADOWCASTINGMODE_T699023357D66025632B533A17D0FB1E4548141FF_H
-#ifndef VERTEXATTRIBUTE_T2D79DF64001C55DA72AC86CE8946098970E8194D_H
-#define VERTEXATTRIBUTE_T2D79DF64001C55DA72AC86CE8946098970E8194D_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.Rendering.VertexAttribute
-struct  VertexAttribute_t2D79DF64001C55DA72AC86CE8946098970E8194D 
-{
-public:
-	// System.Int32 UnityEngine.Rendering.VertexAttribute::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(VertexAttribute_t2D79DF64001C55DA72AC86CE8946098970E8194D, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VERTEXATTRIBUTE_T2D79DF64001C55DA72AC86CE8946098970E8194D_H
 #ifndef RENDERINGPATH_T5E196960B7ECE9BA17943445415336FA4E19F82B_H
 #define RENDERINGPATH_T5E196960B7ECE9BA17943445415336FA4E19F82B_H
 #ifdef __clang__
@@ -15727,216 +15218,6 @@ public:
 		m_Items[index] = value;
 	}
 };
-// System.Int32[]
-struct Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) int32_t m_Items[1];
-
-public:
-	inline int32_t GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, int32_t value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
-	{
-		m_Items[index] = value;
-	}
-};
-// UnityEngine.BoneWeight[]
-struct BoneWeightU5BU5D_t0CFB75EF43257A99CDCF393A069504F365A13F8D  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1  m_Items[1];
-
-public:
-	inline BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// UnityEngine.CombineInstance[]
-struct CombineInstanceU5BU5D_t3865A4038A85A764FCE1EE0C134B77C42F4610DA  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) CombineInstance_t096DFC9075A3AAA2F0830C19073BC86927DDFA28  m_Items[1];
-
-public:
-	inline CombineInstance_t096DFC9075A3AAA2F0830C19073BC86927DDFA28  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline CombineInstance_t096DFC9075A3AAA2F0830C19073BC86927DDFA28 * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, CombineInstance_t096DFC9075A3AAA2F0830C19073BC86927DDFA28  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline CombineInstance_t096DFC9075A3AAA2F0830C19073BC86927DDFA28  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline CombineInstance_t096DFC9075A3AAA2F0830C19073BC86927DDFA28 * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, CombineInstance_t096DFC9075A3AAA2F0830C19073BC86927DDFA28  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// UnityEngine.Vector2[]
-struct Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  m_Items[1];
-
-public:
-	inline Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// UnityEngine.Color[]
-struct ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  m_Items[1];
-
-public:
-	inline Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// UnityEngine.Color32[]
-struct Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  m_Items[1];
-
-public:
-	inline Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  value)
-	{
-		m_Items[index] = value;
-	}
-};
 
 extern "C" void PlayerLoopSystem_t89BC6208BDD3B7C57FED7B0201341A7D4E846A6D_marshal_pinvoke(const PlayerLoopSystem_t89BC6208BDD3B7C57FED7B0201341A7D4E846A6D& unmarshaled, PlayerLoopSystem_t89BC6208BDD3B7C57FED7B0201341A7D4E846A6D_marshaled_pinvoke& marshaled);
 extern "C" void PlayerLoopSystem_t89BC6208BDD3B7C57FED7B0201341A7D4E846A6D_marshal_pinvoke_back(const PlayerLoopSystem_t89BC6208BDD3B7C57FED7B0201341A7D4E846A6D_marshaled_pinvoke& marshaled, PlayerLoopSystem_t89BC6208BDD3B7C57FED7B0201341A7D4E846A6D& unmarshaled);
@@ -16003,38 +15284,6 @@ extern "C" IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mD246ECEE97D8007B9BB62AAB
 extern "C" IL2CPP_METHOD_ATTR Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* NoAllocHelpers_ExtractArrayFromListT_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_m853C6F703156A3DD8E35F6F207655A277145623B_gshared (List_1_tFF4005B40E5BA433006DA11C56DB086B1E2FC955 * ___list0, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.Vector4>::get_Count()
 extern "C" IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m83123296A90C01EF11066F33AA07B6F8888A05E4_gshared (List_1_tFF4005B40E5BA433006DA11C56DB086B1E2FC955 * __this, const RuntimeMethod* method);
-// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Vector3>(UnityEngine.Rendering.VertexAttribute)
-extern "C" IL2CPP_METHOD_ATTR Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* Mesh_GetAllocArrayFromChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m2A198BF0F2DF179DF0C126C5A0BAFA1B75765F4E_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Vector3>(UnityEngine.Rendering.VertexAttribute,T[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m904FEE0DE052D08A303E8BD4C858085F0D46F274_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* ___values1, const RuntimeMethod* method);
-// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Vector4>(UnityEngine.Rendering.VertexAttribute)
-extern "C" IL2CPP_METHOD_ATTR Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* Mesh_GetAllocArrayFromChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mBDD94A90E9F34CAC60C6B772992E35F66EF2D64D_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Vector4>(UnityEngine.Rendering.VertexAttribute,T[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_m9DCA0F6914F5735D0B865846569B5F958A34AD00_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* ___values1, const RuntimeMethod* method);
-// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Vector2>(UnityEngine.Rendering.VertexAttribute)
-extern "C" IL2CPP_METHOD_ATTR Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Vector2>(UnityEngine.Rendering.VertexAttribute,T[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* ___values1, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Color>(UnityEngine.Rendering.VertexAttribute,T[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannel_TisColor_t119BCA590009762C7223FDD3AF9706653AC84ED2_m09493B4E16A5C5767139466422D26B8D1F1E2589_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399* ___values1, const RuntimeMethod* method);
-// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Color32>(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* Mesh_GetAllocArrayFromChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mBD28E289F6DA9261F8B48C346E498E4CE24131C9_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Color32>(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,T[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB9E837ECF9A328CD3B40632B6E5DF7CD0DB5132B_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* ___values3, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetListForChannel<UnityEngine.Vector3>(UnityEngine.Rendering.VertexAttribute,System.Collections.Generic.List`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetListForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_mE31ACFD0411A7877C5A24536B6C589BAD844E825_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * ___values1, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetListForChannel<UnityEngine.Vector4>(UnityEngine.Rendering.VertexAttribute,System.Collections.Generic.List`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetListForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mEAC1E80DE7B69F1F85C02591C37350C5AEE292F0_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, List_1_tFF4005B40E5BA433006DA11C56DB086B1E2FC955 * ___values1, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetListForChannel<UnityEngine.Color32>(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Collections.Generic.List`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetListForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB7B6EAB6E8B2908650E4ECBDF0E1412A72D09DBE_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5 * ___values3, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetUvsImpl<UnityEngine.Vector2>(System.Int32,System.Int32,System.Collections.Generic.List`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetUvsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m67576E41684A71A434A5236E3FEDAB1C5261DF9E_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___uvIndex0, int32_t ___dim1, List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB * ___uvs2, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetUvsImpl<UnityEngine.Vector3>(System.Int32,System.Int32,System.Collections.Generic.List`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetUvsImpl_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m81B52673DA9C552B5A9017CD73216B4CD299DC09_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___uvIndex0, int32_t ___dim1, List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * ___uvs2, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::GetUVsImpl<UnityEngine.Vector2>(System.Int32,System.Collections.Generic.List`1<T>,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_GetUVsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mA206B788DD8FE703CB5F4AA3F61CE981407D8D62_gshared (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___uvIndex0, List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB * ___uvs1, int32_t ___dim2, const RuntimeMethod* method);
-// System.Int32 UnityEngine.NoAllocHelpers::SafeLength<System.Int32>(System.Collections.Generic.List`1<T>)
-extern "C" IL2CPP_METHOD_ATTR int32_t NoAllocHelpers_SafeLength_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_mAB99F87F48EF2561002200C769D115010830F1CC_gshared (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * ___values0, const RuntimeMethod* method);
 
 // System.Void System.Attribute::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void Attribute__ctor_m45CAD4B01265CC84CC5A84F62EE2DBE85DE89EC0 (Attribute_tF048C13FB3C8CFCC53F82290E4A3F621089F9A74 * __this, const RuntimeMethod* method);
@@ -16391,6 +15640,24 @@ extern "C" IL2CPP_METHOD_ATTR bool Single_Equals_mCDFA927E712FBA83D076864E16C77E
 extern "C" IL2CPP_METHOD_ATTR bool Vector4_op_Equality_m9AE0D09EC7E02201F94AE469ADE9F416D0E20441 (Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___lhs0, Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___rhs1, const RuntimeMethod* method);
 // System.Single UnityEngine.Mathf::Clamp01(System.Single)
 extern "C" IL2CPP_METHOD_ATTR float Mathf_Clamp01_m1E5F736941A7E6DC4DBCA88A1E38FE9FBFE0C42B (float ___value0, const RuntimeMethod* method);
+// System.Single UnityEngine.Color::get_grayscale()
+extern "C" IL2CPP_METHOD_ATTR float Color_get_grayscale_m6D11C0F103B836F839745770D5355916E456FE59 (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, const RuntimeMethod* method);
+// System.Single UnityEngine.Mathf::GammaToLinearSpace(System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772 (float ___value0, const RuntimeMethod* method);
+// UnityEngine.Color UnityEngine.Color::get_linear()
+extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_get_linear_mB10CD29D56ADE2C811AD74A605BA11F6656E9D1A (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, const RuntimeMethod* method);
+// System.Single UnityEngine.Mathf::LinearToGammaSpace(System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61 (float ___value0, const RuntimeMethod* method);
+// UnityEngine.Color UnityEngine.Color::get_gamma()
+extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_get_gamma_m38A0BB5A9A0A7F860BEEB3BD9F69F72CFA926A79 (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, const RuntimeMethod* method);
+// System.Single UnityEngine.Mathf::Max(System.Single,System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65 (float ___a0, float ___b1, const RuntimeMethod* method);
+// System.Single UnityEngine.Color::get_maxColorComponent()
+extern "C" IL2CPP_METHOD_ATTR float Color_get_maxColorComponent_mBA8595CB2790747F42145CB696C10E64C9BBD76D (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, const RuntimeMethod* method);
+// UnityEngine.Color UnityEngine.Color::get_white()
+extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_get_white_mE7F3AC4FF0D6F35E48049C73116A222CBE96D905 (const RuntimeMethod* method);
+// System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507 (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method);
 // System.Void UnityEngine.Color32::.ctor(System.Byte,System.Byte,System.Byte,System.Byte)
 extern "C" IL2CPP_METHOD_ATTR void Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2 (Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * __this, uint8_t ___r0, uint8_t ___g1, uint8_t ___b2, uint8_t ___a3, const RuntimeMethod* method);
 // System.String UnityEngine.Color32::ToString()
@@ -16936,6 +16203,8 @@ extern "C" IL2CPP_METHOD_ATTR void Material_CreateWithShader_m41F159D25DC785C3BB
 extern "C" IL2CPP_METHOD_ATTR void Material_CreateWithMaterial_mD3140BCB57EBB406D063C7A7B0B9D1A4C74DA3F2 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___self0, Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___source1, const RuntimeMethod* method);
 // System.Void UnityEngine.Material::CreateWithString(UnityEngine.Material)
 extern "C" IL2CPP_METHOD_ATTR void Material_CreateWithString_mCF4047522DD7D38087CF9AF121766E0D69B9BB55 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___self0, const RuntimeMethod* method);
+// UnityEngine.Color UnityEngine.Material::GetColor(System.String)
+extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Material_GetColor_m95E13C52410F7CE01E8DC32668ABBCBF19BB8808 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, String_t* ___name0, const RuntimeMethod* method);
 // System.Void UnityEngine.Material::SetColor(System.String,UnityEngine.Color)
 extern "C" IL2CPP_METHOD_ATTR void Material_SetColor_mB91EF8CAC3AB3B39D2535BF9F7FECECF3EC2161C (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, String_t* ___name0, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___value1, const RuntimeMethod* method);
 // UnityEngine.Texture UnityEngine.Material::GetTexture(System.String)
@@ -16960,6 +16229,10 @@ extern "C" IL2CPP_METHOD_ATTR void Material_SetMatrixImpl_Injected_mD2486E408D75
 extern "C" IL2CPP_METHOD_ATTR void Material_GetColorImpl_Injected_m22325A32C4B5AAEA791AED50195F66CDBAE93C82 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * ___ret1, const RuntimeMethod* method);
 // System.Void UnityEngine.Material::GetTextureScaleAndOffsetImpl_Injected(System.Int32,UnityEngine.Vector4&)
 extern "C" IL2CPP_METHOD_ATTR void Material_GetTextureScaleAndOffsetImpl_Injected_m5DDD8AB08DCF6A52415FB8D76A089CC886425E54 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E * ___ret1, const RuntimeMethod* method);
+// System.Void UnityEngine.Material::SetTextureOffsetImpl_Injected(System.Int32,UnityEngine.Vector2&)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureOffsetImpl_Injected_m85850F975A45BBB3AEA145C52309FC7CB82CDF64 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___offset1, const RuntimeMethod* method);
+// System.Void UnityEngine.Material::SetTextureScaleImpl_Injected(System.Int32,UnityEngine.Vector2&)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureScaleImpl_Injected_m44A1C509E1EA40BFAFA82C7449EC21E6D39E8BF9 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___scale1, const RuntimeMethod* method);
 // System.Void UnityEngine.Material::SetFloatArrayImpl(System.Int32,System.Single[],System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void Material_SetFloatArrayImpl_m80EEFAE52B5E5BC228134BE5B070DC6237A3CDE4 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, SingleU5BU5D_tA7139B7CAA40EAEF9178E2C386C8A5993754FDD5* ___values1, int32_t ___count2, const RuntimeMethod* method);
 // System.Void UnityEngine.Material::SetFloatImpl(System.Int32,System.Single)
@@ -16980,6 +16253,10 @@ extern "C" IL2CPP_METHOD_ATTR float Material_GetFloatImpl_m7F4A1A6FE5D9EA1F5C90C
 extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Material_GetColorImpl_m46381ED49C354AEB9FEFCE5BF410A1909E867E76 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, const RuntimeMethod* method);
 // UnityEngine.Texture UnityEngine.Material::GetTextureImpl(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * Material_GetTextureImpl_m19D8CE6C5701AC4B69A6D5354E08240DF6C036D2 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, const RuntimeMethod* method);
+// System.Void UnityEngine.Material::SetTextureOffsetImpl(System.Int32,UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureOffsetImpl_mFA6B03949317E27AA65014030ABE8CA79350FE45 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___offset1, const RuntimeMethod* method);
+// System.Void UnityEngine.Material::SetTextureScaleImpl(System.Int32,UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureScaleImpl_mB4BD14FA7A283ACD618A139F0A28D44BE299A89E (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___scale1, const RuntimeMethod* method);
 // UnityEngine.Vector2 UnityEngine.Material::GetTextureScale(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  Material_GetTextureScale_m3AD3DBFC4E7F8546BCFA10BE56FD794C64635D9E (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___nameID0, const RuntimeMethod* method);
 // UnityEngine.Vector4 UnityEngine.Material::GetTextureScaleAndOffsetImpl(System.Int32)
@@ -17038,10 +16315,8 @@ extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  M
 extern "C" IL2CPP_METHOD_ATTR Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * MaterialPropertyBlock_GetTextureImpl_m8ECFD2ABA7C5F7E7298194FF5A5B473458B34DD2 (MaterialPropertyBlock_t72A481768111C6F11DCDCD44F0C7F99F1CA79E13 * __this, int32_t ___name0, const RuntimeMethod* method);
 // System.Double System.Math::Log(System.Double,System.Double)
 extern "C" IL2CPP_METHOD_ATTR double Math_Log_m5C457D6A666677B3E260C571049528D5BE93B7AF (double p0, double p1, const RuntimeMethod* method);
-// System.Single UnityEngine.Mathf::Max(System.Single,System.Single)
-extern "C" IL2CPP_METHOD_ATTR float Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65 (float ___a0, float ___b1, const RuntimeMethod* method);
-// System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
-extern "C" IL2CPP_METHOD_ATTR float Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507 (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method);
+// System.Single UnityEngine.Mathf::Repeat(System.Single,System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_Repeat_m8459F4AAFF92DB770CC892BF71EE9438D9D0F779 (float ___t0, float ___length1, const RuntimeMethod* method);
 // System.Void UnityEngine.Matrix4x4::.ctor(UnityEngine.Vector4,UnityEngine.Vector4,UnityEngine.Vector4,UnityEngine.Vector4)
 extern "C" IL2CPP_METHOD_ATTR void Matrix4x4__ctor_mC7C5A4F0791B2A3ADAFE1E6C491B7705B6492B12 (Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA * __this, Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___column00, Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___column11, Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___column22, Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___column33, const RuntimeMethod* method);
 // System.Void UnityEngine.Matrix4x4::GetLossyScale_Injected(UnityEngine.Matrix4x4&,UnityEngine.Vector3&)
@@ -17092,136 +16367,6 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 
 extern "C" IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Matrix4x4_MultiplyVector_mFED70C58FB201633483463CE64DBF0D0BE081863 (Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___vector0, const RuntimeMethod* method);
 // System.String UnityEngine.Matrix4x4::ToString()
 extern "C" IL2CPP_METHOD_ATTR String_t* Matrix4x4_ToString_m7E29D2447E2FC1EAB3D8565B7DCAFB9037C69E1D (Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::Internal_Create(UnityEngine.Mesh)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_Internal_Create_mF1F8E9F726EAC9A087D49C81E2F1609E8266649E (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * ___mono0, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::get_bounds_Injected(UnityEngine.Bounds&)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_get_bounds_Injected_mA4338C67E67FC449E1344556D073855ACB4E9DED (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890 * ___ret0, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::set_bounds_Injected(UnityEngine.Bounds&)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_bounds_Injected_mFA253839FEEC7CDF976FE740CA3C2712F491BB8B (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890 * ___value0, const RuntimeMethod* method);
-// System.Boolean UnityEngine.Mesh::get_canAccess()
-extern "C" IL2CPP_METHOD_ATTR bool Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetArrayForChannelImpl(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Array,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannelImpl_mEF2432246258E82C90015832073A7B3BC77A31A2 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, RuntimeArray * ___values3, int32_t ___arraySize4, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::PrintErrorCantAccessChannel(UnityEngine.Rendering.VertexAttribute)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_PrintErrorCantAccessChannel_m2E8A25959739B006557A94F7E460E8BE0B3ABB19 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___ch0, const RuntimeMethod* method);
-// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Vector3>(UnityEngine.Rendering.VertexAttribute)
-inline Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* Mesh_GetAllocArrayFromChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m2A198BF0F2DF179DF0C126C5A0BAFA1B75765F4E (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, const RuntimeMethod* method)
-{
-	return ((  Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, const RuntimeMethod*))Mesh_GetAllocArrayFromChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m2A198BF0F2DF179DF0C126C5A0BAFA1B75765F4E_gshared)(__this, ___channel0, method);
-}
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Vector3>(UnityEngine.Rendering.VertexAttribute,T[])
-inline void Mesh_SetArrayForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m904FEE0DE052D08A303E8BD4C858085F0D46F274 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* ___values1, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28*, const RuntimeMethod*))Mesh_SetArrayForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m904FEE0DE052D08A303E8BD4C858085F0D46F274_gshared)(__this, ___channel0, ___values1, method);
-}
-// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Vector4>(UnityEngine.Rendering.VertexAttribute)
-inline Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* Mesh_GetAllocArrayFromChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mBDD94A90E9F34CAC60C6B772992E35F66EF2D64D (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, const RuntimeMethod* method)
-{
-	return ((  Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, const RuntimeMethod*))Mesh_GetAllocArrayFromChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mBDD94A90E9F34CAC60C6B772992E35F66EF2D64D_gshared)(__this, ___channel0, method);
-}
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Vector4>(UnityEngine.Rendering.VertexAttribute,T[])
-inline void Mesh_SetArrayForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_m9DCA0F6914F5735D0B865846569B5F958A34AD00 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* ___values1, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66*, const RuntimeMethod*))Mesh_SetArrayForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_m9DCA0F6914F5735D0B865846569B5F958A34AD00_gshared)(__this, ___channel0, ___values1, method);
-}
-// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Vector2>(UnityEngine.Rendering.VertexAttribute)
-inline Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, const RuntimeMethod* method)
-{
-	return ((  Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, const RuntimeMethod*))Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8_gshared)(__this, ___channel0, method);
-}
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Vector2>(UnityEngine.Rendering.VertexAttribute,T[])
-inline void Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* ___values1, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6*, const RuntimeMethod*))Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45_gshared)(__this, ___channel0, ___values1, method);
-}
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Color>(UnityEngine.Rendering.VertexAttribute,T[])
-inline void Mesh_SetArrayForChannel_TisColor_t119BCA590009762C7223FDD3AF9706653AC84ED2_m09493B4E16A5C5767139466422D26B8D1F1E2589 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399* ___values1, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399*, const RuntimeMethod*))Mesh_SetArrayForChannel_TisColor_t119BCA590009762C7223FDD3AF9706653AC84ED2_m09493B4E16A5C5767139466422D26B8D1F1E2589_gshared)(__this, ___channel0, ___values1, method);
-}
-// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Color32>(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32)
-inline Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* Mesh_GetAllocArrayFromChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mBD28E289F6DA9261F8B48C346E498E4CE24131C9 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, const RuntimeMethod* method)
-{
-	return ((  Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, int32_t, int32_t, const RuntimeMethod*))Mesh_GetAllocArrayFromChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mBD28E289F6DA9261F8B48C346E498E4CE24131C9_gshared)(__this, ___channel0, ___format1, ___dim2, method);
-}
-// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Color32>(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,T[])
-inline void Mesh_SetArrayForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB9E837ECF9A328CD3B40632B6E5DF7CD0DB5132B (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* ___values3, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, int32_t, int32_t, Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983*, const RuntimeMethod*))Mesh_SetArrayForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB9E837ECF9A328CD3B40632B6E5DF7CD0DB5132B_gshared)(__this, ___channel0, ___format1, ___dim2, ___values3, method);
-}
-// System.Void UnityEngine.Mesh::SetListForChannel<UnityEngine.Vector3>(UnityEngine.Rendering.VertexAttribute,System.Collections.Generic.List`1<T>)
-inline void Mesh_SetListForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_mE31ACFD0411A7877C5A24536B6C589BAD844E825 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * ___values1, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 *, const RuntimeMethod*))Mesh_SetListForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_mE31ACFD0411A7877C5A24536B6C589BAD844E825_gshared)(__this, ___channel0, ___values1, method);
-}
-// System.Void UnityEngine.Mesh::SetListForChannel<UnityEngine.Vector4>(UnityEngine.Rendering.VertexAttribute,System.Collections.Generic.List`1<T>)
-inline void Mesh_SetListForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mEAC1E80DE7B69F1F85C02591C37350C5AEE292F0 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, List_1_tFF4005B40E5BA433006DA11C56DB086B1E2FC955 * ___values1, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, List_1_tFF4005B40E5BA433006DA11C56DB086B1E2FC955 *, const RuntimeMethod*))Mesh_SetListForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mEAC1E80DE7B69F1F85C02591C37350C5AEE292F0_gshared)(__this, ___channel0, ___values1, method);
-}
-// System.Void UnityEngine.Mesh::SetListForChannel<UnityEngine.Color32>(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Collections.Generic.List`1<T>)
-inline void Mesh_SetListForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB7B6EAB6E8B2908650E4ECBDF0E1412A72D09DBE (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5 * ___values3, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, int32_t, int32_t, List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5 *, const RuntimeMethod*))Mesh_SetListForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB7B6EAB6E8B2908650E4ECBDF0E1412A72D09DBE_gshared)(__this, ___channel0, ___format1, ___dim2, ___values3, method);
-}
-// System.Void UnityEngine.Mesh::SetUvsImpl<UnityEngine.Vector2>(System.Int32,System.Int32,System.Collections.Generic.List`1<T>)
-inline void Mesh_SetUvsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m67576E41684A71A434A5236E3FEDAB1C5261DF9E (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___uvIndex0, int32_t ___dim1, List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB * ___uvs2, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, int32_t, List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB *, const RuntimeMethod*))Mesh_SetUvsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m67576E41684A71A434A5236E3FEDAB1C5261DF9E_gshared)(__this, ___uvIndex0, ___dim1, ___uvs2, method);
-}
-// System.Void UnityEngine.Mesh::SetUvsImpl<UnityEngine.Vector3>(System.Int32,System.Int32,System.Collections.Generic.List`1<T>)
-inline void Mesh_SetUvsImpl_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m81B52673DA9C552B5A9017CD73216B4CD299DC09 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___uvIndex0, int32_t ___dim1, List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * ___uvs2, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, int32_t, List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 *, const RuntimeMethod*))Mesh_SetUvsImpl_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m81B52673DA9C552B5A9017CD73216B4CD299DC09_gshared)(__this, ___uvIndex0, ___dim1, ___uvs2, method);
-}
-// System.Void UnityEngine.Mesh::GetUVsImpl<UnityEngine.Vector2>(System.Int32,System.Collections.Generic.List`1<T>,System.Int32)
-inline void Mesh_GetUVsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mA206B788DD8FE703CB5F4AA3F61CE981407D8D62 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___uvIndex0, List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB * ___uvs1, int32_t ___dim2, const RuntimeMethod* method)
-{
-	((  void (*) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB *, int32_t, const RuntimeMethod*))Mesh_GetUVsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mA206B788DD8FE703CB5F4AA3F61CE981407D8D62_gshared)(__this, ___uvIndex0, ___uvs1, ___dim2, method);
-}
-// System.String UnityEngine.Object::get_name()
-extern "C" IL2CPP_METHOD_ATTR String_t* Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Debug::LogError(System.Object)
-extern "C" IL2CPP_METHOD_ATTR void Debug_LogError_m3BCF9B78263152261565DCA9DB7D55F0C391ED29 (RuntimeObject * ___message0, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::PrintErrorCantAccessIndices()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_PrintErrorCantAccessIndices_mA45D3609288655A328AEB0F2F436403B1ECE5077 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Debug::LogError(System.Object,UnityEngine.Object)
-extern "C" IL2CPP_METHOD_ATTR void Debug_LogError_m97139CB2EE76D5CD8308C1AD0499A5F163FC7F51 (RuntimeObject * ___message0, Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * ___context1, const RuntimeMethod* method);
-// System.Boolean UnityEngine.Mesh::CheckCanAccessSubmesh(System.Int32,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR bool Mesh_CheckCanAccessSubmesh_mF86EBD1C9EC3FE557880FA138510F7761585D227 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, bool ___errorAboutTriangles1, const RuntimeMethod* method);
-// System.Int32 UnityEngine.NoAllocHelpers::SafeLength(System.Array)
-extern "C" IL2CPP_METHOD_ATTR int32_t NoAllocHelpers_SafeLength_m85E794F370BFE9D3954E72480AE6ED358AF5102C (RuntimeArray * ___values0, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetTrianglesImpl(System.Int32,System.Array,System.Int32,System.Boolean,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetTrianglesImpl_m8EDF09F91CF1F2FE8B6095E7C73685FA36ABCECD (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, RuntimeArray * ___triangles1, int32_t ___arraySize2, bool ___calculateBounds3, int32_t ___baseVertex4, const RuntimeMethod* method);
-// System.Int32[] UnityEngine.Mesh::GetIndices(System.Int32,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* Mesh_GetIndices_m4260DCF1026449C4E8C4C40229D12AF8CAB26EAF (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, bool ___applyBaseVertex1, const RuntimeMethod* method);
-// System.Boolean UnityEngine.Mesh::CheckCanAccessSubmeshIndices(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR bool Mesh_CheckCanAccessSubmeshIndices_m81DF83B1676084AF0B70A36BC7621ADB08430722 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, const RuntimeMethod* method);
-// System.Int32[] UnityEngine.Mesh::GetIndicesImpl(System.Int32,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* Mesh_GetIndicesImpl_m2118C6CA196093FD19BB05E5258C0DCE06FEAD30 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, bool ___applyBaseVertex1, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetIndicesImpl(System.Int32,UnityEngine.MeshTopology,System.Array,System.Int32,System.Boolean,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetIndicesImpl_mF0FAE821CA0269526BDA766E9A2DC12778A2CB55 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, int32_t ___topology1, RuntimeArray * ___indices2, int32_t ___arraySize3, bool ___calculateBounds4, int32_t ___baseVertex5, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::SetTriangles(System.Collections.Generic.List`1<System.Int32>,System.Int32,System.Boolean,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetTriangles_m39FB983B90F36D724CC1C21BA7821C9697F86116 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * ___triangles0, int32_t ___submesh1, bool ___calculateBounds2, int32_t ___baseVertex3, const RuntimeMethod* method);
-// System.Boolean UnityEngine.Mesh::CheckCanAccessSubmeshTriangles(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR bool Mesh_CheckCanAccessSubmeshTriangles_m214B5F30F7461C620D03F10F6CF1CAF53DBEE509 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, const RuntimeMethod* method);
-// System.Array UnityEngine.NoAllocHelpers::ExtractArrayFromList(System.Object)
-extern "C" IL2CPP_METHOD_ATTR RuntimeArray * NoAllocHelpers_ExtractArrayFromList_mB4B8B76B4F160975C949FB3E15C1D497DBAE8EDC (RuntimeObject * ___list0, const RuntimeMethod* method);
-// System.Int32 UnityEngine.NoAllocHelpers::SafeLength<System.Int32>(System.Collections.Generic.List`1<T>)
-inline int32_t NoAllocHelpers_SafeLength_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_mAB99F87F48EF2561002200C769D115010830F1CC (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * ___values0, const RuntimeMethod* method)
-{
-	return ((  int32_t (*) (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 *, const RuntimeMethod*))NoAllocHelpers_SafeLength_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_mAB99F87F48EF2561002200C769D115010830F1CC_gshared)(___values0, method);
-}
-// System.Void UnityEngine.Mesh::ClearImpl(System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_ClearImpl_mFFD3A4748AF067B75DBD646B4A64B3D9A2F3EE14 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, bool ___keepVertexLayout0, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::RecalculateBoundsImpl()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_RecalculateBoundsImpl_m43DE3DEFC2DADC090DC6FD2C27F44D6DBB88CEF6 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::RecalculateNormalsImpl()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_RecalculateNormalsImpl_mC013E21F3D761F2DE88FB8BB18A332865381750E (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::MarkDynamicImpl()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_MarkDynamicImpl_m439AACE205D2202AD4E5D4A12191F4CCCC031876 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Mesh::CombineMeshesImpl(UnityEngine.CombineInstance[],System.Boolean,System.Boolean,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_CombineMeshesImpl_m3D891535AE8F99B73E7DAC0D7D61C44F1C328635 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, CombineInstanceU5BU5D_t3865A4038A85A764FCE1EE0C134B77C42F4610DA* ___combine0, bool ___mergeSubMeshes1, bool ___useMatrices2, bool ___hasLightmapData3, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -18077,6 +17222,16 @@ extern "C" IL2CPP_METHOD_ATTR String_t* Application_get_dataPath_m33D721D71C0687
 	static Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_dataPath()");
+	String_t* retVal = _il2cpp_icall_func();
+	return retVal;
+}
+// System.String UnityEngine.Application::get_streamingAssetsPath()
+extern "C" IL2CPP_METHOD_ATTR String_t* Application_get_streamingAssetsPath_m87163AE531BEB6A6588FABAD3207D829721CF31F (const RuntimeMethod* method)
+{
+	typedef String_t* (*Application_get_streamingAssetsPath_m87163AE531BEB6A6588FABAD3207D829721CF31F_ftn) ();
+	static Application_get_streamingAssetsPath_m87163AE531BEB6A6588FABAD3207D829721CF31F_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Application_get_streamingAssetsPath_m87163AE531BEB6A6588FABAD3207D829721CF31F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_streamingAssetsPath()");
 	String_t* retVal = _il2cpp_icall_func();
 	return retVal;
 }
@@ -23211,6 +22366,137 @@ IL_0020:
 		return L_1;
 	}
 }
+// System.Single UnityEngine.Color::get_grayscale()
+extern "C" IL2CPP_METHOD_ATTR float Color_get_grayscale_m6D11C0F103B836F839745770D5355916E456FE59 (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->get_r_0();
+		float L_1 = __this->get_g_1();
+		float L_2 = __this->get_b_2();
+		V_0 = ((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)(0.299f), (float)L_0)), (float)((float)il2cpp_codegen_multiply((float)(0.587f), (float)L_1)))), (float)((float)il2cpp_codegen_multiply((float)(0.114f), (float)L_2))));
+		goto IL_002d;
+	}
+
+IL_002d:
+	{
+		float L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  float Color_get_grayscale_m6D11C0F103B836F839745770D5355916E456FE59_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * _thisAdjusted = reinterpret_cast<Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 *>(__this + 1);
+	return Color_get_grayscale_m6D11C0F103B836F839745770D5355916E456FE59(_thisAdjusted, method);
+}
+// UnityEngine.Color UnityEngine.Color::get_linear()
+extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_get_linear_mB10CD29D56ADE2C811AD74A605BA11F6656E9D1A (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Color_get_linear_mB10CD29D56ADE2C811AD74A605BA11F6656E9D1A_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		float L_0 = __this->get_r_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
+		float L_1 = Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772(L_0, /*hidden argument*/NULL);
+		float L_2 = __this->get_g_1();
+		float L_3 = Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772(L_2, /*hidden argument*/NULL);
+		float L_4 = __this->get_b_2();
+		float L_5 = Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772(L_4, /*hidden argument*/NULL);
+		float L_6 = __this->get_a_3();
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_7;
+		memset(&L_7, 0, sizeof(L_7));
+		Color__ctor_m20DF490CEB364C4FC36D7EE392640DF5B7420D7C((&L_7), L_1, L_3, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		goto IL_0033;
+	}
+
+IL_0033:
+	{
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_8 = V_0;
+		return L_8;
+	}
+}
+extern "C"  Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_get_linear_mB10CD29D56ADE2C811AD74A605BA11F6656E9D1A_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * _thisAdjusted = reinterpret_cast<Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 *>(__this + 1);
+	return Color_get_linear_mB10CD29D56ADE2C811AD74A605BA11F6656E9D1A(_thisAdjusted, method);
+}
+// UnityEngine.Color UnityEngine.Color::get_gamma()
+extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_get_gamma_m38A0BB5A9A0A7F860BEEB3BD9F69F72CFA926A79 (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Color_get_gamma_m38A0BB5A9A0A7F860BEEB3BD9F69F72CFA926A79_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		float L_0 = __this->get_r_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
+		float L_1 = Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61(L_0, /*hidden argument*/NULL);
+		float L_2 = __this->get_g_1();
+		float L_3 = Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61(L_2, /*hidden argument*/NULL);
+		float L_4 = __this->get_b_2();
+		float L_5 = Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61(L_4, /*hidden argument*/NULL);
+		float L_6 = __this->get_a_3();
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_7;
+		memset(&L_7, 0, sizeof(L_7));
+		Color__ctor_m20DF490CEB364C4FC36D7EE392640DF5B7420D7C((&L_7), L_1, L_3, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		goto IL_0033;
+	}
+
+IL_0033:
+	{
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_8 = V_0;
+		return L_8;
+	}
+}
+extern "C"  Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_get_gamma_m38A0BB5A9A0A7F860BEEB3BD9F69F72CFA926A79_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * _thisAdjusted = reinterpret_cast<Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 *>(__this + 1);
+	return Color_get_gamma_m38A0BB5A9A0A7F860BEEB3BD9F69F72CFA926A79(_thisAdjusted, method);
+}
+// System.Single UnityEngine.Color::get_maxColorComponent()
+extern "C" IL2CPP_METHOD_ATTR float Color_get_maxColorComponent_mBA8595CB2790747F42145CB696C10E64C9BBD76D (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Color_get_maxColorComponent_mBA8595CB2790747F42145CB696C10E64C9BBD76D_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->get_r_0();
+		float L_1 = __this->get_g_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
+		float L_2 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65(L_0, L_1, /*hidden argument*/NULL);
+		float L_3 = __this->get_b_2();
+		float L_4 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65(L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		goto IL_0023;
+	}
+
+IL_0023:
+	{
+		float L_5 = V_0;
+		return L_5;
+	}
+}
+extern "C"  float Color_get_maxColorComponent_mBA8595CB2790747F42145CB696C10E64C9BBD76D_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * _thisAdjusted = reinterpret_cast<Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 *>(__this + 1);
+	return Color_get_maxColorComponent_mBA8595CB2790747F42145CB696C10E64C9BBD76D(_thisAdjusted, method);
+}
 // UnityEngine.Vector4 UnityEngine.Color::op_Implicit(UnityEngine.Color)
 extern "C" IL2CPP_METHOD_ATTR Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  Color_op_Implicit_m653C1CE2391B0A04114B9132C37E41AC92B33AFE (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___c0, const RuntimeMethod* method)
 {
@@ -23255,6 +22541,257 @@ IL_0028:
 	{
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_5 = V_0;
 		return L_5;
+	}
+}
+// UnityEngine.Color UnityEngine.Color::HSVToRGB(System.Single,System.Single,System.Single,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_HSVToRGB_mAA0ABF40600699DC136E65487B0F2F8AAA87D223 (float ___H0, float ___S1, float ___V2, bool ___hdr3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Color_HSVToRGB_mAA0ABF40600699DC136E65487B0F2F8AAA87D223_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	int32_t V_4 = 0;
+	float V_5 = 0.0f;
+	float V_6 = 0.0f;
+	float V_7 = 0.0f;
+	float V_8 = 0.0f;
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  V_9;
+	memset(&V_9, 0, sizeof(V_9));
+	{
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_0 = Color_get_white_mE7F3AC4FF0D6F35E48049C73116A222CBE96D905(/*hidden argument*/NULL);
+		V_0 = L_0;
+		float L_1 = ___S1;
+		if ((!(((float)L_1) == ((float)(0.0f)))))
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		float L_2 = ___V2;
+		(&V_0)->set_r_0(L_2);
+		float L_3 = ___V2;
+		(&V_0)->set_g_1(L_3);
+		float L_4 = ___V2;
+		(&V_0)->set_b_2(L_4);
+		goto IL_025b;
+	}
+
+IL_0031:
+	{
+		float L_5 = ___V2;
+		if ((!(((float)L_5) == ((float)(0.0f)))))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		(&V_0)->set_r_0((0.0f));
+		(&V_0)->set_g_1((0.0f));
+		(&V_0)->set_b_2((0.0f));
+		goto IL_025b;
+	}
+
+IL_0067:
+	{
+		(&V_0)->set_r_0((0.0f));
+		(&V_0)->set_g_1((0.0f));
+		(&V_0)->set_b_2((0.0f));
+		float L_6 = ___S1;
+		V_1 = L_6;
+		float L_7 = ___V2;
+		V_2 = L_7;
+		float L_8 = ___H0;
+		V_3 = ((float)il2cpp_codegen_multiply((float)L_8, (float)(6.0f)));
+		float L_9 = V_3;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
+		float L_10 = floorf(L_9);
+		V_4 = (((int32_t)((int32_t)(int32_t)L_10)));
+		float L_11 = V_3;
+		int32_t L_12 = V_4;
+		V_5 = ((float)il2cpp_codegen_subtract((float)L_11, (float)(((float)((float)L_12)))));
+		float L_13 = V_2;
+		float L_14 = V_1;
+		V_6 = ((float)il2cpp_codegen_multiply((float)L_13, (float)((float)il2cpp_codegen_subtract((float)(1.0f), (float)L_14))));
+		float L_15 = V_2;
+		float L_16 = V_1;
+		float L_17 = V_5;
+		V_7 = ((float)il2cpp_codegen_multiply((float)L_15, (float)((float)il2cpp_codegen_subtract((float)(1.0f), (float)((float)il2cpp_codegen_multiply((float)L_16, (float)L_17))))));
+		float L_18 = V_2;
+		float L_19 = V_1;
+		float L_20 = V_5;
+		V_8 = ((float)il2cpp_codegen_multiply((float)L_18, (float)((float)il2cpp_codegen_subtract((float)(1.0f), (float)((float)il2cpp_codegen_multiply((float)L_19, (float)((float)il2cpp_codegen_subtract((float)(1.0f), (float)L_20))))))));
+		int32_t L_21 = V_4;
+		switch (((int32_t)il2cpp_codegen_add((int32_t)L_21, (int32_t)1)))
+		{
+			case 0:
+			{
+				goto IL_01dc;
+			}
+			case 1:
+			{
+				goto IL_0103;
+			}
+			case 2:
+			{
+				goto IL_0122;
+			}
+			case 3:
+			{
+				goto IL_0141;
+			}
+			case 4:
+			{
+				goto IL_0160;
+			}
+			case 5:
+			{
+				goto IL_017f;
+			}
+			case 6:
+			{
+				goto IL_019e;
+			}
+			case 7:
+			{
+				goto IL_01bd;
+			}
+		}
+	}
+	{
+		goto IL_01fb;
+	}
+
+IL_0103:
+	{
+		float L_22 = V_2;
+		(&V_0)->set_r_0(L_22);
+		float L_23 = V_8;
+		(&V_0)->set_g_1(L_23);
+		float L_24 = V_6;
+		(&V_0)->set_b_2(L_24);
+		goto IL_01fb;
+	}
+
+IL_0122:
+	{
+		float L_25 = V_7;
+		(&V_0)->set_r_0(L_25);
+		float L_26 = V_2;
+		(&V_0)->set_g_1(L_26);
+		float L_27 = V_6;
+		(&V_0)->set_b_2(L_27);
+		goto IL_01fb;
+	}
+
+IL_0141:
+	{
+		float L_28 = V_6;
+		(&V_0)->set_r_0(L_28);
+		float L_29 = V_2;
+		(&V_0)->set_g_1(L_29);
+		float L_30 = V_8;
+		(&V_0)->set_b_2(L_30);
+		goto IL_01fb;
+	}
+
+IL_0160:
+	{
+		float L_31 = V_6;
+		(&V_0)->set_r_0(L_31);
+		float L_32 = V_7;
+		(&V_0)->set_g_1(L_32);
+		float L_33 = V_2;
+		(&V_0)->set_b_2(L_33);
+		goto IL_01fb;
+	}
+
+IL_017f:
+	{
+		float L_34 = V_8;
+		(&V_0)->set_r_0(L_34);
+		float L_35 = V_6;
+		(&V_0)->set_g_1(L_35);
+		float L_36 = V_2;
+		(&V_0)->set_b_2(L_36);
+		goto IL_01fb;
+	}
+
+IL_019e:
+	{
+		float L_37 = V_2;
+		(&V_0)->set_r_0(L_37);
+		float L_38 = V_6;
+		(&V_0)->set_g_1(L_38);
+		float L_39 = V_7;
+		(&V_0)->set_b_2(L_39);
+		goto IL_01fb;
+	}
+
+IL_01bd:
+	{
+		float L_40 = V_2;
+		(&V_0)->set_r_0(L_40);
+		float L_41 = V_8;
+		(&V_0)->set_g_1(L_41);
+		float L_42 = V_6;
+		(&V_0)->set_b_2(L_42);
+		goto IL_01fb;
+	}
+
+IL_01dc:
+	{
+		float L_43 = V_2;
+		(&V_0)->set_r_0(L_43);
+		float L_44 = V_6;
+		(&V_0)->set_g_1(L_44);
+		float L_45 = V_7;
+		(&V_0)->set_b_2(L_45);
+		goto IL_01fb;
+	}
+
+IL_01fb:
+	{
+		bool L_46 = ___hdr3;
+		if (L_46)
+		{
+			goto IL_025a;
+		}
+	}
+	{
+		float L_47 = (&V_0)->get_r_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
+		float L_48 = Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507(L_47, (0.0f), (1.0f), /*hidden argument*/NULL);
+		(&V_0)->set_r_0(L_48);
+		float L_49 = (&V_0)->get_g_1();
+		float L_50 = Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507(L_49, (0.0f), (1.0f), /*hidden argument*/NULL);
+		(&V_0)->set_g_1(L_50);
+		float L_51 = (&V_0)->get_b_2();
+		float L_52 = Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507(L_51, (0.0f), (1.0f), /*hidden argument*/NULL);
+		(&V_0)->set_b_2(L_52);
+	}
+
+IL_025a:
+	{
+	}
+
+IL_025b:
+	{
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_53 = V_0;
+		V_9 = L_53;
+		goto IL_0263;
+	}
+
+IL_0263:
+	{
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_54 = V_9;
+		return L_54;
 	}
 }
 #ifdef __clang__
@@ -25340,6 +24877,29 @@ IL_0046:
 	{
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_8 = V_5;
 		return L_8;
+	}
+}
+// UnityEngine.Display UnityEngine.Display::get_main()
+extern "C" IL2CPP_METHOD_ATTR Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57 * Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57_il2cpp_TypeInfo_var);
+		Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57 * L_0 = ((Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57_StaticFields*)il2cpp_codegen_static_fields_for(Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57_il2cpp_TypeInfo_var))->get__mainDisplay_2();
+		V_0 = L_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57 * L_1 = V_0;
+		return L_1;
 	}
 }
 // System.Void UnityEngine.Display::RecreateDisplayList(System.IntPtr[])
@@ -34403,7 +33963,7 @@ IL_0022:
 		int32_t L_8 = ___offset1;
 		int32_t L_9 = ___count2;
 		NullCheck(L_6);
-		int32_t L_10 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_6, L_7, L_8, L_9);
+		int32_t L_10 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_6, L_7, L_8, L_9);
 		*((int32_t*)L_5) = (int32_t)L_10;
 		return;
 	}
@@ -34441,7 +34001,7 @@ IL_0021:
 		int64_t L_7 = ___offset0;
 		uint32_t L_8 = ___origin1;
 		NullCheck(L_6);
-		int64_t L_9 = VirtFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_6, L_7, L_8);
+		int64_t L_9 = VirtFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(24 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_6, L_7, L_8);
 		*((int64_t*)L_5) = (int64_t)L_9;
 		return;
 	}
@@ -34576,6 +34136,29 @@ extern "C" IL2CPP_METHOD_ATTR Shader_tE2731FF351B74AB4186897484FB01E000C1160CA *
 	_il2cpp_icall_func = (Material_get_shader_m9CEDCA4D97D42588C6B827400E364E4A8EC55FF0_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::get_shader()");
 	Shader_tE2731FF351B74AB4186897484FB01E000C1160CA * retVal = _il2cpp_icall_func(__this);
 	return retVal;
+}
+// UnityEngine.Color UnityEngine.Material::get_color()
+extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_0 = Material_GetColor_m95E13C52410F7CE01E8DC32668ABBCBF19BB8808(__this, _stringLiteral36BDCAB142B91EE6C030073C24B3B2A5605ED74A, /*hidden argument*/NULL);
+		V_0 = L_0;
+		goto IL_0012;
+	}
+
+IL_0012:
+	{
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_1 = V_0;
+		return L_1;
+	}
 }
 // System.Void UnityEngine.Material::set_color(UnityEngine.Color)
 extern "C" IL2CPP_METHOD_ATTR void Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___value0, const RuntimeMethod* method)
@@ -34916,6 +34499,24 @@ extern "C" IL2CPP_METHOD_ATTR Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E 
 		return L_1;
 	}
 }
+// System.Void UnityEngine.Material::SetTextureOffsetImpl(System.Int32,UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureOffsetImpl_mFA6B03949317E27AA65014030ABE8CA79350FE45 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___offset1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___name0;
+		Material_SetTextureOffsetImpl_Injected_m85850F975A45BBB3AEA145C52309FC7CB82CDF64(__this, L_0, (Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *)(&___offset1), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Material::SetTextureScaleImpl(System.Int32,UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureScaleImpl_mB4BD14FA7A283ACD618A139F0A28D44BE299A89E (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___scale1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___name0;
+		Material_SetTextureScaleImpl_Injected_m44A1C509E1EA40BFAFA82C7449EC21E6D39E8BF9(__this, L_0, (Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *)(&___scale1), /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.Material::SetFloatArray(System.Int32,System.Single[],System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void Material_SetFloatArray_m62969A8282FA26EBA3996A5F9B752761A9C4E096 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, SingleU5BU5D_tA7139B7CAA40EAEF9178E2C386C8A5993754FDD5* ___values1, int32_t ___count2, const RuntimeMethod* method)
 {
@@ -35131,6 +34732,25 @@ IL_000e:
 		return L_2;
 	}
 }
+// UnityEngine.Color UnityEngine.Material::GetColor(System.String)
+extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Material_GetColor_m95E13C52410F7CE01E8DC32668ABBCBF19BB8808 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, String_t* ___name0, const RuntimeMethod* method)
+{
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		String_t* L_0 = ___name0;
+		int32_t L_1 = Shader_PropertyToID_m831E5B48743620DB9E3E3DD15A8DEA483981DD45(L_0, /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_2 = Material_GetColorImpl_m46381ED49C354AEB9FEFCE5BF410A1909E867E76(__this, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		goto IL_0013;
+	}
+
+IL_0013:
+	{
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_3 = V_0;
+		return L_3;
+	}
+}
 // UnityEngine.Color UnityEngine.Material::GetColor(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Material_GetColor_m1FFF5ECB4967771D751C60205635A0D3F7AA2F0E (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___nameID0, const RuntimeMethod* method)
 {
@@ -35223,6 +34843,26 @@ IL_000e:
 		return L_2;
 	}
 }
+// System.Void UnityEngine.Material::SetTextureOffset(System.Int32,UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureOffset_m3E9C91ED11CB6323252AF6B5CB15CCD497EF10BB (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___nameID0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___value1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___nameID0;
+		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_1 = ___value1;
+		Material_SetTextureOffsetImpl_mFA6B03949317E27AA65014030ABE8CA79350FE45(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Material::SetTextureScale(System.Int32,UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureScale_m30A521475E4FF45858D27B8DA562B06165734A9E (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___nameID0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___value1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___nameID0;
+		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_1 = ___value1;
+		Material_SetTextureScaleImpl_mB4BD14FA7A283ACD618A139F0A28D44BE299A89E(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
 // UnityEngine.Vector2 UnityEngine.Material::GetTextureScale(System.String)
 extern "C" IL2CPP_METHOD_ATTR Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  Material_GetTextureScale_m2B1FFB0B67C22C3544E2E66E3E0D5B8DEE7EA859 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, String_t* ___name0, const RuntimeMethod* method)
 {
@@ -35303,6 +34943,24 @@ extern "C" IL2CPP_METHOD_ATTR void Material_GetTextureScaleAndOffsetImpl_Injecte
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Material_GetTextureScaleAndOffsetImpl_Injected_m5DDD8AB08DCF6A52415FB8D76A089CC886425E54_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::GetTextureScaleAndOffsetImpl_Injected(System.Int32,UnityEngine.Vector4&)");
 	_il2cpp_icall_func(__this, ___name0, ___ret1);
+}
+// System.Void UnityEngine.Material::SetTextureOffsetImpl_Injected(System.Int32,UnityEngine.Vector2U26)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureOffsetImpl_Injected_m85850F975A45BBB3AEA145C52309FC7CB82CDF64 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___offset1, const RuntimeMethod* method)
+{
+	typedef void (*Material_SetTextureOffsetImpl_Injected_m85850F975A45BBB3AEA145C52309FC7CB82CDF64_ftn) (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 *, int32_t, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *);
+	static Material_SetTextureOffsetImpl_Injected_m85850F975A45BBB3AEA145C52309FC7CB82CDF64_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Material_SetTextureOffsetImpl_Injected_m85850F975A45BBB3AEA145C52309FC7CB82CDF64_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::SetTextureOffsetImpl_Injected(System.Int32,UnityEngine.Vector2&)");
+	_il2cpp_icall_func(__this, ___name0, ___offset1);
+}
+// System.Void UnityEngine.Material::SetTextureScaleImpl_Injected(System.Int32,UnityEngine.Vector2U26)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetTextureScaleImpl_Injected_m44A1C509E1EA40BFAFA82C7449EC21E6D39E8BF9 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___name0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___scale1, const RuntimeMethod* method)
+{
+	typedef void (*Material_SetTextureScaleImpl_Injected_m44A1C509E1EA40BFAFA82C7449EC21E6D39E8BF9_ftn) (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 *, int32_t, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *);
+	static Material_SetTextureScaleImpl_Injected_m44A1C509E1EA40BFAFA82C7449EC21E6D39E8BF9_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Material_SetTextureScaleImpl_Injected_m44A1C509E1EA40BFAFA82C7449EC21E6D39E8BF9_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::SetTextureScaleImpl_Injected(System.Int32,UnityEngine.Vector2&)");
+	_il2cpp_icall_func(__this, ___name0, ___scale1);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -35865,6 +35523,26 @@ extern "C" IL2CPP_METHOD_ATTR int32_t Mathf_NextPowerOfTwo_m071D88C91A1CBECD47F1
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Mathf_NextPowerOfTwo_m071D88C91A1CBECD47F18CA20D219C77879865E7_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mathf::NextPowerOfTwo(System.Int32)");
 	int32_t retVal = _il2cpp_icall_func(___value0);
+	return retVal;
+}
+// System.Single UnityEngine.Mathf::GammaToLinearSpace(System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772 (float ___value0, const RuntimeMethod* method)
+{
+	typedef float (*Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772_ftn) (float);
+	static Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mathf::GammaToLinearSpace(System.Single)");
+	float retVal = _il2cpp_icall_func(___value0);
+	return retVal;
+}
+// System.Single UnityEngine.Mathf::LinearToGammaSpace(System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61 (float ___value0, const RuntimeMethod* method)
+{
+	typedef float (*Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61_ftn) (float);
+	static Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mathf::LinearToGammaSpace(System.Single)");
+	float retVal = _il2cpp_icall_func(___value0);
 	return retVal;
 }
 // System.Single UnityEngine.Mathf::Sin(System.Single)
@@ -36800,6 +36478,36 @@ extern "C" IL2CPP_METHOD_ATTR float Mathf_Repeat_m8459F4AAFF92DB770CC892BF71EE94
 	}
 
 IL_001e:
+	{
+		float L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Single UnityEngine.Mathf::PingPong(System.Single,System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_PingPong_m531DFAB96635B14C932754377C4D12927EDA0ECE (float ___t0, float ___length1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Mathf_PingPong_m531DFAB96635B14C932754377C4D12927EDA0ECE_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		float L_0 = ___t0;
+		float L_1 = ___length1;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
+		float L_2 = Mathf_Repeat_m8459F4AAFF92DB770CC892BF71EE9438D9D0F779(L_0, ((float)il2cpp_codegen_multiply((float)L_1, (float)(2.0f))), /*hidden argument*/NULL);
+		___t0 = L_2;
+		float L_3 = ___length1;
+		float L_4 = ___t0;
+		float L_5 = ___length1;
+		float L_6 = fabsf(((float)il2cpp_codegen_subtract((float)L_4, (float)L_5)));
+		V_0 = ((float)il2cpp_codegen_subtract((float)L_3, (float)L_6));
+		goto IL_0020;
+	}
+
+IL_0020:
 	{
 		float L_7 = V_0;
 		return L_7;
@@ -38604,1204 +38312,6 @@ extern "C" IL2CPP_METHOD_ATTR void Matrix4x4_Transpose_Injected_m66A188ED73E4BA9
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Matrix4x4_Transpose_Injected_m66A188ED73E4BA9F2A7CEC4C12BEC5D07EE3E1A1_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Matrix4x4::Transpose_Injected(UnityEngine.Matrix4x4&,UnityEngine.Matrix4x4&)");
 	_il2cpp_icall_func(___m0, ___ret1);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void UnityEngine.Mesh::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void Mesh__ctor_m3AEBC82AB71D4F9498F6E254174BEBA8372834B4 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh__ctor_m3AEBC82AB71D4F9498F6E254174BEBA8372834B4_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		Object__ctor_m091EBAEBC7919B0391ABDAFB7389ADC12206525B(__this, /*hidden argument*/NULL);
-		Mesh_Internal_Create_mF1F8E9F726EAC9A087D49C81E2F1609E8266649E(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::Internal_Create(UnityEngine.Mesh)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_Internal_Create_mF1F8E9F726EAC9A087D49C81E2F1609E8266649E (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * ___mono0, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_Internal_Create_mF1F8E9F726EAC9A087D49C81E2F1609E8266649E_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *);
-	static Mesh_Internal_Create_mF1F8E9F726EAC9A087D49C81E2F1609E8266649E_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_Internal_Create_mF1F8E9F726EAC9A087D49C81E2F1609E8266649E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::Internal_Create(UnityEngine.Mesh)");
-	_il2cpp_icall_func(___mono0);
-}
-// System.Void UnityEngine.Mesh::set_indexFormat(UnityEngine.Rendering.IndexFormat)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_indexFormat_m9C0012EBDFBC5B72327FFD0412FA813A2F3F511E (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_set_indexFormat_m9C0012EBDFBC5B72327FFD0412FA813A2F3F511E_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t);
-	static Mesh_set_indexFormat_m9C0012EBDFBC5B72327FFD0412FA813A2F3F511E_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_set_indexFormat_m9C0012EBDFBC5B72327FFD0412FA813A2F3F511E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::set_indexFormat(UnityEngine.Rendering.IndexFormat)");
-	_il2cpp_icall_func(__this, ___value0);
-}
-// System.Int32[] UnityEngine.Mesh::GetIndicesImpl(System.Int32,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* Mesh_GetIndicesImpl_m2118C6CA196093FD19BB05E5258C0DCE06FEAD30 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, bool ___applyBaseVertex1, const RuntimeMethod* method)
-{
-	typedef Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* (*Mesh_GetIndicesImpl_m2118C6CA196093FD19BB05E5258C0DCE06FEAD30_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, bool);
-	static Mesh_GetIndicesImpl_m2118C6CA196093FD19BB05E5258C0DCE06FEAD30_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_GetIndicesImpl_m2118C6CA196093FD19BB05E5258C0DCE06FEAD30_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::GetIndicesImpl(System.Int32,System.Boolean)");
-	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* retVal = _il2cpp_icall_func(__this, ___submesh0, ___applyBaseVertex1);
-	return retVal;
-}
-// System.Void UnityEngine.Mesh::SetIndicesImpl(System.Int32,UnityEngine.MeshTopology,System.Array,System.Int32,System.Boolean,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetIndicesImpl_mF0FAE821CA0269526BDA766E9A2DC12778A2CB55 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, int32_t ___topology1, RuntimeArray * ___indices2, int32_t ___arraySize3, bool ___calculateBounds4, int32_t ___baseVertex5, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_SetIndicesImpl_mF0FAE821CA0269526BDA766E9A2DC12778A2CB55_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, int32_t, RuntimeArray *, int32_t, bool, int32_t);
-	static Mesh_SetIndicesImpl_mF0FAE821CA0269526BDA766E9A2DC12778A2CB55_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_SetIndicesImpl_mF0FAE821CA0269526BDA766E9A2DC12778A2CB55_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::SetIndicesImpl(System.Int32,UnityEngine.MeshTopology,System.Array,System.Int32,System.Boolean,System.Int32)");
-	_il2cpp_icall_func(__this, ___submesh0, ___topology1, ___indices2, ___arraySize3, ___calculateBounds4, ___baseVertex5);
-}
-// System.Void UnityEngine.Mesh::PrintErrorCantAccessChannel(UnityEngine.Rendering.VertexAttribute)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_PrintErrorCantAccessChannel_m2E8A25959739B006557A94F7E460E8BE0B3ABB19 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___ch0, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_PrintErrorCantAccessChannel_m2E8A25959739B006557A94F7E460E8BE0B3ABB19_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t);
-	static Mesh_PrintErrorCantAccessChannel_m2E8A25959739B006557A94F7E460E8BE0B3ABB19_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_PrintErrorCantAccessChannel_m2E8A25959739B006557A94F7E460E8BE0B3ABB19_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::PrintErrorCantAccessChannel(UnityEngine.Rendering.VertexAttribute)");
-	_il2cpp_icall_func(__this, ___ch0);
-}
-// System.Boolean UnityEngine.Mesh::HasChannel(UnityEngine.Rendering.VertexAttribute)
-extern "C" IL2CPP_METHOD_ATTR bool Mesh_HasChannel_mF94FB364044F2A0812AF6DDDC811318159D2D4AD (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___ch0, const RuntimeMethod* method)
-{
-	typedef bool (*Mesh_HasChannel_mF94FB364044F2A0812AF6DDDC811318159D2D4AD_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t);
-	static Mesh_HasChannel_mF94FB364044F2A0812AF6DDDC811318159D2D4AD_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_HasChannel_mF94FB364044F2A0812AF6DDDC811318159D2D4AD_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::HasChannel(UnityEngine.Rendering.VertexAttribute)");
-	bool retVal = _il2cpp_icall_func(__this, ___ch0);
-	return retVal;
-}
-// System.Void UnityEngine.Mesh::SetArrayForChannelImpl(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh_InternalVertexChannelType,System.Int32,System.Array,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannelImpl_mEF2432246258E82C90015832073A7B3BC77A31A2 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, RuntimeArray * ___values3, int32_t ___arraySize4, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_SetArrayForChannelImpl_mEF2432246258E82C90015832073A7B3BC77A31A2_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, int32_t, int32_t, RuntimeArray *, int32_t);
-	static Mesh_SetArrayForChannelImpl_mEF2432246258E82C90015832073A7B3BC77A31A2_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_SetArrayForChannelImpl_mEF2432246258E82C90015832073A7B3BC77A31A2_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::SetArrayForChannelImpl(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Array,System.Int32)");
-	_il2cpp_icall_func(__this, ___channel0, ___format1, ___dim2, ___values3, ___arraySize4);
-}
-// System.Array UnityEngine.Mesh::GetAllocArrayFromChannelImpl(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh_InternalVertexChannelType,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR RuntimeArray * Mesh_GetAllocArrayFromChannelImpl_m965F3844FBD29C866754948D036A6BC6ECF89334 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, const RuntimeMethod* method)
-{
-	typedef RuntimeArray * (*Mesh_GetAllocArrayFromChannelImpl_m965F3844FBD29C866754948D036A6BC6ECF89334_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, int32_t, int32_t);
-	static Mesh_GetAllocArrayFromChannelImpl_m965F3844FBD29C866754948D036A6BC6ECF89334_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_GetAllocArrayFromChannelImpl_m965F3844FBD29C866754948D036A6BC6ECF89334_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::GetAllocArrayFromChannelImpl(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32)");
-	RuntimeArray * retVal = _il2cpp_icall_func(__this, ___channel0, ___format1, ___dim2);
-	return retVal;
-}
-// System.Void UnityEngine.Mesh::GetArrayFromChannelImpl(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh_InternalVertexChannelType,System.Int32,System.Array)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_GetArrayFromChannelImpl_m3C186075FC55A4CCB09798B4CE52AEC6EE9B1A44 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, RuntimeArray * ___values3, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_GetArrayFromChannelImpl_m3C186075FC55A4CCB09798B4CE52AEC6EE9B1A44_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, int32_t, int32_t, int32_t, RuntimeArray *);
-	static Mesh_GetArrayFromChannelImpl_m3C186075FC55A4CCB09798B4CE52AEC6EE9B1A44_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_GetArrayFromChannelImpl_m3C186075FC55A4CCB09798B4CE52AEC6EE9B1A44_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::GetArrayFromChannelImpl(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Array)");
-	_il2cpp_icall_func(__this, ___channel0, ___format1, ___dim2, ___values3);
-}
-// System.Void UnityEngine.Mesh::set_boneWeights(UnityEngine.BoneWeight[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_boneWeights_m36A8AD8BA2C04CA114C26D8E7138156A3D8639EB (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, BoneWeightU5BU5D_t0CFB75EF43257A99CDCF393A069504F365A13F8D* ___value0, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_set_boneWeights_m36A8AD8BA2C04CA114C26D8E7138156A3D8639EB_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, BoneWeightU5BU5D_t0CFB75EF43257A99CDCF393A069504F365A13F8D*);
-	static Mesh_set_boneWeights_m36A8AD8BA2C04CA114C26D8E7138156A3D8639EB_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_set_boneWeights_m36A8AD8BA2C04CA114C26D8E7138156A3D8639EB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::set_boneWeights(UnityEngine.BoneWeight[])");
-	_il2cpp_icall_func(__this, ___value0);
-}
-// System.Boolean UnityEngine.Mesh::get_canAccess()
-extern "C" IL2CPP_METHOD_ATTR bool Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	typedef bool (*Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *);
-	static Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::get_canAccess()");
-	bool retVal = _il2cpp_icall_func(__this);
-	return retVal;
-}
-// System.Int32 UnityEngine.Mesh::get_vertexCount()
-extern "C" IL2CPP_METHOD_ATTR int32_t Mesh_get_vertexCount_mE6F1153EA724F831AD11F10807ABE664CC02E0AF (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	typedef int32_t (*Mesh_get_vertexCount_mE6F1153EA724F831AD11F10807ABE664CC02E0AF_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *);
-	static Mesh_get_vertexCount_mE6F1153EA724F831AD11F10807ABE664CC02E0AF_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_get_vertexCount_mE6F1153EA724F831AD11F10807ABE664CC02E0AF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::get_vertexCount()");
-	int32_t retVal = _il2cpp_icall_func(__this);
-	return retVal;
-}
-// System.Int32 UnityEngine.Mesh::get_subMeshCount()
-extern "C" IL2CPP_METHOD_ATTR int32_t Mesh_get_subMeshCount_m6BE7CFB52CE84AEE45B4E5A704E865954397F52F (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	typedef int32_t (*Mesh_get_subMeshCount_m6BE7CFB52CE84AEE45B4E5A704E865954397F52F_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *);
-	static Mesh_get_subMeshCount_m6BE7CFB52CE84AEE45B4E5A704E865954397F52F_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_get_subMeshCount_m6BE7CFB52CE84AEE45B4E5A704E865954397F52F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::get_subMeshCount()");
-	int32_t retVal = _il2cpp_icall_func(__this);
-	return retVal;
-}
-// UnityEngine.Bounds UnityEngine.Mesh::get_bounds()
-extern "C" IL2CPP_METHOD_ATTR Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890  Mesh_get_bounds_m15A146B9397AA62A81986030D289320EDE4B3037 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		Mesh_get_bounds_Injected_mA4338C67E67FC449E1344556D073855ACB4E9DED(__this, (Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890 *)(&V_0), /*hidden argument*/NULL);
-		Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890  L_0 = V_0;
-		return L_0;
-	}
-}
-// System.Void UnityEngine.Mesh::set_bounds(UnityEngine.Bounds)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_bounds_mB09338F622466456ADBCC449BB1F62F2EF1731B6 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890  ___value0, const RuntimeMethod* method)
-{
-	{
-		Mesh_set_bounds_Injected_mFA253839FEEC7CDF976FE740CA3C2712F491BB8B(__this, (Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890 *)(&___value0), /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::ClearImpl(System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_ClearImpl_mFFD3A4748AF067B75DBD646B4A64B3D9A2F3EE14 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, bool ___keepVertexLayout0, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_ClearImpl_mFFD3A4748AF067B75DBD646B4A64B3D9A2F3EE14_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, bool);
-	static Mesh_ClearImpl_mFFD3A4748AF067B75DBD646B4A64B3D9A2F3EE14_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_ClearImpl_mFFD3A4748AF067B75DBD646B4A64B3D9A2F3EE14_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::ClearImpl(System.Boolean)");
-	_il2cpp_icall_func(__this, ___keepVertexLayout0);
-}
-// System.Void UnityEngine.Mesh::RecalculateBoundsImpl()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_RecalculateBoundsImpl_m43DE3DEFC2DADC090DC6FD2C27F44D6DBB88CEF6 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_RecalculateBoundsImpl_m43DE3DEFC2DADC090DC6FD2C27F44D6DBB88CEF6_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *);
-	static Mesh_RecalculateBoundsImpl_m43DE3DEFC2DADC090DC6FD2C27F44D6DBB88CEF6_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_RecalculateBoundsImpl_m43DE3DEFC2DADC090DC6FD2C27F44D6DBB88CEF6_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::RecalculateBoundsImpl()");
-	_il2cpp_icall_func(__this);
-}
-// System.Void UnityEngine.Mesh::RecalculateNormalsImpl()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_RecalculateNormalsImpl_mC013E21F3D761F2DE88FB8BB18A332865381750E (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_RecalculateNormalsImpl_mC013E21F3D761F2DE88FB8BB18A332865381750E_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *);
-	static Mesh_RecalculateNormalsImpl_mC013E21F3D761F2DE88FB8BB18A332865381750E_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_RecalculateNormalsImpl_mC013E21F3D761F2DE88FB8BB18A332865381750E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::RecalculateNormalsImpl()");
-	_il2cpp_icall_func(__this);
-}
-// System.Void UnityEngine.Mesh::MarkDynamicImpl()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_MarkDynamicImpl_m439AACE205D2202AD4E5D4A12191F4CCCC031876 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_MarkDynamicImpl_m439AACE205D2202AD4E5D4A12191F4CCCC031876_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *);
-	static Mesh_MarkDynamicImpl_m439AACE205D2202AD4E5D4A12191F4CCCC031876_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_MarkDynamicImpl_m439AACE205D2202AD4E5D4A12191F4CCCC031876_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::MarkDynamicImpl()");
-	_il2cpp_icall_func(__this);
-}
-// System.Void UnityEngine.Mesh::CombineMeshesImpl(UnityEngine.CombineInstance[],System.Boolean,System.Boolean,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_CombineMeshesImpl_m3D891535AE8F99B73E7DAC0D7D61C44F1C328635 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, CombineInstanceU5BU5D_t3865A4038A85A764FCE1EE0C134B77C42F4610DA* ___combine0, bool ___mergeSubMeshes1, bool ___useMatrices2, bool ___hasLightmapData3, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_CombineMeshesImpl_m3D891535AE8F99B73E7DAC0D7D61C44F1C328635_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, CombineInstanceU5BU5D_t3865A4038A85A764FCE1EE0C134B77C42F4610DA*, bool, bool, bool);
-	static Mesh_CombineMeshesImpl_m3D891535AE8F99B73E7DAC0D7D61C44F1C328635_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_CombineMeshesImpl_m3D891535AE8F99B73E7DAC0D7D61C44F1C328635_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::CombineMeshesImpl(UnityEngine.CombineInstance[],System.Boolean,System.Boolean,System.Boolean)");
-	_il2cpp_icall_func(__this, ___combine0, ___mergeSubMeshes1, ___useMatrices2, ___hasLightmapData3);
-}
-// UnityEngine.Rendering.VertexAttribute UnityEngine.Mesh::GetUVChannel(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR int32_t Mesh_GetUVChannel_m15BB0A6CC8E32867621A78627CD5FF2CAEA163CC (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___uvIndex0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_GetUVChannel_m15BB0A6CC8E32867621A78627CD5FF2CAEA163CC_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		int32_t L_0 = ___uvIndex0;
-		if ((((int32_t)L_0) < ((int32_t)0)))
-		{
-			goto IL_000f;
-		}
-	}
-	{
-		int32_t L_1 = ___uvIndex0;
-		if ((((int32_t)L_1) <= ((int32_t)7)))
-		{
-			goto IL_001f;
-		}
-	}
-
-IL_000f:
-	{
-		ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 * L_2 = (ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 *)il2cpp_codegen_object_new(ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1_il2cpp_TypeInfo_var);
-		ArgumentException__ctor_m26DC3463C6F3C98BF33EA39598DD2B32F0249CA8(L_2, _stringLiteral107D5821A0DB5D8832BC2CA4B1077C727E1DFE31, _stringLiteralA4A619AD40531127CDE9B2FB5B8C9E69C1E10098, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Mesh_GetUVChannel_m15BB0A6CC8E32867621A78627CD5FF2CAEA163CC_RuntimeMethod_var);
-	}
-
-IL_001f:
-	{
-		int32_t L_3 = ___uvIndex0;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)4, (int32_t)L_3));
-		goto IL_0028;
-	}
-
-IL_0028:
-	{
-		int32_t L_4 = V_0;
-		return L_4;
-	}
-}
-// System.Int32 UnityEngine.Mesh::DefaultDimensionForChannel(UnityEngine.Rendering.VertexAttribute)
-extern "C" IL2CPP_METHOD_ATTR int32_t Mesh_DefaultDimensionForChannel_mF943AF434BB9F54DBB3B3DE65F7B816E617A89C9 (int32_t ___channel0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_DefaultDimensionForChannel_mF943AF434BB9F54DBB3B3DE65F7B816E617A89C9_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		int32_t L_0 = ___channel0;
-		if (!L_0)
-		{
-			goto IL_000e;
-		}
-	}
-	{
-		int32_t L_1 = ___channel0;
-		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
-		{
-			goto IL_0015;
-		}
-	}
-
-IL_000e:
-	{
-		V_0 = 3;
-		goto IL_0050;
-	}
-
-IL_0015:
-	{
-		int32_t L_2 = ___channel0;
-		if ((((int32_t)L_2) < ((int32_t)4)))
-		{
-			goto IL_002b;
-		}
-	}
-	{
-		int32_t L_3 = ___channel0;
-		if ((((int32_t)L_3) > ((int32_t)((int32_t)11))))
-		{
-			goto IL_002b;
-		}
-	}
-	{
-		V_0 = 2;
-		goto IL_0050;
-	}
-
-IL_002b:
-	{
-		int32_t L_4 = ___channel0;
-		if ((((int32_t)L_4) == ((int32_t)2)))
-		{
-			goto IL_0039;
-		}
-	}
-	{
-		int32_t L_5 = ___channel0;
-		if ((!(((uint32_t)L_5) == ((uint32_t)3))))
-		{
-			goto IL_0040;
-		}
-	}
-
-IL_0039:
-	{
-		V_0 = 4;
-		goto IL_0050;
-	}
-
-IL_0040:
-	{
-		ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 * L_6 = (ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 *)il2cpp_codegen_object_new(ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1_il2cpp_TypeInfo_var);
-		ArgumentException__ctor_m26DC3463C6F3C98BF33EA39598DD2B32F0249CA8(L_6, _stringLiteral50D1B2A6B03878A10979D602AECFA9BB26E78C47, _stringLiteralFBE7D7BAACDD551E1D80CFB0BB0A04C017956FCC, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6, NULL, Mesh_DefaultDimensionForChannel_mF943AF434BB9F54DBB3B3DE65F7B816E617A89C9_RuntimeMethod_var);
-	}
-
-IL_0050:
-	{
-		int32_t L_7 = V_0;
-		return L_7;
-	}
-}
-// System.Void UnityEngine.Mesh::SetSizedArrayForChannel(UnityEngine.Rendering.VertexAttribute,UnityEngine.Mesh_InternalVertexChannelType,System.Int32,System.Array,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetSizedArrayForChannel_mCC8ABD25EDD3EF7237B8B8ADE4E649F95055EFEC (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, RuntimeArray * ___values3, int32_t ___valuesCount4, const RuntimeMethod* method)
-{
-	{
-		bool L_0 = Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_001e;
-		}
-	}
-	{
-		int32_t L_1 = ___channel0;
-		int32_t L_2 = ___format1;
-		int32_t L_3 = ___dim2;
-		RuntimeArray * L_4 = ___values3;
-		int32_t L_5 = ___valuesCount4;
-		Mesh_SetArrayForChannelImpl_mEF2432246258E82C90015832073A7B3BC77A31A2(__this, L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
-		goto IL_0025;
-	}
-
-IL_001e:
-	{
-		int32_t L_6 = ___channel0;
-		Mesh_PrintErrorCantAccessChannel_m2E8A25959739B006557A94F7E460E8BE0B3ABB19(__this, L_6, /*hidden argument*/NULL);
-	}
-
-IL_0025:
-	{
-		return;
-	}
-}
-// UnityEngine.Vector3[] UnityEngine.Mesh::get_vertices()
-extern "C" IL2CPP_METHOD_ATTR Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* Mesh_get_vertices_m7D07DC0F071C142B87F675B148FC0F7A243238B9 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_get_vertices_m7D07DC0F071C142B87F675B148FC0F7A243238B9_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* V_0 = NULL;
-	{
-		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_0 = Mesh_GetAllocArrayFromChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m2A198BF0F2DF179DF0C126C5A0BAFA1B75765F4E(__this, 0, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m2A198BF0F2DF179DF0C126C5A0BAFA1B75765F4E_RuntimeMethod_var);
-		V_0 = L_0;
-		goto IL_000e;
-	}
-
-IL_000e:
-	{
-		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_1 = V_0;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Mesh::set_vertices(UnityEngine.Vector3[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_vertices_mC1406AE08BC3495F3B0E29B53BACC9FD7BA685C6 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_set_vertices_mC1406AE08BC3495F3B0E29B53BACC9FD7BA685C6_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_0 = ___value0;
-		Mesh_SetArrayForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m904FEE0DE052D08A303E8BD4C858085F0D46F274(__this, 0, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m904FEE0DE052D08A303E8BD4C858085F0D46F274_RuntimeMethod_var);
-		return;
-	}
-}
-// UnityEngine.Vector3[] UnityEngine.Mesh::get_normals()
-extern "C" IL2CPP_METHOD_ATTR Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* Mesh_get_normals_m3CE4668899836CBD17C3F85EB24261CBCEB3EABB (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_get_normals_m3CE4668899836CBD17C3F85EB24261CBCEB3EABB_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* V_0 = NULL;
-	{
-		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_0 = Mesh_GetAllocArrayFromChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m2A198BF0F2DF179DF0C126C5A0BAFA1B75765F4E(__this, 1, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m2A198BF0F2DF179DF0C126C5A0BAFA1B75765F4E_RuntimeMethod_var);
-		V_0 = L_0;
-		goto IL_000e;
-	}
-
-IL_000e:
-	{
-		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_1 = V_0;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Mesh::set_normals(UnityEngine.Vector3[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_normals_m4054D319A67DAAA25A794D67AD37278A84406589 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_set_normals_m4054D319A67DAAA25A794D67AD37278A84406589_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_0 = ___value0;
-		Mesh_SetArrayForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m904FEE0DE052D08A303E8BD4C858085F0D46F274(__this, 1, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m904FEE0DE052D08A303E8BD4C858085F0D46F274_RuntimeMethod_var);
-		return;
-	}
-}
-// UnityEngine.Vector4[] UnityEngine.Mesh::get_tangents()
-extern "C" IL2CPP_METHOD_ATTR Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* Mesh_get_tangents_mFF92BD7D6EBA8C7EB8340E1529B1CB98006F44DD (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_get_tangents_mFF92BD7D6EBA8C7EB8340E1529B1CB98006F44DD_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* V_0 = NULL;
-	{
-		Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* L_0 = Mesh_GetAllocArrayFromChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mBDD94A90E9F34CAC60C6B772992E35F66EF2D64D(__this, 2, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mBDD94A90E9F34CAC60C6B772992E35F66EF2D64D_RuntimeMethod_var);
-		V_0 = L_0;
-		goto IL_000e;
-	}
-
-IL_000e:
-	{
-		Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* L_1 = V_0;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Mesh::set_tangents(UnityEngine.Vector4[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_tangents_mE66D8020B76E43A5CA3C4E60DB61CD962D7D3C57 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_set_tangents_mE66D8020B76E43A5CA3C4E60DB61CD962D7D3C57_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66* L_0 = ___value0;
-		Mesh_SetArrayForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_m9DCA0F6914F5735D0B865846569B5F958A34AD00(__this, 2, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_m9DCA0F6914F5735D0B865846569B5F958A34AD00_RuntimeMethod_var);
-		return;
-	}
-}
-// UnityEngine.Vector2[] UnityEngine.Mesh::get_uv()
-extern "C" IL2CPP_METHOD_ATTR Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* Mesh_get_uv_m0EBA5CA4644C9D5F1B2125AF3FE3873EFC8A4616 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_get_uv_m0EBA5CA4644C9D5F1B2125AF3FE3873EFC8A4616_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* V_0 = NULL;
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_0 = Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8(__this, 4, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8_RuntimeMethod_var);
-		V_0 = L_0;
-		goto IL_000e;
-	}
-
-IL_000e:
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_1 = V_0;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Mesh::set_uv(UnityEngine.Vector2[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_uv_m56E4B52315669FBDA89DC9C550AC89EEE8A4E7C8 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_set_uv_m56E4B52315669FBDA89DC9C550AC89EEE8A4E7C8_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_0 = ___value0;
-		Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45(__this, 4, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45_RuntimeMethod_var);
-		return;
-	}
-}
-// UnityEngine.Vector2[] UnityEngine.Mesh::get_uv2()
-extern "C" IL2CPP_METHOD_ATTR Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* Mesh_get_uv2_m3E70D5DD7A5C6910A074A78296269EBF2CBAE97F (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_get_uv2_m3E70D5DD7A5C6910A074A78296269EBF2CBAE97F_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* V_0 = NULL;
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_0 = Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8(__this, 5, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8_RuntimeMethod_var);
-		V_0 = L_0;
-		goto IL_000e;
-	}
-
-IL_000e:
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_1 = V_0;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Mesh::set_uv2(UnityEngine.Vector2[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_uv2_m8D37F9622B68D4CEA7FCF96BE4F8E442155DB038 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_set_uv2_m8D37F9622B68D4CEA7FCF96BE4F8E442155DB038_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_0 = ___value0;
-		Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45(__this, 5, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45_RuntimeMethod_var);
-		return;
-	}
-}
-// UnityEngine.Vector2[] UnityEngine.Mesh::get_uv3()
-extern "C" IL2CPP_METHOD_ATTR Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* Mesh_get_uv3_mC56484D8B69A65DA948C7F23B06ED490BCFBE8B0 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_get_uv3_mC56484D8B69A65DA948C7F23B06ED490BCFBE8B0_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* V_0 = NULL;
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_0 = Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8(__this, 6, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8_RuntimeMethod_var);
-		V_0 = L_0;
-		goto IL_000e;
-	}
-
-IL_000e:
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_1 = V_0;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Mesh::set_uv3(UnityEngine.Vector2[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_uv3_mDDBCCD5C65CC6F9378561C56E89DD7D0C3DF183D (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_set_uv3_mDDBCCD5C65CC6F9378561C56E89DD7D0C3DF183D_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_0 = ___value0;
-		Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45(__this, 6, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45_RuntimeMethod_var);
-		return;
-	}
-}
-// UnityEngine.Vector2[] UnityEngine.Mesh::get_uv4()
-extern "C" IL2CPP_METHOD_ATTR Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* Mesh_get_uv4_m1C5734938A443D8004339E8D8DDDC33B3E0935F6 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_get_uv4_m1C5734938A443D8004339E8D8DDDC33B3E0935F6_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* V_0 = NULL;
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_0 = Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8(__this, 7, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m5C40565F81077409CEBD6BB7B2C5ABC02A44F0A8_RuntimeMethod_var);
-		V_0 = L_0;
-		goto IL_000e;
-	}
-
-IL_000e:
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_1 = V_0;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Mesh::set_uv4(UnityEngine.Vector2[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_uv4_m2EBB956F121C204AE03250CE4F81D6926D129C3D (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_set_uv4_m2EBB956F121C204AE03250CE4F81D6926D129C3D_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_0 = ___value0;
-		Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45(__this, 7, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mF173F31839B25D17EAF55BA5572AB1A901CC8E45_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::set_colors(UnityEngine.Color[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_colors_m704D0EF58B7AED0D64AE4763EA375638FB08E026 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399* ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_set_colors_m704D0EF58B7AED0D64AE4763EA375638FB08E026_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399* L_0 = ___value0;
-		Mesh_SetArrayForChannel_TisColor_t119BCA590009762C7223FDD3AF9706653AC84ED2_m09493B4E16A5C5767139466422D26B8D1F1E2589(__this, 3, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisColor_t119BCA590009762C7223FDD3AF9706653AC84ED2_m09493B4E16A5C5767139466422D26B8D1F1E2589_RuntimeMethod_var);
-		return;
-	}
-}
-// UnityEngine.Color32[] UnityEngine.Mesh::get_colors32()
-extern "C" IL2CPP_METHOD_ATTR Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* Mesh_get_colors32_m24C6C6BC1A40B7F09FF390F304A96728A4C99246 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_get_colors32_m24C6C6BC1A40B7F09FF390F304A96728A4C99246_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* V_0 = NULL;
-	{
-		Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* L_0 = Mesh_GetAllocArrayFromChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mBD28E289F6DA9261F8B48C346E498E4CE24131C9(__this, 3, 2, 1, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mBD28E289F6DA9261F8B48C346E498E4CE24131C9_RuntimeMethod_var);
-		V_0 = L_0;
-		goto IL_0010;
-	}
-
-IL_0010:
-	{
-		Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* L_1 = V_0;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Mesh::set_colors32(UnityEngine.Color32[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_colors32_m29459AFE2843D67E95D60E5A13B6F6AF7670230C (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_set_colors32_m29459AFE2843D67E95D60E5A13B6F6AF7670230C_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Color32U5BU5D_tABFBCB467E6D1B791303A0D3A3AA1A482F620983* L_0 = ___value0;
-		Mesh_SetArrayForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB9E837ECF9A328CD3B40632B6E5DF7CD0DB5132B(__this, 3, 2, 1, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB9E837ECF9A328CD3B40632B6E5DF7CD0DB5132B_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::SetVertices(System.Collections.Generic.List`1<UnityEngine.Vector3>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetVertices_m5F487FC255C9CAF4005B75CFE67A88C8C0E7BB06 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * ___inVertices0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_SetVertices_m5F487FC255C9CAF4005B75CFE67A88C8C0E7BB06_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * L_0 = ___inVertices0;
-		Mesh_SetListForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_mE31ACFD0411A7877C5A24536B6C589BAD844E825(__this, 0, L_0, /*hidden argument*/Mesh_SetListForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_mE31ACFD0411A7877C5A24536B6C589BAD844E825_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::SetNormals(System.Collections.Generic.List`1<UnityEngine.Vector3>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetNormals_m76D71A949B9288FA8ED17DDADC530365307B9797 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * ___inNormals0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_SetNormals_m76D71A949B9288FA8ED17DDADC530365307B9797_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * L_0 = ___inNormals0;
-		Mesh_SetListForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_mE31ACFD0411A7877C5A24536B6C589BAD844E825(__this, 1, L_0, /*hidden argument*/Mesh_SetListForChannel_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_mE31ACFD0411A7877C5A24536B6C589BAD844E825_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::SetTangents(System.Collections.Generic.List`1<UnityEngine.Vector4>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetTangents_m6EEAB861C9286B1DA4935B87A883045ADD3955E5 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, List_1_tFF4005B40E5BA433006DA11C56DB086B1E2FC955 * ___inTangents0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_SetTangents_m6EEAB861C9286B1DA4935B87A883045ADD3955E5_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		List_1_tFF4005B40E5BA433006DA11C56DB086B1E2FC955 * L_0 = ___inTangents0;
-		Mesh_SetListForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mEAC1E80DE7B69F1F85C02591C37350C5AEE292F0(__this, 2, L_0, /*hidden argument*/Mesh_SetListForChannel_TisVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_mEAC1E80DE7B69F1F85C02591C37350C5AEE292F0_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::SetColors(System.Collections.Generic.List`1<UnityEngine.Color32>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetColors_m237E41213E82D4BB882ED96FD81A17D9366590CF (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5 * ___inColors0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_SetColors_m237E41213E82D4BB882ED96FD81A17D9366590CF_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		List_1_t749ADA5233D9B421293A000DCB83608A24C3D5D5 * L_0 = ___inColors0;
-		Mesh_SetListForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB7B6EAB6E8B2908650E4ECBDF0E1412A72D09DBE(__this, 3, 2, 1, L_0, /*hidden argument*/Mesh_SetListForChannel_TisColor32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23_mB7B6EAB6E8B2908650E4ECBDF0E1412A72D09DBE_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::SetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector2>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetUVs_m0210150B0387289B823488D421BDF9CBF9769116 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB * ___uvs1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_SetUVs_m0210150B0387289B823488D421BDF9CBF9769116_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		int32_t L_0 = ___channel0;
-		List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB * L_1 = ___uvs1;
-		Mesh_SetUvsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m67576E41684A71A434A5236E3FEDAB1C5261DF9E(__this, L_0, 2, L_1, /*hidden argument*/Mesh_SetUvsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_m67576E41684A71A434A5236E3FEDAB1C5261DF9E_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::SetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector3>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetUVs_m77D1A7716863887E08F876DF12C45AE3967CEE5F (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * ___uvs1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_SetUVs_m77D1A7716863887E08F876DF12C45AE3967CEE5F_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		int32_t L_0 = ___channel0;
-		List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * L_1 = ___uvs1;
-		Mesh_SetUvsImpl_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m81B52673DA9C552B5A9017CD73216B4CD299DC09(__this, L_0, 3, L_1, /*hidden argument*/Mesh_SetUvsImpl_TisVector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_m81B52673DA9C552B5A9017CD73216B4CD299DC09_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::GetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector2>)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_GetUVs_m69A297BE5FF5A8BD3202B2007035A738247BF367 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___channel0, List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB * ___uvs1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_GetUVs_m69A297BE5FF5A8BD3202B2007035A738247BF367_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		int32_t L_0 = ___channel0;
-		List_1_t0737D51EB43DAAA1BDC9C2B83B393A4B9B9BE8EB * L_1 = ___uvs1;
-		Mesh_GetUVsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mA206B788DD8FE703CB5F4AA3F61CE981407D8D62(__this, L_0, L_1, 2, /*hidden argument*/Mesh_GetUVsImpl_TisVector2_tA85D2DD88578276CA8A8796756458277E72D073D_mA206B788DD8FE703CB5F4AA3F61CE981407D8D62_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::PrintErrorCantAccessIndices()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_PrintErrorCantAccessIndices_mA45D3609288655A328AEB0F2F436403B1ECE5077 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_PrintErrorCantAccessIndices_mA45D3609288655A328AEB0F2F436403B1ECE5077_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		String_t* L_0 = Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE(__this, /*hidden argument*/NULL);
-		String_t* L_1 = String_Format_m0ACDD8B34764E4040AED0B3EEB753567E4576BFA(_stringLiteralD0F2CF01D2531C8B4616DDF415A4015DBDB35ED7, L_0, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_LogError_m3BCF9B78263152261565DCA9DB7D55F0C391ED29(L_1, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Boolean UnityEngine.Mesh::CheckCanAccessSubmesh(System.Int32,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR bool Mesh_CheckCanAccessSubmesh_mF86EBD1C9EC3FE557880FA138510F7761585D227 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, bool ___errorAboutTriangles1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_CheckCanAccessSubmesh_mF86EBD1C9EC3FE557880FA138510F7761585D227_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	bool V_0 = false;
-	String_t* G_B6_0 = NULL;
-	String_t* G_B5_0 = NULL;
-	String_t* G_B7_0 = NULL;
-	String_t* G_B7_1 = NULL;
-	{
-		bool L_0 = Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194(__this, /*hidden argument*/NULL);
-		if (L_0)
-		{
-			goto IL_001a;
-		}
-	}
-	{
-		Mesh_PrintErrorCantAccessIndices_mA45D3609288655A328AEB0F2F436403B1ECE5077(__this, /*hidden argument*/NULL);
-		V_0 = (bool)0;
-		goto IL_0061;
-	}
-
-IL_001a:
-	{
-		int32_t L_1 = ___submesh0;
-		if ((((int32_t)L_1) < ((int32_t)0)))
-		{
-			goto IL_002d;
-		}
-	}
-	{
-		int32_t L_2 = ___submesh0;
-		int32_t L_3 = Mesh_get_subMeshCount_m6BE7CFB52CE84AEE45B4E5A704E865954397F52F(__this, /*hidden argument*/NULL);
-		if ((((int32_t)L_2) < ((int32_t)L_3)))
-		{
-			goto IL_005a;
-		}
-	}
-
-IL_002d:
-	{
-		bool L_4 = ___errorAboutTriangles1;
-		G_B5_0 = _stringLiteralBE61A82DC2C94347C3937480003FDF860E3565FA;
-		if (!L_4)
-		{
-			G_B6_0 = _stringLiteralBE61A82DC2C94347C3937480003FDF860E3565FA;
-			goto IL_0043;
-		}
-	}
-	{
-		G_B7_0 = _stringLiteral304A1E2F234F03D8786B9EE52C73F08670574139;
-		G_B7_1 = G_B5_0;
-		goto IL_0048;
-	}
-
-IL_0043:
-	{
-		G_B7_0 = _stringLiteral1E01512B1E7D3EA5B69D1F71AC90A9451071D646;
-		G_B7_1 = G_B6_0;
-	}
-
-IL_0048:
-	{
-		String_t* L_5 = String_Format_m0ACDD8B34764E4040AED0B3EEB753567E4576BFA(G_B7_1, G_B7_0, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_LogError_m97139CB2EE76D5CD8308C1AD0499A5F163FC7F51(L_5, __this, /*hidden argument*/NULL);
-		V_0 = (bool)0;
-		goto IL_0061;
-	}
-
-IL_005a:
-	{
-		V_0 = (bool)1;
-		goto IL_0061;
-	}
-
-IL_0061:
-	{
-		bool L_6 = V_0;
-		return L_6;
-	}
-}
-// System.Boolean UnityEngine.Mesh::CheckCanAccessSubmeshTriangles(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR bool Mesh_CheckCanAccessSubmeshTriangles_m214B5F30F7461C620D03F10F6CF1CAF53DBEE509 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, const RuntimeMethod* method)
-{
-	bool V_0 = false;
-	{
-		int32_t L_0 = ___submesh0;
-		bool L_1 = Mesh_CheckCanAccessSubmesh_mF86EBD1C9EC3FE557880FA138510F7761585D227(__this, L_0, (bool)1, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		bool L_2 = V_0;
-		return L_2;
-	}
-}
-// System.Boolean UnityEngine.Mesh::CheckCanAccessSubmeshIndices(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR bool Mesh_CheckCanAccessSubmeshIndices_m81DF83B1676084AF0B70A36BC7621ADB08430722 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, const RuntimeMethod* method)
-{
-	bool V_0 = false;
-	{
-		int32_t L_0 = ___submesh0;
-		bool L_1 = Mesh_CheckCanAccessSubmesh_mF86EBD1C9EC3FE557880FA138510F7761585D227(__this, L_0, (bool)0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		bool L_2 = V_0;
-		return L_2;
-	}
-}
-// System.Void UnityEngine.Mesh::set_triangles(System.Int32[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_triangles_m143A1C262BADCFACE43587EBA2CDC6EBEB5DFAED (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* ___value0, const RuntimeMethod* method)
-{
-	{
-		bool L_0 = Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0021;
-		}
-	}
-	{
-		Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* L_1 = ___value0;
-		Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* L_2 = ___value0;
-		int32_t L_3 = NoAllocHelpers_SafeLength_m85E794F370BFE9D3954E72480AE6ED358AF5102C((RuntimeArray *)(RuntimeArray *)L_2, /*hidden argument*/NULL);
-		Mesh_SetTrianglesImpl_m8EDF09F91CF1F2FE8B6095E7C73685FA36ABCECD(__this, (-1), (RuntimeArray *)(RuntimeArray *)L_1, L_3, (bool)1, 0, /*hidden argument*/NULL);
-		goto IL_0027;
-	}
-
-IL_0021:
-	{
-		Mesh_PrintErrorCantAccessIndices_mA45D3609288655A328AEB0F2F436403B1ECE5077(__this, /*hidden argument*/NULL);
-	}
-
-IL_0027:
-	{
-		return;
-	}
-}
-// System.Int32[] UnityEngine.Mesh::GetIndices(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* Mesh_GetIndices_m2FD8417547E7595F590CE55D381E0D13A8D72AA5 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, const RuntimeMethod* method)
-{
-	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* V_0 = NULL;
-	{
-		int32_t L_0 = ___submesh0;
-		Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* L_1 = Mesh_GetIndices_m4260DCF1026449C4E8C4C40229D12AF8CAB26EAF(__this, L_0, (bool)1, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* L_2 = V_0;
-		return L_2;
-	}
-}
-// System.Int32[] UnityEngine.Mesh::GetIndices(System.Int32,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* Mesh_GetIndices_m4260DCF1026449C4E8C4C40229D12AF8CAB26EAF (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, bool ___applyBaseVertex1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_GetIndices_m4260DCF1026449C4E8C4C40229D12AF8CAB26EAF_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* V_0 = NULL;
-	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* G_B3_0 = NULL;
-	{
-		int32_t L_0 = ___submesh0;
-		bool L_1 = Mesh_CheckCanAccessSubmeshIndices_m81DF83B1676084AF0B70A36BC7621ADB08430722(__this, L_0, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_001a;
-		}
-	}
-	{
-		int32_t L_2 = ___submesh0;
-		bool L_3 = ___applyBaseVertex1;
-		Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* L_4 = Mesh_GetIndicesImpl_m2118C6CA196093FD19BB05E5258C0DCE06FEAD30(__this, L_2, L_3, /*hidden argument*/NULL);
-		G_B3_0 = L_4;
-		goto IL_0020;
-	}
-
-IL_001a:
-	{
-		Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* L_5 = (Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83*)SZArrayNew(Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83_il2cpp_TypeInfo_var, (uint32_t)0);
-		G_B3_0 = L_5;
-	}
-
-IL_0020:
-	{
-		V_0 = G_B3_0;
-		goto IL_0026;
-	}
-
-IL_0026:
-	{
-		Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* L_6 = V_0;
-		return L_6;
-	}
-}
-// System.Void UnityEngine.Mesh::SetTrianglesImpl(System.Int32,System.Array,System.Int32,System.Boolean,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetTrianglesImpl_m8EDF09F91CF1F2FE8B6095E7C73685FA36ABCECD (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, int32_t ___submesh0, RuntimeArray * ___triangles1, int32_t ___arraySize2, bool ___calculateBounds3, int32_t ___baseVertex4, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = ___submesh0;
-		RuntimeArray * L_1 = ___triangles1;
-		int32_t L_2 = ___arraySize2;
-		bool L_3 = ___calculateBounds3;
-		int32_t L_4 = ___baseVertex4;
-		Mesh_SetIndicesImpl_mF0FAE821CA0269526BDA766E9A2DC12778A2CB55(__this, L_0, 0, L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::SetTriangles(System.Collections.Generic.List`1<System.Int32>,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetTriangles_m6A43D705DE751C622CCF88EC31C4EF1B53578BE5 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * ___triangles0, int32_t ___submesh1, const RuntimeMethod* method)
-{
-	{
-		List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * L_0 = ___triangles0;
-		int32_t L_1 = ___submesh1;
-		Mesh_SetTriangles_m39FB983B90F36D724CC1C21BA7821C9697F86116(__this, L_0, L_1, (bool)1, 0, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::SetTriangles(System.Collections.Generic.List`1<System.Int32>,System.Int32,System.Boolean,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_SetTriangles_m39FB983B90F36D724CC1C21BA7821C9697F86116 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * ___triangles0, int32_t ___submesh1, bool ___calculateBounds2, int32_t ___baseVertex3, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_SetTriangles_m39FB983B90F36D724CC1C21BA7821C9697F86116_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		int32_t L_0 = ___submesh1;
-		bool L_1 = Mesh_CheckCanAccessSubmeshTriangles_m214B5F30F7461C620D03F10F6CF1CAF53DBEE509(__this, L_0, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		int32_t L_2 = ___submesh1;
-		List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * L_3 = ___triangles0;
-		RuntimeArray * L_4 = NoAllocHelpers_ExtractArrayFromList_mB4B8B76B4F160975C949FB3E15C1D497DBAE8EDC(L_3, /*hidden argument*/NULL);
-		List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * L_5 = ___triangles0;
-		int32_t L_6 = NoAllocHelpers_SafeLength_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_mAB99F87F48EF2561002200C769D115010830F1CC(L_5, /*hidden argument*/NoAllocHelpers_SafeLength_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_mAB99F87F48EF2561002200C769D115010830F1CC_RuntimeMethod_var);
-		bool L_7 = ___calculateBounds2;
-		int32_t L_8 = ___baseVertex3;
-		Mesh_SetTrianglesImpl_m8EDF09F91CF1F2FE8B6095E7C73685FA36ABCECD(__this, L_2, L_4, L_6, L_7, L_8, /*hidden argument*/NULL);
-	}
-
-IL_0023:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::Clear()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_Clear_mB750E1DCAB658124AAD81A02B93DED7601047B60 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	{
-		Mesh_ClearImpl_mFFD3A4748AF067B75DBD646B4A64B3D9A2F3EE14(__this, (bool)1, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::RecalculateBounds()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_RecalculateBounds_m1BF701FE2CEA4E8E1183FF878B812808ED1EBA49 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_RecalculateBounds_m1BF701FE2CEA4E8E1183FF878B812808ED1EBA49_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		bool L_0 = Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		Mesh_RecalculateBoundsImpl_m43DE3DEFC2DADC090DC6FD2C27F44D6DBB88CEF6(__this, /*hidden argument*/NULL);
-		goto IL_002c;
-	}
-
-IL_0017:
-	{
-		String_t* L_1 = Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE(__this, /*hidden argument*/NULL);
-		String_t* L_2 = String_Format_m0ACDD8B34764E4040AED0B3EEB753567E4576BFA(_stringLiteral92F9201EE50CA286022631136DE6385E481B8C77, L_1, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_LogError_m3BCF9B78263152261565DCA9DB7D55F0C391ED29(L_2, /*hidden argument*/NULL);
-	}
-
-IL_002c:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::RecalculateNormals()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_RecalculateNormals_m9F5DF412F81F250419D9887C76F549B692B7D027 (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_RecalculateNormals_m9F5DF412F81F250419D9887C76F549B692B7D027_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		bool L_0 = Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		Mesh_RecalculateNormalsImpl_mC013E21F3D761F2DE88FB8BB18A332865381750E(__this, /*hidden argument*/NULL);
-		goto IL_002c;
-	}
-
-IL_0017:
-	{
-		String_t* L_1 = Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE(__this, /*hidden argument*/NULL);
-		String_t* L_2 = String_Format_m0ACDD8B34764E4040AED0B3EEB753567E4576BFA(_stringLiteralB584924AE37A395C153495B3B47772CC0410415A, L_1, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_LogError_m3BCF9B78263152261565DCA9DB7D55F0C391ED29(L_2, /*hidden argument*/NULL);
-	}
-
-IL_002c:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::MarkDynamic()
-extern "C" IL2CPP_METHOD_ATTR void Mesh_MarkDynamic_m554A9D7214E30E4F8F0515B712F3E3FA6D695A5F (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, const RuntimeMethod* method)
-{
-	{
-		bool L_0 = Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0012;
-		}
-	}
-	{
-		Mesh_MarkDynamicImpl_m439AACE205D2202AD4E5D4A12191F4CCCC031876(__this, /*hidden argument*/NULL);
-	}
-
-IL_0012:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::CombineMeshes(UnityEngine.CombineInstance[])
-extern "C" IL2CPP_METHOD_ATTR void Mesh_CombineMeshes_m67CB4404E67C6474FCE1AC347ED1821276C2B27D (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, CombineInstanceU5BU5D_t3865A4038A85A764FCE1EE0C134B77C42F4610DA* ___combine0, const RuntimeMethod* method)
-{
-	{
-		CombineInstanceU5BU5D_t3865A4038A85A764FCE1EE0C134B77C42F4610DA* L_0 = ___combine0;
-		Mesh_CombineMeshesImpl_m3D891535AE8F99B73E7DAC0D7D61C44F1C328635(__this, L_0, (bool)1, (bool)1, (bool)0, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::get_bounds_Injected(UnityEngine.BoundsU26)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_get_bounds_Injected_mA4338C67E67FC449E1344556D073855ACB4E9DED (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890 * ___ret0, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_get_bounds_Injected_mA4338C67E67FC449E1344556D073855ACB4E9DED_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890 *);
-	static Mesh_get_bounds_Injected_mA4338C67E67FC449E1344556D073855ACB4E9DED_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_get_bounds_Injected_mA4338C67E67FC449E1344556D073855ACB4E9DED_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::get_bounds_Injected(UnityEngine.Bounds&)");
-	_il2cpp_icall_func(__this, ___ret0);
-}
-// System.Void UnityEngine.Mesh::set_bounds_Injected(UnityEngine.BoundsU26)
-extern "C" IL2CPP_METHOD_ATTR void Mesh_set_bounds_Injected_mFA253839FEEC7CDF976FE740CA3C2712F491BB8B (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * __this, Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890 * ___value0, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_set_bounds_Injected_mFA253839FEEC7CDF976FE740CA3C2712F491BB8B_ftn) (Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C *, Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890 *);
-	static Mesh_set_bounds_Injected_mFA253839FEEC7CDF976FE740CA3C2712F491BB8B_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_set_bounds_Injected_mFA253839FEEC7CDF976FE740CA3C2712F491BB8B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::set_bounds_Injected(UnityEngine.Bounds&)");
-	_il2cpp_icall_func(__this, ___value0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

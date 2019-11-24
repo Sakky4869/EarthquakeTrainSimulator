@@ -16391,6 +16391,14 @@ extern "C" void IOAsyncResult_tB02ABC485035B18A731F1B61FB27EE17F4B792AD_marshal_
 extern "C" void IOAsyncResult_tB02ABC485035B18A731F1B61FB27EE17F4B792AD_marshal_com_cleanup(IOAsyncResult_tB02ABC485035B18A731F1B61FB27EE17F4B792AD_marshaled_com& marshaled)
 {
 }
+// System.Object System.IOAsyncResult::get_AsyncState()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * IOAsyncResult_get_AsyncState_m9D507541D18B17FFF72F90D8DBB3F301213EA4A7 (IOAsyncResult_tB02ABC485035B18A731F1B61FB27EE17F4B792AD * __this, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = __this->get_async_state_1();
+		return L_0;
+	}
+}
 // System.Threading.WaitHandle System.IOAsyncResult::get_AsyncWaitHandle()
 extern "C" IL2CPP_METHOD_ATTR WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5 (IOAsyncResult_tB02ABC485035B18A731F1B61FB27EE17F4B792AD * __this, const RuntimeMethod* method)
 {
@@ -16480,6 +16488,14 @@ IL_0038:
 	{
 		WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_7 = V_2;
 		return L_7;
+	}
+}
+// System.Boolean System.IOAsyncResult::get_CompletedSynchronously()
+extern "C" IL2CPP_METHOD_ATTR bool IOAsyncResult_get_CompletedSynchronously_m55D4C57A46BF019D4FAF05ABE30E6EEEA6A78277 (IOAsyncResult_tB02ABC485035B18A731F1B61FB27EE17F4B792AD * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_completed_synchronously_3();
+		return L_0;
 	}
 }
 #ifdef __clang__
@@ -34263,7 +34279,7 @@ IL_002f:
 		NullCheck(L_9);
 		Il2CppChar L_12 = String_get_Chars_m14308AC3B95F8C1D9F1D1055B116B37D595F1D96(L_9, ((int32_t)il2cpp_codegen_add((int32_t)L_10, (int32_t)L_11)), /*hidden argument*/NULL);
 		NullCheck(L_8);
-		Il2CppChar L_13 = VirtFuncInvoker1< Il2CppChar, Il2CppChar >::Invoke(7 /* System.Char System.Globalization.TextInfo::ToLower(System.Char) */, L_8, L_12);
+		Il2CppChar L_13 = VirtFuncInvoker1< Il2CppChar, Il2CppChar >::Invoke(8 /* System.Char System.Globalization.TextInfo::ToLower(System.Char) */, L_8, L_12);
 		String_t* L_14 = __this->get__pattern_3();
 		int32_t L_15 = V_1;
 		NullCheck(L_14);

@@ -31,6 +31,7 @@ extern "C" void MixedRealityExtensionServiceAttribute_get_DefaultProfile_m77EBD1
 extern "C" void MixedRealityServiceConfiguration_get_ConfigurationProfile_mFBB3F152F9F7368939ED8B8A2B887FE41963EC21_AdjustorThunk ();
 extern "C" void MixedRealityBoundarySystem_get_Bounds_mF186F24724A9AE8C18F569A2ACF94ED41739D019 ();
 extern "C" void CoreServices_get_BoundarySystem_m551334A05639062543488B8E0602FCC9781AFFAB ();
+extern "C" void BoundaryVisualizationDemo_get_BoundarySystem_m09D4110E9B97EF93D2ED69487E4F8CC1D4FBE5C0 ();
 extern "C" void MixedRealityToolkit_get_BoundarySystem_m411CA4E6B6640165C827A678195394E3AE1C0282 ();
 extern "C" void MixedRealityBoundarySystem_get_BoundaryVisualizationProfile_mF5106874627BAE0018AF2A6A328FEA172851AE58 ();
 extern "C" void MixedRealityToolkitConfigurationProfile_get_BoundaryVisualizationProfile_m2D4AD7F552851205B91E2A2455C3A2A9F1CC579E ();
@@ -43,6 +44,10 @@ extern "C" void MixedRealityToolkit_get_DiagnosticsSystem_m8DB279245E367CE65A1DF
 extern "C" void MixedRealityDiagnosticsSystem_get_DiagnosticsSystemProfile_m34D02016DC65283E742F580A7F3C9E6DA1415C3A ();
 extern "C" void MixedRealityToolkitConfigurationProfile_get_DiagnosticsSystemProfile_m0DF12C460541BCAD1AE6C7F74F93AF61E4E48F8F ();
 extern "C" void BaseMixedRealityLineDataProvider_get_DistortionMode_m0FA77B55F9BDE9B262667990063879F597CAB3A3 ();
+extern "C" void AudioFeedbackPlayer_get_Instance_m7EC7DBB489C623BF4958D9463B62E22CC283897E ();
+extern "C" void KeepThisAlive_get_Instance_m0883844BC50436A567A74FC784D76EC3B6926EA3 ();
+extern "C" void UserInputRecorder_get_Instance_mCF6877F81EBC6229EB50702FF98AFB5E99B2A897 ();
+extern "C" void StatusText_get_Instance_mF6984A29F17FC1EAC49BDD8897889CBCF3BA6665 ();
 extern "C" void MixedRealityKeyboard_get_State_mA04AE3EE927B4B086FD36B29C5B84F9F9797F268 ();
 extern "C" void StabilizationPlaneModifier_get_OverridePlane_m0A3A66626C03EEB839AF9B533B9624B75E72B126 ();
 extern "C" void AnchorAttachmentInfo_get_Operation_m4A891B0F65163E8E69108FB03122C974EE9BDA60_AdjustorThunk ();
@@ -62,6 +67,8 @@ extern "C" void BaseCursor_CheckCursorState_m537F3952147B5CB2FB446E3E08839651ED3
 extern "C" void BaseCursor_get_CursorState_m5F879B8F386BE548867ED8CEDB6A325AF8789C59 ();
 extern "C" void TeleportCursor_CheckCursorState_mE81F6D0BC6070D5748C348A60D257FB4E88652C8 ();
 extern "C" void MixedRealityInteractionMapping_get_InputType_mA8C027545479C380F87D72BDED734A9BDBFA40CD ();
+extern "C" void DrawOnTexture_get_EyeTarget_m76F1932A7EB6B070AC9602157CCFD3F3C47DCF49 ();
+extern "C" void TargetEventArgs_get_HitTarget_m27AC2AE7B41B0F5A3C74B63CF085BE457E698A39 ();
 extern "C" void EyeTrackingTarget_get_LookedAtEyeTarget_mEB3CF3BD747AC4759C20995D7F4B466DCD241365 ();
 extern "C" void FocusProvider_GetPrioritizedHitResult_m3B9D7C4762554193259D7DC93EB7E3D169477333 ();
 extern "C" void MixedRealityGestureMapping_get_GestureType_m6798792581776B818AF6A5307DD72D3425420C20_AdjustorThunk ();
@@ -89,8 +96,11 @@ extern "C" void BaseControllerPointer_get_BaseCursor_m1B5688F6CE0C15F7B400C3E80D
 extern "C" void GGVPointer_get_BaseCursor_m807BA10BD92F363E6261FB290D0E9806021F52E2 ();
 extern "C" void GazeProvider_get_GazeCursor_m08586B516296E2B4C48FB36C689FD37E7AFFCF63 ();
 extern "C" void GenericPointer_get_BaseCursor_m5F5A0FB7FDB15FEBAE6B1115E5E23FCE19E98415 ();
+extern "C" void LogStructureEyeGaze_get_EyeTrackingProvider_m75914CE4960B464F3443A7FB8C08BE4E2EA18850 ();
+extern "C" void MoveObjByEyeGaze_get_EyeTrackingProvider_m8D0CDBD7565E9780CE6F16926139F872936B0D16 ();
 extern "C" void MixedRealityInputSystem_get_EyeGazeProvider_m808B7C14B863D9EBBD1C0EEBA7C728909711E1D0 ();
 extern "C" void BoundingBox_get_EyeTrackingProvider_m2411CED126CFA446AC95C2A9B46483974B21ACD4 ();
+extern "C" void PanZoomBase_get_EyeSaccadeProvider_m956EF7B360063FC639DEE77A234C863F1B4029E2 ();
 extern "C" void WindowsMixedRealityEyeGazeDataProvider_get_SaccadeProvider_m5264DC2EE7DF8C054D06E852ABA07EFA0FE794ED ();
 extern "C" void BaseControllerPointer_get_FocusTarget_m24C4CCBC140B8E61AFA75B319E75A56D9851D567 ();
 extern "C" void GGVPointer_get_FocusTarget_m852937B83792105BA3C05F0D858260A477D1408F ();
@@ -109,6 +119,17 @@ extern "C" void GenericPointer_get_InputSourceParent_m78C0FCF841022C96E2A5A57F93
 extern "C" void MixedRealityInputSystem_RequestNewGenericInputSource_m03F2F711FED0EB22A14549C9AC1134332556ADC3 ();
 extern "C" void CoreServices_get_InputSystem_m4797E97A2258E0318F789F3291D646530225C3E8 ();
 extern "C" void DiagnosticsSystemVoiceControls_get_InputSystem_m63D8713A26107DDD5531117D52BCB4858F3A5483 ();
+extern "C" void BoundingBoxExampleTest_get_InputSystem_mABB9C2D46E36617E60A5801012CD1AFEF557CFFA ();
+extern "C" void EyeCalibrationChecker_get_InputSystem_m7DE61E3764E9210D700CF932F8F688D5BBF48B4B ();
+extern "C" void FollowEyeGaze_get_InputSystem_m27B7480D2C73242EED5C7DB1EDBFE7EC77C76C98 ();
+extern "C" void FollowEyeGazeGazeProvider_get_InputSystem_m13CCCFA46E97DF2752F6C45F5F44020A8F86BB29 ();
+extern "C" void InputPointerVisualizer_get_InputSystem_m7A82CF507CC4604288B69F29B795C2EE3FFE4CFD ();
+extern "C" void LogStructureEyeGaze_get_InputSystem_m5FC7400F78BC45D1E01C2CF0D41ED1FB3AF2C394 ();
+extern "C" void OnLookAtRotateByEyeGaze_get_InputSystem_mE8F9A44B23E7DD45C55A2DAA5FE730808400FA1B ();
+extern "C" void PanZoomBase_get_InputSystem_m1A6C73418BCF27A9871693112B6222D3F190C4DF ();
+extern "C" void SpeechVisualFeedback_get_InputSystem_m25136907E7FC6A1A2218787D4AC4C428F682FEC4 ();
+extern "C" void MixedRealityCapabilityDemo_get_InputSystem_m86534386B3C2DB595E5F488D7D08F5AAD95BAE70 ();
+extern "C" void GestureTester_get_InputSystem_m187437605BF50AFCFE0ACEE7B9AD1051B92F6197 ();
 extern "C" void StabilizationPlaneModifier_get_InputSystem_mD367F581790B9EFE39509AC79E887683DCE6D27C ();
 extern "C" void BaseController_get_InputSystem_m49950F99CD27E15F1CA252ECFE568C8945145365 ();
 extern "C" void BaseCursor_get_InputSystem_m4B621561F49853E95ACF0129239E67C2346DEE4C ();
@@ -302,6 +323,8 @@ extern "C" void SceneContentTracker_get_SortedLightingScenes_mF123745447EB9ED21F
 extern "C" void MixedRealitySpatialObserverConfiguration_get_ObserverProfile_m7D3036686651D44965AA54A3721A5E204FBD15E4_AdjustorThunk ();
 extern "C" void MixedRealitySpatialAwarenessSystem_GetObserver_m9ED5D5EB1AC4D4A251AA4CD828DEAF4253F07844 ();
 extern "C" void CoreServices_get_SpatialAwarenessSystem_m200A074E9F783A90A1CE486899A30CE2F46F1B9D ();
+extern "C" void ClearSpatialObservations_get_SpatialAwarenessSystem_m0CD14724C2C4D449B47093AF5C6A5538D78509EE ();
+extern "C" void MixedRealityCapabilityDemo_get_SpatialAwarenessSystem_mDA66D66DB38A59F1A1E108F552AC1A8E77CD763D ();
 extern "C" void MixedRealityToolkit_get_SpatialAwarenessSystem_mAAAF7D9755F3627EE39D67AEBE23BC6D88593BE2 ();
 extern "C" void BaseSpatialObserver_get_SpatialAwarenessSystem_m6ABDB30CC80260B324F7B65C921F100943FB580A ();
 extern "C" void MixedRealityToolkitConfigurationProfile_get_SpatialAwarenessSystemProfile_m8910E1151BAC157CBE82A7A05F4FBD27FD5C4F08 ();
@@ -530,6 +553,7 @@ extern "C" void WindowsMixedRealityHandRecorder_get_ReferenceJoint_m99DD86B8EA1D
 extern "C" void ArticulatedHandPoseItem_get_JointIndex_m7BD41AD2AF4ED8BA5941642CC660BD65577EEDD4_AdjustorThunk ();
 extern "C" void SolverHandler_get_TrackedHandJoint_mF05877ED4572D99A7971BF00B9DD23AADEB17126 ();
 extern "C" void WindowsMixedRealityArticulatedHand_ConvertHandJointKindToTrackedHandJoint_m492E626BE68A277D72EBA9524D5243AE0D0EA486 ();
+extern "C" void SolverExampleManager_get_TrackedType_m1944715EE4DEC7BFB3C61D046DF93A2211F7E07D ();
 extern "C" void InBetween_get_SecondTrackedObjectType_mCA12B5FD8F4FE53E6C0E95030B259C1D0C8828C0 ();
 extern "C" void InBetween_get_TrackedObjectForSecondTransform_mD37064D1BFE276BFC8B5638A44C21F9C593E38E0 ();
 extern "C" void SolverHandler_get_TrackedObjectToReference_m21CED24E43E745174EE1939DAA3797C38E6E33D7 ();
@@ -721,7 +745,38 @@ extern "C" void MixedRealityToolkitVisualProfiler_get_FrameInfoVisible_mBC275812
 extern "C" void MixedRealityToolkitVisualProfiler_get_IsVisible_m73317B537FB3CDBFBC8D3F221BCBEC05CBAE09F0 ();
 extern "C" void MixedRealityToolkitVisualProfiler_get_MemoryStatsVisible_mA42DFCD68AA8AB3D9561D34C9B3DC933C1E44568 ();
 extern "C" void DoubleExtensions_Approximately_mADD6DDA9960FAE3311949752BDC65957E111622D ();
+extern "C" void U3CSequenceU3Ed__15_MoveNext_m7E8C4E0A193DCEC5D1492CD0BA0F285124E2D2CC ();
+extern "C" void U3CWaitForSpeechCommandU3Ed__17_MoveNext_m605BD0790142E7B898EC16B83EFCD7557F59DA85 ();
+extern "C" void ChangeSize_AreWeThereYet_mEA6708406660417E868551AC941B8DF2A3FE1364 ();
+extern "C" void U3CComputeHeatmapAtU3Ed__20_MoveNext_m4EF3874DA9EA72B926A0E04F4D8E23A55D594C01 ();
+extern "C" void U3CDrawAtU3Ed__19_MoveNext_mC0E7AF147175638E0E1FA883B2E99F03F1736F77 ();
+extern "C" void DrawOnTexture_ComputeHeatmapColorAt_mAC5544C0830C278EB541F37126C39B4A23D78798 ();
+extern "C" void DwellSelection_get_UseDwell_m8B38A5FBD4EC0D2548750C1A01A420654D6D0EA1 ();
+extern "C" void U3CLoadNewSceneU3Ed__8_MoveNext_m2D725016549B7F19FEE9CDA3D6546714A7F9809A ();
+extern "C" void HitBehaviorDestroyOnSelect_HandleTargetGridIterator_m3DF537B8211AB58480AED2C097FA92D45A7848C1 ();
+extern "C" void U3CLoadNewSceneU3Ed__6_MoveNext_m516441797EE7F3FD3147F38F5F4652EA9F3A9CE3 ();
+extern "C" void BasicInputLogger_Append_m364F14249D4CE030E917A336EBEC106E6E1A3352 ();
+extern "C" void InputPointerVisualizer_IsDwelling_mCFEFEEAFFF67AD87FBC6C22707966AD4160312D8 ();
+extern "C" void U3CAddToCounterU3Ed__44_MoveNext_m45F2F16F6E156FA59F78EC6F36A603F9CD9618E6 ();
+extern "C" void U3CPopulateHeatmapU3Ed__42_MoveNext_m84B3C78F27C89C6EBBF8BD77729F0A67B8B938EF ();
+extern "C" void U3CUpdateStatusU3Ed__43_MoveNext_m242C0B70B7736DCE27FA7C83E73E2989D0A289A4 ();
+extern "C" void UserInputPlayback_get_DataIsLoaded_m9971D410D8A7025E9A0621163B0806E80FE16512 ();
+extern "C" void UserInputPlayback_get_IsPlaying_mA26042CFA0FF24220DADE2E0D77C50B1AC5D8130 ();
+extern "C" void MoveObjByEyeGaze_HeadIsInMotion_mE8D9A98F26C6FFDC04E4448F86E707E317245B14 ();
+extern "C" void MoveObjByEyeGaze_IsActiveHand_mE4065626D7E8536B4CF851941039B8910252AEFE ();
+extern "C" void MoveObjByEyeGaze_IsDestinationPlausible_m709FB592F367962A2E06E0D45BA1C790FDD76A3D ();
+extern "C" void MoveObjByEyeGaze_IsLookingAwayFromPreview_mB94F31971AA1C2BA539FEE62EEC9F4BCB684A89F ();
+extern "C" void MoveObjByEyeGaze_IsLookingAwayFromTarget_mB70132B6B7C2E606466D3EA7E33F382008246241 ();
+extern "C" void MoveObjByEyeGaze_SetActiveHand_m99B92290DDF18404A958605B2548E14C933EDA42 ();
+extern "C" void MoveObjByEyeGaze_ShouldObjBeWarped_m12BEC489EEA06E60FEDFD70E787FE2886C4365D7 ();
+extern "C" void U3CZoomAndStopU3Ed__81_MoveNext_mDD06C94002F9BADBF91CCF64901A8D8163FA3789 ();
+extern "C" void PanZoomBaseRectTransf_UpdateCursorPosInHitBox_mBCA4534A82AF7D807A5128EE4130547D3F51310B ();
+extern "C" void PanZoomBaseRectTransf_get_IsValid_m6FCAABCED49D3F0E5E1DDDB7FA485851A9C83B07 ();
+extern "C" void PanZoomBaseTexture_UpdateCursorPosInHitBox_m1BC9CBDCA8BFDE858AC59C0EA900D10142B071EC ();
+extern "C" void PanZoomBaseTexture_get_IsValid_m90D9B973A634E17401E8D37BCA46DACEDBC9F545 ();
+extern "C" void TargetGroupIterator_get_CurrentTargetIsValid_m511AEE3F820B4174D885114BE174353906185D5C ();
 extern "C" void DwellHandler_get_HasFocus_m4DCAD9A6C92FCA7013725BF369EDFB96E91F5C90 ();
+extern "C" void DwellProfileWithDecay_get_AllowDwellDecayOnCancel_m0A8381E852D3C5C6AB4AD332870241A6AD0A92A5 ();
 extern "C" void MixedRealityKeyboard_get_Visible_m12D4210A179E0C3018D347177F6DC0AA3C46B30D ();
 extern "C" void StabilizationPlaneModifier_TryGetGazeHitPosition_mA1CBED62D2C83664B14EDBCA4830C564BB5C5CE3 ();
 extern "C" void StabilizationPlaneModifier_get_TrackVelocity_m68CA855A1DC88039F08398D317D0F43A79F41DAC ();
@@ -1029,6 +1084,9 @@ extern "C" void BoundingBox_get_ShowRotationHandleForY_m6AFF6892B7A3BEBAADCFF5F1
 extern "C" void BoundingBox_get_ShowRotationHandleForZ_mD9AFB697155C72EC5C34005FBD3FACA78341F042 ();
 extern "C" void BoundingBox_get_ShowScaleHandles_m897162E2A602A4B61DCF9F0F78CDAAB0DF97F0E6 ();
 extern "C" void BoundingBox_get_ShowWireFrame_m6E3B430BEAE2CC9F2918C345175BC3DB32594EF9 ();
+extern "C" void U3CClickTimerU3Ed__14_MoveNext_m1275F6B3624F9DDC2D0581645F694E7F6B7D95CB ();
+extern "C" void U3CVoiceTimerU3Ed__15_MoveNext_mCEB20E9DA152E016B73DB3CC85FA7E67695681B1 ();
+extern "C" void CustomInteractablesReceiver_get_HideUnityEvents_m807C2ECCDA00259F3A1AF2AF6AC442AEF74942B9 ();
 extern "C" void U3CAutoFollowDistanceCheckU3Ed__26_MoveNext_mB8F3FA9F5338F3D4C7C0FB655B138128568E4A3B ();
 extern "C" void FollowMeToggle_get_AutoFollowAtDistance_mD78E5F976805A69C8D217931DC6E12ED74B7EAE4 ();
 extern "C" void U3CGetAllHandPositionsU3Ed__11_MoveNext_m797741578B8388095DF81A924FC3BB2AB0945853 ();
@@ -1643,6 +1701,9 @@ extern "C" void Guid_TryParseGuidWithNoStyle_m91C1F7891346BEF7F8C42117D60E5C9F73
 extern "C" void Guid_op_Equality_m3D98BA18CDAF0C6C329F86720B5CD61A170A3E52 ();
 extern "C" void Guid_op_Inequality_mD6164E39F3B741C9FF30714A661F225ABD38E583 ();
 extern "C" void BinaryReader_ReadBoolean_m2FD74BC56F3674E90D6D0999A53D46DA014BF0F7 ();
+extern "C" void BufferedStream_get_CanRead_m1BB1D61518240AD7C8F4BF693A86256194C46CCE ();
+extern "C" void BufferedStream_get_CanSeek_mE87BCED0BB42D2E05E23C2F76120035B9EB10209 ();
+extern "C" void BufferedStream_get_CanWrite_m90827F79CFB66B26F547A16C8DC79EA9D7B9FDC0 ();
 extern "C" void Directory_Exists_mB77956D89305E16FEFCBDFC55CCC98F03AEE4D84 ();
 extern "C" void Directory_IsRootDirectory_m050E8364C8D7BBC55405DA0C2653D3675511C148 ();
 extern "C" void DirectoryInfo_get_Exists_mF26C8D84F8964B168A0C38537B0861CE54CCE83B ();
@@ -1651,9 +1712,11 @@ extern "C" void FileInfo_get_Exists_m0EDF507DB5A88A5A4428B4BF956668CEA760DF5C ()
 extern "C" void FileStream_get_CanRead_m70DB608A2821557336D5B4C70D7A35831597D25A ();
 extern "C" void FileStream_get_CanSeek_m93EF7E91B68F9D4430DCF502DD50157B2486EB47 ();
 extern "C" void FileStream_get_CanWrite_m0E0F6EEA185A028EBEBC7A3CB36AFFAEC9C630A4 ();
+extern "C" void FileStreamAsyncResult_get_CompletedSynchronously_mDA72DCFA38253EBBE785A166BA619DA15FE5BAA9 ();
 extern "C" void FileSystemEnumerableHelpers_IsDir_mE9E04617BCC965AA8BE4AAE0E53E8283D9BE02C0 ();
 extern "C" void FileSystemEnumerableHelpers_IsFile_m31E8694B440156340BA6E5C5F9639E506990BFBD ();
 extern "C" void MemoryStream_EnsureCapacity_mE1AB9920DF9E36FC72AB6AECEAD2A0ECED4CCDB8 ();
+extern "C" void MemoryStream_TryGetBuffer_mABB15C9BB39CD054E11C601901C96B255040F622 ();
 extern "C" void MemoryStream_get_CanRead_m6AA569475F1828818450E7A60A0EAA48A576F084 ();
 extern "C" void MemoryStream_get_CanSeek_m04B77420B3CF37C3C58E728E990225E2B006CC00 ();
 extern "C" void MemoryStream_get_CanWrite_mE51E1C56ED967DDA9BCDEB298B634883995C26DC ();
@@ -1672,6 +1735,8 @@ extern "C" void MonoIO_GetFileStat_m524BAFEDEA589583DE1F8CF66A33D1F6D5291C20 ();
 extern "C" void MonoIO_RemapPath_m511FAE053F2FF91A813786F0E65EEB8E99253081 ();
 extern "C" void MonoIO_RemoveDirectory_m7B9EB4C277A6A2F96469C5C5DA92B9CD5FFBCAA2 ();
 extern "C" void MonoIO_RemoveDirectory_m5954EE687BCBAA3917B1BC3D91DC93FB65AB54BB ();
+extern "C" void NetFxToWinRtStreamAdapter_get_CanRead_mFA58CB31AC3CE902D51A2A48B6133C756813720A ();
+extern "C" void NetFxToWinRtStreamAdapter_get_CanWrite_m47AFB33C858A3544271AF6EF71B5960431303758 ();
 extern "C" void Path_IsDirectorySeparator_m12C353D093EE8E9EA5C1B818004DCABB40B6F832 ();
 extern "C" void Path_IsPathRooted_mF70DAF863202638692CF75CCFA09ACBBD90C9A53 ();
 extern "C" void Path_SameRoot_mEF3F183C93EA03B5BD77D6BAC9CC723B8941506D ();
@@ -1680,6 +1745,11 @@ extern "C" void PathInternal_IsPartiallyQualified_m04BC87968B46BEDDAB66FA4773F8B
 extern "C" void NullStream_get_CanRead_mFD9D8F1AA6A19863C2BD503EF0D06E3AF22130F7 ();
 extern "C" void NullStream_get_CanSeek_m71B1C82400CB6FA26163D10669CC6797E855F594 ();
 extern "C" void NullStream_get_CanWrite_m5F7DA38043130218B374C8D9876309095C188B79 ();
+extern "C" void SynchronousAsyncResult_get_CompletedSynchronously_m53433B8F2E95D489F3EA9C40AEDF4223469DCFFC ();
+extern "C" void StreamOperationAsyncResult_CancelStreamOperation_m97B799E99AD4809761BE6A0D3E55DDEEA4DD4443 ();
+extern "C" void StreamOperationAsyncResult_get_CompletedSynchronously_mEDCE467455F035E8858A4130BDE966C6842180B9 ();
+extern "C" void StreamOperationAsyncResult_get_HasError_m51A52788DC3613F241D5A0D17CB8EBFDA5E05F8D ();
+extern "C" void StreamOperationAsyncResult_get_ProcessCompletedOperationInCallback_mAEBF8906F074143BECE20D7233B58FBE7F89D08D ();
 extern "C" void StreamReader_DataAvailable_m1B8832D71BF98C38A5520CDFFC64684716F87863 ();
 extern "C" void StreamReader_IsPreamble_m8F4635F47125EC8042D1EE51A476C7E8B64855A8 ();
 extern "C" void StreamReader_get_LeaveOpen_m666D02CB6FF3AD8E1072257A272729F7F179F359 ();
@@ -1689,6 +1759,10 @@ extern "C" void UnexceptionalStreamReader_CheckEOL_mB2A29E7FB02FC55ADFCA77C29386
 extern "C" void UnmanagedMemoryStream_get_CanRead_m78E9630BE3FE41A94E0AFC75D58FCD9C9E5EB5F2 ();
 extern "C" void UnmanagedMemoryStream_get_CanSeek_mF5CC7C11C9E18039402AE21A06686DDB6963D1FB ();
 extern "C" void UnmanagedMemoryStream_get_CanWrite_m10C8D5BA26DE57D0142C6027452C452C2B018490 ();
+extern "C" void WinRtToNetFxStreamAdapter_get_CanRead_m9A15816EF314DB640B8EF2BADED51C4B27E2EA6E ();
+extern "C" void WinRtToNetFxStreamAdapter_get_CanSeek_mE690EB0F98990B3C530222714A55564078308324 ();
+extern "C" void WinRtToNetFxStreamAdapter_get_CanWrite_mA56E99097426D3A2874132854C29E6BB4A6D394E ();
+extern "C" void IOAsyncResult_get_CompletedSynchronously_m55D4C57A46BF019D4FAF05ABE30E6EEEA6A78277 ();
 extern "C" void IPv4AddressHelper_IsValid_mD96D91E0F3830414F4601A4521E71DE832A45843 ();
 extern "C" void IPv4AddressHelper_IsValidCanonical_mC27E31F1F043D68BC52719892D34EDDC7851B120 ();
 extern "C" void IPv4AddressHelper_Parse_m08110623FAC14806376148D7C16AB95A428EA6CF ();
@@ -1739,6 +1813,7 @@ extern "C" void Number_ParseNumber_m17629D8063D3403750ED6ACEE47F9F3F3C682241 ();
 extern "C" void Number_TrailingZeros_m5B8B34E5E660FBD4870DE2D2778FC3758F28750F ();
 extern "C" void Number_TryParseInt32_mF9FA8AD887CFF429B3C9DCAED08CBF7746DB250D ();
 extern "C" void Number_TryParseInt64_m62C1C9F9BAC32770297859436DE8E68DF0E1E598 ();
+extern "C" void Number_TryParseSingle_m8BFCEBAF689D19500FA014CAC081D1614BD4A4C0 ();
 extern "C" void Number_TryStringToNumber_mDA7F326F742680FF01ACA545ED511EE80A3248D7 ();
 extern "C" void Number_TryStringToNumber_m515B5B64EE9D50013D45179933663F00752A2DEC ();
 extern "C" void NumberFormatter_IsZeroOnly_m34EC372F18B62ED7716195F4BD28945F7B1C2716 ();
@@ -1894,6 +1969,8 @@ extern "C" void IBindableVectorToIListAdapter_System_Collections_IList_Contains_
 extern "C" void IBindableVectorToIListAdapter_System_Collections_IList_get_IsFixedSize_mBD5839912F2C440FCB051A6AEB23338AF2A5C411 ();
 extern "C" void IBindableVectorToIListAdapter_System_Collections_IList_get_IsReadOnly_m8E1F25128B830CE4D475DD00EB0B1B44CE3A2A91 ();
 extern "C" void IInspectableToICollectionAdapter_System_Collections_ICollection_get_IsSynchronized_mD225C938E1D9510EC3EE8D82D3C1BB8C98208154 ();
+extern "C" void WindowsRuntimeBufferExtensions_IsSameData_m11E5D0B5671D2C8852413DD894003B6CE2CC6260 ();
+extern "C" void WindowsRuntimeBufferExtensions_TryGetUnderlyingData_m4FDB38F7DC5B4E354B3D043A73E6CC55D47C2F02 ();
 extern "C" void EventRegistrationTokenList_Push_m9D4C6756370D34A6DB109413DE6E2CD98E7E5A3E_AdjustorThunk ();
 extern "C" void EventCacheKeyEqualityComparer_Equals_mBB4A297865213FBF3CDBF4D326D927FCE78C7B06 ();
 extern "C" void ListToBindableVectorViewAdapter_IndexOf_m8078DE068EB1CFA4C185D289B2E59905DAE0091A ();
@@ -2070,7 +2147,11 @@ extern "C" void Single_Equals_mF4C7AEA9D216B3C9CB735BF327D07BF50F101A16_Adjustor
 extern "C" void Single_Equals_mCDFA927E712FBA83D076864E16C77E39A6E66FE7_AdjustorThunk ();
 extern "C" void Single_IsInfinity_m811B198540AB538C4FE145F7C0303C4AD772988B ();
 extern "C" void Single_IsNaN_m1ACB82FA5DC805F0F5015A1DA6B3DC447C963AFB ();
+extern "C" void Single_IsNegativeInfinity_m783D0162D4AC571DD716C3BF75EADBF90902100C ();
+extern "C" void Single_IsPositiveInfinity_m19DAA74DD1E70DBD36DB699FA26A504D9C650F2C ();
 extern "C" void Single_System_IConvertible_ToBoolean_m010C755076291EE3AF73DC3E84B8820A71CFA0B5_AdjustorThunk ();
+extern "C" void Single_TryParse_m1660A819EC2156DCFCC7833AF4CAA19C0B91BAC6 ();
+extern "C" void Single_TryParse_m548E9EC17193999C07717FECFAD0A907980D566C ();
 extern "C" void String_Contains_m4488034AF8CB3EEA9A205EB8A1F25D438FF8704B ();
 extern "C" void String_EndsWith_m2281A2B36765C493DEDB28A9B0E22BEFFE2E9AC1 ();
 extern "C" void String_EndsWith_mE4F039DCC2A9FCB8C1ED2D04B00A35E3CE16DE99 ();
@@ -2265,6 +2346,7 @@ extern "C" void SpinLock_get_IsThreadOwnerTrackingEnabled_m5FE4C1CD01AD438BF8C17
 extern "C" void SpinWait_get_NextSpinWillYield_m00ED46CB0C35A8CC817E0670A4726969361AD78C_AdjustorThunk ();
 extern "C" void AsyncCausalityTracer_get_LoggingOn_m1A633E7FCD4DF7D870FFF917FDCDBEDAF24725B7 ();
 extern "C" void AwaitTaskContinuation_get_IsValidLocationForInlining_m4C79B1B0B463CDA479B2C73B955746B397EC1DCF ();
+extern "C" void BeginEndAwaitableAdapter_get_IsCompleted_mE9BEF3CF647EBBC4497A055DB13987553A75B66E ();
 extern "C" void LoopTimer_LimitExceeded_m35C48A251AB3B4B67029FDC50CAED5071BFCBA1C_AdjustorThunk ();
 extern "C" void ParallelForReplicatingTask_ShouldReplicate_m1F725DB00BDA67CA01244BC481AF57C263854960 ();
 extern "C" void ParallelLoopStateFlags32_ShouldExitLoop_mE4284431F59869587436CDE046866CC84D8C7C68 ();
@@ -2295,6 +2377,7 @@ extern "C" void Task_NotifyDebuggerOfWaitCompletionIfNecessary_m71ACB838EB1988C1
 extern "C" void Task_ShouldReplicate_mFF74747243D5972A9ADD3728C0520AE8E41793D0 ();
 extern "C" void Task_SpinThenBlockingWait_mBAB3ADF8D2F624A0DC70F6BE0D7C2B0E291E635F ();
 extern "C" void Task_SpinWait_mE21B8AFD42111D5E49A949853AAF5576AAAFB93A ();
+extern "C" void Task_System_IAsyncResult_get_CompletedSynchronously_m7F41A46FF40F80D4ECA82F71AF265117D7502888 ();
 extern "C" void Task_Wait_m937DA145B3571DD253A6FB99CBC824F0839FDA72 ();
 extern "C" void Task_WrappedTryRunInline_m6F79A792A8ADAAB725796FA1144A67AB82B0AF1B ();
 extern "C" void Task_get_ExceptionRecorded_mE7BD1794348DB6D61B6A1D29A57519264BC6722E ();
@@ -2317,6 +2400,7 @@ extern "C" void TaskScheduler_TryDequeue_mC345958DE6521AF6A74EEFCEC8B19D3FC4BD83
 extern "C" void TaskScheduler_TryExecuteTask_mB5C5C2C74F7625F2336F244D58599983497ACC33 ();
 extern "C" void TaskScheduler_TryRunInline_m9FBFA8F615D96CC9902CA2CBC3D51BCF7444E67B ();
 extern "C" void TaskScheduler_get_RequiresAtomicStartTransition_m7EA647713F7B96548610FEB4C45F6EAE6B3A277C ();
+extern "C" void TaskWrapperAsyncResult_System_IAsyncResult_get_CompletedSynchronously_m5EB2861460E43DC86C8597E1154471FD70A7EB9E ();
 extern "C" void ThreadPoolTaskScheduler_TryDequeue_mB6EFEE0952C802BA6C48DA6F3260AFF9B1732483 ();
 extern "C" void ThreadPoolTaskScheduler_TryExecuteTaskInline_m1C5D63C98E1736A378030295A07D2DF097B5B376 ();
 extern "C" void ThreadPoolTaskScheduler_get_RequiresAtomicStartTransition_mFE4B45D3646489E6819079FC9D7B5F80B0659F31 ();
@@ -2728,7 +2812,7 @@ extern "C" void EventSystem_IsPointerOverGameObject_mF58A5A42C2CBE80CBF04EBC600C
 extern "C" void EventSystem_get_alreadySelecting_m6A9B2D4446A8E5C6736FA532D005A27A4EE26C7D ();
 extern "C" void EventSystem_get_isFocused_mEB38A1641133D11FDF5B9D8609BA0A6AB578F1B9 ();
 extern "C" void EventSystem_get_sendNavigationEvents_mDE210910CB9BAC7D814A4DA46C8D8F9457144059 ();
-extern "C" void PhysicsRaycaster_ComputeRayAndDistance_mFE9A20CAB70AEE415C7C369CA35389F3A9303EF2 ();
+extern "C" void PhysicsRaycaster_ComputeRayAndDistance_m38F1B20E0A1948699C2A952234705E1E74666486 ();
 extern "C" void PointerEventData_IsPointerMoving_m37FC040F49DFB57856117469B61C342CDB85A76B ();
 extern "C" void PointerEventData_IsScrolling_mF80C182B633F482EFD10317B29C6BF9F48F98093 ();
 extern "C" void PointerEventData_get_dragging_m5D58C6A1A44088BEC5C5D3BF4F65EF402DBE3C35 ();
@@ -2849,6 +2933,7 @@ extern "C" void CertificateHandler_ValidateCertificateNative_mE500FAB5B59229D61E
 extern "C" void U3CRegisterU3Ec__AnonStorey0_U3CU3Em__0_m2B3E6BFF10FB1953FC35AB50D7FCF982445EF2F6 ();
 extern "C" void U3CUnregisterU3Ec__AnonStorey1_U3CU3Em__0_m83AF010C3934125FB12BA2973275DDBB33946666 ();
 extern "C" void PlayerConnection_BlockUntilRecvMsg_mFCF2DB02D6F07C0A69C0412D8A3F596AF4AC54A2 ();
+extern "C" void PlayerConnection_TrySend_m3C0D0208A6A8A7F7FF93AF155A71B726ABE8D662 ();
 extern "C" void PlayerConnection_get_isConnected_mB902603E2C8CA93299FF0B28E13A9D594CBFE14E ();
 extern "C" void U3CAddAndCreateU3Ec__AnonStorey1_U3CU3Em__0_m859E25575A1509158C78C36AEFFC10FC6833A255 ();
 extern "C" void U3CInvokeMessageIdSubscribersU3Ec__AnonStorey0_U3CU3Em__0_mB7A0AE2596E09695CBEB6E462295920AFF21AD06 ();
@@ -2911,7 +2996,9 @@ extern "C" void PlayableOutputHandle_Equals_m42558FEC083CC424CB4BD715FC1A6561A2E
 extern "C" void PlayableOutputHandle_Equals_m1FCA747BC3F69DC784912A932557EB3B24DC3F18_AdjustorThunk ();
 extern "C" void PlayableOutputHandle_op_Equality_m9917DCF55902BB4984B830C4E3955F9C4E4CE0C0 ();
 extern "C" void PlayerConnectionInternal_IsConnected_m4AD0EABFF2FCE8DE9DE1A6B520C707F300721FB2 ();
+extern "C" void PlayerConnectionInternal_TrySendMessage_mE31F212ED59D69FD01FC2B6B4503A5AF97C1948D ();
 extern "C" void PlayerConnectionInternal_UnityEngine_IPlayerEditorConnectionNative_IsConnected_m08B0A552BE45CC80F911E22D990B8FE6C82B53DD ();
+extern "C" void PlayerConnectionInternal_UnityEngine_IPlayerEditorConnectionNative_TrySendMessage_m950332D66588946F8699A64E5B8DBA8956A45303 ();
 extern "C" void Pose_Equals_mA16065890F0234E10B16257ABEF8C6A2FC682BD0_AdjustorThunk ();
 extern "C" void Pose_Equals_m867264C8DF91FF8DC3AD957EF1625902CDEBAEDD_AdjustorThunk ();
 extern "C" void PropertyName_Equals_mD2B2AD96A94DAFFAC506CF7E89C3493E5BA90CB1_AdjustorThunk ();
@@ -2934,7 +3021,9 @@ extern "C" void RectTransformUtility_PointInRectangle_Injected_m42DCFCCED1ABCAE2
 extern "C" void RectTransformUtility_RectangleContainsScreenPoint_mDED32A2F3CD5C623FBA3FFE2C49AEB861D33DE14 ();
 extern "C" void RectTransformUtility_ScreenPointToLocalPointInRectangle_m2C389D4DCBB3CADB51A793702F13DF7CE837E153 ();
 extern "C" void RectTransformUtility_ScreenPointToWorldPointInRectangle_m821FF925C5B70477F153B4C053AE9E36A04A774F ();
+extern "C" void Renderer_get_enabled_m40E07BB15DA58D2EF6F6796C6778163107DD7E1B ();
 extern "C" void Rigidbody_get_isKinematic_mCF624F7C1C78267224EFBEAF9B4FD72CDE56CEB2 ();
+extern "C" void Rigidbody_get_useGravity_m802E0C0B4F2C2B521D5369EA027325157A53FCAA ();
 extern "C" void Scene_Equals_mD5738AF0B92757DED12A90F136716A5E2DDE3F54_AdjustorThunk ();
 extern "C" void Scene_GetIsLoadedInternal_m6D1D452018259662F506EBB33BFD3B55A613E329 ();
 extern "C" void Scene_IsValid_mDA115AE2634680CAE92D2F844347AB4CD2185437_AdjustorThunk ();
@@ -3068,6 +3157,7 @@ extern "C" void Mask_MaskEnabled_m97F3F14FF2AE56EF8B3EAB81C552DB0BE02A49F1 ();
 extern "C" void Mask_get_showMaskGraphic_mA46ECB66512291539B3D60EEF4CBE9756E10BEE8 ();
 extern "C" void MaskUtilities_IsDescendantOrSelf_m4F6F3C28C829F569D4DEC908FB6E389221DFDDD0 ();
 extern "C" void MaskableGraphic_get_maskable_mE1F4C8D6B4DBE70FB56DC952443492A5EBEC490F ();
+extern "C" void MultipleDisplayUtilities_GetRelativeMousePositionForDrag_m889380BC62A1265BF18958BD37379EFD2506991C ();
 extern "C" void Navigation_Equals_mCA33D841B71B088B49847DA2C509E0908B47FE26_AdjustorThunk ();
 extern "C" void RectMask2D_IsRaycastLocationValid_m1D33E4E51586692E54EE44BB2AA61D8AF2DBB0E0 ();
 extern "C" void Raycast3DCallback_EndInvoke_mEE3F8016449CA1D46FCE66A5AC337B306CF201BF ();
@@ -3125,6 +3215,7 @@ extern "C" void WWWTranscoder_SevenBitClean_m6805326B108F514EF531375332C90963B9A
 extern "C" void WaitForSecondsRealtime_get_keepWaiting_mC257FFC53D5734250B919A8B6BE460A6D8A7CD99 ();
 extern "C" void WaitUntil_get_keepWaiting_m01FE040DFAAA66F0664092597CE79FCE25BD9122 ();
 extern "C" void WaitWhile_get_keepWaiting_m071555AC3659D1D159FE35CC65789DF5E3C4AE5F ();
+extern "C" void File_Exists_m6DD16096D95268CD66D0244DD8217E7B5182FA53 ();
 extern "C" void PhraseRecognizer_IsRunning_Internal_mDA7886AE7A0007B621A8CD15971202FF10E176BE ();
 extern "C" void PhraseRecognizer_get_IsRunning_m26DF9151D332930662ACB87E00D2498DCC87F7E1 ();
 extern "C" void HolographicSettings_get_IsDisplayOpaque_m1195AD8CB69591E29DEE780894136EEEA7D7A418 ();
@@ -3176,6 +3267,8 @@ extern "C" void EyesPose_IsSupported_m3ADC5B187E3223E9506A0A02B7F7B811BFAD308E (
 extern "C" void EyesPose_get_IsCalibrationValid_m8068F4172B56F0E3D002C6AF6FC1157D36BF5638 ();
 extern "C" void HandPose_TryGetJoints_m1CB7787BE738367E79E74D194FC7EB642901516F ();
 extern "C" void SpatialSurfaceObserver_IsSupported_mCB54738653BC2840AA78E5E083C5E18EF4D3C408 ();
+extern "C" void IRandomAccessStream_get_CanRead_mC556996DA2DF65C97288F7474DE32FAD8EBFF2BD ();
+extern "C" void IRandomAccessStream_get_CanWrite_m494C042532256B5EB0A66ADFBD50C8F3CC8E5580 ();
 extern "C" void SpatialInteractionManager_IsSourceKindSupported_mD85293F528AAC9D7B3976A5742E4F8BE9D951873 ();
 extern "C" void InputPane_TryHide_m018BE2BC1BC3B0FDEAD949DB5CBDD84C2EC37E54 ();
 extern "C" void InputPane_TryShow_mC49C9A2569A559E0EDBF0C32C391CB53128119F3 ();
@@ -3248,6 +3341,7 @@ extern "C" void WWWTranscoder_Hex2Byte_mD417CA540CFBE045FCE32959CD3443EB9C8C7423
 extern "C" void IPropertyValue_GetUInt8_m6E0FA81F823A7980FDBE76ECAFF20E57EB6666F6 ();
 extern "C" void UnmanagedMemoryStream_get_PositionPointer_m679CDF3178C1512CA36CAB5FD1A39F5A398A2ADB ();
 extern "C" void NumberBuffer_PackForNative_m7790B7A255562FC1823BACABA471AF133A86D640_AdjustorThunk ();
+extern "C" void WindowsRuntimeBuffer_PinUnderlyingData_mD31E1965F0ABF312675E6F3AEA70C773C4CA057B ();
 extern "C" void CodeTable_GetSection_m5F99D2B755DB3F2EBDA7AA289A414A40B6615662 ();
 extern "C" void ByteSafeEncoding_GetBytes_mBAB7B32E1153F6BEBFDC8EA82D8C887244CFE5C6 ();
 extern "C" void GltfBuffer_get_BufferData_m6CDACF02C3E56653113729EE040B0B53212C8DBD ();
@@ -3258,8 +3352,8 @@ extern "C" void ASN1_get_Value_m9BD6239E12A6148AF9507C2F58058C6B8147A079 ();
 extern "C" void BitConverterLE_GetBytes_m406ADCCE048705851CA952B5103A9020BBBDFBDA ();
 extern "C" void BitConverterLE_GetBytes_m1207548B6BC0E2D49DD06D5B3A3AC19C001BDB35 ();
 extern "C" void BitConverterLE_GetBytes_m9428D4A01AC77E50E16D9B738098F2954E5964E0 ();
-extern "C" void BitConverterLE_GetUIntBytes_m2B688B5F912B4453DD14F1043A3C8E3E171FFF41 ();
 extern "C" void BitConverterLE_GetUIntBytes_m871281C3039A5B7DFB56E0F3EBBE22F74135997C ();
+extern "C" void BitConverterLE_GetUIntBytes_m2B688B5F912B4453DD14F1043A3C8E3E171FFF41 ();
 extern "C" void BitConverterLE_GetULongBytes_mEA155106F6785491F8070F485963C96DA55B83F0 ();
 extern "C" void AppDomain_GetMarshalledDomainObjRef_m2579B1B9662ED4CC23EF52B27B10D955D6DB4C2D ();
 extern "C" void BitConverter_GetBytes_mB7DFC7C4705F916C40527A87C9AA6D0EABC23512 ();
@@ -3277,6 +3371,7 @@ extern "C" void File_ReadAllBytes_mF29468CED0B7B3B7C0971ACEBB16A38683718BEC ();
 extern "C" void MemoryStream_GetBuffer_m54A1C252611F9DA80C43059EC2A46431A61F9128 ();
 extern "C" void MemoryStream_InternalGetBuffer_m523652019AB0927A8B2C8E8F3159598FD609F8A8 ();
 extern "C" void MemoryStream_ToArray_mD1A781E4916E0FA2440C10FE0638CB38B2A86BA2 ();
+extern "C" void WinRtToNetFxStreamAdapter_get_OneByteBuffer_mBD6829138522F26FED20CEF828A3048B910B016D ();
 extern "C" void KnownTerminals_get_ansi_m2ECEBC902EBB68D9A849ED1B76F8008918BEBB4D ();
 extern "C" void KnownTerminals_get_linux_m9A34213D8DB968ED3864B4E321BA4B71DB7E8B95 ();
 extern "C" void KnownTerminals_get_xterm_mA890BFD590F820BBB23B219E1AD1C8BCD3DFA345 ();
@@ -3630,6 +3725,17 @@ extern "C" void ResourceSet_GetEnumeratorHelper_mFB1A5645584BF92F69F8211753D4987
 extern "C" void RuntimeResourceSet_GetEnumerator_m236CBCE596ADA3426D332DF0FCDF1C4DF2DECBD1 ();
 extern "C" void RuntimeResourceSet_GetEnumeratorHelper_m15ED969AD90F7F9906AC8AB086DACD9F8C44203F ();
 extern "C" void MessageDictionary_GetEnumerator_m31594679B0048F59513DF2318E7ABF28774E31A5 ();
+extern "C" void BoundingBoxExampleTest_Sequence_mF27684782BBBC9D3A55AE63B119F33BDF6A99D51 ();
+extern "C" void BoundingBoxExampleTest_WaitForSpeechCommand_mA6373F511D753CE02CCFC12524EFA05F5CFD8DA8 ();
+extern "C" void DrawOnTexture_ComputeHeatmapAt_m5A60D91A0E2F8DE7445FF41981297D625E390B49 ();
+extern "C" void DrawOnTexture_DrawAt_m23858F87D5DF80A03379BA9FBA3710AEBFAD9A64 ();
+extern "C" void EyeTrackingDemoUtils_LoadNewScene_m9C9C5A02DF0F06A1BF55F46578513B8510AB92F0 ();
+extern "C" void EyeTrackingDemoUtils_LoadNewScene_m5A4B1698875C8739489A9EA380A192A0610F9680 ();
+extern "C" void LoadAdditiveScene_LoadNewScene_mF49C8F9836B9F181EA911CF7C49FEA0C99053509 ();
+extern "C" void UserInputPlayback_AddToCounter_mC5FCEE11E90CFC9A3478090A874A2F99FC665ADF ();
+extern "C" void UserInputPlayback_PopulateHeatmap_m532849B8B0BF6FCED76B4FF172EEC10593EC790D ();
+extern "C" void UserInputPlayback_UpdateStatus_m09C976494AD61F09336515869D202AC7A352B989 ();
+extern "C" void PanZoomBase_ZoomAndStop_mF4D5F59EBC6D75C6F4E68130B8076DF50633CE9C ();
 extern "C" void AnimationCurveEnumerable_System_Collections_IEnumerable_GetEnumerator_m54BE4B5B8458C2B6DB1F8395A7122FE1F9F8C098 ();
 extern "C" void U3Cget_ActiveMixedRealityPointersU3Ed__11_System_Collections_IEnumerable_GetEnumerator_m095292457255A9E6871C9540954F25FA5DD4CD9F ();
 extern "C" void U3CGetPointersU3Ed__7_System_Collections_IEnumerable_GetEnumerator_mE6664A63E4537DD6358917B5632863D58BD321EA ();
@@ -3638,6 +3744,8 @@ extern "C" void U3CGetContentSceneNamesByTagU3Ed__36_System_Collections_IEnumera
 extern "C" void U3Cget_PermittedLightingSceneComponentTypesU3Ed__20_System_Collections_IEnumerable_GetEnumerator_m307ED880F6A3DFC2AF6F2217178F376C1525CCB2 ();
 extern "C" void U3CEnumerateAncestorsU3Ed__8_System_Collections_IEnumerable_GetEnumerator_m43B444CCEBF8D8B42CB3FFE1A889F54AE0934F49 ();
 extern "C" void U3CEnumerateHierarchyCoreU3Ed__4_System_Collections_IEnumerable_GetEnumerator_mF171B00783938273BD695CFFAC5D342A74D79817 ();
+extern "C" void CustomInteractablesReceiver_ClickTimer_m1298CFBF3FE6796BACF46FF363117F6FAF1A2A2B ();
+extern "C" void CustomInteractablesReceiver_VoiceTimer_m75C1FD4A889EA21F9EAD74B3312A896B37D9D629 ();
 extern "C" void FollowMeToggle_AutoFollowDistanceCheck_m5052DC898AE54F1DA72A63214BD7DA1CE9D34E9D ();
 extern "C" void U3CGetAllHandPositionsU3Ed__11_System_Collections_IEnumerable_GetEnumerator_m89B3C2D6FB5421D35FC3F03A1425363FD40A6388 ();
 extern "C" void Interactable_GlobalVisualReset_m34BDFAAFA465B2CCB09F4AF23C6AB051A86985DC ();
@@ -3933,6 +4041,8 @@ extern "C" void TraceLoggingMetadataCollector_AddGroup_m938D13CD9816CA7D62161EF0
 extern "C" void Statics_GetTypeInfoInstance_mA015F72885AA57E7724BE14A8BE2AA83D93BC4A6 ();
 extern "C" void TraceLoggingEventTypes_MakeArray_mFEB619E641B7C378811F11F7AEAC6B780B7FD27D ();
 extern "C" void TraceLoggingEventTypes_MakeArray_mFED40E1D79EAF166AC6ED6E0E83312D6791A7AF9 ();
+extern "C" void OnLookAtShowHoverFeedback_get_DwellTimeInMs_m1F42A2EF3FBB84D1D8BCF6F3BC302C2B555CBDEB ();
+extern "C" void OnLookAtShowHoverFeedback_get_LookAwayTimeInMs_m8A1B1FE5F9539D5C9F83923E10F3FFB6C479B792 ();
 extern "C" void FastSimplexNoise_Evaluate_mCE21A7A67159DE4EF8FA33941C08249C31A2660F ();
 extern "C" void FastSimplexNoise_Evaluate_mEF016A48A62679663D052749FEAFDA9CEE9D8ABE ();
 extern "C" void FastSimplexNoise_Evaluate_m02EE1DFEF63426CE5017C1D74037B8511FFF33A3 ();
@@ -4021,6 +4131,7 @@ extern "C" void Size_get_Height_mA4D91514E5FC4462B43529168335A1862E412EEA_Adjust
 extern "C" void Size_get_Width_m82026F4BBE98C2740685F27ADF96699DD099B0B9_AdjustorThunk ();
 extern "C" void Enum_GetCachedValuesAndNames_m1001EB28E9797369685546F225FE322640A1F6A3 ();
 extern "C" void CP51932Decoder_Insufficient_m63849B819A2F17623866D56C30998F51378971FB ();
+extern "C" void ExclusiveSynchronizationContext_get_InnerException_m052CEA69E2629CCAECE9C070A98680296E9B2F81 ();
 extern "C" void SmallXmlParser_Error_m7F834D2CF36E873DC1EDF664BB16A7CA0B9CBAF2 ();
 extern "C" void SmallXmlParser_UnexpectedEndError_mEA2509A8E147FC380F9726D2A98E1B0A44553329 ();
 extern "C" void Array_CreateArrayTypeMismatchException_m75354056462C7B1A70E41BE43F8A03A252685EA5 ();
@@ -4151,6 +4262,7 @@ extern "C" void Module_get_ModuleVersionId_mC3EC38D93A962E01B4679ADE105620A75E19
 extern "C" void MonoModule_get_ModuleVersionId_m6380B8DDE4439C997A15E6EF3A771EF845BC76D1 ();
 extern "C" void MessageTypeSubscribers_get_MessageTypeId_mE7DD7E800436C92A325A1080AF60663AE1100D25 ();
 extern "C" void IPropertyValue_GetGuid_mE05F5B0248EA98B227F69B2E02D9B10A7B946FC2 ();
+extern "C" void TargetGroupEventHandler_BeginInvoke_mDC348E455D31A448384885D4B2C9E7BF25261F49 ();
 extern "C" void PrimaryPointerChangedHandler_BeginInvoke_mE8D8C2DBE908BCB618CBDF18AF10E57498917374 ();
 extern "C" void HandJointDataGenerator_BeginInvoke_mA4657EBE145331D04C470650EAF342F7C67A646F ();
 extern "C" void GetColorFromText_BeginInvoke_mE3C1CFB32C30993C6AC9132B5C7785881458A2DC ();
@@ -4164,10 +4276,16 @@ extern "C" void WindowsCancelHandler_BeginInvoke_m81C599A998316D97045F0213322755
 extern "C" void ConsoleCancelEventHandler_BeginInvoke_m8740C0C67047D6F86A56C39F4E179D54886D48B9 ();
 extern "C" void MatchNumberDelegate_BeginInvoke_m5A60BA102F7AAD41A7B3B81CD6DF864C3C87785F ();
 extern "C" void EventHandler_BeginInvoke_m60A0326EC6963814F98B6D62CA083FACACE82FA9 ();
+extern "C" void BufferedStream_BeginRead_mB5F1D02C87008BA163AE21EC6D9C405694547403 ();
+extern "C" void BufferedStream_BeginReadFromUnderlyingStream_m8FA6314BA9F2649C1CB6F99802115564EE52281D ();
+extern "C" void BufferedStream_BeginWrite_m409F8F34D2C5BE8C11013F17D5995969ED8209A2 ();
+extern "C" void BufferedStream_BeginWriteToUnderlyingStream_mBCFD21A7BAD1DDE2D8D72073AE991F094F918266 ();
 extern "C" void ReadDelegate_BeginInvoke_mFFC91133F07A5D2EDCCA054FC6D87669FEF29AAD ();
 extern "C" void WriteDelegate_BeginInvoke_mF392FE08CA2D3A8DC0CBD31CB45F0D40D58FC0B5 ();
 extern "C" void FileStream_BeginRead_m455B17567FFD35796274787760433B42393C2883 ();
 extern "C" void FileStream_BeginWrite_m6B4C4865AC0DDAF81AE2627B9C94ABDC7E6C6019 ();
+extern "C" void U3CU3Ec_U3CBeginEndReadAsyncU3Eb__43_0_mA8204974AC2EF1A9B8A6B16F25267799B6D35507 ();
+extern "C" void U3CU3Ec_U3CBeginEndWriteAsyncU3Eb__53_0_m38B93C4F2A82A03E9D9170DD8C487DC44DF53110 ();
 extern "C" void NullStream_BeginRead_m60044A2C8EDD3964F5A05C7867FDD11B1BBCD1DA ();
 extern "C" void NullStream_BeginWrite_m071B8E98CC2C04B6330A23C7C732865386CA59AB ();
 extern "C" void Stream_BeginRead_mBF8B16ED8510AD6BE9D0A3EE1A933D6515CF160D ();
@@ -4176,6 +4294,9 @@ extern "C" void Stream_BeginWrite_mFF3CB915FA5A878608575A46C75C1A9D9D3706D9 ();
 extern "C" void Stream_BeginWriteInternal_mF9557BA2F5E6556C7CB979F46D2F3DA2A5C43668 ();
 extern "C" void Stream_BlockingBeginRead_mACB9EF43064AEBB8CF5582CC4416CCD85BBA0C3F ();
 extern "C" void Stream_BlockingBeginWrite_m4D04E97AFDD77BE540B297163DF825E948E3C00C ();
+extern "C" void WinRtToNetFxStreamAdapter_BeginRead_mC32A604951DD11227CCFCAF1E5F121CB57FE1A68 ();
+extern "C" void WinRtToNetFxStreamAdapter_BeginWrite_mD5790540FA58130541DD06B296A81417F28D9F55 ();
+extern "C" void WinRtToNetFxStreamAdapter_BeginWrite_mD4A1A86E30CA5CE6BC6BEFABF3A11F42B1021916 ();
 extern "C" void IOAsyncCallback_BeginInvoke_mB8CACF8990B91DF4A695E597CEBE4BA09354C32C ();
 extern "C" void AddEventAdapter_BeginInvoke_mE96336546DC8725EB1C45016F41D4271567C799E ();
 extern "C" void MemberFilter_BeginInvoke_m85A400EB6D1C811494DF0EDEF85FB13BB2CD15A0 ();
@@ -4190,6 +4311,8 @@ extern "C" void SerializationEventHandler_BeginInvoke_m140A72D2E01E9107E0F2FACFC
 extern "C" void ContextCallback_BeginInvoke_m5C54AEF855383E47B10683FE8F31EDE5A44CCEFD ();
 extern "C" void ParameterizedThreadStart_BeginInvoke_m38D96AE2E476D12875BE8653057C7453211CB10B ();
 extern "C" void SendOrPostCallback_BeginInvoke_m55196CB18983929590F57B6F170F61362B8B9560 ();
+extern "C" void BeginEndAwaitableAdapter_GetResult_m9A2F770459C99DBC7E515A510DCFAE2CD8FFB6E3 ();
+extern "C" void TaskToApm_Begin_m42DFEB73E3BB1B51E0E8D115AFD215F9F2BF4175 ();
 extern "C" void ThreadStart_BeginInvoke_m2CBFF19727A6FBB74BE23E975E904C3A5483FB0F ();
 extern "C" void TimerCallback_BeginInvoke_m8C0291B93231EC42260B0FB426CE548E6A5900C7 ();
 extern "C" void WaitCallback_BeginInvoke_m6D50CA2A74AF60AE847EC36236F0E836CFF74B62 ();
@@ -4307,16 +4430,28 @@ extern "C" void Console_OpenStandardError_mC6642ADBF10786E986FCA8E8708C35566A541
 extern "C" void Console_OpenStandardInput_m70507BD4CEF7AAFB01030995036454D9D6F4BC98 ();
 extern "C" void Console_OpenStandardOutput_m9C602CA7C2D5E989D45913987E2E581481EC9823 ();
 extern "C" void BinaryReader_get_BaseStream_m47D7CD3952746F16AFCFF67C9366B32E01110FBE ();
+extern "C" void BufferedStream_get_UnderlyingStream_m152A6783AC56FA30D6DECC193F889E46E09D7A9B ();
+extern "C" void NetFxToWinRtStreamAdapter_EnsureNotDisposed_m466B61758BD6C0C41F56B3808AE5ACD7A5FBA706 ();
+extern "C" void NetFxToWinRtStreamAdapter_GetManagedStream_mB451C96867BF33079637611923FD66B147ABC668 ();
 extern "C" void StreamWriter_CreateFile_m6900D5037BD4731DA905CA306E35DFFF26AFD3A6 ();
+extern "C" void U3CU3Ec_U3CWinRtToNetFxAdapterMap_GetValueU3Eb__11_0_mA2B332AFE10C81364AF1DC25BF618D4200F2D5E1 ();
+extern "C" void U3CU3Ec__DisplayClass12_0_U3CWinRtToNetFxAdapterMap_GetValueU3Eb__0_m107DC14B8D25DF84D0CBBDBB0F2B52E8F7F51B01 ();
+extern "C" void WindowsRuntimeStreamExtensions_AsStreamForRead_m0C215C31D3FDB1F656DA5A4D81AD0628A3EE7AAB ();
+extern "C" void WindowsRuntimeStreamExtensions_AsStreamInternal_m74F95A24B8F32CA25CFEB7B0C142EB3CE87652B4 ();
+extern "C" void WindowsRuntimeStreamExtensions_AsStreamInternalFactoryHelper_mFE2CE486791EE8D4492D53EDD64BAF930250778E ();
+extern "C" void WindowsRuntimeStreamExtensions_WinRtToNetFxAdapterMap_GetValue_m5B24DC84F0AB904CA8679AB5852AA66D6B25C625 ();
+extern "C" void WindowsRuntimeStreamExtensions_WinRtToNetFxAdapterMap_GetValue_m5048E8F721D5BC6AA46B31B8BF638373569A96EE ();
 extern "C" void Assembly_GetManifestResourceStream_m1CDE3BCD2067AC0FE384B4FA158C9905F4A9CD6B ();
 extern "C" void Assembly_GetManifestResourceStream_mD51BBAD59400EC328A259ACE6A01D5EE58973155 ();
 extern "C" void Assembly_GetManifestResourceStream_mEDE767C4803840FF7CD47AB65B3FF40EF2EB00F4 ();
 extern "C" void ManifestBasedResourceGroveler_CaseInsensitiveManifestResourceStreamLookup_m5D0F37E3842BCEAF9D0F308EEE7ADFD9C416BF65 ();
 extern "C" void ManifestBasedResourceGroveler_GetManifestResourceStream_m4F594F63C088B543D8B61D994BEF163B7EFF8AEC ();
+extern "C" void WindowsRuntimeBufferExtensions_AsStream_mB5E2DF21974CD23F3A864422B0DC0FB844BF3691 ();
 extern "C" void File_CreateText_mEED28D1DDECB47B208D7ACA7CDC99B32EE86F162 ();
 extern "C" void TextReader_Synchronized_mAC0571B77131073ED9B627C8FEE2082CB28EDA9D ();
 extern "C" void Console_get_Error_mE1078EFC5C7C133964838D2A72B8FB9567E4C98A ();
 extern "C" void TextWriter_Synchronized_m09204B9D335A228553F62AB1588490109E5DCD86 ();
+extern "C" void WinRtToNetFxStreamAdapter_Create_mCCF171C3466E68BBBF31CBB0C98C3F282F5A5B45 ();
 extern "C" void BitConverter_ToInt16_mBFC7B476188DF611E2B21C89693258F6A4969CEA ();
 extern "C" void Boolean_System_IConvertible_ToInt16_m727A01D32EC90D90318D6C6B06D8AC13C5AD18A9_AdjustorThunk ();
 extern "C" void Byte_System_IConvertible_ToInt16_mFF8D9C92037D2BAF9973403DFCE0D95A5F90A686_AdjustorThunk ();
@@ -4693,6 +4828,13 @@ extern "C" void MixedRealityBoundaryVisualizationProfile_get_TrackedAreaPhysicsL
 extern "C" void MixedRealityCameraSystem_System_Collections_IEqualityComparer_GetHashCode_mC052C0B2D08D337ADDD58FF18CE611939106C92B ();
 extern "C" void MixedRealityDiagnosticsSystem_GetHashCode_m8913FE8D1476FE535A5242A1FFFE376ABC0BA6EE ();
 extern "C" void MixedRealityToolkitVisualProfiler_MemoryItoA_m0134CD89916F3D4F38D8F6749B69192816D815FB ();
+extern "C" void InputPointerVisualizer_GetPrevLineIndex_m9D1D3D524FF736B5028E770829DF89E100E4A87E ();
+extern "C" void InputPointerVisualizer_get_AmountOfSamples_mAA40A9741774ABE32066DE133400E72E2B07B975 ();
+extern "C" void MoveObjByEyeGaze_get_constrX_mD371508F6D5B0BF1B2AF4E67FDE2EDD6A01BDDEF ();
+extern "C" void MoveObjByEyeGaze_get_constrY_mF13E68803CFB89C34BB2813E0E4F0A2CEECDFC46 ();
+extern "C" void MoveObjByEyeGaze_get_constrZ_m670444FC619BF2465632B80A5F31B3C6DC000737 ();
+extern "C" void PanZoomBaseRectTransf_ZoomDir_mF66C319EEE829391B5133240D2FC7CDC06587BD9 ();
+extern "C" void PanZoomBaseTexture_ZoomDir_mE5C715080FA4C1B08016EE4DD2CA5909C81C274A ();
 extern "C" void BaseControllerPointer_GetHashCode_mD73E8CE35193EA9B2533C4BA00DC5E480CC7B644 ();
 extern "C" void BaseControllerPointer_System_Collections_IEqualityComparer_GetHashCode_m9CA0B23E3067CCD6865722DF88491C1D68AA6E7F ();
 extern "C" void BaseGenericInputSource_GetHashCode_m70C8933391C1C0477A955F9CA9E18A5218F340F4 ();
@@ -5167,6 +5309,12 @@ extern "C" void BinaryReader_Read_mD1372ACCACA64EB826645FEED9866027739820CD ();
 extern "C" void BinaryReader_Read_m05BCEC0C22F668E1240C7AE1DD35DADFF5BA8DB3 ();
 extern "C" void BinaryReader_Read7BitEncodedInt_m97D45D9C52F505E7EA264FE6CE0129C411A25461 ();
 extern "C" void BinaryReader_ReadInt32_m001A1151B2E72E802DFA50E6C7F464622DEB02B0 ();
+extern "C" void BufferedStream_EndRead_mDB3EF921F88BCC4445C847A59521AFEB0509F8F2 ();
+extern "C" void BufferedStream_Read_mC630A2010AA2961CC0A2567729CE96A22430CA2A ();
+extern "C" void BufferedStream_ReadByte_m865881101953B325BC28277AFA7C940C8371CEE7 ();
+extern "C" void BufferedStream_ReadFromBuffer_m3EA2A4828EF094CC73754FE8258FBB504C57180D ();
+extern "C" void BufferedStream_ReadFromBuffer_mECA76BAB383F92AAAC5A0BC821CB40128AC37DBD ();
+extern "C" void BufferedStream_get_BufferSize_m3064CD5FB9E0AB2D13499B5EBE9AB314139036ED ();
 extern "C" void CStreamReader_Peek_m1FC540889F2D9687070978F20CD67EEFFD469C42 ();
 extern "C" void CStreamReader_Read_mD5B83DAB8078727FBC507E280022D69DC9758A38 ();
 extern "C" void CStreamReader_Read_m276ACA94313ADE575B1EC5156E8E71AEF2B1BDEA ();
@@ -5192,6 +5340,7 @@ extern "C" void MonoIO_Write_m50B742C1E11FF47643F4FD313819F72153D10EDB ();
 extern "C" void MonoIO_Write_mF97020DA86EB20041046B8C380D54DD074F9A78F ();
 extern "C" void Path_GetFullPathName_m986DCF6659DD573D05AF65DE6E3FC4ECC56A3C53 ();
 extern "C" void Path_findExtension_mDA754D524E3C4AE22F7B10907EEBB6FB9B7C3635 ();
+extern "C" void U3CU3Ec_U3CBeginEndReadAsyncU3Eb__43_1_mADEDF79E934411759EB9118BDB3EC59016790AAF ();
 extern "C" void U3CU3Ec_U3CBeginReadInternalU3Eb__39_0_mA916204119245A554120ADD0684F65FE62EC9100 ();
 extern "C" void U3CU3Ec_U3CBeginWriteInternalU3Eb__46_0_m91FE2212E52436AAC7F76E6E1CE34A2BC249A050 ();
 extern "C" void NullStream_EndRead_m90214556654266714A193D5BDBE53B8250A2705F ();
@@ -5227,6 +5376,9 @@ extern "C" void UnexceptionalStreamReader_Read_m763AE2B1D9BB0572ACE16E91236FAF9C
 extern "C" void UnexceptionalStreamReader_Read_mCDBCFCCE88507C52224150414BE559B996428195 ();
 extern "C" void UnmanagedMemoryStream_Read_mA93FD9DA48DAC9A7E5E11E51E507C4B4A4945754 ();
 extern "C" void UnmanagedMemoryStream_ReadByte_mD7922C57C7C508DFCBC9D6C8D9D103E0F6C5E590 ();
+extern "C" void WinRtToNetFxStreamAdapter_EndRead_mA6F6842E1D4637C10E496EAAFB8789F9BA7CC4F9 ();
+extern "C" void WinRtToNetFxStreamAdapter_Read_m89B7FDF29A7000F6B9F6F7A83EAA697B64CC4F0F ();
+extern "C" void WinRtToNetFxStreamAdapter_ReadByte_m92D78BEADEFEE949F3445780EBC10A5E17D9F265 ();
 extern "C" void IPv4AddressHelper_ParseHostNumber_m798FB6828971F70775D1125565A1D1025C897F14 ();
 extern "C" void Int16_CompareTo_m5CE241F3D922C600E6E9BDDA9610ABCFAAEC68EE_AdjustorThunk ();
 extern "C" void Int16_CompareTo_m75483243B6AE62C89F02D137A5625051AF41306C_AdjustorThunk ();
@@ -5341,6 +5493,7 @@ extern "C" void EventRegistrationToken_GetHashCode_m3A76562BDC62DB5F7659AB250903
 extern "C" void IBindableVectorToIListAdapter_System_Collections_IList_Add_m63BED50F82DFBB4B8E330C060F05AE6CF4ADD034 ();
 extern "C" void IBindableVectorToIListAdapter_System_Collections_IList_IndexOf_m05507E31C974D17209FBAA1DDEF831AD69B3CD81 ();
 extern "C" void IInspectableToICollectionAdapter_System_Collections_ICollection_get_Count_m67243BFA2DB12FA279FB72305C64258140C7FBE8 ();
+extern "C" void WindowsRuntimeBuffer_RoGetBufferMarshaler_m92635310D29611651BA2CEAE7078C4D60657EEAF ();
 extern "C" void EventCacheKeyEqualityComparer_GetHashCode_mDF14C89916FA58D4F95DCE5C1729F00412934043 ();
 extern "C" void CrossAppDomainChannel_get_ChannelPriority_m749DB6C88147C1D1E36A1F946797FAD6569A685C ();
 extern "C" void CrossAppDomainData_get_DomainID_mD9FEA6065211BF56AB047FA9C51252F5FACF685A ();
@@ -5957,6 +6110,13 @@ extern "C" void Physics_OverlapSphereNonAlloc_mDC000E583161ABC0E2600518D97E2663E
 extern "C" void Physics_OverlapSphereNonAlloc_mE01FE11B81FB91430A8A66A60E7CBC1F2B38BD5E ();
 extern "C" void Physics_OverlapSphereNonAlloc_Internal_m2D3AA11438A26D47E2461E53850E450E769AC150 ();
 extern "C" void Physics_OverlapSphereNonAlloc_Internal_Injected_m2DBA7D4D9413813F80E425FF83ECDA2C238D9007 ();
+extern "C" void Physics_RaycastNonAlloc_m9CC4B976EA1936076FFA1339BF6FBE78A2DA593F ();
+extern "C" void Physics_RaycastNonAlloc_m0A9CEF12FB7EE9C790609A15CBFE975725365CF9 ();
+extern "C" void Physics_RaycastNonAlloc_mBFDB05B1AA90C5D587A1BEA6BEE66FEF2DF89894 ();
+extern "C" void Physics_RaycastNonAlloc_m606B435CE959801C9B7D7111E49071E893C951DE ();
+extern "C" void Physics_RaycastNonAlloc_mD4393134F4470C9B319603A6CD3FF601F5981C88 ();
+extern "C" void Physics_RaycastNonAlloc_m63644DC59B0554846D62ED3BE3B5517BC97D3316 ();
+extern "C" void Physics_RaycastNonAlloc_mA795C150FCE1F242C9806AAAFF04125594B56DDB ();
 extern "C" void Physics_RaycastNonAlloc_m120ADF6BD8DF57A40E6B395299B03FAEE348973F ();
 extern "C" void PhysicsScene2D_GetHashCode_mB1C0E9E977ACCBF0AA0D266E5851B4D778354467_AdjustorThunk ();
 extern "C" void PhysicsScene2D_GetRayIntersection_m2DB850378F1910BFC62243A1A33D8B17738882EC_AdjustorThunk ();
@@ -6182,6 +6342,9 @@ extern "C" void GregorianCalendarHelper_DateToTicks_mA8D19D247F57AC2E5110737376A
 extern "C" void GregorianCalendarHelper_GetAbsoluteDate_m4ABCA1B09CE4591BADFB8F6E5FEC77B534554CDA ();
 extern "C" void GregorianCalendarHelper_TimeToTicks_m5CFAB70A01B889069DDC73ADE772F296D3545600 ();
 extern "C" void BinaryReader_ReadInt64_m86D842AD567510B92C8B2B472AE756B511A313CE ();
+extern "C" void BufferedStream_Seek_mAF594DDA2115D2F9C308357B02CE24355886D0FE ();
+extern "C" void BufferedStream_get_Length_m520378870B70F9831DD69DE46A4221BB6171DC12 ();
+extern "C" void BufferedStream_get_Position_m3690864220EF17872D065619928068AB1BD12F46 ();
 extern "C" void FileStream_Seek_m723F18E8F91A64F4BFE85128B758F0F3D046D2DA ();
 extern "C" void FileStream_get_Length_m71D92BFBA45FA3938B1C4B35E11421A2E8C6EC5C ();
 extern "C" void FileStream_get_Position_mF9CD226B6B339BF6C6C50EE6DB433100E6F1A96E ();
@@ -6195,9 +6358,13 @@ extern "C" void MonoIO_Seek_m9ED3FF3236D43D06F2B95F947B29187030C4C525 ();
 extern "C" void NullStream_Seek_m255D38D5F4433B6A5A67E4056550244A6983D422 ();
 extern "C" void NullStream_get_Length_m2E8ECCA59A03E7DBA3FAC296160703A728B772E1 ();
 extern "C" void NullStream_get_Position_m45DDFDE482926ED825643C4F2C49DB6BEAF58C17 ();
+extern "C" void StreamOperationAsyncResult_get_BytesCompleted_m9874C092BA3E62466B1A0AA4DC6564962571D8B4 ();
 extern "C" void UnmanagedMemoryStream_Seek_mF247A85CB3170986E397A5EF632C3C8E06CB4713 ();
 extern "C" void UnmanagedMemoryStream_get_Length_m033BE76142FBBAF8A80055B60DB6BF5C009E9C97 ();
 extern "C" void UnmanagedMemoryStream_get_Position_m3D49344ACCD6823BABF2F81A3CAFCE40AED1FA97 ();
+extern "C" void WinRtToNetFxStreamAdapter_Seek_mF2618732D60CA7E27B4C51EA6F0A06AF7CFD3CC3 ();
+extern "C" void WinRtToNetFxStreamAdapter_get_Length_m2A7C8A84DCE6624EB6109F7D887B8ED2A276A7F2 ();
+extern "C" void WinRtToNetFxStreamAdapter_get_Position_m4C38E9A2900B580B06A16E9C936397D3C92F08BF ();
 extern "C" void IPv4AddressHelper_ParseNonCanonical_mDCD1CD7FB85C4FFBF3070B1435A0D632C1A7B97E ();
 extern "C" void Int16_System_IConvertible_ToInt64_mEA23608FC01CA0533C47D984B594C0FF93CEFA51_AdjustorThunk ();
 extern "C" void Int32_System_IConvertible_ToInt64_m0D1DD55099D29C77A7F3DF423CBAD0D9446A8CC1_AdjustorThunk ();
@@ -6262,6 +6429,7 @@ extern "C" void MonoIO_Open_m75D574F44B3C1E6FA4E245D48D5AC73F70BE16B7 ();
 extern "C" void MonoIO_get_ConsoleError_mBF62E29F14657C9B5982694B3901F6AD7EEB6EFD ();
 extern "C" void MonoIO_get_ConsoleInput_mFC797DF758331A0370296F8DF3136A6B9F1995DC ();
 extern "C" void MonoIO_get_ConsoleOutput_m7E36914F192D603C50A8F39745F6443BB2882859 ();
+extern "C" void IntPtr_op_Addition_mD815D6B36C7DFA1F89481720D3D46A6484BB9644 ();
 extern "C" void IntPtr_op_Explicit_m62A5ED7757661C8DB6AEF4816829ED92A1929F91 ();
 extern "C" void IntPtr_op_Explicit_m534152049CE3084CEFA1CD8B1BA74F3C085A2ABF ();
 extern "C" void IntPtr_op_Explicit_m7F0C4B884FFB05BD231154CBDAEBCF1917019C21 ();
@@ -6274,6 +6442,9 @@ extern "C" void Marshal_AllocHGlobal_m3BFCB876D7469108C8676D6DD90D943806C13A58 (
 extern "C" void Marshal_AllocHGlobal_m1700535FE6D7CF1410010D9B3553A5A6E06DE70C ();
 extern "C" void Marshal_GetRawIUnknownForComObjectNoAddRef_m4440A22F4062E9D63EA33311113150CA3720CED1 ();
 extern "C" void SafeHandle_DangerousGetHandle_m9014DC4C279F2EF9F9331915135F0AF5AF8A4368 ();
+extern "C" void IBufferByteAccess_GetBuffer_m0047AB72261718E613B316AE41337C99050B2058 ();
+extern "C" void WindowsRuntimeBuffer_System_Runtime_InteropServices_WindowsRuntime_IBufferByteAccess_GetBuffer_mA4B0277D88CF6BE1640E0ABF95A4DBBD0A99E1B6 ();
+extern "C" void WindowsRuntimeBufferExtensions_GetPointerAtOffset_m6C3741A634A9E5B437B80B297CBC3F0027C0A8A5 ();
 extern "C" void RuntimeFieldHandle_get_Value_m2C81CBF4FC895E7A343C344BE8EE96D9DEBEA3DA_AdjustorThunk ();
 extern "C" void RuntimeMethodHandle_get_Value_mAE0C2A06E0086C8C46F0D47F2F0179D1CD7B66BA_AdjustorThunk ();
 extern "C" void RuntimeType_GetConstructors_native_m722B23E093BC758F23A9907A7F193E3CDFB6C153 ();
@@ -6290,6 +6461,7 @@ extern "C" void Interlocked_CompareExchange_m0A02B16A9B99B35E70831EF919482BDFCE0
 extern "C" void Interlocked_Exchange_m1E9849C140AFB2B964A2A5AFB9AE3559D323EE33 ();
 extern "C" void NativeEventCalls_CreateEvent_internal_m1114FA21E3BA0AB05FAE7EC2E51C78969A9F9163 ();
 extern "C" void Thread_Thread_internal_m43DFA96F34ADF78F99F0F24267EC34A8E7A57849 ();
+extern "C" void Volatile_Read_m432B920D5778A9EFEDD056B30920889C4D1C9BFB ();
 extern "C" void WindowsConsoleDriver_GetStdHandle_m411672A3E27D4266E946FF166C9DA279A75B3FB5 ();
 extern "C" void AnimationCurve_Internal_Create_mA7A2A0191C4AAE7BD5B18F0DCC05AD4290D1691B ();
 extern "C" void Event_Internal_Create_m93F047D4FC3B4B76FD4F80439D0F7EE131EE1E6B ();
@@ -6332,6 +6504,11 @@ extern "C" void GazeProvider_get_IsEyeCalibrationValid_mC06C98266618599AF041B9B5
 extern "C" void CultureNotFoundException_get_InvalidCultureId_m6659412BB5B089F0C66B90F595E2A34C2724A3FE ();
 extern "C" void SpatialCoordinateSystem_TryGetTransformTo_m9B3D98B85802722F2CC37F275351B746E6A79A25 ();
 extern "C" void MixedRealityBoundarySystem_get_FloorHeight_m9073F4C9C3DE8CCAFA39455828D079DB629DEBF5 ();
+extern "C" void UserInputPlayback_GetEyeRay_m35E26BB1B2F53072C1FBAC5C4A47205123092452 ();
+extern "C" void UserInputPlayback_GetRay_mFD3EC8AFEF63517BFFC3EBB6281160C69BA6CFC8 ();
+extern "C" void DrawOnTexture_GetCursorPosInTexture_mC9E0F6C45EBD9433B9F9D7CFD8A983842D626657 ();
+extern "C" void InputPointerVisualizer_PerformHitTest_mF0FC9F65B059A5482853BF675520D4A431BFCE9A ();
+extern "C" void ParticleHeatmap_GetPositionOfParticle_mA114FBA53A8522D08C72536751CC85C1B29949C1 ();
 extern "C" void EyesPose_get_Gaze_m5D2EF2C3C421C04A43E29B97FE3D4C6561442622 ();
 extern "C" void NumberFormatter_GetClone_m6D13FD559EC8229D8C0F802988E32965EF53119A ();
 extern "C" void NumberFormatter_GetInstance_mA49673EC58400C43805623A779916C2F6705AF99 ();
@@ -6348,6 +6525,26 @@ extern "C" void Vector3_op_Subtraction_mCF83716693467B9D701E3F83833D9BE2BC0FA9E1
 extern "C" void Vector3_op_UnaryNegation_m354F7A3FFEDD0A3F6AC9899CBEEB1D68756838F0 ();
 extern "C" void Manager_Instantiate_mB997538122BB4AAB5B34755EE49ED1470A28F88C ();
 extern "C" void ReferenceSourceDefaultEncoder_GetRealObject_m75ECE546BB38C07FDC2DFFBB5DBA0A8076E711A0 ();
+extern "C" void U3CSequenceU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m40CC6D16036F7F843EC29B994BCC059CF8AE88AE ();
+extern "C" void U3CSequenceU3Ed__15_System_Collections_IEnumerator_get_Current_mF421DFD6DEF92DDA98D22941E3C7EA2C6B0B3240 ();
+extern "C" void U3CWaitForSpeechCommandU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5DA41828A9B51358E6E729C136B0EE2EFF30E1B3 ();
+extern "C" void U3CWaitForSpeechCommandU3Ed__17_System_Collections_IEnumerator_get_Current_m13E78EA31C7E6B7142B46DC2309B738F131DBA9A ();
+extern "C" void U3CComputeHeatmapAtU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m01C7893A02AFFCDC6456FDE0D385DFFFE716677F ();
+extern "C" void U3CComputeHeatmapAtU3Ed__20_System_Collections_IEnumerator_get_Current_m4B363E8F634EE8F97684084D7B3E31E5D13C5EAC ();
+extern "C" void U3CDrawAtU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4374EF172F1219769A552184BB2B9086FA9CC180 ();
+extern "C" void U3CDrawAtU3Ed__19_System_Collections_IEnumerator_get_Current_m61C9DF5CD61978D691DA93A705FA56234192D15A ();
+extern "C" void U3CLoadNewSceneU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m28A50107D55102253CD8ECA7F07FB5B577BEF94A ();
+extern "C" void U3CLoadNewSceneU3Ed__8_System_Collections_IEnumerator_get_Current_mD6B69C2A6173DAC36F51CAC6F96F8AFA4ED88FA4 ();
+extern "C" void U3CLoadNewSceneU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3F4D30C2F5A99DFECF92913B44181BC7D78D35FD ();
+extern "C" void U3CLoadNewSceneU3Ed__6_System_Collections_IEnumerator_get_Current_m78E7121DD09C762D5CE5447452213C9AF8EFE872 ();
+extern "C" void U3CAddToCounterU3Ed__44_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD063AE35EC22689E66991FCF7C0CC17772887CDC ();
+extern "C" void U3CAddToCounterU3Ed__44_System_Collections_IEnumerator_get_Current_m9BE812648063C3E74024EC70364471071F74B482 ();
+extern "C" void U3CPopulateHeatmapU3Ed__42_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m94C0845B270CD475606708EA45DEC098044F75CE ();
+extern "C" void U3CPopulateHeatmapU3Ed__42_System_Collections_IEnumerator_get_Current_mD088F378EC48E65763BAB7F4B3E0E8216A4CDD0B ();
+extern "C" void U3CUpdateStatusU3Ed__43_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3D71694B8280725DCDF749EE34253946208E4FAD ();
+extern "C" void U3CUpdateStatusU3Ed__43_System_Collections_IEnumerator_get_Current_mA71D43E610296466D2147BD8DBDDE37E98D9885C ();
+extern "C" void U3CZoomAndStopU3Ed__81_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m90A4B429779024283644D3DB2BF26313A408660E ();
+extern "C" void U3CZoomAndStopU3Ed__81_System_Collections_IEnumerator_get_Current_mDB49EE2D06089E76B93F809DC182D633ED1407C0 ();
 extern "C" void U3CGetEnumeratorU3Ed__2_System_Collections_IEnumerator_get_Current_mD5D82C9955DB360C729C4F646BEF33A37850E5C9 ();
 extern "C" void U3Cget_ActiveMixedRealityPointersU3Ed__11_System_Collections_IEnumerator_get_Current_m22CEEBEF6774D3B05C8E4A4E5225183870D914AD ();
 extern "C" void MixedRealityInteractionMapping_get_RawData_m60D2461B4B1D8EF89B8B430F6470293502361646 ();
@@ -6357,6 +6554,10 @@ extern "C" void U3CGetContentSceneNamesByTagU3Ed__36_System_Collections_IEnumera
 extern "C" void U3Cget_PermittedLightingSceneComponentTypesU3Ed__20_System_Collections_IEnumerator_get_Current_m87FE1AEAC9DC3917D838D6B6C5C4DE2E4763150F ();
 extern "C" void U3CEnumerateAncestorsU3Ed__8_System_Collections_IEnumerator_get_Current_mB87BC80C1CA4EB7F27086FFDB5F3F6C3EABDA935 ();
 extern "C" void U3CEnumerateHierarchyCoreU3Ed__4_System_Collections_IEnumerator_get_Current_m02EAC8B38D76AF1F4AC4D0A84F530D3FD593B52B ();
+extern "C" void U3CClickTimerU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m98C97F1AC3DE65B7D4246C05C40260F96A873E1C ();
+extern "C" void U3CClickTimerU3Ed__14_System_Collections_IEnumerator_get_Current_m0E606D3839D9D5F818C732203A243AB32EDE246F ();
+extern "C" void U3CVoiceTimerU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF3972008F2C63284A477BBE13D6C51AC6302FD5A ();
+extern "C" void U3CVoiceTimerU3Ed__15_System_Collections_IEnumerator_get_Current_mD0437D6A026286558E97BADA8CB53E809ACDBFC5 ();
 extern "C" void U3CAutoFollowDistanceCheckU3Ed__26_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m079994A9156385032342BBC3E2ABC6C35285E886 ();
 extern "C" void U3CAutoFollowDistanceCheckU3Ed__26_System_Collections_IEnumerator_get_Current_m5E8827546CFD62E8C9E29AB035483A3E75AB6318 ();
 extern "C" void U3CGetAllHandPositionsU3Ed__11_System_Collections_IEnumerator_get_Current_mB1CC0EF09EF29DF4DE1F523815559F94DB646E19 ();
@@ -6505,6 +6706,10 @@ extern "C" void DateTimeFormatInfo_GetFormat_m2E38770D4643AB06AF0F8965A057154A6C
 extern "C" void NumberFormatInfo_Clone_m1FCF29B5DCBF457C95C97A0CD047FBF4252AEF95 ();
 extern "C" void NumberFormatInfo_GetFormat_mED58202564A580304E65A880F4F76FBD4DF1D1D9 ();
 extern "C" void TextInfo_Clone_mE42F50B699E2B69651EF23CE08C1AA53D85AA322 ();
+extern "C" void FileStreamAsyncResult_get_AsyncState_m7D3C14BA015DD27D9C1143A69FBBFC05D727514F ();
+extern "C" void SynchronousAsyncResult_get_AsyncState_m0B7E654A06DA57A0623C937A13D41B3090A2FA60 ();
+extern "C" void StreamOperationAsyncResult_get_AsyncState_m813C2C868FBF73A312C97B9DB311CB97AD7956B5 ();
+extern "C" void IOAsyncResult_get_AsyncState_m9D507541D18B17FFF72F90D8DBB3F301213EA4A7 ();
 extern "C" void Int16_System_IConvertible_ToType_m8BE4912BFC63C00B6434A78D045251007E2D31D3_AdjustorThunk ();
 extern "C" void Int32_System_IConvertible_ToType_m4FEECCC81AEEBE645FC073AC87BF9AE58FF57A6C_AdjustorThunk ();
 extern "C" void Int64_System_IConvertible_ToType_m553EB95677AEB0ABAA6CF513BD42EC32D19543B5_AdjustorThunk ();
@@ -6727,8 +6932,10 @@ extern "C" void Interlocked_CompareExchange_m92F692322F12C6FD29B3834B380639DCD09
 extern "C" void Interlocked_Exchange_m3D17D94F59C9010A3116C2016D1C066E54049E38 ();
 extern "C" void ParallelForReplicaTask_get_SavedStateForNextReplica_m40BD3F089F1AC79C6BF97BDBEB2DCA0E18F40729 ();
 extern "C" void ParallelForReplicaTask_get_SavedStateFromPreviousReplica_m761501C44AFC675304B5874FA108E26FBCF6EC7D ();
+extern "C" void Task_get_AsyncState_mEE6996D21AD9F92E34A30FA73A7D31A5BCE42657 ();
 extern "C" void Task_get_SavedStateForNextReplica_mBD48A8F866C2EEC6F409AD0AB191D6623AA8267F ();
 extern "C" void Task_get_SavedStateFromPreviousReplica_mA7703FF3E4CB9692992A654A228CAC642BCBAACD ();
+extern "C" void TaskWrapperAsyncResult_System_IAsyncResult_get_AsyncState_mFF874F0FB65ADDA52351D6C069DE13049BA7E0F3 ();
 extern "C" void UInt16_System_IConvertible_ToType_m2FD8E8941C266AE4254B1C4C068F4C5238C08695_AdjustorThunk ();
 extern "C" void UInt32_System_IConvertible_ToType_mEFD4D7AB69CB399E6603ADA3EDDF10FC622E4A3A_AdjustorThunk ();
 extern "C" void UInt64_System_IConvertible_ToType_m176FFA8FD3BDEAB82C5BD41CF3CF81C83AC21803_AdjustorThunk ();
@@ -6773,6 +6980,10 @@ extern "C" void U3CClickRepeatU3Ec__Iterator0_System_Collections_IEnumerator_get
 extern "C" void IBindableIterator_get_Current_m1EF798DD2A9BBF29A1FDBD113D1EA7336230E7D9 ();
 extern "C" void IBindableVector_GetAt_m860227C0726F0C40C40300F2D114C90C040DCFBD ();
 extern "C" void IBindableVectorView_GetAt_mAA8D68A43FF339E8A336BFD94CC516C26FFB757B ();
+extern "C" void LogStructure_GetData_m9042AC1CF1B226A41E9AB73D93F9BA4DC08B1D84 ();
+extern "C" void LogStructureEyeGaze_GetData_mCA754523C53254B1BA9ECAD74276A1E31382AF2B ();
+extern "C" void UserInputRecorder_GetData_Part1_mB71C5458A4DBBEF57FC223B1E6DEB9D2E147F886 ();
+extern "C" void UserInputRecorder_MergeObjArrays_mDB44514F924AE1C376BADDE9575C41D020E8520D ();
 extern "C" void ArrayList_ToArray_m94739ABC95D4D300E757047A082400297FDD8FA5 ();
 extern "C" void EventSource_SerializeEventArgs_m05C56910CA41D15C484C0357CD6845ED0E36CAAB ();
 extern "C" void MonoCustomAttrs_GetCustomAttributes_m6CA0C6509BA75EC908CC1D8B8D66ABAE6B7D6B03 ();
@@ -7151,8 +7362,10 @@ extern "C" void Task_ConfigureAwait_m2FB91172F9031B0CC520D9D09B658ACC5FD6CE02 ()
 extern "C" void WaitForBackgroundThread_GetAwaiter_m4C562445F7AA114DC4C9D43A40FA751C7C6C27B9 ();
 extern "C" void ConfiguredTaskAwaitable_GetAwaiter_m1EF40F198D32924E2D0F41E20B99CADBF5DDD303_AdjustorThunk ();
 extern "C" void Task_GetAwaiter_m73027D5E4C16E961C658B83526BED8E32FD2AC6C ();
+extern "C" void WindowsRuntimeSystemExtensions_GetAwaiter_m1E46B83D2D5BEE385305CFFD9496572784AB5D2C ();
 extern "C" void Task_Yield_mDE6B88BA380C1FF97CD4C8579DD323E328C0FE71 ();
 extern "C" void YieldAwaitable_GetAwaiter_mD46D1353A055DD15401F79C7B5564B6EE931F8D5_AdjustorThunk ();
+extern "C" void WinRtIOHelper_NativeExceptionToIOExceptionInfo_m1CA2440467C50E50B6448BBCC86B4B7DB9A394AD ();
 extern "C" void ExceptionDispatchInfo_Capture_m8E5F721466EDFE9AA8BC532F9AE7A859E0766E23 ();
 extern "C" void Task_GetCancellationExceptionDispatchInfo_mFA27045118F89271EC672CE42F4105F95C9B95B3 ();
 extern "C" void TaskExceptionHolder_GetCancellationExceptionDispatchInfo_m6F7AB65EF187AEE62E6704ED3C85C4BC58C6F369 ();
@@ -7459,8 +7672,25 @@ extern "C" void MixedRealityToolkitVisualProfiler_get_AppTargetFrameRate_m71A0A4
 extern "C" void MixedRealityToolkitVisualProfiler_get_FrameSampleRate_m0E3F9E94F126175FCFC2D97E816FA3DF05AFAFA8 ();
 extern "C" void MixedRealityToolkitVisualProfiler_get_WindowFollowSpeed_m9FD8B968B96950269E1BE7B321F0B923AA25934D ();
 extern "C" void MixedRealityToolkitVisualProfiler_get_WindowScale_m99921CB03E3D02812CA986268C5739696815E7A3 ();
+extern "C" void DwellSelection_LerpTransparency_m9E5AEC6FADD66B3135FF85A6C6AC0CB7412A2CFE ();
+extern "C" void EyeTrackingDemoUtils_Normalize_m9D5EBE52D780A20368D624854435C1C6D8A80AD7 ();
+extern "C" void EyeTrackingDemoUtils_VisAngleInDegreesToMeters_m8124359420AB6211D7BF4A24B809716E9940194E ();
+extern "C" void HitBehaviorDestroyOnSelect_PlayAudioOnHit_m99F9EB8F119E0243A05BE1ACF0D290B84D311B0B ();
+extern "C" void UserInputPlayback_ParseStringToFloat_m0256D683844FD972CEEAB731E932E8E30E499F7E ();
+extern "C" void MoveObjByEyeGaze_Angle_InitialGazeToCurrGazeDir_m6E633A9753E7DE8BCA754B1C64A129341B16D6BC ();
+extern "C" void MoveObjByEyeGaze_Angle_ToCurrHitTarget_m0E5DD27E5258B9D8C40ABDD9DA1C74476CC650CA ();
+extern "C" void OnLookAtRotateByEyeGaze_ClampAngleInDegree_mD7106883E5ACA81B340A7D64D76C42A0956F2BCE ();
+extern "C" void PanZoomBaseRectTransf_ComputePanSpeed_mCA43DC21C566CC1BC555A725889DC7071840A606 ();
+extern "C" void PanZoomBaseTexture_ComputePanSpeed_m7DA2DDB21A887B7280B3CD72F9B3485DD98B6D2D ();
+extern "C" void ParticleHeatmap_DetermineNormalizedIntensity_mC402BDDF903F5127C9DCB8445334A62D51B75FD6 ();
+extern "C" void ParticleHeatmap_saturate_mC8D170B35E2AA55AA930B80B756E29FB2E10222C ();
+extern "C" void OnLookAtShowHoverFeedback_NormalizedDisinterest_LookAway_m2FFDD812DB71BA0221C4A5BF5B6B0B456A0DBC26 ();
+extern "C" void OnLookAtShowHoverFeedback_NormalizedInterest_Dwell_m71D1CF35906E08243230AD042056589C06C96D1E ();
+extern "C" void OnLookAtShowHoverFeedback_TransitionAdjustedInterest_m885C42700BB13E6775D18B17E1CA85943CC3EF50 ();
+extern "C" void OnLookAtShowHoverFeedback_divBlendColor_m7E5BEA7C6502634716AA107FAC959A99A2A66BC9 ();
 extern "C" void DwellHandler_GetCurrentDwellProgress_mC773B9AE845D9EA7E069582C6097CF0D0F8F4DD6 ();
 extern "C" void DwellHandler_get_DwellProgress_m40F478DD1EC9FDD1C6BFD5D322519C82A87322A4 ();
+extern "C" void DwellProfileWithDecay_get_TimeToAllowDwellDecay_m44C44AFF7A2793C124533148C314DE1B3828E631 ();
 extern "C" void BaseControllerPointer_get_DefaultPointerExtent_mFEEB522B2CE35341FFBA375F71D8D5D93E42B653 ();
 extern "C" void BaseControllerPointer_get_PointerExtent_m09486EE578959B7CC30BDEACF2420411EE8B6033 ();
 extern "C" void BaseControllerPointer_get_SphereCastRadius_m3C213528B46CEDA074335C35822D3A4A338D70B3 ();
@@ -7841,6 +8071,7 @@ extern "C" void TextMeshProUGUI_GetPaddingForMaterial_m5E01E08FFB030C174F0FF76A5
 extern "C" void AnimationCurve_Evaluate_m51CAA6B1C54B7EF44FE4D74B422C1DA1FA6F8776 ();
 extern "C" void AnimatorStateInfo_get_length_mBEC06803962C9F4E60611516424CD43D7155A56D_AdjustorThunk ();
 extern "C" void AsyncOperation_get_progress_m27F7D885AF1A989B993199181DE70D7B0F1E3984 ();
+extern "C" void AudioClip_get_length_mFF1E21363B1860453451C4DA1C1459E9B9504317 ();
 extern "C" void AudioHighPassFilter_get_cutoffFrequency_m0733A348725BAAD6E72E4EB47C9900E4496FB917 ();
 extern "C" void AudioListener_ReadExtensionPropertyValue_m35EFD2B46A6541295B00D530C87373005566338B ();
 extern "C" void AudioListenerExtension_ReadExtensionProperty_mB76B1DFD58F53977751D2D2024051A76618603E3 ();
@@ -7862,6 +8093,8 @@ extern "C" void Canvas_get_scaleFactor_m0F6D59E75F7605ABD2AFF6AF32A1097226CE060A
 extern "C" void CanvasGroup_get_alpha_mF6AFB387E643765758F1461369A65F59BA06D26E ();
 extern "C" void CapsuleCollider_get_height_mA0F14683CEDB4F32B59D0262AB7507574228EF75 ();
 extern "C" void CapsuleCollider_get_radius_m8E753A625226A5AF557AAFEBF5B6D0720C00802D ();
+extern "C" void Color_get_grayscale_m6D11C0F103B836F839745770D5355916E456FE59_AdjustorThunk ();
+extern "C" void Color_get_maxColorComponent_mBA8595CB2790747F42145CB696C10E64C9BBD76D_AdjustorThunk ();
 extern "C" void BaseInput_GetAxisRaw_m7FD54C7FFCE64A508570FCF0860BBD8C4946D788 ();
 extern "C" void PointerEventData_get_clickTime_m0BD723CF92024DF33AFC6D4EEE7DCBEBDCE71936 ();
 extern "C" void StandaloneInputModule_get_inputActionsPerSecond_m410CAC6D0162C2DBCED4D387F1055D4EBFD3B908 ();
@@ -7893,11 +8126,14 @@ extern "C" void Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507 ();
 extern "C" void Mathf_Clamp01_m1E5F736941A7E6DC4DBCA88A1E38FE9FBFE0C42B ();
 extern "C" void Mathf_Cos_mC5ECAE74D1FE9AF6F6EFF50AD3CD6BA1941B267A ();
 extern "C" void Mathf_Floor_mD447D35DE1D81DE09C2EFE21A75F0444E2AEF9E1 ();
+extern "C" void Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772 ();
 extern "C" void Mathf_InverseLerp_m7054CDF25056E9B27D2467F91C95D628508F1F31 ();
 extern "C" void Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364 ();
+extern "C" void Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61 ();
 extern "C" void Mathf_Log_mD0CFD1242805BD697B5156AA46FBB43E7636A19B ();
 extern "C" void Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65 ();
 extern "C" void Mathf_Min_mCF9BE0E9CAC9F18D207692BB2DAC7F3E1D4E1CB7 ();
+extern "C" void Mathf_PingPong_m531DFAB96635B14C932754377C4D12927EDA0ECE ();
 extern "C" void Mathf_Pow_mC1BFA8F6235567CBB31F3D9507A6275635A38B5F ();
 extern "C" void Mathf_Repeat_m8459F4AAFF92DB770CC892BF71EE9438D9D0F779 ();
 extern "C" void Mathf_Round_mC8FAD403F9E68B0339CF65C8F63BFA3107DB3FC9 ();
@@ -7912,6 +8148,7 @@ extern "C" void Plane_GetDistanceToPoint_mF59C65D80AEE969807A8D78AB6B5012B07BF11
 extern "C" void Quaternion_Angle_m09599D660B724D330E5C7FE2FB1C8716161B3DD1 ();
 extern "C" void Quaternion_Dot_m0C931CC8127C5461E5B8A857BDE2CE09297E468B ();
 extern "C" void Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384 ();
+extern "C" void Random_get_value_mC998749E08291DD42CF31C026FAC4F14F746831C ();
 extern "C" void RaycastHit2D_get_distance_m2D9F391717ECACFDA8E01A4126E0F8F59F7E774F_AdjustorThunk ();
 extern "C" void RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543_AdjustorThunk ();
 extern "C" void Rect_get_height_m088C36990E0A255C5D7DCE36575DCE23ABB364B5_AdjustorThunk ();
@@ -7922,6 +8159,7 @@ extern "C" void Rect_get_xMin_mFDFA74F66595FD2B8CE360183D1A92B575F0A76E_Adjustor
 extern "C" void Rect_get_y_m53E3E4F62D9840FBEA751A66293038F1F5D1D45C_AdjustorThunk ();
 extern "C" void Rect_get_yMax_m8AA5E92C322AF3FF571330F00579DA864F33341B_AdjustorThunk ();
 extern "C" void Rect_get_yMin_m31EDC3262BE39D2F6464B15397F882237E6158C3_AdjustorThunk ();
+extern "C" void Rigidbody_get_drag_m2B304BB4C4A1A0E349C8B57C9085C0BC66DDE28E ();
 extern "C" void Screen_get_dpi_m92A755DE9E23ABA717B5594F4F52AFB0FBEAC1D3 ();
 extern "C" void SphereCollider_get_radius_m255804173C17314FD9538AE45C4A46D4882BC094 ();
 extern "C" void Sprite_get_pixelsPerUnit_m54E3B43BD3D255D18CAE3DC8D963A81846983030 ();
@@ -8158,6 +8396,23 @@ extern "C" void MixedRealityCameraSystem_get_SourceName_m7E2C31647C49EE55F36A67F
 extern "C" void MixedRealityDiagnosticsSystem_get_Name_mA079974473994BD8BF99DF7843EBB28ACE758DBF ();
 extern "C" void MixedRealityDiagnosticsSystem_get_SourceName_m44979AE05A11BB469CB59A0CDA553A5A09A36493 ();
 extern "C" void DocLinkAttribute_get_URL_m6261A8CCCAF798C2A427C947B53DA1B08DC0FEF8 ();
+extern "C" void DwellSelection_get_TextureShaderProperty_mF6E79C3BF2F03F70F66E674CA4363C7DA1608DF9 ();
+extern "C" void EyeTrackingDemoUtils_GetFullName_mD14A1431B480595A897969378E4353977C5FFF53 ();
+extern "C" void EyeTrackingDemoUtils_GetFullName_m7272B8F9AD7FA4CA06AEA72F6EB78D140C9D9522 ();
+extern "C" void EyeTrackingDemoUtils_GetValidFilename_m6C4B1EF5696517BCA781213FFCFD6F7CB979CC16 ();
+extern "C" void BasicInputLogger_AddLeadingZeroToSingleDigitIntegers_m438D0DC8664B2DBA6EEB23A37AD9C14F003958F5 ();
+extern "C" void BasicInputLogger_get_Filename_m02F01B498A9C818AC44AC5410AB2A2A8321B65AC ();
+extern "C" void BasicInputLogger_get_FilenameNoTimestamp_mD9079CE07B185BCCD63C78D428CCF28B36774768 ();
+extern "C" void BasicInputLogger_get_FilenameWithTimestamp_m257C1536666194100DCB27EF7B02F76C0E057E35 ();
+extern "C" void BasicInputLogger_get_FormattedTimeStamp_m7596C7DA5CAB6950DCB10838FD07CBD1B110A512 ();
+extern "C" void BasicInputLogger_get_LogDirectory_m35DAEEDD871F3D8185ABFCD0D1E00456BA7E2C71 ();
+extern "C" void UserInputPlayback_get_FileName_mF688FBBC13BE88FD975C2E6CF9ED9088122D990B ();
+extern "C" void UserInputRecorder_GetFileName_mE5AB56CC6A2C51F70D48CB1AC2171B2D014ED47B ();
+extern "C" void UserInputRecorder_GetHeader_mC0D3407AA00DDEF8E4F1E0E206932B607EAB314C ();
+extern "C" void UserInputRecorder_GetStringFormat_m501E4F6A9203A846219395290C760F136FD41757 ();
+extern "C" void UserInputRecorder_LimitStringLength_m65C6B3989FCBC828074200240CDA09AF88FEDBD5 ();
+extern "C" void PanZoomBaseTexture_get_TextureShaderProperty_m3A749A1F9159EA12E0ABA1582E0552E93D56A57D ();
+extern "C" void TestGltfLoading_get_Uri_m22B6FD6636BD0B44431A881AFE2F74927AA809DA ();
 extern "C" void MixedRealityKeyboard_get_Text_m13DE9BBFD523D791DE8ACD973BC194D05D240670 ();
 extern "C" void AnchorAttachmentInfo_get_AnchorName_m31D698EA56706F118D0817CC8D88217761D25E12_AdjustorThunk ();
 extern "C" void WorldAnchorManager_AttachAnchor_m680235CB55D49814A6B7342DB2E351EAB4EDDAE7 ();
@@ -8444,6 +8699,7 @@ extern "C" void CultureData_get_CultureName_mEC916D6C4B4989D1FE2E0B8BE97C7B37187
 extern "C" void CultureData_get_SAM1159_m9E04185F6CA0D3C2D50F1B6DEC4380AC25D02B22 ();
 extern "C" void CultureData_get_SCOMPAREINFO_mBD9111735D607E7A3B82CC129C2E3A07AAE77DCC ();
 extern "C" void CultureData_get_SISO639LANGNAME_m7B1E85711D78CECA25FC025622B56C4E1530DDCE ();
+extern "C" void CultureData_get_SLIST_m345BF151D9E663B81B7CCC51BB1ACAC12E7A634A ();
 extern "C" void CultureData_get_SPM2359_mB686204C591F87E83360BA32FB82AE388A4AE1A0 ();
 extern "C" void CultureData_get_STEXTINFO_mA57C294417ED2CE9B60426E9746CA9D245F52AC1 ();
 extern "C" void CultureData_get_TimeSeparator_m24F20722E536525E7FA458B57A3F4BB04EE346B4 ();
@@ -8528,6 +8784,7 @@ extern "C" void TextInfo_ToString_mC66A07D465161AD20AFCBE78E97977F46498888E ();
 extern "C" void TextInfo_ToUpper_m59B5A922ACBEFB342156CA7A181EA4030682AA99 ();
 extern "C" void TextInfo_ToUpperInternal_mE18789DEB4C2533AA52E1A085E57B5702D57F8A1 ();
 extern "C" void TextInfo_get_CultureName_m6BD801C9CDBD678210B65585CA4D815AB3357E66 ();
+extern "C" void TextInfo_get_ListSeparator_mFE623ED08DA5DF282A3F58680C5369C5379341E0 ();
 extern "C" void FormatLiterals_get_DayHourSep_m0E33D200868E03958507E537BCA14FE0D6BA336C_AdjustorThunk ();
 extern "C" void FormatLiterals_get_End_m5A1E9123181E2E86F7297C75E12D28A3F20A2D80_AdjustorThunk ();
 extern "C" void FormatLiterals_get_HourMinuteSep_m1A60535ADE5728A2356B222E407504E82961D0FB_AdjustorThunk ();
@@ -8885,6 +9142,7 @@ extern "C" void Single_ToString_m2B1556CFBBD088D285A0B0EA280F82D3A4344DC3_Adjust
 extern "C" void Single_ToString_m578EAE7D490B9ACEF7116E4E824DC2F1E8F25A2F_AdjustorThunk ();
 extern "C" void Single_ToString_m211B5E14B0C60667C56838D5C3788CFA58670DDE_AdjustorThunk ();
 extern "C" void Single_ToString_mCF682C2751EC9B98F1CE5455066B92D7D3356756_AdjustorThunk ();
+extern "C" void String_Concat_m798542DE19B3F02DC4F4B777BB2E73169F129DE1 ();
 extern "C" void String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495 ();
 extern "C" void String_Concat_m2E1F71C491D2429CC80A28745488FEA947BB7AAC ();
 extern "C" void String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07 ();
@@ -9089,6 +9347,7 @@ extern "C" void TMPro_ExtensionMethods_IntToString_mDA6D49CD9A144D77C297E7E23972
 extern "C" void TMPro_ExtensionMethods_IntToString_mDD240AECE18488B925FB896021F12FB540AF06AB ();
 extern "C" void Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01 ();
 extern "C" void Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B ();
+extern "C" void Application_get_streamingAssetsPath_m87163AE531BEB6A6588FABAD3207D829721CF31F ();
 extern "C" void Application_get_temporaryCachePath_m6769909A405A6A5A0477F8E5F312920C8115E50C ();
 extern "C" void AssertionException_get_Message_m857FDA8060518415B2FFFCCA4A6BEE7B9BF66ECE ();
 extern "C" void AssertionMessageUtil_GetEqualityMessage_mDBD27DDE3A03418E4A2F8DB377AE866F656C812A ();
@@ -9153,6 +9412,8 @@ extern "C" void Ray_ToString_m73B5291E29C9C691773B44590C467A0D4FBE0EC1_AdjustorT
 extern "C" void Rect_ToString_m045E7857658F27052323E301FBA3867AD13A6FE5_AdjustorThunk ();
 extern "C" void RectOffset_ToString_m6852E54822C1FACE624F3306DD9DC71628E91F93 ();
 extern "C" void Resolution_ToString_m42289CE0FC4ED41A9DC62B398F46F7954BC52F04_AdjustorThunk ();
+extern "C" void Scene_GetNameInternal_mE5393E58A37BC0031702DFBA6AEC577058D2941E ();
+extern "C" void Scene_get_name_m0E63ED0F050FCC35A4216220C584BE3D3F77B0E1_AdjustorThunk ();
 extern "C" void SceneUtility_GetScenePathByBuildIndex_mDD8A19F3C8D36254BD18B306A97BC064EC434C0C ();
 extern "C" void StackTraceUtility_ExtractFormattedStackTrace_m02A2ACEEF753617FAAA08B4EA840A49263901660 ();
 extern "C" void StackTraceUtility_ExtractStackTrace_mEDFB4ECA329B87BC7DF2AA3EF7F9A31DAC052DC0 ();
@@ -9212,10 +9473,18 @@ extern "C" void Uri_get_Query_m284C7FF8237C6145BF4E830345DEB3614A30DCF5 ();
 extern "C" void Uri_get_RawUri_m00849E771F72BBD94E6AB42A8EE4610A7BC36DB7 ();
 extern "C" void Uri_get_SchemeName_m5FDC03980E9E649D028F58777F084CA76177D7E2 ();
 extern "C" void Uri_get_UserName_m938E239ED50710F66056A097110C7865F279BA37 ();
+extern "C" void IStorageItem_get_Name_m598919A4062C6DEEDD83B371F1C7F4CBFCB0AAF8 ();
+extern "C" void IStorageItem_get_Path_m1F543E2CE313AD19AE39D0EC8C6832ECEDC29678 ();
+extern "C" void StorageFile_get_Name_m943DA65F57D87F5C92DEC8ED660827392BDDA147 ();
+extern "C" void StorageFile_get_Path_mCDC8594ADE45C229095A1B54E5E7D8266036B881 ();
+extern "C" void StorageFolder_get_Name_mE9F2D7E1A765E3E7DF35E2FDCC1E5D65EB58646E ();
+extern "C" void StorageFolder_get_Path_m554AF6FC4C2D85267A933F07812930C901B0ECE4 ();
 extern "C" void StringComparer_get_CurrentCultureIgnoreCase_m1900DE3D696056A54A108E11FE8991A677305F60 ();
 extern "C" void StringComparer_get_InvariantCultureIgnoreCase_mC6DA70EBD0C00B02EC4BB5C24882F99984028DFC ();
 extern "C" void StringComparer_get_Ordinal_m1F38FBAB170DF80D33FE2A849D30FF2E314D9FDB ();
 extern "C" void StringComparer_get_OrdinalIgnoreCase_m3F2527D9A11521E8B51F0AC8F70DB272DA8334C9 ();
+extern "C" void LogStructure_GetHeaderColumns_mDB0AAA846E8AFC4ACD0C80015B8B09BB5C53E450 ();
+extern "C" void LogStructureEyeGaze_GetHeaderColumns_mB3F856C79493C874671E9F682B2D70831692C811 ();
 extern "C" void SceneContentTracker_get_ContentSceneNames_mED410C80D427C72DF2EB0602E66D62F84FF7C461 ();
 extern "C" void MixedRealitySceneSystem_get_ContentSceneNames_mF4DA77E0FE6A1CD59331E9159E97AB84460AC2E1 ();
 extern "C" void InspectorField_get_Options_mAC1E864000B25B394FD7199762585C660BA0D702 ();
@@ -9491,6 +9760,7 @@ extern "C" void ThreadPool_RegisterWaitForSingleObject_m0642BE341A35D9AB577E4611
 extern "C" void U3CU3Ec_U3CEnsureAsyncActiveSemaphoreInitializedU3Eb__4_0_mFC89B6BDAEAB17521C199A8E86DF2CF193B73185 ();
 extern "C" void Stream_EnsureAsyncActiveSemaphoreInitialized_m874CD5FC48757D8810E4DD57DADD850A338BDED2 ();
 extern "C" void SemaphoreSlim_CreateAndAddAsyncWaiter_m13BC2BA52183EBBF94F3859624D529E399B3739F ();
+extern "C" void ExclusiveSynchronizationContext_CreateCopy_mA840D195B395BF2A2BC25496A0EE3A759AF34644 ();
 extern "C" void SyncContextUtility_get_UnitySynchronizationContext_m572D6F18E637E3BB119BA7742F6F370A38CDB139 ();
 extern "C" void Reader_get_SynchronizationContext_m399CC51942AA34194E2F022DB3DCC8F2FE88F979_AdjustorThunk ();
 extern "C" void Reader_get_SynchronizationContextNoFlow_mC5F9EDB5DD2F7C76A21D27FE94C9360F9C8D3EE4_AdjustorThunk ();
@@ -9501,6 +9771,7 @@ extern "C" void SynchronizationContext_GetThreadLocalContext_mCA00930F12DD26BDEC
 extern "C" void SynchronizationContext_get_Current_m349D2AF9766D807E4003E23C6D37EF1592832DF4 ();
 extern "C" void SynchronizationContext_get_CurrentNoFlow_m27FCFE7342796044E2ADD701D2E86F2517D64194 ();
 extern "C" void UnitySynchronizationContext_CreateCopy_mC20AC170E7947120E65ED75D71889CDAC957A5CD ();
+extern "C" void BeginEndAwaitableAdapter_GetAwaiter_mF666FFC0FC39BCF4BD161E0A1474FAA700DBE66F ();
 extern "C" void RangeManager_RegisterNewWorker_m08652E22309F0C3EC69478CC7E1D3B11447FC31C ();
 extern "C" void Task_get_CurrentStackGuard_m74FB437E43F89B8BDCB272A7257024F586421F11 ();
 extern "C" void InputSystemGlobalHandlerListener_EnsureInputSystemValid_m5732C667852184049410ACB0E45F80F27312C250 ();
@@ -9529,6 +9800,27 @@ extern "C" void ConstructGltf_ConstructSceneAsync_m698D410332EF1B21ADF8278C8C6A7
 extern "C" void ConstructGltf_ConstructTextureAsync_mBC21709EFDF74CD7A90F58DC15971D917912FF73 ();
 extern "C" void MeshSmoother_SmoothNormalsAsync_m7DD2F6E5E3003755A09B1D1D2409C9FD8E12F715 ();
 extern "C" void WindowsDictationInputProvider_StartRecordingAsync_m589DD5872344989C877F28863898B6B9BE503CD6 ();
+extern "C" void BufferedStream_FlushAsync_m10C1F24D8E7C02D3D283FADAE4E4F748AA4CE22D ();
+extern "C" void BufferedStream_FlushAsyncInternal_m28E1530A5FE47A2EDADB0581E6E853BEA7C7C74A ();
+extern "C" void BufferedStream_FlushWriteAsync_m94BDBD0CE24E0644A75A86C9B9784EF4E6A64517 ();
+extern "C" void BufferedStream_WriteAsync_m3CE0EF273E739281DE801393466C5633931FAFC5 ();
+extern "C" void BufferedStream_WriteToUnderlyingStreamAsync_m78A3939966CC5B989E2E2856181FC59B3FFEEEAC ();
+extern "C" void FileStream_FlushAsync_mF37D6904A868079AAF496214113EA35DA681B46C ();
+extern "C" void FileStream_WriteAsync_mBA5881222F27D5D0905C9DF46F0130DAA78EF0BB ();
+extern "C" void MemoryStream_CopyToAsync_m7A89FC0E3D93754757CCBD1F80E5E28D152E1799 ();
+extern "C" void MemoryStream_FlushAsync_m9E7CBDBCE7CE3A6D71868088AC41B51659E03420 ();
+extern "C" void MemoryStream_WriteAsync_mB381A4496F965B62BEE68494811FB2C54844A06E ();
+extern "C" void NullStream_FlushAsync_m9E84F925587264E0E0F8F2F80FF7907E3F3AA247 ();
+extern "C" void NullStream_WriteAsync_mA520FCF8D973953BB4EAA30C333A2AE36037D7C0 ();
+extern "C" void Stream_BeginEndWriteAsync_mADEADEBC1B5E0DB7CF8367A37F05FD364DF4A95E ();
+extern "C" void Stream_CopyToAsync_m300A9C55C692365F9135FBF35F1A0AA541A50776 ();
+extern "C" void Stream_CopyToAsyncInternal_m682B30513F24E52B0A961A5390B80B9F06C1E730 ();
+extern "C" void Stream_FlushAsync_m6FF6F6B6CFBEC607B2FC08B8C09CB40054E865F4 ();
+extern "C" void Stream_WriteAsync_mEA7EDCE2C825C3FBD011A6A17B49DF300E67034F ();
+extern "C" void UnmanagedMemoryStream_FlushAsync_mE2071FEFBFBC44DADD5B63BD9CDE4E6476F6CD42 ();
+extern "C" void UnmanagedMemoryStream_WriteAsync_m35A3170A45ABFBA4A884747F52D86E78C804DB2C ();
+extern "C" void WinRtToNetFxStreamAdapter_FlushAsync_m35A5193481BF4AE2CBD79F7378F47CBD6B63FCD3 ();
+extern "C" void WinRtToNetFxStreamAdapter_WriteAsync_mDB11DF92164A01D1126F85109E1C5462B33168E2 ();
 extern "C" void AsyncMethodBuilderCore_TryGetContinuationTask_mB59A1A2590DAA564DB02F17099F42E52A023D16F ();
 extern "C" void AsyncTaskMethodBuilder_get_Task_m3E45BC00F7D224FEA04AB9BF26DB52E131D33022_AdjustorThunk ();
 extern "C" void AsyncVoidMethodBuilder_get_Task_m377181C7C834736C7408C015E65AB1F29D8AB3C8_AdjustorThunk ();
@@ -9540,7 +9832,9 @@ extern "C" void Task_ContinueWith_m77623659683CA3E09520D79D60D8A04214E4CE5A ();
 extern "C" void Task_ContinueWith_m9CE1D5EA7825C598CB0B59D1DB296C684CBF2C76 ();
 extern "C" void Task_CreateReplicaTask_m7B9111C70A1BF8BA1270121EAF548859CFD48B17 ();
 extern "C" void Task_Delay_mE765C93596171D57A356BCCCEFE49392CA925AFA ();
+extern "C" void Task_FromCanceled_m271AC674539E764A1F220D15E63EDB7D989841E5 ();
 extern "C" void Task_FromCancellation_m2106218A961C3950EA87A16189081D7DFB42B860 ();
+extern "C" void Task_FromException_m8D8A19D1CF4B424A3B48F49C7150496075038E54 ();
 extern "C" void Task_InternalCurrentIfAttached_mA6A2C11F69612C4A960BC1FC6BD4E4D181D26A3B ();
 extern "C" void Task_InternalStartNew_mC0053D3F586953AC3989875B67F9D60947C68BEC ();
 extern "C" void Task_Run_m201E4C04F97BCF541633AF913DF20C6FF7872E44 ();
@@ -9548,6 +9842,9 @@ extern "C" void Task_get_CompletedTask_mBB0764E7FDE04E900FFBE5B1BE6B815193681E86
 extern "C" void Task_get_HandedOverChildReplica_mD8C135BE510FA91FAD5EB4EF53A1169A9F335E33 ();
 extern "C" void Task_get_InternalCurrent_m6BD4F17F5DAF5AC20BD6051A854D0BD702025892 ();
 extern "C" void TaskFactory_StartNew_mD172AE1E05790ED35F406EE7A4C0B8AAFE5A267D ();
+extern "C" void TaskFactory_StartNew_m6CDCE8D4C95E63EA03B6E61D9A4A972782AE9468 ();
+extern "C" void WindowsRuntimeSystemExtensions_AsTask_m5D87CC8E008C9C3A4DC66F6BD108691CF8119ED1 ();
+extern "C" void WindowsRuntimeSystemExtensions_AsTask_m72AC4CCE64FA5914EF4CC7826C969C80BC5CCC3D ();
 extern "C" void U3CU3Ec_U3C_cctorU3Eb__295_0_mDCF5EBEFFB333327107E40BF44507418FE7BBFDD ();
 extern "C" void Task_EnsureContingentPropertiesInitialized_mFEF35F7CCA43B6FC6843167E62779F6C09100475 ();
 extern "C" void Task_EnsureContingentPropertiesInitializedCore_mEBABC8AA0C0C53B08D71CC3233E7F9487A645709 ();
@@ -9584,6 +9881,11 @@ extern "C" void DevicePortal_GetIpConfigInfoAsync_m26C4BEB666B6F1BDA93B14D60C22F
 extern "C" void DevicePortal_GetMachineNameAsync_mF828DA408815FE20EB2E5C2DE2EF435495198B6A ();
 extern "C" void DevicePortal_GetWiFiNetworkInterfacesAsync_mA5F27C43B55EA5F5018448B9C7BED70C9E24834D ();
 extern "C" void DevicePortal_GetPowerStateAsync_m8E3E6EC5D51A28B5D62DC48FA4D5BA175F7AF850 ();
+extern "C" void UserInputPlayback_U3CShowAllAndFreezeU3Eb__34_0_m9A4F11994B83E04E2ACCC172FCB8482F47761957 ();
+extern "C" void UserInputPlayback_UWP_FileExists_m2F0B3BC8478E0407E7A92D8EEA4F7DCFDB2BB560 ();
+extern "C" void UserInputPlayback_UWP_Load_m833919F031775C409F0961FCD123EF0E7508A20D ();
+extern "C" void UserInputPlayback_UWP_LoadNewFile_mF4767A2BBD6139049A3EEB6F9C6B1CAC6ED325E8 ();
+extern "C" void UserInputPlayback_UWP_ReadData_m37AB44219A719C0F089485AB4C2C0748B12B596E ();
 extern "C" void DevicePortal_EnsureAuthenticationAsync_m8CE677BCFF7287EB68F9B43B1AFE2AC3020348F0 ();
 extern "C" void DevicePortal_InstallAppAsync_mFF8D9AFE86484B8DABB1D3E45889909BBD910D10 ();
 extern "C" void DevicePortal_IsAppInstalledAsync_m6D140EBCDA0D4351BBAFBBA34CAD97CC1886DC8D ();
@@ -9594,17 +9896,33 @@ extern "C" void DevicePortal_RestartAsync_mFBB75C28099AA9D0256E2690BAA6FB3A4A5E6
 extern "C" void DevicePortal_ShutdownAsync_m8CC43F0E0493570CA64C22AA6F2FDF4D9A68CC0C ();
 extern "C" void DevicePortal_StopAppAsync_m80EE6FBA48C28D7FCF499EEE8464BD34F1EE2B60 ();
 extern "C" void DevicePortal_UninstallAppAsync_m1571BE622D646F26013FD281133EE8809BB0A7EE ();
+extern "C" void U3CU3Ec__DisplayClass3_0_U3CFlushAsync_AbstractStreamU3Eb__0_m98A2ECB7B86585805445D61AA12109EB9C64CC91 ();
 extern "C" void SemaphoreSlim_WaitAsync_mBB764841A3D1B32B37C0F0C41B33DCDC5B50B63F ();
 extern "C" void SemaphoreSlim_WaitUntilCountOrTimeoutAsync_mC2EA6C6E028868536441F09E695A97792ED29F22 ();
+extern "C" void BufferedStream_LastSyncCompletedReadTask_m75665FDB5DFF477D7DE96DAE9D042A787D8F0451 ();
+extern "C" void BufferedStream_ReadAsync_m07B574E8FAE336DB32723A79AF39153932A52BC8 ();
+extern "C" void BufferedStream_ReadFromUnderlyingStreamAsync_m03A5928CDAE20BBA89F4193F375323F2A2120944 ();
+extern "C" void FileStream_ReadAsync_m052E9F23D2AEB2C6292CD75CFF94EC6FE2CC69E3 ();
+extern "C" void MemoryStream_ReadAsync_m5BE384163E9AEA394B273B50386583991D4AF017 ();
+extern "C" void NullStream_ReadAsync_mE6B4033DC97FB14113C9F5539DF2C6502F3B87D0 ();
+extern "C" void Stream_BeginEndReadAsync_m5B5B38468B030D888978F417740A92BA1F787802 ();
+extern "C" void Stream_ReadAsync_m72417EC430FE2302C8CF2D67B0BFE81FBADE4A83 ();
+extern "C" void UnmanagedMemoryStream_ReadAsync_m9365011A8EA2266D91FAE823DBFD31C15FB7E9D3 ();
+extern "C" void WinRtToNetFxStreamAdapter_ReadAsync_m5160A87A3A863EDAB5BF53534B5A6B7802B57042 ();
+extern "C" void WinRtToNetFxStreamAdapter_ReadAsyncInternal_m808223D75DD1A59959A6B9F14F623CC50050B593 ();
 extern "C" void AsyncTaskCache_CreateInt32Tasks_m697579149683F8624A776EB276964219C4DBA769 ();
 extern "C" void DevicePortal_DownloadLogFileAsync_m56CE1AFBD414E0958D8D057351BA6598394D964B ();
 extern "C" void Task_WhenAny_mBC42BCB13C1F576DE6DAA08EB4F704D8176E674F ();
 extern "C" void TaskFactory_CommonCWAnyLogic_m49CC1C06031409C5D34990993262A531609D9565 ();
+extern "C" void U3CU3Ec__DisplayClass2_0_U3CWriteAsync_AbstractStreamU3Eb__0_m3AEE1111FD567723DE3694810471BA166AD0668B ();
+extern "C" void U3CU3Ec__DisplayClass2_0_U3CWriteAsync_AbstractStreamU3Eb__1_m9041D8EDB0504B8C6D7E82BE5746FB980F713EBA ();
 extern "C" void WindowsDictationInputProvider_StopRecordingAsync_m970B34085B1E29671D89FDC39AED49B356598D8C ();
 extern "C" void ConstructGltf_ConstructAsync_m5E323EF7F1B6B3609CC8DE4B68ACA57D2C93870D ();
 extern "C" void ConstructGltf_CreateMRTKShaderMaterial_m5CD19F8B7D7AF37576F810105C6A53F70BAD2CEA ();
 extern "C" void ConstructGltf_CreateStandardShaderMaterial_mA808DB8425BCD6866C13E8418B68210E83AE7EDC ();
 extern "C" void ConstructGltf_ConstructMeshPrimitiveAsync_mF33A187AC01C70513C7048B54951EE2A98A80768 ();
+extern "C" void U3CU3Ec__DisplayClass1_0_U3CReadAsync_AbstractStreamU3Eb__0_mF7B09B203A347D87A4D31F2BD0CF916B98250325 ();
+extern "C" void U3CU3Ec_U3CBeginEndWriteAsyncU3Eb__53_1_m0AC6C37267DB37A9015B9E31A695424E997707B9 ();
 extern "C" void Thread_GetCurrentThread_m7CFEF67B239579F733823B39EC3D56F77E96BC0E ();
 extern "C" void Thread_get_CurrentThread_mB7A83CAE2B9A74CEA053196DFD1AF1E7AB30A70E ();
 extern "C" void ThreadPoolWorkQueue_EnsureCurrentThreadHasQueue_m554E036E163A749F37BEBCE4F6020E145779758A ();
@@ -9614,10 +9932,12 @@ extern "C" void Thread_get_ThreadState_m8F398B10B485BC5FC7499B53452230A604989C10
 extern "C" void Scheduler_get_Instance_mAD166DADAB60F24F15A36BD49F67172084AA9B4C ();
 extern "C" void FileStreamAsyncResult_get_AsyncWaitHandle_m2448FB76191346DACFC22E8844CF57C7F2478705 ();
 extern "C" void SynchronousAsyncResult_get_AsyncWaitHandle_m89D6B91D0A116BBF517063540F727EF4F5045825 ();
+extern "C" void StreamOperationAsyncResult_get_AsyncWaitHandle_m77AD43084D44615B1A5B18FD41FACE99F34B715C ();
 extern "C" void IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5 ();
 extern "C" void AsyncResult_get_AsyncWaitHandle_m2122EADF631DF9C8A3A83440CA9A0DC6FC8843BC ();
 extern "C" void ManualResetEventSlim_get_WaitHandle_m1D2F06B07F0563D6E4788305F52284487DCE802B ();
 extern "C" void Task_System_IAsyncResult_get_AsyncWaitHandle_mA71710AFB5344BE5442434E14095D5B3930859FB ();
+extern "C" void TaskWrapperAsyncResult_System_IAsyncResult_get_AsyncWaitHandle_m2F6AA2661CF059788F85AE7C1B3BB1E3E126200A ();
 extern "C" void DwellProfile_get_DwellIntentDelay_mFC07C9F140824D2A9E7988366943193757079A20 ();
 extern "C" void DwellProfile_get_DwellStartDelay_m4DD9EDD1E81CE31990975734E1D0FDC524FFF6F1 ();
 extern "C" void DwellProfile_get_TimeToAllowDwellResume_mA82FEC3F487F69163D4400066ABCF6799F16FD4E ();
@@ -9947,9 +10267,9 @@ extern "C" void InteractionSource_get_vendorId_m938724EC780851E382186A4DB36D29E8
 extern "C" void SimpleHapticsControllerFeedback_get_Waveform_mC68BE85CE60D8A2018B5D9C5F9A5434E0A7B7543 ();
 extern "C" void IPropertyValue_GetUInt16_mEE71D2389CCEFB98E952C00FB8D6BEC588335A57 ();
 extern "C" void Sprite_get_triangles_m3B0A097930B40C800E0591E5B095D118D2A33D2E ();
+extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m5C1A2CA6703F0D94CE54FF9003154837BB1CDF9A ();
 extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_mDE4C1B254DA56F4B01F2A2C9AC0F946365FFA75D ();
 extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m7C7DB27BC4297A74A96AC53E1EDD3E7415DFB874 ();
-extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m5C1A2CA6703F0D94CE54FF9003154837BB1CDF9A ();
 extern "C" void BaseService_get_Priority_m1D482C1449A657C760CD65F7184FD11C1DAABD22 ();
 extern "C" void MixedRealityBoundarySystem_get_SourceId_m3A758D04E9710EED78CEC14EDDBCF1E5E9249C1C ();
 extern "C" void MixedRealityCameraSystem_get_SourceId_mB2ECB55BE76F9471BC5510CD00B05151E46D179C ();
@@ -10015,11 +10335,14 @@ extern "C" void BinaryReader_ReadUInt32_mB937A3A345E54B7922B2B80D36B6BCFA494D395
 extern "C" void Int16_System_IConvertible_ToUInt32_m2723ECDC51455D3954F3ADB25F822024010E84C6_AdjustorThunk ();
 extern "C" void Int32_System_IConvertible_ToUInt32_mEFA1E74EEA43FA4DBA9B15C4845F110AD727D58A_AdjustorThunk ();
 extern "C" void Int64_System_IConvertible_ToUInt32_m3F6CDD0B28BA8BBC9F0CA38DB5904D7A04F5BF38_AdjustorThunk ();
+extern "C" void Math_Min_mD7CBC84B8943F900245120DABABF771D701A1655 ();
 extern "C" void IPv6AddressFormatter_AsIPv4Int_m94B06C695C45C85A90F95CAAF4430772EFC16C4F_AdjustorThunk ();
 extern "C" void Number_ParseUInt32_mF280A62925FED84E23D64DC6B86BC50AD96896FB ();
 extern "C" void NumberFormatter_AddOneToDecHex_m851488765EF4DFAE8BE75CB6BFCE577528D6FBF7 ();
 extern "C" void NumberFormatter_FastToDecHex_m70F4537592F2D301B57DCB01BF0BF5F5B929845F ();
 extern "C" void NumberFormatter_ToDecHex_m6EF9C97FE4375306151C2AD7C0F47C993D12454D ();
+extern "C" void WindowsRuntimeBuffer_Windows_Storage_Streams_IBuffer_get_Capacity_m94DAA0965A8E5DEDA6F3F77798CF72D140932948 ();
+extern "C" void WindowsRuntimeBuffer_Windows_Storage_Streams_IBuffer_get_Length_mB0F8ED9F7F05C763AE8698180336B9A531ABAF9F ();
 extern "C" void ListToBindableVectorViewAdapter_get_Size_m0D4C2E6A8A3A43D983D9B52AAE61D7F2278DC88F ();
 extern "C" void __BinaryParser_ReadUInt32_mDC4E3869D4BAABEEDB3DE40F9A7EC5D5A2D2A1F1 ();
 extern "C" void SByte_System_IConvertible_ToUInt32_m7A0145CF61DA57526644B6DAC38A5C2502709EFD_AdjustorThunk ();
@@ -10073,6 +10396,7 @@ extern "C" void HandMeshObserver_get_TriangleIndexCount_m72D9A87FD7433C47F4F9F1A
 extern "C" void HandMeshObserver_get_VertexCount_m5BF946FC59A9C0E25F545DFEA8C00D6285F4AABC ();
 extern "C" void DataReaderLoadOperation_GetResults_mC54CF30022C106A3DEF5B83E5BA75482B2B0B8CA ();
 extern "C" void DataReaderLoadOperation_get_Id_mD9EAB7D1F0C3B3B2B221B82CBE017F2623E16A97 ();
+extern "C" void IBuffer_get_Capacity_m5745CFEF40ED7190B05A09CE37B07650634038C9 ();
 extern "C" void IBuffer_get_Length_mDADF6292B118D0FD40831F9C33D7EFE7AEDB889B ();
 extern "C" void SpatialInteractionSource_get_Id_mB951FE8156B99B8019862574020299C1FBE1046E ();
 extern "C" void IBindableVector_get_Size_m1804E8861F18C40EC16058667D11382062A82771 ();
@@ -10109,6 +10433,8 @@ extern "C" void Double_System_IConvertible_ToUInt64_m42B2609C9326264155EA6BCE68D
 extern "C" void Enum_System_IConvertible_ToUInt64_mA2ED7907AF20FBFD20F802AE06F18ACB4E23CA9D ();
 extern "C" void Enum_ToUInt64_mF33D43629B55147D1AF6CC3D813F894435AA50F5 ();
 extern "C" void BinaryReader_ReadUInt64_m81BB2D69D1C5B1EC3DFCFA4EB5AE1B157BE519E6 ();
+extern "C" void NetFxToWinRtStreamAdapter_get_Position_mC11DC56E591D18E7577C00362A9A0E032A6FD0FE ();
+extern "C" void NetFxToWinRtStreamAdapter_get_Size_m309472FC98BC493FE9A414C43CE8B2EED10161FC ();
 extern "C" void Int16_System_IConvertible_ToUInt64_m923F81B1E4E6D28FFEE8362D735E0084C25CE10C_AdjustorThunk ();
 extern "C" void Int32_System_IConvertible_ToUInt64_m957A272747A361A7A59C76F4B056B81830345E4E_AdjustorThunk ();
 extern "C" void Int64_System_IConvertible_ToUInt64_mA8E1ABEFFF58D3299B47D571ADBDBC9D0F7D7E38_AdjustorThunk ();
@@ -10125,6 +10451,7 @@ extern "C" void UInt64_Parse_m601A733732850A76D2469F084F2F0E718EBFFD14 ();
 extern "C" void UInt64_System_IConvertible_ToUInt64_m2D81AD0924E713479AACA50B8C236935A2315BB4_AdjustorThunk ();
 extern "C" void UIntPtr_op_Explicit_m0F6E9EC046D4A796A257B9C2192A21051DC90075 ();
 extern "C" void IPropertyValue_GetUInt64_m01C60E6EA36BD050254AEFE6AF99D1D4977CD15F ();
+extern "C" void IRandomAccessStream_get_Position_m48DEBF691715522B04ED7539AE7F22041221F646 ();
 extern "C" void IRandomAccessStream_get_Size_mC7C3FD2E620A221E63F7F6AD1E806A68B3E76C03 ();
 extern "C" void MemoryManager_get_AppMemoryUsage_m3BBDE59FC2DCB6074A92C7859CC42E3311BD8D3B ();
 extern "C" void MemoryManager_get_AppMemoryUsageLimit_m8A8BF85D26D6A48DE98963D3BDB7C87B7FD67113 ();
@@ -10709,6 +11036,622 @@ extern "C" void DocLinkAttribute_set_URL_mFDD7B07F767320D69FE8C7E1E8097736F35F53
 extern "C" void EndReadOnlyGroupAttribute__ctor_m34BA6445FF12F7F23B4CF02D680EE030D0AC665E ();
 extern "C" void EnumFlagsAttribute__ctor_m6ED9AF53C4F5E660C5EFBF73F2E7FDEFB3A2D8C6 ();
 extern "C" void EventSystemExtensions__cctor_m79BCF77EA9DCD47FDC46CE92A1E18D496E719830 ();
+extern "C" void BoundaryVisualizationDemo__ctor_m36673756CDC840CF309141318A65008B66888463 ();
+extern "C" void BoundaryVisualizationDemo_AddMarkers_m5F7A12FF2E1C30208AA156A2B68FFCAD5A1D2A31 ();
+extern "C" void BoundaryVisualizationDemo_Awake_mC9C5771F3D8AD8D65E43732349A1DF6869F830DA ();
+extern "C" void BoundaryVisualizationDemo_OnBoundaryVisualizationChanged_m70BB0AFC5CA1804EF33D45BD57A018E2D9E3066A ();
+extern "C" void BoundaryVisualizationDemo_OnDisable_mF5CBA59E396DEC6CAB3EF928908078911496A888 ();
+extern "C" void BoundaryVisualizationDemo_OnEnable_mDEC4960492803CE7E841D4F91178721B1C3F24DE ();
+extern "C" void BoundaryVisualizationDemo_Start_mDD4F37D1285AF82E7835042581B13E784CD30EE0 ();
+extern "C" void BoundaryVisualizationDemo_Update_mF383A7D4EFA0A7DEE5504230D48E2F988E9971B4 ();
+extern "C" void U3CSequenceU3Ed__15__ctor_mB2E4717CAF3FFC83B4EF6175D0914EEF696ECFAE ();
+extern "C" void U3CSequenceU3Ed__15_System_Collections_IEnumerator_Reset_mE449D3CD0AF6A3876AC3DEBF43F8045F2ED3E4E0 ();
+extern "C" void U3CSequenceU3Ed__15_System_IDisposable_Dispose_m6A3E41EDB7064BFC01F94BF97EAF6722B7F5312C ();
+extern "C" void U3CWaitForSpeechCommandU3Ed__17__ctor_m2C3B8621ED34C59832245E1602519CF07C06B22A ();
+extern "C" void U3CWaitForSpeechCommandU3Ed__17_System_Collections_IEnumerator_Reset_m1E829C1269F966AFAE8B398FC3D66EE0DCCAA218 ();
+extern "C" void U3CWaitForSpeechCommandU3Ed__17_System_IDisposable_Dispose_m3EA26BE2BE617A09DEB850AC2989AA17A20EDAB0 ();
+extern "C" void BoundingBoxExampleTest__ctor_m247F81E02FCBF9D22B28A7287B8263BFBC245314 ();
+extern "C" void BoundingBoxExampleTest_U3CSequenceU3Eb__15_0_m14D9B9A3CFB2700041446EAD6D9D94C177212A1B ();
+extern "C" void BoundingBoxExampleTest_U3CSequenceU3Eb__15_1_m4B1EE58CE49E5629390475263A617EC36FF9F5C7 ();
+extern "C" void BoundingBoxExampleTest_DebugDrawObjectBounds_mB2EFF468A3E20D943082EFD7ECAD456C67569760 ();
+extern "C" void BoundingBoxExampleTest_OnDisable_m310CA870529AE342444914C3D6EC7E7B0F9268C6 ();
+extern "C" void BoundingBoxExampleTest_OnEnable_mC3B3991F3C7C6FD6AEF635AC230C69637D69B612 ();
+extern "C" void BoundingBoxExampleTest_OnSpeechKeywordRecognized_mB912FCA8B148BF5949D66076968C51102E66F326 ();
+extern "C" void BoundingBoxExampleTest_SetStatus_m692D0961388DBE35E3A6AB8877E496C5205F7BBD ();
+extern "C" void BoundingBoxExampleTest_Start_m11B6D0A76896438589B6216C86BC8D9FDAC02FE9 ();
+extern "C" void ChangeManipulation__ctor_m934A332CDAE46D5492EE76D06F86F77EAB0E8044 ();
+extern "C" void ChangeManipulation_Start_mA36F14E84FE69667543CCDB90558FEA37D09EBA1 ();
+extern "C" void ChangeManipulation_TryStopManipulation_m45D8762C5440265CA26DD23CBD83CE1E7EE97855 ();
+extern "C" void ChangeManipulation_Update_mF9849F106C858E150ADCB89299512241348D8BCF ();
+extern "C" void ClearSpatialObservations__ctor_m20ECB2818C7865E83879D13603683D5854127466 ();
+extern "C" void ClearSpatialObservations_Start_mD63BBB31AD13D4E93939703A8F39C07CC1D72C18 ();
+extern "C" void ClearSpatialObservations_ToggleObservers_mB25018C4FBDCC812B3786F11D39F35B0820EC061 ();
+extern "C" void ColorChanger__ctor_mFDCB5EF0C00F798D36AF03B7175D90CA950846E7 ();
+extern "C" void ColorChanger_Increment_m9783FF292243CC1B1D1891EDBFCD0326A3320C0D ();
+extern "C" void ColorChanger_RandomColor_mFDEEB5DDF3CFA9B7592E59CD22350D171C8E42E4 ();
+extern "C" void ColorChanger_Start_m9BAB1630692327036EDE3D0DAE8E56D81D488640 ();
+extern "C" void ColorChangerUnityUI__ctor_m85F22CFB6018D1F9A4156DDE7BCA8C60F7D5E7F5 ();
+extern "C" void ColorChangerUnityUI_RandomColor_m7BD465AE2F9B3DD0D2B9ED29704CFF1D44E85183 ();
+extern "C" void ColorChangerUnityUI_Start_m040ADDADA810531073D83C79E995CDE164F1ABAB ();
+extern "C" void DebugTextOutput__ctor_m507204FDF3464B022DEB980965331FF16A9DAE53 ();
+extern "C" void DebugTextOutput_SetTextWithTimestamp_mF9286A60E2E4267BA99D08A8477A730D6244FF8B ();
+extern "C" void DemoSpatialMeshHandler__ctor_m128FF5A42EB7BEF2A1D463B5E6179FF7E8D0EAB4 ();
+extern "C" void DemoSpatialMeshHandler_OnDestroy_m4E38931D86C694FDE78C3865C4F800D65FD7ED31 ();
+extern "C" void DemoSpatialMeshHandler_OnDisable_m7462CFEDA74845AEFCA58321CE333504823C2F0A ();
+extern "C" void DemoSpatialMeshHandler_OnEnable_m9C1F9A6E9DE60C365CA39C286400700B4CD5C325 ();
+extern "C" void DemoSpatialMeshHandler_OnObservationAdded_m3E84D1109EF85920C9F27AE80E5882CBF77A52F9 ();
+extern "C" void DemoSpatialMeshHandler_OnObservationRemoved_mC21C7184514E1100DC2D9B428ED9BEC745FF8D9A ();
+extern "C" void DemoSpatialMeshHandler_OnObservationUpdated_m7916C57B170BB753FC16FDE017753575C77BD198 ();
+extern "C" void DemoSpatialMeshHandler_RegisterEventHandlers_mB5E2DF77825C8A89CAA601616CA21EB6038BF4CD ();
+extern "C" void DemoSpatialMeshHandler_Start_m89E6DF0320E966AD102BC4D56DD00BE04F9C83D0 ();
+extern "C" void DemoSpatialMeshHandler_UnregisterEventHandlers_m5617ADC03565D69D4279F7BD62C2FE8B8B77A835 ();
+extern "C" void DemoTouchButton__ctor_m2985C3AFB836DF61F3AF371020E70D4D39307475 ();
+extern "C" void DemoTouchButton_Awake_m2CE67E7508394C3F991260D40A40570C09B66EF0 ();
+extern "C" void DemoTouchButton_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m184A372117F3A2A5B8A7FFA4EC62D302D1A1955E ();
+extern "C" void DemoTouchButton_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_mE694D1795E93098F7CCFA40CD292D8AAC17DDD8E ();
+extern "C" void DemoTouchButton_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m165A1C4C12A3FC1B6FCDD5D6EB92AD94D7C8DA71 ();
+extern "C" void DemoTouchButton_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m95567406E97A080541AA0429F142DBBD6547EB31 ();
+extern "C" void DisablePointersExample__ctor_mA092B78239106BA00B5449C106EF16F91466D958 ();
+extern "C" void DisablePointersExample_ResetExample_m26285F485E9F7B3C9B2EC91150412C036B843DE7 ();
+extern "C" void DisablePointersExample_SetControllerRayEnabled_m97EDA80DE8921289BD346AF5B8EB6CBF5CE9F3D4 ();
+extern "C" void DisablePointersExample_SetFingerOnly_m492D87C9941C90FEDACF0379538CFD5C1165CB8D ();
+extern "C" void DisablePointersExample_SetGazeEnabled_mE6649CE4DF80251388A72829210C5D9B6CC7E733 ();
+extern "C" void DisablePointersExample_SetGrabEnabled_m46A4FBDC22811F9A6329D7A4CEE5B7650ED2C7CE ();
+extern "C" void DisablePointersExample_SetHandRayEnabled_mD4AD0A3B80259FC78AA22105E8EFAA46943F8E6D ();
+extern "C" void DisablePointersExample_SetHoloLens1_mBB9F980E1B119CAB19233AD5B720DCAD0F7017AC ();
+extern "C" void DisablePointersExample_SetHoloLens2_mF112D030E71B808FCC1312AE6CFE88B0845A7B51 ();
+extern "C" void DisablePointersExample_SetLeftHandRayEnabled_mE20543E9AE6D45A41489F27879D9C543B5DEC152 ();
+extern "C" void DisablePointersExample_SetPokeEnabled_m1C9055C680A5BA0BD90CF656A22B87E12B2B213A ();
+extern "C" void DisablePointersExample_SetRightHandRayEnabled_m739EFF8B8E3FA24012BBFCAA8EA4069AC63043DC ();
+extern "C" void DisablePointersExample_SetVR_m7F7DB370FB8D21A79527E1D487DDD2B0D529B386 ();
+extern "C" void DisablePointersExample_Start_m2DD78261A4FF43CF5BBCEB9B41F9E6C7BC492BC7 ();
+extern "C" void DisablePointersExample_Update_mD100360F2A5FFE5C696A00A01FDC30EF6EBD7CA3 ();
+extern "C" void AudioFeedbackPlayer__ctor_m89703D1AD087573FA697A99725B5C30B794C86A5 ();
+extern "C" void AudioFeedbackPlayer_PlaySound_m76D1E94B009FB86CF23E9A927B27DBD75EC92F1F ();
+extern "C" void AudioFeedbackPlayer_Start_mF117B9EAADE98E3218C1E0331F420E9CF780C8DF ();
+extern "C" void AudioFeedbackPlayer_set_Instance_m647DF716B71B2CDDF88639D72EB8B5C1911E04F7 ();
+extern "C" void BlendOut__ctor_mEE97C545EDC304F2F19850DC3EA9CFCEBC2AEC77 ();
+extern "C" void BlendOut_ChangeTransparency_m1660F63C5A64E7317393E3B05CDC2E572F6AB518 ();
+extern "C" void BlendOut_ChangeTransparency_m962677A7694FE44441406201D8D75273C517683E ();
+extern "C" void BlendOut_Disengage_m9399EA4607D87D2A96D84879F293B44C637D324A ();
+extern "C" void BlendOut_DwellSucceeded_m5C886F7BA56C71A974DE56AC92EC2A7031D1055C ();
+extern "C" void BlendOut_Engage_m42E44FF7233D5F6F78EEDBA424758F5315103730 ();
+extern "C" void BlendOut_InitialSetup_m409FCE9B603166DCF4513D246B2A236CDA69B5B0 ();
+extern "C" void BlendOut_Materials_BlendOut_m2DDE9236F7CA9E2837D51CE1C3130BCCCDF9CA10 ();
+extern "C" void BlendOut_SlowlyBlendOut_m516D4D8FF65D59C3E1776F9D786D761084F362CE ();
+extern "C" void BlendOut_Start_m70EC672082EFD160472E1FAFD40818818AD58221 ();
+extern "C" void BlendOut_Update_mDBE66F454EA646BCF655DD4A97711B578D381049 ();
+extern "C" void ChangeRenderMode_ChangeRenderModes_mC2503793B878D475F0533E340689CC6921F455E5 ();
+extern "C" void ChangeSize__ctor_m64A88C4D7583AF53BB333A6D60E7A51CA6348AB5 ();
+extern "C" void ChangeSize_Disengage_m260FC21F5B8A952E24B364DB1D4A5DB21205D5BB ();
+extern "C" void ChangeSize_Engage_m2FC6D8702A8657CEFE81080BD88CB7688630F756 ();
+extern "C" void ChangeSize_InitialSetup_mDEDE6F0895BEA2E3CC79D74B76061161946B6ED3 ();
+extern "C" void ChangeSize_OnLookAt_IncreaseTargetSize_m83764E922F648A52AED3CCC7BDE20B01719D67D3 ();
+extern "C" void ChangeSize_OnLookAway_ReturnToOriginalTargetSize_m10C8153F2333262372DF88447A7F74DBFD1FB895 ();
+extern "C" void ChangeSize_Start_mB0FCBE67DF7662D25EFA65C79B9177A295CB8C40 ();
+extern "C" void ChangeSize_Update_mEFF4B3CD03CA0CE3B72801EB187771DFCA188209 ();
+extern "C" void ColorTap__ctor_mA5F587DE0C86A80589D3059BBE5EED05B35E3A2D ();
+extern "C" void ColorTap_Awake_mB66F3D08AA285D8003EBA46029378CBB46686971 ();
+extern "C" void ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityFocusHandler_OnFocusEnter_mDB43CDD5B61A5518B8A1616F4D6A68A02B85E826 ();
+extern "C" void ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityFocusHandler_OnFocusExit_m45BD9C133B112723F4E7E529B470FBF223EA81F0 ();
+extern "C" void ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m9DC7D80E65CFD3C5108908E02451D9A2336A6E97 ();
+extern "C" void ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m471D849806C3E9FD5420A056CB43B31D715B7856 ();
+extern "C" void ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_mFE4F770CB2A296DB1ADE98BDB2861CC7CD6C808C ();
+extern "C" void ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_mEBB5F36A6EE5C79AC86630279404799F1ECA9B0E ();
+extern "C" void DoNotRender__ctor_m01E99488AFDCC5B70204EC0FEFD4BAB1DBA2E75D ();
+extern "C" void DoNotRender_Start_m2E8C0F7A91B0CE016798008005B544D09EBA6D25 ();
+extern "C" void U3CComputeHeatmapAtU3Ed__20__ctor_m2864A3C063841CFC20BE961292521813BCF76FDB ();
+extern "C" void U3CComputeHeatmapAtU3Ed__20_System_Collections_IEnumerator_Reset_m39A96F4D1CBAA660BB45722882AF1F27ABA97A56 ();
+extern "C" void U3CComputeHeatmapAtU3Ed__20_System_IDisposable_Dispose_mDA50B146E2886E7F511B895B29AA38D10E4F7766 ();
+extern "C" void U3CDrawAtU3Ed__19__ctor_m7CF2873A972B81873555B45012F508136C18A917 ();
+extern "C" void U3CDrawAtU3Ed__19_System_Collections_IEnumerator_Reset_m71F64B5755BABAB0248632632CE609939C5EF3E0 ();
+extern "C" void U3CDrawAtU3Ed__19_System_IDisposable_Dispose_m309932CE940BFD40C55C2DB184AE4F25826E775E ();
+extern "C" void DrawOnTexture__ctor_mF220822EA934BFB874357A90A2EFEC46F9B82294 ();
+extern "C" void DrawOnTexture_DrawAt_mAE2D55E51E63C0A27739867781965F99FFA43ECA ();
+extern "C" void DrawOnTexture_DrawAt2_mC6A7374862E0A27EE4C9C1BCF40446EE27A3B4F4 ();
+extern "C" void DrawOnTexture_DrawAtThisHitPos_mFE23FA71783DED7B25AE2D18485B8EF7584D78B9 ();
+extern "C" void DrawOnTexture_OnLookAt_m2B07F8DD80E6C5BCA915AA2FA257576A89F7A2A6 ();
+extern "C" void DrawOnTexture_Start_mA5E41B8217ED85932E9D78FC91787950AD08935A ();
+extern "C" void DwellSelection__cctor_mC60B91B014F22CEAB219E23A98D7C1D152602826 ();
+extern "C" void DwellSelection__ctor_mA9F2E459BBE2FA26737E7AB6B7EF44207594D96C ();
+extern "C" void DwellSelection_DisableDwell_m4313AA318C8DD43F4A4AEC6EFE2D4254FC5B831C ();
+extern "C" void DwellSelection_EnableDwell_m6F99F3E1F0B0F798AF98523FDA988DEFD139AC72 ();
+extern "C" void DwellSelection_EtTarget_OnTargetSelected_m736EABF2704585A244FE3E935C25324B6C277523 ();
+extern "C" void DwellSelection_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m2C17A71DACF1EDC78D37BD63EF3F5F1741FC47B2 ();
+extern "C" void DwellSelection_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m3524799211E43C033B29130DB83FD160F5709FD4 ();
+extern "C" void DwellSelection_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m6D65149270C109FD3B307801EE95D38FA6E6424D ();
+extern "C" void DwellSelection_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m0BD0AA1B046FD211A54B58B330124107ADE12D0A ();
+extern "C" void DwellSelection_OnEyeFocusStart_m9C717AA57A34D3B28D4A537E9CCABC8B4A5D7447 ();
+extern "C" void DwellSelection_OnEyeFocusStay_mD970A1C2AEFA70C96E3FBD9B28194713BC054863 ();
+extern "C" void DwellSelection_OnEyeFocusStop_mFAEAA9D085D5DB71626C533A09CA7F66E1C034E0 ();
+extern "C" void DwellSelection_ResetDwellFeedback_m8875E51BC408A20A31EDA751E4FB8D1EF6DC9C6E ();
+extern "C" void DwellSelection_Start_m43C70C94EDFA9995C28CB0EA3E50A9627CC22217 ();
+extern "C" void DwellSelection_StartDwellFeedback_m96898A08B73157B5C6203BFFBB20B34A437EFD8B ();
+extern "C" void DwellSelection_Update_m702019B7A900279204BD34F187EB0203B468E0AF ();
+extern "C" void DwellSelection_UpdateTransparency_mBB7B7FFE9FFCA9108AC8A8873C56B2DBF900ED01 ();
+extern "C" void DwellSelection_set_TextureShaderProperty_mF35C365C9F6292CFDAF708D218BBB2BEDE84DA51 ();
+extern "C" void EyeCalibrationChecker__ctor_m6666D2B7CC4A732EF160FA4F2577E6C0931952BB ();
+extern "C" void EyeCalibrationChecker_Update_m2DFB882042B6029BE604B76EF6E76CB02BDC8165 ();
+extern "C" void U3CLoadNewSceneU3Ed__8__ctor_mB860F25D9F6538CBA4FB98500CABF0395DD3D5AA ();
+extern "C" void U3CLoadNewSceneU3Ed__8_System_Collections_IEnumerator_Reset_m6DF3E6C202A8FB13BFFCCBBC5806E0DEF5B87C34 ();
+extern "C" void U3CLoadNewSceneU3Ed__8_System_IDisposable_Dispose_m4916F7075239D6FAB45A74FC6E89BDACBFC656A9 ();
+extern "C" void EyeTrackingDemoUtils_GameObject_ChangeColor_mBA2DB961EA6ECB355AF04CAA9169D50C6EC2B4E7 ();
+extern "C" void EyeTrackingDemoUtils_GameObject_ChangeTransparency_m35C8C148704D938EB60BE92306BAE62E01058E49 ();
+extern "C" void EyeTrackingDemoUtils_GameObject_ChangeTransparency_m04B66E7501121DEF87160373EDB47FDD662044C5 ();
+extern "C" void EyeTrackingDemoUtils_Renderers_ChangeTransparency_mF9F5548E6C8904CCF5D2DE0AC1171C548CDBED2E ();
+extern "C" void FaceUser__ctor_m3320D133596C514AE4B37ECE39D98AA4CCA4445B ();
+extern "C" void FaceUser_Disengage_m09553E3479433EA7AF6E2F597327FF85E9291631 ();
+extern "C" void FaceUser_Engage_m1E80D649ACEDE26170A9DF4C9A1B9643C19C29DF ();
+extern "C" void FaceUser_InitialSetup_mAD9D266CD0A0FA398AC28250D729DF682C00F6D7 ();
+extern "C" void FaceUser_ReturnToOriginalRotation_mA719502E66E8C05675B809F72277EDAC7FEB3255 ();
+extern "C" void FaceUser_Start_mB1EE0C8EF2D07D7B5976DCDE528E0D74F719A7B1 ();
+extern "C" void FaceUser_TurnToUser_m18CDE4511C5DC053E498BDCB937D5AFE0B5C57A7 ();
+extern "C" void FaceUser_Update_m1BB807DCAEEF611317CFF573CFBBFF39AB8613A9 ();
+extern "C" void FollowEyeGaze__ctor_mF80CD8859BFC50024569A83F84BD6AFCE2EBB79C ();
+extern "C" void FollowEyeGaze_Update_m425A9B582F7669F1B01F4A7F63D2D7BCC9855F6D ();
+extern "C" void FollowEyeGazeGazeProvider__ctor_mE4FC141C178A72C06309A45454EDD88CA3B127CC ();
+extern "C" void FollowEyeGazeGazeProvider_Update_m8694B20FCE1B6500FCEF7C3B189A18417EFB892B ();
+extern "C" void GrabReleaseDetector__ctor_m289FA0839EF826E516E57E5BA7A735A6E80AC316 ();
+extern "C" void GrabReleaseDetector_Awake_m984AB4914A0CEB3D7EEF09125FC8BF315345F341 ();
+extern "C" void GrabReleaseDetector_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m92BC682156AF167367C049D3A67D0961F425AC19 ();
+extern "C" void GrabReleaseDetector_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m5B2BCEAC2932D0486BBF274BAA823C66493FA32B ();
+extern "C" void GrabReleaseDetector_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m21460E54B3F8A21254E1EF601A63905AE86D9673 ();
+extern "C" void GrabReleaseDetector_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m46F0752CE1B5323A7D8A6F95E75329799BD0C459 ();
+extern "C" void HitBehaviorDestroyOnSelect__ctor_mE48649D4CDC769426FEC23278A66A376A4579C2B ();
+extern "C" void HitBehaviorDestroyOnSelect_PlayAnimationOnHit_m30C66B16C788468246403984F1D2F038248FD7D0 ();
+extern "C" void HitBehaviorDestroyOnSelect_SetUpAudio_m34CF556396EA58E0C679B17052BDE841230E3E73 ();
+extern "C" void HitBehaviorDestroyOnSelect_Start_m63F05785D0E87A190C6190A1F3C375D34FF32979 ();
+extern "C" void HitBehaviorDestroyOnSelect_TargetSelected_m97ED71E056B2DC4AC04CB0275B0E71C4F209D524 ();
+extern "C" void KeepFacingCamera__ctor_m8D1A46992245BBD25341DD8DB1376ABD0B936366 ();
+extern "C" void KeepFacingCamera_Awake_mB322E8A30FD7E1751B35780F95321CF7ECFD77AF ();
+extern "C" void KeepFacingCamera_Start_mCCF868CBDE3B93669D1F864AFFA49469B952DEB4 ();
+extern "C" void KeepFacingCamera_Update_m88D59553F487A722585A57624ED6F0E30A29B3EB ();
+extern "C" void KeepThisAlive__ctor_m268224B3D562224561CC7EF0B0982B336E88DAE2 ();
+extern "C" void KeepThisAlive_Awake_m8FC4E2F51DC2A36E39516177CDCA27F64A587D81 ();
+extern "C" void KeepThisAlive_Start_mACE04A0639ED6F94B2029702E7B48E097E57D0CC ();
+extern "C" void KeepThisAlive_set_Instance_m43A7F9DFCD4DFC5928984F5E9487095E5A02052B ();
+extern "C" void U3CLoadNewSceneU3Ed__6__ctor_m41B02A53D2D005AEB77669610D9FD4D0C2D2FA03 ();
+extern "C" void U3CLoadNewSceneU3Ed__6_System_Collections_IEnumerator_Reset_mD0A86BB4B03EBABAAEE1ED6D3B61FE9756E00968 ();
+extern "C" void U3CLoadNewSceneU3Ed__6_System_IDisposable_Dispose_m652F94ECACC48A6DC00CE83BBC742D6115953E6C ();
+extern "C" void LoadAdditiveScene__cctor_m2305DE02573D8751E92AACD2010C6504FEC40231 ();
+extern "C" void LoadAdditiveScene__ctor_mF35DFD096128D55291F7DA344CDFB4D523A0CE0F ();
+extern "C" void LoadAdditiveScene_LoadScene_mB8F8863DB398B368A2034CA57861F2936070DE83 ();
+extern "C" void LoadAdditiveScene_LoadScene_m8FD0FE44FB84C2D356AD539C8D0E56274A88FF1A ();
+extern "C" void LoadProfilesOnStartup__ctor_m3CEB4E5F1D7582DEB4D8B962E3AAA98080922960 ();
+extern "C" void LoadProfilesOnStartup_LateUpdate_m8D12ACC357800EBB0F58B0F6646381986B5AAAF4 ();
+extern "C" void LoadProfilesOnStartup_Start_m33F768CF7B7B2709FE1FC80727F147BCAD40F5D5 ();
+extern "C" void U3CU3CRunSyncU3Eb__0U3Ed_MoveNext_m83EF0B2E83B2E7CD702A0944EAC30AF881D367A5_AdjustorThunk ();
+extern "C" void U3CU3CRunSyncU3Eb__0U3Ed_SetStateMachine_mAC7A6E442691CFBEA8D18DC59FB1F769CB0DAB4A_AdjustorThunk ();
+extern "C" void U3CU3Ec__DisplayClass0_0__ctor_mD9E332713184D420FA5C3130F8D48337E75E4DBB ();
+extern "C" void U3CU3Ec__DisplayClass0_0_U3CRunSyncU3Eb__0_m6CC2C96296388A337F21057BFD54DED0AA09E860 ();
+extern "C" void ExclusiveSynchronizationContext__ctor_m6E3538A136FF939908B6556AC0E728F633148257 ();
+extern "C" void ExclusiveSynchronizationContext_U3CEndMessageLoopU3Eb__9_0_m22CEB2B195CDA45B1FFABFAC006888FCB68481EE ();
+extern "C" void ExclusiveSynchronizationContext_BeginMessageLoop_m53ED264FB623A90D61B1133FFC0CF6641BD98FA6 ();
+extern "C" void ExclusiveSynchronizationContext_EndMessageLoop_m6D36179AE4BECF714363C611D134907B9BB89E3E ();
+extern "C" void ExclusiveSynchronizationContext_Post_m17095D324131E8E3EC18FF9B534B72103F10D36B ();
+extern "C" void ExclusiveSynchronizationContext_Send_m8340905F98625A6BFF960C2974ED1F04748C6BC0 ();
+extern "C" void ExclusiveSynchronizationContext_set_InnerException_mC7D60F277ED4880003977789FD35FA1DE9DA6921 ();
+extern "C" void AsyncHelpers_RunSync_m233DDC27AACB7E45D8634A50E3F5C724F64EF6A9 ();
+extern "C" void U3CCreateNewLogFileU3Ed__14_MoveNext_m56E7CDA71DC9A19BCD60E5693D8360555B00AB59_AdjustorThunk ();
+extern "C" void U3CCreateNewLogFileU3Ed__14_SetStateMachine_mB48F17772B73A244FAC85AD0D4B743E6FA9B1C70_AdjustorThunk ();
+extern "C" void U3CLoadLogsU3Ed__21_MoveNext_mA61159B36136A4E2CB39024C0B8CA9E0A165E534_AdjustorThunk ();
+extern "C" void U3CLoadLogsU3Ed__21_SetStateMachine_m6463E898AADFAD4B1825FBB8EF36BF45F67A3420_AdjustorThunk ();
+extern "C" void U3CSaveLogsU3Ed__22_MoveNext_mECAF6D8A59AB1BF820A22D7BC5BE689C47B3ED34_AdjustorThunk ();
+extern "C" void U3CSaveLogsU3Ed__22_SetStateMachine_m45E515FA76EEC91EF02FA4F8F507435C98B01306_AdjustorThunk ();
+extern "C" void BasicInputLogger__ctor_m780D7EFC80568EA47F297A4CFA62BEDDE9A66B66 ();
+extern "C" void BasicInputLogger_CheckIfInitialized_m2E46E9C2896BF9DE5661C9DAD2F3C6BCC8DC3412 ();
+extern "C" void BasicInputLogger_CreateNewLogFile_mFCEF7D4D48D6100215CB2C62F7B9DF06136EC841 ();
+extern "C" void BasicInputLogger_LoadLogs_m14AB3095A14197FA630C7FB661E1E4B2C8B4AD69 ();
+extern "C" void BasicInputLogger_OnDestroy_m594D99190A437C7CE23B6A8329ADBF603A622159 ();
+extern "C" void BasicInputLogger_ResetLog_m3DC2A532E57DF85B6BDD539A39DEB9724A72DC59 ();
+extern "C" void BasicInputLogger_SaveLogs_m0CBB328FFF40500395EC7995D7C199607D4A8F99 ();
+extern "C" void BasicInputLogger_SetSessionDescr_mED6C4BB8F8CFA8A4B0D2B2087B14FCDDC5C9EEE6 ();
+extern "C" void BasicInputLogger_SetUserName_m9EF23AA33ED2660A66BADF78DD6832E29EC731D7 ();
+extern "C" void CustomInputLogger__ctor_mA418134FFFEBF1B2BD6FA898378ADBDB9333CA78 ();
+extern "C" void CustomInputLogger_CancelLogging_m1AA77614625A868CE7806412D5EE24D3310F018A ();
+extern "C" void CustomInputLogger_CreateNewLog_mDECDE5243E38D2AD838A22A966AA703674EB6C65 ();
+extern "C" void CustomInputLogger_CustomAppend_mEADD6FCA8EC3B40715F8FBB8A645D38C2993D8EC ();
+extern "C" void CustomInputLogger_StartLogging_m41841D9C95A43989E640B1C00FEB5175DD1E7D68 ();
+extern "C" void CustomInputLogger_StopLoggingAndSave_m38F0693FB50B498658DBCCE5A224CBA10CB7B1D1 ();
+extern "C" void InputPointerVisualizer__ctor_m69C1005542E33275855CE5D154CFE3411861A5ED ();
+extern "C" void InputPointerVisualizer_InitPointClouds_mAFDF322D5576621A9E0B1D5A36A2B3267CA656B4 ();
+extern "C" void InputPointerVisualizer_InitVisArrayObj_m6568B42BC4C2E06F68BD33D1A7735C6E4A2AB099 ();
+extern "C" void InputPointerVisualizer_PauseApp_m4906851AE1A2442AAD153709E5662C21041022B9 ();
+extern "C" void InputPointerVisualizer_ResetPointCloudVis_mDCB742A7063808B28F0DB90419EC0910F29ABF5A ();
+extern "C" void InputPointerVisualizer_ResetVis_mBC175FA8D776389A64BAFD4ACB65C8B35056B2DE ();
+extern "C" void InputPointerVisualizer_ResetVis_mD9C0F6C301915F443E22E22387A220466478F1EB ();
+extern "C" void InputPointerVisualizer_ResetVisualizations_m0EAD5303D5AA0F2291FC10EC8542B5FAC7C2809B ();
+extern "C" void InputPointerVisualizer_SetActive_DataVis_mF8827816A00272A834FB8073685085321048EC89 ();
+extern "C" void InputPointerVisualizer_SetActive_DataVis_m3CBF5D9425E4C33A42C7F8061207C568F75287CE ();
+extern "C" void InputPointerVisualizer_SetActive_DataVis_m6003EA9F25CB8535FDBDE2E407E652ABD399C40F ();
+extern "C" void InputPointerVisualizer_SetActive_PointCloudVis_mC79B6EDD9545ED76523598E6813E28793AB45910 ();
+extern "C" void InputPointerVisualizer_SetAppState_m9EE9BBED1FE575C05ED15855890227827D9DD68D ();
+extern "C" void InputPointerVisualizer_Start_m5A2D1B73E1A8A8389F4F07C063E7C967F47B8276 ();
+extern "C" void InputPointerVisualizer_ToggleAppState_m17366F429A3071217DCBD05551A27A1F5C364AE4 ();
+extern "C" void InputPointerVisualizer_UnpauseApp_m7D52B705A32C192486BF1E9AAA864FFC32167F0B ();
+extern "C" void InputPointerVisualizer_Update_mE99A1D6FF8036C132F2141B6919700F108395AA1 ();
+extern "C" void InputPointerVisualizer_UpdateConnectorLines_mA83E0467D94CB0271437C70E913AF3F94D5995E7 ();
+extern "C" void InputPointerVisualizer_UpdateDataVis_m8CFB9FF511376B0650F2C659319EC6CB1941E413 ();
+extern "C" void InputPointerVisualizer_UpdateDataVisPos_m000ABEF9BB9DC0464E0AA74BDFE09A3E919C676E ();
+extern "C" void InputPointerVisualizer_UpdateVis_PointCloud_mD35D118CE6845EC012372DEC6AFCF38D7B1C8ACE ();
+extern "C" void InputPointerVisualizer_set_AmountOfSamples_mE3BBFD3CA86E54817D402007BF02DA36CEFAFBA4 ();
+extern "C" void LogStructure__ctor_m403CC40362741E0E9073DAB2AF988917D2AC0D31 ();
+extern "C" void LogStructureEyeGaze__ctor_m4437FC461F88DF3006DB558BF6E3F10B414E663D ();
+extern "C" void U3CAddToCounterU3Ed__44__ctor_mBF53813257F137F3A479469305EA45D1ECDB6F1E ();
+extern "C" void U3CAddToCounterU3Ed__44_System_Collections_IEnumerator_Reset_m34E9E71D91AF2185F9E2CB81A36328E0280C2F0F ();
+extern "C" void U3CAddToCounterU3Ed__44_System_IDisposable_Dispose_mF1145D2D271705A10889B5FAA2581A95360A6942 ();
+extern "C" void U3CLoadInUWPU3Ed__21_MoveNext_mDD1CB879310BCC1E5CEC38DD7E71982A56087F05_AdjustorThunk ();
+extern "C" void U3CLoadInUWPU3Ed__21_SetStateMachine_mCE0DA0C7EF1F4C34412F2A59D6BE6173B2EA1D69_AdjustorThunk ();
+extern "C" void U3CPopulateHeatmapU3Ed__42__ctor_m922386DF151C7D91648063A1F979ACAE1C928085 ();
+extern "C" void U3CPopulateHeatmapU3Ed__42_System_Collections_IEnumerator_Reset_m3BC34BF6C4C8AE5EDC22EA2777629C1A1A159FF0 ();
+extern "C" void U3CPopulateHeatmapU3Ed__42_System_IDisposable_Dispose_mB161A7C60852222875550F7986D58BCCEB00265D ();
+extern "C" void U3CUWP_FileExistsU3Ed__14_MoveNext_mC6695867709A2E54F9071C3DA54F7616010C7DE2_AdjustorThunk ();
+extern "C" void U3CUWP_FileExistsU3Ed__14_SetStateMachine_m9668C73E520CB1E5A4571E435AB581CFCB9E18C8_AdjustorThunk ();
+extern "C" void U3CUWP_LoadU3Ed__12_MoveNext_mD092408F18E017BE65322F7E8CD41DBF828D6AC7_AdjustorThunk ();
+extern "C" void U3CUWP_LoadU3Ed__12_SetStateMachine_m547B3D049F360A3431DA7D4BC1D0694302E061CD_AdjustorThunk ();
+extern "C" void U3CUWP_LoadNewFileU3Ed__13_MoveNext_mD547D6355E4D4B0A60F10A306F2C17B36E56BD73_AdjustorThunk ();
+extern "C" void U3CUWP_LoadNewFileU3Ed__13_SetStateMachine_m2012139D83378B4BFCB67199E9A321F0642F1063_AdjustorThunk ();
+extern "C" void U3CUWP_ReadDataU3Ed__15_MoveNext_m4491C0388F3A3B3F2A4B43469626917BE12C2B89_AdjustorThunk ();
+extern "C" void U3CUWP_ReadDataU3Ed__15_SetStateMachine_mAA147CC62E52C849EE8716515786884B2ABF325E_AdjustorThunk ();
+extern "C" void U3CUpdateStatusU3Ed__43__ctor_m29DA4658BD22BF33905A9F9E3B4826198F988CD0 ();
+extern "C" void U3CUpdateStatusU3Ed__43_System_Collections_IEnumerator_Reset_m07645E95B5C440F3FE2D35B256CCEBADD6FE27F5 ();
+extern "C" void U3CUpdateStatusU3Ed__43_System_IDisposable_Dispose_mE65A5D065006F3B3A5103A5769D65AF608F324DB ();
+extern "C" void UserInputPlayback__cctor_mE77851C5E1EA28420F952CB2F786349FF5A4F909 ();
+extern "C" void UserInputPlayback__ctor_mE0C142CADF96593295808C757DF67AF62C6097B0 ();
+extern "C" void UserInputPlayback_Clear_mBDBEC98EF121380B7F27BABB483C335CCA535B59 ();
+extern "C" void UserInputPlayback_Load_m0D6BD551659670C8E8F807D423934932DA52C873 ();
+extern "C" void UserInputPlayback_LoadInEditor_mA37C4459F3946AF6BF524FE04932DEB7ACEB1898 ();
+extern "C" void UserInputPlayback_LoadInUWP_m2D6880A9B2004ADA0A8EF70DE593E35718BF40FE ();
+extern "C" void UserInputPlayback_LoadNewFile_m4CAED32ECC7F8755BC74F0C77C351F7D550D56F4 ();
+extern "C" void UserInputPlayback_LoadingStatus_Hide_mC62359876F88FF2098F7009F39B306E94AE7BD2A ();
+extern "C" void UserInputPlayback_LoadingStatus_Show_m619908DD864619A866F14445F005F7833D1CAF2B ();
+extern "C" void UserInputPlayback_Log_m68C39E48F3DD58ADEAFD1509C248C4C69B642FEB ();
+extern "C" void UserInputPlayback_Pause_m9704B17CDAE234B0B10D6FC442F0EDA494A13C67 ();
+extern "C" void UserInputPlayback_Play_m66C96E33281E5BFBC3FDBBB335DEBB37AC44979F ();
+extern "C" void UserInputPlayback_PlayNext_m276F64387B21D1115B519A47590CC49CAA6C7809 ();
+extern "C" void UserInputPlayback_ResetCurrentStream_m983F47C168F7E466131989881300DD69A7AB8652 ();
+extern "C" void UserInputPlayback_ShowAllAndFreeze_mC2F7CA71A6D6F6897DF1EC4FB1CBC7E07FF41372 ();
+extern "C" void UserInputPlayback_ShowAllAndFreeze_mB1F78B6623D943A7A3AFFE77D01E3DEA3B21592D ();
+extern "C" void UserInputPlayback_ShowHeatmap_m1F694DB4AD8E9F617D39E220A193411DD695C63E ();
+extern "C" void UserInputPlayback_SlowDown_m7C151E173BA686F7C9F8763C2C0388CDB1FCBA7E ();
+extern "C" void UserInputPlayback_SpeedUp_m77471390AC84CBC58A332D1E01EB54F9572425A1 ();
+extern "C" void UserInputPlayback_Start_mF7314604364860AB42F896163B97E58EF4DF2697 ();
+extern "C" void UserInputPlayback_Update_m2E8589B555D8487CD810E714B1656A82FED1D682 ();
+extern "C" void UserInputPlayback_UpdateEyeGazeSignal_mCE171015FC9358191B7FDEC83F39071F64D0F6B4 ();
+extern "C" void UserInputPlayback_UpdateHeadGazeSignal_m881ABF3F4357938033A0D577C8309F9623C3CC91 ();
+extern "C" void UserInputPlayback_UpdateLoadingStatus_m5AFE4739BDFB3B791B79A13999571CBA4EF4BCE8 ();
+extern "C" void UserInputPlayback_UpdateTargetingSignal_m849C5729849B0F546DE2AD32832F92A5FA5127FC ();
+extern "C" void UserInputPlayback_UpdateTimestampForNextReplay_m36EE40E6045321D32C4B59C2E06F8F5F4EA11061 ();
+extern "C" void UserInputPlayback_set_IsPlaying_m0A9006C38F939B8EE2D1FF19611E07313A393D42 ();
+extern "C" void UserInputRecorder__ctor_m4B516056B93324A4B815ABA6EAB5A24E7CE2FBBD ();
+extern "C" void UserInputRecorder_CustomAppend_m82DF6C49BEC1E21C8C14CA1D1D6884FD44F36EBD ();
+extern "C" void UserInputRecorder_OnDestroy_m92D9F3D022A156CDA216C7A26B40EDCEE70530F4 ();
+extern "C" void UserInputRecorder_Update_m88D100EB31EB143766920B7D2DFE3C4B95D70632 ();
+extern "C" void UserInputRecorder_UpdateLog_m73D0F0D8FCAB4FD597344423373AD6D6C6C481C9 ();
+extern "C" void UserInputRecorder_UpdateLog_m66F04FC624FDBA7062C1C2C4F46C445B31DEDBF3 ();
+extern "C" void UserInputRecorderFeedback__ctor_mA429AF32DAAC6ECD5BCC4E7F4765E7B70F140085 ();
+extern "C" void UserInputRecorderFeedback_LoadData_mE8D3B345FA0D0C30B04D965D96AC8338B9A7AA95 ();
+extern "C" void UserInputRecorderFeedback_PauseReplay_m9F1FC6EABE7CDE43D72D7E4D3DD7B83A34B23FCD ();
+extern "C" void UserInputRecorderFeedback_PlayAudio_m2E5AD3D8362387ABF4E6D280CDA94CFFB1BEDEA7 ();
+extern "C" void UserInputRecorderFeedback_ResetStatusText_m215498E7D70EFC37ADCF6BC915016EE00D3DCC5E ();
+extern "C" void UserInputRecorderFeedback_StartRecording_m9D0D289EA771C46B8F7A1005ABD4472B03382601 ();
+extern "C" void UserInputRecorderFeedback_StartReplay_mC3B310F0410ABFC4F609BF527A821B343045C9D3 ();
+extern "C" void UserInputRecorderFeedback_StopRecording_m64431CDDDC44A193D471C8872FDAC6D8575E0A74 ();
+extern "C" void UserInputRecorderFeedback_Update_m151D9F5C7B14165541F2BB381D847CE4E4ABA85A ();
+extern "C" void UserInputRecorderFeedback_UpdateStatusText_m916A0D28E4A5B7DBAE495293804CBBCEA694CA28 ();
+extern "C" void UserInputRecorderUIController__ctor_mAD7D44684F098392405C81D148E8BEF196EBCDBB ();
+extern "C" void UserInputRecorderUIController_LoadData_m0C6EC91736FC9409EAA4FB66CD291E92FC5FAF5F ();
+extern "C" void UserInputRecorderUIController_PauseReplay_m9DE49D3ECC3926998D189EAB3825938DA2363439 ();
+extern "C" void UserInputRecorderUIController_RecordingUI_Reset_m4F88BB3E04B2FDCE57454003435664681591D4B6 ();
+extern "C" void UserInputRecorderUIController_ReplayUI_SetActive_m1A752EE5FA6E6EB08BAB0FBC5D36350F230C5618 ();
+extern "C" void UserInputRecorderUIController_ResetPlayback_mE851FE5473D12183B3619FDAFF7B9BC1E4C05BA4 ();
+extern "C" void UserInputRecorderUIController_Start_m13986F7F342561F0ACDBA51D328049B3D0E6AADE ();
+extern "C" void UserInputRecorderUIController_StartRecording_m64DBDD7C9AA1DCF6CFCBAE53D7F5797276EAE441 ();
+extern "C" void UserInputRecorderUIController_StartReplay_m458F175F7BDCCDF9C52FB1A18D4404ECDECB1D44 ();
+extern "C" void UserInputRecorderUIController_StopRecording_m4BDCB4E852A0BE89861BB9F90FA8D7E00F0256BB ();
+extern "C" void MoveObjByEyeGaze__cctor_m50B9FBB26366B7B328A5409E6A0151DC54153F3B ();
+extern "C" void MoveObjByEyeGaze__ctor_mAE2AB58A689E21312FC47C6CE796D517A7C3F74F ();
+extern "C" void MoveObjByEyeGaze_ActivatePreview_m32025255B5C018ECB5D73B8E11CE2ED41C37AD01 ();
+extern "C" void MoveObjByEyeGaze_ConstrainMovement_mA1F8CBCE99D70D2FAF718BE4AF95838193D343FB ();
+extern "C" void MoveObjByEyeGaze_DeactivatePreview_m3C424B141E916C8E721D16124C2500AAFE171A19 ();
+extern "C" void MoveObjByEyeGaze_DragAndDrop_Finish_m0FD42DDF9966D4E2EBD65222204E4EA196C855DD ();
+extern "C" void MoveObjByEyeGaze_DragAndDrop_Start_mCDC7AB238D4A4211F4A2D21CFD8E4D6AFA4BC380 ();
+extern "C" void MoveObjByEyeGaze_HandDrag_Start_m264CA714F269028288F314AFE589888EC6B1C5C1 ();
+extern "C" void MoveObjByEyeGaze_HandDrag_Stop_m3609085B1BEB6C63185B510DDCEBC1C247DD0D65 ();
+extern "C" void MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityHandJointHandler_OnHandJointsUpdated_m57C15B11ADBB2244628F530D564C40E0693C8811 ();
+extern "C" void MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m771F66C581858199AC12053C90E2223FF1139583 ();
+extern "C" void MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m51292C38190C7808D21CB7BCB81B53DBFBDA931F ();
+extern "C" void MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m7C9BCFDA67C9DDAC4368F9211B03087D38540C22 ();
+extern "C" void MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_mF081561D788FDD14DBD1AEF7F53B55398C6DF565 ();
+extern "C" void MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySourceStateHandler_OnSourceDetected_mED8BD860AA0D056A183E809B20533A419626E1B5 ();
+extern "C" void MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySourceStateHandler_OnSourceLost_m4A3F4DEEF214F29B84AA5351131AAE43925CA9EB ();
+extern "C" void MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySpeechHandler_OnSpeechKeywordRecognized_mA5D96319DEC6CEEA9EF3360593EE3AB49C9C086D ();
+extern "C" void MoveObjByEyeGaze_MoveTargetBy_m9675CDB937802D8A9B454F23FCF555DC541B21B4 ();
+extern "C" void MoveObjByEyeGaze_MoveTargetTo_m323E6CA1E0FD18108DC2835648421BDD04E44CC3 ();
+extern "C" void MoveObjByEyeGaze_OnDrop_SnapToClosestDecimal_m1D65560367FABA048E75BB0B5492C5C3EDD795B0 ();
+extern "C" void MoveObjByEyeGaze_RelativeMoveUpdate_mE3DB6D334AB06E78E59FF6C7DE078EB47C835C3F ();
+extern "C" void MoveObjByEyeGaze_Start_mED7B15C1C88FA34CD44B32C7E6AA1EC09D8A8037 ();
+extern "C" void MoveObjByEyeGaze_Update_m1ABDA77EDDCF4ED2295C32EAE803A9659D59B6C9 ();
+extern "C" void MoveObjByEyeGaze_UpdateSliderTextOutput_m81BF243ED8B0E5D67507EF5E6713826025129173 ();
+extern "C" void MoveWithCamera__ctor_mCB935D4A4CE2F487EE23F369008629B67C715008 ();
+extern "C" void MoveWithCamera_Update_m84453B97F8DCA494F4F8768B5FBB6C91F80DACCD ();
+extern "C" void OnLoadStartScene__ctor_mC10A9B104F20EA281B4DEC6B5060C3E5BD8FD9B1 ();
+extern "C" void OnLoadStartScene_LoadNewScene_m596FDDBD51FF4924FE173CF23A3F88A8FA1E91F5 ();
+extern "C" void OnLoadStartScene_Start_mA7DDB3EB1FCFCF2B8146E5F1604A941CDAD5B9EE ();
+extern "C" void OnLookAtRotateByEyeGaze__ctor_m514112D022BF34DBC48EADE08F36ED469981C8DA ();
+extern "C" void OnLookAtRotateByEyeGaze_OnEyeFocusStay_mDD4E5E47CAA30CF116EF57B8D1D70EF1DC067A8C ();
+extern "C" void OnLookAtRotateByEyeGaze_RotateHitTarget_mE0E03031C429983DC7E170790412D9A831FA6258 ();
+extern "C" void OnSelectVisualizerInputController__ctor_m05A49D7083F5D19F8D091438F5240870DA34795F ();
+extern "C" void OnSelectVisualizerInputController_Awake_m7EFBA9C22E6CF24833638E5F2B8697973243A65E ();
+extern "C" void OnSelectVisualizerInputController_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m2A80E3637806B75EC4AF32BAF49B5F6C99D7C831 ();
+extern "C" void OnSelectVisualizerInputController_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_mD2271168A5EB6BB881F34599B6238BE9B5F03F2F ();
+extern "C" void OnSelectVisualizerInputController_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_mCFFC85EC5CC9C2564E0C2C67A074EAAEF87D3055 ();
+extern "C" void OnSelectVisualizerInputController_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m7F2C9E92174CFE8D0091FAD8D1FA3CC92CFACFAC ();
+extern "C" void OnSelectVisualizerInputController_OnTargetSelected_m2257CDFE8C2F768C0754689729943F650956F100 ();
+extern "C" void U3CZoomAndStopU3Ed__81__ctor_m688D0532A3F02C762C04FE1B6F26872B65BA64D2 ();
+extern "C" void U3CZoomAndStopU3Ed__81_System_Collections_IEnumerator_Reset_m7C356EC996F1F1C385A14E873CE298A1E2334696 ();
+extern "C" void U3CZoomAndStopU3Ed__81_System_IDisposable_Dispose_m34D96346932909653958A7858487C73254705AC2 ();
+extern "C" void PanZoomBase__ctor_m65A0F7BABDBB12AD982FFD6C7C51BE053C7F9530 ();
+extern "C" void PanZoomBase_AutoPan_m9DAE468604A7BE2BBBE8A2BBDC0C137AD6E6622F ();
+extern "C" void PanZoomBase_AutomaticGazePanning_mD250E9244D8668F94FBBAB2B4B1BAB3C0F293C04 ();
+extern "C" void PanZoomBase_DisableHandZoom_m40D967C6CBE9A22698829B77F126321BB2023A1E ();
+extern "C" void PanZoomBase_EnableHandZoom_m4E462584A04ADFAE571930D0B89219C446E24A92 ();
+extern "C" void PanZoomBase_IncrementNormFixator_m26CC480D1ABC5DEF86CAB5EBAEA2E364875BEEC8 ();
+extern "C" void PanZoomBase_LateUpdate_mDFBD76B5480F81B1A2200607361D209002309C4D ();
+extern "C" void PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityFocusHandler_OnFocusEnter_m43BB24C696924FDAF214ADA82ED2747D50297F1A ();
+extern "C" void PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityFocusHandler_OnFocusExit_mF631029DD0FD040BCAC8B3AAF27A819C9B36CD17 ();
+extern "C" void PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityHandJointHandler_OnHandJointsUpdated_m57A2E1C96A5C0DC86F9601DFAD094F7E8943487F ();
+extern "C" void PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_mAD01885E7B419604F0DD9110C0F9E37B95B45064 ();
+extern "C" void PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_mCFE03DDA43A7EC34B28270BD5F799DAA5A24CBAA ();
+extern "C" void PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_mAB369C57C4251DF1D897BDD7A9E579A27EA51AE5 ();
+extern "C" void PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m6B3E9CC012AC8865169962EA2AA05285EE536839 ();
+extern "C" void PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySourceStateHandler_OnSourceDetected_m07B9309FA58BC37E4AEFB7BCB8F299FE6FFABFAD ();
+extern "C" void PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySourceStateHandler_OnSourceLost_mD8B2142CEE210806FFA3954870C4873DF4D2088B ();
+extern "C" void PanZoomBase_NavigationStart_m7341E69A18E0E272086B3167F67D7D43C64E369A ();
+extern "C" void PanZoomBase_NavigationStop_m41CE208878FE56567AB782B772773DA4D8EE7A04 ();
+extern "C" void PanZoomBase_NavigationUpdate_m7D2941D784808F4C4F8ABE4BC21BDB2950045B79 ();
+extern "C" void PanZoomBase_PanHorizontally_mC434C0EA17B472DF3B0713FAC5196A3CF1E1C91D ();
+extern "C" void PanZoomBase_PanLeftRight_mB40616E7456A17FA2C95E221BF8F3C4FF5B739E9 ();
+extern "C" void PanZoomBase_PanUpDown_m48637C91D434DA0D2C522A308CA229D2C1FE58DF ();
+extern "C" void PanZoomBase_PanVertically_m22726BEA5D1B653D1D8203892F035DB7CD132C7D ();
+extern "C" void PanZoomBase_ResetNormFixator_m2F9A885BAA028F5C85042772CCC2DAF84A239579 ();
+extern "C" void PanZoomBase_ResetScroll_OnSaccade_m52F6654EDA406B8DCE96AC130BBAEAA5BC58B034 ();
+extern "C" void PanZoomBase_SetSkimProofUpdateSpeed_mCC79364A867D6BF1013FAE4670340EE143D654EE ();
+extern "C" void PanZoomBase_Start_m696B13CC54429E0DDB5B5BD4FF04C9DA64C84396 ();
+extern "C" void PanZoomBase_StartFocusing_m959C7C6596810E852E6FB23AEDA87F628F856338 ();
+extern "C" void PanZoomBase_StopFocusing_mCC73CC2C277AB421BC898AB6F47260D288460C10 ();
+extern "C" void PanZoomBase_Update_mE68B47BCF67D99249E8A25DF784282C2E6C09F4A ();
+extern "C" void PanZoomBase_UpdateZoom_m00DF37D6847F7B544DDAE496B6325222034AE0EC ();
+extern "C" void PanZoomBase_ZoomInStart_m0B051B529514AEDEF6A441D8D7BC0800FC3F91C9 ();
+extern "C" void PanZoomBase_ZoomIn_Timed_m4598F3D42F293BBE29BB037DF8F541A83F8CC6BA ();
+extern "C" void PanZoomBase_ZoomOutStart_m2E3BC1FCD41858E3CF386257654962DFA2C22C08 ();
+extern "C" void PanZoomBase_ZoomOut_Timed_m1065A23AD665D67C98EF22C1D68E2E5A348D0ABE ();
+extern "C" void PanZoomBase_ZoomStart_m86FC2DC49564EF1685082C8579BE6EC84AF7E8AE ();
+extern "C" void PanZoomBase_ZoomStop_mBA87D459E43B8389D8B02DE80DDA559A268A0DF7 ();
+extern "C" void PanZoomBase_set_MyCollider_mDB233F207C1994059DB477B8F0D8BF2E8AE1F2AD ();
+extern "C" void PanZoomBaseRectTransf__ctor_mBDD6EE0CACBA544DAA6698C4DEEEE9BF8F09014F ();
+extern "C" void PanZoomBaseRectTransf_Initialize_mDCD64BFF82A96B562EAA64CCBB124BA23110C519 ();
+extern "C" void PanZoomBaseRectTransf_UpdatePanZoom_m83353C01FD2D09C003A1DB2D724BE0E61F1A011D ();
+extern "C" void PanZoomBaseRectTransf_ZoomIn_m5B27704D6AB71949EAA30D3A589D38C7660999FF ();
+extern "C" void PanZoomBaseRectTransf_ZoomInOut_RectTransform_m1F0AA2C06770BD7B9457F9DF4ACD6F73F1008653 ();
+extern "C" void PanZoomBaseRectTransf_ZoomOut_mE8334F1F113D5EF442AE7BE29B9A69DE46EA83EA ();
+extern "C" void PanZoomBaseTexture__ctor_mBA4027DF602B326953AB5AEF6FEE1D7FAD96077C ();
+extern "C" void PanZoomBaseTexture_Initialize_mCFE17F1C05062592F2707BE630F513E88549FAB5 ();
+extern "C" void PanZoomBaseTexture_Initialize_m0DD3A2AFF0CEBF8CB30E4D91BBABFE32F05EAB86 ();
+extern "C" void PanZoomBaseTexture_UpdatePanZoom_mBD748BDEA92BD2B564BE6014F8DD693B725F99C0 ();
+extern "C" void PanZoomBaseTexture_ZoomIn_m6E7E401773DB9EAA655FDD764EF512352E1C3F0E ();
+extern "C" void PanZoomBaseTexture_ZoomInOut_m3B817C6D1F5C04F82B803DC418BDD4891F41EA36 ();
+extern "C" void PanZoomBaseTexture_ZoomOut_mEFEAABDE72ACA5C1F7DD588214EF68A2BA96FC9B ();
+extern "C" void PanZoomBaseTexture_set_TextureShaderProperty_m9020EF5F2CEDA280BF6810BD03C84F0FADD0078E ();
+extern "C" void PanZoomRectTransf__ctor_mC2432E8E567FCAD869C544E41DBBB3229537EB3A ();
+extern "C" void PanZoomRectTransf_Start_m15F3F920924C918A6C742C4A0BEBBFA2D7EC2523 ();
+extern "C" void PanZoomRectTransf_Update_mEAA684DD81C5C01D14F9F27651C4462AF3C3D16C ();
+extern "C" void PanZoomTexture__ctor_m99882119C0740D5FF4FB6733B5E88C90278E7E75 ();
+extern "C" void PanZoomTexture_Start_mAC392E1F8A26EC23DB72E84B8BDD7B2930368399 ();
+extern "C" void PanZoomTexture_Update_mE5F2C025855941D14B6D2C0F37E8A8D886C5D64B ();
+extern "C" void ParticleHeatmap__ctor_m61E1CBB11275858837F16E4DDED7D245EEDADDDF ();
+extern "C" void ParticleHeatmap_DisplayParticles_m0B30A71A54AB6445324B0976DA11C777142CFA4D ();
+extern "C" void ParticleHeatmap_HideHeatmap_m4B26EED245CF467A1E876C05F5A0BF022BFE672C ();
+extern "C" void ParticleHeatmap_SetParticle_mB7F67715D72B681732DECD63731E9E86E2E5B065 ();
+extern "C" void ParticleHeatmap_ShowHeatmap_m86344918A9A496239AA6E8DB4D537F4986266ABF ();
+extern "C" void ParticleHeatmap_Start_m539BA4F1AFB4C3A7C83E0F90EF58590071299ED2 ();
+extern "C" void ParticleHeatmap_UpdateColorForAllParticles_mA0D223548D977852786EB677BDD57571420702DE ();
+extern "C" void ParticleHeatmapParticleData__ctor_m6B562557E8CF79CE877D921BFA778E34D2F58036 ();
+extern "C" void RotateWithConstSpeedDir__ctor_mB262D658E29D3A1449331F2A4EA668333B4469CA ();
+extern "C" void RotateWithConstSpeedDir_RotateTarget_m0CB85267A40556C1A41556AB999291B98A2AF291 ();
+extern "C" void ScrollRectTransf__ctor_m215A75AEF079F45AE3A7F8795BF424950E8ABCB7 ();
+extern "C" void ScrollRectTransf_Start_m76C2D3084EA1371CEFF0AFC59A79200D283590B6 ();
+extern "C" void ScrollRectTransf_Update_mEC76D0B4B1C573C3447EC06B1776B402B2DBAD47 ();
+extern "C" void ScrollRectTransf_UpdatePivot_m511AC0F4E98B8E537A3277EE52614F79D6CDC9CC ();
+extern "C" void ScrollTexture__ctor_m8E4E756225AA681194B856B6E35E668F20C044EB ();
+extern "C" void ScrollTexture_Start_m477A67C6C3433037C471989D20E854BB9147E532 ();
+extern "C" void ScrollTexture_Update_m93C04352DE3F66BA923BFE8C082AA5E6133F5B95 ();
+extern "C" void SnapTo__ctor_m9AA9BAD3AE9F57031C53529B50B7A71C2F464096 ();
+extern "C" void SpeechVisualFeedback__ctor_m127485527CC1AA14105B102E65CC930047155739 ();
+extern "C" void SpeechVisualFeedback_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySpeechHandler_OnSpeechKeywordRecognized_mB3E99F59F71C773FE3BCE50DA4B34B9EA1DCB55A ();
+extern "C" void SpeechVisualFeedback_ShowVisualFeedback_mD6A8B64E388CB4CEB5B1EAC40E38D1A21AB568FB ();
+extern "C" void SpeechVisualFeedback_Update_mDE6E5EDFB424742042C6531596FAD83FA5C822EF ();
+extern "C" void SpeechVisualFeedback_UpdateTextMesh_m40CF434263364D64887FD1426848741B172DC834 ();
+extern "C" void StatusText__ctor_mA977F88533AA268E8803DD0EC4A8ED6C83C16197 ();
+extern "C" void StatusText_Awake_m600ADED9FC8497B9D4B8029856D783385918537B ();
+extern "C" void StatusText_Log_mE20428AAF8E0838C9CB3D5DD554C89A4403DF618 ();
+extern "C" void StatusText_Start_mF0E5DC9CB3279E63A8C71DD576ABA478945BDCB6 ();
+extern "C" void TargetEventArgs__ctor_m3C40A03810DB73994D7CD2F5206A9A98CABA38BB ();
+extern "C" void TargetEventArgs_set_HitTarget_m0D0B98A3696455CCFA3AE8DA5D7AF05A81D71B1B ();
+extern "C" void TargetGroupCreatorRadial__ctor_m3C296D4D4F34D7EB8DF14D55D4B8315C972B5889 ();
+extern "C" void TargetGroupCreatorRadial_CreateNewTargets_RadialLayout_mD1312305731A7E61421D85ED5C49D5E6BED94636 ();
+extern "C" void TargetGroupCreatorRadial_HideTemplates_mF21A7D23CE1AF9F59F03B85BC98D51B7E6884277 ();
+extern "C" void TargetGroupCreatorRadial_InstantiateRadialLayoutedTarget_m5E135C46F2B276476C46BEA71E384E037E62E8C7 ();
+extern "C" void TargetGroupCreatorRadial_KeepConstantVisAngleTargetSize_m239BEAC481CA340B90291EFA243C7F7032A1A71C ();
+extern "C" void TargetGroupCreatorRadial_KeepFacingTheCamera_m9306265A4D5830F1F2EE9A92FA0600A4E9E29A3C ();
+extern "C" void TargetGroupCreatorRadial_Start_mB4C412B31F2DD78F02C937BA5EE3F8858192A8D4 ();
+extern "C" void TargetGroupCreatorRadial_Update_m0E9EE1194B14EE7B00AB588542A7516392494208 ();
+extern "C" void TargetGroupEventHandler__ctor_m1E5B975929E376BCABC60EF7F5BA02B8511AD439 ();
+extern "C" void TargetGroupEventHandler_EndInvoke_m585BD5E07136F70AAAD41B18BDC32DFAA00887B0 ();
+extern "C" void TargetGroupEventHandler_Invoke_m1A864CFD1FFBDA5199A06C51AA804B6DFF5B2640 ();
+extern "C" void TargetGroupIterator__ctor_m04F187F7618451AE5966996263912509BF28CA3C ();
+extern "C" void TargetGroupIterator_Fire_OnAllTargetsSelected_m6C8FE70FCDADFCDD9218A2663CF1133CFFF2E15B ();
+extern "C" void TargetGroupIterator_Fire_OnTargetSelected_m826455F7DE5FA46EA4196F406F6FE50D0FF7A8A1 ();
+extern "C" void TargetGroupIterator_HideHighlights_mD324DCEB73184D89CF2E41206D5F4D552E7EF9BA ();
+extern "C" void TargetGroupIterator_HideVisualMarkerForCurrTarget_m1A30E8A106262198D85228010A4B8DB118BF7907 ();
+extern "C" void TargetGroupIterator_HighlightTarget_mFC6B884384F10EC6AA0505C8D7B6389A1F88ED57 ();
+extern "C" void TargetGroupIterator_HighlightTarget_m9FBEDC00E8FA36079B1E316302804099A824FA2D ();
+extern "C" void TargetGroupIterator_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m275CBF881A0DC620D4A40CAE35C5DFDD205D535D ();
+extern "C" void TargetGroupIterator_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m0C772D31A65215330E7C5BF7D63FDD7F6D5EA921 ();
+extern "C" void TargetGroupIterator_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m526506B1526ED2ACFFB1B4CDC75A539FEBE8668F ();
+extern "C" void TargetGroupIterator_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m90645AC83FE457C440EC85E0F453CD8321C039B4 ();
+extern "C" void TargetGroupIterator_ProceedToNextTarget_m200AD71C74DBBC1440CA01FBC523BCA15EEE3FF1 ();
+extern "C" void TargetGroupIterator_ResetAmountOfTries_m1BBF551A85AD877AAF940D1AF1FADC08D207A56A ();
+extern "C" void TargetGroupIterator_ResetIterator_mC95459306EEFD4FED76F069C48EFE9CFE55312D7 ();
+extern "C" void TargetGroupIterator_SaveOriginalColors_mD3116A7E71549BBB734818F9F20F7DC66EA8950C ();
+extern "C" void TargetGroupIterator_ShowHighlights_m14E1D3C213C56763C312610817130BC4B7F8849A ();
+extern "C" void TargetGroupIterator_ShowVisualMarkerForCurrTarget_m684C3126EBBCA5E7E44735A1196E8BE13697748E ();
+extern "C" void TargetGroupIterator_Start_mAB7EC751D35D8E52F1980EFAA1EC4B42C4C62855 ();
+extern "C" void TargetGroupIterator_UnhighlightTarget_m4E0866460CCF3C8AED0CB0DABBFD3C2503AD743D ();
+extern "C" void TargetGroupIterator_Update_m81095DAE214FD126F511F3BC353FA0E74072E55A ();
+extern "C" void TargetGroupIterator_add_OnAllTargetsSelected_mC719D912FAE5BFE10BB0E63F0CB5BB1525561FDD ();
+extern "C" void TargetGroupIterator_add_OnTargetSelected_m848ADE510D7AA7951043D733E562B3B6151563BD ();
+extern "C" void TargetGroupIterator_remove_OnAllTargetsSelected_m28359E7E687FF0B97DEF988C99930F8120B7C99E ();
+extern "C" void TargetGroupIterator_remove_OnTargetSelected_m34A307724BEDDAD0282EBBB9DD19775DEF4970A9 ();
+extern "C" void TargetMoveToCamera__ctor_m27A0825727F0DF041589152FD4E83807F5B533F3 ();
+extern "C" void TargetMoveToCamera_OnEyeFocusStop_mBA7C7893867FEA8BDCA5946B8E53BA03DE728E29 ();
+extern "C" void TargetMoveToCamera_OnSelect_m4522A19F424DF78632F20E14779291CBA049983F ();
+extern "C" void TargetMoveToCamera_ReturnHome_m8CC53B1CCF6479E40DF8920E8B650F88A2879B49 ();
+extern "C" void TargetMoveToCamera_Start_mED098BDAF8F24CFCD244CA8E705329A0AB6C49D3 ();
+extern "C" void TargetMoveToCamera_TransitionToCamera_m288DB85D98C6A60C63904AC8754434910FC6867E ();
+extern "C" void TargetMoveToCamera_TransitionToUser_m1EEA29C2ACBF256B3F0A78DCEBEC81BE31836D0B ();
+extern "C" void TargetMoveToCamera_Update_m0C83BE6312A06B3ABC6ED885CC0FBA888C2B33F1 ();
+extern "C" void OnLookAtShowHoverFeedback__ctor_m1D38FF01BC7E725C203FB26A21FBE0888D27D868 ();
+extern "C" void OnLookAtShowHoverFeedback_DestroyLocalFeedback_m1A610DF709E4077D99CFCFD3F71D3243A3D6F041 ();
+extern "C" void OnLookAtShowHoverFeedback_OnDestroy_m33CD141545A3A2DF0A246DDBB07E1B328D0F8F3D ();
+extern "C" void OnLookAtShowHoverFeedback_OnLookAtStart_m22E063BA0A76345CBA7749055B5258EF569A38B9 ();
+extern "C" void OnLookAtShowHoverFeedback_OnLookAtStop_m0ADEFE866EE7DB0C251FA708E3B21B5AD617C5F6 ();
+extern "C" void OnLookAtShowHoverFeedback_SaveOriginalColor_m42414AA306116E7DC93E3EB713A3C5EAECB7662E ();
+extern "C" void OnLookAtShowHoverFeedback_ShowFeedback_m82D5F5C7E9CD4B1540D49277377E3EBC1324A6ED ();
+extern "C" void OnLookAtShowHoverFeedback_ShowFeedback_Highlight_mFD617359C9796B31D067EBF978088616A7BD51FD ();
+extern "C" void OnLookAtShowHoverFeedback_ShowFeedback_Overlay_mE195ABE35FB34DDEEC50C242A0387E75C07B5FA7 ();
+extern "C" void OnLookAtShowHoverFeedback_Start_m0B4B4436E1071198EDF26E9CB579B6ECD7DB52B9 ();
+extern "C" void OnLookAtShowHoverFeedback_Update_mEDC43397300B58EB30C117651311C3D7CBD9ADDE ();
+extern "C" void ToggleGameObject__ctor_m837C8FB48707A732086B356379D60D218076E11B ();
+extern "C" void ToggleGameObject_HideIt_m3364769FECB6161493E4B2692CE7FF9D450607CF ();
+extern "C" void ToggleGameObject_ShowIt_mC9C8BB52CED663D0FB0EE782065F6D5B4C51B20E ();
+extern "C" void ToggleGameObject_ShowIt_m692A42298FD4A4D52673F52EBFAAF7A6E1866457 ();
+extern "C" void TransportToRespawnLocation__ctor_mEB05635341D193E60EB764D67D0C455E5243D286 ();
+extern "C" void TransportToRespawnLocation_OnTriggerEnter_m7DB4AF03DE75F52D7456A69C7AAD42D09565E529 ();
+extern "C" void TriggerOnStartup__ctor_m89B76221DB68F3F4A824677B1C22AB9D5439BEFA ();
+extern "C" void TriggerOnStartup_Start_mE804888A0F2154C3D4A8FDC4EE35177F7B05B8AA ();
+extern "C" void TriggerZonePlaceObjsWithin__ctor_mC4464E8F6C8257F8C31B5AEFAD03B5F7B553849F ();
+extern "C" void TriggerZonePlaceObjsWithin_AreWeThereYet_m66D601E9F7CE8686341DE818A828205F4AACF927 ();
+extern "C" void TriggerZonePlaceObjsWithin_CheckForCompletion_m3A1D9518E16070C60D09F89E6521D70BE98CBA56 ();
+extern "C" void TriggerZonePlaceObjsWithin_OnTriggerEnter_m461A8B0A37A6523A1D5FFB417605420880741A9C ();
+extern "C" void TriggerZonePlaceObjsWithin_OnTriggerExit_mC9BA7A26563C4FB7B2206025BFF2E98DAEEC938F ();
+extern "C" void TriggerZonePlaceObjsWithin_Start_mB5044A140A40A05B296E07C49D6BA38A2E327E8D ();
+extern "C" void TriggerZonePlaceObjsWithin_TargetDropped_m06C79BDA7934973D9A9C73189DA2199A736E494A ();
+extern "C" void U3CStartU3Ed__1_MoveNext_m05A51031AB5970938EB6262FE8513C27BEF936B4_AdjustorThunk ();
+extern "C" void U3CStartU3Ed__1_SetStateMachine_m73FB3EEDFBB02588D34F2CA288F4ABA677FAE350_AdjustorThunk ();
+extern "C" void TestGlbLoading__ctor_mC09DE3E34BEE449FC1CF72235E01E5EB752F8629 ();
+extern "C" void TestGlbLoading_Start_m229C4FD2E620BD7D623DD5712BF23C1874F64D8C ();
+extern "C" void U3CStartU3Ed__5_MoveNext_m5775D6B5D586A088A9F52571A42A8D95C9207235_AdjustorThunk ();
+extern "C" void U3CStartU3Ed__5_SetStateMachine_mAEA4ABE9B07ED81DB6CF3A8B832177D235976A95_AdjustorThunk ();
+extern "C" void TestGltfLoading__ctor_m7EDB7901CF07031A332CEDFEF0DC795C6FD72D77 ();
+extern "C" void TestGltfLoading_Start_m4177BB83451DCE6BA6DD88E96C937AF131E3A074 ();
+extern "C" void HandInteractionTouch__ctor_m3A791AD054F84871947E41D125FADEE4E3C99416 ();
+extern "C" void HandInteractionTouch_Microsoft_MixedReality_Toolkit_Input_IMixedRealityTouchHandler_OnTouchCompleted_mB8A00875B07727C7B585B326CB24E66AA1AAF6F6 ();
+extern "C" void HandInteractionTouch_Microsoft_MixedReality_Toolkit_Input_IMixedRealityTouchHandler_OnTouchStarted_m568844E6490D624B2156DFE653DCEA96A7C370A7 ();
+extern "C" void HandInteractionTouch_Microsoft_MixedReality_Toolkit_Input_IMixedRealityTouchHandler_OnTouchUpdated_mC824C7F47DCFEE96AB0D3AE273B5D4EFFE1FA2F7 ();
+extern "C" void HandInteractionTouch_Start_m7B0D1EE0873AA0970C8535374A7A79869FE69B12 ();
+extern "C" void HandInteractionTouchRotate__ctor_mD1783FE64DD2D45A80860EC36013CD0A67F4B494 ();
+extern "C" void HandInteractionTouchRotate_Microsoft_MixedReality_Toolkit_Input_IMixedRealityTouchHandler_OnTouchUpdated_m065A1A718597E6E3AC557E1A38E7571D2B41CFE6 ();
+extern "C" void InputDataExample__ctor_mD88AA15D6AC03CAB6E8EFB2AE64A28FE1B556602 ();
+extern "C" void InputDataExample_Start_m072A75C9D01A5AABCE2B92B5206509F37DFA556D ();
+extern "C" void InputDataExample_Update_m63764AF34844DBB504FE3BE411322B74654ADA44 ();
+extern "C" void InputDataExampleGizmo__ctor_mFE0F7BADB0924EEF54A0C4629AC09908A07F4502 ();
+extern "C" void InputDataExampleGizmo_SetIsDataAvailable_m6076B779648D4D6AF5792FC19263302052EC18F0 ();
+extern "C" void InputDataExampleGizmo_Update_m29EBB2368808CC20BC5DB5D832C9A4D9BC92AF14 ();
+extern "C" void U3CU3CLaunchU3Eb__0U3Ed_MoveNext_mA43D2847D879D3271FFEF2A19F5B39C3C2EFA113_AdjustorThunk ();
+extern "C" void U3CU3CLaunchU3Eb__0U3Ed_SetStateMachine_mFE3A667D1025053FC35D3645F42965B9C95EB0B4_AdjustorThunk ();
+extern "C" void U3CU3Ec__DisplayClass0_0__ctor_m0781035DEEC54CF7CCC3334EDE83F50E0852F56D ();
+extern "C" void U3CU3Ec__DisplayClass0_0_U3CLaunchU3Eb__0_mB80D37CAC32FDB233E7B5BB7159454C22F493AAD ();
+extern "C" void LaunchUri__ctor_m3887936F46F690BDF5598EE28E98F81CCFC54394 ();
+extern "C" void LaunchUri_Launch_m036690E6E4EFE31E1F15B16BDF8CF66FFBFC214E ();
+extern "C" void LoFiFilterSelection__ctor_m7BED1751FD7E941B1BA04287B12B62F485DB75DB ();
+extern "C" void LoFiFilterSelection_OnPointerClicked_m671C2ECDC420344DD1AE2C6B6515ABC33D66C52A ();
+extern "C" void LoFiFilterSelection_OnPointerDown_m2E706794E80D9C29A012DA293313C54F014B362D ();
+extern "C" void LoFiFilterSelection_OnPointerDragged_mD8E7D8DA6C91CA2C57D41B7AEB2147CD57705596 ();
+extern "C" void LoFiFilterSelection_OnPointerUp_mD339F2F6C1ACEB2900E5DF3DEC7D89254EA8B6AA ();
+extern "C" void LoFiFilterSelection_SetEmitterMaterial_mF4FD1686EE75EAB23BEE59D81E748580C033DA68 ();
+extern "C" void LoFiFilterSelection_Start_m9FC6CAA21C5BF0CE6A109DCADEBAA36ED38E87F9 ();
+extern "C" void MixedRealityCapabilityDemo__ctor_mED3CD0CB5A2810B02B03D241BA4243A23FA1A59C ();
+extern "C" void MixedRealityCapabilityDemo_Start_mA0DAB1A91503A76EAF5B1A6353174F45092245D0 ();
+extern "C" void PrimaryPointerHandlerExample__ctor_mCE00FF5A7F3D94460FB6D79461F6A5D19BC307AA ();
+extern "C" void PrimaryPointerHandlerExample_OnDisable_m7AFB9493707658B27A8E1D8624BB86B33A785BC8 ();
+extern "C" void PrimaryPointerHandlerExample_OnEnable_m7178487AFCC82CC433F938E556C77C85C7E1E120 ();
+extern "C" void PrimaryPointerHandlerExample_OnPrimaryPointerChanged_m4CB4FB898B3C04569F5B85FE80E4CB6D43D505E1 ();
+extern "C" void Rotator__ctor_m69B6AE0D054F87B8F8802A83887DB9DCB5B6F548 ();
+extern "C" void Rotator_Rotate_mE0EC038FCD20C8E4B77EFD655E27EC05B5A7D94C ();
+extern "C" void ShowSliderValue__ctor_m858415530C1946100232C0AF54A24944E654A64D ();
+extern "C" void ShowSliderValue_OnSliderUpdated_m52D8FCDFE6CCCAE44217B67CD0D9844DB3860BDD ();
+extern "C" void SliderChangeColor__ctor_m2E8628C8A17A3F682D297A9B432E96405F9EEF2A ();
+extern "C" void SliderChangeColor_OnSliderUpdateBlue_m5E16DAD469064548E2BC4199BEF212F3B2F5210E ();
+extern "C" void SliderChangeColor_OnSliderUpdatedGreen_m61BA23C495309ED30FA374134558AEEF75962045 ();
+extern "C" void SliderChangeColor_OnSliderUpdatedRed_m51ADB7B04C953DD23B34C6D86B6021A9C06FB47C ();
+extern "C" void SliderLunarLander__ctor_m54BB01B23348DFF7BB98F24E6BD00CA8E68C6682 ();
+extern "C" void SliderLunarLander_OnSliderUpdated_m4822CCC7E9494565A3968274A8A3B3E3AD1D3540 ();
+extern "C" void SolverExampleManager__ctor_mF18039D81824B1B3C079CB86EC74CE44AE098742 ();
+extern "C" void SolverExampleManager_Awake_mB5739D8908E3BB3B68D2ACCC173C3CB5CACA6B76 ();
+extern "C" void SolverExampleManager_DestroySolver_m48D6F18B051B7180B3FDE200B7081FB000C37C60 ();
+extern "C" void SolverExampleManager_RefreshSolverHandler_m01FD36508344A4C92F8988219E65209AF17FC5A3 ();
+extern "C" void SolverExampleManager_SetOrbital_m46E64797BC3F709FE6E9109E9306577BE498BA71 ();
+extern "C" void SolverExampleManager_SetRadialView_m36A9069BB4ACD6A2457B5809E7F371253F840BB0 ();
+extern "C" void SolverExampleManager_SetSurfaceMagnetism_mCF220D926F5BA9A4BA8C5F1556220B47189B7004 ();
+extern "C" void SolverExampleManager_SetTrackedCustom_mE5EE6E14E75F338B6E35A2C2E031501AA70C3C5E ();
+extern "C" void SolverExampleManager_SetTrackedHands_m54C8B033AAE7EFBD06CA1EC22B95432431783137 ();
+extern "C" void SolverExampleManager_SetTrackedHead_m0584C32278C9E6E63ECB2E4A883008D110AA0E61 ();
+extern "C" void SolverExampleManager_set_TrackedType_m53E74D856F20C3964FB7734C723D0E8AC4629863 ();
+extern "C" void SpawnOnPointerEvent__ctor_m51D7031BF5F8D2EC34D77089F32579AFBB87F950 ();
+extern "C" void SpawnOnPointerEvent_Spawn_m27DE653E86BB63CD45770AA6D9681F41BDBCC6E9 ();
+extern "C" void MaterialMatrix__ctor_mFCCC0A86E66D0E3B69B1C497B366F32E71F752E6 ();
+extern "C" void MaterialMatrix_Awake_m899DC97E01B170BEA171B3218C45B764B0D3F65B ();
+extern "C" void MaterialMatrix_BuildMatrix_m2E173BFBB7F2BD9F1B8A5922CED661C78E5E5294 ();
+extern "C" void SystemKeyboardExample__cctor_m85EDD8830D35FBEE8CB561AE18660DC4FD45C9BE ();
+extern "C" void SystemKeyboardExample__ctor_m54AEE21B06182A1F15666913E4D710A02EC30A1E ();
+extern "C" void SystemKeyboardExample_OpenSystemKeyboard_mA2D050F2431E7F8954CF2DA12DE78A93BB62535F ();
+extern "C" void SystemKeyboardExample_Start_m34F489F8290AA52FD9F1A851FFB85244C21D521F ();
+extern "C" void SystemKeyboardExample_Update_m56E94A55C73FA4F2751CF9CE0B9F558D50A60083 ();
+extern "C" void TetheredPlacement__ctor_m3B74E9A5A7218D59CA8CA9F0E730C1C5AA5B712E ();
+extern "C" void TetheredPlacement_LateUpdate_m1F9E01A1D8083F813CBADA24CED9490765D2BDDA ();
+extern "C" void TetheredPlacement_LockSpawnPoint_mDC2D8EB5423647FF4093F5CCF87F7C4701294613 ();
+extern "C" void TetheredPlacement_Start_m80FF5AD54BA244CB1A19134982C8C50B42E9D440 ();
+extern "C" void ToggleBoundingBox__ctor_mBA3F69F5F8EBFFE78751409FDB4C2F0CC7FB8645 ();
+extern "C" void ToggleBoundingBox_Awake_mF7A7F52312158EF33C759BDF07CEFE17864213E9 ();
+extern "C" void ToggleBoundingBox_ToggleBoundingBoxActiveState_mF7ED70D92F5CB023F1CA1A471CDBFF6A347E4677 ();
+extern "C" void GestureTester__ctor_m6D8A51E595D4BE89B5BC54ECEF1D28EE88189B9C ();
+extern "C" void GestureTester_HideRails_m0425C82F44ED310BDD93984FE069CB469EE5AEB1 ();
+extern "C" void GestureTester_OnEnable_m1AEBD9635BC4DD7C3639B31DADC2AF966559CD6B ();
+extern "C" void GestureTester_OnGestureCanceled_m1E7E1A4EBCAA4BADFBA37708148BE003160DBB3F ();
+extern "C" void GestureTester_OnGestureCompleted_m7BA55026D5A90ABBBFAF08665FC999B51FF2A53B ();
+extern "C" void GestureTester_OnGestureCompleted_m987FB4B29EDCF530E8D9090A5FA352CA3C16EDBA ();
+extern "C" void GestureTester_OnGestureStarted_m99AD1F7CB63014602A036864008566F5F6954F96 ();
+extern "C" void GestureTester_OnGestureUpdated_m2F801176F3D7FADD923B376B08B9B69A99DA7B51 ();
+extern "C" void GestureTester_OnGestureUpdated_mA4E0FEE3459A4CD54746B9F41CFD764B736B56F1 ();
+extern "C" void GestureTester_SetIndicator_mBBEF3B2778355EC5764666520AD37B0321D74BE6 ();
+extern "C" void GestureTester_SetIndicator_m34C502C4E3FCD85827A60EE04D70D93DB0282124 ();
+extern "C" void GestureTester_ShowRails_mCF129A8FF16AF64CDFA3DBCE67B2D46FE7128AE0 ();
+extern "C" void GrabTouchExample__ctor_m8209D04812F7824A8709E1D78D71231F82899F6F ();
+extern "C" void GrabTouchExample_Awake_m181AD67E46B89AEB21CAA9CCE52705B554366028 ();
+extern "C" void GrabTouchExample_OnInputDown_m7AF64D681FE305D3C12CFCAEFD1D8298817CE12C ();
+extern "C" void GrabTouchExample_OnInputPressed_m23290AF6CF8F930D99980B9F4A0A0A17264954CC ();
+extern "C" void GrabTouchExample_OnInputUp_mD9E706A1CD0DC0F89CB760C692CC25AC6AC6ADC6 ();
+extern "C" void GrabTouchExample_OnPositionInputChanged_m03BFE1E25BD2995F1DDE8C4FE4A13791C912594A ();
+extern "C" void GrabTouchExample_OnTouchCompleted_m2728E391184F32A9329811A4752AA8AFC6F914CE ();
+extern "C" void GrabTouchExample_OnTouchStarted_m2CC88085591C364F39D350C2C0DCFAC792EF1F39 ();
+extern "C" void GrabTouchExample_OnTouchUpdated_m1C4059682F21CBAAC31796CC41D131C6F21BEBEE ();
+extern "C" void RotateWithPan__ctor_m1757F776BD77919F47187B42DFA7BB985F3CB040 ();
+extern "C" void RotateWithPan_OnDisable_m66883518AABC5345E433D12E46FA8EB5190A447A ();
+extern "C" void RotateWithPan_OnEnable_mB6F7A43EBF9F34CD5F936594C90AB7EFE2CE739E ();
+extern "C" void RotateWithPan_OnPanEnded_mE8738486A008CB39A563107E0E3BBFC81D454DB8 ();
+extern "C" void RotateWithPan_OnPanStarted_m7C659AC7BCF0AC71CADFD03982FCC2EEC322D285 ();
+extern "C" void RotateWithPan_OnPanning_mAA811EB7489F6A99CA12238E54CB92116719B453 ();
 extern "C" void BaseServiceManager__ctor_mE5E74E2CD4E625948EC57E402EFD75E5D1E2931A ();
 extern "C" void BaseServiceManager_LateUpdate_mDC77A9F441E942D6C621B024C4C8AFFDF7A6B902 ();
 extern "C" void BaseServiceManager_OnDestroy_mEE33751713579DE6BC3366A7CA42FA7C32BD4482 ();
@@ -10730,6 +11673,15 @@ extern "C" void DiagnosticsSystemManager_Awake_mADEBE5105C05CABB30E6AC2F7FE19E03
 extern "C" void DiagnosticsSystemManager_InitializeManager_mA000AD4C60FE4ABD241B253659647E4A471C862B ();
 extern "C" void DiagnosticsSystemManager_OnDestroy_m471E2A606DAA2232C07BD9E55C8B6DA3FAB72233 ();
 extern "C" void DiagnosticsSystemManager_UninitializeManager_m4203A46FEEF9BFB0EE501D3F6A577771330A33C9 ();
+extern "C" void BaseDwellSample__ctor_m74F15E4F7E52987F2C6EA3FCEC6E0478DD4411AE ();
+extern "C" void BaseDwellSample_Awake_mDC808646183EED8547AAFA9A9679CED192783299 ();
+extern "C" void BaseDwellSample_ButtonExecute_m41FC1A7AE453EC9BA902087350847FC79C547324 ();
+extern "C" void BaseDwellSample_DwellCanceled_m28C0C59FA4E404A03FF15A05586F85FE261D4726 ();
+extern "C" void BaseDwellSample_DwellCompleted_m407B47B518A5D6DB76230131528E4BE7A0DF81AB ();
+extern "C" void BaseDwellSample_DwellIntended_mA749A291434652DE035FADAB5B7173F54C0E656D ();
+extern "C" void BaseDwellSample_DwellStarted_mB7EEBD2957817138671EBF96BBF735EBC7E59131 ();
+extern "C" void CustomDwellHandler__ctor_m14AB4329141C71001C7BB6FB505926874AC9C80B ();
+extern "C" void CustomDwellHandler_UpdateFillTimer_m550BB123CE2BEBEFCA126774C3F88C3B91F476EC ();
 extern "C" void DwellHandler__ctor_m714F1DB097FD8DA9D37E7DE511C603DA50991026 ();
 extern "C" void DwellHandler_Awake_m543098C28C365A698CDE2858EFB90B16A0B50C92 ();
 extern "C" void DwellHandler_CancelDwell_m24534D93DC8E97A17399C8CCA5420CA87FE35796 ();
@@ -10739,7 +11691,23 @@ extern "C" void DwellHandler_Update_m175F39D7232E07227563F33773C945C933D37F37 ()
 extern "C" void DwellHandler_UpdateFillTimer_mCEDE90EB4B498824EA7271A691EB837F52A1A789 ();
 extern "C" void DwellHandler_set_HasFocus_mA3401B3727C807FC99DBEDE5F7A401D004F9D4D0 ();
 extern "C" void DwellProfile__ctor_m1706126C6C3A1B3DE48C1068350A585B6D59226B ();
+extern "C" void DwellProfileWithDecay__ctor_m452B6249E0ACFF884E43D6D5C7801B8C7D7800B2 ();
 extern "C" void DwellUnityEvent__ctor_m26F29369B7A8BB0DA68895D3C3CAC3881439325A ();
+extern "C" void InstantDwellSample__ctor_m6642AFCD3448A8D25EE4B120548F23E365B84DA6 ();
+extern "C" void InstantDwellSample_ButtonExecute_mBCF80275C2AC76DF00971DB15DF9E41BD252BFB0 ();
+extern "C" void InstantDwellSample_DwellCompleted_m6305970FB3AD0FA4369FD7CAB2FC0C949A68495D ();
+extern "C" void InstantDwellSample_Update_mCA4E6319DC6852EFC948973661C9869DBC7A26A0 ();
+extern "C" void ListItemDwell__ctor_mBB15DABA044C331093CD399E9EBCF8D614949359 ();
+extern "C" void ListItemDwell_Awake_m563522EDEB0CF76D7EE4D14100CDE439644E56F1 ();
+extern "C" void ListItemDwell_ButtonExecute_mDC9AE263D54FD6302219860E9C57D504DC732879 ();
+extern "C" void ListItemDwell_DwellCompleted_m285E0FC74AEBA139B998B920340D178061FB1E82 ();
+extern "C" void ListItemDwell_Update_m90FB9D26D3E01487F524875A7EB75F915863A3B6 ();
+extern "C" void ToggleDwellSample__ctor_mAA7EFB84F879B898B37A538A84394580DE81A988 ();
+extern "C" void ToggleDwellSample_ButtonExecute_m3C030E9CFB90AD80AA38F6B7B11CDEE8F2A339E7 ();
+extern "C" void ToggleDwellSample_DwellCanceled_mE3AE1A4DE5DCC9D91337D5A9517AB8FA64B559D1 ();
+extern "C" void ToggleDwellSample_DwellCompleted_m66B03522C4B4C0EEC9CAC12C53B0C38587F7A24E ();
+extern "C" void ToggleDwellSample_DwellIntended_mB4FC662059B33F291464218F10F7CB4559933F07 ();
+extern "C" void ToggleDwellSample_Update_m9948712C8D73DFDF1E4DD9DC8134D082FFF7751C ();
 extern "C" void InputSystemManager__ctor_mB53A15669CC60A2E9D46D0A4A615EFA4A42C807A ();
 extern "C" void InputSystemManager_Awake_m9236050642064BCFD8C84E7C19395E0DB8829B0A ();
 extern "C" void InputSystemManager_InitializeManager_m6150CF46D8C16377A27101EDD6A8862460556252 ();
@@ -12388,6 +13356,17 @@ extern "C" void CursorContextManipulationHandler_ManipulationStarted_m53C78F8AAD
 extern "C" void CursorContextManipulationHandler_ManipulatorHoverEntered_m51DC593A2978479969578FD67F3B4268252AD2BA ();
 extern "C" void CursorContextManipulationHandler_ManipulatorHoverExited_m42CD28565175320B225A50A6B8303961CA9AE2C5 ();
 extern "C" void CursorContextManipulationHandler_Start_mB16C0EF1564287766C2F77AC0D87C65F877EF55C ();
+extern "C" void U3CClickTimerU3Ed__14__ctor_mBF46CB3C481C8C0B18D78F55A4D3C84B9D184855 ();
+extern "C" void U3CClickTimerU3Ed__14_System_Collections_IEnumerator_Reset_mAFC78C2FC89B078BD1DFE6DC883C14229444E52A ();
+extern "C" void U3CClickTimerU3Ed__14_System_IDisposable_Dispose_mC6AB33667F48E00E5000722C1782764360AEFA78 ();
+extern "C" void U3CVoiceTimerU3Ed__15__ctor_m6BB4941D70C6D39824A1597BFBA718657A74709B ();
+extern "C" void U3CVoiceTimerU3Ed__15_System_Collections_IEnumerator_Reset_m31D2ECD0C972E39962060236E43192E6CBB10395 ();
+extern "C" void U3CVoiceTimerU3Ed__15_System_IDisposable_Dispose_m2447AF9A4331DA2979524315A93FE6A2ECB06105 ();
+extern "C" void CustomInteractablesReceiver__ctor_mD3C251ACF85A173A08879D3F0E00B462786ADB51 ();
+extern "C" void CustomInteractablesReceiver_OnClick_m98F8E2D7CCEC7CC38A8B2F84E02AB23AD3A89CF8 ();
+extern "C" void CustomInteractablesReceiver_OnUpdate_m25D11A4FC30E43629A49197EE2B5AA38FCA30BE2 ();
+extern "C" void CustomInteractablesReceiver_OnVoiceCommand_m454AF0061FDBD0482BB778554816A3C1BE99C2A2 ();
+extern "C" void CustomInteractablesReceiver_SetOutput_mE8548A8E8783524282450C8446360425E2616E73 ();
 extern "C" void DestroyOnAnimationComplete__ctor_m1AC2B5C7C41D3436811E3FF0A4DEFDE7A8376A6F ();
 extern "C" void DestroyOnAnimationComplete_Start_m780B06F914499E9A9DBDD4875792FB14301820BA ();
 extern "C" void DestroyOnAnimationComplete_set_Delay_m8EA6E1BF058B9AB1CF28EF93E8D307E2CBFC057E ();
@@ -13116,6 +14095,9 @@ extern "C" void InspectorField_set_Options_m7F7DCC67E91FC34DC781CC9049FCB97D635E
 extern "C" void InspectorField_set_Tooltip_m3DB9E9DB82F1A25956F09A8BA5A1B73575D55737 ();
 extern "C" void InspectorField_set_Type_m0237D5EB64D37AACE58D97D4A3FE447A7250DE00 ();
 extern "C" void InspectorField_set_Value_m9B258D6E106B650069EA68B42000EE2780512234 ();
+extern "C" void InspectorFieldsExample__ctor_m76E15B60D6DC1D312BD53B4C3E1F0E06C89BEF71 ();
+extern "C" void InspectorFieldsExample_Awake_m0D33740D048D3FE7DE9AA36284ED88F23A026223 ();
+extern "C" void InspectorFieldsExample_Update_m763296B60230060F2E283D96A0F53CAE51DD0684 ();
 extern "C" void EllipseLineDataProvider__ctor_m903E8863892A62CED4DDC4B1E8DA5015A4DF8DA1 ();
 extern "C" void EllipseLineDataProvider_SetPointInternal_mAE151E3338E390E7E0C50B6D48FC2F519D26E18C ();
 extern "C" void EllipseLineDataProvider_set_Radius_m8B9FF000D270B4A9C7B258C9B2F7D8FB9DC452BD ();
@@ -14025,6 +15007,7 @@ extern "C" void AggregateException__ctor_mEB0710D0C50475FCE00B187AA5FA8098DC656E
 extern "C" void AggregateException__ctor_m49EF2FE10BC147085D49932EDE07AD581C461818 ();
 extern "C" void AggregateException__ctor_m3CBEB65087C05AB23CEE39CF67D35CFE1D657CB4 ();
 extern "C" void AggregateException__ctor_mA78372B38621E83F133785934CCA1A9BB45A9040 ();
+extern "C" void AggregateException__ctor_m33CF46160CEEAEE75538E81D4A8A8D4D734487C7 ();
 extern "C" void AggregateException__ctor_mA35C4ECD50CDFC6464D30D6D0F0AE77E6A9D83A0 ();
 extern "C" void AggregateException_GetObjectData_mE8EEEDDC03DC396A630B39C345EE93D47D4C7D49 ();
 extern "C" void AppContextSwitches__cctor_mF82EBE4041D0641A58BC644386B9209FA938C0AF ();
@@ -15010,6 +15993,33 @@ extern "C" void BinaryWriter_Write_m1B0A4F64164ADD861A310FBC3A9FCD0DE84C24A5 ();
 extern "C" void BinaryWriter_Write_m7A4481F0176E1B6519ACC52A79AF61460B6D2E65 ();
 extern "C" void BinaryWriter_Write_m6FCC02FD2E46384CED1712AA4DFFAAA1C7901245 ();
 extern "C" void BinaryWriter_Write7BitEncodedInt_m8FA5CBD3BCB110DD58FC21FF6751D77D3BEF71A3 ();
+extern "C" void U3CFlushAsyncInternalU3Ed__38_MoveNext_m63CB3B8EEA651CDB95D26ABE47BC4008B81ED692_AdjustorThunk ();
+extern "C" void U3CFlushAsyncInternalU3Ed__38_SetStateMachine_m39783E17AF87AA815A3A8AF75AF04AE623194174_AdjustorThunk ();
+extern "C" void U3CFlushWriteAsyncU3Ed__42_MoveNext_mFCC69CCE9AFB4B61BE26207B454DCDF544A28E36_AdjustorThunk ();
+extern "C" void U3CFlushWriteAsyncU3Ed__42_SetStateMachine_mE9A8C4EECC4D0AAF437D4904C1EEEC4CAB6D14C4_AdjustorThunk ();
+extern "C" void U3CReadFromUnderlyingStreamAsyncU3Ed__51_MoveNext_m4A62A17862202F8A4914CF4E424D746CEBE42FEA_AdjustorThunk ();
+extern "C" void U3CReadFromUnderlyingStreamAsyncU3Ed__51_SetStateMachine_mFF58ED72E901572EC87E350DC7FC494204F4B290_AdjustorThunk ();
+extern "C" void U3CWriteToUnderlyingStreamAsyncU3Ed__60_MoveNext_mE8D58677D68177A3F7D5B043ED1178F21C698373_AdjustorThunk ();
+extern "C" void U3CWriteToUnderlyingStreamAsyncU3Ed__60_SetStateMachine_mC8FB2F4330585DBB8FBC6731A622EBA430212AA1_AdjustorThunk ();
+extern "C" void BufferedStream__ctor_mC5DA0BE7CFE2F9D41AAE238C4B64FD9A9C7765F8 ();
+extern "C" void BufferedStream_ClearReadBufferBeforeWrite_mDE6C8837B412497C1FFCEEDF94B5619E6E51A3DF ();
+extern "C" void BufferedStream_Dispose_m7F1A4A5823EA5B0FFF2B8B5E1B073A8B9CF67DC9 ();
+extern "C" void BufferedStream_EndWrite_mE4F91556BF173C195B4493213E70BE0343A34918 ();
+extern "C" void BufferedStream_EnsureBeginEndAwaitableAllocated_mF2E758BDEECE01DF0F28C893C6D0C203E038CDF9 ();
+extern "C" void BufferedStream_EnsureBufferAllocated_m7C4D653681413B4AAC746F81801657D26C49F12E ();
+extern "C" void BufferedStream_EnsureCanRead_mB45EF0D8B76D06ACE2572890EBF5F3355F8C1A3D ();
+extern "C" void BufferedStream_EnsureCanSeek_mB0E848EDE4AF6AE2AFF2B6A169D75050A1C0EEFC ();
+extern "C" void BufferedStream_EnsureCanWrite_m1A9217E4531D2B2C16D9486E803ED225A72A74D7 ();
+extern "C" void BufferedStream_EnsureNotClosed_m04FC54AFE345EDF2C5B26FBAD5C67A8DD9A6191D ();
+extern "C" void BufferedStream_EnsureShadowBufferAllocated_m183B5DBCE62AA3E0FE1C79220FA75BBFA2ED6D78 ();
+extern "C" void BufferedStream_Flush_m449DA25BC29EF921BCEF6DF1756BE60F92B700D0 ();
+extern "C" void BufferedStream_FlushRead_mF6EE37309428AB09AFC195A701B9CA7EFE5C2D66 ();
+extern "C" void BufferedStream_FlushWrite_m32E38BC69BD7A89FC6D63A9562F954E5CA55F03F ();
+extern "C" void BufferedStream_Write_mD56868EDF402FFA1949F46516062A447009A4456 ();
+extern "C" void BufferedStream_WriteByte_m8630306B7C0946B4424E8FE679C5EFC742B4E986 ();
+extern "C" void BufferedStream_WriteToBuffer_mF90EB37A6BD10547A9CECBBB633735A5782F1509 ();
+extern "C" void BufferedStream_WriteToBuffer_mB7EA238D80DFE9688A9AFBD53DFBE194F21025A4 ();
+extern "C" void BufferedStream_set_Position_mDE129ACB9662EFEEA02DD5091E5A7862B33C4CC3 ();
 extern "C" void CStreamReader__ctor_m0522E27BADB6649A8E512728F900EFFA4DBD301A ();
 extern "C" void CStreamWriter__ctor_m967462FE0368BE80A448F0082E70B326088E2E95 ();
 extern "C" void CStreamWriter_InternalWriteChar_m2CF4426CAEB1BF5724F33725DFF21C139D6C9CD7 ();
@@ -15061,6 +16071,7 @@ extern "C" void WriteDelegate_EndInvoke_mE58768AEE51495BCCF8DA1A6DD9B8A332F4746F
 extern "C" void WriteDelegate_Invoke_mF0D23001B95693C493F4F7D087D71CBBE8FB9C7E ();
 extern "C" void FileStream__cctor_m1A9D61D5329E3774C77BE21494608E1E7788D6C5 ();
 extern "C" void FileStream__ctor_mBBACDACB97FD9346AC2A5E164C86AB0BA0D160D6 ();
+extern "C" void FileStream__ctor_m967EF49BBCD52204BB79BA6E9DA533833B07B800 ();
 extern "C" void FileStream__ctor_m49CE3FAF4AEF5EE690E5E53A95749F3C4414C47B ();
 extern "C" void FileStream__ctor_mB254658F1E758D76B41C942CB91BDF38FD544C83 ();
 extern "C" void FileStream__ctor_m4DC05D41FB4913FBEC94E42F27DD4A7F7E4225BE ();
@@ -15097,6 +16108,8 @@ extern "C" void IOException__ctor_mF3652DBA8804D22DB90A135D386C1CCA34D079BC ();
 extern "C" void MemoryStream__ctor_m9D0F92C76EFEDA651B678A98EB693FD945286DC2 ();
 extern "C" void MemoryStream__ctor_m731754F1435D29F87C407D84ED47AF35FFF9B0EF ();
 extern "C" void MemoryStream__ctor_m3B2BC5A117D1C01873952CC274F28F426B3D356D ();
+extern "C" void MemoryStream__ctor_mD4746B0911B4445240F7E82818DA380B506E97EA ();
+extern "C" void MemoryStream__ctor_m7202510CE4CCEDCDEFF98DB5900451A2FABAA3C4 ();
 extern "C" void MemoryStream__ctor_m78689C82DED9ACE5022B7EABF28F17FF318DF2AA ();
 extern "C" void MemoryStream_Dispose_mF2F2CA4BF56E1F8E06FC07ECAFB27EFB7B1ED058 ();
 extern "C" void MemoryStream_EnsureWriteable_m48277F2AEE53BF1A9B07890AB44A773DFA75E121 ();
@@ -15107,6 +16120,8 @@ extern "C" void MemoryStream_set_Capacity_m78F0B43BC2F6A3731DD2AC227598FE409FCBC
 extern "C" void MemoryStream_set_Position_mDBC06746A9BECFC5CA4932ECAF176A087BFA7116 ();
 extern "C" void MonoIO__cctor_mA43CEA4BFA1D6808936107D2AB73FCF5C7D7A577 ();
 extern "C" void MonoIO_DumpHandles_m9BD95B1AFC0B0CB1D4D38E6DD69A8AC60A8604D1 ();
+extern "C" void NetFxToWinRtStreamAdapter_Seek_m7914695973A6682573EEE713DD10046D58129592 ();
+extern "C" void NetFxToWinRtStreamAdapter_System_IDisposable_Dispose_m2195248780A7B0B9833CC1299C0368239FD0A96F ();
 extern "C" void Path__cctor_m84A5EB2C9568B10887254783C96FF52E21792542 ();
 extern "C" void Path_CheckInvalidPathChars_mE7AB60F87033852034DB7936D453170F5EE3AB30 ();
 extern "C" void Path_CheckSearchPattern_m30B1FB3B831FEA07E853BA2FAA7F38AE59E1E79D ();
@@ -15121,7 +16136,10 @@ extern "C" void PinnedBufferMemoryStream_Finalize_m315E623A3141C1854609BC3A31C72
 extern "C" void SearchResult__ctor_m5E8D5D407EFFA5AAE3B8E31866F12DC431E7FB8B ();
 extern "C" void U3CU3Ec__cctor_mD19C2C81E14C904D5B730513379F67EE4C82FB38 ();
 extern "C" void U3CU3Ec__ctor_mC41B9842076FF52762F4BF89FAEA2440BF9C56E2 ();
+extern "C" void U3CU3Ec_U3CFlushAsyncU3Eb__36_0_m5803CAB0D14A7AF91D43ED19EF24CE1F9A72C575 ();
 extern "C" void U3CU3Ec_U3CRunReadWriteTaskWhenReadyU3Eb__47_0_mAABA4692CAA24F0FAFC71C3CB9B951F5CE4E8CF6 ();
+extern "C" void U3CCopyToAsyncInternalU3Ed__27_MoveNext_m4D96001B05F00995E81455469F52314892112986_AdjustorThunk ();
+extern "C" void U3CCopyToAsyncInternalU3Ed__27_SetStateMachine_mA390D8FC0CE9ABCDA2FA6BD1B96FCE9C75A06856_AdjustorThunk ();
 extern "C" void NullStream__ctor_m33B984F0C9CBADFF8D35BEAAECE7E441D0E30E95 ();
 extern "C" void NullStream_Dispose_m749F803E9444B0B25EA124E05D3B9EF73FEC8B86 ();
 extern "C" void NullStream_EndWrite_m77128A88F7E63F2A225D46CC0B4FA8F8F13F335C ();
@@ -15150,6 +16168,32 @@ extern "C" void Stream_EndWrite_mE7A87B817FDCB90247FAF760BE83172B1D616032 ();
 extern "C" void Stream_RunReadWriteTask_m05B38DEEAA7A6D5CD4A8961C67AC393EABB3BFF7 ();
 extern "C" void Stream_RunReadWriteTaskWhenReady_m42E40F1AB2522AC449FF9332FD46A220A6CDE147 ();
 extern "C" void Stream_WriteByte_mA20A780D5019E9C5FDC5C09D23FBFEE1EFA94CC3 ();
+extern "C" void StreamFlushAsyncResult__ctor_mB90A83C265CA4BFC9EEFC5A0CFE76A2DFF0A13D8 ();
+extern "C" void StreamFlushAsyncResult_ProcessConcreteCompletedOperation_m63A273FF3E89F299C27102C58BC1A4F38AA51072 ();
+extern "C" void StreamFlushAsyncResult_ProcessConcreteCompletedOperation_mD81B4C15CD17D3753E3023D194165FF82FC37E50 ();
+extern "C" void StreamOperationAsyncResult__ctor_m1297A6A7E44BF5D57AD6CAFBC14FA870E21D9D8F ();
+extern "C" void StreamOperationAsyncResult_CloseStreamOperation_mD2F52A21BFD94DC2A34E260CA631BBDA3CC6721A ();
+extern "C" void StreamOperationAsyncResult_Finalize_mFB4A71F4DB6F0C4D04217F2C8AD4B6C8C472F01C ();
+extern "C" void StreamOperationAsyncResult_ProcessCompletedOperation_mCEAD13DA8A64F3CF722EE656F850716F26F9DEFB ();
+extern "C" void StreamOperationAsyncResult_ProcessCompletedOperation_InvalidOperationThrowHelper_mA1ED7D2F3D5DE6F75ED044EDA456FA877548F4A7 ();
+extern "C" void StreamOperationAsyncResult_StreamOperationCompletedCallback_m830CE1407A7C8E1AFFC4534BCE28959467019B0C ();
+extern "C" void StreamOperationAsyncResult_ThrowCachedError_m4E9122EE3CD20858BB4570D95912EF3A48038D3A ();
+extern "C" void StreamOperationAsyncResult_ThrowWithIOExceptionDispatchInfo_mB5A5574130A4DB6D1D6412D9EBDEC2BEA118C795 ();
+extern "C" void StreamOperationAsyncResult_Wait_m7E111C3451B661E20090E85DF665934453D1403E ();
+extern "C" void U3CU3CReadAsync_AbstractStreamU3Eb__0U3Ed_MoveNext_m71F1405BAE4A1E1B2D5FF6D4AC425053EEB34FC9_AdjustorThunk ();
+extern "C" void U3CU3CReadAsync_AbstractStreamU3Eb__0U3Ed_SetStateMachine_mAB18BD9CD69ADDCFBE2B48E4ABB35872BAE54483_AdjustorThunk ();
+extern "C" void U3CU3Ec__DisplayClass1_0__ctor_m3F1B229C6A9B7ADAA910766D1243B532076D313D ();
+extern "C" void U3CU3CWriteAsync_AbstractStreamU3Eb__0U3Ed_MoveNext_mE88D6EDC8FF01BB4B7832CA4FD9F063AE5CDCD4D_AdjustorThunk ();
+extern "C" void U3CU3CWriteAsync_AbstractStreamU3Eb__0U3Ed_SetStateMachine_m2A079EF5348EE858F047D58EEA127EAFB2F2BF1B_AdjustorThunk ();
+extern "C" void U3CU3CWriteAsync_AbstractStreamU3Eb__1U3Ed_MoveNext_mD3C1D72E476D85F6143C00F1DE1D449EAA690E26_AdjustorThunk ();
+extern "C" void U3CU3CWriteAsync_AbstractStreamU3Eb__1U3Ed_SetStateMachine_mCE60114066AA2B6050E71DD82848D3DDBEACB3F5_AdjustorThunk ();
+extern "C" void U3CU3Ec__DisplayClass2_0__ctor_mFDAE4C079FE8B880EF7687062561C35FC65BA223 ();
+extern "C" void U3CU3CFlushAsync_AbstractStreamU3Eb__0U3Ed_MoveNext_m543F90A39823888C932491D4018A559436C08EBE_AdjustorThunk ();
+extern "C" void U3CU3CFlushAsync_AbstractStreamU3Eb__0U3Ed_SetStateMachine_m6ECBDD41F0403D71AF9534B0E63161865104118F_AdjustorThunk ();
+extern "C" void U3CU3Ec__DisplayClass3_0__ctor_m1F36BD3249B8808F4F2A5707250834193E6FDC67 ();
+extern "C" void StreamReadAsyncResult__ctor_m1037B23E12C21BA0F4C92D48C76DA3EECD4435F0 ();
+extern "C" void StreamReadAsyncResult_ProcessConcreteCompletedOperation_m987DE967C55CCDAE3928BE1D2AEF3B64FC58FB43 ();
+extern "C" void StreamReadAsyncResult_ProcessConcreteCompletedOperation_mF0CBA3E175E98A2581B71286C8A3261D4EF3A482 ();
 extern "C" void NullStreamReader__ctor_mFC80352B41353767D65E0BE0AA46A5ABDCDC2BF8 ();
 extern "C" void NullStreamReader_Dispose_m57C394E189DB374A85C3D1A7B0546030B784B98A ();
 extern "C" void StreamReader__cctor_mD78F6CEA98B66DF1DF73D1D990DF0A724A5E4887 ();
@@ -15170,6 +16214,9 @@ extern "C" void StreamReader_DetectEncoding_m5626B39F6A0FD6DC107B6A63B0E4840230F
 extern "C" void StreamReader_Dispose_m110BF8AB37AA1D2F48C958557B87A170C689EB2A ();
 extern "C" void StreamReader_Init_mC5734A273A032305AF7F33DDB1BC2988C44D188C ();
 extern "C" void StreamReader_Init_m6CD01243AB3564C5E8B45E9823041C09D359FC9B ();
+extern "C" void StreamWriteAsyncResult__ctor_m3948E7124A04878E7BCAAFCEBCB0B079BA6B6908 ();
+extern "C" void StreamWriteAsyncResult_ProcessConcreteCompletedOperation_mFFEAD203431B5EB168068C0CDC881CC7A12DF5E4 ();
+extern "C" void StreamWriteAsyncResult_ProcessConcreteCompletedOperation_m46753CC71BFD4F752E35B693E9AF7258D36FF829 ();
 extern "C" void StreamWriter__cctor_m201F8BD01435889E27515048CF151323BAC42345 ();
 extern "C" void StreamWriter__ctor_m1795A943BBA92A3335FDC2112A2082ADD47DF9C4 ();
 extern "C" void StreamWriter__ctor_mB84BC6A7038D0550163682CD317A76740620E039 ();
@@ -15256,6 +16303,7 @@ extern "C" void UnexceptionalStreamWriter_Write_mAC310C8D24F673608DC7F130666E572
 extern "C" void UnexceptionalStreamWriter_Write_m662E03F82B13865872B3ADC048BEFE8E6C94B30F ();
 extern "C" void UnmanagedMemoryStream__ctor_mC321B43F918DC8453F1DDA5DE21D88CB9B259167 ();
 extern "C" void UnmanagedMemoryStream__ctor_mF4040F06CEA36C1ACBA0C09319B38530D0E45632 ();
+extern "C" void UnmanagedMemoryStream__ctor_mC84B1D4CF2D52722A4B3600392FA5AE584B2C799 ();
 extern "C" void UnmanagedMemoryStream__ctor_mDAB26A2823AF7D8CD45A0119BAE6B5549A9581C5 ();
 extern "C" void UnmanagedMemoryStream_Dispose_mA8E1A981BC7EFDFAC1B4C4E95D1CAB823EA284CA ();
 extern "C" void UnmanagedMemoryStream_Flush_m461EFEEA2A4C1866BC68D63F596E3EB8EF5A3F60 ();
@@ -15263,6 +16311,25 @@ extern "C" void UnmanagedMemoryStream_Initialize_m8DAC8A1A09A4FA06187944DE2DA5D7
 extern "C" void UnmanagedMemoryStream_Write_m9256DCD481FB6F93D3761684B74CD1639E3AEC6C ();
 extern "C" void UnmanagedMemoryStream_WriteByte_mEF8DEF7777C9ABCB846D9234073A451717F908B6 ();
 extern "C" void UnmanagedMemoryStream_set_Position_m9E69460D1AB811E973FA8A85CF8E3AC4A1B6D73C ();
+extern "C" void WinRtIOHelper_EnsureResultsInUserBuffer_m24B0C6BDACD1A06D7FBB9EC91361DA5137E34FB1 ();
+extern "C" void U3CReadAsyncInternalU3Ed__43_MoveNext_mB0715FAA82A73010EFAC342878C9B52220943AEA_AdjustorThunk ();
+extern "C" void U3CReadAsyncInternalU3Ed__43_SetStateMachine_m1A8819589C373A620E6A76D362FB02B94CBF5E19_AdjustorThunk ();
+extern "C" void WinRtToNetFxStreamAdapter__ctor_m32DFDE65034486518FEF279121FF1BCEF328FCDF ();
+extern "C" void WinRtToNetFxStreamAdapter_Dispose_m4B0059F4DFD1068CB4EFB7BEBA5BA2C19F40BEA4 ();
+extern "C" void WinRtToNetFxStreamAdapter_EndWrite_m2B931CFE24E318D4F4AE2BB00D24E7162A9E0EA5 ();
+extern "C" void WinRtToNetFxStreamAdapter_EnsureCanRead_m47456E779147FE03374BC5272A195835BDCF8434 ();
+extern "C" void WinRtToNetFxStreamAdapter_EnsureCanWrite_mC94E5B0115A84E45BED38ECE64E5D6A84F19873C ();
+extern "C" void WinRtToNetFxStreamAdapter_EnsureNotDisposed_mF8858E644BF5B6A230329F688972B99A0F624150 ();
+extern "C" void WinRtToNetFxStreamAdapter_Flush_m6EA4ADC50C604800CEBA54B8554A64E4312DC94D ();
+extern "C" void WinRtToNetFxStreamAdapter_SetWonInitializationRace_m3A170BF60C8D57B6B1DB37B39A767B6DDD43B023 ();
+extern "C" void WinRtToNetFxStreamAdapter_Write_mDFF772EF47A9E578150AE08EFA9D105134598033 ();
+extern "C" void WinRtToNetFxStreamAdapter_WriteByte_mAFF97A6A70702AC29649A41C048AE186F4070335 ();
+extern "C" void WinRtToNetFxStreamAdapter_set_Position_m38D3A3BC8CE9CD7B48E5DD6DAEFFABC0FFE6D100 ();
+extern "C" void U3CU3Ec__cctor_mBF52595DB23256E5B7B4724C6DDE9640684FB582 ();
+extern "C" void U3CU3Ec__ctor_mBE6F6EA3D1B4DFDD3CCC63AC4059A840F81B73E6 ();
+extern "C" void U3CU3Ec__DisplayClass12_0__ctor_mCB82215D6FC7791483AC9C42E7487E1C19A3CF00 ();
+extern "C" void WindowsRuntimeStreamExtensions__cctor_m2A925362C13A804653EF4AB2739E897711359841 ();
+extern "C" void WindowsRuntimeStreamExtensions_EnsureAdapterBufferSize_m6507CF9C4E53D85596F7E39A221BE248CA06CB6E ();
 extern "C" void __Error_EndOfFile_m48F4E14C7AD452BCA036E0F7537CC2B196A5A7F5 ();
 extern "C" void __Error_EndReadCalledTwice_mC80DEEBE51D036D4CCC24671947ED863E470A7FA ();
 extern "C" void __Error_EndWriteCalledTwice_m991D9485115C8EE93569537674B4206DC8EADB2C ();
@@ -15270,6 +16337,7 @@ extern "C" void __Error_FileNotOpen_m72E3844C53F9BBA3DA2AB9A113480804F1954633 ()
 extern "C" void __Error_MemoryStreamNotExpandable_mF68838F1E20B6FD1A292017A734F89534C002F7F ();
 extern "C" void __Error_ReadNotSupported_mE20D002F31774F786CAC01DE88CF2FD9F46C0696 ();
 extern "C" void __Error_ReaderClosed_mDEB32103741D23496C28421032CA44B7DB2E0717 ();
+extern "C" void __Error_SeekNotSupported_mEB8B1A7DA166A961F0D44E9A08DF2C48D3D5DC8E ();
 extern "C" void __Error_StreamIsClosed_mAD2694451AA25C7099F2FD1C2357D5C3F1969F37 ();
 extern "C" void __Error_WinIOError_mDA34FD0DC2ED957492B470B48E69838BB4E68A4B ();
 extern "C" void __Error_WriteNotSupported_mDC018F02757EB3116B45F9CEE41F83910ED5FC1B ();
@@ -15379,6 +16447,7 @@ extern "C" void NonSerializedAttribute__ctor_mE1558BDEF20C2A2D08703549040E56970C
 extern "C" void NotImplementedException__ctor_m8BEA657E260FC05F0C6D2C43A6E9BC08040F59C4 ();
 extern "C" void NotImplementedException__ctor_mFF1238AF9C34A2EA800C8AA62ABACBC395BCAB44 ();
 extern "C" void NotImplementedException__ctor_mEBAED0FCA8B8CCE7E96492474350BA35D14CF59C ();
+extern "C" void NotImplementedException__ctor_m3EA4CBB9A00BC498783C5EDA61DC26E3FF20314C ();
 extern "C" void NotSupportedException__ctor_mA121DE1CAC8F25277DEB489DC7771209D91CAE33 ();
 extern "C" void NotSupportedException__ctor_m1F2AAA51372307FB5B4ED59C9F89A0BBFC94C768 ();
 extern "C" void NotSupportedException__ctor_mD023A89A5C1F740F43F0A9CD6C49DC21230B3CEE ();
@@ -15777,14 +16846,22 @@ extern "C" void GCHandle_Free_m392ECC9B1058E35A0FD5CF21A65F212873FC26F0_Adjustor
 extern "C" void GCHandle_FreeHandle_m3A70635E27A4FCA2F20EE01CDA5DADFAB3B9FC55 ();
 extern "C" void GCHandle_set_Target_mFE24B2555ECDBA46AC76D6DB79505B2F4238D913_AdjustorThunk ();
 extern "C" void GuidAttribute__ctor_m74E71527605E7EFC0927859E60198633ACADD17C ();
+extern "C" void IMarshal_DisconnectObject_mE3689A76176F7E4FC4D556C9DF8D3F55DC8C9207 ();
+extern "C" void IMarshal_GetMarshalSizeMax_mBAF33A0B75ABDA690A09809CBC0758AC94C591A1 ();
+extern "C" void IMarshal_GetUnmarshalClass_m394D399AF3D58E5C260D663B63E34F4A37BF6F76 ();
+extern "C" void IMarshal_MarshalInterface_m00480B6CD7532674DAA33AB7D4379125D03FC616 ();
+extern "C" void IMarshal_ReleaseMarshalData_m03292BAE558EA56FAA11F9CBF8136DDB3D31E298 ();
+extern "C" void IMarshal_UnmarshalInterface_mDD2463F15F49EA8390415A654870C8A2482E2BEA ();
 extern "C" void InAttribute__ctor_m14C56FB9709977AFDC5A84D410914F61D61CE679 ();
 extern "C" void InterfaceTypeAttribute__ctor_mA4753B8BDF06E54F04701B7DB54385DB720258D0 ();
 extern "C" void Marshal__cctor_m6BDF0F19AFDE20FB69EF4EA3C4A29FDC0F374952 ();
+extern "C" void Marshal_Copy_m0486DFF229946F0F9E6A04DDDF3BC9E5F1609A5A ();
 extern "C" void Marshal_Copy_m64744D9E23AFC00AA06CD6B057E19B7C0CE4C0C2 ();
 extern "C" void Marshal_Copy_m3556CC144C37496A15A3E10DD16D12B06BC4A000 ();
 extern "C" void Marshal_FreeBSTR_mB3CD149620B05C68BBC20931307564BADDE71A25 ();
 extern "C" void Marshal_StructureToPtr_mC50C72193EC3C321AFB48C3AE9799D80CF5E56C5 ();
 extern "C" void Marshal_copy_from_unmanaged_m6155CAC4E5EC6C94D165E01CFBB583B79EF25AC4 ();
+extern "C" void Marshal_copy_to_unmanaged_mDD88A668D1CD414CFB4A853565BA4667926DEEAB ();
 extern "C" void MarshalDirectiveException__ctor_m8AFC614C2C3A144DC15F821FF4592599F5A54060 ();
 extern "C" void MarshalDirectiveException__ctor_mBD8CDE81D5C01C26095A0B09A5DCE3D112E78E2E ();
 extern "C" void MarshalDirectiveException__ctor_mFEA9712DAC3F8AB905CB577ECEF1B1FAE93EEC72 ();
@@ -15816,6 +16893,23 @@ extern "C" void IBindableVectorToIListAdapter_System_Collections_IList_RemoveAt_
 extern "C" void IBindableVectorToIListAdapter_System_Collections_IList_set_Item_m2C4E4D00A6AE961BE0B2893734DF6BE9D142BB53 ();
 extern "C" void IClosableToIDisposableAdapter_System_IDisposable_Dispose_m9C196BC6A9566BB8E1EA16D8B69229903D26D40D ();
 extern "C" void IInspectableToICollectionAdapter_System_Collections_ICollection_CopyTo_m4991220F937B2A552897078306A59CB03E977C24 ();
+extern "C" void WindowsRuntimeBuffer__cctor_mEE45579661730FFFB18D6CE82AB7D41C843CF11F ();
+extern "C" void WindowsRuntimeBuffer__ctor_m057CF397F8500BB4BE049EF15809461062E5DC00 ();
+extern "C" void WindowsRuntimeBuffer__ctor_m647E546ED9196E78CF024F9D126E689F068F0CEA ();
+extern "C" void WindowsRuntimeBuffer_EnsureHasMarshalProxy_m8EA99F1848DDC7E830545DC80A8C53983B3E0879 ();
+extern "C" void WindowsRuntimeBuffer_Finalize_mE1F0E0D1245A31A26128A28A26B979B171C84FDA ();
+extern "C" void WindowsRuntimeBuffer_GetUnderlyingData_mBCC3F8E7DAC3D16C7D5DB7F363F02F451FD67D0D ();
+extern "C" void WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_DisconnectObject_m6508BA598A7093C8CAA21518740C488A13CB9055 ();
+extern "C" void WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_GetMarshalSizeMax_m6A46F1695F97BDE4587C8CCE174FEE16A11B814B ();
+extern "C" void WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_GetUnmarshalClass_mEE39B87F550E9BB968B24C873F3E2048C4C67F5A ();
+extern "C" void WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_MarshalInterface_mAFC02F5CA4608E72AB872D21D1AEAB0C9E76808B ();
+extern "C" void WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_ReleaseMarshalData_m521849BEE7B8AE233B26A1BE492C4060B7BE678D ();
+extern "C" void WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_UnmarshalInterface_mB0B055B69C3BE22A68704EB42B4D0077360F59BF ();
+extern "C" void WindowsRuntimeBuffer_Windows_Storage_Streams_IBuffer_put_Length_m89636F8978B5A5D597CFB74C2EF3509E52E190B9 ();
+extern "C" void WindowsRuntimeBufferUnmanagedMemoryStream__ctor_m28B44E02160B58BD85CA8596463059C4C0975347 ();
+extern "C" void WindowsRuntimeBufferExtensions_CopyTo_m79A250A6B56898E32F6F8697DFE3A60FDE66B19B ();
+extern "C" void WindowsRuntimeBufferExtensions_CopyTo_m6EAD61B4D602858DC439F92678DA5EEDFA560136 ();
+extern "C" void WindowsRuntimeBufferExtensions_MemCopy_m3835D54F66AEC471C41534C69772989315F78927 ();
 extern "C" void EventRegistrationTokenList__ctor_m2ECAA211F4D090EAE744839A9449B3C52250D7E6_AdjustorThunk ();
 extern "C" void ManagedEventRegistrationImpl__cctor_m96A81BE7433105164D3809474FCBAE3837320E1A ();
 extern "C" void EventCacheKeyEqualityComparer__ctor_mD6F721732178C4DDC44BDA5806D0552B4D948B0B ();
@@ -17103,6 +18197,7 @@ extern "C" void ExecutionContext_set_SynchronizationContextNoFlow_mD43C438225751
 extern "C" void ExecutionContext_set_isFlowSuppressed_m0E70B01C31D82D0B64593328032A67CCA4DC165F ();
 extern "C" void ExecutionContext_set_isNewCapture_mC28D70EBD4401ADCCDD9F2218BE22A9EBA2EBBD7 ();
 extern "C" void ExecutionContextSwitcher_Undo_m4E0A7D83FDA7AFD4ACD574E89A57AB46A038C57E_AdjustorThunk ();
+extern "C" void Interlocked_MemoryBarrier_m1C58A0425F80BBD7E9811A603B4F48312BFD83FD ();
 extern "C" void InternalThread_Finalize_m21A406B76027FB1CE1E2A10D59B17E49D7C617BE ();
 extern "C" void InternalThread_Thread_free_internal_m23E40E8B5BD217003279C4B07422B04DCB7B5274 ();
 extern "C" void LockRecursionException__ctor_m52DB782195FFB9EED4C8E5BD37B46D0748E02CB8 ();
@@ -17206,11 +18301,24 @@ extern "C" void AwaitTaskContinuation_System_Threading_IThreadPoolWorkItem_Execu
 extern "C" void AwaitTaskContinuation_System_Threading_IThreadPoolWorkItem_MarkAborted_mA931386DBC633C822D9FD22F036CD2956AA1BC2E ();
 extern "C" void AwaitTaskContinuation_ThrowAsyncIfNecessary_mD1B7B962FF8ED8EC2F105A42998347BDF99FED05 ();
 extern "C" void AwaitTaskContinuation_UnsafeScheduleAction_m6FE5A227F1E782EC26CA755419E7CE146B43FF4B ();
+extern "C" void U3CU3Ec__cctor_mECA5C938123536923606E8B85C354A5F33D1DD33 ();
+extern "C" void U3CU3Ec__ctor_m36FD95B47D7EEBEAAE3D5690EB884148A578AD9C ();
+extern "C" void U3CU3Ec_U3C_cctorU3Eb__11_0_m9E6E3CEF244FEB7C714FE088D82002A423BC8E2D ();
+extern "C" void U3CU3Ec_U3C_cctorU3Eb__11_1_mC2E2BF027E889DE55EB76A521645B34DAC2C4B8E ();
+extern "C" void BeginEndAwaitableAdapter__cctor_mB429D7320E900094CACE7F176C6B1C1D88650FB8 ();
+extern "C" void BeginEndAwaitableAdapter__ctor_mC982D09A6BBD23969F5DECDFB1B3F341849FC897 ();
+extern "C" void BeginEndAwaitableAdapter_OnCompleted_mF5F481848F7A2437D9EFC7A00B779BC1F4B7A64F ();
+extern "C" void BeginEndAwaitableAdapter_UnsafeOnCompleted_mB0C156F188D5CF5994D4B3EF1CEAA96749FFD0E8 ();
 extern "C" void CompletionActionInvoker__ctor_m99DE9FFDBB3B8A79C61EA35DDE340DF5FB54F158 ();
 extern "C" void CompletionActionInvoker_ExecuteWorkItem_m709B36ADF0D0B53EAA2C170C22708BBE3F1F1054 ();
 extern "C" void CompletionActionInvoker_MarkAborted_m8167A9ECADFE423C9094E277699AE716239E20DE ();
 extern "C" void ContinuationTaskFromTask__ctor_m7804EC000E1BA147597C861D81912A1A20EA35D9 ();
 extern "C" void ContinuationTaskFromTask_InnerInvoke_m9C8AF549927D42595D76DE8817E9E1BA83295723 ();
+extern "C" void U3CU3Ec__cctor_mC2AE3130C3434353465BEDA10C3C5D3553E06611 ();
+extern "C" void U3CU3Ec__ctor_mD4CB97B8F69D13F5E101436076591307254C7C3D ();
+extern "C" void U3CU3Ec_U3CThrowAsyncU3Eb__0_0_m7E81F2FB2E8DCA066244624DA953798D574F1AEB ();
+extern "C" void U3CU3Ec_U3CThrowAsyncU3Eb__0_1_mF770BC3A2CAB8D6FA854F629FFD668408AEBA176 ();
+extern "C" void ExceptionDispatchHelper_ThrowAsync_m2F6A6A11D813192180D84E5EDEEF6A5411729253 ();
 extern "C" void LoopTimer__ctor_mCED2D86528E4B3204441F7A42C1C2F504DAC58B7_AdjustorThunk ();
 extern "C" void Parallel__cctor_mA343177E67F1E00DFF913AFE9136C0C30542BE9A ();
 extern "C" void Parallel_ThrowIfReducableToSingleOCE_mBFEAFE423AA2A056BCF7A631479E905593EBEE62 ();
@@ -17350,6 +18458,14 @@ extern "C" void TaskSchedulerAwaitTaskContinuation_Run_m12898EF0B89FD0CA5D26DC91
 extern "C" void TaskSchedulerException__ctor_m63156F8498549786866AEA93F820A250BE5B691E ();
 extern "C" void TaskSchedulerException__ctor_mFFF7423FCD3DFC4F8A6F7E6028AE6CB1D5865F63 ();
 extern "C" void TaskSchedulerException__ctor_m54DE71B0C4FFC10BE930F776BE82782F4384D469 ();
+extern "C" void U3CU3Ec__DisplayClass3_0__ctor_m349D6D5C702DDC66F2490654813695CE39A0B3B2 ();
+extern "C" void U3CU3Ec__DisplayClass3_0_U3CInvokeCallbackWhenTaskCompletesU3Eb__0_m4C9A107F12D2BC7B54398E44A44D45AB3F8B6D18 ();
+extern "C" void TaskWrapperAsyncResult__ctor_m47C91370D59B60FE3A5C49786EF699AD63784A3B ();
+extern "C" void TaskToApm_End_m1BCAAEC9A8AED75C16537F0D568BE8AE8670FD1A ();
+extern "C" void TaskToApm_InvokeCallbackWhenTaskCompletes_m46DC53C5C7C58E9F10B0EE7AE711C90A4B1CE494 ();
+extern "C" void TaskToAsyncActionAdapter_GetResults_m507FE1CE48032133AA7ADA483475806B3D2C51F6 ();
+extern "C" void TaskToAsyncActionAdapter_OnCompleted_m6285538803AC8D0E9837F8C5C0295BDC925447B5 ();
+extern "C" void TaskToAsyncActionAdapter_Windows_Foundation_IAsyncAction_put_Completed_m18D923DB9F07206F028620EA470EDBCDF65F1168 ();
 extern "C" void ThreadPoolTaskScheduler__cctor_mC425D1140B5A638568A6350B38102E68BFFE263B ();
 extern "C" void ThreadPoolTaskScheduler__ctor_mC0B9F37DBA25F766F01EE56C8460330C3708FF1D ();
 extern "C" void ThreadPoolTaskScheduler_LongRunningThreadWork_m961ED397785555AF2C24A4C8723246BA355CE21D ();
@@ -18410,9 +19526,9 @@ extern "C" void TrainingObjectBase_Start_m83ED6E74DD1850829EA5BBDE6A522983B6867F
 extern "C" void TrainingObjectBase_StartSetting_m157699240867087D5E3BC241EE155AB26D4CFECE ();
 extern "C" void TrainingObjectBase_Update_m49D05A3E3F2F6AAD05EDB1C8CBC11FC37668D982 ();
 extern "C" void TrainingObjectBase_set_isClear_mCDB45B771DE18A9B210A66D0617B04D2BA4F9741 ();
-extern "C" void ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A ();
 extern "C" void ThrowStub_ThrowNotSupportedException_mF1DE187697F740D8C18B8966BBEB276878CD86FD ();
 extern "C" void ThrowStub_ThrowNotSupportedException_mA248D7D785682F31CDF02FDC1FAB3173EE1B1E19 ();
+extern "C" void ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A ();
 extern "C" void OnNavMeshPreUpdate__ctor_mD019C429BD8D299B85C320A6EFB2FFEDC3F85F42 ();
 extern "C" void OnNavMeshPreUpdate_EndInvoke_mB55765702AA123A6D7C3DF8DDC597E3DEBC79836 ();
 extern "C" void OnNavMeshPreUpdate_Invoke_mE56CD30B200FECFD94AD4B22923B32BD789D70F0 ();
@@ -18539,6 +19655,7 @@ extern "C" void AudioSource_PlayOneShot_mA65B809A4480039CD8337ABF45C0E57E137EED4
 extern "C" void AudioSource_PlayOneShotHelper_m984380B06707633611ACDDCF4AFC91B659EEF8AE ();
 extern "C" void AudioSource_set_clip_mF574231E0B749E0167CAF9E4FCBA06BAA0F9ED9B ();
 extern "C" void AudioSource_set_pitch_mAB8F8CDB21A3139D3471784FEE9DBFA4CEDEE2E0 ();
+extern "C" void AudioSource_set_playOnAwake_m5E4C76260D66898EEFEB20E4F42B6249AACB4128 ();
 extern "C" void AudioSource_set_volume_mF1757D70EE113871724334D13F70EF1ED033BA06 ();
 extern "C" void AudioSourceExtension__ctor_mD19AFD51DDEB5C889BFAA75773587D5CCBE6DD94 ();
 extern "C" void AudioSourceExtension_ExtensionUpdate_mE718BD9BF44413C65C86AC747F3F86C411E7D01A ();
@@ -18700,6 +19817,7 @@ extern "C" void CapsuleCollider_set_radius_mFE5E4E8C0EC1ECAC76CFDDA3EF9713027872
 extern "C" void ClassLibraryInitializer_Init_mB8588C1A9DD9CB6B5CE77DB1F79AE301C46E0CE7 ();
 extern "C" void Collider_ClosestPoint_Injected_mBB4217A183FB329B8F3B1DE8837CA5B12A3B7D9F ();
 extern "C" void Collider_get_bounds_Injected_m90D0FE433CCD44CC83E1089055A5A17286F9B1E6 ();
+extern "C" void Collider_set_enabled_mF84DE8B0C8CAF33ACDB7F29BC055D9C8CFACB57B ();
 extern "C" void Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2_AdjustorThunk ();
 extern "C" void Color__ctor_mC9AEEB3931D5B8C37483A884DD8EB40DC8946369_AdjustorThunk ();
 extern "C" void Color__ctor_m20DF490CEB364C4FC36D7EE392640DF5B7420D7C_AdjustorThunk ();
@@ -19353,6 +20471,12 @@ extern "C" void Material_SetShaderKeywords_m32714E17C5D17AAE15927F89624416E14B04
 extern "C" void Material_SetTexture_m4FFF0B403A64253B83534701104F017840142ACA ();
 extern "C" void Material_SetTexture_mAA0F00FACFE40CFE4BE28A11162E5EEFCC5F5A61 ();
 extern "C" void Material_SetTextureImpl_mBCF204C1FAD811B00DBAE98847D6D533EE05B135 ();
+extern "C" void Material_SetTextureOffset_m3E9C91ED11CB6323252AF6B5CB15CCD497EF10BB ();
+extern "C" void Material_SetTextureOffsetImpl_mFA6B03949317E27AA65014030ABE8CA79350FE45 ();
+extern "C" void Material_SetTextureOffsetImpl_Injected_m85850F975A45BBB3AEA145C52309FC7CB82CDF64 ();
+extern "C" void Material_SetTextureScale_m30A521475E4FF45858D27B8DA562B06165734A9E ();
+extern "C" void Material_SetTextureScaleImpl_mB4BD14FA7A283ACD618A139F0A28D44BE299A89E ();
+extern "C" void Material_SetTextureScaleImpl_Injected_m44A1C509E1EA40BFAFA82C7449EC21E6D39E8BF9 ();
 extern "C" void Material_SetVector_m95B7CB07B91F004B4DD9DB5DFA5146472737B8EA ();
 extern "C" void Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3 ();
 extern "C" void Material_set_enableInstancing_m745D94DF21B9749DA7CFE42BAB3CBD05F614B81E ();
@@ -19678,6 +20802,7 @@ extern "C" void Quaternion_Normalize_mBCDF17FADBC3CB896F52D7DC9C1A83FA4890B158_A
 extern "C" void Quaternion_Slerp_Injected_m28511088F8514F6FF5C85A0B042EFB662F2585D3 ();
 extern "C" void Quaternion_ToAngleAxis_m36E8C06D2D508B5BA5DE9CFBAD252989918D8813_AdjustorThunk ();
 extern "C" void Quaternion_set_eulerAngles_m556A6B616C1D301E24FF37E18D84D53220A199FE_AdjustorThunk ();
+extern "C" void Random_get_insideUnitSphere_Injected_m41A8C2C4C6E83CEF53FF1686B8EFF649C3BDCC93 ();
 extern "C" void RangeAttribute__ctor_mB9CC43849A074C59DD99F154215A755131D47D89 ();
 extern "C" void RangeInt__ctor_mACFE54DF73DE3F62053F851423525DB5AC1B100E_AdjustorThunk ();
 extern "C" void Ray__ctor_m695D219349B8AA4C82F96C55A27D384C07736F6B_AdjustorThunk ();
@@ -19818,7 +20943,9 @@ extern "C" void Rigidbody_AddForce_mD64ACF772614FE36CFD8A477A07A407B35DF1A54 ();
 extern "C" void Rigidbody_AddForce_Injected_mEB8DB621D03BE740C5CBD472E873FF8B6EF6C119 ();
 extern "C" void Rigidbody_set_angularVelocity_m1839DCBC87B01EFD0B4936E84E503E38774B962C ();
 extern "C" void Rigidbody_set_angularVelocity_Injected_mC5F63763F3701505D5F8E41CCE7F6325F1024783 ();
+extern "C" void Rigidbody_set_drag_mCE564F278586FB0693B2BBEC4FB72E1F8E1E97EE ();
 extern "C" void Rigidbody_set_isKinematic_m856AB59E5A6207892C439AFC8DDF5620B941E71B ();
+extern "C" void Rigidbody_set_useGravity_mB0D957A9D8A9819E18D2E81F465C5C0B60CBC6DA ();
 extern "C" void Rigidbody_set_velocity_m8D129E88E62AD02AB81CFC8BE694C4A5A2B2B380 ();
 extern "C" void Rigidbody_set_velocity_Injected_mA0CBA4077CADA05CF30404564E8D6260EF60E07D ();
 extern "C" void RuntimeInitializeOnLoadMethodAttribute__ctor_mF7E0CAAF0DA4A1F5BAD4CF4C02C4C3A5AB2515D0 ();
@@ -19833,6 +20960,7 @@ extern "C" void SceneManager_GetSceneByName_Injected_m02D1100582A883A40F82E8E620
 extern "C" void SceneManager_Internal_ActiveSceneChanged_mE9AB93D6979594CFCED5B3696F727B7D5E6B25F5 ();
 extern "C" void SceneManager_Internal_SceneLoaded_m800F5F7F7B30D5206913EF65548FD7F8DE9EF718 ();
 extern "C" void SceneManager_Internal_SceneUnloaded_m32721E87A02DAC634DD4B9857092CC172EE8CB98 ();
+extern "C" void SceneManager_LoadScene_mFC850AC783E5EA05D6154976385DFECC251CDFB9 ();
 extern "C" void SceneManager_add_sceneLoaded_mB72463B21F0D89F168C58E994356298D0E38A4F7 ();
 extern "C" void SceneManager_add_sceneUnloaded_m14FAB322E1A8BC4981CFC9799D4CD68481377C8A ();
 extern "C" void SceneManager_remove_sceneLoaded_m894CC4AE20DC49FF43CF6B2A614877F50D707C92 ();
@@ -19977,12 +21105,16 @@ extern "C" void Texture2D_Apply_m0F3B4A4B1B89E44E2AF60ABDEFAA18D93735B5CA ();
 extern "C" void Texture2D_Apply_mCC17B1895AEB420CF75B1A50A62AB623C225A6C1 ();
 extern "C" void Texture2D_ApplyImpl_mEFE072AD63B1B7B317225DAEDDB1FF9012DB398B ();
 extern "C" void Texture2D_GetPixelBilinearImpl_Injected_m120BD9810D176C39E874FFDAF53AD3AC3B6ADF85 ();
+extern "C" void Texture2D_GetPixelImpl_Injected_mA54A70585DC14F8F87449E931121507ADABA2CE6 ();
 extern "C" void Texture2D_Internal_Create_m8CD51387F8BEF8ACCBC2BACA532EE7C6DC7F0E10 ();
 extern "C" void Texture2D_ReadPixels_m1ED1C11E41D0ACC8CFCABBD25946CF0BD16D4F61 ();
 extern "C" void Texture2D_ReadPixels_m5664E184458C64BA89450F80F47705A2241E9BFE ();
 extern "C" void Texture2D_ReadPixelsImpl_m8D38B7E5F239AD6A9BE8B7732A9CB5ABF35CD0EA ();
 extern "C" void Texture2D_ReadPixelsImpl_Injected_m8D0C78900FF4C61ED9D6DAF548C3F397FB55D91D ();
 extern "C" void Texture2D_SetBlockOfPixels32_m884C7DFC283BD8B383B7FF611453DBD93215C4C4 ();
+extern "C" void Texture2D_SetPixel_m8BE87C152447B812D06CB894B3570269CC2DE7C3 ();
+extern "C" void Texture2D_SetPixelImpl_m62B6A2252516D1D5E09701BA550D72ACB79E328B ();
+extern "C" void Texture2D_SetPixelImpl_Injected_m21934648C4DE2227463F16A67EFA3DC740682ACC ();
 extern "C" void Texture2D_SetPixels_mC768DC908606FE162BF77A8761AD3ED7BAC1612C ();
 extern "C" void Texture2D_SetPixels_mDE50229135F49F323D265340C415D680CCB2FB92 ();
 extern "C" void Texture2D_SetPixels32_m515E77577D02B697645BD64D6E6AF32646B7975B ();
@@ -20040,9 +21172,12 @@ extern "C" void Enumerator__ctor_mBF5A46090D26A1DD98484C00389566FD8CB80770 ();
 extern "C" void Enumerator_Reset_mA4AD59858E0D61FE247C0E158737A4C02FCE244F ();
 extern "C" void Transform__ctor_mE8E10A06C8922623BAC6053550D19B2E297C2F35 ();
 extern "C" void Transform_DetachChildren_m33C6052FA253DC8781DAD266726587B8DCB61A23 ();
+extern "C" void Transform_Internal_LookAt_m8F9A42F74C8301EBC1C8043AC698A5B0222C16B6 ();
+extern "C" void Transform_Internal_LookAt_Injected_mCB3D865EE4A17FDC687DFD750CCD3FFA234550D0 ();
 extern "C" void Transform_InverseTransformDirection_Injected_m768BC758740126C5C209B446DA13EA93E5D91707 ();
 extern "C" void Transform_InverseTransformPoint_Injected_m320ED08EABA9713FDF7BDAD425630D567D39AB1D ();
 extern "C" void Transform_InverseTransformVector_Injected_m46E516E79ADE4695CCEFD2D91125C6F1F95C5767 ();
+extern "C" void Transform_LookAt_m3EC94482B2585FE03AEEDF90325A1F0B9A84960E ();
 extern "C" void Transform_Rotate_mEEA80F3DA5A4C93611D7165DF54763E578477EF9 ();
 extern "C" void Transform_Rotate_m610B6793DCC2F987290D328942E649B5B7DE0F9A ();
 extern "C" void Transform_Rotate_m3424566A0D19A1487AE3A82B08C47F2A2D2A26CB ();
@@ -20071,6 +21206,7 @@ extern "C" void Transform_get_worldToLocalMatrix_Injected_mFEC701DE6F97A22DF1718
 extern "C" void Transform_set_eulerAngles_m4B2B374C0B089A7ED0B522A3A4C56FA868992685 ();
 extern "C" void Transform_set_forward_m02858E8B3313B27174B19E9113F24EF25FBCEC7F ();
 extern "C" void Transform_set_hasChanged_mA2BDCABEEF63468A4CF354CB7ACFDCC8E910A3D9 ();
+extern "C" void Transform_set_localEulerAngles_mC5E92A989DD8B2E7B854F9D84B528A34AEAA1A17 ();
 extern "C" void Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728 ();
 extern "C" void Transform_set_localPosition_Injected_m8B4E45BAADCDD69683EB6424992FC9B9045927DE ();
 extern "C" void Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A ();
@@ -21243,6 +22379,10 @@ extern "C" void SimpleHapticsController_SendHapticFeedback_mB6E974E86EBA43E4133B
 extern "C" void SimpleHapticsController_SendHapticFeedbackForDuration_m5B8A856AB607D5DE85C91CB45805D70B3EC97971 ();
 extern "C" void SimpleHapticsController_StopFeedback_mDB85314008C21D02214C3FD682EB37C773830567 ();
 extern "C" void SimpleHapticsControllerFeedback_Finalize_mBAE16DFC0C41800DCEEC6EA40E62117A1E68EE28 ();
+extern "C" void AsyncActionCompletedHandler__ctor_m2C0D2BD025FC8CDC21086373277D42874552060D ();
+extern "C" void AsyncActionCompletedHandler_Invoke_m90ED997977A5C94AE5F5CB92A629FE2EDFA3D466 ();
+extern "C" void IAsyncAction_GetResults_m192BCF4CC6EE9E2E66722E3D2BFBBAEE124D7AD7 ();
+extern "C" void IAsyncAction_put_Completed_m0632776C609159F4E6D0D5F6DECCE64CC355B779 ();
 extern "C" void IAsyncInfo_Cancel_m71EA200C07A5E2B5A9BAE4BC2AB00EFF1D3AB5A8 ();
 extern "C" void IAsyncInfo_Close_m197A13662E7E9A888B0E3FFAFDBA15410AA850E7 ();
 extern "C" void IClosable_Close_m9A054CE065D4C97FAF595A8F92B3CB3463C5BCD6 ();
@@ -21301,7 +22441,9 @@ extern "C" void PerceptionTimestampHelper_Finalize_mC9DAD6F7124A5896BAB8CF4E84B7
 extern "C" void SpatialCoordinateSystem_Finalize_mE29CFDA8D33B2152B88A0F2841E55AD5DA773996 ();
 extern "C" void SpatialSurfaceObserver_Finalize_mE83A1FAE6C0110CAB5A1A76718BF6C4238AA4E8C ();
 extern "C" void FileIO_Finalize_mA051D2375BF6A19AF021B36DA1176C98BBF6F883 ();
+extern "C" void KnownFolders_Finalize_mC87485CFB0FDEF05B0ED2751DBC66E2E4DE52D4A ();
 extern "C" void StorageFile_Finalize_m5D4907DD76378B1B469DD96F398A2B3F16B7E9C4 ();
+extern "C" void StorageFolder_Finalize_m7CA25B3B42C216FA0EC858383E2D11739A183B9F ();
 extern "C" void DataReader__ctor_mA815BC225A32DC3C5E461B4187EF8F0DA357F98B ();
 extern "C" void DataReader_Close_mBBC1BF39F9E428BDCE279FF6599CE1792F225A5E ();
 extern "C" void DataReader_Dispose_m75B122AFEFAA7C360CFDAD5A35924DB6D0EE41A7 ();
@@ -21311,7 +22453,10 @@ extern "C" void DataReaderLoadOperation_Cancel_mF3165597DFEB58FAF8DFA5C1EE177DA3
 extern "C" void DataReaderLoadOperation_Close_mA18BBC13B38C7FE8039A7D51336B52FCDE9350FE ();
 extern "C" void DataReaderLoadOperation_Finalize_mDFF40F1879C8308A006226C12C83140C28A3DFA2 ();
 extern "C" void DataReaderLoadOperation_put_Completed_m5B9121C03BC6836A54D5BDE401B8D397D2E11E51 ();
+extern "C" void IBuffer_put_Length_m60458A1E0C478452AFD6A20A5B7090AEA469A8B0 ();
 extern "C" void IDataReader_ReadBytes_m2A817837CC3EF0E8C47136D41BDDBD831A44AEFC ();
+extern "C" void IRandomAccessStream_Seek_m591EC62FCE22806BA0B5A1EFDEA9E58DC63E6D1A ();
+extern "C" void Launcher_Finalize_m6C9ADD94B7E29E8001859D7F164554402A275AC1 ();
 extern "C" void MemoryManager_Finalize_m118D60A4217AA9572B93529E7B46F6AEEFD059A7 ();
 extern "C" void SpatialInteractionController_Finalize_m067220C2BF20B93548C714FC21E3C60AB04BF6FE ();
 extern "C" void SpatialInteractionManager_Finalize_mDEE46B05E2AAE45028F54C4CFCC07D9C3DF63BA7 ();
@@ -21456,9 +22601,12 @@ extern "C" void Animator_GetCurrentAnimatorStateInfo_mBE5ED0D60A6F5CD0EDD40AF149
 extern "C" void AssetBundleCreateRequest_get_assetBundle_mFBACEFA632A41C43D4394F6770059DDE0E35BA11 ();
 extern "C" void SceneManager_LoadSceneAsync_m231FF07C2F5CB3BDB0990CE2F216CE73B11B7CE4 ();
 extern "C" void SceneManager_LoadSceneAsync_m2B94FAAB8741654B243CFF73FE412965BD26E9F6 ();
+extern "C" void SceneManager_LoadSceneAsync_mBB8889B3326DF7DD64983AE44FF5D140670C29B9 ();
+extern "C" void SceneManager_LoadSceneAsync_m8B6EC55B2DE8C281A5D4B2CE88531D8573AF39EE ();
 extern "C" void SceneManager_LoadSceneAsyncNameIndexInternal_m542937B4FCCE8B1AAC326E1E1F9060ECEDCB6159 ();
 extern "C" void SceneManager_LoadSceneAsyncNameIndexInternal_Injected_mD19FD493D2C36D33EE8E8A997467DB05C10CE6D1 ();
 extern "C" void SceneManager_UnloadSceneAsync_m3A6DC57622DB9BDB6E63FAE55B17A13FBD12587B ();
+extern "C" void SceneManager_UnloadSceneAsync_m00B17FD2F3964590C302691300BE794D1BFCB5C9 ();
 extern "C" void SceneManager_UnloadSceneNameIndexInternal_m94AFA850CEEAC4E96E329D89FA01C0726EBE2517 ();
 extern "C" void DictationEventData_get_DictationAudioClip_mC59BD548AE4F257549EAC89F5D47288BB76E2488 ();
 extern "C" void AudioSource_get_clip_m773ECEF5566EA64C74E316D7EF1A63AA01604643 ();
@@ -21466,6 +22614,7 @@ extern "C" void Microphone_Start_mF756A7EBA3E62EF0D138A220482B725D16E96047 ();
 extern "C" void AudioListenerExtension_get_audioListener_mB8F0961BAA008B4FFCC59A4AA1E9A9E9B15274E9 ();
 extern "C" void AudioExtensionManager_AddSpatializerExtension_m7CB5E033FF869B212B56D9180B460764BECBA3F4 ();
 extern "C" void AudioListener_AddExtension_m4D1DD3D583145A51A71D1811C8F489C03AFF77C1 ();
+extern "C" void AudioFeedbackPlayer_SetupAudioSource_mCF42885C5DB56404DB4E4BD55193D0A79640412F ();
 extern "C" void AudioSourceExtension_get_audioSource_m917E04DA5D5A62ED47FCA12CC56C05495E7E1CE3 ();
 extern "C" void AudioExtensionManager_AddAmbisonicDecoderExtension_mB073B510A9DCA9A83B078F1A9910F391A1F2C659 ();
 extern "C" void AudioExtensionManager_AddSpatializerExtension_m308292561D9B4CAF4B66BD3905885267A78B2533 ();
@@ -21492,6 +22641,7 @@ extern "C" void Renderer_get_bounds_mB29E41E26DD95939C09F3EC67F5B2793A438BDB5 ()
 extern "C" void Sprite_get_bounds_mD440465B889CCD2D80D118F9174FD5EAB19AE874 ();
 extern "C" void ScrollRect_GetBounds_m1434EA6AC230851FBEEE36B1293EA41174124807 ();
 extern "C" void ScrollRect_InternalGetBounds_m7470ECE11BD59E50A86CFAB8BAD2A3D681936484 ();
+extern "C" void PanZoomBase_get_MyCollider_mA84C8C4C2A2804DEEC525480FBFC93CD9E6AA123 ();
 extern "C" void SpatialAwarenessPlanarObject_get_Collider_m9528312BF77CC67527FB25517227C9A804B4C964 ();
 extern "C" void BoundingBox_get_BoundsOverride_m0791E3264A571EDF4768D01368C1296079D1F6B3 ();
 extern "C" void BoundingBox_get_TargetBounds_m942893AF257C8846876F41FF094874E21C0BCC12 ();
@@ -21524,6 +22674,8 @@ extern "C" void RaycastHit2D_get_collider_m6A7EC53B2E179C2EFF4F29018A132B2979CBE
 extern "C" void Color32Extensions_ParseHexcode_m888B748410391AF82A4540619827FE5895029441 ();
 extern "C" void Color32Extensions_PremultiplyAlpha_m77718CC63DA56208FC21B49971119F398E3CC57D ();
 extern "C" void MixedRealityToolkitVisualProfiler_CalculateFrameColor_m014A800AC4F6AD4EF426D13AD5CF7255C9B5B0F1 ();
+extern "C" void TargetGroupIterator_get_HighlightColor_m81728492E01EE91AAA67586CBB763031A52BECD8 ();
+extern "C" void OnLookAtShowHoverFeedback_BlendColors_mB5B3830D14198FC34069B47BAA39EC59F684FED6 ();
 extern "C" void MixedRealityCameraProfile_get_BackgroundColorOpaqueDisplay_m5BC046DB871960BF763F6FC898C7E247A6BE4AC7 ();
 extern "C" void MixedRealityCameraProfile_get_BackgroundColorTransparentDisplay_m9B964BEDCCE76A615B204F093CD4FC608305CEF0 ();
 extern "C" void InterpolationUtilities_ExpDecay_mA7AF419E5593C352176B7E06CF946D5FD6FBBF0F ();
@@ -21542,13 +22694,16 @@ extern "C" void TMP_InputField_get_selectionColor_m3EB3B8AB2C2011FFE82890BE0EDC8
 extern "C" void TMP_Text_get_color_mDB0E771C63F8D54035885C69B8342DC4E1932CB1 ();
 extern "C" void CanvasRenderer_GetColor_m841EC074805A87FBD6D3EF7A17BEA2476AEBA31D ();
 extern "C" void Color32_op_Implicit_mA89CAD76E78975F51DF7374A67D18A5F6EF8DA61 ();
+extern "C" void Color_HSVToRGB_mAA0ABF40600699DC136E65487B0F2F8AAA87D223 ();
 extern "C" void Color_Lerp_mD37EF718F1BAC65A7416655F0BC902CE76559C46 ();
 extern "C" void Color_get_black_mEB3C91F45F8AA7E4842238DFCC578BB322723DAF ();
 extern "C" void Color_get_blue_m5449DCBB31EEB2324489989754C00123982EBABA ();
 extern "C" void Color_get_clear_m419239BDAEB3D3C4B4291BF2C6EF09A7D7D81360 ();
 extern "C" void Color_get_cyan_m4E9C84C7E1003311C2D4BDB281F2D11DF5F7FDE2 ();
+extern "C" void Color_get_gamma_m38A0BB5A9A0A7F860BEEB3BD9F69F72CFA926A79_AdjustorThunk ();
 extern "C" void Color_get_gray_m11EEED9092A8D949D3326611C7137334B746DF09 ();
 extern "C" void Color_get_green_mD53D8F980E92A0755759FBB2981E3DDEFCD084C0 ();
+extern "C" void Color_get_linear_mB10CD29D56ADE2C811AD74A605BA11F6656E9D1A_AdjustorThunk ();
 extern "C" void Color_get_magenta_m04E2DDB63AA6288C701A93E248643A06EBD2D7AD ();
 extern "C" void Color_get_red_m5562DD438931CF0D1FBBBB29BF7F8B752AF38957 ();
 extern "C" void Color_get_white_mE7F3AC4FF0D6F35E48049C73116A222CBE96D905 ();
@@ -21558,12 +22713,18 @@ extern "C" void Color_op_Multiply_mF36917AD6235221537542FD079817CAB06CB1934 ();
 extern "C" void Color_op_Multiply_mA6BEAF09F1E0468B0557CEDFF1D228248F7D02B5 ();
 extern "C" void Gradient_Evaluate_m3FAAAA60E7357B84BE2141AFA0207299AFBDBCDB ();
 extern "C" void Material_GetColor_m1FFF5ECB4967771D751C60205635A0D3F7AA2F0E ();
+extern "C" void Material_GetColor_m95E13C52410F7CE01E8DC32668ABBCBF19BB8808 ();
 extern "C" void Material_GetColorImpl_m46381ED49C354AEB9FEFCE5BF410A1909E867E76 ();
+extern "C" void Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9 ();
 extern "C" void MaterialPropertyBlock_GetColor_mCEC0A80835E58EB772A7A1A9C25CC2DC36663804 ();
 extern "C" void MaterialPropertyBlock_GetColorImpl_mB4EEB7B96104AE6BBC072760F08FF96BFB67C2C3 ();
+extern "C" void Random_ColorHSV_m614A49A15AC5B12109FC2289586D497E4DE612E5 ();
+extern "C" void Random_ColorHSV_m38BA3293D1E3BE8BF77D790EF99B79B44A950F3F ();
 extern "C" void TextMesh_get_color_mA250B3D12AF6830CE95476B8939A84C26C0161E9 ();
+extern "C" void Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD ();
 extern "C" void Texture2D_GetPixelBilinear_m3E0E9A22A0989E99A7295BC6FE6999728F290A78 ();
 extern "C" void Texture2D_GetPixelBilinearImpl_m950AB40E4151F10B6AA6C5759903BA07348114FB ();
+extern "C" void Texture2D_GetPixelImpl_mFC45AE4B9B8B88E595CF6EE0FFF751682A70B76D ();
 extern "C" void Tile_get_color_m347AC0D960A944E3B67E55EA28C7421297CE78DC ();
 extern "C" void ColorBlock_get_disabledColor_m92AA8A3A936AA2F5BCB49A6ED24A7DA18D710856_AdjustorThunk ();
 extern "C" void ColorBlock_get_highlightedColor_mA4848B61041E78E7650300221F8A6EBBC801319B_AdjustorThunk ();
@@ -21587,6 +22748,7 @@ extern "C" void TMPro_ExtensionMethods_Tint_m3CE518D39299107D4D33B5E7671B935356D
 extern "C" void Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30 ();
 extern "C" void Mesh_get_colors32_m24C6C6BC1A40B7F09FF390F304A96728A4C99246 ();
 extern "C" void QualitySettings_get_activeColorSpace_m13DBB3B679AA5D5CEA05C2B4517A1FDE1B2CF9B0 ();
+extern "C" void OnLookAtShowHoverFeedback_GetColorsByProperty_mC85148D2638E2E164665499EC276F72D7FAC6739 ();
 extern "C" void MixedRealityPointerProfile_get_DebugDrawPointingRayColors_mB3501FB9EE13DABD03901321CFE11BA97E9E9205 ();
 extern "C" void GltfConversions_GetColorArray_m2BDB79D477EA68B3A781014FC30ED6561507EE48 ();
 extern "C" void Texture2D_GetPixels_mE87C4C2438D7DE39C50EC1C91E438BB15026BBE3 ();
@@ -21612,6 +22774,7 @@ extern "C" void MonoBehaviour_StartCoroutineManaged_m53873D1C040DB245BF13B74D278
 extern "C" void MonoBehaviour_StartCoroutineManaged2_m114327BBBA9F208E8BA2F8BBF71FA0E8E996F7B8 ();
 extern "C" void MonoBehaviour_StartCoroutine_Auto_m5002506E1DE4625F7FEACC4D7F0ED8595E3B3AB5 ();
 extern "C" void Cursor_get_lockState_mE0C93F496E3AA120AD168ED30371C35ED79C9DF1 ();
+extern "C" void Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA ();
 extern "C" void Event_get_current_m072CEE599D11B8A9A916697E57C0F561188CDB2B ();
 extern "C" void Event_get_modifiers_m4D1BDE843A9379F50C3F32CB78CCDAD84B779108 ();
 extern "C" void BaseInputModule_GetAxisEventData_m7C98B82EDBDE4A002728A5EAB569B23F9EE6C6E1 ();
@@ -21765,6 +22928,9 @@ extern "C" void MixedRealityBoundarySystem_GetPlayAreaVisualization_m4E2A18BBDC9
 extern "C" void MixedRealityBoundarySystem_GetTrackedAreaVisualization_m03C0C95853FCB30947569228AA231595BC03976E ();
 extern "C" void MixedRealityBoundarySystem_get_BoundaryVisualizationParent_m51C87D5AA2826F89F227AA82C396F9387FF3B4C8 ();
 extern "C" void MixedRealityToolkitVisualProfiler_CreateQuad_mAF186023A8C485536CCEDB161FEF530A3CDD7C01 ();
+extern "C" void TargetGroupCreatorRadial_GetRandomTemplate_m3EA6D3821E0B698078C1805D67A4442EEF04B785 ();
+extern "C" void TargetGroupIterator_get_CurrentTarget_m5CFEA8700CEBA39683DECDE1731945B525BC9CB5 ();
+extern "C" void TargetGroupIterator_get_PreviousTarget_mAA9EE3A6422899855117DC5AF07C622DB99EDA48 ();
 extern "C" void AnchorAttachmentInfo_get_AnchoredGameObject_m4DA4875B913BC86A0324CFF273B81F235C31E0B8_AdjustorThunk ();
 extern "C" void BaseCursor_get_GameObjectReference_mB01C019654C16FF5DA00BA5EBA6BDD191DEAFAF9 ();
 extern "C" void BaseHandVisualizer_get_GameObjectProxy_mE3C7459995923B82DF722FFBB7C48FC12EACA5B0 ();
@@ -21864,6 +23030,7 @@ extern "C" void DefaultControls_CreateUIObject_m0F2CA6745763967BA2788D8273B1405D
 extern "C" void Dropdown_CreateBlocker_m1BF89A448798AC093C01F31284A5C367DDC8FE8D ();
 extern "C" void Dropdown_CreateDropdownList_m490E200C8C4FEBB23F4BEDFA3FA378323934A049 ();
 extern "C" void MaskableGraphic_UnityEngine_UI_IClippable_get_gameObject_m0A5507EBFF6EED36B77BF85C198D61EB3537334B ();
+extern "C" void TargetGroupCreatorRadial_get_InstantiatedObjects_m4980FD31641B861744A101E47D0BB0A56026C9D5 ();
 extern "C" void Scene_GetRootGameObjects_mC87878438643AF527A7C017B2EC2D133E96A1FC1_AdjustorThunk ();
 extern "C" void TeleportPointer_GetLineGradient_mC41979C58862E843AE28F37FE463D65F8063F39B ();
 extern "C" void BaseMixedRealityLineRenderer_get_LineColor_mEDF7A03305793307A95B06BAD1EF2F6E43FB8790 ();
@@ -21980,7 +23147,9 @@ extern "C" void TextMeshPro_GetMaterials_m02B85E8BBF5811F60A2F6C671E158FC58470A3
 extern "C" void TextMeshPro_GetSharedMaterials_m09323E9D43C67F0A33A7942BE53B0E106D823208 ();
 extern "C" void TextMeshProUGUI_GetMaterials_mCB0EE55A20C663A2EEB60ADB3DA15DF968CB1697 ();
 extern "C" void TextMeshProUGUI_GetSharedMaterials_m6EA59DACE8917537122F9AD52BF2761D3D639A1F ();
+extern "C" void Renderer_GetMaterialArray_m867EBF025087D60E2A31D81ED7B36440ADA27B5A ();
 extern "C" void Renderer_GetSharedMaterialArray_mED935F855F35F45113F22719675FF8DFA9F8DFF4 ();
+extern "C" void Renderer_get_materials_m5A8C7D4A4D87E69A1C03E72B43C6902762312760 ();
 extern "C" void Renderer_get_sharedMaterials_mC2516E425885EE7E7B70AC7261183B242883FDF0 ();
 extern "C" void GltfNode_get_Matrix_mCE43EC3A7ABE56C1E373B5770581AC3BD336F718 ();
 extern "C" void GltfConversions_GetMatrix4X4Value_m525F2329FAB7B54233E28FF42B5CF95B56FF9CBF ();
@@ -22053,8 +23222,11 @@ extern "C" void Object_FindObjectFromInstanceID_m7594ED98F525AAE38FEC80052729ECA
 extern "C" void Object_FindObjectOfType_mCDF38E1667CF4502F60C59709D70B60EF7E408DA ();
 extern "C" void Object_Instantiate_m17AA3123A55239124BC54A907AEEE509034F0830 ();
 extern "C" void Object_Instantiate_m674B3934708548332899CE953CA56BB696C1C887 ();
+extern "C" void Object_Instantiate_mAF9C2662167396DEE640598515B60BE41B9D5082 ();
 extern "C" void Object_Internal_CloneSingle_m4231A0B9138AC40B76655B772F687CC7E6160C06 ();
 extern "C" void Object_Internal_CloneSingleWithParent_m32F1D681010B51B98CDBC82E3510FC260D2D1E17 ();
+extern "C" void Object_Internal_InstantiateSingle_mCC3EB0F918934D233D43DFDB457605C4B248738D ();
+extern "C" void Object_Internal_InstantiateSingle_Injected_m04E25C97D5848B7AA54178A5448744A0DEB1B62E ();
 extern "C" void ResourceRequest_get_asset_m22E63CEED8581B913F8424D2100A47A335032A75 ();
 extern "C" void Resources_GetBuiltinResource_m73DDAC485E1E06C925628AA7285AC63D0797BD0A ();
 extern "C" void Resources_Load_mF0FA033BF566CDDA6A0E69BB97283B44C40726E7 ();
@@ -22250,6 +23422,7 @@ extern "C" void RenderTexture_GetDescriptor_mBDAE7C44038663205A31293B7C4C5AE763C
 extern "C" void RenderTexture_get_descriptor_m67E7BCFA6A50634F6E3863E2F5BA1D4923E4DD00 ();
 extern "C" void GraphicsFormatUtility_GetRenderTextureFormat_m4A8B97E7A7BD031B38EE1C5DA0C93B0F65016468 ();
 extern "C" void MixedRealityToolkitVisualProfiler_InitializeRenderer_m1C2099ADD8FD8E08BDC38A34106B6C63E0181922 ();
+extern "C" void DrawOnTexture_get_MyRenderer_m0CB33A91ECBF2248AEAFF02D6787A48F0FB0FB86 ();
 extern "C" void TMP_SubMesh_get_renderer_m41AAA8AA7765A2B0A722B0C7BE4D0CFB456B50BE ();
 extern "C" void TextMeshPro_get_renderer_mF8CD651E1D88C0C5E8A08C0930835B2DF7EE59F7 ();
 extern "C" void Mesh_GetUVChannel_m15BB0A6CC8E32867621A78627CD5FF2CAEA163CC ();
@@ -22261,6 +23434,7 @@ extern "C" void MixedRealitySceneSystem_GetScene_mD3F6B19D2524E8404AD46BC11B56D2
 extern "C" void SceneManager_GetSceneAt_m2D4105040A31A5A42E79A4E617028E84FC357C8A ();
 extern "C" void SceneManager_GetSceneByBuildIndex_mEC753530087666DAA2C248E143C1BE948251805B ();
 extern "C" void SceneManager_GetSceneByName_m99A07E2CCD62F07E67967BDCF16AA6BA97BC20A6 ();
+extern "C" void SceneManager_LoadScene_m4641E278E1E9A1690A46900F1787B6F1070188CF ();
 extern "C" void ScriptableObject_CreateInstance_mDC77B7257A5E276CB272D3475B9B473B23A7128D ();
 extern "C" void ScriptableObject_CreateScriptableObjectInstanceFromType_mD6C4C28F14371B87C376B4AD30F95FC24963E696 ();
 extern "C" void ThemeStateProperty_get_TargetShader_m8A02D2F1194101D870A6A2C3E8569E6C38A120CF ();
@@ -22312,6 +23486,7 @@ extern "C" void InputField_get_cachedInputTextGenerator_m5A9C4630C95E6F1E4F97872
 extern "C" void Text_get_cachedTextGenerator_m8BB75D38962D0D11C0095A1D20FDBDE8465362C6 ();
 extern "C" void Text_get_cachedTextGeneratorForLayout_m636D4317F3A3E0E62C9A9F1B5CD1D00E1ED6F277 ();
 extern "C" void MixedRealityToolkitVisualProfiler_CreateText_m6B81A217F4ACF6A008ECEED5E84305B447572C0C ();
+extern "C" void SpeechVisualFeedback_get_MyTextMesh_m7DD0FC961A310232B458BC6EC7AB94ADD3686920 ();
 extern "C" void WorldAnchorManager_get_AnchorDebugText_m61099599EF1148D0E2B255992382DA90881E5F48 ();
 extern "C" void TMP_SubMeshUI_get_mainTexture_m75EBC20D6DF2EB308E2CF25DA453696AF9EDA2D8 ();
 extern "C" void Material_GetTexture_mDB1B89D76D44AD07BD214224C59A6FE0B62F6477 ();
@@ -22325,6 +23500,7 @@ extern "C" void Image_get_mainTexture_m85D29E76ADD44FFDC999A2470C89BC6101F2F0BF 
 extern "C" void RawImage_get_mainTexture_m74EDB2F5CF7A15C414AB4C1B5ADC8CF7A637EA06 ();
 extern "C" void RawImage_get_texture_mA902F1297E6D0EB804AB7F8FF211C377A69C61AD ();
 extern "C" void Text_get_mainTexture_m41C2BF53D45482A684903DBBE46EA4AC2AEBF3DA ();
+extern "C" void DrawOnTexture_get_MyDrawTexture_mAA6E46F1E132919E0096D7ED6DE98140AD83784B ();
 extern "C" void Texture2DExtensions_CaptureScreenRegion_m2C941D07640E561F1A39D21B8F98DE6B20122381 ();
 extern "C" void Texture2DExtensions_CreateTextureFromRegion_mFF99396DE99FEEE7FBA9457AD25F96D8A180E78E ();
 extern "C" void GltfImage_get_Texture_mFE0F371DD978898760232E3E714ABE79A7904E2D ();
@@ -22501,6 +23677,8 @@ extern "C" void CameraExtensions_GetFrustumSizeForDistance_m8946FC86ABC07A6B97F8
 extern "C" void MixedRealityDiagnosticsProfile_get_WindowOffset_mC85665064D7E9942EC1732ACD81C1DA554C0269F ();
 extern "C" void MixedRealityDiagnosticsSystem_get_WindowOffset_m99FDAD863D33077DEE9292B8883C13514FA77171 ();
 extern "C" void MixedRealityToolkitVisualProfiler_get_WindowOffset_m7A936489D500F6A783300EE90FDB7A0D5E0C121A ();
+extern "C" void PanZoomBase_LimitScaling_m3584B04144A5A2ED6937FC462A5F06F7A5EB39E5 ();
+extern "C" void PanZoomBaseRectTransf_LimitPanning_mFA448363DDD5994F507E3456D2B41C7AF2A6E6B0 ();
 extern "C" void InputActionRuleDualAxis_get_Criteria_mAE6C1536DEF07B50CAFA3754AF791D6661E5E162_AdjustorThunk ();
 extern "C" void MixedRealityInteractionMapping_get_Vector2Data_m5C4FDA726DEC05433E3A243AFF5DFD5422FAA650 ();
 extern "C" void NearInteractionTouchable_get_Bounds_m859FB9EF46A9A5664B42463522AC1F3210B287FB ();
@@ -22585,6 +23763,7 @@ extern "C" void GridLayoutGroup_get_cellSize_m22377B45E6D5C0E3AB1F5FF2172C65FACD
 extern "C" void GridLayoutGroup_get_spacing_mA516C72E49DEB5EA0F51F449A328708D78475EB1 ();
 extern "C" void Image_MapCoordinate_mC78B5EDECC97AEE156F0C9ED849235B280381AD7 ();
 extern "C" void InputField_ScreenToLocal_m368862E1697D0D76427AFA8AC96041F962236D9A ();
+extern "C" void MultipleDisplayUtilities_GetMousePositionRelativeToMainDisplayResolution_m057D147B428AAE94DF8A1A67888088F1A3490583 ();
 extern "C" void ScrollRect_CalculateOffset_m57DAE6F9CA6987679656A58C55EACCB991A1B127 ();
 extern "C" void ScrollRect_InternalCalculateOffset_m717A54F1FA344998DFC23B2F82DAA06868DB115D ();
 extern "C" void ScrollRect_get_normalizedPosition_m6250B0B395AED2E2ED6E9AE6658C597E430FAB50 ();
@@ -22593,6 +23772,7 @@ extern "C" void Shadow_get_effectDistance_m803B4F3FACAEBFACCE4FA17606DA6C44A0C53
 extern "C" void Text_GetTextAnchorPivot_m5888428084EA7FF9051BA852BE52922970A48424 ();
 extern "C" void Vector2_Lerp_m85DD66409D128B4F175627F89FA9D8751B75589F ();
 extern "C" void Vector2_Scale_m7AA97B65C683CB3B0BCBC61270A7F1A6350355A2 ();
+extern "C" void Vector2_get_normalized_m058E75C38C6FC66E178D7C8EF1B6298DE8F0E14B_AdjustorThunk ();
 extern "C" void Vector2_get_one_m6E01BE09CEA40781CB12CCB6AF33BBDA0F60CEED ();
 extern "C" void Vector2_get_right_mB4BD67462D579461853F297C0DE85D81E07E911E ();
 extern "C" void Vector2_get_up_mC4548731D5E7C71164D18C390A1AC32501DAE441 ();
@@ -22616,6 +23796,13 @@ extern "C" void Sprite_get_uv_mBD484CDCD2DF54AAE452ADBA927806193CB0FE84 ();
 extern "C" void Sprite_get_vertices_mD858385A07239A56691D1559728B1B5765C32722 ();
 extern "C" void BoundsExtensions_GetInvalidBoundsSize_mCF2516323BBBE83DD96518D492833184069984A7 ();
 extern "C" void MixedRealityToolkitVisualProfiler_CalculateWindowPosition_m5B8990C40F43E1AAD60E6FB57C8E1C56A0030B05 ();
+extern "C" void DwellSelection_ClampVector3_m046274ACFF7AEA3F7AB9600A9ABB84A3BCF8D350 ();
+extern "C" void DwellSelection_get_SpeedSizeChangePerSecond_mBA6CF3E460259338B5B4BE389F092CD9726D5BCF ();
+extern "C" void EyeTrackingDemoUtils_VisAngleInDegreesToMeters_mAC247B958CB9C298989267D3CBB0C0DBA35B076B ();
+extern "C" void UserInputPlayback_TryParseStringToVector3_mE7629BD0E7A06917B5A31F4769BBBFCECFBC448E ();
+extern "C" void MoveObjByEyeGaze_GetValidPlacemLocation_mD7E0F9E0A992CDFA526F956B50BEA388DC18A0E2 ();
+extern "C" void MoveObjByEyeGaze_get_constrMoveCtrl_mD2CC52EAE9C492188EB0CFB4D712C044351318A1 ();
+extern "C" void PanZoomBase_get_CustomColliderSizeOnLookAt_m18411B5D0D761DC0336BF0D0B1FA9B3924D3C371 ();
 extern "C" void StabilizationPlaneModifier_ConfigureOverridePlaneHelper_m96A23E05608F5D80AB354E4754E2FE94F2C5D196 ();
 extern "C" void StabilizationPlaneModifier_UpdateVelocity_m60925E201F3378E937ED9999887DC7BA53BCE579 ();
 extern "C" void StabilizationPlaneModifier_get_GazeNormal_m7808FCF252354939CD6DEBE93D721894F1526E43 ();
@@ -22903,6 +24090,7 @@ extern "C" void Quaternion_Internal_MakePositive_mC458BD7036703798B11C6C46675814
 extern "C" void Quaternion_Internal_ToEulerRad_m5F7B68953CC22DCE9EC246396B02F0ADC0B1C470 ();
 extern "C" void Quaternion_get_eulerAngles_mF8ABA8EB77CD682017E92F0F457374E54BC943F9_AdjustorThunk ();
 extern "C" void Quaternion_op_Multiply_mD5999DE317D808808B72E58E7A978C4C0995879C ();
+extern "C" void Random_get_insideUnitSphere_m10033DFB85B1A21CE44201CB0E421F27B77A868F ();
 extern "C" void Ray_GetPoint_mE8830D3BA68A184AD70514428B75F5664105ED08_AdjustorThunk ();
 extern "C" void Ray_get_direction_m9E6468CD87844B437FC4B93491E63D388322F76E_AdjustorThunk ();
 extern "C" void Ray_get_origin_m3773CA7B1E2F26F6F1447652B485D86C0BEC5187_AdjustorThunk ();
@@ -22920,6 +24108,7 @@ extern "C" void Transform_TransformPoint_mA96DC2A20EE7F4F915F7509863A18D99F5DD76
 extern "C" void Transform_TransformVector_m75D0F9F62127C642869F5F0C865540FEE5BB3168 ();
 extern "C" void Transform_get_eulerAngles_mF2D798FA8B18F7A1A0C4A2198329ADBAF07E37CA ();
 extern "C" void Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F ();
+extern "C" void Transform_get_localEulerAngles_m445AD7F6706B0BDABA8A875C899EB1E1DF1A2A2B ();
 extern "C" void Transform_get_localPosition_m812D43318E05BDCB78310EB7308785A13D85EFD8 ();
 extern "C" void Transform_get_localScale_mD8F631021C2D62B7C341B1A17FA75491F64E13DA ();
 extern "C" void Transform_get_lossyScale_m9C2597B28BE066FC061B7D7508750E5D5EA9850F ();
@@ -23054,15 +24243,38 @@ extern "C" void MeasureFunction_Invoke_mCC3963DDDE51AF75E4795CF0E981093A55CB2D8B
 extern "C" void YogaNode_MeasureInternal_mD8D5E33930941196D36E4689267D168E4F4EC39D ();
 extern "C" void ResourceLoader_GetForViewIndependentUse_m3B47FB65B1ED8348C6B7BAA0059004AFEE2E40BD ();
 extern "C" void SpatialInteractionController_get_SimpleHapticsController_m7E14A54A35577E0EA8E4F961E86C43EB82D57B9D ();
+extern "C" void IAsyncAction_get_Completed_mEF447B408CEF9BD7882E596CF87C4355CC17E71B ();
 extern "C" void DataReaderLoadOperation_get_Completed_mC14F994FB4A5DA7FBFA416C58778F62901D4ED31 ();
 extern "C" void IAsyncInfo_get_Status_m3D1D43B45DDBE38620B5178B88307B0759171F7A ();
 extern "C" void DataReaderLoadOperation_get_Status_mE47D478CCBE6743E89AD0967154B86485DDCA24E ();
 extern "C" void WwwFormUrlDecoder_First_m8D0D362AE3137612020821CBCF8C498CB51EFC79 ();
+extern "C" void FileIO_AppendTextAsync_m5BCC79A14E6ADD76772F6E2BE28D1BD31CC51EB5 ();
+extern "C" void NetFxToWinRtStreamAdapter_WriteAsync_mBA9F702910E1F7290AC20A43982C7EFA5A84C4F8 ();
+extern "C" void StreamOperationsImplementation_WriteAsync_AbstractStream_m21017F427664FD8D13B2408E5338ED0FFD7F253C ();
+extern "C" void IOutputStream_WriteAsync_mBE75066C704E76E8AC90135CE779B83A3DD71921 ();
+extern "C" void NetFxToWinRtStreamAdapter_ReadAsync_m0BCE9E83CEA36191BAA72C43F84A1AF6AAC60AA7 ();
+extern "C" void StreamOperationsImplementation_ReadAsync_AbstractStream_m778BD91CC4C43AEBE54B44DE842503DE52948317 ();
+extern "C" void StreamOperationsImplementation_ReadAsync_MemoryStream_mD332B977EA293A31B70F8475EAA0D270BB8FE0AB ();
+extern "C" void IInputStream_ReadAsync_mCCC52942D8DECE2C743C51DD683483531F495C88 ();
+extern "C" void NetFxToWinRtStreamAdapter_FlushAsync_m9452B6EE043F031DEE0206AA3BC6AAE7EFBEC522 ();
+extern "C" void StreamOperationsImplementation_FlushAsync_AbstractStream_m9FC5EE6670A05587FD927A09D8F8F8FF8194F557 ();
+extern "C" void IOutputStream_FlushAsync_mCD6E8AF55B37FFF946B184F22B390E2E652F9ADB ();
+extern "C" void Launcher_LaunchUriAsync_m895997EB22B4003E990AFFDA4704E7A4FB96D9F3 ();
 extern "C" void SpatialInteractionSource_TryCreateHandMeshObserverAsync_m579BCF683A9AF55D46D09730F4AD40670EFF1835 ();
+extern "C" void IStorageFolder_CreateFileAsync_mD20BADEBA391C026E479581424EFF60D5EE729FA ();
+extern "C" void IStorageFolder_GetFileAsync_m3B0FF62937AAE51707D544E9F9B5041EBB5ABE7D ();
 extern "C" void StorageFile_GetFileFromPathAsync_m9F81FC387822425FEA45811BA3ABB6E04DC45937 ();
+extern "C" void StorageFolder_CreateFileAsync_m03F8C43977E395A4EE54118649C11520B553A4DE ();
+extern "C" void StorageFolder_GetFileAsync_mD8C3D41300E9A1EA81D518285472B6C3375F40B4 ();
+extern "C" void IStorageFolder_CreateFolderAsync_m506538F2866DDF4CDA48BFC1EA034B56C0945F0D ();
+extern "C" void IStorageFolder_GetFolderAsync_mD37B62674AFC57B8B229BCE38C0CE6FD2F4975DF ();
+extern "C" void StorageFolder_CreateFolderAsync_m51031ACA6F47AC2885FD6405BFD267301890AA35 ();
+extern "C" void StorageFolder_GetFolderAsync_mB3A1D9D51C38114DE488D0642EFA267A7C584959 ();
 extern "C" void FileIO_ReadBufferAsync_mF4FFAFC3AF09C53DAE527D9A7C89D683DDEA4531 ();
 extern "C" void InteractionSourceExtensions_TryGetRenderableModelAsync_mC9AD1DDBF240B54DEB62BFD459C349D01ED07299 ();
 extern "C" void WindowsMixedRealityController_TryGetRenderableModelAsync_m6D3B112A47688939F5E50F1B6EA6E9DD515FF58D ();
+extern "C" void StorageFile_OpenReadAsync_m387A1257B972674675539257DF1AEE173AB1642E ();
+extern "C" void IRandomAccessStreamReference_OpenReadAsync_m41E9FEBEB9E9454B1C7FD349F974581B93FB53C3 ();
 extern "C" void SpatialInteractionController_TryGetRenderableModelAsync_mC211C0D21A15F56F91E8A2B63F7618B19FF0869F ();
 extern "C" void EyesPose_RequestAccessAsync_m5BA0E88C19898B68264E3CD09614FAEC4C914B0B ();
 extern "C" void WwwFormUrlDecoder_GetAt_m43ED945C60EA065ECDC8649F80A96D777C5C302A ();
@@ -23080,9 +24292,14 @@ extern "C" void EyesPose_get_UpdateTimestamp_m4862FFCB98CF48418A17480C41DB5EBD43
 extern "C" void PerceptionTimestampHelper_FromHistoricalTargetTime_m3887862422EFE0EB81A026771F85278980FB2943 ();
 extern "C" void WindowsMixedRealityUtilities_get_SpatialCoordinateSystem_mA2D4560B7EC78C6E69C06017E0827591606BC28C ();
 extern "C" void HandMeshVertexState_get_CoordinateSystem_mD4B2BFFD6A3E44494044A9DCF231F1075556A42E ();
+extern "C" void KnownFolders_get_MusicLibrary_m340C733773BC804A47FC8AF73032F5FC201E0398 ();
 extern "C" void DataReader_FromBuffer_m7534BFED3BE632F61AB605A1CB8E15FF50068386 ();
 extern "C" void DataReader_LoadAsync_m79F9DC31F4227ED504BDBE0C52EB94FE30D51F9A ();
 extern "C" void IDataReader_LoadAsync_m624CE64319C1FF6F17D1526083E91F4E91187CE7 ();
+extern "C" void WindowsRuntimeBuffer_Create_mE44C1ABEE68D89B3BBF4899C90EB6FBC8FE5101F ();
+extern "C" void WindowsRuntimeBufferExtensions_AsBuffer_m8A7ECFC4D04B98BD389D03A8478CBCC14427650F ();
+extern "C" void WindowsRuntimeBufferExtensions_AsBuffer_m44E577DC4024FAA0BB691593F68FBD5A972CE870 ();
+extern "C" void WindowsRuntimeBufferExtensions_GetWindowsRuntimeBuffer_m3F14338C22A85130806184FA004EA1E0868AC147 ();
 extern "C" void SpatialInteractionSource_get_Controller_m65FC82975089D5C94D79A686DC44B012B244E47A ();
 extern "C" void WindowsMixedRealityArticulatedHand_get_SpatialInteractionManager_mD60F76B7F314BE76520F6A3F520703FC744B428D ();
 extern "C" void SpatialInteractionManager_GetForCurrentView_m82E6D63B8FF621584770E431FCC715153D1BB53B ();
@@ -23091,7 +24308,7 @@ extern "C" void SpatialPointerPose_TryGetAtTimestamp_m86E035A372E4724987F5D57208
 extern "C" void InputPane_GetForCurrentView_mC70FE8BAFBC2F91A3166DD901A44DB0709538EC2 ();
 extern "C" void IBindableIterable_First_m35A822CD2DF5C55F51539416F98640C7123A6C63 ();
 extern "C" void IBindableVector_GetView_m4C2BFF3B150F6EB8019728B4C2C2AF5879A81B55 ();
-extern const Il2CppMethodPointer g_MethodPointers[23072] = 
+extern const Il2CppMethodPointer g_MethodPointers[24289] = 
 {
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m5C1A2CA6703F0D94CE54FF9003154837BB1CDF9A,
 	Locale_GetText_m41F0CB4E76BAAB1E97D9D92D109C846A8ECC1324,
@@ -23460,6 +24677,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Activator_CreateInstance_mD06EE47879F606317C6DA91FB63E678CABAC6A16,
 	Activator_CreateInstance_m7776DE4D344614DDBCECD20C93421CC7183C88D3,
 	AggregateException__ctor_mD4BA712D1E805F774D050A60BD64F3A8EE4CA7A5,
+	AggregateException__ctor_m33CF46160CEEAEE75538E81D4A8A8D4D734487C7,
 	AggregateException__ctor_m1740971CC345A49D8FCB7DDE6C905FB0F3353C28,
 	AggregateException__ctor_m4BE6D1A4009BE2081C418E517FFDFE415B6CF908,
 	AggregateException__ctor_mEB0710D0C50475FCE00B187AA5FA8098DC656E44,
@@ -25635,6 +26853,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	CultureData_get_SCOMPAREINFO_mBD9111735D607E7A3B82CC129C2E3A07AAE77DCC,
 	CultureData_get_STEXTINFO_mA57C294417ED2CE9B60426E9746CA9D245F52AC1,
 	CultureData_get_ILANGUAGE_mE96C7B05A5DD0A616412F354D86C96BDE6E0DEFB,
+	CultureData_get_SLIST_m345BF151D9E663B81B7CCC51BB1ACAC12E7A634A,
 	CultureData_get_UseUserOverride_mC7ADCEA4688643BCB92B584204CEF63B7038DA3E,
 	CultureData_EraNames_mD57BE9CB701B570B4FAD78BA657232E582C942E9,
 	CultureData_AbbrevEraNames_m669EC0BA2D40191F94ED3B9982CC203F544A927E,
@@ -26041,6 +27260,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	TextInfo_get_CultureName_m6BD801C9CDBD678210B65585CA4D815AB3357E66,
 	TextInfo_Clone_mE42F50B699E2B69651EF23CE08C1AA53D85AA322,
 	TextInfo_SetReadOnlyState_mAC959762A86242FA9594A3872EB4126401DF0AA7,
+	TextInfo_get_ListSeparator_mFE623ED08DA5DF282A3F58680C5369C5379341E0,
 	TextInfo_ToLower_m96C624F21D3C05E6E4D97D1394A9956A25F9C785,
 	TextInfo_ToLower_mD741B5FD81440DCA1119F7AF1FB86EBCE3B4EFD1,
 	TextInfo_ToLowerAsciiInvariant_mB317EE892DF6F0817554680FF958DDA3B6EFB113,
@@ -26173,6 +27393,58 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	BinaryWriter_Write_m7AC984B8EEEA3BCBDDA1DBFF2C3BCC7D80C4DDF2,
 	BinaryWriter_Write7BitEncodedInt_m8FA5CBD3BCB110DD58FC21FF6751D77D3BEF71A3,
 	BinaryWriter__cctor_mE949DEE23EBE64DE81CDF697EAD3FD60D206DC1A,
+	BufferedStream__ctor_mC5DA0BE7CFE2F9D41AAE238C4B64FD9A9C7765F8,
+	BufferedStream_EnsureNotClosed_m04FC54AFE345EDF2C5B26FBAD5C67A8DD9A6191D,
+	BufferedStream_EnsureCanSeek_mB0E848EDE4AF6AE2AFF2B6A169D75050A1C0EEFC,
+	BufferedStream_EnsureCanRead_mB45EF0D8B76D06ACE2572890EBF5F3355F8C1A3D,
+	BufferedStream_EnsureCanWrite_m1A9217E4531D2B2C16D9486E803ED225A72A74D7,
+	BufferedStream_EnsureBeginEndAwaitableAllocated_mF2E758BDEECE01DF0F28C893C6D0C203E038CDF9,
+	BufferedStream_EnsureShadowBufferAllocated_m183B5DBCE62AA3E0FE1C79220FA75BBFA2ED6D78,
+	BufferedStream_EnsureBufferAllocated_m7C4D653681413B4AAC746F81801657D26C49F12E,
+	BufferedStream_get_UnderlyingStream_m152A6783AC56FA30D6DECC193F889E46E09D7A9B,
+	BufferedStream_get_BufferSize_m3064CD5FB9E0AB2D13499B5EBE9AB314139036ED,
+	BufferedStream_get_CanRead_m1BB1D61518240AD7C8F4BF693A86256194C46CCE,
+	BufferedStream_get_CanWrite_m90827F79CFB66B26F547A16C8DC79EA9D7B9FDC0,
+	BufferedStream_get_CanSeek_mE87BCED0BB42D2E05E23C2F76120035B9EB10209,
+	BufferedStream_get_Length_m520378870B70F9831DD69DE46A4221BB6171DC12,
+	BufferedStream_get_Position_m3690864220EF17872D065619928068AB1BD12F46,
+	BufferedStream_set_Position_mDE129ACB9662EFEEA02DD5091E5A7862B33C4CC3,
+	BufferedStream_Dispose_m7F1A4A5823EA5B0FFF2B8B5E1B073A8B9CF67DC9,
+	BufferedStream_Flush_m449DA25BC29EF921BCEF6DF1756BE60F92B700D0,
+	BufferedStream_FlushAsync_m10C1F24D8E7C02D3D283FADAE4E4F748AA4CE22D,
+	BufferedStream_FlushAsyncInternal_m28E1530A5FE47A2EDADB0581E6E853BEA7C7C74A,
+	BufferedStream_FlushRead_mF6EE37309428AB09AFC195A701B9CA7EFE5C2D66,
+	BufferedStream_ClearReadBufferBeforeWrite_mDE6C8837B412497C1FFCEEDF94B5619E6E51A3DF,
+	BufferedStream_FlushWrite_m32E38BC69BD7A89FC6D63A9562F954E5CA55F03F,
+	BufferedStream_FlushWriteAsync_m94BDBD0CE24E0644A75A86C9B9784EF4E6A64517,
+	BufferedStream_ReadFromBuffer_m3EA2A4828EF094CC73754FE8258FBB504C57180D,
+	BufferedStream_ReadFromBuffer_mECA76BAB383F92AAAC5A0BC821CB40128AC37DBD,
+	BufferedStream_Read_mC630A2010AA2961CC0A2567729CE96A22430CA2A,
+	BufferedStream_BeginRead_mB5F1D02C87008BA163AE21EC6D9C405694547403,
+	BufferedStream_BeginReadFromUnderlyingStream_m8FA6314BA9F2649C1CB6F99802115564EE52281D,
+	BufferedStream_EndRead_mDB3EF921F88BCC4445C847A59521AFEB0509F8F2,
+	BufferedStream_LastSyncCompletedReadTask_m75665FDB5DFF477D7DE96DAE9D042A787D8F0451,
+	BufferedStream_ReadAsync_m07B574E8FAE336DB32723A79AF39153932A52BC8,
+	BufferedStream_ReadFromUnderlyingStreamAsync_m03A5928CDAE20BBA89F4193F375323F2A2120944,
+	BufferedStream_ReadByte_m865881101953B325BC28277AFA7C940C8371CEE7,
+	BufferedStream_WriteToBuffer_mF90EB37A6BD10547A9CECBBB633735A5782F1509,
+	BufferedStream_WriteToBuffer_mB7EA238D80DFE9688A9AFBD53DFBE194F21025A4,
+	BufferedStream_Write_mD56868EDF402FFA1949F46516062A447009A4456,
+	BufferedStream_BeginWrite_m409F8F34D2C5BE8C11013F17D5995969ED8209A2,
+	BufferedStream_BeginWriteToUnderlyingStream_mBCFD21A7BAD1DDE2D8D72073AE991F094F918266,
+	BufferedStream_EndWrite_mE4F91556BF173C195B4493213E70BE0343A34918,
+	BufferedStream_WriteAsync_m3CE0EF273E739281DE801393466C5633931FAFC5,
+	BufferedStream_WriteToUnderlyingStreamAsync_m78A3939966CC5B989E2E2856181FC59B3FFEEEAC,
+	BufferedStream_WriteByte_m8630306B7C0946B4424E8FE679C5EFC742B4E986,
+	BufferedStream_Seek_mAF594DDA2115D2F9C308357B02CE24355886D0FE,
+	U3CFlushAsyncInternalU3Ed__38_MoveNext_m63CB3B8EEA651CDB95D26ABE47BC4008B81ED692_AdjustorThunk,
+	U3CFlushAsyncInternalU3Ed__38_SetStateMachine_m39783E17AF87AA815A3A8AF75AF04AE623194174_AdjustorThunk,
+	U3CFlushWriteAsyncU3Ed__42_MoveNext_mFCC69CCE9AFB4B61BE26207B454DCDF544A28E36_AdjustorThunk,
+	U3CFlushWriteAsyncU3Ed__42_SetStateMachine_mE9A8C4EECC4D0AAF437D4904C1EEEC4CAB6D14C4_AdjustorThunk,
+	U3CReadFromUnderlyingStreamAsyncU3Ed__51_MoveNext_m4A62A17862202F8A4914CF4E424D746CEBE42FEA_AdjustorThunk,
+	U3CReadFromUnderlyingStreamAsyncU3Ed__51_SetStateMachine_mFF58ED72E901572EC87E350DC7FC494204F4B290_AdjustorThunk,
+	U3CWriteToUnderlyingStreamAsyncU3Ed__60_MoveNext_mE8D58677D68177A3F7D5B043ED1178F21C698373_AdjustorThunk,
+	U3CWriteToUnderlyingStreamAsyncU3Ed__60_SetStateMachine_mC8FB2F4330585DBB8FBC6731A622EBA430212AA1_AdjustorThunk,
 	CStreamReader__ctor_m0522E27BADB6649A8E512728F900EFFA4DBD301A,
 	CStreamReader_Peek_m1FC540889F2D9687070978F20CD67EEFFD469C42,
 	CStreamReader_Read_mD5B83DAB8078727FBC507E280022D69DC9758A38,
@@ -26267,6 +27539,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	FileNotFoundException_get_FusionLog_m566346E8672529DB07EE44316C81519E5DC85AF5,
 	FileNotFoundException_GetObjectData_mAE5B917428B1A472311576239B30E02984780144,
 	FileStream__ctor_mBBACDACB97FD9346AC2A5E164C86AB0BA0D160D6,
+	FileStream__ctor_m967EF49BBCD52204BB79BA6E9DA533833B07B800,
 	FileStream__ctor_m49CE3FAF4AEF5EE690E5E53A95749F3C4414C47B,
 	FileStream__ctor_mB254658F1E758D76B41C942CB91BDF38FD544C83,
 	FileStream__ctor_m4DC05D41FB4913FBEC94E42F27DD4A7F7E4225BE,
@@ -26295,6 +27568,9 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	FileStream_Flush_m2457E7996038FDD9834D8BDE399A5227BDDF1D95,
 	FileStream_Finalize_m98B53FB3D3F62617BFC6D3BFF994467BFF729748,
 	FileStream_Dispose_m54203A9581D731325AC51AAFB9165A59962184B3,
+	FileStream_FlushAsync_mF37D6904A868079AAF496214113EA35DA681B46C,
+	FileStream_ReadAsync_m052E9F23D2AEB2C6292CD75CFF94EC6FE2CC69E3,
+	FileStream_WriteAsync_mBA5881222F27D5D0905C9DF46F0130DAA78EF0BB,
 	FileStream_ReadSegment_m5B1E160ECFA7C56C69BE85F1BE43856C9C2BED65,
 	FileStream_WriteSegment_m5C9DA531BE3ED67A6801A386ED239E6AD79EAD3E,
 	FileStream_FlushBuffer_mBD4C0BA920C32C25AA8C27621D21611CDDF91377,
@@ -26315,6 +27591,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	WriteDelegate_EndInvoke_mE58768AEE51495BCCF8DA1A6DD9B8A332F4746F3,
 	FileStreamAsyncResult__ctor_m1B7A605971D3DFF264ADFA39FB74F0422A60A064,
 	FileStreamAsyncResult_CBWrapper_mC807789033D2FC2052193DA354F5DC84B56CE1C6,
+	FileStreamAsyncResult_get_AsyncState_m7D3C14BA015DD27D9C1143A69FBBFC05D727514F,
+	FileStreamAsyncResult_get_CompletedSynchronously_mDA72DCFA38253EBBE785A166BA619DA15FE5BAA9,
 	FileStreamAsyncResult_get_AsyncWaitHandle_m2448FB76191346DACFC22E8844CF57C7F2478705,
 	FileSystemEnumerableFactory_CreateFileNameIterator_m8794115F2FA85BF0EAD65285717FC65C2003F47C,
 	FileSystemEnumerableHelpers_IsDir_mE9E04617BCC965AA8BE4AAE0E53E8283D9BE02C0,
@@ -26336,6 +27614,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	MemoryStream__ctor_m78689C82DED9ACE5022B7EABF28F17FF318DF2AA,
 	MemoryStream__ctor_m731754F1435D29F87C407D84ED47AF35FFF9B0EF,
 	MemoryStream__ctor_m3B2BC5A117D1C01873952CC274F28F426B3D356D,
+	MemoryStream__ctor_mD4746B0911B4445240F7E82818DA380B506E97EA,
+	MemoryStream__ctor_m7202510CE4CCEDCDEFF98DB5900451A2FABAA3C4,
 	MemoryStream_get_CanRead_m6AA569475F1828818450E7A60A0EAA48A576F084,
 	MemoryStream_get_CanSeek_m04B77420B3CF37C3C58E728E990225E2B006CC00,
 	MemoryStream_get_CanWrite_mE51E1C56ED967DDA9BCDEB298B634883995C26DC,
@@ -26343,7 +27623,9 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	MemoryStream_Dispose_mF2F2CA4BF56E1F8E06FC07ECAFB27EFB7B1ED058,
 	MemoryStream_EnsureCapacity_mE1AB9920DF9E36FC72AB6AECEAD2A0ECED4CCDB8,
 	MemoryStream_Flush_mFAD113F569322584B76664B55FC94DCDBA482E17,
+	MemoryStream_FlushAsync_m9E7CBDBCE7CE3A6D71868088AC41B51659E03420,
 	MemoryStream_GetBuffer_m54A1C252611F9DA80C43059EC2A46431A61F9128,
+	MemoryStream_TryGetBuffer_mABB15C9BB39CD054E11C601901C96B255040F622,
 	MemoryStream_InternalGetBuffer_m523652019AB0927A8B2C8E8F3159598FD609F8A8,
 	MemoryStream_InternalGetPosition_m9D258332E0A5E1FC81CA1E76C8C3F46FBE721861,
 	MemoryStream_InternalReadInt32_m3F7FB4B25C5AF46C817C9C1F88FFD50319776CA3,
@@ -26354,10 +27636,13 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	MemoryStream_get_Position_m4B8347C63B10A46D0E4C70F2EB5ED1386C428B5B,
 	MemoryStream_set_Position_mDBC06746A9BECFC5CA4932ECAF176A087BFA7116,
 	MemoryStream_Read_m9576459908F0D2D3C46E31E28B5429F6E43CCBCE,
+	MemoryStream_ReadAsync_m5BE384163E9AEA394B273B50386583991D4AF017,
 	MemoryStream_ReadByte_m212777033EF906F2EA689D3F364B18B30497C6ED,
+	MemoryStream_CopyToAsync_m7A89FC0E3D93754757CCBD1F80E5E28D152E1799,
 	MemoryStream_Seek_mF959B85F17AC0F662FB5FC1925ACD3E742461478,
 	MemoryStream_ToArray_mD1A781E4916E0FA2440C10FE0638CB38B2A86BA2,
 	MemoryStream_Write_mD246A82D261AF9C46F26F8483B3AA48647150A46,
+	MemoryStream_WriteAsync_mB381A4496F965B62BEE68494811FB2C54844A06E,
 	MemoryStream_WriteByte_mC213A3A2C9902F2A314D94B633F7061184CCE88F,
 	MonoIO_GetException_m89CBE5A787ED811E6A37BF8BFCE2F7E2B54072A3,
 	MonoIO_GetException_m80679F0AE2F61A8E2F8537A6178D1AA791EE8BA8,
@@ -26444,17 +27729,24 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	SearchResult_get_UserPath_mB57A92D43162037A6A6F8AA91903F33C6D14B636,
 	SearchResult_get_FindData_mDD555A3610B05788205821BEA598E0C00E7803DE,
 	Stream_EnsureAsyncActiveSemaphoreInitialized_m874CD5FC48757D8810E4DD57DADD850A338BDED2,
+	Stream_CopyToAsync_m300A9C55C692365F9135FBF35F1A0AA541A50776,
+	Stream_CopyToAsyncInternal_m682B30513F24E52B0A961A5390B80B9F06C1E730,
 	Stream_Close_m3E7D77CC56A0776F17B5C4480D62F7800DD03C0D,
 	Stream_Dispose_m186A8E680F2528DEDFF8F0069CC33BD813FFB1C7,
 	Stream_Dispose_mC0F23B2D31DC853B12A10F0233173A278FF21B05,
+	Stream_FlushAsync_m6FF6F6B6CFBEC607B2FC08B8C09CB40054E865F4,
 	Stream_BeginRead_mBF8B16ED8510AD6BE9D0A3EE1A933D6515CF160D,
 	Stream_BeginReadInternal_m60C7782571CF8C69B885E18BFF34B35B3DC300FC,
 	Stream_EndRead_mA8D81CE363398C9D2760A2088C2D1A940B56FE2F,
+	Stream_ReadAsync_m72417EC430FE2302C8CF2D67B0BFE81FBADE4A83,
+	Stream_BeginEndReadAsync_m5B5B38468B030D888978F417740A92BA1F787802,
 	Stream_BeginWrite_mFF3CB915FA5A878608575A46C75C1A9D9D3706D9,
 	Stream_BeginWriteInternal_mF9557BA2F5E6556C7CB979F46D2F3DA2A5C43668,
 	Stream_RunReadWriteTaskWhenReady_m42E40F1AB2522AC449FF9332FD46A220A6CDE147,
 	Stream_RunReadWriteTask_m05B38DEEAA7A6D5CD4A8961C67AC393EABB3BFF7,
 	Stream_EndWrite_mE7A87B817FDCB90247FAF760BE83172B1D616032,
+	Stream_WriteAsync_mEA7EDCE2C825C3FBD011A6A17B49DF300E67034F,
+	Stream_BeginEndWriteAsync_mADEADEBC1B5E0DB7CF8367A37F05FD364DF4A95E,
 	Stream_ReadByte_m0FAFF74832FDD03E65BD221CD68A743C893EC6B7,
 	Stream_WriteByte_mA20A780D5019E9C5FDC5C09D23FBFEE1EFA94CC3,
 	Stream_BlockingBeginRead_mACB9EF43064AEBB8CF5582CC4416CCD85BBA0C3F,
@@ -26466,9 +27758,16 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	U3CU3Ec__cctor_mD19C2C81E14C904D5B730513379F67EE4C82FB38,
 	U3CU3Ec__ctor_mC41B9842076FF52762F4BF89FAEA2440BF9C56E2,
 	U3CU3Ec_U3CEnsureAsyncActiveSemaphoreInitializedU3Eb__4_0_mFC89B6BDAEAB17521C199A8E86DF2CF193B73185,
+	U3CU3Ec_U3CFlushAsyncU3Eb__36_0_m5803CAB0D14A7AF91D43ED19EF24CE1F9A72C575,
 	U3CU3Ec_U3CBeginReadInternalU3Eb__39_0_mA916204119245A554120ADD0684F65FE62EC9100,
+	U3CU3Ec_U3CBeginEndReadAsyncU3Eb__43_0_mA8204974AC2EF1A9B8A6B16F25267799B6D35507,
+	U3CU3Ec_U3CBeginEndReadAsyncU3Eb__43_1_mADEDF79E934411759EB9118BDB3EC59016790AAF,
 	U3CU3Ec_U3CBeginWriteInternalU3Eb__46_0_m91FE2212E52436AAC7F76E6E1CE34A2BC249A050,
 	U3CU3Ec_U3CRunReadWriteTaskWhenReadyU3Eb__47_0_mAABA4692CAA24F0FAFC71C3CB9B951F5CE4E8CF6,
+	U3CU3Ec_U3CBeginEndWriteAsyncU3Eb__53_0_m38B93C4F2A82A03E9D9170DD8C487DC44DF53110,
+	U3CU3Ec_U3CBeginEndWriteAsyncU3Eb__53_1_m0AC6C37267DB37A9015B9E31A695424E997707B9,
+	U3CCopyToAsyncInternalU3Ed__27_MoveNext_m4D96001B05F00995E81455469F52314892112986_AdjustorThunk,
+	U3CCopyToAsyncInternalU3Ed__27_SetStateMachine_mA390D8FC0CE9ABCDA2FA6BD1B96FCE9C75A06856_AdjustorThunk,
 	NullStream__ctor_m33B984F0C9CBADFF8D35BEAAECE7E441D0E30E95,
 	NullStream_get_CanRead_mFD9D8F1AA6A19863C2BD503EF0D06E3AF22130F7,
 	NullStream_get_CanWrite_m5F7DA38043130218B374C8D9876309095C188B79,
@@ -26478,13 +27777,16 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	NullStream_set_Position_m0865B0F3DDA170E428CC2F9CE48F2656C581A90C,
 	NullStream_Dispose_m749F803E9444B0B25EA124E05D3B9EF73FEC8B86,
 	NullStream_Flush_m544C32CFE06066C40F5FE6F3892703A85132CD9C,
+	NullStream_FlushAsync_m9E84F925587264E0E0F8F2F80FF7907E3F3AA247,
 	NullStream_BeginRead_m60044A2C8EDD3964F5A05C7867FDD11B1BBCD1DA,
 	NullStream_EndRead_m90214556654266714A193D5BDBE53B8250A2705F,
 	NullStream_BeginWrite_m071B8E98CC2C04B6330A23C7C732865386CA59AB,
 	NullStream_EndWrite_m77128A88F7E63F2A225D46CC0B4FA8F8F13F335C,
 	NullStream_Read_m276B165C0C0CE7825A0468F2BCF0DC876FCC80AE,
+	NullStream_ReadAsync_mE6B4033DC97FB14113C9F5539DF2C6502F3B87D0,
 	NullStream_ReadByte_mE08EA5EF5EC26E323852934FB4D72D6FDCDD955B,
 	NullStream_Write_m30C7856F7DA8057B367A82F338C11C8882987F7C,
+	NullStream_WriteAsync_mA520FCF8D973953BB4EAA30C333A2AE36037D7C0,
 	NullStream_WriteByte_m93E4EA45AF3B3A360A33442AB94706B44D8CDE56,
 	NullStream_Seek_m255D38D5F4433B6A5A67E4056550244A6983D422,
 	ReadWriteTask_ClearBeginState_m3AF099742BF157939A0CD5DB9AE7472669850836,
@@ -26495,6 +27797,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	SynchronousAsyncResult__ctor_mFE74FD77B0CE7BB1D2717CF98831E50D4ACF0A8D,
 	SynchronousAsyncResult__ctor_m50A54079C49E00F187CB5AB20A28AD3609B86C0C,
 	SynchronousAsyncResult_get_AsyncWaitHandle_m89D6B91D0A116BBF517063540F727EF4F5045825,
+	SynchronousAsyncResult_get_AsyncState_m0B7E654A06DA57A0623C937A13D41B3090A2FA60,
+	SynchronousAsyncResult_get_CompletedSynchronously_m53433B8F2E95D489F3EA9C40AEDF4223469DCFFC,
 	SynchronousAsyncResult_ThrowIfError_m5653FF1252A2B4D89D31B8BDBC2209EB5E2D8068,
 	SynchronousAsyncResult_EndRead_m995E037B3AB2E9DE4D215833CA7E81B60D869924,
 	SynchronousAsyncResult_EndWrite_mF1F332953F2F8651DEFCBC8EB0616A759504F2B7,
@@ -26659,6 +27963,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	UnexceptionalStreamWriter_Write_m662E03F82B13865872B3ADC048BEFE8E6C94B30F,
 	UnmanagedMemoryStream__ctor_mC321B43F918DC8453F1DDA5DE21D88CB9B259167,
 	UnmanagedMemoryStream__ctor_mF4040F06CEA36C1ACBA0C09319B38530D0E45632,
+	UnmanagedMemoryStream__ctor_mC84B1D4CF2D52722A4B3600392FA5AE584B2C799,
 	UnmanagedMemoryStream__ctor_mDAB26A2823AF7D8CD45A0119BAE6B5549A9581C5,
 	UnmanagedMemoryStream_Initialize_m8DAC8A1A09A4FA06187944DE2DA5D718FDFB6196,
 	UnmanagedMemoryStream_get_CanRead_m78E9630BE3FE41A94E0AFC75D58FCD9C9E5EB5F2,
@@ -26666,14 +27971,17 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	UnmanagedMemoryStream_get_CanWrite_m10C8D5BA26DE57D0142C6027452C452C2B018490,
 	UnmanagedMemoryStream_Dispose_mA8E1A981BC7EFDFAC1B4C4E95D1CAB823EA284CA,
 	UnmanagedMemoryStream_Flush_m461EFEEA2A4C1866BC68D63F596E3EB8EF5A3F60,
+	UnmanagedMemoryStream_FlushAsync_mE2071FEFBFBC44DADD5B63BD9CDE4E6476F6CD42,
 	UnmanagedMemoryStream_get_Length_m033BE76142FBBAF8A80055B60DB6BF5C009E9C97,
 	UnmanagedMemoryStream_get_Position_m3D49344ACCD6823BABF2F81A3CAFCE40AED1FA97,
 	UnmanagedMemoryStream_set_Position_m9E69460D1AB811E973FA8A85CF8E3AC4A1B6D73C,
 	UnmanagedMemoryStream_get_PositionPointer_m679CDF3178C1512CA36CAB5FD1A39F5A398A2ADB,
 	UnmanagedMemoryStream_Read_mA93FD9DA48DAC9A7E5E11E51E507C4B4A4945754,
+	UnmanagedMemoryStream_ReadAsync_m9365011A8EA2266D91FAE823DBFD31C15FB7E9D3,
 	UnmanagedMemoryStream_ReadByte_mD7922C57C7C508DFCBC9D6C8D9D103E0F6C5E590,
 	UnmanagedMemoryStream_Seek_mF247A85CB3170986E397A5EF632C3C8E06CB4713,
 	UnmanagedMemoryStream_Write_m9256DCD481FB6F93D3761684B74CD1639E3AEC6C,
+	UnmanagedMemoryStream_WriteAsync_m35A3170A45ABFBA4A884747F52D86E78C804DB2C,
 	UnmanagedMemoryStream_WriteByte_mEF8DEF7777C9ABCB846D9234073A451717F908B6,
 	__Error_EndOfFile_m48F4E14C7AD452BCA036E0F7537CC2B196A5A7F5,
 	__Error_FileNotOpen_m72E3844C53F9BBA3DA2AB9A113480804F1954633,
@@ -26681,6 +27989,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	__Error_MemoryStreamNotExpandable_mF68838F1E20B6FD1A292017A734F89534C002F7F,
 	__Error_ReaderClosed_mDEB32103741D23496C28421032CA44B7DB2E0717,
 	__Error_ReadNotSupported_mE20D002F31774F786CAC01DE88CF2FD9F46C0696,
+	__Error_SeekNotSupported_mEB8B1A7DA166A961F0D44E9A08DF2C48D3D5DC8E,
 	__Error_WrongAsyncResult_m612D2B72EAE5B009FFB4DFD0831140EE6819B909,
 	__Error_EndReadCalledTwice_mC80DEEBE51D036D4CCC24671947ED863E470A7FA,
 	__Error_EndWriteCalledTwice_m991D9485115C8EE93569537674B4206DC8EADB2C,
@@ -26797,6 +28106,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	IntPtr_op_Explicit_mD69722A4C61D33FE70E790325C6E0DC690F9494F,
 	IntPtr_op_Explicit_m254924E8680FCCF870F18064DC0B114445B09172,
 	IntPtr_op_Explicit_mB8A512095BCE1A23B2840310C8A27C928ADAD027,
+	IntPtr_op_Addition_mD815D6B36C7DFA1F89481720D3D46A6484BB9644,
 	IntPtr_IsNull_mEB01FA7670F5CA3BE36507B9528EC6F1D5AAC6B4_AdjustorThunk,
 	InvalidCastException__ctor_mB14CE363FB346D9BC0C0763CAF0B67AF90902144,
 	InvalidCastException__ctor_m3795145150387C6C362DA693613505C604AB8812,
@@ -26875,6 +28185,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Math_Max_mA99E48BB021F2E4B62D4EA9F52EA6928EED618A2,
 	Math_Max_m545895C37C1F738BBB653CA1F65E50FF1D197675,
 	Math_Min_mC950438198519FB2B0260FCB91220847EE4BB525,
+	Math_Min_mD7CBC84B8943F900245120DABABF771D701A1655,
 	Math_Min_mB77A95F6A1FE3B8E7CD784F20AF4E1C908B5E9CD,
 	Math_Log_m5C457D6A666677B3E260C571049528D5BE93B7AF,
 	Math_Sign_m2F240BD8BF9C88529F275F6ECDB91B3A2D087F85,
@@ -26940,6 +28251,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	NonSerializedAttribute__ctor_mE1558BDEF20C2A2D08703549040E56970CC767B0,
 	NotImplementedException__ctor_m8BEA657E260FC05F0C6D2C43A6E9BC08040F59C4,
 	NotImplementedException__ctor_mEBAED0FCA8B8CCE7E96492474350BA35D14CF59C,
+	NotImplementedException__ctor_m3EA4CBB9A00BC498783C5EDA61DC26E3FF20314C,
 	NotImplementedException__ctor_mFF1238AF9C34A2EA800C8AA62ABACBC395BCAB44,
 	NotSupportedException__ctor_mA121DE1CAC8F25277DEB489DC7771209D91CAE33,
 	NotSupportedException__ctor_mD023A89A5C1F740F43F0A9CD6C49DC21230B3CEE,
@@ -26983,6 +28295,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Number_TrailingZeros_m5B8B34E5E660FBD4870DE2D2778FC3758F28750F,
 	Number_TryParseInt32_mF9FA8AD887CFF429B3C9DCAED08CBF7746DB250D,
 	Number_TryParseInt64_m62C1C9F9BAC32770297859436DE8E68DF0E1E598,
+	Number_TryParseSingle_m8BFCEBAF689D19500FA014CAC081D1614BD4A4C0,
 	Number_TryStringToNumber_mDA7F326F742680FF01ACA545ED511EE80A3248D7,
 	Number_TryStringToNumber_m515B5B64EE9D50013D45179933663F00752A2DEC,
 	NumberBuffer__ctor_m3CC10B06A100FC612C5BD24BBC5A20C2BCDCD68E_AdjustorThunk,
@@ -28176,7 +29489,9 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	InterfaceTypeAttribute__ctor_mA4753B8BDF06E54F04701B7DB54385DB720258D0,
 	Marshal_AllocHGlobal_m1700535FE6D7CF1410010D9B3553A5A6E06DE70C,
 	Marshal_AllocHGlobal_m3BFCB876D7469108C8676D6DD90D943806C13A58,
+	Marshal_copy_to_unmanaged_mDD88A668D1CD414CFB4A853565BA4667926DEEAB,
 	Marshal_copy_from_unmanaged_m6155CAC4E5EC6C94D165E01CFBB583B79EF25AC4,
+	Marshal_Copy_m0486DFF229946F0F9E6A04DDDF3BC9E5F1609A5A,
 	Marshal_Copy_m64744D9E23AFC00AA06CD6B057E19B7C0CE4C0C2,
 	Marshal_Copy_m3556CC144C37496A15A3E10DD16D12B06BC4A000,
 	Marshal_FreeBSTR_mB3CD149620B05C68BBC20931307564BADDE71A25,
@@ -29933,6 +31248,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	XmlSyntaxException__ctor_m2F4BB4D4DB46F4593EAFB342BBF9809014E1BFA5,
 	SerializableAttribute__ctor_m2EEE0A59C8AE32A075D806DDBB0D41EB85F049E8,
 	Single_IsInfinity_m811B198540AB538C4FE145F7C0303C4AD772988B,
+	Single_IsPositiveInfinity_m19DAA74DD1E70DBD36DB699FA26A504D9C650F2C,
+	Single_IsNegativeInfinity_m783D0162D4AC571DD716C3BF75EADBF90902100C,
 	Single_IsNaN_m1ACB82FA5DC805F0F5015A1DA6B3DC447C963AFB,
 	Single_CompareTo_mC662267F0912CCC19395FD60E0DD4C69572C8915_AdjustorThunk,
 	Single_CompareTo_mFBF2345D81E00F834E558A4ACFD4E5137582DBBC_AdjustorThunk,
@@ -29947,6 +31264,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Single_Parse_m341EA42F7782B136FA7335771DA3C6C96AF6BD86,
 	Single_Parse_m6D591682F5EF2ED4D1CEADF65728E965A739AE74,
 	Single_Parse_mAACB78E5DB76B756AA541CE1FD79F915FC66D1D8,
+	Single_TryParse_m548E9EC17193999C07717FECFAD0A907980D566C,
+	Single_TryParse_m1660A819EC2156DCFCC7833AF4CAA19C0B91BAC6,
 	Single_GetTypeCode_m3AED7A651BCA30B93CADE00BD3873A20F516158F_AdjustorThunk,
 	Single_System_IConvertible_ToBoolean_m010C755076291EE3AF73DC3E84B8820A71CFA0B5_AdjustorThunk,
 	Single_System_IConvertible_ToChar_m6D629585D88FD4C0CE758F576BE354A2CF1CFE3E_AdjustorThunk,
@@ -30076,6 +31395,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	String_Format_mF68EE0DEC1AA5ADE9DFEF9AE0508E428FBB10EFD,
 	String_FormatHelper_mF910F2322BDBD29A89808776BC82F438022953DF,
 	String_Copy_m521EF2A77A1F54EFAB52903A780485ECD171EFA7,
+	String_Concat_m798542DE19B3F02DC4F4B777BB2E73169F129DE1,
 	String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495,
 	String_Concat_m2E1F71C491D2429CC80A28745488FEA947BB7AAC,
 	String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07,
@@ -30885,6 +32205,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Interlocked_Read_m6D73F1AA4709D4F871C6323FEBD3EEC45124B8CB,
 	Interlocked_Add_mB998A76F86D8882F5FBFB9F64E7143B3DAB3C68F,
 	Interlocked_Add_m2C72823E3BD245D4EBEFBB39493523B6E047C702,
+	Interlocked_MemoryBarrier_m1C58A0425F80BBD7E9811A603B4F48312BFD83FD,
 	InternalThread_Thread_free_internal_m23E40E8B5BD217003279C4B07422B04DCB7B5274,
 	InternalThread_Finalize_m21A406B76027FB1CE1E2A10D59B17E49D7C617BE,
 	LockRecursionException__ctor_m52DB782195FFB9EED4C8E5BD37B46D0748E02CB8,
@@ -31030,6 +32351,17 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	U3CU3Ec__cctor_mA9AE81453B216060FAC079D67A7B172C20D81EEA,
 	U3CU3Ec__ctor_m3BA8F422E35FB5D7F0B86004B5AB7CD2C7B8E1C0,
 	U3CU3Ec_U3CThrowAsyncIfNecessaryU3Eb__17_0_m69AC8BB37F4FE03EC3C1D3F5D0275BDF209BE24B,
+	BeginEndAwaitableAdapter_GetAwaiter_mF666FFC0FC39BCF4BD161E0A1474FAA700DBE66F,
+	BeginEndAwaitableAdapter_get_IsCompleted_mE9BEF3CF647EBBC4497A055DB13987553A75B66E,
+	BeginEndAwaitableAdapter_UnsafeOnCompleted_mB0C156F188D5CF5994D4B3EF1CEAA96749FFD0E8,
+	BeginEndAwaitableAdapter_OnCompleted_mF5F481848F7A2437D9EFC7A00B779BC1F4B7A64F,
+	BeginEndAwaitableAdapter_GetResult_m9A2F770459C99DBC7E515A510DCFAE2CD8FFB6E3,
+	BeginEndAwaitableAdapter__ctor_mC982D09A6BBD23969F5DECDFB1B3F341849FC897,
+	BeginEndAwaitableAdapter__cctor_mB429D7320E900094CACE7F176C6B1C1D88650FB8,
+	U3CU3Ec__cctor_mECA5C938123536923606E8B85C354A5F33D1DD33,
+	U3CU3Ec__ctor_m36FD95B47D7EEBEAAE3D5690EB884148A578AD9C,
+	U3CU3Ec_U3C_cctorU3Eb__11_0_m9E6E3CEF244FEB7C714FE088D82002A423BC8E2D,
+	U3CU3Ec_U3C_cctorU3Eb__11_1_mC2E2BF027E889DE55EB76A521645B34DAC2C4B8E,
 	CompletionActionInvoker__ctor_m99DE9FFDBB3B8A79C61EA35DDE340DF5FB54F158,
 	CompletionActionInvoker_ExecuteWorkItem_m709B36ADF0D0B53EAA2C170C22708BBE3F1F1054,
 	CompletionActionInvoker_MarkAborted_m8167A9ECADFE423C9094E277699AE716239E20DE,
@@ -31142,6 +32474,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Task_get_IsRanToCompletion_mCCFB04975336938D365F65C71C75A38CFE3721BC,
 	Task_get_CreationOptions_m1013CF6F9F645BFA03F13F89DFA749ADABA541C8,
 	Task_System_IAsyncResult_get_AsyncWaitHandle_mA71710AFB5344BE5442434E14095D5B3930859FB,
+	Task_get_AsyncState_mEE6996D21AD9F92E34A30FA73A7D31A5BCE42657,
+	Task_System_IAsyncResult_get_CompletedSynchronously_m7F41A46FF40F80D4ECA82F71AF265117D7502888,
 	Task_get_ExecutingTaskScheduler_m3A3340F34EF9D594413E54F46B78874BCB0CA30D,
 	Task_get_Factory_m31F1298E08390A4AD46B85AB060F1FAD4CE12112,
 	Task_get_CompletedTask_mBB0764E7FDE04E900FFBE5B1BE6B815193681E86,
@@ -31217,7 +32551,9 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Task_AddTaskContinuationComplex_mA7A1D0E407A59EC369D7879BB76F406CF1B5E848,
 	Task_AddTaskContinuation_m16543B86970B0357262A2CD975E006BBC07760C0,
 	Task_RemoveContinuation_m09A569E89BF4CCCF31646AB74A88BCDFC093DAE4,
+	Task_FromException_m8D8A19D1CF4B424A3B48F49C7150496075038E54,
 	Task_FromCancellation_m2106218A961C3950EA87A16189081D7DFB42B860,
+	Task_FromCanceled_m271AC674539E764A1F220D15E63EDB7D989841E5,
 	Task_Run_m201E4C04F97BCF541633AF913DF20C6FF7872E44,
 	Task_Delay_mE765C93596171D57A356BCCCEFE49392CA925AFA,
 	Task_WhenAny_mBC42BCB13C1F576DE6DAA08EB4F704D8176E674F,
@@ -31262,6 +32598,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	TaskFactory__ctor_m2490F91C5D8A538976744AC434628767958D5EEA,
 	TaskFactory_CheckCreationOptions_m03F3C7D571E26A63D8DF838F1F99C28429CB3370,
 	TaskFactory_StartNew_mD172AE1E05790ED35F406EE7A4C0B8AAFE5A267D,
+	TaskFactory_StartNew_m6CDCE8D4C95E63EA03B6E61D9A4A972782AE9468,
 	TaskFactory_CommonCWAnyLogic_m49CC1C06031409C5D34990993262A531609D9565,
 	TaskFactory_CheckMultiTaskContinuationOptions_mB15FB0D6FD62C8A4AD85751B8605B57420B99640,
 	CompleteOnInvokePromise__ctor_mFA5EA438CE61E8FDEB375E5CA2D7D5D1FFE0F175,
@@ -31290,6 +32627,15 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	TaskSchedulerException__ctor_m63156F8498549786866AEA93F820A250BE5B691E,
 	TaskSchedulerException__ctor_mFFF7423FCD3DFC4F8A6F7E6028AE6CB1D5865F63,
 	TaskSchedulerException__ctor_m54DE71B0C4FFC10BE930F776BE82782F4384D469,
+	TaskToApm_Begin_m42DFEB73E3BB1B51E0E8D115AFD215F9F2BF4175,
+	TaskToApm_End_m1BCAAEC9A8AED75C16537F0D568BE8AE8670FD1A,
+	TaskToApm_InvokeCallbackWhenTaskCompletes_m46DC53C5C7C58E9F10B0EE7AE711C90A4B1CE494,
+	U3CU3Ec__DisplayClass3_0__ctor_m349D6D5C702DDC66F2490654813695CE39A0B3B2,
+	U3CU3Ec__DisplayClass3_0_U3CInvokeCallbackWhenTaskCompletesU3Eb__0_m4C9A107F12D2BC7B54398E44A44D45AB3F8B6D18,
+	TaskWrapperAsyncResult__ctor_m47C91370D59B60FE3A5C49786EF699AD63784A3B,
+	TaskWrapperAsyncResult_System_IAsyncResult_get_AsyncState_mFF874F0FB65ADDA52351D6C069DE13049BA7E0F3,
+	TaskWrapperAsyncResult_System_IAsyncResult_get_CompletedSynchronously_m5EB2861460E43DC86C8597E1154471FD70A7EB9E,
+	TaskWrapperAsyncResult_System_IAsyncResult_get_AsyncWaitHandle_m2F6AA2661CF059788F85AE7C1B3BB1E3E126200A,
 	ThreadPoolTaskScheduler__ctor_mC0B9F37DBA25F766F01EE56C8460330C3708FF1D,
 	ThreadPoolTaskScheduler_LongRunningThreadWork_m961ED397785555AF2C24A4C8723246BA355CE21D,
 	ThreadPoolTaskScheduler_QueueTask_mE9B3A295B7D2E31848AF3DECA7A89CC814F3F20A,
@@ -31436,6 +32782,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	TimerCallback_BeginInvoke_m8C0291B93231EC42260B0FB426CE548E6A5900C7,
 	TimerCallback_EndInvoke_m5783AC9B9655D0D798F57CF8B90EB381A284B3E1,
 	Volatile_Read_m0903B72AEBAB1A05DFD4A101411ED4A952B53E8A,
+	Volatile_Read_m432B920D5778A9EFEDD056B30920889C4D1C9BFB,
 	WaitCallback__ctor_m375A357FD7C64F4182FD88B8276D88FE5BE75B31,
 	WaitCallback_Invoke_mB6A858A1792B8E0DE526C3C157624C1A59EEFA16,
 	WaitCallback_BeginInvoke_m6D50CA2A74AF60AE847EC36236F0E836CFF74B62,
@@ -31987,73 +33334,6 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	__Il2CppComObject_ToString_mBA1B61590E5A9D251ED47D830B8693883CE950FA,
 	__Il2CppComObject_Finalize_m98123DBAAA7974D2616F9E90F2574955714CA9A9,
 	ThrowStub_ThrowNotSupportedException_mA248D7D785682F31CDF02FDC1FAB3173EE1B1E19,
-	ConfigurationCollectionAttribute__ctor_mF41393517164A49C3127C24B1CCBBA3CCBC44A65,
-	ConfigurationElement_get_Properties_mB1F40F2F14D68682556E31C36BEF7B62067C9E98,
-	ConfigurationElement_IsModified_mA046D03044CDCD875C22E34247CE15E7BBC883A5,
-	ConfigurationElement_Reset_m39498D76FA0912DA725E3224537BBF7FA5B0FC1A,
-	ConfigurationElement_ResetModified_m6AAF1F8A88CEF6F993A6666E3B4D4B2456024989,
-	ConfigurationElementCollection_get_Count_m58EFBCAA164C912FEBD007AACF85784B80C54EFA,
-	ConfigurationElementCollection_get_IsSynchronized_m01A1041417359C9558B7BD6BBE38A079B1290C59,
-	ConfigurationElementCollection_get_SyncRoot_m9AF9A3529CAF268BE69B95ACD13FEE0A64FACCAD,
-	ConfigurationElementCollection_GetEnumerator_m9BAC931AF7292090D4A17FB6BE425A87698B615B,
-	ConfigurationElementCollection_IsModified_m8CE9100FF55419730D78D1399847C4AA31596769,
-	ConfigurationElementCollection_Reset_mCAD4115E5753AFD91A9980F1727F19C2820CFC5A,
-	ConfigurationElementCollection_ResetModified_m0E48AB9040D7A874EB16EABBD66DE7A5C9682C3E,
-	ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m0F4E4D3C5BC76BFC9246418F4F9930BCFCB88175,
-	ConfigurationPropertyCollection_get_Count_mCD54D7BF7C9539EC577F6B1AC88C53A67FEFD844,
-	ConfigurationPropertyCollection_get_IsSynchronized_mC9C67CAB13360A77A9EC5DA5474900997EAAC474,
-	ConfigurationPropertyCollection_get_SyncRoot_m9C5F4616FF01536A643161A98B57D8343A1B0876,
-	ConfigurationPropertyCollection_GetEnumerator_mC0049DA2728B41148DB85EA951D5708F732731C3,
-	ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_mA43D6C442A7E2B71FF5338B36485FAB2861E5E9D,
-	ConfigurationSection_DeserializeSection_mC39769C65F7E36F2B33E155B4D8ACADB83377B5F,
-	ConfigurationSection_IsModified_mDD7D74427E761D9EFAA2629FE71DD83A8B7D1785,
-	ConfigurationSection_ResetModified_mCA8B3DE0DE1903CDB60E70517BEBD92A06C647E4,
-	ConfigurationSection_SerializeSection_m76F991963602BC728C4B22044ED618A42FA3C3E5,
-	IgnoreSection__ctor_m30C69267DD27E85879BA3AE28ABCDAE783B28350,
-	IgnoreSection_get_Properties_m654A228B012E724695AFD79627F13FCF739244E4,
-	IgnoreSection_DeserializeSection_mD4D92311BEF0747F961B3E11BFDC13B56052A0EC,
-	IgnoreSection_IsModified_m0430C7830B3A902BCAE985427CB2FCE1F15EB595,
-	IgnoreSection_Reset_m46C76CCBADF508876E17A2A59778E427E20B7628,
-	IgnoreSection_ResetModified_mE7AEAA166BBA055767C5AFA05C9F223E1D0FB070,
-	IgnoreSection_SerializeSection_m03CB506F46AEA369F5FCAEC048509461D907FEE9,
-	ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A,
-	Res_GetString_m47B81D62E4B5E4C48C06BCC7995B9ED5218EE7A2,
-	XmlChildEnumerator__ctor_m9D966497AE59A0784E4FE7CB883226B7A332F311,
-	XmlChildEnumerator_System_Collections_IEnumerator_MoveNext_m42A648E7F0B79C7F47D7EF9CE5095D54EA372EDB,
-	XmlChildEnumerator_MoveNext_mCF3EB51E714C7F2E5B627F515BF880F9BF1878CE,
-	XmlChildEnumerator_System_Collections_IEnumerator_Reset_m3EF3533A19F3926CDCCD9CD82498D01B5F7EA08A,
-	XmlChildEnumerator_System_Collections_IEnumerator_get_Current_m2E52170DBEF6245A93126D3C7FF60ED17DDE2BD1,
-	XmlChildEnumerator_get_Current_m8ED001FF27613B8D7040CBA88CD1BF9DE3AC9872,
-	XmlLinkedNode_get_NextSibling_m6F858A5E1ED045F63D7885A243CD10FFDA891BA6,
-	XmlNode_get_ParentNode_m6AC4A7F4FEE5B469A86490C129F011C12201C3E6,
-	XmlNode_get_NextSibling_m86E032192785FDB070EE88E07675B2FF304E383B,
-	XmlNode_get_FirstChild_m43F741CF5C0565011D515B92103F04E033952410,
-	XmlNode_get_LastNode_mAB2DD7365BF9428D4F8AC4C3AFAE7F229FCB1B08,
-	XmlNode_System_ICloneable_Clone_m7208212A0F30077B18060E4D12B3C83D172D3D39,
-	XmlNode_System_Collections_IEnumerable_GetEnumerator_mC8BE3ACFBE87B8F5ABAE7B797FAF48A900679B27,
-	XmlReader_Close_m47D14A18E83F246EFE28A792766CD77101A182BF,
-	XmlReader_Dispose_m56DD3810681D55E0671AC2C7C49649B2B1730E7A,
-	XmlReader_Dispose_m6FF5EAA719F69E11B65EF4F8A8890B201CB94421,
-	XmlReader__cctor_m3EF2489C81E4EEF249A34242FC130A861972991E,
-	ASN1__ctor_m6DD2E5BD0B12A6BFA95E1822A55B2294B8C237BC,
-	ASN1__ctor_mAB2593792CB61AD1542F4F9D6FB6E8BB96DE007E,
-	ASN1__ctor_mE005F52336402C3D41EAD9E28A95910B3C0865DA,
-	ASN1_get_Count_m5A0E71B4C4A2257C0875AE1041AAA953C5B12A19,
-	ASN1_get_Tag_m1346989AC839D85A9E0A211525A6B551974E4862,
-	ASN1_get_Value_m9BD6239E12A6148AF9507C2F58058C6B8147A079,
-	ASN1_set_Value_m225FF9AC03EA872809C7742070A34A264C58588E,
-	ASN1_Add_mF6ED0416BB021A1C333F99E42F8B17AF8B26639B,
-	ASN1_GetBytes_m4ABC0EF4CBE8CF6BE65CEC52CDB02BB59E2E9AE4,
-	ASN1_Decode_m94E3A6F94EDACE796521D04E6A832D99592F1149,
-	ASN1_DecodeTLV_m30440B1DE0A8C4236AA9658DEBF2808FD3BC00C3,
-	ASN1_get_Item_m88B75C57A7E130A02A709AE8FFD2E0972E71FC08,
-	ASN1_ToString_mF3953615856548F00889AD245391D09FBE782CBA,
-	ASN1Convert_FromInt32_m59FF0922659B0A323026CCC0876BC33020C4FC9A,
-	ASN1Convert_ToInt32_mA2A8761F965979408D46FBEB946DB59F36137A5E,
-	ASN1Convert_ToOid_mFFA93B4BBEFCA8E4E86DAE87CDB998E78BFB2D5A,
-	BitConverterLE_GetUIntBytes_m871281C3039A5B7DFB56E0F3EBBE22F74135997C,
-	BitConverterLE_GetBytes_m1207548B6BC0E2D49DD06D5B3A3AC19C001BDB35,
-	CryptoConvert_ToHex_m2FB6183AFF3B31424407BB7D767A844E3464B411,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m7C7DB27BC4297A74A96AC53E1EDD3E7415DFB874,
 	SR_GetString_m9548BD6DD52DFDB46372F211078AE57FA2401E39,
 	SR_GetString_m9D671CBA422B18D15B8FF59B22DCCEB32E3D16E2,
@@ -32124,7 +33404,9 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	IOAsyncCallback_Invoke_mB95F7E7F0E8326CE5364A30F42FC1073B0AB2D8B,
 	IOAsyncCallback_BeginInvoke_mB8CACF8990B91DF4A695E597CEBE4BA09354C32C,
 	IOAsyncCallback_EndInvoke_m397237D5497A9029CC3FACE692D11BDC1558A727,
+	IOAsyncResult_get_AsyncState_m9D507541D18B17FFF72F90D8DBB3F301213EA4A7,
 	IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5,
+	IOAsyncResult_get_CompletedSynchronously_m55D4C57A46BF019D4FAF05ABE30E6EEEA6A78277,
 	IOSelectorJob_System_Threading_IThreadPoolWorkItem_ExecuteWorkItem_mF6591C2577197BFD98B2423F8696E5816191FF3F,
 	IOSelectorJob_System_Threading_IThreadPoolWorkItem_MarkAborted_m3BB2FE95A7033F6994973BF8814C16F4B163A0D6,
 	IPv4AddressHelper_ParseCanonicalName_m2A8C35045CE02D6FC2C4251F239D1C0074E0E813,
@@ -32783,6 +34065,73 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	BuiltInUriParser__ctor_m66250DC53CE01410149D46279D0B413FC1C5CA1C,
 	UriTypeConverter__ctor_m1CAEEF1C615B28212B83C76D892938E0A77D3A64,
 	ThrowStub_ThrowNotSupportedException_mF1DE187697F740D8C18B8966BBEB276878CD86FD,
+	ASN1__ctor_m6DD2E5BD0B12A6BFA95E1822A55B2294B8C237BC,
+	ASN1__ctor_mAB2593792CB61AD1542F4F9D6FB6E8BB96DE007E,
+	ASN1__ctor_mE005F52336402C3D41EAD9E28A95910B3C0865DA,
+	ASN1_get_Count_m5A0E71B4C4A2257C0875AE1041AAA953C5B12A19,
+	ASN1_get_Tag_m1346989AC839D85A9E0A211525A6B551974E4862,
+	ASN1_get_Value_m9BD6239E12A6148AF9507C2F58058C6B8147A079,
+	ASN1_set_Value_m225FF9AC03EA872809C7742070A34A264C58588E,
+	ASN1_Add_mF6ED0416BB021A1C333F99E42F8B17AF8B26639B,
+	ASN1_GetBytes_m4ABC0EF4CBE8CF6BE65CEC52CDB02BB59E2E9AE4,
+	ASN1_Decode_m94E3A6F94EDACE796521D04E6A832D99592F1149,
+	ASN1_DecodeTLV_m30440B1DE0A8C4236AA9658DEBF2808FD3BC00C3,
+	ASN1_get_Item_m88B75C57A7E130A02A709AE8FFD2E0972E71FC08,
+	ASN1_ToString_mF3953615856548F00889AD245391D09FBE782CBA,
+	ASN1Convert_FromInt32_m59FF0922659B0A323026CCC0876BC33020C4FC9A,
+	ASN1Convert_ToInt32_mA2A8761F965979408D46FBEB946DB59F36137A5E,
+	ASN1Convert_ToOid_mFFA93B4BBEFCA8E4E86DAE87CDB998E78BFB2D5A,
+	BitConverterLE_GetUIntBytes_m871281C3039A5B7DFB56E0F3EBBE22F74135997C,
+	BitConverterLE_GetBytes_m1207548B6BC0E2D49DD06D5B3A3AC19C001BDB35,
+	CryptoConvert_ToHex_m2FB6183AFF3B31424407BB7D767A844E3464B411,
+	ConfigurationCollectionAttribute__ctor_mF41393517164A49C3127C24B1CCBBA3CCBC44A65,
+	ConfigurationElement_get_Properties_mB1F40F2F14D68682556E31C36BEF7B62067C9E98,
+	ConfigurationElement_IsModified_mA046D03044CDCD875C22E34247CE15E7BBC883A5,
+	ConfigurationElement_Reset_m39498D76FA0912DA725E3224537BBF7FA5B0FC1A,
+	ConfigurationElement_ResetModified_m6AAF1F8A88CEF6F993A6666E3B4D4B2456024989,
+	ConfigurationElementCollection_get_Count_m58EFBCAA164C912FEBD007AACF85784B80C54EFA,
+	ConfigurationElementCollection_get_IsSynchronized_m01A1041417359C9558B7BD6BBE38A079B1290C59,
+	ConfigurationElementCollection_get_SyncRoot_m9AF9A3529CAF268BE69B95ACD13FEE0A64FACCAD,
+	ConfigurationElementCollection_GetEnumerator_m9BAC931AF7292090D4A17FB6BE425A87698B615B,
+	ConfigurationElementCollection_IsModified_m8CE9100FF55419730D78D1399847C4AA31596769,
+	ConfigurationElementCollection_Reset_mCAD4115E5753AFD91A9980F1727F19C2820CFC5A,
+	ConfigurationElementCollection_ResetModified_m0E48AB9040D7A874EB16EABBD66DE7A5C9682C3E,
+	ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m0F4E4D3C5BC76BFC9246418F4F9930BCFCB88175,
+	ConfigurationPropertyCollection_get_Count_mCD54D7BF7C9539EC577F6B1AC88C53A67FEFD844,
+	ConfigurationPropertyCollection_get_IsSynchronized_mC9C67CAB13360A77A9EC5DA5474900997EAAC474,
+	ConfigurationPropertyCollection_get_SyncRoot_m9C5F4616FF01536A643161A98B57D8343A1B0876,
+	ConfigurationPropertyCollection_GetEnumerator_mC0049DA2728B41148DB85EA951D5708F732731C3,
+	ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_mA43D6C442A7E2B71FF5338B36485FAB2861E5E9D,
+	ConfigurationSection_DeserializeSection_mC39769C65F7E36F2B33E155B4D8ACADB83377B5F,
+	ConfigurationSection_IsModified_mDD7D74427E761D9EFAA2629FE71DD83A8B7D1785,
+	ConfigurationSection_ResetModified_mCA8B3DE0DE1903CDB60E70517BEBD92A06C647E4,
+	ConfigurationSection_SerializeSection_m76F991963602BC728C4B22044ED618A42FA3C3E5,
+	IgnoreSection__ctor_m30C69267DD27E85879BA3AE28ABCDAE783B28350,
+	IgnoreSection_get_Properties_m654A228B012E724695AFD79627F13FCF739244E4,
+	IgnoreSection_DeserializeSection_mD4D92311BEF0747F961B3E11BFDC13B56052A0EC,
+	IgnoreSection_IsModified_m0430C7830B3A902BCAE985427CB2FCE1F15EB595,
+	IgnoreSection_Reset_m46C76CCBADF508876E17A2A59778E427E20B7628,
+	IgnoreSection_ResetModified_mE7AEAA166BBA055767C5AFA05C9F223E1D0FB070,
+	IgnoreSection_SerializeSection_m03CB506F46AEA369F5FCAEC048509461D907FEE9,
+	ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A,
+	Res_GetString_m47B81D62E4B5E4C48C06BCC7995B9ED5218EE7A2,
+	XmlChildEnumerator__ctor_m9D966497AE59A0784E4FE7CB883226B7A332F311,
+	XmlChildEnumerator_System_Collections_IEnumerator_MoveNext_m42A648E7F0B79C7F47D7EF9CE5095D54EA372EDB,
+	XmlChildEnumerator_MoveNext_mCF3EB51E714C7F2E5B627F515BF880F9BF1878CE,
+	XmlChildEnumerator_System_Collections_IEnumerator_Reset_m3EF3533A19F3926CDCCD9CD82498D01B5F7EA08A,
+	XmlChildEnumerator_System_Collections_IEnumerator_get_Current_m2E52170DBEF6245A93126D3C7FF60ED17DDE2BD1,
+	XmlChildEnumerator_get_Current_m8ED001FF27613B8D7040CBA88CD1BF9DE3AC9872,
+	XmlLinkedNode_get_NextSibling_m6F858A5E1ED045F63D7885A243CD10FFDA891BA6,
+	XmlNode_get_ParentNode_m6AC4A7F4FEE5B469A86490C129F011C12201C3E6,
+	XmlNode_get_NextSibling_m86E032192785FDB070EE88E07675B2FF304E383B,
+	XmlNode_get_FirstChild_m43F741CF5C0565011D515B92103F04E033952410,
+	XmlNode_get_LastNode_mAB2DD7365BF9428D4F8AC4C3AFAE7F229FCB1B08,
+	XmlNode_System_ICloneable_Clone_m7208212A0F30077B18060E4D12B3C83D172D3D39,
+	XmlNode_System_Collections_IEnumerable_GetEnumerator_mC8BE3ACFBE87B8F5ABAE7B797FAF48A900679B27,
+	XmlReader_Close_m47D14A18E83F246EFE28A792766CD77101A182BF,
+	XmlReader_Dispose_m56DD3810681D55E0671AC2C7C49649B2B1730E7A,
+	XmlReader_Dispose_m6FF5EAA719F69E11B65EF4F8A8890B201CB94421,
+	XmlReader__cctor_m3EF2489C81E4EEF249A34242FC130A861972991E,
 	Enumerable_Sum_mA81913DBCF3086B4716F692F9DB797D7DD6B7583,
 	Error_ArgumentNull_mCA126ED8F4F3B343A70E201C44B3A509690F1EA7,
 	Error_ArgumentOutOfRange_mACFCB068F4E0C4EEF9E6EDDD59E798901C32C6C9,
@@ -32887,6 +34236,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Application_IsPlaying_m63D91E604B906994CA7104BC60B0894B3193CEB9,
 	Application_get_platform_m6AFFFF3B077F4D5CA1F71CF14ABA86A83FC71672,
 	Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01,
+	Application_get_streamingAssetsPath_m87163AE531BEB6A6588FABAD3207D829721CF31F,
 	Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B,
 	Application_get_temporaryCachePath_m6769909A405A6A5A0477F8E5F312920C8115E50C,
 	Application_CallLowMemory_m4C6693BD717D61DB33C2FB061FDA8CE055966E75,
@@ -33074,8 +34424,13 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Color_get_magenta_m04E2DDB63AA6288C701A93E248643A06EBD2D7AD,
 	Color_get_gray_m11EEED9092A8D949D3326611C7137334B746DF09,
 	Color_get_clear_m419239BDAEB3D3C4B4291BF2C6EF09A7D7D81360,
+	Color_get_grayscale_m6D11C0F103B836F839745770D5355916E456FE59_AdjustorThunk,
+	Color_get_linear_mB10CD29D56ADE2C811AD74A605BA11F6656E9D1A_AdjustorThunk,
+	Color_get_gamma_m38A0BB5A9A0A7F860BEEB3BD9F69F72CFA926A79_AdjustorThunk,
+	Color_get_maxColorComponent_mBA8595CB2790747F42145CB696C10E64C9BBD76D_AdjustorThunk,
 	Color_op_Implicit_m653C1CE2391B0A04114B9132C37E41AC92B33AFE,
 	Color_op_Implicit_m51CEC50D37ABC484073AECE7EB958B414F2B6E7B,
+	Color_HSVToRGB_mAA0ABF40600699DC136E65487B0F2F8AAA87D223,
 	Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2_AdjustorThunk,
 	Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30,
 	Color32_op_Implicit_mA89CAD76E78975F51DF7374A67D18A5F6EF8DA61,
@@ -33163,6 +34518,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Display_get_systemWidth_mA14AF2D3B017CF4BA2C2990DC2398E528AF83413,
 	Display_get_systemHeight_m0D7950CB39015167C175634EF8A5E0C52FBF5EC7,
 	Display_RelativeMouseAt_mABDA4BAC2C1B328A2C6A205D552AA5488BFFAA93,
+	Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA,
 	Display_RecreateDisplayList_mA7E2B69AF4BD88A0C45B9A0BB7E1FFDDA5C60FE8,
 	Display_FireDisplaysUpdated_m1655DF7464EA901E47BCDD6C3BBB9AFF52757D86,
 	Display_GetSystemExtImpl_m946E5A2D11FC99291208F123B660978106C0B5C6,
@@ -33475,6 +34831,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Material_CreateWithMaterial_mD3140BCB57EBB406D063C7A7B0B9D1A4C74DA3F2,
 	Material_CreateWithString_mCF4047522DD7D38087CF9AF121766E0D69B9BB55,
 	Material_get_shader_m9CEDCA4D97D42588C6B827400E364E4A8EC55FF0,
+	Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9,
 	Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3,
 	Material_get_mainTexture_mE85CF647728AD145D7E03A172EFD5930773E514E,
 	Material_set_mainTexture_m0742CFF768E9701618DA07C71F009239AB31EB41,
@@ -33505,6 +34862,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Material_GetTextureImpl_m19D8CE6C5701AC4B69A6D5354E08240DF6C036D2,
 	Material_SetFloatArrayImpl_m80EEFAE52B5E5BC228134BE5B070DC6237A3CDE4,
 	Material_GetTextureScaleAndOffsetImpl_m8946BA8A9E6F974315DBFBAAC9A152BDCA65F3E1,
+	Material_SetTextureOffsetImpl_mFA6B03949317E27AA65014030ABE8CA79350FE45,
+	Material_SetTextureScaleImpl_mB4BD14FA7A283ACD618A139F0A28D44BE299A89E,
 	Material_SetFloatArray_m62969A8282FA26EBA3996A5F9B752761A9C4E096,
 	Material_SetFloat_m4B7D3FAA00D20BCB3C487E72B7E4B2691D5ECAD2,
 	Material_SetFloat_mC2FDDF0798373DEE6BBA9B9FFFE03EC3CFB9BF47,
@@ -33519,17 +34878,22 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Material_SetFloatArray_m826883FAC1B827A065735E70E7B6A706BCE695FA,
 	Material_GetFloat_m8A4243FC6619B4E0E820E87754035700FD4913F0,
 	Material_GetFloat_mC1764F8B39FD31C6B7629D417BC8375D6E6AC60C,
+	Material_GetColor_m95E13C52410F7CE01E8DC32668ABBCBF19BB8808,
 	Material_GetColor_m1FFF5ECB4967771D751C60205635A0D3F7AA2F0E,
 	Material_GetVector_m068E8828C9E9FB017161F018E80818C2D1651477,
 	Material_GetVector_mDE1F87F355E0ECAD883E4F2CF62DB338C2E00C38,
 	Material_GetTexture_mCD6B822EA19773B8D39368FF1A285E7B69043896,
 	Material_GetTexture_mDB1B89D76D44AD07BD214224C59A6FE0B62F6477,
+	Material_SetTextureOffset_m3E9C91ED11CB6323252AF6B5CB15CCD497EF10BB,
+	Material_SetTextureScale_m30A521475E4FF45858D27B8DA562B06165734A9E,
 	Material_GetTextureScale_m2B1FFB0B67C22C3544E2E66E3E0D5B8DEE7EA859,
 	Material_GetTextureScale_m3AD3DBFC4E7F8546BCFA10BE56FD794C64635D9E,
 	Material_SetColorImpl_Injected_mEE762DBD0B37ACA313061179B3CB767B59E4B0FB,
 	Material_SetMatrixImpl_Injected_mD2486E408D7547B08CC36A2DE70520F97A68529C,
 	Material_GetColorImpl_Injected_m22325A32C4B5AAEA791AED50195F66CDBAE93C82,
 	Material_GetTextureScaleAndOffsetImpl_Injected_m5DDD8AB08DCF6A52415FB8D76A089CC886425E54,
+	Material_SetTextureOffsetImpl_Injected_m85850F975A45BBB3AEA145C52309FC7CB82CDF64,
+	Material_SetTextureScaleImpl_Injected_m44A1C509E1EA40BFAFA82C7449EC21E6D39E8BF9,
 	MaterialPropertyBlock__ctor_m9055A333A5DA8CC70CC3D837BD59B54C313D39F3,
 	MaterialPropertyBlock_GetFloatImpl_m1CFE7F0D29C0E2840BBEE60481BA894018D75C1B,
 	MaterialPropertyBlock_GetVectorImpl_m1D9051CD0DB311A404317DCF50B6C55E792A9231,
@@ -33570,6 +34934,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	MaterialPropertyBlock_SetMatrixImpl_Injected_m98113950CE5B6599E9CF944DF35CE72AEE1574CF,
 	Mathf_IsPowerOfTwo_mBEE49A57E30C6CA8DED61F41DD04625F3FA35359,
 	Mathf_NextPowerOfTwo_m071D88C91A1CBECD47F18CA20D219C77879865E7,
+	Mathf_GammaToLinearSpace_m537DFDE30A58265FDA50F4D245B9599BBA8A4772,
+	Mathf_LinearToGammaSpace_m2E1C2A97C0D476FB5659601D09500CC8DDE09F61,
 	Mathf_Sin_m5275643192EFB3BD27A722901C6A4228A0DB8BB6,
 	Mathf_Cos_mC5ECAE74D1FE9AF6F6EFF50AD3CD6BA1941B267A,
 	Mathf_Tan_m436F7A034334BCB42BD46ABC94D1200C70E81A49,
@@ -33600,6 +34966,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Mathf_Approximately_m91AF00403E0D2DEA1AAE68601AD218CFAD70DF7E,
 	Mathf_SmoothDamp_m00F6830F4979901CACDE66A7CEECD8AA467342C8,
 	Mathf_Repeat_m8459F4AAFF92DB770CC892BF71EE9438D9D0F779,
+	Mathf_PingPong_m531DFAB96635B14C932754377C4D12927EDA0ECE,
 	Mathf_InverseLerp_m7054CDF25056E9B27D2467F91C95D628508F1F31,
 	Mathf__cctor_m4855BF06F66120E2029CFA4F3E82FBDB197A86EC,
 	Matrix4x4__ctor_mC7C5A4F0791B2A3ADAFE1E6C491B7705B6492B12_AdjustorThunk,
@@ -33747,6 +35114,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	PlayerConnection_RegisterConnection_m7E54302209A4F3FB3E27A0E7FEB8ADE32C100F1B,
 	PlayerConnection_RegisterDisconnection_m556075060F55D3FA7F44DEB4B34CE1070ECBF823,
 	PlayerConnection_Send_m1CDF41319A60A5940B487D08ECE14D0B61EDE6AC,
+	PlayerConnection_TrySend_m3C0D0208A6A8A7F7FF93AF155A71B726ABE8D662,
 	PlayerConnection_BlockUntilRecvMsg_mFCF2DB02D6F07C0A69C0412D8A3F596AF4AC54A2,
 	PlayerConnection_DisconnectAll_m278A4B90D90892338D1B41F5A59CD7C519F1C8D2,
 	PlayerConnection_MessageCallbackInternal_m3E9A847ED82FDA9ABB680F81595A876450EFB166,
@@ -33786,6 +35154,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Object_GetCachedPtr_m8CCFA6D419ADFBA8F9EF83CB45DFD75C2704C4A0,
 	Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE,
 	Object_set_name_m538711B144CDE30F929376BCF72D0DC8F85D0826,
+	Object_Instantiate_mAF9C2662167396DEE640598515B60BE41B9D5082,
 	Object_Instantiate_m17AA3123A55239124BC54A907AEEE509034F0830,
 	Object_Instantiate_m674B3934708548332899CE953CA56BB696C1C887,
 	Object_Destroy_m09F51D8BDECFD2E8C618498EF7377029B669030D,
@@ -33803,11 +35172,13 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Object_GetOffsetOfInstanceIDInCPlusPlusObject_m7C7130E8611F32F6CC9A47400AC5BDC2BA5E6D23,
 	Object_Internal_CloneSingle_m4231A0B9138AC40B76655B772F687CC7E6160C06,
 	Object_Internal_CloneSingleWithParent_m32F1D681010B51B98CDBC82E3510FC260D2D1E17,
+	Object_Internal_InstantiateSingle_mCC3EB0F918934D233D43DFDB457605C4B248738D,
 	Object_ToString_m7A4BBACD14901DD0181038A25BED62520D273EDC,
 	Object_GetName_m1691C0D50AEBC1C86229AEAC2FBC1EE2DC6B67AF,
 	Object_SetName_m2CBABC30BA2B93EFF6A39B3295A7AB85901E60E8,
 	Object_FindObjectFromInstanceID_m7594ED98F525AAE38FEC80052729ECAF3E821350,
 	Object__cctor_m14515D6A9B514D3A8590E2CAE4372A0956E8976C,
+	Object_Internal_InstantiateSingle_Injected_m04E25C97D5848B7AA54178A5448744A0DEB1B62E,
 	Plane__ctor_m6535EAD5E675627C2533962F1F7890CBFA2BA44A_AdjustorThunk,
 	Plane__ctor_m231D58E7BD9DADE44EFD56F5B13677CF81ACD64C_AdjustorThunk,
 	Plane_get_normal_m203D43F51C449990214D04F332E8261295162E84_AdjustorThunk,
@@ -33863,6 +35234,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	PlayableOutputHandle__cctor_mD1C850FF555697A09A580322C66357B593C9294E,
 	PlayerConnectionInternal__ctor_m882227F7C855BCF5CE1B0D44752124106BE31389,
 	PlayerConnectionInternal_UnityEngine_IPlayerEditorConnectionNative_SendMessage_m00395F263B4C7FD7F10C32B1F4C4C1F00503D4BB,
+	PlayerConnectionInternal_UnityEngine_IPlayerEditorConnectionNative_TrySendMessage_m950332D66588946F8699A64E5B8DBA8956A45303,
 	PlayerConnectionInternal_UnityEngine_IPlayerEditorConnectionNative_Poll_mEAAE7671B5D8E0360BFE50E61E89FFF65DB825E4,
 	PlayerConnectionInternal_UnityEngine_IPlayerEditorConnectionNative_RegisterInternal_m991A5281F58D94FA0F095A538BD91CA72B864965,
 	PlayerConnectionInternal_UnityEngine_IPlayerEditorConnectionNative_UnregisterInternal_mAF6931079473185968AFCD40A23A610F7D6CC3A0,
@@ -33874,6 +35246,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	PlayerConnectionInternal_RegisterInternal_mC3FB67053C4C7DB1AABAB7E78E1F1345720ED84F,
 	PlayerConnectionInternal_UnregisterInternal_m675B2C87E01FCBBF5CB1A205375A2E95A8F150B2,
 	PlayerConnectionInternal_SendMessage_m83801DCA5BBCC8116F1C7898FB6A755CCAF6F928,
+	PlayerConnectionInternal_TrySendMessage_mE31F212ED59D69FD01FC2B6B4503A5AF97C1948D,
 	PlayerConnectionInternal_PollInternal_m46079D478471FAB04EE8E613CAE8F6E79822472E,
 	PlayerConnectionInternal_DisconnectAll_m58AFB71131F174149D6AA98C312D9026C15C6090,
 	Pose__ctor_m4F1AE399EDC70FBE803FCA8A37166AE2D5ED5235_AdjustorThunk,
@@ -33948,6 +35321,11 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384,
 	Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780,
 	Random_RandomRangeInt_m4D223ACEC78BCC435D90A7D3696775DE973D324E,
+	Random_get_value_mC998749E08291DD42CF31C026FAC4F14F746831C,
+	Random_get_insideUnitSphere_m10033DFB85B1A21CE44201CB0E421F27B77A868F,
+	Random_ColorHSV_m614A49A15AC5B12109FC2289586D497E4DE612E5,
+	Random_ColorHSV_m38BA3293D1E3BE8BF77D790EF99B79B44A950F3F,
+	Random_get_insideUnitSphere_Injected_m41A8C2C4C6E83CEF53FF1686B8EFF649C3BDCC93,
 	RangeAttribute__ctor_mB9CC43849A074C59DD99F154215A755131D47D89,
 	RangeInt__ctor_mACFE54DF73DE3F62053F851423525DB5AC1B100E_AdjustorThunk,
 	RangeInt_get_end_m7A5182161CC5454E1C200E0173668572BA7FAAFD_AdjustorThunk,
@@ -34100,11 +35478,13 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Renderer_GetMaterial_m370ADC0227BC648BEFAAF85AFB09722E8B20024B,
 	Renderer_GetSharedMaterial_m3819AC6D141381FD4C99793E855D2ACED6FB3071,
 	Renderer_SetMaterial_m68B4F4BB5C58FB88AE7AF3829B532869C781FD0F,
+	Renderer_GetMaterialArray_m867EBF025087D60E2A31D81ED7B36440ADA27B5A,
 	Renderer_SetMaterialArray_mEB9BA77D57248BBDD5BCF70EEF175D6A2DD8A66A,
 	Renderer_Internal_SetPropertyBlock_m92C716E9C4DB64FE53D98F1BE4981FA2644AC43B,
 	Renderer_Internal_GetPropertyBlock_mB376DBE5A7423EBFC8E01708D6D095308C3BAF96,
 	Renderer_SetPropertyBlock_m1B999AB9B425587EF44CF1CB83CDE0A191F76C40,
 	Renderer_GetPropertyBlock_mCD279F8A7CEB56ABB9EF9D150103FB1C4FB3CE8C,
+	Renderer_get_enabled_m40E07BB15DA58D2EF6F6796C6778163107DD7E1B,
 	Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303,
 	Renderer_set_shadowCastingMode_mC7E601EE9B32B63097B216C78ED4F854B0AF21EC,
 	Renderer_set_receiveShadows_mD2BD2FF58156E328677EAE5E175D2069BC2925A0,
@@ -34119,6 +35499,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Renderer_GetLightmapST_m66E57B0D350077BE495B044F2366ED5DE7E7D3AA,
 	Renderer_get_lightmapScaleOffset_m0D6FF16A107969AE99669ABBA55E78A5CEB0E26E,
 	Renderer_GetSharedMaterialArray_mED935F855F35F45113F22719675FF8DFA9F8DFF4,
+	Renderer_get_materials_m5A8C7D4A4D87E69A1C03E72B43C6902762312760,
 	Renderer_set_materials_m282684D30EDF4D694D79D9D3F8D31F0BA9D2BC1F,
 	Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617,
 	Renderer_set_material_mB4988AD6A93C7FDACC4C07A99D1DAC23D10C0344,
@@ -34139,11 +35520,13 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	RuntimeInitializeOnLoadMethodAttribute_set_loadType_m99C91FFBB561C344A90B86F6AF9ED8642CB87532,
 	LoadSceneParameters__ctor_m2E00BEC64DCC48351831B7BE9088D9B6AF62102A_AdjustorThunk,
 	Scene_IsValidInternal_mB85F25DED2B4D8B3E15D1CD6F7A7B354CEA43E74,
+	Scene_GetNameInternal_mE5393E58A37BC0031702DFBA6AEC577058D2941E,
 	Scene_GetIsLoadedInternal_m6D1D452018259662F506EBB33BFD3B55A613E329,
 	Scene_GetRootCountInternal_m7DC44376631B316E531E51D98221FE2F417E1D8C,
 	Scene_GetRootGameObjectsInternal_mBAB91E493904652A51AA289ACC4810521EF329FF,
 	Scene_get_handle_mFAB5C41D41B90B9CEBB3918A6F3638BD41E980C9_AdjustorThunk,
 	Scene_IsValid_mDA115AE2634680CAE92D2F844347AB4CD2185437_AdjustorThunk,
+	Scene_get_name_m0E63ED0F050FCC35A4216220C584BE3D3F77B0E1_AdjustorThunk,
 	Scene_get_isLoaded_m6A733EA533B0DC0041A9579A95530B41F869435C_AdjustorThunk,
 	Scene_get_rootCount_mB68117CA05ABDF0294A827FAB7996BCD2501CE8B_AdjustorThunk,
 	Scene_GetRootGameObjects_mC87878438643AF527A7C017B2EC2D133E96A1FC1_AdjustorThunk,
@@ -34162,9 +35545,14 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	SceneManager_remove_sceneLoaded_m894CC4AE20DC49FF43CF6B2A614877F50D707C92,
 	SceneManager_add_sceneUnloaded_m14FAB322E1A8BC4981CFC9799D4CD68481377C8A,
 	SceneManager_remove_sceneUnloaded_mEB3226CE2741E6782E8055436FC51A6A74BBFBAF,
+	SceneManager_LoadScene_mFC850AC783E5EA05D6154976385DFECC251CDFB9,
+	SceneManager_LoadScene_m4641E278E1E9A1690A46900F1787B6F1070188CF,
 	SceneManager_LoadSceneAsync_m231FF07C2F5CB3BDB0990CE2F216CE73B11B7CE4,
 	SceneManager_LoadSceneAsync_m2B94FAAB8741654B243CFF73FE412965BD26E9F6,
+	SceneManager_LoadSceneAsync_mBB8889B3326DF7DD64983AE44FF5D140670C29B9,
+	SceneManager_LoadSceneAsync_m8B6EC55B2DE8C281A5D4B2CE88531D8573AF39EE,
 	SceneManager_UnloadSceneAsync_m3A6DC57622DB9BDB6E63FAE55B17A13FBD12587B,
+	SceneManager_UnloadSceneAsync_m00B17FD2F3964590C302691300BE794D1BFCB5C9,
 	SceneManager_Internal_SceneLoaded_m800F5F7F7B30D5206913EF65548FD7F8DE9EF718,
 	SceneManager_Internal_SceneUnloaded_m32721E87A02DAC634DD4B9857092CC172EE8CB98,
 	SceneManager_Internal_ActiveSceneChanged_mE9AB93D6979594CFCED5B3696F727B7D5E6B25F5,
@@ -34292,6 +35680,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Texture2D_get_isReadable_mCF446A169E1D8BF244235F4E9B35DDC4F5E696AD,
 	Texture2D_ApplyImpl_mEFE072AD63B1B7B317225DAEDDB1FF9012DB398B,
 	Texture2D_ResizeImpl_m92009FC5D076C295BA1DECBA9F4A21A678A425C3,
+	Texture2D_SetPixelImpl_m62B6A2252516D1D5E09701BA550D72ACB79E328B,
+	Texture2D_GetPixelImpl_mFC45AE4B9B8B88E595CF6EE0FFF751682A70B76D,
 	Texture2D_GetPixelBilinearImpl_m950AB40E4151F10B6AA6C5759903BA07348114FB,
 	Texture2D_ResizeWithFormatImpl_mA7D86CB3F93C5B34F4F728C3AF4BABC9FC8C42BC,
 	Texture2D_ReadPixelsImpl_m8D38B7E5F239AD6A9BE8B7732A9CB5ABF35CD0EA,
@@ -34300,8 +35690,10 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Texture2D_GetRawTextureData_m387AAB1686E27DA77F4065A2111DF18934AFB364,
 	Texture2D_GetPixels_mBCF24F58376C64F7326040FFEBD6234D7F8FDE6F,
 	Texture2D_GetPixels_mE12FF280416D83D18B81E07F04BD1080A0F5009D,
+	Texture2D_SetPixel_m8BE87C152447B812D06CB894B3570269CC2DE7C3,
 	Texture2D_SetPixels_mC768DC908606FE162BF77A8761AD3ED7BAC1612C,
 	Texture2D_SetPixels_mDE50229135F49F323D265340C415D680CCB2FB92,
+	Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD,
 	Texture2D_GetPixelBilinear_m3E0E9A22A0989E99A7295BC6FE6999728F290A78,
 	Texture2D_Apply_mCC17B1895AEB420CF75B1A50A62AB623C225A6C1,
 	Texture2D_Apply_m0F3B4A4B1B89E44E2AF60ABDEFAA18D93735B5CA,
@@ -34313,6 +35705,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Texture2D_SetPixels32_m515E77577D02B697645BD64D6E6AF32646B7975B,
 	Texture2D_GetPixels_m12211168B2F47A4D4F920E8D52B04509BBA67006,
 	Texture2D_GetPixels_mE87C4C2438D7DE39C50EC1C91E438BB15026BBE3,
+	Texture2D_SetPixelImpl_Injected_m21934648C4DE2227463F16A67EFA3DC740682ACC,
+	Texture2D_GetPixelImpl_Injected_mA54A70585DC14F8F87449E931121507ADABA2CE6,
 	Texture2D_GetPixelBilinearImpl_Injected_m120BD9810D176C39E874FFDAF53AD3AC3B6ADF85,
 	Texture2D_ReadPixelsImpl_Injected_m8D0C78900FF4C61ED9D6DAF548C3F397FB55D91D,
 	Texture2DArray__ctor_mD92521FF6DA05FF47471B741DDC7E4D5B3C3F4E2,
@@ -34375,6 +35769,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728,
 	Transform_get_eulerAngles_mF2D798FA8B18F7A1A0C4A2198329ADBAF07E37CA,
 	Transform_set_eulerAngles_m4B2B374C0B089A7ED0B522A3A4C56FA868992685,
+	Transform_get_localEulerAngles_m445AD7F6706B0BDABA8A875C899EB1E1DF1A2A2B,
+	Transform_set_localEulerAngles_mC5E92A989DD8B2E7B854F9D84B528A34AEAA1A17,
 	Transform_get_right_mC32CE648E98D3D4F62F897A2751EE567C7C0CFB0,
 	Transform_get_up_m3E443F6EB278D547946E80D77065A871BEEEE282,
 	Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F,
@@ -34402,6 +35798,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Transform_Rotate_mEEA80F3DA5A4C93611D7165DF54763E578477EF9,
 	Transform_RotateAroundInternal_m86311DA32026D445907EECE40DF2E867DF273F3D,
 	Transform_RotateAround_m433D292B2A38A5A4DEC7DCAE0A8BEAC5C3B2D1DD,
+	Transform_LookAt_m3EC94482B2585FE03AEEDF90325A1F0B9A84960E,
+	Transform_Internal_LookAt_m8F9A42F74C8301EBC1C8043AC698A5B0222C16B6,
 	Transform_TransformDirection_m85FC1D7E1322E94F65DA59AEF3B1166850B183EF,
 	Transform_InverseTransformDirection_m6F0513F2EC19C204F2077E3C68DD1D45317CB5F2,
 	Transform_TransformVector_m75D0F9F62127C642869F5F0C865540FEE5BB3168,
@@ -34438,6 +35836,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Transform_get_localToWorldMatrix_Injected_mF5629FA21895EB6851367E1636283C7FB70333A9,
 	Transform_SetPositionAndRotation_Injected_mD8DC359CE79CE34899FF76F73469884818AC299A,
 	Transform_RotateAroundInternal_Injected_m06D87F971174AA310FD0A26BE4B520641086BCA4,
+	Transform_Internal_LookAt_Injected_mCB3D865EE4A17FDC687DFD750CCD3FFA234550D0,
 	Transform_TransformDirection_Injected_m5E7C9D4E879820DF32F1CB1DE1504C59B8E98943,
 	Transform_InverseTransformDirection_Injected_m768BC758740126C5C209B446DA13EA93E5D91707,
 	Transform_TransformVector_Injected_m1414B9B0F8BD8D03313703E720DFCA082FD1DE38,
@@ -34484,6 +35883,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Vector2_Lerp_m85DD66409D128B4F175627F89FA9D8751B75589F,
 	Vector2_Scale_m7AA97B65C683CB3B0BCBC61270A7F1A6350355A2,
 	Vector2_Normalize_m99A2CC6E4CB65C1B9231F898D5B7A12B6D72E722_AdjustorThunk,
+	Vector2_get_normalized_m058E75C38C6FC66E178D7C8EF1B6298DE8F0E14B_AdjustorThunk,
 	Vector2_ToString_m83C7C331834382748956B053E252AE3BD21807C4_AdjustorThunk,
 	Vector2_GetHashCode_m028AB6B14EBC6D668CFA45BF6EDEF17E2C44EA54_AdjustorThunk,
 	Vector2_Equals_m4A2A75BC3D09933321220BCEF21219B38AF643AE_AdjustorThunk,
@@ -34612,6 +36012,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	WaitUntil_get_keepWaiting_m01FE040DFAAA66F0664092597CE79FCE25BD9122,
 	WaitWhile_get_keepWaiting_m071555AC3659D1D159FE35CC65789DF5E3C4AE5F,
 	File_ReadAllBytes_m8ECCA3E03287A64BE4D493A5E613CD9A453FCF6C,
+	File_Exists_m6DD16096D95268CD66D0244DD8217E7B5182FA53,
 	DictationRecognizer__ctor_mF4F9C45412131377C1FF6B7A25CBAD0D02C0D6ED,
 	DictationRecognizer__ctor_mBDDCC296FCC43884D7F5199ACBB0BF0BAEECEBD4,
 	DictationRecognizer_Create_m6CF3800F2BAAD28907CC342659B05D9790D2E37C,
@@ -34718,6 +36119,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	CapsuleCollider_get_direction_m699EB45D6B2D713374B163F59AA4CB61B2BFA3DF,
 	CapsuleCollider_get_center_Injected_mCD228988D6221C1AAB16F9A46FA6D3EBF02D7BB2,
 	Collider_get_enabled_mED644D98C6AC2DF95BD86145E8D31AD7081C76EB,
+	Collider_set_enabled_mF84DE8B0C8CAF33ACDB7F29BC055D9C8CFACB57B,
 	Collider_get_attachedRigidbody_m9E3C688EAE2F6A76C9AC14968D96769D9A71B1E8,
 	Collider_ClosestPoint_mA3CF53B6EE9CEEDB3BF2BCCE19E511CA659672B7,
 	Collider_get_bounds_mD3CB68E38FB998406193A88D18C01F510272058A,
@@ -34759,7 +36161,14 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Physics_RaycastAll_mE9ACFB603E337E2195E4B9419099E178F7FF82F4,
 	Physics_RaycastAll_m6D5629FD1D3E3B0001F2819C1AE8660A3949C51F,
 	Physics_RaycastAll_m37C7F423486CE3ACBAB4F1A326B9EBD7572B4056,
+	Physics_RaycastNonAlloc_m606B435CE959801C9B7D7111E49071E893C951DE,
+	Physics_RaycastNonAlloc_mBFDB05B1AA90C5D587A1BEA6BEE66FEF2DF89894,
+	Physics_RaycastNonAlloc_m0A9CEF12FB7EE9C790609A15CBFE975725365CF9,
+	Physics_RaycastNonAlloc_m9CC4B976EA1936076FFA1339BF6FBE78A2DA593F,
 	Physics_RaycastNonAlloc_m120ADF6BD8DF57A40E6B395299B03FAEE348973F,
+	Physics_RaycastNonAlloc_mA795C150FCE1F242C9806AAAFF04125594B56DDB,
+	Physics_RaycastNonAlloc_m63644DC59B0554846D62ED3BE3B5517BC97D3316,
+	Physics_RaycastNonAlloc_mD4393134F4470C9B319603A6CD3FF601F5981C88,
 	Physics_Query_SphereCastAll_m92155C4717FC0AC27A76DACC349E94F75685053A,
 	Physics_SphereCastAll_m30813767B905D3E6D32E14BAE55D07B4E93587D0,
 	Physics_SphereCastAll_m1D941B8F82C16EEA99DD16E1478DA119FABFD16D,
@@ -34804,6 +36213,10 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Rigidbody__ctor_m7E9FF7B44B8A3B05217339C2C852A4BF620A12E4,
 	Rigidbody_set_velocity_m8D129E88E62AD02AB81CFC8BE694C4A5A2B2B380,
 	Rigidbody_set_angularVelocity_m1839DCBC87B01EFD0B4936E84E503E38774B962C,
+	Rigidbody_get_drag_m2B304BB4C4A1A0E349C8B57C9085C0BC66DDE28E,
+	Rigidbody_set_drag_mCE564F278586FB0693B2BBEC4FB72E1F8E1E97EE,
+	Rigidbody_get_useGravity_m802E0C0B4F2C2B521D5369EA027325157A53FCAA,
+	Rigidbody_set_useGravity_mB0D957A9D8A9819E18D2E81F465C5C0B60CBC6DA,
 	Rigidbody_get_isKinematic_mCF624F7C1C78267224EFBEAF9B4FD72CDE56CEB2,
 	Rigidbody_set_isKinematic_m856AB59E5A6207892C439AFC8DDF5620B941E71B,
 	Rigidbody_AddForce_mD64ACF772614FE36CFD8A477A07A407B35DF1A54,
@@ -34886,6 +36299,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	AudioMixerPlayable_GetHandle_mDBC7135DF653E0E19675B6694EA89958E609587D_AdjustorThunk,
 	AudioMixerPlayable_Equals_m6B84D1A5AEDEAAE12AEFB77319B2662506ABC9C4_AdjustorThunk,
 	AudioClip__ctor_m52425138C3A036FC847A0E4C4ADA31CEF81CD10D,
+	AudioClip_get_length_mFF1E21363B1860453451C4DA1C1459E9B9504317,
 	AudioClip_get_ambisonic_m9C97B0E60B6AD2A70849439DFCB08D3F3968A1A4,
 	AudioClip_InvokePCMReaderCallback_Internal_mF087FCAD425EAC299C1156BA809DC535D00757F9,
 	AudioClip_InvokePCMSetPositionCallback_Internal_mBB8265A5BFF660F8AF39718DDB193319AB7EFA6F,
@@ -34949,6 +36363,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	AudioSource_PlayOneShot_mFD68566752A61B9C54843650A5C6075DBBFC56CD,
 	AudioSource_PlayOneShot_mA65B809A4480039CD8337ABF45C0E57E137EED41,
 	AudioSource_PlayOneShotHelper_m984380B06707633611ACDDCF4AFC91B659EEF8AE,
+	AudioSource_set_playOnAwake_m5E4C76260D66898EEFEB20E4F42B6249AACB4128,
 	AudioSource_get_spatializeInternal_mFA756EEB0BD4DC62422DEE11E7E6013BC0F23224,
 	AudioSource_get_spatialize_m8CC430356EDE4FF4BD31A5F5509028B7DDCC4C11,
 	AudioSource_GetNumExtensionProperties_m587290B91EE48986EC862690A77A609CAEEA4E67,
@@ -35340,47 +36755,6 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	Vector3_op_Subtraction_mCF83716693467B9D701E3F83833D9BE2BC0FA9E1,
 	Vector3_op_Division_m44764EA1A8C5A24C069702937AE7194B9A58F609,
 	Vector3_op_UnaryNegation_m354F7A3FFEDD0A3F6AC9899CBEEB1D68756838F0,
-	AsyncInfoIdGenerator_CreateNext_mD4F9BEA5E88D2BD92E0CF0B7112A612B3E06285E,
-	AsyncInfoIdGenerator_EnsureInitializedThreadsafe_m8B7055212D6AAAD782FC163797AB67BE11D07C5E,
-	AsyncInfoIdGenerator__cctor_m0160C31D854AFE61A802EB0ADB2E00E85AC90B10,
-	WindowsRuntimeSystemExtensions_ConcatenateCancelTokens_mE6D63868E79DE3EBCC91E8BC0BBF73D12E31E4D9,
-	WindowsRuntimeSystemExtensions_AttachRestrictedErrorInfo_mF39F00CA42F45D3F2EB5B8DB5B450C55A206113C,
-	U3CU3Ec__cctor_m253A27693DA3D1A9A90FD949D4D58340D592FA5B,
-	U3CU3Ec__ctor_m8CDEDC568031CE2B651AA8B8FAB2D9ACF35F3D97,
-	U3CU3Ec_U3CConcatenateCancelTokensU3Eb__0_0_mD2C070F430A2E1950C85E28ED328545E22E50AFB,
-	U3CU3Ec_U3CConcatenateCancelTokensU3Eb__0_1_mF440B6D95BB892E1298E16F45195EC36D4AF82DC,
-	Point_get_X_m7B3855A972F9BE4EFC665018A0FFCDE7653F5279_AdjustorThunk,
-	Point_get_Y_m7C07355EC984C2A5DCDED2D04D6FF242300F607A_AdjustorThunk,
-	Point_ToString_mDFB209B8CA094AF8FB88FB144DBA13F9ABB49E8E_AdjustorThunk,
-	Point_System_IFormattable_ToString_m791F8FC114C9E607E22E1377E7EF3ACD0395CA57_AdjustorThunk,
-	Point_ConvertToString_m6E52855EA4919577AD9678EB50CA60A433F49803_AdjustorThunk,
-	Point_op_Equality_m64C4E8C491AFAA01B7450CE74EC8144B6C3BA562,
-	Point_Equals_m3BA55D50EECD9ACD235E1CF9F34373C325973DB6_AdjustorThunk,
-	Point_GetHashCode_m7348B1D410207B79808F2CA147AE04AF43BE7580_AdjustorThunk,
-	Rect_get_X_m35D247CE131BD7E88E8F37477AF8B97514B2EB18_AdjustorThunk,
-	Rect_get_Y_m50133BDDAB0AA130D87E2C679FA9DD3F20B2EE16_AdjustorThunk,
-	Rect_get_Width_mB3768453F8598F1255098EA9454A03A3B0C2C682_AdjustorThunk,
-	Rect_get_Height_m02E5221D781AADCD2F72A09FEA6EC37DF5EA9B1C_AdjustorThunk,
-	Rect_get_IsEmpty_m80BA92D11A0A2C89E0CF8601A233778A1C0C77FF_AdjustorThunk,
-	Rect_ToString_mAB211C47A6FF959D76D086C68C743F928C07D68F_AdjustorThunk,
-	Rect_System_IFormattable_ToString_m92BAA1305B83C3E5526E257B9C69A767FED3923C_AdjustorThunk,
-	Rect_ConvertToString_mDD63C220964456CF26A0D2B0F129110F19FEE9B7_AdjustorThunk,
-	Rect_op_Equality_mE78AF9FB74353DF0F65879F0DC6719F598F736AA,
-	Rect_Equals_m8F195999C4E1C9356E3234E2E9A762DC2F6E3735_AdjustorThunk,
-	Rect_GetHashCode_m09432FD8E6C636CD000BCD0D9A8F1E30763314CB_AdjustorThunk,
-	Size_get_Width_m82026F4BBE98C2740685F27ADF96699DD099B0B9_AdjustorThunk,
-	Size_get_Height_mA4D91514E5FC4462B43529168335A1862E412EEA_AdjustorThunk,
-	Size_get_IsEmpty_m0E62EF83B12C6B9858290ECB5C494ED2F7486438_AdjustorThunk,
-	Size_Equals_mCE363B6FB51F2B28CE43FABB1D6A0CEE7722658C_AdjustorThunk,
-	Size_GetHashCode_m339BA7D00D8DA638CBCC4727071D15E1AC84FA7B_AdjustorThunk,
-	Size_Equals_m8A6B538AECA7518E75D2CB60DABF77ABE88ABFD8,
-	Size_ToString_m7AD2DBD2743AAB5FE6BF01022D45475C1A8636AA_AdjustorThunk,
-	TokenizerHelper_GetNumericListSeparator_mD31F075C6AF217DB2DC926736D06D6F19B44AD2C,
-	ListToBindableVectorViewAdapter__ctor_m88D2B6C058513EBDA6360AABA6E7858323E3B935,
-	ListToBindableVectorViewAdapter_get_Size_m0D4C2E6A8A3A43D983D9B52AAE61D7F2278DC88F,
-	ListToBindableVectorViewAdapter_GetAt_m4C07149242BB1E01699A3B7272D4E9B4E7FCB885,
-	ListToBindableVectorViewAdapter_IndexOf_m8078DE068EB1CFA4C185D289B2E59905DAE0091A,
-	ListToBindableVectorViewAdapter_GetEnumerator_m78A427BECC1771C3339E481A1C91EBF2D81BAFBC,
 	NavMesh_Internal_CallOnNavMeshPreUpdate_mED6CAB94A6CB61A5FD547B7026DB4C96F2AF5B60,
 	OnNavMeshPreUpdate__ctor_mD019C429BD8D299B85C320A6EFB2FFEDC3F85F42,
 	OnNavMeshPreUpdate_Invoke_mE56CD30B200FECFD94AD4B22923B32BD789D70F0,
@@ -36599,7 +37973,7 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	PhysicsRaycaster_set_eventMask_m37E5C20297F5DB01DE3791CDA8C9649F59E797C7,
 	PhysicsRaycaster_get_maxRayIntersections_m1CDE013379C6D0A5A7FE2B5355A20DA978AB35E5,
 	PhysicsRaycaster_set_maxRayIntersections_mEF384C71FAA8E44BF22642FAC1046B0085B2DC13,
-	PhysicsRaycaster_ComputeRayAndDistance_mFE9A20CAB70AEE415C7C369CA35389F3A9303EF2,
+	PhysicsRaycaster_ComputeRayAndDistance_m38F1B20E0A1948699C2A952234705E1E74666486,
 	PhysicsRaycaster_Raycast_mB720C45CB0B13D85D1EF7535338B76F663E409FB,
 	PhysicsRaycaster_U3CRaycastU3Em__0_m73A18F73DD07B29DC82FE7542E8D88E2EDF3C989,
 	PointerEventData__ctor_m0C53BF90396464F33D24246FCB43CCD6C10279E0,
@@ -37539,6 +38913,8 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	CullStateChangedEvent__ctor_m589D3CD46DAFE6410869A7C7B4E518DBEB42FE60,
 	Misc_Destroy_m0D1FE137DFE990D9E1B36902016DE0C9032D7A85,
 	Misc_DestroyImmediate_m788F46582B17F2D3061C610D2B112E3DF9B5FB0B,
+	MultipleDisplayUtilities_GetRelativeMousePositionForDrag_m889380BC62A1265BF18958BD37379EFD2506991C,
+	MultipleDisplayUtilities_GetMousePositionRelativeToMainDisplayResolution_m057D147B428AAE94DF8A1A67888088F1A3490583,
 	Navigation_get_mode_m3C77554140D0A56ACD06B1E6DB2D016F080FB95E_AdjustorThunk,
 	Navigation_set_mode_m352F710C904809D8291F9DC2215FE04593ADCBE5_AdjustorThunk,
 	Navigation_get_selectOnUp_m8E3A8A4358C862B402C322E93062E10F22371A0E_AdjustorThunk,
@@ -37985,6 +39361,190 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	VerticalLayoutGroup_CalculateLayoutInputVertical_mF06FF0EF1AA383EF8A9D373D3AD8F65E302D6C55,
 	VerticalLayoutGroup_SetLayoutHorizontal_mDBAB0E860D28A07621CFF5FD811FE46681835454,
 	VerticalLayoutGroup_SetLayoutVertical_m0C9CCFE9C74945FF3F45073528EEE427260B79C8,
+	NetFxToWinRtStreamAdapter_GetManagedStream_mB451C96867BF33079637611923FD66B147ABC668,
+	NetFxToWinRtStreamAdapter_EnsureNotDisposed_m466B61758BD6C0C41F56B3808AE5ACD7A5FBA706,
+	NetFxToWinRtStreamAdapter_System_IDisposable_Dispose_m2195248780A7B0B9833CC1299C0368239FD0A96F,
+	NetFxToWinRtStreamAdapter_ReadAsync_m0BCE9E83CEA36191BAA72C43F84A1AF6AAC60AA7,
+	NetFxToWinRtStreamAdapter_WriteAsync_mBA9F702910E1F7290AC20A43982C7EFA5A84C4F8,
+	NetFxToWinRtStreamAdapter_FlushAsync_m9452B6EE043F031DEE0206AA3BC6AAE7EFBEC522,
+	NetFxToWinRtStreamAdapter_Seek_m7914695973A6682573EEE713DD10046D58129592,
+	NetFxToWinRtStreamAdapter_get_CanRead_mFA58CB31AC3CE902D51A2A48B6133C756813720A,
+	NetFxToWinRtStreamAdapter_get_CanWrite_m47AFB33C858A3544271AF6EF71B5960431303758,
+	NetFxToWinRtStreamAdapter_get_Position_mC11DC56E591D18E7577C00362A9A0E032A6FD0FE,
+	NetFxToWinRtStreamAdapter_get_Size_m309472FC98BC493FE9A414C43CE8B2EED10161FC,
+	StreamFlushAsyncResult__ctor_mB90A83C265CA4BFC9EEFC5A0CFE76A2DFF0A13D8,
+	StreamFlushAsyncResult_ProcessConcreteCompletedOperation_m63A273FF3E89F299C27102C58BC1A4F38AA51072,
+	StreamFlushAsyncResult_ProcessConcreteCompletedOperation_mD81B4C15CD17D3753E3023D194165FF82FC37E50,
+	StreamOperationAsyncResult_ThrowWithIOExceptionDispatchInfo_mB5A5574130A4DB6D1D6412D9EBDEC2BEA118C795,
+	StreamOperationAsyncResult__ctor_m1297A6A7E44BF5D57AD6CAFBC14FA870E21D9D8F,
+	StreamOperationAsyncResult_get_AsyncState_m813C2C868FBF73A312C97B9DB311CB97AD7956B5,
+	StreamOperationAsyncResult_get_ProcessCompletedOperationInCallback_mAEBF8906F074143BECE20D7233B58FBE7F89D08D,
+	StreamOperationAsyncResult_get_AsyncWaitHandle_m77AD43084D44615B1A5B18FD41FACE99F34B715C,
+	StreamOperationAsyncResult_get_CompletedSynchronously_mEDCE467455F035E8858A4130BDE966C6842180B9,
+	StreamOperationAsyncResult_Wait_m7E111C3451B661E20090E85DF665934453D1403E,
+	StreamOperationAsyncResult_get_BytesCompleted_m9874C092BA3E62466B1A0AA4DC6564962571D8B4,
+	StreamOperationAsyncResult_get_HasError_m51A52788DC3613F241D5A0D17CB8EBFDA5E05F8D,
+	StreamOperationAsyncResult_ThrowCachedError_m4E9122EE3CD20858BB4570D95912EF3A48038D3A,
+	StreamOperationAsyncResult_CancelStreamOperation_m97B799E99AD4809761BE6A0D3E55DDEEA4DD4443,
+	StreamOperationAsyncResult_CloseStreamOperation_mD2F52A21BFD94DC2A34E260CA631BBDA3CC6721A,
+	StreamOperationAsyncResult_Finalize_mFB4A71F4DB6F0C4D04217F2C8AD4B6C8C472F01C,
+	StreamOperationAsyncResult_ProcessCompletedOperation_InvalidOperationThrowHelper_mA1ED7D2F3D5DE6F75ED044EDA456FA877548F4A7,
+	StreamOperationAsyncResult_ProcessCompletedOperation_mCEAD13DA8A64F3CF722EE656F850716F26F9DEFB,
+	StreamOperationAsyncResult_StreamOperationCompletedCallback_m830CE1407A7C8E1AFFC4534BCE28959467019B0C,
+	StreamOperationsImplementation_ReadAsync_MemoryStream_mD332B977EA293A31B70F8475EAA0D270BB8FE0AB,
+	StreamOperationsImplementation_ReadAsync_AbstractStream_m778BD91CC4C43AEBE54B44DE842503DE52948317,
+	StreamOperationsImplementation_WriteAsync_AbstractStream_m21017F427664FD8D13B2408E5338ED0FFD7F253C,
+	StreamOperationsImplementation_FlushAsync_AbstractStream_m9FC5EE6670A05587FD927A09D8F8F8FF8194F557,
+	U3CU3Ec__DisplayClass1_0__ctor_m3F1B229C6A9B7ADAA910766D1243B532076D313D,
+	U3CU3Ec__DisplayClass1_0_U3CReadAsync_AbstractStreamU3Eb__0_mF7B09B203A347D87A4D31F2BD0CF916B98250325,
+	U3CU3CReadAsync_AbstractStreamU3Eb__0U3Ed_MoveNext_m71F1405BAE4A1E1B2D5FF6D4AC425053EEB34FC9_AdjustorThunk,
+	U3CU3CReadAsync_AbstractStreamU3Eb__0U3Ed_SetStateMachine_mAB18BD9CD69ADDCFBE2B48E4ABB35872BAE54483_AdjustorThunk,
+	U3CU3Ec__DisplayClass2_0__ctor_mFDAE4C079FE8B880EF7687062561C35FC65BA223,
+	U3CU3Ec__DisplayClass2_0_U3CWriteAsync_AbstractStreamU3Eb__0_m3AEE1111FD567723DE3694810471BA166AD0668B,
+	U3CU3Ec__DisplayClass2_0_U3CWriteAsync_AbstractStreamU3Eb__1_m9041D8EDB0504B8C6D7E82BE5746FB980F713EBA,
+	U3CU3CWriteAsync_AbstractStreamU3Eb__0U3Ed_MoveNext_mE88D6EDC8FF01BB4B7832CA4FD9F063AE5CDCD4D_AdjustorThunk,
+	U3CU3CWriteAsync_AbstractStreamU3Eb__0U3Ed_SetStateMachine_m2A079EF5348EE858F047D58EEA127EAFB2F2BF1B_AdjustorThunk,
+	U3CU3CWriteAsync_AbstractStreamU3Eb__1U3Ed_MoveNext_mD3C1D72E476D85F6143C00F1DE1D449EAA690E26_AdjustorThunk,
+	U3CU3CWriteAsync_AbstractStreamU3Eb__1U3Ed_SetStateMachine_mCE60114066AA2B6050E71DD82848D3DDBEACB3F5_AdjustorThunk,
+	U3CU3Ec__DisplayClass3_0__ctor_m1F36BD3249B8808F4F2A5707250834193E6FDC67,
+	U3CU3Ec__DisplayClass3_0_U3CFlushAsync_AbstractStreamU3Eb__0_m98A2ECB7B86585805445D61AA12109EB9C64CC91,
+	U3CU3CFlushAsync_AbstractStreamU3Eb__0U3Ed_MoveNext_m543F90A39823888C932491D4018A559436C08EBE_AdjustorThunk,
+	U3CU3CFlushAsync_AbstractStreamU3Eb__0U3Ed_SetStateMachine_m6ECBDD41F0403D71AF9534B0E63161865104118F_AdjustorThunk,
+	StreamReadAsyncResult__ctor_m1037B23E12C21BA0F4C92D48C76DA3EECD4435F0,
+	StreamReadAsyncResult_ProcessConcreteCompletedOperation_m987DE967C55CCDAE3928BE1D2AEF3B64FC58FB43,
+	StreamReadAsyncResult_ProcessConcreteCompletedOperation_mF0CBA3E175E98A2581B71286C8A3261D4EF3A482,
+	StreamWriteAsyncResult__ctor_m3948E7124A04878E7BCAAFCEBCB0B079BA6B6908,
+	StreamWriteAsyncResult_ProcessConcreteCompletedOperation_mFFEAD203431B5EB168068C0CDC881CC7A12DF5E4,
+	StreamWriteAsyncResult_ProcessConcreteCompletedOperation_m46753CC71BFD4F752E35B693E9AF7258D36FF829,
+	WinRtIOHelper_NativeExceptionToIOExceptionInfo_m1CA2440467C50E50B6448BBCC86B4B7DB9A394AD,
+	WinRtIOHelper_EnsureResultsInUserBuffer_m24B0C6BDACD1A06D7FBB9EC91361DA5137E34FB1,
+	WinRtToNetFxStreamAdapter_Create_mCCF171C3466E68BBBF31CBB0C98C3F282F5A5B45,
+	WinRtToNetFxStreamAdapter__ctor_m32DFDE65034486518FEF279121FF1BCEF328FCDF,
+	WinRtToNetFxStreamAdapter_SetWonInitializationRace_m3A170BF60C8D57B6B1DB37B39A767B6DDD43B023,
+	WinRtToNetFxStreamAdapter_get_OneByteBuffer_mBD6829138522F26FED20CEF828A3048B910B016D,
+	WinRtToNetFxStreamAdapter_EnsureNotDisposed_mF8858E644BF5B6A230329F688972B99A0F624150,
+	WinRtToNetFxStreamAdapter_EnsureCanRead_m47456E779147FE03374BC5272A195835BDCF8434,
+	WinRtToNetFxStreamAdapter_EnsureCanWrite_mC94E5B0115A84E45BED38ECE64E5D6A84F19873C,
+	WinRtToNetFxStreamAdapter_Dispose_m4B0059F4DFD1068CB4EFB7BEBA5BA2C19F40BEA4,
+	WinRtToNetFxStreamAdapter_get_CanRead_m9A15816EF314DB640B8EF2BADED51C4B27E2EA6E,
+	WinRtToNetFxStreamAdapter_get_CanWrite_mA56E99097426D3A2874132854C29E6BB4A6D394E,
+	WinRtToNetFxStreamAdapter_get_CanSeek_mE690EB0F98990B3C530222714A55564078308324,
+	WinRtToNetFxStreamAdapter_get_Length_m2A7C8A84DCE6624EB6109F7D887B8ED2A276A7F2,
+	WinRtToNetFxStreamAdapter_get_Position_m4C38E9A2900B580B06A16E9C936397D3C92F08BF,
+	WinRtToNetFxStreamAdapter_set_Position_m38D3A3BC8CE9CD7B48E5DD6DAEFFABC0FFE6D100,
+	WinRtToNetFxStreamAdapter_Seek_mF2618732D60CA7E27B4C51EA6F0A06AF7CFD3CC3,
+	WinRtToNetFxStreamAdapter_BeginRead_mC32A604951DD11227CCFCAF1E5F121CB57FE1A68,
+	WinRtToNetFxStreamAdapter_EndRead_mA6F6842E1D4637C10E496EAAFB8789F9BA7CC4F9,
+	WinRtToNetFxStreamAdapter_ReadAsync_m5160A87A3A863EDAB5BF53534B5A6B7802B57042,
+	WinRtToNetFxStreamAdapter_Read_m89B7FDF29A7000F6B9F6F7A83EAA697B64CC4F0F,
+	WinRtToNetFxStreamAdapter_ReadByte_m92D78BEADEFEE949F3445780EBC10A5E17D9F265,
+	WinRtToNetFxStreamAdapter_BeginWrite_mD5790540FA58130541DD06B296A81417F28D9F55,
+	WinRtToNetFxStreamAdapter_BeginWrite_mD4A1A86E30CA5CE6BC6BEFABF3A11F42B1021916,
+	WinRtToNetFxStreamAdapter_EndWrite_m2B931CFE24E318D4F4AE2BB00D24E7162A9E0EA5,
+	WinRtToNetFxStreamAdapter_WriteAsync_mDB11DF92164A01D1126F85109E1C5462B33168E2,
+	WinRtToNetFxStreamAdapter_Write_mDFF772EF47A9E578150AE08EFA9D105134598033,
+	WinRtToNetFxStreamAdapter_WriteByte_mAFF97A6A70702AC29649A41C048AE186F4070335,
+	WinRtToNetFxStreamAdapter_Flush_m6EA4ADC50C604800CEBA54B8554A64E4312DC94D,
+	WinRtToNetFxStreamAdapter_FlushAsync_m35A5193481BF4AE2CBD79F7378F47CBD6B63FCD3,
+	WinRtToNetFxStreamAdapter_ReadAsyncInternal_m808223D75DD1A59959A6B9F14F623CC50050B593,
+	U3CReadAsyncInternalU3Ed__43_MoveNext_mB0715FAA82A73010EFAC342878C9B52220943AEA_AdjustorThunk,
+	U3CReadAsyncInternalU3Ed__43_SetStateMachine_m1A8819589C373A620E6A76D362FB02B94CBF5E19_AdjustorThunk,
+	WindowsRuntimeStreamExtensions_EnsureAdapterBufferSize_m6507CF9C4E53D85596F7E39A221BE248CA06CB6E,
+	WindowsRuntimeStreamExtensions_AsStreamForRead_m0C215C31D3FDB1F656DA5A4D81AD0628A3EE7AAB,
+	WindowsRuntimeStreamExtensions_AsStreamInternal_m74F95A24B8F32CA25CFEB7B0C142EB3CE87652B4,
+	WindowsRuntimeStreamExtensions_WinRtToNetFxAdapterMap_GetValue_m5B24DC84F0AB904CA8679AB5852AA66D6B25C625,
+	WindowsRuntimeStreamExtensions_WinRtToNetFxAdapterMap_GetValue_m5048E8F721D5BC6AA46B31B8BF638373569A96EE,
+	WindowsRuntimeStreamExtensions_AsStreamInternalFactoryHelper_mFE2CE486791EE8D4492D53EDD64BAF930250778E,
+	WindowsRuntimeStreamExtensions__cctor_m2A925362C13A804653EF4AB2739E897711359841,
+	U3CU3Ec__cctor_mBF52595DB23256E5B7B4724C6DDE9640684FB582,
+	U3CU3Ec__ctor_mBE6F6EA3D1B4DFDD3CCC63AC4059A840F81B73E6,
+	U3CU3Ec_U3CWinRtToNetFxAdapterMap_GetValueU3Eb__11_0_mA2B332AFE10C81364AF1DC25BF618D4200F2D5E1,
+	U3CU3Ec__DisplayClass12_0__ctor_mCB82215D6FC7791483AC9C42E7487E1C19A3CF00,
+	U3CU3Ec__DisplayClass12_0_U3CWinRtToNetFxAdapterMap_GetValueU3Eb__0_m107DC14B8D25DF84D0CBBDBB0F2B52E8F7F51B01,
+	IMarshal_GetUnmarshalClass_m394D399AF3D58E5C260D663B63E34F4A37BF6F76,
+	IMarshal_GetMarshalSizeMax_mBAF33A0B75ABDA690A09809CBC0758AC94C591A1,
+	IMarshal_MarshalInterface_m00480B6CD7532674DAA33AB7D4379125D03FC616,
+	IMarshal_UnmarshalInterface_mDD2463F15F49EA8390415A654870C8A2482E2BEA,
+	IMarshal_ReleaseMarshalData_m03292BAE558EA56FAA11F9CBF8136DDB3D31E298,
+	IMarshal_DisconnectObject_mE3689A76176F7E4FC4D556C9DF8D3F55DC8C9207,
+	IBufferByteAccess_GetBuffer_m0047AB72261718E613B316AE41337C99050B2058,
+	WindowsRuntimeBuffer_Create_mE44C1ABEE68D89B3BBF4899C90EB6FBC8FE5101F,
+	WindowsRuntimeBuffer_RoGetBufferMarshaler_m92635310D29611651BA2CEAE7078C4D60657EEAF,
+	WindowsRuntimeBuffer_EnsureHasMarshalProxy_m8EA99F1848DDC7E830545DC80A8C53983B3E0879,
+	WindowsRuntimeBuffer__ctor_m647E546ED9196E78CF024F9D126E689F068F0CEA,
+	WindowsRuntimeBuffer__ctor_m057CF397F8500BB4BE049EF15809461062E5DC00,
+	WindowsRuntimeBuffer_GetUnderlyingData_mBCC3F8E7DAC3D16C7D5DB7F363F02F451FD67D0D,
+	WindowsRuntimeBuffer_PinUnderlyingData_mD31E1965F0ABF312675E6F3AEA70C773C4CA057B,
+	WindowsRuntimeBuffer_Finalize_mE1F0E0D1245A31A26128A28A26B979B171C84FDA,
+	WindowsRuntimeBuffer_Windows_Storage_Streams_IBuffer_get_Capacity_m94DAA0965A8E5DEDA6F3F77798CF72D140932948,
+	WindowsRuntimeBuffer_Windows_Storage_Streams_IBuffer_get_Length_mB0F8ED9F7F05C763AE8698180336B9A531ABAF9F,
+	WindowsRuntimeBuffer_Windows_Storage_Streams_IBuffer_put_Length_m89636F8978B5A5D597CFB74C2EF3509E52E190B9,
+	WindowsRuntimeBuffer_System_Runtime_InteropServices_WindowsRuntime_IBufferByteAccess_GetBuffer_mA4B0277D88CF6BE1640E0ABF95A4DBBD0A99E1B6,
+	WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_DisconnectObject_m6508BA598A7093C8CAA21518740C488A13CB9055,
+	WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_GetMarshalSizeMax_m6A46F1695F97BDE4587C8CCE174FEE16A11B814B,
+	WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_GetUnmarshalClass_mEE39B87F550E9BB968B24C873F3E2048C4C67F5A,
+	WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_MarshalInterface_mAFC02F5CA4608E72AB872D21D1AEAB0C9E76808B,
+	WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_ReleaseMarshalData_m521849BEE7B8AE233B26A1BE492C4060B7BE678D,
+	WindowsRuntimeBuffer_System_Runtime_InteropServices_IMarshal_UnmarshalInterface_mB0B055B69C3BE22A68704EB42B4D0077360F59BF,
+	WindowsRuntimeBuffer__cctor_mEE45579661730FFFB18D6CE82AB7D41C843CF11F,
+	WindowsRuntimeBufferExtensions_AsBuffer_m8A7ECFC4D04B98BD389D03A8478CBCC14427650F,
+	WindowsRuntimeBufferExtensions_AsBuffer_m44E577DC4024FAA0BB691593F68FBD5A972CE870,
+	WindowsRuntimeBufferExtensions_CopyTo_m6EAD61B4D602858DC439F92678DA5EEDFA560136,
+	WindowsRuntimeBufferExtensions_CopyTo_m79A250A6B56898E32F6F8697DFE3A60FDE66B19B,
+	WindowsRuntimeBufferExtensions_TryGetUnderlyingData_m4FDB38F7DC5B4E354B3D043A73E6CC55D47C2F02,
+	WindowsRuntimeBufferExtensions_IsSameData_m11E5D0B5671D2C8852413DD894003B6CE2CC6260,
+	WindowsRuntimeBufferExtensions_GetWindowsRuntimeBuffer_m3F14338C22A85130806184FA004EA1E0868AC147,
+	WindowsRuntimeBufferExtensions_AsStream_mB5E2DF21974CD23F3A864422B0DC0FB844BF3691,
+	WindowsRuntimeBufferExtensions_GetPointerAtOffset_m6C3741A634A9E5B437B80B297CBC3F0027C0A8A5,
+	WindowsRuntimeBufferExtensions_MemCopy_m3835D54F66AEC471C41534C69772989315F78927,
+	WindowsRuntimeBufferUnmanagedMemoryStream__ctor_m28B44E02160B58BD85CA8596463059C4C0975347,
+	AsyncInfoIdGenerator_CreateNext_mD4F9BEA5E88D2BD92E0CF0B7112A612B3E06285E,
+	AsyncInfoIdGenerator_EnsureInitializedThreadsafe_m8B7055212D6AAAD782FC163797AB67BE11D07C5E,
+	AsyncInfoIdGenerator__cctor_m0160C31D854AFE61A802EB0ADB2E00E85AC90B10,
+	ExceptionDispatchHelper_ThrowAsync_m2F6A6A11D813192180D84E5EDEEF6A5411729253,
+	U3CU3Ec__cctor_mC2AE3130C3434353465BEDA10C3C5D3553E06611,
+	U3CU3Ec__ctor_mD4CB97B8F69D13F5E101436076591307254C7C3D,
+	U3CU3Ec_U3CThrowAsyncU3Eb__0_0_m7E81F2FB2E8DCA066244624DA953798D574F1AEB,
+	U3CU3Ec_U3CThrowAsyncU3Eb__0_1_mF770BC3A2CAB8D6FA854F629FFD668408AEBA176,
+	TaskToAsyncActionAdapter_GetResults_m507FE1CE48032133AA7ADA483475806B3D2C51F6,
+	TaskToAsyncActionAdapter_OnCompleted_m6285538803AC8D0E9837F8C5C0295BDC925447B5,
+	TaskToAsyncActionAdapter_Windows_Foundation_IAsyncAction_put_Completed_m18D923DB9F07206F028620EA470EDBCDF65F1168,
+	WindowsRuntimeSystemExtensions_ConcatenateCancelTokens_mE6D63868E79DE3EBCC91E8BC0BBF73D12E31E4D9,
+	WindowsRuntimeSystemExtensions_GetAwaiter_m1E46B83D2D5BEE385305CFFD9496572784AB5D2C,
+	WindowsRuntimeSystemExtensions_AsTask_m5D87CC8E008C9C3A4DC66F6BD108691CF8119ED1,
+	WindowsRuntimeSystemExtensions_AsTask_m72AC4CCE64FA5914EF4CC7826C969C80BC5CCC3D,
+	WindowsRuntimeSystemExtensions_AttachRestrictedErrorInfo_mF39F00CA42F45D3F2EB5B8DB5B450C55A206113C,
+	U3CU3Ec__cctor_m253A27693DA3D1A9A90FD949D4D58340D592FA5B,
+	U3CU3Ec__ctor_m8CDEDC568031CE2B651AA8B8FAB2D9ACF35F3D97,
+	U3CU3Ec_U3CConcatenateCancelTokensU3Eb__0_0_mD2C070F430A2E1950C85E28ED328545E22E50AFB,
+	U3CU3Ec_U3CConcatenateCancelTokensU3Eb__0_1_mF440B6D95BB892E1298E16F45195EC36D4AF82DC,
+	Point_get_X_m7B3855A972F9BE4EFC665018A0FFCDE7653F5279_AdjustorThunk,
+	Point_get_Y_m7C07355EC984C2A5DCDED2D04D6FF242300F607A_AdjustorThunk,
+	Point_ToString_mDFB209B8CA094AF8FB88FB144DBA13F9ABB49E8E_AdjustorThunk,
+	Point_System_IFormattable_ToString_m791F8FC114C9E607E22E1377E7EF3ACD0395CA57_AdjustorThunk,
+	Point_ConvertToString_m6E52855EA4919577AD9678EB50CA60A433F49803_AdjustorThunk,
+	Point_op_Equality_m64C4E8C491AFAA01B7450CE74EC8144B6C3BA562,
+	Point_Equals_m3BA55D50EECD9ACD235E1CF9F34373C325973DB6_AdjustorThunk,
+	Point_GetHashCode_m7348B1D410207B79808F2CA147AE04AF43BE7580_AdjustorThunk,
+	Rect_get_X_m35D247CE131BD7E88E8F37477AF8B97514B2EB18_AdjustorThunk,
+	Rect_get_Y_m50133BDDAB0AA130D87E2C679FA9DD3F20B2EE16_AdjustorThunk,
+	Rect_get_Width_mB3768453F8598F1255098EA9454A03A3B0C2C682_AdjustorThunk,
+	Rect_get_Height_m02E5221D781AADCD2F72A09FEA6EC37DF5EA9B1C_AdjustorThunk,
+	Rect_get_IsEmpty_m80BA92D11A0A2C89E0CF8601A233778A1C0C77FF_AdjustorThunk,
+	Rect_ToString_mAB211C47A6FF959D76D086C68C743F928C07D68F_AdjustorThunk,
+	Rect_System_IFormattable_ToString_m92BAA1305B83C3E5526E257B9C69A767FED3923C_AdjustorThunk,
+	Rect_ConvertToString_mDD63C220964456CF26A0D2B0F129110F19FEE9B7_AdjustorThunk,
+	Rect_op_Equality_mE78AF9FB74353DF0F65879F0DC6719F598F736AA,
+	Rect_Equals_m8F195999C4E1C9356E3234E2E9A762DC2F6E3735_AdjustorThunk,
+	Rect_GetHashCode_m09432FD8E6C636CD000BCD0D9A8F1E30763314CB_AdjustorThunk,
+	Size_get_Width_m82026F4BBE98C2740685F27ADF96699DD099B0B9_AdjustorThunk,
+	Size_get_Height_mA4D91514E5FC4462B43529168335A1862E412EEA_AdjustorThunk,
+	Size_get_IsEmpty_m0E62EF83B12C6B9858290ECB5C494ED2F7486438_AdjustorThunk,
+	Size_Equals_mCE363B6FB51F2B28CE43FABB1D6A0CEE7722658C_AdjustorThunk,
+	Size_GetHashCode_m339BA7D00D8DA638CBCC4727071D15E1AC84FA7B_AdjustorThunk,
+	Size_Equals_m8A6B538AECA7518E75D2CB60DABF77ABE88ABFD8,
+	Size_ToString_m7AD2DBD2743AAB5FE6BF01022D45475C1A8636AA_AdjustorThunk,
+	TokenizerHelper_GetNumericListSeparator_mD31F075C6AF217DB2DC926736D06D6F19B44AD2C,
 	ResourceLoader_GetString_m8586C7138823D162F671D6958F3F245C17E6B628,
 	ResourceLoader_GetForViewIndependentUse_m3B47FB65B1ED8348C6B7BAA0059004AFEE2E40BD,
 	ResourceLoader_Finalize_mB71BCB445F26E1739A1473D35C40BDE5ACC24826,
@@ -37995,6 +39555,11 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	SimpleHapticsController_Finalize_m37001378EDC3A30A1CCA2E1A3BF7B526803F2F31,
 	SimpleHapticsControllerFeedback_get_Waveform_mC68BE85CE60D8A2018B5D9C5F9A5434E0A7B7543,
 	SimpleHapticsControllerFeedback_Finalize_mBAE16DFC0C41800DCEEC6EA40E62117A1E68EE28,
+	AsyncActionCompletedHandler__ctor_m2C0D2BD025FC8CDC21086373277D42874552060D,
+	AsyncActionCompletedHandler_Invoke_m90ED997977A5C94AE5F5CB92A629FE2EDFA3D466,
+	IAsyncAction_put_Completed_m0632776C609159F4E6D0D5F6DECCE64CC355B779,
+	IAsyncAction_get_Completed_mEF447B408CEF9BD7882E596CF87C4355CC17E71B,
+	IAsyncAction_GetResults_m192BCF4CC6EE9E2E66722E3D2BFBBAEE124D7AD7,
 	IAsyncInfo_get_Id_mFB9E7E5D042A091EEA5ADBBB479329CE1248351B,
 	IAsyncInfo_get_Status_m3D1D43B45DDBE38620B5178B88307B0759171F7A,
 	IAsyncInfo_get_ErrorCode_m9A8D01260F4211B8E794B3FC73D212F3F8CAB584,
@@ -38124,10 +39689,29 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	SpatialCoordinateSystem_Finalize_mE29CFDA8D33B2152B88A0F2841E55AD5DA773996,
 	SpatialSurfaceObserver_IsSupported_mCB54738653BC2840AA78E5E083C5E18EF4D3C408,
 	SpatialSurfaceObserver_Finalize_mE83A1FAE6C0110CAB5A1A76718BF6C4238AA4E8C,
+	FileIO_AppendTextAsync_m5BCC79A14E6ADD76772F6E2BE28D1BD31CC51EB5,
 	FileIO_ReadBufferAsync_mF4FFAFC3AF09C53DAE527D9A7C89D683DDEA4531,
 	FileIO_Finalize_mA051D2375BF6A19AF021B36DA1176C98BBF6F883,
+	IStorageFolder_CreateFileAsync_mD20BADEBA391C026E479581424EFF60D5EE729FA,
+	IStorageFolder_CreateFolderAsync_m506538F2866DDF4CDA48BFC1EA034B56C0945F0D,
+	IStorageFolder_GetFileAsync_m3B0FF62937AAE51707D544E9F9B5041EBB5ABE7D,
+	IStorageFolder_GetFolderAsync_mD37B62674AFC57B8B229BCE38C0CE6FD2F4975DF,
+	IStorageItem_get_Name_m598919A4062C6DEEDD83B371F1C7F4CBFCB0AAF8,
+	IStorageItem_get_Path_m1F543E2CE313AD19AE39D0EC8C6832ECEDC29678,
+	KnownFolders_get_MusicLibrary_m340C733773BC804A47FC8AF73032F5FC201E0398,
+	KnownFolders_Finalize_mC87485CFB0FDEF05B0ED2751DBC66E2E4DE52D4A,
+	StorageFile_get_Name_m943DA65F57D87F5C92DEC8ED660827392BDDA147,
+	StorageFile_get_Path_mCDC8594ADE45C229095A1B54E5E7D8266036B881,
+	StorageFile_OpenReadAsync_m387A1257B972674675539257DF1AEE173AB1642E,
 	StorageFile_GetFileFromPathAsync_m9F81FC387822425FEA45811BA3ABB6E04DC45937,
 	StorageFile_Finalize_m5D4907DD76378B1B469DD96F398A2B3F16B7E9C4,
+	StorageFolder_CreateFileAsync_m03F8C43977E395A4EE54118649C11520B553A4DE,
+	StorageFolder_CreateFolderAsync_m51031ACA6F47AC2885FD6405BFD267301890AA35,
+	StorageFolder_GetFileAsync_mD8C3D41300E9A1EA81D518285472B6C3375F40B4,
+	StorageFolder_GetFolderAsync_mB3A1D9D51C38114DE488D0642EFA267A7C584959,
+	StorageFolder_get_Name_mE9F2D7E1A765E3E7DF35E2FDCC1E5D65EB58646E,
+	StorageFolder_get_Path_m554AF6FC4C2D85267A933F07812930C901B0ECE4,
+	StorageFolder_Finalize_m7CA25B3B42C216FA0EC858383E2D11739A183B9F,
 	DataReader__ctor_mA815BC225A32DC3C5E461B4187EF8F0DA357F98B,
 	DataReader_ReadBytes_mBC023AA8541AC227458AB11A35289C327EB76A42,
 	DataReader_LoadAsync_m79F9DC31F4227ED504BDBE0C52EB94FE30D51F9A,
@@ -38144,10 +39728,22 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	DataReaderLoadOperation_Cancel_mF3165597DFEB58FAF8DFA5C1EE177DA30D773385,
 	DataReaderLoadOperation_Close_mA18BBC13B38C7FE8039A7D51336B52FCDE9350FE,
 	DataReaderLoadOperation_Finalize_mDFF40F1879C8308A006226C12C83140C28A3DFA2,
+	IBuffer_get_Capacity_m5745CFEF40ED7190B05A09CE37B07650634038C9,
 	IBuffer_get_Length_mDADF6292B118D0FD40831F9C33D7EFE7AEDB889B,
+	IBuffer_put_Length_m60458A1E0C478452AFD6A20A5B7090AEA469A8B0,
 	IDataReader_ReadBytes_m2A817837CC3EF0E8C47136D41BDDBD831A44AEFC,
 	IDataReader_LoadAsync_m624CE64319C1FF6F17D1526083E91F4E91187CE7,
+	IInputStream_ReadAsync_mCCC52942D8DECE2C743C51DD683483531F495C88,
+	IOutputStream_WriteAsync_mBE75066C704E76E8AC90135CE779B83A3DD71921,
+	IOutputStream_FlushAsync_mCD6E8AF55B37FFF946B184F22B390E2E652F9ADB,
 	IRandomAccessStream_get_Size_mC7C3FD2E620A221E63F7F6AD1E806A68B3E76C03,
+	IRandomAccessStream_get_Position_m48DEBF691715522B04ED7539AE7F22041221F646,
+	IRandomAccessStream_Seek_m591EC62FCE22806BA0B5A1EFDEA9E58DC63E6D1A,
+	IRandomAccessStream_get_CanRead_mC556996DA2DF65C97288F7474DE32FAD8EBFF2BD,
+	IRandomAccessStream_get_CanWrite_m494C042532256B5EB0A66ADFBD50C8F3CC8E5580,
+	IRandomAccessStreamReference_OpenReadAsync_m41E9FEBEB9E9454B1C7FD349F974581B93FB53C3,
+	Launcher_LaunchUriAsync_m895997EB22B4003E990AFFDA4704E7A4FB96D9F3,
+	Launcher_Finalize_m6C9ADD94B7E29E8001859D7F164554402A275AC1,
 	MemoryManager_get_AppMemoryUsage_m3BBDE59FC2DCB6074A92C7859CC42E3311BD8D3B,
 	MemoryManager_get_AppMemoryUsageLimit_m8A8BF85D26D6A48DE98963D3BDB7C87B7FD67113,
 	MemoryManager_Finalize_m118D60A4217AA9572B93529E7B46F6AEEFD059A7,
@@ -38194,6 +39790,11 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	IBindableVectorView_GetAt_mAA8D68A43FF339E8A336BFD94CC516C26FFB757B,
 	IBindableVectorView_get_Size_mB12143398D9A3942E36CE820551EE06F8EB5A77B,
 	IBindableVectorView_IndexOf_m091E767F9C60C5FE8A460A65F0C3476F1C1931C0,
+	ListToBindableVectorViewAdapter__ctor_m88D2B6C058513EBDA6360AABA6E7858323E3B935,
+	ListToBindableVectorViewAdapter_get_Size_m0D4C2E6A8A3A43D983D9B52AAE61D7F2278DC88F,
+	ListToBindableVectorViewAdapter_GetAt_m4C07149242BB1E01699A3B7272D4E9B4E7FCB885,
+	ListToBindableVectorViewAdapter_IndexOf_m8078DE068EB1CFA4C185D289B2E59905DAE0091A,
+	ListToBindableVectorViewAdapter_GetEnumerator_m78A427BECC1771C3339E481A1C91EBF2D81BAFBC,
 	AnimationCurveExtensions_Duration_m43BB8540224C0044C99283EA07721F3DE3FB1111,
 	ArrayExtensions_WrapIndex_m07025753733303E1A76495082838C0EB5541F815,
 	ArrayExtensions_IsValidArray_m7C8536998DFFB77C8F76770763E8EB11F85D4F94,
@@ -40245,245 +41846,6 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	ProcessInfo__ctor_m1A34966C3BD8E9EDF4BD7A6C277FAEDEE19BE594,
 	ProcessList__ctor_m459C9AB890D4B1F70C49CD0CD15F252AF96503BD,
 	WirelessNetworkInfo__ctor_mF0E7A1D3F8EBE4D1D523F5A72343854DAB5F8165,
-	ByteEncoding__ctor_m8DAEFF4098B9FF03A6A7B14C51699EB6CEA11928,
-	ByteEncoding_IsAlwaysNormalized_m2E933AC2BBBF9D676EBABE209130607839E197D8,
-	ByteEncoding_get_IsSingleByte_m851583D3C3033B6DA87A971177E97553317803AF,
-	ByteEncoding_GetByteCount_m53EA1506E7E68BF1E51C291257FBE7B3106DD480,
-	ByteEncoding_GetByteCountImpl_mFB7D4C2294C5F3EA1F98897C1A237DD9CFE447B1,
-	ByteEncoding_ToBytes_m2E0E80AE53BB077498625D75659E6D22FA791976,
-	ByteEncoding_GetBytesImpl_mDC44F53A9FFB19B208AB760FBB9866C03945B8B1,
-	ByteEncoding_GetCharCount_mE9B907CBD7D7CBEF50E0905BFD373C5D14027282,
-	ByteEncoding_GetChars_mAA72EBDC618333ED109C36B68FC5268F34C45E48,
-	ByteEncoding_GetMaxByteCount_m4959DB95E37FDE25392EF2D8BBF0AF6E134B906D,
-	ByteEncoding_GetMaxCharCount_mB5CA001E872D5BCC7A5C02645BD2669B6676A037,
-	ByteEncoding_GetString_m56623D49895C437BEBECCE3D75332995DAB5E5A9,
-	ByteEncoding_GetString_m370BA826BC65653CE503BA32F7372944989510BE,
-	ByteEncoding_get_BodyName_m28E236CBF3E8998FD0FDD43C126919FACBF256C9,
-	ByteEncoding_get_EncodingName_mEC649C9EC3DE76E890A69FDCAA56E917EF45B737,
-	ByteEncoding_get_HeaderName_m59E35ECDF19E8020564666F8B7EBCAB39E1202BB,
-	ByteEncoding_get_IsBrowserDisplay_m3E8862C0FC58D672B5715A3496CA36D2607C2EF7,
-	ByteEncoding_get_IsBrowserSave_m4002CFC12E500968EC9659499CF3EC186C53622A,
-	ByteEncoding_get_IsMailNewsDisplay_m9A3B28D9D31E4E8FE1A25C30C87D7CD1A05E5999,
-	ByteEncoding_get_IsMailNewsSave_mAAF0545D0B74918B4831810FA547A823EBE0C73E,
-	ByteEncoding_get_WebName_mFD42B8741BDCF5BC7AF46E36B6CE387CFA281CB8,
-	ByteEncoding_get_WindowsCodePage_m403C809C6E9AE110932FFC1916280E917CE82404,
-	ByteSafeEncoding__ctor_m6694BB05F26ADA7F780DE5F50C0B8296DC4FE889,
-	ByteSafeEncoding_IsAlwaysNormalized_m9C6EA89DC627879384B47CD9C1A9399968666AB8,
-	ByteSafeEncoding_get_IsSingleByte_m242EFC4BBBFE5249F9B32045033BEFF1B5D23A83,
-	ByteSafeEncoding_GetByteCount_mEDDAD01B58586E0C5EEB9706278A74A54CF4514B,
-	ByteSafeEncoding_GetByteCount_m9AA0760CE8AFD451B64469857C47928EF0278A91,
-	ByteSafeEncoding_GetByteCount_m5A3BAD4ED51833B4AA86E8C7CC689D3B9B3AD3D4,
-	ByteSafeEncoding_ToBytes_m3A290D3C8156AF542928B8B561BFDAFA474A3C39,
-	ByteSafeEncoding_GetBytes_mE4D32EFB95B8CD346A0AC55B3532FD5C5DDE13FA,
-	ByteSafeEncoding_GetBytes_mE7441F3C608CEBAE19E151B25CDB1CDA84163895,
-	ByteSafeEncoding_GetBytes_mBAB7B32E1153F6BEBFDC8EA82D8C887244CFE5C6,
-	ByteSafeEncoding_GetCharCount_m21934970FEB2147A14476D1BEAE46A50A1DF7BE2,
-	ByteSafeEncoding_GetChars_m954395A86CA621A4E6252EEEC930FAF4E0FE0558,
-	ByteSafeEncoding_GetMaxByteCount_m699DA4681F7256F9377A78AF6706650DD4FD27AF,
-	ByteSafeEncoding_GetMaxCharCount_mC21230B957FD7121168AFB23B72B6A2B3392F069,
-	ByteSafeEncoding_GetString_mBE8E256C770E8C1AB5F478C44D8B319041AF2B7D,
-	ByteSafeEncoding_GetString_m05FF3E544344837843E6E45C08D654CA60E4E80A,
-	ByteSafeEncoding_get_BodyName_m21CA06AE97DFB2031722D4DF63F21DCA6374A0FD,
-	ByteSafeEncoding_get_EncodingName_m5255390A28175CE232A0964D5C775A604D6D166A,
-	ByteSafeEncoding_get_HeaderName_mF5461F4E9D096048F01B6B9FD5A86725E2C0B88C,
-	ByteSafeEncoding_get_IsBrowserDisplay_m3E37104FEF25424EE18744D02CF68F208D45E000,
-	ByteSafeEncoding_get_IsBrowserSave_mA995BDB7644B15D9A7F5723752DC80FCE4732EFE,
-	ByteSafeEncoding_get_IsMailNewsDisplay_mD64294995D9357A4E9C0E9BB09ABFE74E80347F1,
-	ByteSafeEncoding_get_IsMailNewsSave_mBF385E51EAFD10FA0878D7753D4AD53E4583DBC4,
-	ByteSafeEncoding_get_WebName_m998BA57F31CC221F2FBD7E63CFCE02FB679C9586,
-	ByteSafeEncoding_get_WindowsCodePage_mC25F965C408578B88FC22DE8C900B2B3B3E4BADD,
-	Handlers_GetAlias_m1EF1702DF81339BF115B315C188A66C63720C69E,
-	Handlers_BuildHash_m644802A2D6689C19E087FD2168FB3CE80375B761,
-	Handlers__ctor_mA312F21494886A6C4F5489765BFE16EE1022FD82,
-	Handlers__cctor_mD7AF906EDBC706FBEFE93041087E5F522152C5D9,
-	Manager__ctor_m7D3D7318300FF1F3346B1DB7040C9ACA6878B218,
-	Manager_get_PrimaryManager_m70D71D7FAD2DF21C1E9231D3004A1A75F3CECA5F,
-	Manager_Normalize_m35FAF8D4D5146882E4A6626775AF69B73DFAC3B5,
-	Manager_GetEncoding_m84CBAFE26AC75B334FEDC1E4E4B6498FC0E509F5,
-	Manager_GetEncoding_m6E0B539812A4B7FC0DFB3E54F9FD801E51491959,
-	Manager_GetCulture_m4168CE3DC238BAECFDAB2C3204DB3B979F5AAE48,
-	Manager_GetCulture_m228304BACB1350DC578871CA107A1F3D4F8634F7,
-	Manager_Instantiate_mB997538122BB4AAB5B34755EE49ED1470A28F88C,
-	Manager_LoadClassList_m79D2A344E0D6DED84D55E557CC1C9978655594F2,
-	Manager_LoadInternalClasses_m0609061DA0905689292597CE3E25DE290F53F6BC,
-	Manager__cctor_mD8383C649D396B711503269D50BB10864B44130B,
-	MonoEncoder__ctor_m4A9E825EE34E75629BB1F4F25033449360549988,
-	MonoEncoder_GetByteCount_mA898844D85B679B39B4F497FFD8762A127E5739A,
-	MonoEncoder_GetBytes_mFFE524609262FB9FEBA38C38D7EC2A411F941F38,
-	MonoEncoder_GetBytes_m6030A2D50740A0CACCF84B21A9F14E7972C186E7,
-	MonoEncoder_HandleFallback_mECF8365417EE44272EDDF39DDDC491CB27A3EA1D,
-	MonoEncoding__ctor_m427A6A8025BFA268D02445087C672A5712C9F3B6,
-	MonoEncoding__ctor_mE0CFEC47068512B56389DCE6FBAB34F1698B320C,
-	MonoEncoding_get_WindowsCodePage_m6205E7BD1AD719072C5FB52CDDDA003722989969,
-	MonoEncoding_GetBytesInternal_m472FFFDC456BF11F597B9897933DE97588B09A82,
-	MonoEncoding_HandleFallback_mF72E24BEA9BAE0E4E66DAC63D63563E50E562136,
-	MonoEncoding_HandleFallback_m5FDF88A9F1E1E1826BF59F97065C7D503BF2EB4F,
-	MonoEncoding_GetByteCount_m4B10378E85EB8711A96F4ACFCC8D94BEA33EBEE1,
-	MonoEncoding_GetBytes_mCCA96622B176F4AA3F8CD991319B84521A020F27,
-	MonoEncoding_GetBytes_m2C241EDDCA5F07746301C65DFB1CE856BCAFF857,
-	MonoEncoding_GetByteCount_mDFA02AA1CB9841AD3926C73D120B3C14A45CE6ED,
-	MonoEncoding_GetBytes_m435A8F1159888B3AE6471F6305D7650CE69A16E2,
-	MonoEncoding_GetEncoder_m2487C20D7BEAF16FF849A95F3B767CF4839EA52C,
-	MonoEncodingDefaultEncoder__ctor_m0199556F330303CF120F0082E226937554D3B745,
-	MonoEncodingDefaultEncoder_Convert_m4DC710EA6DA800D8BB70280B467FD171C11074C8,
-	MonoEncodingDefaultEncoder_Convert_m4F0E4CEF5E96715618FB9A8373C204F967F1D383,
-	MonoEncodingDefaultEncoder_CheckArguments_mCDCF4070F7CB4EEF0A2577570D231E8C3092B362,
-	MonoSafeEncoder__ctor_mDDF806CF1F27586807407514DDF17F67A0DF102F,
-	MonoSafeEncoder_HandleFallback_m2766944FE2E94701AFF74BA673D9E3C05DEFBE10,
-	MonoSafeEncoding__ctor_mEB980CDD792FF55EA55FE6958843A597E37BFE54,
-	MonoSafeEncoding__ctor_m4EDE3B0152D4E696F9EDB1C7C6DB9B0D2AB57213,
-	MonoSafeEncoding_get_WindowsCodePage_m1016E362F33D644982172BF602C36BD2A00AC12F,
-	MonoSafeEncoding_GetBytesInternal_mB37FEA816580DF7EE9773B31EC26C4DE698C0832,
-	MonoSafeEncoding_HandleFallback_m8F545C673F25A17064F9CE887DD2C8101BF05A31,
-	ReferenceSourceDefaultEncoder__ctor_m8D98EE3F5CA918926CB998428AF21CBC5711A878,
-	ReferenceSourceDefaultEncoder__ctor_mE817E029A8E3B4FBF5DE3B2C2C272C26E6620D23,
-	ReferenceSourceDefaultEncoder_GetRealObject_m75ECE546BB38C07FDC2DFFBB5DBA0A8076E711A0,
-	ReferenceSourceDefaultEncoder_GetByteCount_m9278A6754651C0B3AECB606C9C6DA8B316B94587,
-	ReferenceSourceDefaultEncoder_GetByteCount_m212CF6FDA99A98577B8EA017F8F4C18C767E1286,
-	ReferenceSourceDefaultEncoder_GetBytes_m210D6EBC84AF6B04C14CC03D232CB817AE691BB8,
-	ReferenceSourceDefaultEncoder_GetBytes_m8B3E6AAD6AC085D6DAEE920541B1D2C321FD1AAF,
-	Strings_GetString_mC12AE3CBC17C1E3463EF669D9C84059E611A9BFA,
-	Strings__ctor_mCAC274B1CFBF95C2B66288607299F4C833105B4B,
-	GltfAsset_get_Model_m073F8FD9602F05BE0DC8B888FE66F95C0E51EE1C,
-	GltfAsset_set_Model_m1F4B39493D8CF8C53AE0EF3A11F567DAB67F28E6,
-	GltfAsset_get_GltfObject_m8DE0BCD7CE0C85E57618949154C0F27E5A13049B,
-	GltfAsset_set_GltfObject_m993CDCEE19EBDB2BBCF720328EF626CB47A477F8,
-	GltfAsset__ctor_m935F574B0563752A80CDF6F75F41D28A994D924E,
-	GltfExtension__ctor_m32BA68C649DA4A7F14D28CED3B0DA96DB4D39CBD,
-	KHR_Materials_PbrSpecularGlossiness__ctor_m9CA49FA8D1DD3FCBA9C707D62D2E9460FACFE6B9,
-	GltfAccessor_get_BufferView_mF93D816238205F08816BB223118E54E885F35F24,
-	GltfAccessor_set_BufferView_mFDF03681B8784C7947A9DB2C7C09E3AC94C2040A,
-	GltfAccessor__ctor_m52DA458EA7F4AD4B6AA3C209A0E401234D2981E8,
-	GltfAccessorSparse__ctor_m90DAE109BE80A041CE90A6BD9527DA70909EB893,
-	GltfAccessorSparseIndices__ctor_m8F0C361FA0EEF6FC9485C20A6D8AEB3F82B6905F,
-	GltfAccessorSparseValues__ctor_m5DF51480C0AFA18301BC3C47536DB00DA5891361,
-	GltfAnimation__ctor_mB364F757FDB5C5F075CDAB0B3E2F69CBFFC838F4,
-	GltfAnimationChannel__ctor_m81DC40738A03248E1A12BCCA515DA3D273C0FDB6,
-	GltfAnimationChannelTarget__ctor_m9FD9901AB5AEA88658647E091A2F4D6A0F7CB3D6,
-	GltfAnimationSampler__ctor_mD568A31736530BD0565A5066882DF60E685E3372,
-	GltfAssetInfo__ctor_m43F3842A50B90B9B140515C0A1654091E7760807,
-	GltfBuffer_get_BufferData_m6CDACF02C3E56653113729EE040B0B53212C8DBD,
-	GltfBuffer_set_BufferData_m234FA14BDB9A3C1A64BEB37FC45F9F9EF73121CC,
-	GltfBuffer__ctor_m83EEE7EE8D9A792F494C12F3D2CE8A198AC0BB7A,
-	GltfBufferView_get_Buffer_m95B27084C478A932EF04973E4D33C171D5C71CBB,
-	GltfBufferView_set_Buffer_m9A3D6C36C986D494E4DCCD4970348ABB46B7937E,
-	GltfBufferView__ctor_mA9BBFC79EECDCC505CB21382D606CE518EC0092A,
-	GltfCamera__ctor_mAD83766CAEF7BCED7E362D400B1AC64287AC91ED,
-	GltfCameraOrthographic__ctor_m55DCC9E2A8B9B76B2AC5FBF8B5DC4B464B4B5B4D,
-	GltfCameraPerspective__ctor_m1BEB90C0EFF92C4E158A572FC616B01D617F6FE9,
-	GltfChildOfRootProperty__ctor_m5D4FD91460386CF599CD9E32891B74D714AC59F6,
-	GltfImage_get_Texture_mFE0F371DD978898760232E3E714ABE79A7904E2D,
-	GltfImage_set_Texture_m9A89AA2542C0D6055F0BEC6154D4B91C5D377F1E,
-	GltfImage__ctor_mA80F312378A0E1750111D9569BE1F0BD45CA7E55,
-	GltfMaterial_get_Material_m564F2C33D111F359EA9C28ADAB8FB09A2C9FE9ED,
-	GltfMaterial_set_Material_mA011E11B079F7E5953823AAD5E32DCB80FEE3A41,
-	GltfMaterial__ctor_m669E0709137159B3429A3CE4DBF3511477DADEB9,
-	GltfMaterialCommonConstant__ctor_m947EC963FD6C573C277861EC08C13FDCF1A6BF2F,
-	GltfMesh_get_Mesh_mEF6FCB2777A1EBCF63DDF53D9C8652C3B18C7F13,
-	GltfMesh_set_Mesh_mB4BA58BB340A69F18D6D193B215D97393EA26F8A,
-	GltfMesh__ctor_m18242C6315C8B223AD5003B2F72485CC69969465,
-	GltfMeshPrimitive_get_Targets_m5197F615234768E2D68758E029AAC911A8D3E6E6,
-	GltfMeshPrimitive_set_Targets_m121B46736053FB16FC81479362A20187BCC6EBDF,
-	GltfMeshPrimitive_get_Attributes_m3EEE1AA61B6872EEDF342B9AF2256F141C176DB1,
-	GltfMeshPrimitive_set_Attributes_mF4FAC95063DC496F6525FB8EB781F3D52E162191,
-	GltfMeshPrimitive_get_SubMesh_m04833086FB9F76E65BB376338A2D34295FA3488F,
-	GltfMeshPrimitive_set_SubMesh_m6E0B5BF1A9BE5DE2877A220DA950C7E4945E4BB1,
-	GltfMeshPrimitive__ctor_mAB546FF0830C5033022872DF2B8053848E087B87,
-	GltfMeshPrimitiveAttributes__ctor_mBC795421229767D00D34F143C308996061FE15D2,
-	GltfNode_get_Matrix_mCE43EC3A7ABE56C1E373B5770581AC3BD336F718,
-	GltfNode_set_Matrix_mF692AD63BE5C354A0CAF20F7409FCF5CC59EAF27,
-	GltfNode__ctor_mEA3A27713A3B572B5ACCBEE692EB0044ACA789EE,
-	GltfNormalTextureInfo__ctor_m9F6DA7DDC65F09F488E1EE1ADBA712BB3596C8DF,
-	GltfObject_get_Name_m05FE9517DEF201FCA07C749105B5FD55D615E599,
-	GltfObject_set_Name_m5073624BD92FC674207667487CB73EFCD9503460,
-	GltfObject_get_Uri_mB4F9093EACFA399E603D0DD92A98350E7AD4EC12,
-	GltfObject_set_Uri_mF6B10F3A5FBEFCC584C9262EBF6FACAE9CCA00EF,
-	GltfObject_get_GameObjectReference_m33E716E9CA4D8FD64E65F7E5FA091191BD2832D6,
-	GltfObject_set_GameObjectReference_m539E42F1EA1FF5EE15045139701EF22400DD4613,
-	GltfObject_get_RegisteredExtensions_m169E84CC4754F5F91CCC6A6736DBEA8D9FB9DDA4,
-	GltfObject_set_RegisteredExtensions_m93F2008930C4BB4E08349B99A2C963A471C678B5,
-	GltfObject_get_UseBackgroundThread_m4A46B5FDD0ED39E6D4FD7A4F032AC0D9A4C37965,
-	GltfObject_set_UseBackgroundThread_mF5139A974A626EA013273E435B454FF71A9E92CA,
-	GltfObject__ctor_m4520CEFB5C945F59C703FDA453CD38B75D089C34,
-	GltfOcclusionTextureInfo__ctor_mD860428EC26FAA4A38F7C5D48C003A8CC4D55347,
-	GltfPbrMetallicRoughness__ctor_mE44221AFA56F56F41F4B6206C6ECCC9E519A02DC,
-	GltfProperty__ctor_m6783CCE9DB9322429349512061840EE6908B6D27,
-	GltfSampler__ctor_mAEA4D4F184467B522E8FE0DA8642D26A955B753E,
-	GltfScene__ctor_m892B1E1B25900C0E43CB135E37334B47027E9912,
-	GltfSkin__ctor_m87D94B85F54AB920B9E533B0F4C94BAF37F6C7AF,
-	GltfTexture_get_Texture_mEFD31E5D9B9402C94F18A85E5428E49EB851D360,
-	GltfTexture_set_Texture_m716528C31286EA3107D35DA30D3A97CFBAFC1952,
-	GltfTexture__ctor_m135386F3F2990852F0704B7308BD93EF1E1940D9,
-	GltfTextureInfo__ctor_m7FAB7471858067082A842A5B2B21FC5E1D6C85DF,
-	ConstructGltf_Construct_m9732317FABB70BEA6B153711D723E0EF58B3856E,
-	ConstructGltf_ConstructAsync_m5E323EF7F1B6B3609CC8DE4B68ACA57D2C93870D,
-	ConstructGltf_ConstructBufferView_m0EF508E97FA78276864935A799117E112B1BB0AF,
-	ConstructGltf_ConstructTextureAsync_mBC21709EFDF74CD7A90F58DC15971D917912FF73,
-	ConstructGltf_ConstructMaterialAsync_mDFDA97B562FC1BC785A635101A7FC03FF35BC999,
-	ConstructGltf_CreateMRTKShaderMaterial_m5CD19F8B7D7AF37576F810105C6A53F70BAD2CEA,
-	ConstructGltf_CreateStandardShaderMaterial_mA808DB8425BCD6866C13E8418B68210E83AE7EDC,
-	ConstructGltf_ConstructSceneAsync_m698D410332EF1B21ADF8278C8C6A7F74D552AF1C,
-	ConstructGltf_ConstructNodeAsync_m6732C1CBE479D95CFB06708242E8948BBE269515,
-	ConstructGltf_ConstructMeshAsync_m21E1E7E1A45E7F3E462E578216A4D7C37AB93F11,
-	ConstructGltf_ConstructMeshPrimitiveAsync_mF33A187AC01C70513C7048B54951EE2A98A80768,
-	ConstructGltf_CreateBoneWeightArray_m1352358298425758C98FF53150D9A438DA984330,
-	ConstructGltf_NormalizeBoneWeightArray_m2E98E86FD94B923726DFBF14363F773A247426B0,
-	ConstructGltf__cctor_m46E3450DA50E4E579B2647BE1743EF4F2315CB4A,
-	U3CConstructU3Ed__18_MoveNext_m4A56AD657F62D3FA2ABBF98F126125265BF2A088_AdjustorThunk,
-	U3CConstructU3Ed__18_SetStateMachine_mD65BADDD6C79A61F7AD59B5F5471711B8CB50F4A_AdjustorThunk,
-	U3CConstructAsyncU3Ed__19_MoveNext_mC56D0052D23DA2431A5C762D495EA76E5CA02C5C_AdjustorThunk,
-	U3CConstructAsyncU3Ed__19_SetStateMachine_m696BCBB407832B680CAFF57F04148C6DB30AD896_AdjustorThunk,
-	U3CConstructMaterialAsyncU3Ed__22_MoveNext_m5E1C72257436E4024851C92C283E9D448A3B967B_AdjustorThunk,
-	U3CConstructMaterialAsyncU3Ed__22_SetStateMachine_m2F728D80FCE20D0250C58970B04E1A11B8E1EE4B_AdjustorThunk,
-	U3CConstructMeshAsyncU3Ed__27_MoveNext_mCA5BEEF05695328A515881E77E9D653B4567D61A_AdjustorThunk,
-	U3CConstructMeshAsyncU3Ed__27_SetStateMachine_m2A644236C1EB8E8F429A2FB87C8CD7028622243B_AdjustorThunk,
-	U3CConstructMeshPrimitiveAsyncU3Ed__28_MoveNext_mFD5885464114F51252F2824DD5609158D0B9ADD5_AdjustorThunk,
-	U3CConstructMeshPrimitiveAsyncU3Ed__28_SetStateMachine_m752497E58B2BE120AAB1CBB40A231A28EA91BB65_AdjustorThunk,
-	U3CConstructNodeAsyncU3Ed__26_MoveNext_mF9EFD7AE6C205C8F63BE4B67FB3FC8D26E72A6C7_AdjustorThunk,
-	U3CConstructNodeAsyncU3Ed__26_SetStateMachine_mCE1288B238A4573F9D14E9BFC0FD76D3ED9B7D6F_AdjustorThunk,
-	U3CConstructSceneAsyncU3Ed__25_MoveNext_m8B02B64812965DD68F51D15EE29623ABA5F10C29_AdjustorThunk,
-	U3CConstructSceneAsyncU3Ed__25_SetStateMachine_m1DCCC9DCBECF4A5C045B67D2F9402B952214FD8F_AdjustorThunk,
-	U3CConstructTextureAsyncU3Ed__21_MoveNext_m087E3EDB79751A3345BC0F45F9CF301A9F1CC5BB_AdjustorThunk,
-	U3CConstructTextureAsyncU3Ed__21_SetStateMachine_m6A12A6B4F937DA7DF04DB7E52EE495CF3BE422F0_AdjustorThunk,
-	U3CCreateMRTKShaderMaterialU3Ed__23_MoveNext_m842F7E817C73D69BBE1B6E478F24CB47DA2A56E7_AdjustorThunk,
-	U3CCreateMRTKShaderMaterialU3Ed__23_SetStateMachine_m82B08F9EE3671A94003F93F846A079018A2DBEE9_AdjustorThunk,
-	U3CCreateStandardShaderMaterialU3Ed__24_MoveNext_m785EA013FD5C7C0876EEB77C8B31125C56B89C18_AdjustorThunk,
-	U3CCreateStandardShaderMaterialU3Ed__24_SetStateMachine_mCB142A9E9C355F0ECAC0F442157024C0684EF2BF_AdjustorThunk,
-	GltfConversions_GetTrsProperties_m817A82F6C561175DC65B2D104F116E765850C434,
-	GltfConversions_GetColorValue_mDF4622ABEFBBBAB7EE8EC8D895F1554052748299,
-	GltfConversions_SetColorValue_m8A297DBED31ACF29F45783C0B593911BC2175CFB,
-	GltfConversions_GetVector2Value_mF0A42B471492DCC44F56D106C89475B926018445,
-	GltfConversions_SetVector2Value_m3B354A95BBAE94FA92075EAAC044E07513952304,
-	GltfConversions_GetVector3Value_m649B0F1B2307418DC31678EE620998C8E5F49EFD,
-	GltfConversions_SetVector3Value_m207CEC6F91D9354E25E11D17A0051BA340DB2237,
-	GltfConversions_GetQuaternionValue_mA8480A52F4FF4C639AA526F2AF2736B4389FCD7B,
-	GltfConversions_SetQuaternionValue_m98C87109AD7005356B334A4D90526C2DEA96DA0D,
-	GltfConversions_GetMatrix4X4Value_m525F2329FAB7B54233E28FF42B5CF95B56FF9CBF,
-	GltfConversions_SetMatrix4X4Value_m50D725F2ED64B96F4E794601403BACCE79F62DFB,
-	GltfConversions_GetTrsProperties_m47EE85F9D38AEDD454C775EB25352CB84069E335,
-	GltfConversions_GetIntArray_m7F6ACBA3ADB587519A7F828D0A1686FDBDBCA43C,
-	GltfConversions_GetVector2Array_mFEAF650C9599FC39D9010CB7713722F55DC21C87,
-	GltfConversions_GetVector3Array_mC959A66868EF1C7F473AA8D49CEA518A0787A5DF,
-	GltfConversions_GetVector4Array_m2AE8E68C918705E220AA969E782E6804F8F80F93,
-	GltfConversions_GetColorArray_m2BDB79D477EA68B3A781014FC30ED6561507EE48,
-	GltfConversions_GetTypeDetails_m1FAFC1FB67078E79EE7207C9478417FE24A5BCAE,
-	GltfConversions_GetDiscreteElement_m13605CA9A77FA485F05ABEE802891DAF0EDA94E7,
-	GltfConversions_GetDiscreteUnsignedElement_m1940238D7974BCD973D3ED0D0E474C1A31C0E4CB,
-	GltfConversions__cctor_mFB71488FDA9C6FA22E312A34F441F4158CF41B84,
-	GltfUtility_ImportGltfObjectFromPathAsync_m014DD49B30F57831676ED73871F65F976DD7C12C,
-	GltfUtility_GetGltfObjectFromJson_m36DBDCD141EB4D5C62356432FFBF62A2A1C07FD3,
-	GltfUtility_GetGltfObjectFromGlb_m4A83FA32F413E0F34437CDE1BEA6D1109B6CC538,
-	GltfUtility_GetJsonObject_m77681953E63CEC18FB694FE61C46D1D1B39A70BC,
-	GltfUtility_GetGltfMeshPrimitiveAttributes_m86E00ED99F3B0C6D6AA41045BC9174353620B22C,
-	GltfUtility_GetGltfMeshPrimitiveAttributes_m0A7A152014C4D1E21954CE4992FF6D69782AB868,
-	GltfUtility_GetGltfExtensionObjects_m39D7E776AE396DECEB9996D68375CB096239E7B4,
-	GltfUtility_GetGltfExtraObjects_m66220D055F0E9E1CA6706ABE62DBEAF936D0FC9B,
-	GltfUtility_GetGltfExtensions_mE1894ED1D181BEAF9AD9637109A75B985800BFDD,
-	GltfUtility_GetJsonObject_m76930E8860E9A5670376D5B15958DD47412CF30A,
-	GltfUtility_GetGltfNodeName_mB9FE11E674665D66AB9629ED54A922450B9556DD,
-	GltfUtility__cctor_m4A82BB52B32DCD007CFC7AE6363C83A847AB94CF,
-	U3CImportGltfObjectFromPathAsyncU3Ed__4_MoveNext_m344A64888506E7F5CC43E127053A7B584ABDCDCF_AdjustorThunk,
-	U3CImportGltfObjectFromPathAsyncU3Ed__4_SetStateMachine_m8466AD23D957A433BD180D367375CB424AC18F06_AdjustorThunk,
 	InputAnimation_get_Duration_m60ACF9758DC6E90E08E7DE8CA741EF6A2E1A5617,
 	InputAnimation_get_CameraCurves_mFF3101B09AC868877905E66FDD59D889ADD87E1C,
 	InputAnimation_get_markerCount_m5C2F23CA199003BA5FFAE835316DAA0BB62A5DAA,
@@ -42389,954 +43751,245 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	TextMeshProUGUI__ctor_mD7820CFC1E890D395F70CEA6557DE3D812402F45,
 	VertexGradient__ctor_mE2211E9FF5EB4FD910EA4D38FBA1BFC67CB4393F_AdjustorThunk,
 	VertexGradient__ctor_m5AAE113F629912122A0947CA8048E2DE542529B8_AdjustorThunk,
-	CP50220__ctor_m0518E4E5801D0BD1AF22A3E28BCE7165C5802063,
-	CP50220_get_EncodingName_m3D66B576436C1A51EBD6FCF56496AB4E3728A4E3,
-	CP50221__ctor_mE481C700FA1D7AEFCCE0F093E1CEED1F61BA3029,
-	CP50221_get_EncodingName_m8ECAAB8E857C7F6E8472DBA1795CCA900D6585BD,
-	CP50222__ctor_mE15C5FDA341D5685F26126844BD3FF0D41211A04,
-	CP50222_get_EncodingName_mCD5DA7B134C0A8460CA3E2371D1A320A087A205B,
-	CP51932__ctor_mC5DDBF730AAEAC1763F8AA99041E4ABEAF340AE8,
-	CP51932_GetByteCount_mA22CA8F290CA8328C1F152D68AC9F72816E9BDB9,
-	CP51932_GetBytes_mC5E7AB275AD02385518442A73C5A19EC6260F2B6,
-	CP51932_GetCharCount_mC7427DB5DB120F3EC586DD144F3FEFF47FF113C2,
-	CP51932_GetChars_m5DA4CF0782F343FAEBA610B51430F57E7E543585,
-	CP51932_GetMaxByteCount_mFD968B99A1DF34DC14278CD6C4CEE682D7E108A6,
-	CP51932_GetMaxCharCount_m9C2B4261D6F822ED6DA00551B3213563C5C982C4,
-	CP51932_GetEncoder_m2144DD171B3CF7A4E9FD4D793A440C9FA23C03AA,
-	CP51932_GetDecoder_m68CE9F75A09B56FD2C237091B2C114BAA9BDD6BE,
-	CP51932_get_BodyName_mD2819AFCCDCEB6DC3775E44948F97C522E4575AC,
-	CP51932_get_EncodingName_mB8A7AB5F338EA60927CDC6BA45108BD3CA8C45F1,
-	CP51932_get_HeaderName_m14858207227DBA5ABCC0847AEB0757D2162C74B0,
-	CP51932_get_IsBrowserDisplay_mCC6522311D061698D060C39879C4EEC6F8303BEB,
-	CP51932_get_IsBrowserSave_m33438624ACE46DBC869C678FEF49977287070B46,
-	CP51932_get_IsMailNewsDisplay_m5AE142ABE4B4363D918C892464B445D404537A7D,
-	CP51932_get_IsMailNewsSave_mC8CF53BAA3767117C2FEC8A57BC5281EE933D7F9,
-	CP51932_get_WebName_m00049C01E537B1030F5AD985EE9057C5D7D0EE91,
-	CP51932Decoder__ctor_mB6737403353AAB422685D83FAB4021E399B0DA5F,
-	CP51932Decoder_GetCharCount_mA65716908B7B98E993D552EA1C32FF2CF59EB9AA,
-	CP51932Decoder_GetCharCount_mA4D31B331734ABB0FBBBB9E97C69ADF5FDDBB255,
-	CP51932Decoder_GetChars_mC811D92B7ADAD8796138C4D7F12D55CB830E0427,
-	CP51932Decoder_GetChars_m5C4288EABBA2E45BB7D03DAD552D351BE17654C6,
-	CP51932Decoder_Insufficient_m63849B819A2F17623866D56C30998F51378971FB,
-	CP51932Encoder__ctor_m5EBC76F4BED3FAF81F8447A0FDE3C6534B39F1C0,
-	CP51932Encoder_GetByteCount_m22C7B8D81E64563913AE60974D0436E3C9651765,
-	CP51932Encoder_GetBytes_mC86F4BCBF4445E21B242F88F5227DFCEF29CEF33,
-	CP51949__ctor_mD285D77B6DF1C18C301DF6AE18CF36C1EE07ECFD,
-	CP51949_get_BodyName_mBC8F3739A159C7387BC174BFE0412096EDA28585,
-	CP51949_get_EncodingName_m80E4717BC9DFF4742D217FEAC81A522C98819E71,
-	CP51949_get_HeaderName_m725E0E0403112A8B42AFDE6515A3030062B4CBFF,
-	CP51949_get_WebName_m604F7FE20B945BFDE8D22F7A67F3905469B2BA05,
-	CP54936__ctor_mE44B4654B99D36BA034FCD986CF7EE62A754CAC9,
-	CP932__ctor_mEFAD48798FF30883B4C7E3B6D77FDB99C7713A35,
-	CP932_GetByteCount_m40D96A2EA91BE6B987B6879321C3B0B0789F8492,
-	CP932_GetBytes_m04AF1B583BC43251BFB10216FA0A6380BA04E75D,
-	CP932_GetCharCount_mA49E8B10B010638DE25F084895524E694205636D,
-	CP932_GetChars_m1BE522E1B3FF413EC018DAFF386BAEB3CB40B204,
-	CP932_GetMaxByteCount_mFA30AB18945BB79E67AA591845EE66F781E00347,
-	CP932_GetMaxCharCount_m7456D56E76FB6ACF4E2927CE4A2AFA1C1C39E481,
-	CP932_GetDecoder_m400DB455FF3FF87C6A9F99F99E8F2CC28EF7F810,
-	CP932_get_BodyName_m9F8B84CC6904A9F09D68496FDFC8F8A1A5C65F78,
-	CP932_get_EncodingName_mCE8DACBF4C463B9BB09ECF8F9BDA4F42FE3B50B9,
-	CP932_get_HeaderName_mD72ADD8BFAAF5714AFE0F4A209BAB51DE6CA9B3F,
-	CP932_get_IsBrowserDisplay_mEE875B49D1F1290A714D227469B0BF5776088078,
-	CP932_get_IsBrowserSave_m6A46AD7A7C121F07A101CA735D5A622A4CB11988,
-	CP932_get_IsMailNewsDisplay_m131EA0DF780706132AB8EF1E0D415B874D916EEB,
-	CP932_get_IsMailNewsSave_mA6C393C6F3607203FEC20109F6DF58B02C14D478,
-	CP932_get_WebName_m5F2E7A1B4156A203143C3FF814B9F8E97C7DEF04,
-	CP932_get_WindowsCodePage_m6409A43961127F34F7C6115D6E7F37D52B4BBEA1,
-	CP932_GetEncoder_m30F25F6EEE89BEAD9EF4C368AC68E08206D59921,
-	CP932Decoder__ctor_m5A7465EB5277A3A2B24153709F873EDFF96B1E45,
-	CP932Decoder_GetCharCount_m0292DCCCE957666674D5570406C8701B236B11D8,
-	CP932Decoder_GetCharCount_mF4C9E35DE0B82106ED9BE556431150BD5C8310B4,
-	CP932Decoder_GetChars_mBEE71E73B982CE5A1F8955575906644CA92DC87B,
-	CP932Decoder_GetChars_m8F91C8363DEFC591317661E474745D413E7873CA,
-	CP936__ctor_m38D2D40CBE67A638521C9C6B05949FB993A37D07,
-	CP936_GetConvert_mA02AB58D04CAE01D81154B96B383066E981A56EB,
-	CP936_GetBytesInternal_mF1029621BAD39B4184EE73850CEE2A0EAF281D13,
-	CP936_GetByteCount_m8519818252CB41D1A8769BE256A0EED6F7FF7C37,
-	CP936_GetBytes_mA4FEC1124664580A83DCC1EE9C665C1BA69E467F,
-	CP936_GetCharCount_mCC9CF514FBAB413B0B43391C13112A72CF5B8251,
-	CP936_GetChars_mFCCD74834F37C535CC665208B319199DB650863F,
-	CP936_GetDecoder_m283E0733C9C41368D179D276AF85102ACBA1DB34,
-	CP936_get_BodyName_m858580F742B31A97AE388695CF112DF026C88A7E,
-	CP936_get_EncodingName_m8183DB94F233325C81B07A7BF839D6A2B66EDC58,
-	CP936_get_HeaderName_mB1D3D5A40E0AF80D02D7A5F51928DD2CC1003D2F,
-	CP936_get_IsBrowserDisplay_m6CB712DA36D859D875E57435C0CDCF854D5CB742,
-	CP936_get_IsBrowserSave_m4DC71E154A6A406FF0DEBDA8C4EE9519BFC4088E,
-	CP936_get_IsMailNewsDisplay_m53B16919DD5E6702CF97082D46A0E3A2EE1F1DB1,
-	CP936_get_IsMailNewsSave_mF4FD4FBB31856D0CE203220A80A58EAECCBD232A,
-	CP936_get_WebName_mBE3DF79C94F8CBC38DF23359F6BA0B4BC6B3BC51,
-	CP936Decoder__ctor_m6A8625C58D5F7B180A29CBDF2BFC7709650DDDF1,
-	CP936Decoder_GetCharCount_m053B9C2DA0B93D1C2517B0FA69502F3C50C745D9,
-	CP936Decoder_GetCharCount_m363685D04DA41F1B3B7382320F56107A761FA993,
-	CP936Decoder_GetChars_mCBF6AB9F2B0B5620CEDCB919E0CD457CABEAAEB6,
-	CP936Decoder_GetChars_mFC37C381659305C406EC33FB46DE03BCC617C3C1,
-	CP949__ctor_m524452736DE893F3256D041C98D184DB6AAF9D59,
-	CP949_get_BodyName_m7AD149C19E51C4B12824A1F1CAC66697C3DF955A,
-	CP949_get_EncodingName_m73D4E1C075CE56EE573846D206D1EC194EB259E4,
-	CP949_get_HeaderName_m3AEE317057743BC9D65E5AB186FC8120D93BF9C6,
-	CP949_get_WebName_m611AE166D65431F411F3D638B60FD09ACC6F04A1,
-	CP950__ctor_m2757AE7C880FFC9DC149DE418F0B2F387E0118DA,
-	CP950_GetConvert_m8F8C2A3649052D123B7F825C34642F3A3135AC67,
-	CP950_GetByteCount_mCA444B3DC1E1BA05202618E49753904F594881C9,
-	CP950_GetBytes_mEF84E5548BC3E76F1572C78A10E72452A9CEA154,
-	CP950_GetChars_mA0C7F2EEE5707ED420E7AB47FA9CFAE67B969AEE,
-	CP950_GetDecoder_m1DAC67955CCD5F32FCBB4F801D4070846B0CF973,
-	CP950_get_BodyName_mEC1D3033D5BA36D458292DB3E53623BA9361918D,
-	CP950_get_EncodingName_m6F3A494ED693C96D9EC37AF02C6908C4855A3C68,
-	CP950_get_HeaderName_mFE2C85BF33B67D6DCB09193E28E6D747082D19B8,
-	CP950_get_WebName_mB5568A48B5ED2228A0B616183D0B79135C943CD3,
-	CP950Decoder__ctor_m48FA73718C9D31A405FF4611FC746D436000D5D8,
-	CP950Decoder_GetCharCount_m9CF51FB32C427A4478CE05A94C62CD5C6E8467AB,
-	CP950Decoder_GetCharCount_mA4CC7322546060EFBF8F3D83DF31C9DD3DC2E620,
-	CP950Decoder_GetChars_m67B87E297DC71B137D3F4355183968DD2651CC93,
-	CP950Decoder_GetChars_mA11354FBE23EF486949DF2FA3B9CDF8594348588,
-	CodeTable__ctor_m65AD52F8466C676EE86F349FD5F6554EA5FD875A,
-	CodeTable_Dispose_m33774A594A2ECE3FA5829D1D22F61DCF69D2F5EE,
-	CodeTable_GetSection_m5F99D2B755DB3F2EBDA7AA289A414A40B6615662,
-	DbcsConvert__ctor_mEEE1698F3FD9410FC6E14B0AA47D68629D3014B7,
-	DbcsConvert__cctor_m1844201D4188C051CD59D501BFDBF875DC149440,
-	DbcsEncoding__ctor_m46F9DE9AF2466F65726D8C24E2AD1E485CC74ACE,
-	DbcsEncoding__ctor_mBB80A67A6AC2278E0466B4B0495F0F74DAE79834,
-	DbcsEncoding_GetByteCount_m6D686F89F1C4C27FE01ADFC03D2D6F94F5F7329D,
-	DbcsEncoding_GetCharCount_m4A398DD86E8AA509183FF71E06B9C5C08318F62D,
-	DbcsEncoding_GetChars_m0C3C9BDF9F15A202FFDA4FFEBC82987D52C19D3D,
-	DbcsEncoding_GetMaxByteCount_m84FA3FB55C648E331D27BFEEB7ACD272C313B501,
-	DbcsEncoding_GetMaxCharCount_m0E2AA5817EA97663D820BA9DC59BFA23804EB442,
-	DbcsEncoding_get_IsBrowserDisplay_m59406DDCA30807BB164C161E46EA7A9A34BE271E,
-	DbcsEncoding_get_IsBrowserSave_m48FB39A30A6930C20620DC057CCF2C86F8D2A9EB,
-	DbcsEncoding_get_IsMailNewsDisplay_m197C57355C4EB8017F2C72C07C8118739FCDD1ED,
-	DbcsEncoding_get_IsMailNewsSave_m6A890A58B47E31D7465A8420FF407E349F12CD10,
-	DbcsDecoder__ctor_mA7695989C93F8C2C8068FEB7CFCA0261DB26A632,
-	DbcsDecoder_CheckRange_m829AD87898C75C08625DF39EC2C13C4F4609B0B7,
-	DbcsDecoder_CheckRange_m22E97465C1930996B54FBCDC3C4CD1602E743D7A,
-	ENCbig5__ctor_m00C9D81925820A1C3A89C7108D85EAD550CEEEDA,
-	ENCeuc_jp__ctor_mE1E06D1D20EB8A61D5BFA02FC4375E21B254BE6B,
-	ENCeuc_kr__ctor_mB8EA5DE2BDDB104790D147EA1162753C59F7AE4C,
-	ENCgb18030__ctor_m3B7F29F7A5CFEC51EEE8D819CBCA76391F0A8F50,
-	ENCgb2312__ctor_m6AA07A8ED455A7FBC29A1FDF01EE2D0BC43BA0EF,
-	ENCiso_2022_jp__ctor_m7FEF72A838E99481011D403853099FD67EE5068E,
-	ENCshift_jis__ctor_m28A5606361B21EA5A24402D69AAF65581DD9661C,
-	ENCuhc__ctor_mA725E63E1F8AD001FF6D38F252BAE944594E6F6D,
-	GB18030Decoder__ctor_mD1773D94E903E1C7E951C2DBF6BF24F05C62971B,
-	GB18030Decoder_GetCharCount_m765C979B2DFA7A93F956AF9FBF58011B6565DC63,
-	GB18030Decoder_GetChars_m8383E2AECC51E84A107180367E7EA547416950E8,
-	GB18030Decoder__cctor_m24A648A1BAE23A15D1C98D3BCD2824B859ACD5EB,
-	GB18030Encoder__ctor_mA6B5AACA42267C6DC9498178CB798FF866C27705,
-	GB18030Encoder_GetByteCount_mCC7B4CF7721DEC87FB00576B1A79A07173DDCD04,
-	GB18030Encoder_GetBytes_m83F7D51D91448A3E921D01DE331EABC1714C9A8C,
-	GB18030Encoder__cctor_m219E8DD0D6A5209AB9BB61AC18080FC328C05E9E,
-	GB18030Encoding__ctor_mCF6EBE64F6DF9BB4A0DB45DFE3E4F1707A72696E,
-	GB18030Encoding_get_EncodingName_mADB39734843F0CAAB8C77D0AB9379B9D07DF9166,
-	GB18030Encoding_get_HeaderName_mBC948B3D2CF735BA5F1BF3922410C353DFCFBA00,
-	GB18030Encoding_get_BodyName_m8C7D8EA5C86BD03C24F2CAEDBBC981A5817D9EA2,
-	GB18030Encoding_get_WebName_m0C8FDD91EAF6C2E82EAB12652E0AC609BAB083C4,
-	GB18030Encoding_get_IsMailNewsDisplay_m23EE36729F69F2056EAB5EEF459A0FC3F203AB96,
-	GB18030Encoding_get_IsMailNewsSave_m6A3704247F03E0D7AB5E92A08ED9D065A6FC807A,
-	GB18030Encoding_get_IsBrowserDisplay_mBC30D0936B2BC030DE54123FADC26F7941F12F0B,
-	GB18030Encoding_get_IsBrowserSave_m58923D5C083AA93DF92FB8EC9970ABC5166408F2,
-	GB18030Encoding_GetMaxByteCount_m62727C2A755E632C36843B066A88494F48FC008F,
-	GB18030Encoding_GetMaxCharCount_m0283402F36E49E9E255FC04312369FD2BB50A7FC,
-	GB18030Encoding_GetByteCount_m4E4B8FDED151DC1ED2070D265DD7EEA4E7E7558F,
-	GB18030Encoding_GetBytes_m8AD2F10AFCD70F4428F69735632C6028F16A54A1,
-	GB18030Encoding_GetCharCount_m56D01E80F31ED7F20FF29988285251FC629094A5,
-	GB18030Encoding_GetChars_mC11DFB43FA695185EDF52D0706867F181956F00D,
-	GB18030Encoding_GetEncoder_mD9DAABDB64A9FCE2D0F2728C399A1517856D89FF,
-	GB18030Encoding_GetDecoder_m3E1108F4BB506B1216A683B97E9A2DFF7DE04A27,
-	GB18030Source__ctor_m558163D7273D1610E4AE13B3B81CA1A379A36103,
-	GB18030Source__cctor_mCE4637E4E21E618B5A800EEA4ED166E81D04E1EA,
-	GB18030Source_Unlinear_m6FCCC5EE7161BB62029BF61148947C2C52C31EAE,
-	GB18030Source_Unlinear_mE57BFD111E56D70DE06599BE20633FA0F19841D4,
-	GB18030Source_FromGBX_mF3D7B1BECFCDEE508EA5F4CE50749293D873B97D,
-	GB18030Source_FromUCSSurrogate_mA5B602BD68EFF3133CA9AF8D8516A885CC34B852,
-	GB18030Source_FromUCS_m0E121D5DB5CE6AE5D9280B6E8CB89AA973A910E4,
-	GB18030Source_FromGBXRaw_m9EDD5388C1462EA1EE85D2F1909AC2D6496F424D,
-	GB18030Source_ToUcsRaw_m12F83E2A93386EEAFFF0E3377DC2B50A7BE2B1D9,
-	GB18030Source_ToGbxRaw_mC1E3F62CB1D355BC557701A272ABDF54C9117D1E,
-	GB18030Map__ctor_m9DE204C5F753540DF0066DF3A4D33AA51A90BD37,
-	ISO2022JPDecoder__ctor_m4AB5E55B0CD3545CEF2B34CDC66437493526410F,
-	ISO2022JPDecoder_GetCharCount_m8381F225784A7BBF96E335B8B9F87CF4E4383381,
-	ISO2022JPDecoder_ToChar_m34E888F90AE4602B9491896E85877EA622335936,
-	ISO2022JPDecoder_GetChars_mAC448B56705744BC30A22AE689B8251CA69289BA,
-	ISO2022JPDecoder_Reset_mE84F60E74DDDED1A47C124BF5A96FC4D7D448A7A,
-	ISO2022JPDecoder__cctor_m162724397221B3CC668DD181B1CDAC1A94221B21,
-	ISO2022JPEncoder__ctor_m4F19CAB7B1F31A7396201F135C2FEB2833FDDAFB,
-	ISO2022JPEncoder_GetByteCount_m6D3A8DB8966DF89ABDCF6A68E8A4BED78CFEF4DB,
-	ISO2022JPEncoder_IsShifted_m32C520225DA986472AB2E1EC4F5888EB405AC2D9,
-	ISO2022JPEncoder_SetShifted_mB0C05F426F4FA30B3CA883825166A6B41C026DD6,
-	ISO2022JPEncoder_SwitchMode_mC80DB03725674D2AEF99701978D76A72D12849D3,
-	ISO2022JPEncoder_GetBytesInternal_m27FDE6A09B61241E486A5A3553749624FCB5EDEB,
-	ISO2022JPEncoder_GetBytes_mDDEE8F0974999195C778BCE77B8BDD4B42B35F8A,
-	ISO2022JPEncoder_Reset_m1DD5A464D7CC4A9D498B241AE248EF952D367F2F,
-	ISO2022JPEncoder__cctor_m489D34ADB24CFE4E9D2B7C88CC2551380690BDCD,
-	ISO2022JPEncoding__ctor_m79332D5795ECFE2969A2A612AF1B5CBC8BA0B12B,
-	ISO2022JPEncoding_get_BodyName_mFE994D2A829DF2FBB8905C0A3109AB8477FFB1C1,
-	ISO2022JPEncoding_get_HeaderName_m4542433407D48CE42B2FAA9C2CDADA08EF27B9A5,
-	ISO2022JPEncoding_get_WebName_m7C81F07C44210FBD1120D91F93B400D2DF916D44,
-	ISO2022JPEncoding_GetMaxByteCount_mC5AF95E7450E60A6D1649DC7C56FA8D640FB7CA6,
-	ISO2022JPEncoding_GetMaxCharCount_m0A11ADE47ACB3C4BA8EE7898A1DA1997712303E7,
-	ISO2022JPEncoding_GetBytesInternal_m5BD7F125B6B84FC0237618CA6DCF5C1C23B47B36,
-	ISO2022JPEncoding_GetByteCount_m1C307D993494D80B61797AA668E81FF0D7A5F80A,
-	ISO2022JPEncoding_GetBytes_mE589BC03CA7E5E89DEB93E7AE67CBE18483528FB,
-	ISO2022JPEncoding_GetCharCount_mCB4473278877AD2CFFB3BAFD69DFA0B4E8DCC9DF,
-	ISO2022JPEncoding_GetChars_mB715886D21CFB7F9829EF6DE4E92BDF7617DB90E,
-	JISConvert__ctor_mAF5124D1ACF4EB3BCB79B73F48CFF513D9B89E7F,
-	JISConvert_get_Convert_m698509E273544FF363D1E6DF17E520E3119034F8,
-	JISConvert__cctor_m9D8DA39AE6805D45330017B0785E1EA3B84EC06C,
-	KoreanEncoding__ctor_mD9E900108C3B6E10197571E880182F839892A872,
-	KoreanEncoding_GetConvert_mF2446D5F88E4D996447C860CED772567BF4362C5,
-	KoreanEncoding_GetByteCount_m2F57B6F4BFA34CD864A9F479CABA6297C4EA8864,
-	KoreanEncoding_GetBytes_m6CCDB511621082B1937497FB3D8B106BCE5F1624,
-	KoreanEncoding_GetCharCount_m6D49F1FF24F669E0DA92B0DD6F67183919DEB092,
-	KoreanEncoding_GetChars_m47DC963EEAAB75043BC77930D57107AF511E3049,
-	KoreanEncoding_GetDecoder_mEAEA1F72B91CB8CBC88588FC8ACEB7CA75CD12DD,
-	KoreanDecoder__ctor_m01E24CC0C4EA5B6970BD920A098C1EB0A397F504,
-	KoreanDecoder_GetCharCount_m840898F3D23B66ECA2ABA5DEE5DABD65EF9490CA,
-	KoreanDecoder_GetCharCount_mCC1DD13FAD21F0604F8D84E69A1958CE806270F6,
-	KoreanDecoder_GetChars_m477A2FEF773706DF30B7AC19AE94CDDA3C679DE8,
-	KoreanDecoder_GetChars_m4FD99CA4664AFB5E6EEBC0CA73E7F35899E51386,
-	CP1254__ctor_mFD6A4744296691C96F7306CEC7D5DDE58C588453,
-	CP1254_GetByteCountImpl_m759CA87BA8E50E1FC0DDA6F134208E4D3CA2468C,
-	CP1254_GetByteCount_m9578C5C2A401FB3BA07386F60E70EC5E70AB202E,
-	CP1254_ToBytes_m7F80CFABCDA03A649E3251DA207805C3E15B1D83,
-	CP1254_GetBytesImpl_m72DB1ED831C3B4C8A99721569A3853D1DBB7A6B9,
-	CP1254__cctor_m59431E486A35832E25FE34D5415D990A0CC2F692,
-	CP1255__ctor_mB29016BF2299E8FFA2E1C9B01C1A417C8796BD13,
-	CP1255_GetByteCountImpl_mA74FE97184ABEEC1B641EAD954CFAB9036477C5A,
-	CP1255_GetByteCount_m357FEBBB6633BDC921445278C02F748A33ED9AB8,
-	CP1255_ToBytes_m0D285E288C090376EDFEE3DF99B890D7A0654DBD,
-	CP1255_GetBytesImpl_mD7E4B92DA338B965336588DB592B859D53DA511B,
-	CP1255__cctor_m44BF8BF8C06EEC78120BB10CA6B6017CE32D7D42,
-	CP1256__ctor_m2D33E2B07149C8C46659A8725C65219B4FACFAC1,
-	CP1256_GetByteCountImpl_mEEBB39676F43F7A9888D159FB4CFBFB8A40C77B4,
-	CP1256_GetByteCount_mE4522A755BE4E30F0483C38F92645F5F3A1BA7F8,
-	CP1256_ToBytes_mD8B9FD806449F072E31304123431CC155191CE45,
-	CP1256_GetBytesImpl_m0D130361420E1F62F833AC931902F26309BBC442,
-	CP1256__cctor_m02BFE60112FF9A3F7776BF8A9A83EACD3B5B1083,
-	CP28596__ctor_m9C873178B60CFC8183FB7E2E5B4AF34E15AAF8F1,
-	CP28596_GetByteCountImpl_m252F65EF3AAE78ED3CBC48123A2E438748D26402,
-	CP28596_GetByteCount_mD0408C008EB0F7E4FBA80DA3B53E80764B6AF123,
-	CP28596_ToBytes_mF538C43B354A80E46B7D47BAB4D68CD0A1969A57,
-	CP28596_GetBytesImpl_mBE4488B350EDA11C0AAB7E38EA954A767008A21D,
-	CP28596__cctor_mD58A9DAFA7DB4DC2E17E7A59259D4EAAFBFA7F59,
-	CP28598__ctor_m21943BDB4D47B72DB80697FD6525383BE207787C,
-	CP28598_GetByteCountImpl_m4C7E6DD06C76F2B3B630D0F32152F9ED3D1C3DF4,
-	CP28598_GetByteCount_mD1AD43C069FC3435C8D612727643EC37B10E8DDD,
-	CP28598_ToBytes_mBF1B316D1488B9A69E5E4F715F698520F4C9A636,
-	CP28598_GetBytesImpl_m5D9453556CA1E8A29222170129CDF3882DB6408F,
-	CP28598__cctor_m7D281631350D272AE2DE55DACD44A3BB0BCF46D9,
-	CP28599__ctor_m879E09E2443A16C1945625A15FD37B4BDC1A497D,
-	CP28599_GetByteCountImpl_m94706B16B9203C783A7F0F38DBC98E9B1D3BEA57,
-	CP28599_GetByteCount_m3D87EA33F10EB62F98AFCED297363FE0CC15150F,
-	CP28599_ToBytes_m8ACBA62C6019A51BC96BAE815829259183228C6F,
-	CP28599_GetBytesImpl_m375A88F90D5A063F59DD7167FC8793EADB018A2A,
-	CP28599__cctor_mC9813D7D829827471C47F84817E12AC30703ECC8,
-	CP38598__ctor_m0877ECAE60A6895CCF74E61950D6CDE3D76EA809,
-	CP38598_GetByteCountImpl_mE12413B6E435CCECACA504D2B9AD113920845FF6,
-	CP38598_GetByteCount_mF4E0277AAA22AB6CCF7D55B3E4576DCC51C1902B,
-	CP38598_ToBytes_m44D1A54EF1314EF651F98B832C766A3FC06E6CB4,
-	CP38598_GetBytesImpl_m20836F0277DA2461593D5334CDE6C716ED6B49EB,
-	CP38598__cctor_m365A04275F7788AFADF9B2DC12E45DEAF5DD5C32,
-	ENCiso_8859_6__ctor_m0B30D45E4DA6498163FB01EA4AB86687BBC4BE04,
-	ENCiso_8859_8__ctor_mDF867AF3C26D011C2C67AA8B06D7A18B9E9A5979,
-	ENCiso_8859_9__ctor_m28D2FD5713597901A889841BB93549B91A946428,
-	ENCwindows_1254__ctor_m911D90BE4AF60681E9D879B43033D29C905E80AB,
-	ENCwindows_1255__ctor_mFA9598910ED8D39F9E804D95CA9C864C796F2D2C,
-	ENCwindows_1256__ctor_m6C891D4D22214D42D200003B7E2800156CA3DE3D,
-	ENCwindows_38598__ctor_m8BAB31E51D66E189E70A17163D12AD3410D2C1ED,
-	CP1251__ctor_mFCCDA603881C9D5A989637B7D4DBAC9A3E720200,
-	CP1251_GetByteCountImpl_m7635F8CEBA1EA427DA1584970F80533B18BD3F91,
-	CP1251_GetByteCount_mDC7A5D00AC343A8A4F9CE58D7550D11F0668E46D,
-	CP1251_ToBytes_m8BA0D7FF00CC909B341F243B17A2B2951EB074A6,
-	CP1251_GetBytesImpl_mA91D25165E34487C76A7D3AC9F01B95622BA8D6E,
-	CP1251__cctor_m30EEAE7B6B4CB8F417C9CBACFEA13577931CFACE,
-	CP1257__ctor_m0D9B5D03B13627412CF9939DFC86D575E837E721,
-	CP1257_GetByteCountImpl_m7AB4709B5CB75333050144B6311DB804D92E4E6D,
-	CP1257_GetByteCount_m03A6933B19C0769313B067CAC0F33715D60B14F7,
-	CP1257_ToBytes_m05896448EFA4003CBC308AECD1C0E840CE21A66E,
-	CP1257_GetBytesImpl_m5A4FB94831A2D5FB66DBB49ABB0F736ED5DDB5C4,
-	CP1257__cctor_m50180416BF33C556FDD74FCF9CFC161572702B23,
-	CP1258__ctor_mC81F5C27B59253B10422490B9F457C0ED61C347A,
-	CP1258_GetByteCountImpl_mCD91E25488D03791934D002CEECDDF5DDDFB4AC0,
-	CP1258_GetByteCount_m34B8D75307F19D822A357FF13CE9BDB79BDBB9CB,
-	CP1258_ToBytes_m57493DE6808DA2ADFD58A89E035EB1E96057B373,
-	CP1258_GetBytesImpl_m6769A79DB0C132A294400E890A40E09DD8879D9F,
-	CP1258__cctor_m19A10BA9A7056CCE5D491E02CF70E43D37D5A90E,
-	CP20866__ctor_m20953633923576619ACEB327777341BE19C054B1,
-	CP20866_GetByteCountImpl_m89A7A87DD8100DD0890F979150506665A5E73495,
-	CP20866_GetByteCount_mF1D77F102E450367685F9D353076CD5C8222F221,
-	CP20866_ToBytes_mD627F437FDD37F054391509629245B94BF05DC28,
-	CP20866_GetBytesImpl_m4A4FF873471FD501D7E03905F42E9138090C8601,
-	CP20866__cctor_m0F9F0977A2CEC956C03C74B0EB369B156B1BF25B,
-	CP21866__ctor_mB27ECA860900EB3C1D03C82C9B36A3145C553FA1,
-	CP21866_GetByteCountImpl_mFBD8E037956EB0F5D5DE94D8162CC54B9C445544,
-	CP21866_GetByteCount_m45C48EF252E3C180688032A0BBDBC7F31BEAF034,
-	CP21866_ToBytes_mB610BA3B1A6E301E1BA2F999441429F97481B2B9,
-	CP21866_GetBytesImpl_m494819D162FDC8BDC1334733310B5E16D3ED882F,
-	CP21866__cctor_m2A65ABED76AC043FD7A9F72B85C3CF03D525E0DB,
-	CP28594__ctor_m8B6CF5E31EF7B66B8C5C6C52AD54F2B18A8BC5D2,
-	CP28594_GetByteCountImpl_mEB12DE2A0AB4B71F14C1A7D1DC17B9112F675484,
-	CP28594_GetByteCount_mAD16787CDC54530FED66926D74D8D06D2D2A1695,
-	CP28594_ToBytes_m4B660B2B56311C8DD1178D3EEC0B1B6AACC4A4A1,
-	CP28594_GetBytesImpl_m34AF2127EFC1DABE736B305F7DE8DBCE0718B784,
-	CP28594__cctor_m97614FA8B501C4648CDFB22EB5B24CE7B5065714,
-	CP28595__ctor_m36A0DF95118BCD754AE6D7F736EEE3A1BF161866,
-	CP28595_GetByteCountImpl_mA5CF5140E05FA97F828B47F58D21B47887E92B24,
-	CP28595_GetByteCount_m211C6F828E3EDAE3C06539193E808917FCBC0BF1,
-	CP28595_ToBytes_mD6E8E4DF4D0C42DF2405460D16B55792E3E313CE,
-	CP28595_GetBytesImpl_mF885F9C77E5AB61FA96273E478AA9E1E8EB2DA64,
-	CP28595__cctor_mBC18BE832F095070828C21671924C2481849B671,
-	CP57002__ctor_mCED3CF785F2304AF216833C0C6181A864B1EDE3A,
-	CP57003__ctor_mA8892E735B6E58FAE521908701421E4490A41A26,
-	CP57004__ctor_m88A88647B929D61FB5F6A74CA79F9B66C71FB6A3,
-	CP57005__ctor_m2EE119E9A14A00823A231CDF9CCEA8F6DF804335,
-	CP57006__ctor_m94C460904E6CC605F6D0E8AC615D4DFDAE0D70AE,
-	CP57007__ctor_m713B193345BD108E2BC14EAE21C831C4138A3388,
-	CP57008__ctor_m88D5353462774E552EC421B30B75E72AB6EABD7F,
-	CP57009__ctor_mB2A2F0A0628E0C7AE37D9C5562C5905CCE80F0C0,
-	CP57010__ctor_mD68C53B8CF5251FA6999DCC36F47D89B8A6ED476,
-	CP57011__ctor_mDB7E411D5711FAF62C2708AC667D960D15782445,
-	CP874__ctor_m58F56E3E169819C7D0631032E28E644C384632FD,
-	CP874_GetByteCountImpl_m0FFD006FD1991FDEBE418269C08022E726A11153,
-	CP874_GetByteCount_m2D630D396020BDAD463989CC9C0C6C912AF80922,
-	CP874_ToBytes_m3C98584D4D7993018E6776FB706B1F84E2690862,
-	CP874_GetBytesImpl_m630F66A88CD1D2FBB460FDDAA6769A087C9CF78B,
-	CP874__cctor_m6070415913516C9127B9388A0A586506BB777D5B,
-	ENCiso_8859_4__ctor_m6F0E3DBB2CD5DCD7F3E798D767592A79DA1BE9ED,
-	ENCiso_8859_5__ctor_mF46ED0CFD8A3DFB39D41DC145BCE9A893F43F625,
-	ENCkoi8_r__ctor_m12A0E13CB002C8448E6BB49C21E5C1F486EECDF3,
-	ENCkoi8_u__ctor_m6D45C33AC48BC3336A6C70A32FB9394E1D717652,
-	ENCwindows_1251__ctor_m244370874DF72249FA01D8337E0B4262AA20481B,
-	ENCwindows_1257__ctor_m2B563BEA13A7F9D375D1DA1EBD8B13AAEA4D21DA,
-	ENCwindows_1258__ctor_m2ECB73B02F26220945D4518ECC4AD7C0A6B7A530,
-	ENCwindows_874__ctor_m32213000F6B10D3CA58BF1571F2A77FBA093D3EA,
-	ENCx_iscii_as__ctor_m24DB817CF3D37134C10ED98576390EBA0CBA2247,
-	ENCx_iscii_be__ctor_mC4AE7418546D86A3400163B0853A63182C19301B,
-	ENCx_iscii_de__ctor_m9AC98585D69A868C50E1A1708E63C567C958B9D5,
-	ENCx_iscii_gu__ctor_mFB87EF25398F3D9224396D91053DEB31D24457DF,
-	ENCx_iscii_ka__ctor_mF623D80CA1DD7748AD135966ECA7A8448639BDA0,
-	ENCx_iscii_ma__ctor_m26BC7019B134C6110CC66C3DEB7E4F964319557B,
-	ENCx_iscii_or__ctor_m8CD629C918EF6EDDC52BE696A3C11F52FE3F9743,
-	ENCx_iscii_pa__ctor_m12913D27763D554227484DEF75BB4907D40A3C80,
-	ENCx_iscii_ta__ctor_m0B6FFBF10A868C33049BB71C81C569D226716328,
-	ENCx_iscii_te__ctor_m053C84B5694D43ADF1C554FB2A5376CC3E7A4FD5,
-	ISCIIEncoding__ctor_m876EC96FBE90C166EF09E7F3132E5CD3B64B5B8A,
-	ISCIIEncoding_GetByteCount_mB11673F258712E2A2A50435076782929B2FC4475,
-	ISCIIEncoding_GetByteCount_m78CCB224740E6B113790E17073BA190FE3847402,
-	ISCIIEncoding_GetByteCountImpl_m10E88731A5B5F966A094E970F2CD62BA1D7AD360,
-	ISCIIEncoding_GetBytesImpl_mE199A07ADBBCEB93061044EF5B461EBC80A9EC08,
-	ISCIIEncoding_GetCharCount_m511FD44BD78BC028769B601C04C10078ECF7724A,
-	ISCIIEncoding_GetChars_mF3148D17AC3AB37D49C70F5205E19E1F45239299,
-	ISCIIEncoding_GetMaxByteCount_m7CDDBDD2A300734BFD3575D4E02791E98C55D80F,
-	ISCIIEncoding_GetMaxCharCount_mFB0E6C49618E934210CF536BD16FF13A4CA037B6,
-	ISCIIEncoding_get_BodyName_m507BF203501E0793C63A54D2F732F3DB755C8429,
-	ISCIIEncoding_get_EncodingName_m989983C6C78947DA682E84D02D84523D846A1969,
-	ISCIIEncoding_get_HeaderName_m986670E379AAAE8AB0D9709395A3060ABFD317B8,
-	ISCIIEncoding_get_WebName_m600263F9BF5F96AEF8D544A5EDEFA1BA49EAAD6F,
-	CP1026__ctor_m39B1953FB2625E91E6381AA1C39B013BB3411263,
-	CP1026_GetByteCountImpl_m4E5731B06379149E73C05821302B0E5CA41D4D3D,
-	CP1026_GetByteCount_mA340B3F82CE6626AF6DFE150858F29976AD775C8,
-	CP1026_ToBytes_mC34DFFA061881B1802F58B1E80C79515B47FD000,
-	CP1026_GetBytesImpl_m44AF3D36BC9B9994870750A460EC30F572BD33CD,
-	CP1026__cctor_m9569DEBC3422A371C46AB5FC16A9B6FE8C7767FF,
-	CP1047__ctor_mA6B8BCD9AAB532982B0203A7EE620A2F8E3AD2EC,
-	CP1047_GetByteCountImpl_m8833AB893D1A82FBB0E1047B74E83196BC323B97,
-	CP1047_GetByteCount_mD71280545EAE05F3D416B9461ED9F9864506AD9F,
-	CP1047_ToBytes_m5DCC6893ECC9F458F82DF9FF554CBA0C149D180F,
-	CP1047_GetBytesImpl_m98CE1CF8F4B3D43C8761311187A7E36C89F4F177,
-	CP1047__cctor_m58FEA58F19D6A8DA48CCD10FDC307DBA2A59683D,
-	CP1140__ctor_m2CF82CF29534CDADB54D19D0E05E2E699351442C,
-	CP1140_GetByteCountImpl_m4824B0E32EEF299929BC4191A12BF84E9FE1BBA2,
-	CP1140_GetByteCount_m529A7B0534256082CB56456CDBEF5C7F5F8BB641,
-	CP1140_ToBytes_m36749A8CB1078A14863792AC5FE6FFC34527F3FF,
-	CP1140_GetBytesImpl_m4DF6B0B3945750FD69987CE2C93D119FBBAE41CE,
-	CP1140__cctor_m7F7001EDD7329A8B636939A79B279DAEE204589A,
-	CP1141__ctor_mB1C445162F8CF354ED7D56A02256B00AAEF9B086,
-	CP1141_GetByteCountImpl_mE7A91B04EC87A6C831779CD719B9E262FBD8C6FE,
-	CP1141_GetByteCount_mD0D58668C8B9C7116D675A80327BC9AF60873225,
-	CP1141_ToBytes_m8E6DCCAEA5223D6380CBB837B2E1FDD0814E5D75,
-	CP1141_GetBytesImpl_m3FBAD858741A2998E3B8261050832C98F006B1ED,
-	CP1141__cctor_m1D197E091B4BA82D8F60641F6292D6854EBFADC2,
-	CP1142__ctor_mB83611C2A8A7DEB705C91635601D6821909183DE,
-	CP1142_GetByteCountImpl_m0F9F15125D9A8FEFBA2415367D02B987A2A8042B,
-	CP1142_GetByteCount_m0BA2038D4C2CFEF9F3AD9149C759253F4B0F585C,
-	CP1142_ToBytes_m53D14BA07F9ED5C25A6E6049C85B5BA9EBBEB33D,
-	CP1142_GetBytesImpl_m907BB5A927854A27288ACAB863A06AA165B6C83B,
-	CP1142__cctor_m677D581C1466A7152BAD9E2A7F06DF632724BFF1,
-	CP1143__ctor_m545371431A8530853B25906A553A8E31E1805E20,
-	CP1143_GetByteCountImpl_m8AB7E59CC2EC0B4EBE3F9494AA72B03CF582FE49,
-	CP1143_GetByteCount_m9112759F87B423E3300769DFFD01F82677F230F7,
-	CP1143_ToBytes_m0C06277A6BEE6F6BD81A67BC7F15621DF91E785D,
-	CP1143_GetBytesImpl_m52094E38DBDEF285AB2B42472445C3150A10542B,
-	CP1143__cctor_m7004EB0CFB5CAA631DE95541406665FEBBCD7D3B,
-	CP1144__ctor_m51B2788C88607B68EB56F8C483C43852806E2FEB,
-	CP1144_GetByteCountImpl_m7B04131E6283DEB9526BF24F11A8AE435943A876,
-	CP1144_GetByteCount_m2DBD8E0EB1D938E23459EEEC807503F19DF4FD43,
-	CP1144_ToBytes_mAE2A830C8FDDB4ED27A291286F8E4E4E754F26CA,
-	CP1144_GetBytesImpl_m60589C68F1629B5A90901840BEB5D25FA615B54D,
-	CP1144__cctor_mFC4EB2C8E73BBB0F3B316A1FB65393846B493CB5,
-	CP1145__ctor_mAB2409045614A7F413331DD4038CC5613911051E,
-	CP1145_GetByteCountImpl_mCEC8661DBAD8D12C2401E0052D0E2B68343FB73E,
-	CP1145_GetByteCount_mE52D4854149C7F0BD7A3E901EEF647FE9C11BDEF,
-	CP1145_ToBytes_m9E4803110AA355E95163EDD3D47D974934010F23,
-	CP1145_GetBytesImpl_mC943EC5EEEFF0E0DC594683F1E1BA4213BB691F3,
-	CP1145__cctor_m0DD35CAC29800541FB762ABB301913DF3FAB80CB,
-	CP1146__ctor_m180465696E08BCB6EC33CC5D89EA23AFD199E9AF,
-	CP1146_GetByteCountImpl_m492DB1D83E7B599A5BA004DE5A774716A2A050DD,
-	CP1146_GetByteCount_m3E5A887651B37C4859EB33AD3354E7D5936B785C,
-	CP1146_ToBytes_mC4D3766DB5CB0023F19975E07A98A5B5E254D915,
-	CP1146_GetBytesImpl_m41E4BCB7CB507C4703724177E1C80C5481584305,
-	CP1146__cctor_m7462F6839B64FB3957D29B35647CF5250CE37796,
-	CP1147__ctor_mEA1FA288ECA6B5AB7FD835476B512A332855820A,
-	CP1147_GetByteCountImpl_mCDA649E61ABE9D9BA0A83F8E74CCD7A6B1352171,
-	CP1147_GetByteCount_m041DDBF43D6AA3B57893B449FDB3B9AEEB6F9684,
-	CP1147_ToBytes_m7670126FDB380C978676AC074FCC504CC033F1F8,
-	CP1147_GetBytesImpl_mCBC1D40CAC99EED6898AE314C5184CF5386EBD77,
-	CP1147__cctor_m31000FDB4D087E738E63F41E122EC261A7C290B1,
-	CP1148__ctor_mF566457669C1C945F3D0CA20E590D472E0EB31C1,
-	CP1148_GetByteCountImpl_m331DD8AA6BC8D01732B10A560BB401BBB1D8A63A,
-	CP1148_GetByteCount_mDC00CEE7CD0148F4935597C3021D12C8414C4AA5,
-	CP1148_ToBytes_m4BA3782920D586AF57BB117D2A9278CD6B5109A2,
-	CP1148_GetBytesImpl_m7CDE958FCEF4A68852BC7D43E9B794A5AA15BB56,
-	CP1148__cctor_m1FA8F131B4551B420CAAE83C3C1930653AE0D9A0,
-	CP1149__ctor_m2411058354D619C2438CFDBD9F26E917C67F5AE0,
-	CP1149_GetByteCountImpl_m40B1EC72150DE57C232E729D21B6FE47617D57C0,
-	CP1149_GetByteCount_m73A6DCF6BA504BD3749742F694CF6A991EA5DA1E,
-	CP1149_ToBytes_m8C8FDF2F2929724CF1DCBDDB88DE84B9BA56706D,
-	CP1149_GetBytesImpl_m1A833A140E8745769F96025E48522B3A5F2DB3C1,
-	CP1149__cctor_m415163D8C11131539873EA1CB5DC4FA8DE77D82C,
-	CP20273__ctor_m6559CA3A7DEE00F239E661A35A5DA1900FAF29FF,
-	CP20273_GetByteCountImpl_mB8AD4A34B0C5CE30E35989FC6275A061B9DE6D8E,
-	CP20273_GetByteCount_mE8BC44BA2705257FEA6F922FB5DAF2CA8928B0F1,
-	CP20273_ToBytes_m8148B170396AC003257738FE156D848412810C83,
-	CP20273_GetBytesImpl_mCF577F077E513931FFCB81003AE9B75A82C9644A,
-	CP20273__cctor_mF4B56B301E66A12ACA4ABF9E8AB80289A5B6E27A,
-	CP20277__ctor_m234EECF9D060901E2465A47D24581417981D2819,
-	CP20277_GetByteCountImpl_mB1BEAC240D57C97F1BB5FAB3973CB63878879620,
-	CP20277_GetByteCount_m07AB0AA9933B3A373F0EE6C844DCB7516C400F6B,
-	CP20277_ToBytes_m2DA3E113D1292DF63DEF4C4936C4768E51CCF557,
-	CP20277_GetBytesImpl_m901169FA5999C79EFDDAFAF56749664D5B9F2EEC,
-	CP20277__cctor_m1F380BEF29D8521A094E2A2195A710C771B37F0C,
-	CP20278__ctor_mCFCECF0493A84404D5F887D19E220083588F99F0,
-	CP20278_GetByteCountImpl_mB484C82A4F4CA395DE0D7B9B94C1545FEDA02850,
-	CP20278_GetByteCount_mB7D657B371972770D0B88EF30A2002156A63F8AD,
-	CP20278_ToBytes_m6559CB941540C86D1D05911E6694BA62AF808002,
-	CP20278_GetBytesImpl_m3B78D7BCFC9D7FCF65E6DF0CE58BFC066D4A7988,
-	CP20278__cctor_m8B9C3A17DA0589E13278EDE475E6A67FF01A10B9,
-	CP20280__ctor_mE015898E516F59A3D99573EC8B8436E85F43F3F4,
-	CP20280_GetByteCountImpl_m60A851531F730ED0306E0A551502234741F2D5F8,
-	CP20280_GetByteCount_m2955BE690CFC8FF5BFE6D04E61DAEBEA857EFB2D,
-	CP20280_ToBytes_m987D00F80F50211115338A61B73892A05345CAAF,
-	CP20280_GetBytesImpl_m16306CBF2E6F98B96084EE67F81FDFCD2E599C5A,
-	CP20280__cctor_mE677987C75B371ABAF483119414A997AA78E467D,
-	CP20284__ctor_mBF1311D6DD9E8E15BD34892158610D296891F551,
-	CP20284_GetByteCountImpl_mDC33D7EBF55925AEA146A2019F27E09C7855261C,
-	CP20284_GetByteCount_m44AF7871813CFA6AF4E3B9FAA9DE532961B694A9,
-	CP20284_ToBytes_m5298BC2959C48F473862557E01E684AF65EDEACE,
-	CP20284_GetBytesImpl_m032024BF60E63DDF26287452F5C45B401E663F7C,
-	CP20284__cctor_m3B45FA12DE312C9CADAEAD8607501E7EE3F2E76D,
-	CP20285__ctor_m569FEAE673839F59C3950E5327044F113371621F,
-	CP20285_GetByteCountImpl_m0145A8D3C9F3B2F78631A1C2C79CE062EEC6DB13,
-	CP20285_GetByteCount_m2EB58DE4501F246C85C4BF32B72F9EB2909682B3,
-	CP20285_ToBytes_m716478A1585F0DDCAC5FF49705F3A24F2A17F18A,
-	CP20285_GetBytesImpl_mF24B6481411012A59C5EF8165FED133D4D8B764F,
-	CP20285__cctor_mEF2F663E12D4A5477E3A92AF450158A264D2CBBD,
-	CP20290__ctor_m8EC53F797E1B8E4C59A3CC60AA507C9F4199B487,
-	CP20290_GetByteCountImpl_m1062AF52704D9E67122B15FA9F88D798B8801258,
-	CP20290_GetByteCount_mC3C787090F0DB28DB6D463F3A068BE293E602625,
-	CP20290_ToBytes_m059146E36AE044B0249C479B8FD99789D0A4B2DB,
-	CP20290_GetBytesImpl_m7FC4F785CCF72EA90FA56D7DBB86A7E424843760,
-	CP20290__cctor_m23646414BEB727FE1E3009934D3C5A5BD4DA20D8,
-	CP20297__ctor_m7C942EC9517839A841C87D2412832EA89F7DB9ED,
-	CP20297_GetByteCountImpl_m97FA131F3EF9F405A4B84EB03FE8853A53103265,
-	CP20297_GetByteCount_m846D641F809142F9E60D14A815F87B86AA72B0FC,
-	CP20297_ToBytes_m5B435BDCD5BA211019BBE22369C77CFD2F3BD55C,
-	CP20297_GetBytesImpl_m4E73B8C90D77D81BC63A171188011F29D229A490,
-	CP20297__cctor_mD34CD69447B38FB41E1A6BE9DE9923EA911EF71C,
-	CP20420__ctor_mE1199075414679B6E9A75A5A0F276EF1B8F3E89F,
-	CP20420_GetByteCountImpl_m18FA19054EE4E4370EB539F9A1066A6D4B5EAC8D,
-	CP20420_GetByteCount_m5E195ED52B3336C62F3545E1D2F8C5D98FE49D8C,
-	CP20420_ToBytes_mDBA07E73492F3571A540EDB2E2830B054FE4190B,
-	CP20420_GetBytesImpl_mBBEA976A24251761A7027BEE914E4B5B1B8FF87B,
-	CP20420__cctor_m410575E8C107463593576EBB3BA005FA6D9E6A4E,
-	CP20424__ctor_m1E85021A71B05CCBB2E6BFED9241C2E19CC1804B,
-	CP20424_GetByteCountImpl_m2BB1A847D4DCADCFFFB760EE27775CA9BF4600D3,
-	CP20424_GetByteCount_m6AA933A082DAADE421BAC82232D7C4833A4F4C4B,
-	CP20424_ToBytes_mFE1CE27487D7D142CDA94BC35FDDA2A1DD2B3BF6,
-	CP20424_GetBytesImpl_m571BCB7057F5A9A408FC9FC70033F7B3A62E59BD,
-	CP20424__cctor_m1FA346CADB4832707E5EE256B34AA9E6B02FE654,
-	CP20871__ctor_m2C9709576B96E37BDCD54AC0015ADEB27FCF2C7F,
-	CP20871_GetByteCountImpl_m061918F6FB9D5FF279622DAE8C6235ADD7516B96,
-	CP20871_GetByteCount_mCFE203D46DD8FA8DB3D87FA93A6F69E552EC9AAD,
-	CP20871_ToBytes_mDD83A5E662D13579D509F31390819353DCBA6132,
-	CP20871_GetBytesImpl_mC46E8A2AD9A16A0D7784495336B31F55B0494203,
-	CP20871__cctor_mD93BCAF84E781091B4EA9CFE99BF9DBFACA511E7,
-	CP21025__ctor_m7991C64C9B7C6CBD2E9644E09BEBC382BF6EAA72,
-	CP21025_GetByteCountImpl_m5B2B6C08F55C43CDE18910853837FDBB2CF5BCBF,
-	CP21025_GetByteCount_mC5118AA109745C3D81D23976221CD213933E5F58,
-	CP21025_ToBytes_mD06C5D425C78A3D85E8678A24BDFBF4628E965FA,
-	CP21025_GetBytesImpl_m6E8F0DCD5328761984E5FEB4880A1D9CB965AB7D,
-	CP21025__cctor_m601615685F537065039C1DE5BDE553B22004213D,
-	CP37__ctor_m980FA509A950BCB28807B6341B3EA7DCF0C88B09,
-	CP37_GetByteCountImpl_m5E81968842DD9EDA5B655B9889FC1599FFF938C7,
-	CP37_GetByteCount_m6A65EA0E8E5975338A583624005647037152AD7C,
-	CP37_ToBytes_mE7E0AC40F6B4FFB0AC93C1196FEF4CFED556F451,
-	CP37_GetBytesImpl_m3571BCAE36C4CFACF07858F58D13902DA814BD0E,
-	CP37__cctor_mFE3E5DAF0ECE7BA7701868A4DA305F3FF90785CE,
-	CP500__ctor_mAAA34E6D6BE50CD4A4E5B549EC6E569D3DF3392B,
-	CP500_GetByteCountImpl_m9801D5F51D055F027615B83955A5E7C6C13F4654,
-	CP500_GetByteCount_m06B3FF5306E1506E5C1B3A31BE4B8C16C0F88189,
-	CP500_ToBytes_m363E2F897F3F9BC0779385F9305E809243BBE072,
-	CP500_GetBytesImpl_mB71D88579743CD47279E4DF343CEDB09BD6C7734,
-	CP500__cctor_mC07A6DC1A725DB9DD8EDBD0E39710F64773347AA,
-	CP708__ctor_mDD6DF5663CDD3DFE9B6FB9CF07772F19861CBDDF,
-	CP708_GetByteCountImpl_m0CCCDE6E604AD8268170708A107FB09D6E322F2F,
-	CP708_GetByteCount_m9FFFE8AC5951D2B0E3B02794B63BC6A5D3640F94,
-	CP708_ToBytes_m12164204CED1ACA3FDCE64232F55DE8859461E4C,
-	CP708_GetBytesImpl_mAD2AE0DC992870FF549C8C59A923F57990D54FAD,
-	CP708__cctor_m6C86FD3ABC1D1AAB279B22DD2F8DB4D49889427F,
-	CP852__ctor_m523BC32DFB989F14A7BD097A161C682C10FFB935,
-	CP852_GetByteCountImpl_m6ED40106AD3074F24B58928AE4947C8EE7A21F2A,
-	CP852_GetByteCount_m9002C9545D03A1A194C6FA553AA02DDF85C01FB6,
-	CP852_ToBytes_mC92505D54077AA5AAEC639358DE313E287A6FA17,
-	CP852_GetBytesImpl_mD88A2E49D6D2D0D3075C7BB4353E1C9A128F4AC9,
-	CP852__cctor_mD5A61BBFC9AC500FB4DD469C0A64174C23E1C28D,
-	CP855__ctor_mD906188E17E7B6B8BFFF378186BFB22118745725,
-	CP855_GetByteCountImpl_m61D4C37E98D15FD786A8C192BD7D2276E071D482,
-	CP855_GetByteCount_m67A1E089C25811815795BF9F84A52549DEE5F64B,
-	CP855_ToBytes_m72E7D755705CDFBE2EB2BAB3361D7A04C8B57A51,
-	CP855_GetBytesImpl_mA610F5B0A2B87EEA2FEC551B96067B26B2DADEC5,
-	CP855__cctor_mB9ACA367D1A3FC7264FA001D1DFD195E3754E634,
-	CP857__ctor_m04B61ACEFC799F5F2954B626398DE8A12FD9A59D,
-	CP857_GetByteCountImpl_m46F07FCFDDEF5A2C31A7340CA70EBF11A8040E8A,
-	CP857_GetByteCount_mB9E944ADC5E4C7617ADB8D3037041468914C52EB,
-	CP857_ToBytes_m8355DEBC4260E99C8ACA2228326EA9C572300232,
-	CP857_GetBytesImpl_m90349E78307F6186D1B7726FA5CBC4D1008576DB,
-	CP857__cctor_m42823BB500D19C758890A94293445FB689EF1AFA,
-	CP858__ctor_m6236434507F11CBD528092D14C4D73D9BC495118,
-	CP858_GetByteCountImpl_m2750D6B4113AE523F8D3C8F9AB1EE023607D7153,
-	CP858_GetByteCount_m61D0180026C88E0A2C91D9CAC39D7A565D0CC9E9,
-	CP858_ToBytes_mF56F8FB0F8D80D71EB731F270DDFF6916AE17424,
-	CP858_GetBytesImpl_m0E1204CB49BC34ACC848200F3E0F2BCD75EA9E50,
-	CP858__cctor_mC2FA30FFDA59BAB09746D6BB19404A1CB471C150,
-	CP862__ctor_m90FB9C114FD3C2A81B11A0A6CFB439FFD976795E,
-	CP862_GetByteCountImpl_m92A41C0AE3E4C18B4801C9976D104DEF26FB3F47,
-	CP862_GetByteCount_m03A02CB0135C7D4EE907D3AFC6129C79C3BA80FE,
-	CP862_ToBytes_m9DB1A883209CB8F54C8F12BAD5006D1FBB7DD703,
-	CP862_GetBytesImpl_m665DEBD1FD33D1742A3E8F48091B245A8C463728,
-	CP862__cctor_mEFD64C6E41603900EC953A6946505C6FE23B521E,
-	CP864__ctor_m49B5EC32DBDCAF5A1A20C0684DF49E5DDABEB7CB,
-	CP864_GetByteCountImpl_m42A05655BF2D003E9DBC5CBA2E3193E2C7973AC7,
-	CP864_GetByteCount_mEA22FD4F46B3F63FC81DE91F04B610B8A5C42DE2,
-	CP864_ToBytes_m5C9EC8A6B95303EE436D71332663241306E345C0,
-	CP864_GetBytesImpl_m9E2B8B893697703D8E9D790BC1D76A73888E70F9,
-	CP864__cctor_m3F8069AF7E1F25B8DE5CCD34BDE7E4F8D0FA4199,
-	CP866__ctor_m3FCE35555BAA03D7C932FCBE2B79E91F284E63D5,
-	CP866_GetByteCountImpl_m176B37F94252AFDC3FF2862657A894CF42718CB2,
-	CP866_GetByteCount_mE74A1C2C3D2B390428B43F1D4BACAE99643674A6,
-	CP866_ToBytes_m0C0361338706E3EEAE333CC0ADC20CF65B35682C,
-	CP866_GetBytesImpl_mFDEB4F5422083738D2598B0418E23557DAF003FF,
-	CP866__cctor_mABDE7715DFCF25FD64FD5FA922D1488B0E4A0455,
-	CP869__ctor_mB2D20D1426BC17530CC5A564452AC737856A64BE,
-	CP869_GetByteCountImpl_mACF222865A306F21391EF527DBE0B23BBE591504,
-	CP869_GetByteCount_mE51A0171AEAA7A4C60AF938FC0797801A7131B10,
-	CP869_ToBytes_m908C126F3B43FB55E8BE2030D6CA0AC5F46E8C81,
-	CP869_GetBytesImpl_m483FA38EE3D6DE1B36CAE1268B7AB19647368553,
-	CP869__cctor_m5D971D483561DD5ACE0E578D0F194BFA918D867C,
-	CP870__ctor_m507DDC6F8831E087004EB888A1C67143783ECBD0,
-	CP870_GetByteCountImpl_mEF3E403BEE9EC361073695E61A4CC48F75FAE416,
-	CP870_GetByteCount_mEE46CEFC5C4CD808CF42FAE6F854D7B2A17B412B,
-	CP870_ToBytes_m729E1F75CFE9A0A93D59FC3025634344DF75D19C,
-	CP870_GetBytesImpl_mA73798F83EA5920EE72D6591A6DF6BFAA3CD9186,
-	CP870__cctor_m421A99BF0940CDDC6B5E122D2E7A35DCFDCA5718,
-	CP875__ctor_m6A44A19EAD24322D08698FC27A0B87FDC08CA459,
-	CP875_GetByteCountImpl_m51CA9E517679109254D2D3A1D621BB9AE13AF6CE,
-	CP875_GetByteCount_m16FE89DA644E0560CA567333DA197DEFE6F7D4AB,
-	CP875_ToBytes_m19DA22B375D56C6DBFEFBF1133BFECB5BD7C75D5,
-	CP875_GetBytesImpl_m7B663B15464BE8503DE366D40C3D0BDF1404F001,
-	CP875__cctor_mD3FFDA27E8FDE077AF09C0DA00C23B97C750474F,
-	ENCasmo_708__ctor_m02C750FD503B711433C5278D06FE4971E4CAE28C,
-	ENCibm00858__ctor_m2FD1BF341BEDBAFF7D7B7CD84284BA8B4C498EC1,
-	ENCibm01140__ctor_m75FD0DC378EB5C3118FE4D36BC0A199C0598C571,
-	ENCibm01141__ctor_m2ACCC2A952ACE7E34C95328E64F8CF9A8C664E84,
-	ENCibm01142__ctor_mD895439E8897B10D2DDC538A2BA34DEFB5A401BB,
-	ENCibm01143__ctor_m7B3553E21A8FE556078BAE6535D8110CCE411CC3,
-	ENCibm037__ctor_m5E42580ED4D04891457E342ED9C695A2A57EC4A8,
-	ENCibm1025__ctor_mC40E6D2023E7781213354C21A4D62FF2069B2912,
-	ENCibm1026__ctor_mAD4D9249065E0A2717F50AB67829DFCBEA8428E1,
-	ENCibm1047__ctor_mCAFD592FFE9519CAD8DE91632F3291ED4BB97504,
-	ENCibm1144__ctor_m52811A23199A731AFF90AB41A7576E27301B5107,
-	ENCibm1145__ctor_m2B060BDA6F7C1075D7C32841F2ED05131EF6947E,
-	ENCibm1146__ctor_mC79A67B38A9D8AA85228D0442FC0CA5F3F9237C3,
-	ENCibm1147__ctor_m026B64307429005248ACC79E7870717D278A6907,
-	ENCibm1148__ctor_m781E9BC274835D6A9185D867013CDEA2C6D466CA,
-	ENCibm1149__ctor_m1FE6F1E6B60863BDF83E25CCE9B5CCF100BF14D3,
-	ENCibm273__ctor_mC481535F1C4B88989D77E50D226516E1B4DD085C,
-	ENCibm277__ctor_mAC42A0A3E4D45A2ED5D7A2EE439F967DBEA40843,
-	ENCibm278__ctor_m535D2A14A32ACD09EDA825C5AA3639705E14A09D,
-	ENCibm280__ctor_m1B6EB348E0332CC447278F7D40A74B7DEEE28975,
-	ENCibm284__ctor_m127A0BF9EA990286CA755D083D8183EAA736D5F0,
-	ENCibm285__ctor_m23D0D5059BC406AEA14D08A968A7126E809D48D0,
-	ENCibm290__ctor_mAAB1E1C9621A198612941F01642B14B3D17453AD,
-	ENCibm297__ctor_m7A53C2A5B579B775088684602E48877781BA58F8,
-	ENCibm420__ctor_mBF03FE908D50792A4131CBAD25E792AE86E650E0,
-	ENCibm424__ctor_m64BFF6216471E9D93A799AB23D834E3EB8AA14A3,
-	ENCibm500__ctor_mE897F64AD305D7872AECAEA73CA8F91BEE80C0EF,
-	ENCibm852__ctor_mE01B95CECA6A8797015758FB20A7B3567840E716,
-	ENCibm855__ctor_mC3AE426068AFBA7715EA6733CD2492D088786208,
-	ENCibm857__ctor_m451CBE46A1C2CB52AD057C8FD7D295E1FCB8EC6B,
-	ENCibm862__ctor_m0B654C0254964E7C2A6DD70EEFCFE8BD6AB17238,
-	ENCibm864__ctor_m6345E14B82B4D7C70468CD4D4958AF104573EA0F,
-	ENCibm866__ctor_m740C1295C12D74C2CFF3D522E09A3D0940E27B57,
-	ENCibm869__ctor_mB6D8CB4BD18CD116516A2D42DAB9D4B4024E07BC,
-	ENCibm870__ctor_m452D011942AFD0DAABDF9FAB0F4D4C36DD04F9FB,
-	ENCibm871__ctor_m6D6BC4C10F407AF2825D2E88CCEC2C5450F80743,
-	ENCibm875__ctor_m87AF81CCFD5FD3F8A05B8AAE05FAA3B3D84338CD,
-	CP10000__ctor_m8157B67CD82EB7747349880739DFDA4F54D32C5C,
-	CP10000_GetByteCountImpl_m92DD1DAEC3B060FA8C37783C875E4BA43546478F,
-	CP10000_GetByteCount_mDFC8DC10FF5CA5C0DF8C8E640D63A3FEE81B54E8,
-	CP10000_ToBytes_m0EB1FDA404B1E46A8243D7EA2013D00550D2917A,
-	CP10000_GetBytesImpl_m61B4F4942161B89358047420065D200AAE7AFE62,
-	CP10000__cctor_m3423BCDC0E505DB599421B7A831ECC7CD4FD4DCC,
-	CP10079__ctor_mC2C7F1B5CEAAEA295AFC5278B8010E7B64319A9B,
-	CP10079_GetByteCountImpl_mAB0E8535E5C8A83AC3D4423F2610FB895D20BD83,
-	CP10079_GetByteCount_mBA93533CF313280CDC36B21214979B917E005922,
-	CP10079_ToBytes_mCF5FD0CF3B6157D0F161F2B9BDFC70A00F7C77D1,
-	CP10079_GetBytesImpl_mA1CEA471BA4906C0B6AAE2D121D289D4E947E059,
-	CP10079__cctor_m4BD2752A6A99B6F17F6A39DBE7A94FEFE8513323,
-	CP1250__ctor_m3C1580456CDEAB7D920CC57780E5AC0772832F23,
-	CP1250_GetByteCountImpl_m5227040BF56FF73DD36AD4836E8C4F90946D616C,
-	CP1250_GetByteCount_m4E3A12A9DDF024E6A6D0FDB4CF7E76BBCFAEC71B,
-	CP1250_ToBytes_m874736DC751863A064DDD724F85C8F6BE2644022,
-	CP1250_GetBytesImpl_m52B0564DC7B84EF743591AA07C69214D60473C45,
-	CP1250__cctor_m2CEE37F2C084EF8A124FD13313B2FF233DD520FA,
-	CP1252__ctor_m99F9402E7BB4CCC1A64F724AC6B51134F1DF322C,
-	CP1252_GetByteCountImpl_m149F31EF5249CF2B7404E429C6B6B1CD2BA82B89,
-	CP1252_GetByteCount_mC889C3D1294505429787BA68CF731104970D99CB,
-	CP1252_ToBytes_mBB717B4A3265D539EFD99B6F80F44B6D8B0C510D,
-	CP1252_GetBytesImpl_mC456254B1B365525769634B948B82DA01261B98B,
-	CP1252__cctor_mA7A1DE162D2599C21EC1DEC849878474D34024E1,
-	CP1253__ctor_m512AA656A5F6DDDA6A7F1366251538C4891D677E,
-	CP1253_GetByteCountImpl_mC37899719BDA35A9F190A9A73BEC43DDEB05222A,
-	CP1253_GetByteCount_m91853223A51C5E4C2DC7176F0971D17B838E2D84,
-	CP1253_ToBytes_m254509698CE71052A36CEC99B2F23DFDADC8FF27,
-	CP1253_GetBytesImpl_m6AC7E7198B3FF2622CA5CF664ADD8EA2C1D9606D,
-	CP1253__cctor_mA42FA2A6F0BC21FFE23672BAF7D182A5B8A2B345,
-	CP28592__ctor_m6024DDB3663DEE2D28FFF3BFF6169B22C1F4CA74,
-	CP28592_GetByteCountImpl_m33AE0973BFF50406724087008650CF059FA62132,
-	CP28592_GetByteCount_mB3B0DC98270450E5E815F38181AE732EE2754FB2,
-	CP28592_ToBytes_m0E5A12C003A99E5E24BD4CD229981B8F31437C0F,
-	CP28592_GetBytesImpl_m21355A2AD4D9F8534E2EF4F42943D45F6A5CCC32,
-	CP28592__cctor_mB7549D5A230938EA53D90757DDF24DAFA82F97FD,
-	CP28593__ctor_m2A95C96C9E7238F2610347F39D43C3B30F2C1E41,
-	CP28593_GetByteCountImpl_mB4068F7AD6DB8964815586B7E40D590B70D9A761,
-	CP28593_GetByteCount_m39E53645BEC640BA0069480426C82E4973D6FDA4,
-	CP28593_ToBytes_m450922791C5CEB23D6CC8546274B2845F59268AF,
-	CP28593_GetBytesImpl_mA232FF0995208EA92C00FEA1FE69E68A5B903D7F,
-	CP28593__cctor_mF82C120DDA552ACED9097781749D14981BD494C1,
-	CP28597__ctor_mDAA893C13ECEE600973914D71E786A740E26DF7E,
-	CP28597_GetByteCountImpl_m3DB6EFDE0CBD7D07D7E8414338474363CFC5B94B,
-	CP28597_GetByteCount_m77B2002026311E1C09A86457A331559091EB6419,
-	CP28597_ToBytes_mCB393080F8BD174C4FDBDDCA58626282A37CE229,
-	CP28597_GetBytesImpl_m08F92C7A4D773BE4D8491453BE615116880951D1,
-	CP28597__cctor_m08A1E253496E16AFBB3660848D9E617C45EC7BD6,
-	CP28605__ctor_m03930B10CC8077355B635936B3034FC4DD5A41B6,
-	CP28605_GetByteCountImpl_m92595A263C2399862EC145005BC5972A1B0266CD,
-	CP28605_GetByteCount_mCB326C5F5D2FE91421C27AA60DBA0F45CA91C359,
-	CP28605_ToBytes_mA8A3F6E5544DD0CD8413CD570CB78AE957AB36A7,
-	CP28605_GetBytesImpl_m99BD867C7B1447C527FB8174DEBB5CF49E9E37CE,
-	CP28605__cctor_m61D018F18599A426BF7D8043F45B04395FABC67A,
-	CP437__ctor_m7BB68489ED05A8CCC42A98D0BC9B265CB9D73787,
-	CP437_GetByteCountImpl_mC98C281BC50B9C17633F5FBE6C9B87C79FE431B6,
-	CP437_GetByteCount_m1EF2269EC19A3E96207741F9CED319BA404D71C6,
-	CP437_ToBytes_mEC2F8C5F59CD3635D47D08AC9FF4EBE9CB55D97C,
-	CP437_GetBytesImpl_mA1897CAB667DDFCAAB0448BDABD100260EECE922,
-	CP437__cctor_mD951B6A59361F683E6B59ABB621A1A1B5C16232A,
-	CP850__ctor_mB8FDB0C502B3FA2DC0F3CABC36B8BB658F111EC4,
-	CP850_GetByteCountImpl_m620A72794B492BE6D736979FF0FFB568151ECEAE,
-	CP850_GetByteCount_m028A6826261E37394D42B877C2FFFC351F235B90,
-	CP850_ToBytes_mBEA959C5AB02173F61731FF00FA8216D6C91A183,
-	CP850_GetBytesImpl_m47BC588BCE3E43DBC658DE2B83BBBEEC0C6B5697,
-	CP850__cctor_m4166E1BBE99E45BE934053D62AC2C1093C13A9CE,
-	CP860__ctor_m1BE73D2C15E33174E4CC4EA9F6080CDD9394E69F,
-	CP860_GetByteCountImpl_m6893F95D736F311177A6C5343B5ACB4A639F195A,
-	CP860_GetByteCount_mA4CAC152D7676B52630391EA592F1E208CF9711C,
-	CP860_ToBytes_m69A52B956E9BCF09BD027F197643E4C29651809A,
-	CP860_GetBytesImpl_m2241D4DA889361EB468B0A366423EE8108B643FF,
-	CP860__cctor_mD0BE90A8A1F5C412FB740070B47397ECB2DDC0CD,
-	CP861__ctor_m9B47EA0BCB100B0B29445FF14D17FF479684AE6E,
-	CP861_GetByteCountImpl_mB8F1EE5C73F43314F56FC24C206343459A6FB706,
-	CP861_GetByteCount_mC6B7272A6A305A798E95F97B5A3A9B1277F70067,
-	CP861_ToBytes_m5799E7C0BC6840E01091792479F37160B62B1336,
-	CP861_GetBytesImpl_m23AE720D2ED8DA53A27691113F4424C01BD5F5E2,
-	CP861__cctor_m27970A4A1D611A0252CFA2A3BE133FCCE97F6FD7,
-	CP863__ctor_mD29B528CF48F682A99145A75DD5DE5B96B5FA9CB,
-	CP863_GetByteCountImpl_m94348F594F1B8D32F92930E006722DD01BF31099,
-	CP863_GetByteCount_m0BA774E3B6069156923C837EC4ADC0C3ED8C6196,
-	CP863_ToBytes_m54570B41F2A0F41EA7C2909F322E7C011380F0F0,
-	CP863_GetBytesImpl_mA747573195630DA91230F7267D418888B7023A18,
-	CP863__cctor_mF07C0E87B0D3416C2F5FC1ECB51EA13DD012B366,
-	CP865__ctor_mA9EB222451B56CE62692C758DFEA853DC61756DE,
-	CP865_GetByteCountImpl_m918A4670B9C9AAFE52576D0415BDD75EC7B6AC06,
-	CP865_GetByteCount_m5DF69D8FA91ADC46B1E398D57091DFD4D899795F,
-	CP865_ToBytes_m28A6FCF375671E907F9FAC192441CBE594E19A68,
-	CP865_GetBytesImpl_m695333033479A048C65931271A0D381BB928247D,
-	CP865__cctor_mBD799161FB39F855A577388760EB96F86E8276FF,
-	ENCibm437__ctor_mA11B73B01D147D123CC8D5B0B75CA11506022F52,
-	ENCibm850__ctor_mBFF82BA48E8B66C9472F606FCA4D4F8DB3FB2AF0,
-	ENCibm860__ctor_m344334C59B41EBCB62C3284247561458A96BA492,
-	ENCibm861__ctor_m7A49B5A5B2466369DEA7D43602905AAEA32D8291,
-	ENCibm863__ctor_mFC5EE03875D8065A88A1AC93E8C636D4A2AE9971,
-	ENCibm865__ctor_m54279F97869DFDB216B63764E97CCBC21E012E2E,
-	ENCiso_8859_15__ctor_m48BB65FF7B25536D8E402149BE41ADD484E738E4,
-	ENCiso_8859_2__ctor_mE24EBBFF2D7107C05D4615F3015224661F7DC401,
-	ENCiso_8859_3__ctor_m515E986853E1D9F901434D539CFD9B448152F8B3,
-	ENCiso_8859_7__ctor_m92A0C1B839456B85C389A2095BF1FD438B8F23DC,
-	ENCmacintosh__ctor_m914CC69508F18F2F6A2538BF641D11B9AF2D4AC8,
-	ENCwindows_1250__ctor_m0FDC810E296899266585500616F98B8C03AC3DB1,
-	ENCwindows_1252__ctor_m5868D13D5484C0AB86497BB0B4FD920777CF363E,
-	ENCwindows_1253__ctor_mFAFA73469CBCF1C14BC1D993677D21C2AD2EA2EC,
-	ENCx_mac_icelandic__ctor_mFF93B546C7635A3F5ABAE300EA27BF8BA81ED8A9,
-	WindowsMixedRealityHandRecorder_get_ReferenceJoint_m99DD86B8EA1D67E987D11EE003236CFBAE8CC73A,
-	WindowsMixedRealityHandRecorder_set_ReferenceJoint_m839FBDE0BA069ACC43E7B4B03ADF91BCA2D9C917,
-	WindowsMixedRealityHandRecorder_get_OutputFileName_mB5C40E4735B6ED7F62C8A547A24440224C96573A,
-	WindowsMixedRealityHandRecorder_RecordLeftHandStart_mB382A131BEB020C514CA4C33D4E13B608C66A1BA,
-	WindowsMixedRealityHandRecorder_RecordRightHandStart_m58C432C7D04B06342CA0501090DA548795B2008E,
-	WindowsMixedRealityHandRecorder_RecordHandStart_m47311E0675F4895CA3997AD3242CA59ED14A8AD7,
-	WindowsMixedRealityHandRecorder_RecordHandStop_m07E1CCE9F376656F5CB943055DB2BF2E6B846E3C,
-	WindowsMixedRealityHandRecorder_StoreRecordedHandPose_m54C1D09D5609666ADB3ABCDDE9F41EAE2AE1BF52,
-	WindowsMixedRealityHandRecorder__ctor_m612D8221755C97A61EAB8356A382BEEAA4B7F962,
-	WindowsMixedRealityHandRecorder__cctor_m5BFEA6BCF51979889D59E386863F60EB8B6B40E3,
-	GestureRecognizerExtensions_UpdateAndResetGestures_m342C58CFDBFC5C9C049290FD168F40A413D91F7E,
-	InteractionSourceExtensions_StartHaptics_m350D7A9CC863DE04A943E5CA853CD2C054A5C65E,
-	InteractionSourceExtensions_StartHaptics_mE03AFAF399D9DCFA9512C68730979BBED46CCE23,
-	InteractionSourceExtensions_StopHaptics_mE9968015844042BD168CE34245771BDEFFDBB650,
-	InteractionSourceExtensions_TryGetRenderableModelAsync_mC9AD1DDBF240B54DEB62BFD459C349D01ED07299,
-	U3CU3Ec__DisplayClass2_0__ctor_m527FC38CE354551F4D175B6CC6EC4F11AE17442A,
-	U3CU3Ec__DisplayClass2_0_U3CStartHapticsU3Eb__0_mB958350E7ACEBB7E9382FD3346753E9419C9EE97,
-	U3CU3Ec__DisplayClass3_0__ctor_mAB59CB806AFEEA8A7630A2E04E24DA5A27356E4B,
-	U3CU3Ec__DisplayClass3_0_U3CStopHapticsU3Eb__0_m7F6FD4423804E4E953E4C64FE8993C034E54F78C,
-	U3CU3Ec__DisplayClass4_0__ctor_m4D27CDB3B0D99E34AF7E96EBF082177C6C220A06,
-	U3CU3Ec__DisplayClass4_0_U3CTryGetRenderableModelAsyncU3Eb__0_mC74B48FC74D84E26A52F32B72C97C222A1721FB8,
-	BaseWindowsMixedRealitySource__ctor_mE7C47697547865A98E71EAF29CE08632107B760A,
-	BaseWindowsMixedRealitySource_get_DefaultLeftHandedInteractions_m8C9EFB997C5320EDD7FAC7F6AFB6438B4B4BAD84,
-	BaseWindowsMixedRealitySource_get_DefaultRightHandedInteractions_m514D8A6CA16B6F7A1C6D3B615C08F5EFC2965DDF,
-	BaseWindowsMixedRealitySource_SetupDefaultInteractions_m8B4FEB0D04AE8B998D00226017D5D547E94A1F82,
-	BaseWindowsMixedRealitySource_get_LastSourceStateReading_mFC19FE5893F100FD85D800947F04EE0ECD40B098,
-	BaseWindowsMixedRealitySource_set_LastSourceStateReading_m00E16395DA64791CA27F9E9F6D70A2BF6C0677BA,
-	BaseWindowsMixedRealitySource_UpdateController_m563750BE36CC05433EFEE89EE035D830A176D43E,
-	BaseWindowsMixedRealitySource_UpdateVelocity_m44C96E98B9668BE7DF1FE112DC87E758960326E1,
-	BaseWindowsMixedRealitySource_UpdateSourceData_mA2FE7800446141AB7CB6138C26E2C277196A213D,
-	BaseWindowsMixedRealitySource_UpdatePointerData_m35CFBB09D30D4B12BB6274C92C6B29D6D456A8E9,
-	BaseWindowsMixedRealitySource_UpdateGripData_m635916473ED5F0D0405F2795418390E57F780B14,
-	BaseWindowsMixedRealitySource_UpdateTriggerData_m3D484FAB9C185EDA0738063C630B1B77A76AB27A,
-	BaseWindowsMixedRealitySource_GetSelectPressedWorkaround_m39EA4A4B3AD626EEB82043D5ABD04338608B74A0,
-	WindowsMixedRealityArticulatedHand__ctor_m53045D2E2678367F15FC62540651EDACA3CCF3AA,
-	WindowsMixedRealityArticulatedHand_get_DefaultInteractions_mF2B56591D01B4BF4C705FB809A48A524213A3A54,
-	WindowsMixedRealityArticulatedHand_TryGetJoint_m9C3D48251112DB2EBF95A6E635427057D315EA07,
-	WindowsMixedRealityArticulatedHand_get_IsInPointingPose_m668FAB4C52F2944F139B59BF2518B12A98B88D8C,
-	WindowsMixedRealityArticulatedHand_get_SpatialInteractionManager_mD60F76B7F314BE76520F6A3F520703FC744B428D,
-	WindowsMixedRealityArticulatedHand_UpdateController_m12177F24D583AD7AC633AEFFF4B055284DF46533,
-	WindowsMixedRealityArticulatedHand_InitializeUVs_m31BBE67E343BC4E8BCA19FF16884FA8A40B30E96,
-	WindowsMixedRealityArticulatedHand_SetHandMeshObserver_m2FA64EEA470519023E883D5E33A5B482BDD4EAC3,
-	WindowsMixedRealityArticulatedHand_UpdateHandData_mAB87C8379E2BDF762727E2E3D579CDCE90D3C40A,
-	WindowsMixedRealityArticulatedHand_UpdateIndexFingerData_m957C0E0CD22FD311781545275E0B9B906E3EE8AD,
-	WindowsMixedRealityArticulatedHand_ConvertHandJointKindToTrackedHandJoint_m492E626BE68A277D72EBA9524D5243AE0D0EA486,
-	WindowsMixedRealityArticulatedHand_UpdateCurrentIndexPose_m6D032721706E07EC7CC1A52057B09883346DE010,
-	WindowsMixedRealityArticulatedHand__cctor_m1953FAA9A459D2CA257279EDCD9A899453F03060,
-	WindowsMixedRealityArticulatedHand_U3Cget_SpatialInteractionManagerU3Eb__9_0_m1845C077412A1E764C03D7F0CE3DFA92747C4DB4,
-	U3CSetHandMeshObserverU3Ed__19_MoveNext_m81B42693575DB07A42E6C31C0B27DF7BD3260DC5_AdjustorThunk,
-	U3CSetHandMeshObserverU3Ed__19_SetStateMachine_m51B9A49BEA6455E7EC78FEA0D6A1DD46B07DA33D_AdjustorThunk,
-	WindowsMixedRealityController__ctor_mACB4562AAC3D6516BDD086232F17177B214734EE,
-	WindowsMixedRealityController_get_DefaultInteractions_mD2C532824D594D2B2B87C2C0CFAA5570D4AAA14D,
-	WindowsMixedRealityController_UpdateController_m9CE5AEF37B28D5D2F7C97C0476D50B9AC5F61D75,
-	WindowsMixedRealityController_UpdateTouchpadData_m33C16A38B6D7984C9459241B548E3D612E1A025A,
-	WindowsMixedRealityController_UpdateThumbstickData_m9CD56385E4990CA8ACA5F2BBDAFFEF518D7F5ED2,
-	WindowsMixedRealityController_UpdateMenuData_mC8F082DDA8B7ED60443AAA947253B4A1F1C3F0AC,
-	WindowsMixedRealityController_EnsureControllerModel_m2EA6C45A56C6D9EC9D54B22ACDA21D6D11830C5C,
-	WindowsMixedRealityController_TryRenderControllerModel_m08E032A5B2C08F63A9345C0B85816CB20197F6C2,
-	WindowsMixedRealityController_CreateControllerModelFromPlatformSDK_m67CC9DEB209F01D0A3C5DF82C3DE4B2B1A304508,
-	WindowsMixedRealityController_TryGetRenderableModelAsync_m6D3B112A47688939F5E50F1B6EA6E9DD515FF58D,
-	U3CU3Ec__DisplayClass12_0__ctor_m95A9A2813702762763DDE95DC81BF71AA4C69148,
-	U3CU3Ec__DisplayClass12_0_U3CTryGetRenderableModelAsyncU3Eb__0_m080CDA3DA2DAA4072BA195FEF846989705D13D3D,
-	U3CCreateControllerModelFromPlatformSDKU3Ed__11_MoveNext_mBD08F03627D267E9DAE7BA7A8729B5E07C90FDB3_AdjustorThunk,
-	U3CCreateControllerModelFromPlatformSDKU3Ed__11_SetStateMachine_m0C8710FC76D984E4A33F30E4130F6FB644915ACE_AdjustorThunk,
-	WindowsMixedRealityDeviceManager__ctor_m565A2919C3ED9F2FBE19BBD495484EDEB578A94F,
-	WindowsMixedRealityDeviceManager_CheckCapability_mC1AE01512AFACD1AFE77E11F02D879DDB14F4528,
-	WindowsMixedRealityDeviceManager_get_LastInteractionManagerStateReading_mA5DF657B57BDA5D94A690F8F9679D193F6C59E01,
-	WindowsMixedRealityDeviceManager_set_LastInteractionManagerStateReading_m3CD3D284480BD90290A3A6C156A8A976C0469A4D,
-	WindowsMixedRealityDeviceManager_GetActiveControllers_m594E46FC22F48D3D75E58DE997F48FFC6C10280C,
-	WindowsMixedRealityDeviceManager_get_GestureRecognizerEnabled_m3A0B9F7ABEDB28C37BF817C4C667C8062655D60D,
-	WindowsMixedRealityDeviceManager_set_GestureRecognizerEnabled_m006B0DCAEE71DA8C37CBBE66E8729BF668F26F6E,
-	WindowsMixedRealityDeviceManager_get_NavigationRecognizerEnabled_mADE412423C7632D8C1424AD9EF940A18DC09E0C7,
-	WindowsMixedRealityDeviceManager_set_NavigationRecognizerEnabled_mE5CC079B43D560393E4D9FE6513D843A5ACA33FD,
-	WindowsMixedRealityDeviceManager_get_GestureSettings_mDC85BFE2B6F776A65EE94EE593CF795D4DF4F70B,
-	WindowsMixedRealityDeviceManager_set_GestureSettings_mF499BFEBCC714FBC645952B15C2B396AD77FF8F9,
-	WindowsMixedRealityDeviceManager_get_NavigationSettings_m2767BB58C9CCE3D360DD025B074EBD3F5D2FC2C0,
-	WindowsMixedRealityDeviceManager_set_NavigationSettings_m541745167C6F0CC9797FBC2E47BD7A8F55E2CE41,
-	WindowsMixedRealityDeviceManager_get_RailsNavigationSettings_m02D1519C7A1DE40D5F886D351ADA67C3A7554BC6,
-	WindowsMixedRealityDeviceManager_set_RailsNavigationSettings_m7DDC181F204D38D7CCAB7291691A2106D7CAF413,
-	WindowsMixedRealityDeviceManager_get_UseRailsNavigation_m7D42070E28FD4142D6BDF2611E174268314AC880,
-	WindowsMixedRealityDeviceManager_set_UseRailsNavigation_mF0D43B563AC8FA9EA4D5D338184BCCE00171479E,
-	WindowsMixedRealityDeviceManager_get_WSAGestureSettings_m14A62179652A7628FD043F1BD9B6FBBB4675F230,
-	WindowsMixedRealityDeviceManager_get_WSANavigationSettings_m38091ED95215DDE438EA44A6F1CA36676462DE42,
-	WindowsMixedRealityDeviceManager_get_WSARailsNavigationSettings_m5AE00C2EE4689FFE1CB60E85F6BE875148D9E3FE,
-	WindowsMixedRealityDeviceManager_Enable_m73EC5015B2E163BFACF0A047ACB1E8AF66CB7A68,
-	WindowsMixedRealityDeviceManager_Update_mAD0F77BA27901CEA63EF3FCEFD252DC38123807D,
-	WindowsMixedRealityDeviceManager_RegisterGestureEvents_m2F883772B9C07CB4CFB33E02CE26C1B6715BF3A8,
-	WindowsMixedRealityDeviceManager_UnregisterGestureEvents_mC630CF04B64F20D431E080945107566568DB1BDF,
-	WindowsMixedRealityDeviceManager_RegisterNavigationEvents_mF71FAB41F414D3B4B4707BAB03572C185CDB2F21,
-	WindowsMixedRealityDeviceManager_UnregisterNavigationEvents_m1410E0D5014B7C12594BEED760B87C799B4CCF11,
-	WindowsMixedRealityDeviceManager_Disable_m31933BD4A29739B57772A6AA3113C4A12F0F6AA5,
-	WindowsMixedRealityDeviceManager_GetController_m5A0DE9437D5AAD54522E38004B376226012F1E4D,
-	WindowsMixedRealityDeviceManager_RemoveController_m31BFA4F4A3E5B922FDBCA1F671445A9486C41A3D,
-	WindowsMixedRealityDeviceManager_InteractionManager_InteractionSourceDetected_m108C68FE89AFB9E3A006BC5CA7BD2CB059B29CE8,
-	WindowsMixedRealityDeviceManager_InteractionManager_InteractionSourcePressed_m538D77E0BCCB94FDCD736DEA6F595CBBDCBB5100,
-	WindowsMixedRealityDeviceManager_InteractionManager_InteractionSourceReleased_m1D431AC8B3C241A6E8262D248B2B2CAD63F50E8D,
-	WindowsMixedRealityDeviceManager_InteractionManager_InteractionSourceLost_m7CA93D2A26F358401D42C900CE317220DD858292,
-	WindowsMixedRealityDeviceManager_GestureRecognizer_HoldStarted_m079AD6324C21C4694062AA02662106F49C75A5D8,
-	WindowsMixedRealityDeviceManager_GestureRecognizer_HoldCompleted_m0793E8439E6943C9E556F8AFFB945CFDEF4CD39A,
-	WindowsMixedRealityDeviceManager_GestureRecognizer_HoldCanceled_mC92CE71DC8A90D78CCF101750F62A435697D6A21,
-	WindowsMixedRealityDeviceManager_GestureRecognizer_ManipulationStarted_m3C6E307AEFF350BF78789511A8F2DF5438E60752,
-	WindowsMixedRealityDeviceManager_GestureRecognizer_ManipulationUpdated_m95D82187DC935AB6F347B21A3F725577892C6BEF,
-	WindowsMixedRealityDeviceManager_GestureRecognizer_ManipulationCompleted_m60C112E77162E7D87F1C7E170C60A0DBBD0D1663,
-	WindowsMixedRealityDeviceManager_GestureRecognizer_ManipulationCanceled_mEB6CC7F8C4E1178ACFF37E1D5639E703AC402DC7,
-	WindowsMixedRealityDeviceManager_GestureRecognizer_Tapped_mD19B51725D5DC8B7733C017091B106B40B1B3CC5,
-	WindowsMixedRealityDeviceManager_NavigationGestureRecognizer_NavigationStarted_mF28AD4655B4550ACD5264CEFD0A57D30ACA5A26F,
-	WindowsMixedRealityDeviceManager_NavigationGestureRecognizer_NavigationUpdated_m0020D0948CF2D7F343FC0A40EA3A4398BCE69245,
-	WindowsMixedRealityDeviceManager_NavigationGestureRecognizer_NavigationCompleted_mB473256175BA663531CACB23028F0EF93E8C6D58,
-	WindowsMixedRealityDeviceManager_NavigationGestureRecognizer_NavigationCanceled_mBCE6E0E8E9815A60DF22DD428153608D3DDD845E,
-	WindowsMixedRealityDeviceManager_UpdateInteractionManagerReading_mCBF6D7F5AD4306E0D4FFE3D93815021B5BDB09F0,
-	WindowsMixedRealityDeviceManager__cctor_m7014A24606362625F24C4BE69B7DC7E3E1494CDA,
-	WindowsMixedRealityEyeGazeDataProvider__ctor_mA233F71CC2DC8BEA8C0461D2BF5897F67A5A1AF2,
-	WindowsMixedRealityEyeGazeDataProvider_get_SmoothEyeTracking_mEF176E15A89CFBAF6103DA4CED00EB075A8E341D,
-	WindowsMixedRealityEyeGazeDataProvider_set_SmoothEyeTracking_mA90B752746484AC10EE86A441C4F1562F69F3793,
-	WindowsMixedRealityEyeGazeDataProvider_get_SaccadeProvider_m5264DC2EE7DF8C054D06E852ABA07EFA0FE794ED,
-	WindowsMixedRealityEyeGazeDataProvider_add_OnSaccade_mD6EE61675587A3DC6D8E2A4FB3E1C1F62B31CE08,
-	WindowsMixedRealityEyeGazeDataProvider_remove_OnSaccade_mCE64933CAD7916A5F71C79EEBC860140A83C1266,
-	WindowsMixedRealityEyeGazeDataProvider_add_OnSaccadeX_mD2ED64DC2C85292D95BB48B96E57DA58F8D2232A,
-	WindowsMixedRealityEyeGazeDataProvider_remove_OnSaccadeX_m154DF1EE530E599C9FB907D9C95B275E95FDBE38,
-	WindowsMixedRealityEyeGazeDataProvider_add_OnSaccadeY_m8DA2E987E40DD232B351D73EFD938ABFAED36FD3,
-	WindowsMixedRealityEyeGazeDataProvider_remove_OnSaccadeY_mF12D0ADF828EAAE7B3CEE481E3F5B07100799F99,
-	WindowsMixedRealityEyeGazeDataProvider_CheckCapability_m42CD81C53C2A9447C460ED2A786426D1D40E5830,
-	WindowsMixedRealityEyeGazeDataProvider_Initialize_m479847D8437C0B92FDB66F8FD6A9C8AE3C913070,
-	WindowsMixedRealityEyeGazeDataProvider_Update_mE6E9EEA7D817630434B86B88E7B6A99939CA8EAA,
-	WindowsMixedRealityEyeGazeDataProvider_ReadProfile_mF4F26654A210BFD34457848F6608F5972A5DBBB5,
-	WindowsMixedRealityEyeGazeDataProvider_AskForETPermission_m9B4CADC259BF5251FD521D5A4B7474C6C0122F6C,
-	WindowsMixedRealityEyeGazeDataProvider_SmoothGaze_mF818761D7C72695BA66B0DAD3AF3B26517A769EB,
-	WindowsMixedRealityEyeGazeDataProvider_IsSaccading_m5F65CD0526140884C59DF92F2B3990087FE6B005,
-	WindowsMixedRealityEyeGazeDataProvider_Post_OnSaccade_m10459E8BDB6BB512B2D87AF895E9D6B21B69256F,
-	WindowsMixedRealityEyeGazeDataProvider_Post_OnSaccadeHorizontally_m4D27A79FE85652A95B031959BA2BD839FD952A3D,
-	WindowsMixedRealityEyeGazeDataProvider_Post_OnSaccadeVertically_m9AED919869FA1F812588D9801884A6E10443CFA1,
-	WindowsMixedRealityEyeGazeDataProvider__cctor_m1334154C0DA9F71C56300A6FA0F5E72F077DE5AF,
-	U3CAskForETPermissionU3Ed__28_MoveNext_mC84E76E39FA6501D58A7A84D3AAE35BCF2C5C550_AdjustorThunk,
-	U3CAskForETPermissionU3Ed__28_SetStateMachine_m710789FAFFA04CF91438B090E5B426DA064E5E85_AdjustorThunk,
-	WindowsMixedRealityGGVHand__ctor_m81F542AF5E11119DB1AEA35148F5DB39C28DA744,
-	WindowsMixedRealityGGVHand_get_DefaultInteractions_m4630203420DB1BC09647A49C0E14FD6F9D219AD7,
-	WindowsMixedRealityUtilities_get_SpatialCoordinateSystem_mA2D4560B7EC78C6E69C06017E0827591606BC28C,
-	WindowsMixedRealityUtilities_SystemVector3ToUnity_m9735F6AFD14C5119EFB72934413449099741E71C,
-	WindowsMixedRealityUtilities_SystemQuaternionToUnity_mE60397640EB0A92449F5358FB589F1B825DD82E4,
-	WindowsMixedRealityUtilities__cctor_m29E59C9FACD6DE3716E0DAAD5A953AEEAFB8C8FD,
-	WindowsMixedRealitySpatialMeshObserver__ctor_m4EFCFA7B26BA7D264BD35D35F29CAA8D022AC6E8,
-	WindowsMixedRealitySpatialMeshObserver_ReadProfile_mDC1B7A683D33287168B60782C1483AB2570B41EC,
-	WindowsMixedRealitySpatialMeshObserver_CheckCapability_m5E9BA51343912547DF4E08A3378384649E6FAA97,
-	WindowsMixedRealitySpatialMeshObserver_Initialize_mA6169B0C7AE4A5DF9C74CF7C79BC8E6E6F9A939A,
-	WindowsMixedRealitySpatialMeshObserver_Reset_mBFF0B5A905407BBE8315CA321BFB12DFE74592D5,
-	WindowsMixedRealitySpatialMeshObserver_Enable_m341436E27C97CF5823476F4A60169E064E108AFA,
-	WindowsMixedRealitySpatialMeshObserver_Update_m37EEA6395E4A7011AE9605D6077DF618351692F2,
-	WindowsMixedRealitySpatialMeshObserver_Disable_m0A12D9ACF77065A364762B11432B94EFE37C338E,
-	WindowsMixedRealitySpatialMeshObserver_Destroy_mDF3028F8234567F0CEAC299B4CF5837E12442E20,
-	WindowsMixedRealitySpatialMeshObserver_get_ObservedObjectParent_m6FB9BFF29242BAEC3A93B8259A73592D62B2783B,
-	WindowsMixedRealitySpatialMeshObserver_Dispose_mFBC9D8DA89DDC81880E158D484923FEFA51B3036,
-	WindowsMixedRealitySpatialMeshObserver_get_DisplayOption_mB1D73BD09A3A1489B917AAD899783C74A5525937,
-	WindowsMixedRealitySpatialMeshObserver_set_DisplayOption_m317A6694C96B963CF35DFEE4D3DC35991324A4DF,
-	WindowsMixedRealitySpatialMeshObserver_get_LevelOfDetail_m092F9CE1CB76EC08FC6FDA956765A8C32F89BA09,
-	WindowsMixedRealitySpatialMeshObserver_set_LevelOfDetail_mAB1814DA1A2E605D3042E418BEF7485C3B71EA3E,
-	WindowsMixedRealitySpatialMeshObserver_LookupTriangleDensity_m1A4F87C59F6732CB9548DDC7C66994A1D150B853,
-	WindowsMixedRealitySpatialMeshObserver_get_Meshes_m5EBF6F22A5D90F05E32E639DE0937A9E407735A9,
-	WindowsMixedRealitySpatialMeshObserver_get_MeshPhysicsLayer_m7348855BC22A7CC03665F656A04008F836ED8F75,
-	WindowsMixedRealitySpatialMeshObserver_set_MeshPhysicsLayer_mF7D8A31438884F53559A97DA60B4E2FD3C685E83,
-	WindowsMixedRealitySpatialMeshObserver_get_MeshPhysicsLayerMask_m9F31D98B6977254F025089CCF1C67CA5287D219E,
-	WindowsMixedRealitySpatialMeshObserver_get_OcclusionMaterial_mD30719679E65F88BF317F10E445AB646971ACB1C,
-	WindowsMixedRealitySpatialMeshObserver_set_OcclusionMaterial_m439C40CCCA20D46989FB55A3E9FCB256D567B5A7,
-	WindowsMixedRealitySpatialMeshObserver_get_RecalculateNormals_m0045B6E6BFA5055483654992C2F6EB7C9F921BF7,
-	WindowsMixedRealitySpatialMeshObserver_set_RecalculateNormals_m70A243FE155983C787ABD8153749C4E5EDD5495E,
-	WindowsMixedRealitySpatialMeshObserver_get_TrianglesPerCubicMeter_mD3EA6CB9750B98E01A074123D7B22D5CDBD05D48,
-	WindowsMixedRealitySpatialMeshObserver_set_TrianglesPerCubicMeter_mF83CC066869F456B8491A6842C94374B6B43A648,
-	WindowsMixedRealitySpatialMeshObserver_get_VisibleMaterial_m968D83ADEA350132D58868A3EB2E71C59B807FE1,
-	WindowsMixedRealitySpatialMeshObserver_set_VisibleMaterial_mCD75C42BD1C6A53A7A34CBB502ABA5142330AC9D,
-	WindowsMixedRealitySpatialMeshObserver_Resume_mCD5A67F5993C9ABE69D52979ED3CBB61542AC7A3,
-	WindowsMixedRealitySpatialMeshObserver_Suspend_mD65003D543C4C8B6FCD478868454E4C22DFB5765,
-	WindowsMixedRealitySpatialMeshObserver_CreateObserver_mAAF5652E7C01AD5E52740583408A017367306658,
-	WindowsMixedRealitySpatialMeshObserver_CleanupObserver_m79FFC884E9C1F5B040BB5CFE80834BA05F426F30,
-	WindowsMixedRealitySpatialMeshObserver_CleanupObservedObjects_mED17BD02DD5B038D7AA331D784EAB6E351232111,
-	WindowsMixedRealitySpatialMeshObserver_DisposeObserver_m18634CB7D733979FBDF476E928F332D093B82231,
-	WindowsMixedRealitySpatialMeshObserver_UpdateObserver_mDA5F61AAA2F5A3186B451422F53E1698355742E8,
-	WindowsMixedRealitySpatialMeshObserver_RequestMesh_m92AA1ACC23FAEC06E1A9EE02F68033B11766E09A,
-	WindowsMixedRealitySpatialMeshObserver_RemoveMeshObject_m9FB525F0F5F90E884F86356248A3A2159190B6D4,
-	WindowsMixedRealitySpatialMeshObserver_ReclaimMeshObject_m5A4C0AFC494F3863DC84C8C69512325FAC39FF57,
-	WindowsMixedRealitySpatialMeshObserver_ConfigureObserverVolume_mF1ADED37FBA77B63659D7662D1816481361CABBE,
-	WindowsMixedRealitySpatialMeshObserver_SurfaceObserver_OnSurfaceChanged_m901DD61E503D7C4D944E523DA53F019A55447977,
-	WindowsMixedRealitySpatialMeshObserver_SurfaceObserver_OnDataReady_mC646437B04BE8BF5F5FEB53D0B2B0C0A562E97A9,
-	WindowsMixedRealitySpatialMeshObserver_ClearObservations_mAF6BF5F773673EF8D57A938B4804F0CB8C94026D,
-	WindowsMixedRealitySpatialMeshObserver_ApplyUpdatedMeshDisplayOption_mE5060DF27AF8E2B8C94CC743F40C10498E182B38,
-	WindowsMixedRealitySpatialMeshObserver_ApplyUpdatedPhysicsLayer_m5B665B0356045C930149A49AC5602DEA1C1B416A,
-	WindowsMixedRealitySpatialMeshObserver__cctor_mDC2077FF1D15B3E4150004F0153BBF6D0B3991DF,
-	U3CU3Ec__cctor_m25F535C0B98A9A9EE1AA318261EEF161A35B7C89,
-	U3CU3Ec__ctor_mB3C3334BAB06DE91EF4B560224184D9C0E0DC3BE,
-	U3CU3Ec_U3C_cctorU3Eb__73_0_mCF026626F323E877F217C1B3E243C8BBBDA7B0BD,
-	U3CU3Ec_U3C_cctorU3Eb__73_1_m8AFE1FDA408C3A71BF1759B4BA67E5B618687904,
-	U3CU3Ec_U3C_cctorU3Eb__73_2_m52D630C4EDB49D484FC5CA1FE27B88480D949B4E,
-	PlayspaceAdapter_Concatenate_m85EC248F8F8FD3CE33CFC91ED1CC8AA68ABCF5E4,
-	PlayspaceAdapter_Update_mE80F82963C8B488556D67F8AB4D090FFFA7B5491,
-	PlayspaceAdapter__ctor_m756B86607C9B40AC96E0E5EDE6E76E8A683C6F70,
-	WindowsDictationInputProvider__ctor_mE813C75A0362C394E50DAD781ACE35118689DC42,
-	WindowsDictationInputProvider_get_IsListening_mD0BB7681BF29793C36321C901A43882CD4F51F55,
-	WindowsDictationInputProvider_set_IsListening_m5088D38E5362A1A5F1248E662454FE52455537A5,
-	WindowsDictationInputProvider_CheckCapability_mA759B1C4690FC8D140F17B022148068D87905155,
-	WindowsDictationInputProvider_StartRecording_mDE646B84BAE9D0F13822DB874D0DEE3810DE88B4,
-	WindowsDictationInputProvider_StopRecording_m2E54FAC6FE4C8E84C357F5BDF3912D37A9353B02,
-	WindowsDictationInputProvider_StartRecordingAsync_m589DD5872344989C877F28863898B6B9BE503CD6,
-	WindowsDictationInputProvider_StopRecordingAsync_m970B34085B1E29671D89FDC39AED49B356598D8C,
-	WindowsDictationInputProvider_Enable_mC85C435F781B24E856FA2D5589F0D5342A12DC12,
-	WindowsDictationInputProvider_Update_m089C4765A4F794D8F7F383084C0F86E0985539DF,
-	WindowsDictationInputProvider_Disable_m3C36CE9BE7EEAFC5F69BE88D5868E8479C351CB9,
-	WindowsDictationInputProvider_Destroy_mCD943619CA4EBE4FF9B7839A8D7C11FE5B5863D3,
-	WindowsDictationInputProvider_Dispose_mBCC52458F9473C5EE879CEBCF8DAD67EA10E8A63,
-	WindowsDictationInputProvider_DictationRecognizer_DictationHypothesis_mAAAA8DDD2F3A94F3C06C5457AE27BACB8FEDF238,
-	WindowsDictationInputProvider_DictationRecognizer_DictationResult_m5EBBA30C99CA9F33A09DBD107141DA17794D3CA9,
-	WindowsDictationInputProvider_DictationRecognizer_DictationComplete_mB73F8B7863759593D8C29CED21711FC64CE1D283,
-	WindowsDictationInputProvider_DictationRecognizer_DictationError_m8B37F8CAE58CEDCFA7AC40D3BDC3C47CA0C13456,
-	U3CU3Ec__cctor_m3A0FE450C38C04A83E5CB2EC3B0722AF4ECD0AAB,
-	U3CU3Ec__ctor_m049465C7577B8DF294977376978A75C4B7D45AB8,
-	U3CU3Ec_U3C_ctorU3Eb__0_0_m23DE4E969F2784FC9BA21403A9FDF7E19FB44649,
-	U3CU3Ec_U3C_ctorU3Eb__0_1_m1C03C46B118BE1156878635D1D8EA7666C57EE39,
-	U3CU3Ec_U3C_ctorU3Eb__0_2_mE0048D6F6879093B6017BB04604AB72FAE428447,
-	U3CU3Ec_U3C_ctorU3Eb__0_3_mA228641EF5CDC00551286593AE8873D6B338A749,
-	U3CDisableU3Ed__26_MoveNext_mED2F01BC7153D1DC09076F57ADD0C630B53CE1CA_AdjustorThunk,
-	U3CDisableU3Ed__26_SetStateMachine_m39E43EC83D9F4BF5BE19A6172FC0CF6F540989B2_AdjustorThunk,
-	U3CStartRecordingU3Ed__6_MoveNext_mFAAE64FCE8BE3BD551220589F70DBF19CC6C7F37_AdjustorThunk,
-	U3CStartRecordingU3Ed__6_SetStateMachine_m0F591FB4CEBC8DC7E764014DA0B712EC3E42CD4F_AdjustorThunk,
-	U3CStartRecordingAsyncU3Ed__8_MoveNext_m8ACBAA4B24C6D8EF7D6A83EDE248057F395F488D_AdjustorThunk,
-	U3CStartRecordingAsyncU3Ed__8_SetStateMachine_mFA0A133F4CB4EAEDE991164C9074DBC9B269662E_AdjustorThunk,
-	U3CStopRecordingU3Ed__7_MoveNext_m59A9F45ED5FA851E08D2FFD761DE560496EB6250_AdjustorThunk,
-	U3CStopRecordingU3Ed__7_SetStateMachine_mA762467979B168D72DB434F4B6D71BEF15EE0B3A_AdjustorThunk,
-	U3CStopRecordingAsyncU3Ed__9_MoveNext_m953AF17C3C8E935B7A850A03FD60E5646874BB20_AdjustorThunk,
-	U3CStopRecordingAsyncU3Ed__9_SetStateMachine_m5BBA170223505C94082441F2397FDBE425837001_AdjustorThunk,
-	WindowsSpeechInputProvider__ctor_mB9F3E5ACFE246E44FE8F65BEA6D528CA552C4731,
-	WindowsSpeechInputProvider_get_Commands_m5E794CB29A7524A9B5F2FEFFD681307D80CFC314,
-	WindowsSpeechInputProvider_get_RecognitionConfidenceLevel_mD0722F8222669F932A114159E2B4AA84BA819C0E,
-	WindowsSpeechInputProvider_set_RecognitionConfidenceLevel_mC9C28B85D91B50F6181C8A832DBC2378B7E6A063,
-	WindowsSpeechInputProvider_get_IsRecognitionActive_m2B883DA5F6D01F3B126CB79655F1D670C79E042E,
-	WindowsSpeechInputProvider_CheckCapability_m867CD85AFA5D2BD0F46C8D381653120813B2A6C2,
-	WindowsSpeechInputProvider_StartRecognition_m9799DAFEC06E5F78EC639BC903A9371B06CF17EF,
-	WindowsSpeechInputProvider_StopRecognition_mEDBAC69B9FE8A1AF26F2E1A817D5D7767E88B69C,
-	WindowsSpeechInputProvider_Enable_m1ACD3641CC2B267B1E646F0200C9EC8A3B87B9BA,
-	WindowsSpeechInputProvider_Update_mBB5369D96CCB392942F764C647F5B9B2CBB58CEA,
-	WindowsSpeechInputProvider_Disable_m73A44C3242B6491D2AEB3D22A4440246CD64FE4D,
-	WindowsSpeechInputProvider_Dispose_mE4A95336C4EFF0BF6F556D9DA7C34483BE6A94A9,
-	WindowsSpeechInputProvider_KeywordRecognizer_OnPhraseRecognized_m76FA2711269633BCD327F0C53648CAE4F576877F,
-	WindowsSpeechInputProvider_OnPhraseRecognized_mD2BA3DF559733CE98DE4EB3F20E6F7550B4F0914,
+	ByteEncoding__ctor_m8DAEFF4098B9FF03A6A7B14C51699EB6CEA11928,
+	ByteEncoding_IsAlwaysNormalized_m2E933AC2BBBF9D676EBABE209130607839E197D8,
+	ByteEncoding_get_IsSingleByte_m851583D3C3033B6DA87A971177E97553317803AF,
+	ByteEncoding_GetByteCount_m53EA1506E7E68BF1E51C291257FBE7B3106DD480,
+	ByteEncoding_GetByteCountImpl_mFB7D4C2294C5F3EA1F98897C1A237DD9CFE447B1,
+	ByteEncoding_ToBytes_m2E0E80AE53BB077498625D75659E6D22FA791976,
+	ByteEncoding_GetBytesImpl_mDC44F53A9FFB19B208AB760FBB9866C03945B8B1,
+	ByteEncoding_GetCharCount_mE9B907CBD7D7CBEF50E0905BFD373C5D14027282,
+	ByteEncoding_GetChars_mAA72EBDC618333ED109C36B68FC5268F34C45E48,
+	ByteEncoding_GetMaxByteCount_m4959DB95E37FDE25392EF2D8BBF0AF6E134B906D,
+	ByteEncoding_GetMaxCharCount_mB5CA001E872D5BCC7A5C02645BD2669B6676A037,
+	ByteEncoding_GetString_m56623D49895C437BEBECCE3D75332995DAB5E5A9,
+	ByteEncoding_GetString_m370BA826BC65653CE503BA32F7372944989510BE,
+	ByteEncoding_get_BodyName_m28E236CBF3E8998FD0FDD43C126919FACBF256C9,
+	ByteEncoding_get_EncodingName_mEC649C9EC3DE76E890A69FDCAA56E917EF45B737,
+	ByteEncoding_get_HeaderName_m59E35ECDF19E8020564666F8B7EBCAB39E1202BB,
+	ByteEncoding_get_IsBrowserDisplay_m3E8862C0FC58D672B5715A3496CA36D2607C2EF7,
+	ByteEncoding_get_IsBrowserSave_m4002CFC12E500968EC9659499CF3EC186C53622A,
+	ByteEncoding_get_IsMailNewsDisplay_m9A3B28D9D31E4E8FE1A25C30C87D7CD1A05E5999,
+	ByteEncoding_get_IsMailNewsSave_mAAF0545D0B74918B4831810FA547A823EBE0C73E,
+	ByteEncoding_get_WebName_mFD42B8741BDCF5BC7AF46E36B6CE387CFA281CB8,
+	ByteEncoding_get_WindowsCodePage_m403C809C6E9AE110932FFC1916280E917CE82404,
+	ByteSafeEncoding__ctor_m6694BB05F26ADA7F780DE5F50C0B8296DC4FE889,
+	ByteSafeEncoding_IsAlwaysNormalized_m9C6EA89DC627879384B47CD9C1A9399968666AB8,
+	ByteSafeEncoding_get_IsSingleByte_m242EFC4BBBFE5249F9B32045033BEFF1B5D23A83,
+	ByteSafeEncoding_GetByteCount_mEDDAD01B58586E0C5EEB9706278A74A54CF4514B,
+	ByteSafeEncoding_GetByteCount_m9AA0760CE8AFD451B64469857C47928EF0278A91,
+	ByteSafeEncoding_GetByteCount_m5A3BAD4ED51833B4AA86E8C7CC689D3B9B3AD3D4,
+	ByteSafeEncoding_ToBytes_m3A290D3C8156AF542928B8B561BFDAFA474A3C39,
+	ByteSafeEncoding_GetBytes_mE4D32EFB95B8CD346A0AC55B3532FD5C5DDE13FA,
+	ByteSafeEncoding_GetBytes_mE7441F3C608CEBAE19E151B25CDB1CDA84163895,
+	ByteSafeEncoding_GetBytes_mBAB7B32E1153F6BEBFDC8EA82D8C887244CFE5C6,
+	ByteSafeEncoding_GetCharCount_m21934970FEB2147A14476D1BEAE46A50A1DF7BE2,
+	ByteSafeEncoding_GetChars_m954395A86CA621A4E6252EEEC930FAF4E0FE0558,
+	ByteSafeEncoding_GetMaxByteCount_m699DA4681F7256F9377A78AF6706650DD4FD27AF,
+	ByteSafeEncoding_GetMaxCharCount_mC21230B957FD7121168AFB23B72B6A2B3392F069,
+	ByteSafeEncoding_GetString_mBE8E256C770E8C1AB5F478C44D8B319041AF2B7D,
+	ByteSafeEncoding_GetString_m05FF3E544344837843E6E45C08D654CA60E4E80A,
+	ByteSafeEncoding_get_BodyName_m21CA06AE97DFB2031722D4DF63F21DCA6374A0FD,
+	ByteSafeEncoding_get_EncodingName_m5255390A28175CE232A0964D5C775A604D6D166A,
+	ByteSafeEncoding_get_HeaderName_mF5461F4E9D096048F01B6B9FD5A86725E2C0B88C,
+	ByteSafeEncoding_get_IsBrowserDisplay_m3E37104FEF25424EE18744D02CF68F208D45E000,
+	ByteSafeEncoding_get_IsBrowserSave_mA995BDB7644B15D9A7F5723752DC80FCE4732EFE,
+	ByteSafeEncoding_get_IsMailNewsDisplay_mD64294995D9357A4E9C0E9BB09ABFE74E80347F1,
+	ByteSafeEncoding_get_IsMailNewsSave_mBF385E51EAFD10FA0878D7753D4AD53E4583DBC4,
+	ByteSafeEncoding_get_WebName_m998BA57F31CC221F2FBD7E63CFCE02FB679C9586,
+	ByteSafeEncoding_get_WindowsCodePage_mC25F965C408578B88FC22DE8C900B2B3B3E4BADD,
+	Handlers_GetAlias_m1EF1702DF81339BF115B315C188A66C63720C69E,
+	Handlers_BuildHash_m644802A2D6689C19E087FD2168FB3CE80375B761,
+	Handlers__ctor_mA312F21494886A6C4F5489765BFE16EE1022FD82,
+	Handlers__cctor_mD7AF906EDBC706FBEFE93041087E5F522152C5D9,
+	Manager__ctor_m7D3D7318300FF1F3346B1DB7040C9ACA6878B218,
+	Manager_get_PrimaryManager_m70D71D7FAD2DF21C1E9231D3004A1A75F3CECA5F,
+	Manager_Normalize_m35FAF8D4D5146882E4A6626775AF69B73DFAC3B5,
+	Manager_GetEncoding_m84CBAFE26AC75B334FEDC1E4E4B6498FC0E509F5,
+	Manager_GetEncoding_m6E0B539812A4B7FC0DFB3E54F9FD801E51491959,
+	Manager_GetCulture_m4168CE3DC238BAECFDAB2C3204DB3B979F5AAE48,
+	Manager_GetCulture_m228304BACB1350DC578871CA107A1F3D4F8634F7,
+	Manager_Instantiate_mB997538122BB4AAB5B34755EE49ED1470A28F88C,
+	Manager_LoadClassList_m79D2A344E0D6DED84D55E557CC1C9978655594F2,
+	Manager_LoadInternalClasses_m0609061DA0905689292597CE3E25DE290F53F6BC,
+	Manager__cctor_mD8383C649D396B711503269D50BB10864B44130B,
+	MonoEncoder__ctor_m4A9E825EE34E75629BB1F4F25033449360549988,
+	MonoEncoder_GetByteCount_mA898844D85B679B39B4F497FFD8762A127E5739A,
+	MonoEncoder_GetBytes_mFFE524609262FB9FEBA38C38D7EC2A411F941F38,
+	MonoEncoder_GetBytes_m6030A2D50740A0CACCF84B21A9F14E7972C186E7,
+	MonoEncoder_HandleFallback_mECF8365417EE44272EDDF39DDDC491CB27A3EA1D,
+	MonoEncoding__ctor_m427A6A8025BFA268D02445087C672A5712C9F3B6,
+	MonoEncoding__ctor_mE0CFEC47068512B56389DCE6FBAB34F1698B320C,
+	MonoEncoding_get_WindowsCodePage_m6205E7BD1AD719072C5FB52CDDDA003722989969,
+	MonoEncoding_GetBytesInternal_m472FFFDC456BF11F597B9897933DE97588B09A82,
+	MonoEncoding_HandleFallback_mF72E24BEA9BAE0E4E66DAC63D63563E50E562136,
+	MonoEncoding_HandleFallback_m5FDF88A9F1E1E1826BF59F97065C7D503BF2EB4F,
+	MonoEncoding_GetByteCount_m4B10378E85EB8711A96F4ACFCC8D94BEA33EBEE1,
+	MonoEncoding_GetBytes_mCCA96622B176F4AA3F8CD991319B84521A020F27,
+	MonoEncoding_GetBytes_m2C241EDDCA5F07746301C65DFB1CE856BCAFF857,
+	MonoEncoding_GetByteCount_mDFA02AA1CB9841AD3926C73D120B3C14A45CE6ED,
+	MonoEncoding_GetBytes_m435A8F1159888B3AE6471F6305D7650CE69A16E2,
+	MonoEncoding_GetEncoder_m2487C20D7BEAF16FF849A95F3B767CF4839EA52C,
+	MonoEncodingDefaultEncoder__ctor_m0199556F330303CF120F0082E226937554D3B745,
+	MonoEncodingDefaultEncoder_Convert_m4DC710EA6DA800D8BB70280B467FD171C11074C8,
+	MonoEncodingDefaultEncoder_Convert_m4F0E4CEF5E96715618FB9A8373C204F967F1D383,
+	MonoEncodingDefaultEncoder_CheckArguments_mCDCF4070F7CB4EEF0A2577570D231E8C3092B362,
+	MonoSafeEncoder__ctor_mDDF806CF1F27586807407514DDF17F67A0DF102F,
+	MonoSafeEncoder_HandleFallback_m2766944FE2E94701AFF74BA673D9E3C05DEFBE10,
+	MonoSafeEncoding__ctor_mEB980CDD792FF55EA55FE6958843A597E37BFE54,
+	MonoSafeEncoding__ctor_m4EDE3B0152D4E696F9EDB1C7C6DB9B0D2AB57213,
+	MonoSafeEncoding_get_WindowsCodePage_m1016E362F33D644982172BF602C36BD2A00AC12F,
+	MonoSafeEncoding_GetBytesInternal_mB37FEA816580DF7EE9773B31EC26C4DE698C0832,
+	MonoSafeEncoding_HandleFallback_m8F545C673F25A17064F9CE887DD2C8101BF05A31,
+	ReferenceSourceDefaultEncoder__ctor_m8D98EE3F5CA918926CB998428AF21CBC5711A878,
+	ReferenceSourceDefaultEncoder__ctor_mE817E029A8E3B4FBF5DE3B2C2C272C26E6620D23,
+	ReferenceSourceDefaultEncoder_GetRealObject_m75ECE546BB38C07FDC2DFFBB5DBA0A8076E711A0,
+	ReferenceSourceDefaultEncoder_GetByteCount_m9278A6754651C0B3AECB606C9C6DA8B316B94587,
+	ReferenceSourceDefaultEncoder_GetByteCount_m212CF6FDA99A98577B8EA017F8F4C18C767E1286,
+	ReferenceSourceDefaultEncoder_GetBytes_m210D6EBC84AF6B04C14CC03D232CB817AE691BB8,
+	ReferenceSourceDefaultEncoder_GetBytes_m8B3E6AAD6AC085D6DAEE920541B1D2C321FD1AAF,
+	Strings_GetString_mC12AE3CBC17C1E3463EF669D9C84059E611A9BFA,
+	Strings__ctor_mCAC274B1CFBF95C2B66288607299F4C833105B4B,
+	GltfAsset_get_Model_m073F8FD9602F05BE0DC8B888FE66F95C0E51EE1C,
+	GltfAsset_set_Model_m1F4B39493D8CF8C53AE0EF3A11F567DAB67F28E6,
+	GltfAsset_get_GltfObject_m8DE0BCD7CE0C85E57618949154C0F27E5A13049B,
+	GltfAsset_set_GltfObject_m993CDCEE19EBDB2BBCF720328EF626CB47A477F8,
+	GltfAsset__ctor_m935F574B0563752A80CDF6F75F41D28A994D924E,
+	GltfExtension__ctor_m32BA68C649DA4A7F14D28CED3B0DA96DB4D39CBD,
+	KHR_Materials_PbrSpecularGlossiness__ctor_m9CA49FA8D1DD3FCBA9C707D62D2E9460FACFE6B9,
+	GltfAccessor_get_BufferView_mF93D816238205F08816BB223118E54E885F35F24,
+	GltfAccessor_set_BufferView_mFDF03681B8784C7947A9DB2C7C09E3AC94C2040A,
+	GltfAccessor__ctor_m52DA458EA7F4AD4B6AA3C209A0E401234D2981E8,
+	GltfAccessorSparse__ctor_m90DAE109BE80A041CE90A6BD9527DA70909EB893,
+	GltfAccessorSparseIndices__ctor_m8F0C361FA0EEF6FC9485C20A6D8AEB3F82B6905F,
+	GltfAccessorSparseValues__ctor_m5DF51480C0AFA18301BC3C47536DB00DA5891361,
+	GltfAnimation__ctor_mB364F757FDB5C5F075CDAB0B3E2F69CBFFC838F4,
+	GltfAnimationChannel__ctor_m81DC40738A03248E1A12BCCA515DA3D273C0FDB6,
+	GltfAnimationChannelTarget__ctor_m9FD9901AB5AEA88658647E091A2F4D6A0F7CB3D6,
+	GltfAnimationSampler__ctor_mD568A31736530BD0565A5066882DF60E685E3372,
+	GltfAssetInfo__ctor_m43F3842A50B90B9B140515C0A1654091E7760807,
+	GltfBuffer_get_BufferData_m6CDACF02C3E56653113729EE040B0B53212C8DBD,
+	GltfBuffer_set_BufferData_m234FA14BDB9A3C1A64BEB37FC45F9F9EF73121CC,
+	GltfBuffer__ctor_m83EEE7EE8D9A792F494C12F3D2CE8A198AC0BB7A,
+	GltfBufferView_get_Buffer_m95B27084C478A932EF04973E4D33C171D5C71CBB,
+	GltfBufferView_set_Buffer_m9A3D6C36C986D494E4DCCD4970348ABB46B7937E,
+	GltfBufferView__ctor_mA9BBFC79EECDCC505CB21382D606CE518EC0092A,
+	GltfCamera__ctor_mAD83766CAEF7BCED7E362D400B1AC64287AC91ED,
+	GltfCameraOrthographic__ctor_m55DCC9E2A8B9B76B2AC5FBF8B5DC4B464B4B5B4D,
+	GltfCameraPerspective__ctor_m1BEB90C0EFF92C4E158A572FC616B01D617F6FE9,
+	GltfChildOfRootProperty__ctor_m5D4FD91460386CF599CD9E32891B74D714AC59F6,
+	GltfImage_get_Texture_mFE0F371DD978898760232E3E714ABE79A7904E2D,
+	GltfImage_set_Texture_m9A89AA2542C0D6055F0BEC6154D4B91C5D377F1E,
+	GltfImage__ctor_mA80F312378A0E1750111D9569BE1F0BD45CA7E55,
+	GltfMaterial_get_Material_m564F2C33D111F359EA9C28ADAB8FB09A2C9FE9ED,
+	GltfMaterial_set_Material_mA011E11B079F7E5953823AAD5E32DCB80FEE3A41,
+	GltfMaterial__ctor_m669E0709137159B3429A3CE4DBF3511477DADEB9,
+	GltfMaterialCommonConstant__ctor_m947EC963FD6C573C277861EC08C13FDCF1A6BF2F,
+	GltfMesh_get_Mesh_mEF6FCB2777A1EBCF63DDF53D9C8652C3B18C7F13,
+	GltfMesh_set_Mesh_mB4BA58BB340A69F18D6D193B215D97393EA26F8A,
+	GltfMesh__ctor_m18242C6315C8B223AD5003B2F72485CC69969465,
+	GltfMeshPrimitive_get_Targets_m5197F615234768E2D68758E029AAC911A8D3E6E6,
+	GltfMeshPrimitive_set_Targets_m121B46736053FB16FC81479362A20187BCC6EBDF,
+	GltfMeshPrimitive_get_Attributes_m3EEE1AA61B6872EEDF342B9AF2256F141C176DB1,
+	GltfMeshPrimitive_set_Attributes_mF4FAC95063DC496F6525FB8EB781F3D52E162191,
+	GltfMeshPrimitive_get_SubMesh_m04833086FB9F76E65BB376338A2D34295FA3488F,
+	GltfMeshPrimitive_set_SubMesh_m6E0B5BF1A9BE5DE2877A220DA950C7E4945E4BB1,
+	GltfMeshPrimitive__ctor_mAB546FF0830C5033022872DF2B8053848E087B87,
+	GltfMeshPrimitiveAttributes__ctor_mBC795421229767D00D34F143C308996061FE15D2,
+	GltfNode_get_Matrix_mCE43EC3A7ABE56C1E373B5770581AC3BD336F718,
+	GltfNode_set_Matrix_mF692AD63BE5C354A0CAF20F7409FCF5CC59EAF27,
+	GltfNode__ctor_mEA3A27713A3B572B5ACCBEE692EB0044ACA789EE,
+	GltfNormalTextureInfo__ctor_m9F6DA7DDC65F09F488E1EE1ADBA712BB3596C8DF,
+	GltfObject_get_Name_m05FE9517DEF201FCA07C749105B5FD55D615E599,
+	GltfObject_set_Name_m5073624BD92FC674207667487CB73EFCD9503460,
+	GltfObject_get_Uri_mB4F9093EACFA399E603D0DD92A98350E7AD4EC12,
+	GltfObject_set_Uri_mF6B10F3A5FBEFCC584C9262EBF6FACAE9CCA00EF,
+	GltfObject_get_GameObjectReference_m33E716E9CA4D8FD64E65F7E5FA091191BD2832D6,
+	GltfObject_set_GameObjectReference_m539E42F1EA1FF5EE15045139701EF22400DD4613,
+	GltfObject_get_RegisteredExtensions_m169E84CC4754F5F91CCC6A6736DBEA8D9FB9DDA4,
+	GltfObject_set_RegisteredExtensions_m93F2008930C4BB4E08349B99A2C963A471C678B5,
+	GltfObject_get_UseBackgroundThread_m4A46B5FDD0ED39E6D4FD7A4F032AC0D9A4C37965,
+	GltfObject_set_UseBackgroundThread_mF5139A974A626EA013273E435B454FF71A9E92CA,
+	GltfObject__ctor_m4520CEFB5C945F59C703FDA453CD38B75D089C34,
+	GltfOcclusionTextureInfo__ctor_mD860428EC26FAA4A38F7C5D48C003A8CC4D55347,
+	GltfPbrMetallicRoughness__ctor_mE44221AFA56F56F41F4B6206C6ECCC9E519A02DC,
+	GltfProperty__ctor_m6783CCE9DB9322429349512061840EE6908B6D27,
+	GltfSampler__ctor_mAEA4D4F184467B522E8FE0DA8642D26A955B753E,
+	GltfScene__ctor_m892B1E1B25900C0E43CB135E37334B47027E9912,
+	GltfSkin__ctor_m87D94B85F54AB920B9E533B0F4C94BAF37F6C7AF,
+	GltfTexture_get_Texture_mEFD31E5D9B9402C94F18A85E5428E49EB851D360,
+	GltfTexture_set_Texture_m716528C31286EA3107D35DA30D3A97CFBAFC1952,
+	GltfTexture__ctor_m135386F3F2990852F0704B7308BD93EF1E1940D9,
+	GltfTextureInfo__ctor_m7FAB7471858067082A842A5B2B21FC5E1D6C85DF,
+	ConstructGltf_Construct_m9732317FABB70BEA6B153711D723E0EF58B3856E,
+	ConstructGltf_ConstructAsync_m5E323EF7F1B6B3609CC8DE4B68ACA57D2C93870D,
+	ConstructGltf_ConstructBufferView_m0EF508E97FA78276864935A799117E112B1BB0AF,
+	ConstructGltf_ConstructTextureAsync_mBC21709EFDF74CD7A90F58DC15971D917912FF73,
+	ConstructGltf_ConstructMaterialAsync_mDFDA97B562FC1BC785A635101A7FC03FF35BC999,
+	ConstructGltf_CreateMRTKShaderMaterial_m5CD19F8B7D7AF37576F810105C6A53F70BAD2CEA,
+	ConstructGltf_CreateStandardShaderMaterial_mA808DB8425BCD6866C13E8418B68210E83AE7EDC,
+	ConstructGltf_ConstructSceneAsync_m698D410332EF1B21ADF8278C8C6A7F74D552AF1C,
+	ConstructGltf_ConstructNodeAsync_m6732C1CBE479D95CFB06708242E8948BBE269515,
+	ConstructGltf_ConstructMeshAsync_m21E1E7E1A45E7F3E462E578216A4D7C37AB93F11,
+	ConstructGltf_ConstructMeshPrimitiveAsync_mF33A187AC01C70513C7048B54951EE2A98A80768,
+	ConstructGltf_CreateBoneWeightArray_m1352358298425758C98FF53150D9A438DA984330,
+	ConstructGltf_NormalizeBoneWeightArray_m2E98E86FD94B923726DFBF14363F773A247426B0,
+	ConstructGltf__cctor_m46E3450DA50E4E579B2647BE1743EF4F2315CB4A,
+	U3CConstructU3Ed__18_MoveNext_m4A56AD657F62D3FA2ABBF98F126125265BF2A088_AdjustorThunk,
+	U3CConstructU3Ed__18_SetStateMachine_mD65BADDD6C79A61F7AD59B5F5471711B8CB50F4A_AdjustorThunk,
+	U3CConstructAsyncU3Ed__19_MoveNext_mC56D0052D23DA2431A5C762D495EA76E5CA02C5C_AdjustorThunk,
+	U3CConstructAsyncU3Ed__19_SetStateMachine_m696BCBB407832B680CAFF57F04148C6DB30AD896_AdjustorThunk,
+	U3CConstructMaterialAsyncU3Ed__22_MoveNext_m5E1C72257436E4024851C92C283E9D448A3B967B_AdjustorThunk,
+	U3CConstructMaterialAsyncU3Ed__22_SetStateMachine_m2F728D80FCE20D0250C58970B04E1A11B8E1EE4B_AdjustorThunk,
+	U3CConstructMeshAsyncU3Ed__27_MoveNext_mCA5BEEF05695328A515881E77E9D653B4567D61A_AdjustorThunk,
+	U3CConstructMeshAsyncU3Ed__27_SetStateMachine_m2A644236C1EB8E8F429A2FB87C8CD7028622243B_AdjustorThunk,
+	U3CConstructMeshPrimitiveAsyncU3Ed__28_MoveNext_mFD5885464114F51252F2824DD5609158D0B9ADD5_AdjustorThunk,
+	U3CConstructMeshPrimitiveAsyncU3Ed__28_SetStateMachine_m752497E58B2BE120AAB1CBB40A231A28EA91BB65_AdjustorThunk,
+	U3CConstructNodeAsyncU3Ed__26_MoveNext_mF9EFD7AE6C205C8F63BE4B67FB3FC8D26E72A6C7_AdjustorThunk,
+	U3CConstructNodeAsyncU3Ed__26_SetStateMachine_mCE1288B238A4573F9D14E9BFC0FD76D3ED9B7D6F_AdjustorThunk,
+	U3CConstructSceneAsyncU3Ed__25_MoveNext_m8B02B64812965DD68F51D15EE29623ABA5F10C29_AdjustorThunk,
+	U3CConstructSceneAsyncU3Ed__25_SetStateMachine_m1DCCC9DCBECF4A5C045B67D2F9402B952214FD8F_AdjustorThunk,
+	U3CConstructTextureAsyncU3Ed__21_MoveNext_m087E3EDB79751A3345BC0F45F9CF301A9F1CC5BB_AdjustorThunk,
+	U3CConstructTextureAsyncU3Ed__21_SetStateMachine_m6A12A6B4F937DA7DF04DB7E52EE495CF3BE422F0_AdjustorThunk,
+	U3CCreateMRTKShaderMaterialU3Ed__23_MoveNext_m842F7E817C73D69BBE1B6E478F24CB47DA2A56E7_AdjustorThunk,
+	U3CCreateMRTKShaderMaterialU3Ed__23_SetStateMachine_m82B08F9EE3671A94003F93F846A079018A2DBEE9_AdjustorThunk,
+	U3CCreateStandardShaderMaterialU3Ed__24_MoveNext_m785EA013FD5C7C0876EEB77C8B31125C56B89C18_AdjustorThunk,
+	U3CCreateStandardShaderMaterialU3Ed__24_SetStateMachine_mCB142A9E9C355F0ECAC0F442157024C0684EF2BF_AdjustorThunk,
+	GltfConversions_GetTrsProperties_m817A82F6C561175DC65B2D104F116E765850C434,
+	GltfConversions_GetColorValue_mDF4622ABEFBBBAB7EE8EC8D895F1554052748299,
+	GltfConversions_SetColorValue_m8A297DBED31ACF29F45783C0B593911BC2175CFB,
+	GltfConversions_GetVector2Value_mF0A42B471492DCC44F56D106C89475B926018445,
+	GltfConversions_SetVector2Value_m3B354A95BBAE94FA92075EAAC044E07513952304,
+	GltfConversions_GetVector3Value_m649B0F1B2307418DC31678EE620998C8E5F49EFD,
+	GltfConversions_SetVector3Value_m207CEC6F91D9354E25E11D17A0051BA340DB2237,
+	GltfConversions_GetQuaternionValue_mA8480A52F4FF4C639AA526F2AF2736B4389FCD7B,
+	GltfConversions_SetQuaternionValue_m98C87109AD7005356B334A4D90526C2DEA96DA0D,
+	GltfConversions_GetMatrix4X4Value_m525F2329FAB7B54233E28FF42B5CF95B56FF9CBF,
+	GltfConversions_SetMatrix4X4Value_m50D725F2ED64B96F4E794601403BACCE79F62DFB,
+	GltfConversions_GetTrsProperties_m47EE85F9D38AEDD454C775EB25352CB84069E335,
+	GltfConversions_GetIntArray_m7F6ACBA3ADB587519A7F828D0A1686FDBDBCA43C,
+	GltfConversions_GetVector2Array_mFEAF650C9599FC39D9010CB7713722F55DC21C87,
+	GltfConversions_GetVector3Array_mC959A66868EF1C7F473AA8D49CEA518A0787A5DF,
+	GltfConversions_GetVector4Array_m2AE8E68C918705E220AA969E782E6804F8F80F93,
+	GltfConversions_GetColorArray_m2BDB79D477EA68B3A781014FC30ED6561507EE48,
+	GltfConversions_GetTypeDetails_m1FAFC1FB67078E79EE7207C9478417FE24A5BCAE,
+	GltfConversions_GetDiscreteElement_m13605CA9A77FA485F05ABEE802891DAF0EDA94E7,
+	GltfConversions_GetDiscreteUnsignedElement_m1940238D7974BCD973D3ED0D0E474C1A31C0E4CB,
+	GltfConversions__cctor_mFB71488FDA9C6FA22E312A34F441F4158CF41B84,
+	GltfUtility_ImportGltfObjectFromPathAsync_m014DD49B30F57831676ED73871F65F976DD7C12C,
+	GltfUtility_GetGltfObjectFromJson_m36DBDCD141EB4D5C62356432FFBF62A2A1C07FD3,
+	GltfUtility_GetGltfObjectFromGlb_m4A83FA32F413E0F34437CDE1BEA6D1109B6CC538,
+	GltfUtility_GetJsonObject_m77681953E63CEC18FB694FE61C46D1D1B39A70BC,
+	GltfUtility_GetGltfMeshPrimitiveAttributes_m86E00ED99F3B0C6D6AA41045BC9174353620B22C,
+	GltfUtility_GetGltfMeshPrimitiveAttributes_m0A7A152014C4D1E21954CE4992FF6D69782AB868,
+	GltfUtility_GetGltfExtensionObjects_m39D7E776AE396DECEB9996D68375CB096239E7B4,
+	GltfUtility_GetGltfExtraObjects_m66220D055F0E9E1CA6706ABE62DBEAF936D0FC9B,
+	GltfUtility_GetGltfExtensions_mE1894ED1D181BEAF9AD9637109A75B985800BFDD,
+	GltfUtility_GetJsonObject_m76930E8860E9A5670376D5B15958DD47412CF30A,
+	GltfUtility_GetGltfNodeName_mB9FE11E674665D66AB9629ED54A922450B9556DD,
+	GltfUtility__cctor_m4A82BB52B32DCD007CFC7AE6363C83A847AB94CF,
+	U3CImportGltfObjectFromPathAsyncU3Ed__4_MoveNext_m344A64888506E7F5CC43E127053A7B584ABDCDCF_AdjustorThunk,
+	U3CImportGltfObjectFromPathAsyncU3Ed__4_SetStateMachine_m8466AD23D957A433BD180D367375CB424AC18F06_AdjustorThunk,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_mDE4C1B254DA56F4B01F2A2C9AC0F946365FFA75D,
 	AudioInfluencerController_get_UpdateInterval_mD68DAE0290677F15E6F001600CDF6BAAB9E27DDA,
 	AudioInfluencerController_set_UpdateInterval_m29141A900EDC190472235665393C3B5E083AA3B0,
@@ -45695,6 +46348,1787 @@ extern const Il2CppMethodPointer g_MethodPointers[23072] =
 	TileGridObjectCollection_GetListPosition_m816B8467F9F7B22F190AA7038539374FE5F50955,
 	TileGridObjectCollection_Update_mA13B511BD3E489008189A9AAF6A8302102856C64,
 	TileGridObjectCollection__ctor_mD7944138C1E4B4EA241F07A3AD652BEF37816C31,
+	CP50220__ctor_m0518E4E5801D0BD1AF22A3E28BCE7165C5802063,
+	CP50220_get_EncodingName_m3D66B576436C1A51EBD6FCF56496AB4E3728A4E3,
+	CP50221__ctor_mE481C700FA1D7AEFCCE0F093E1CEED1F61BA3029,
+	CP50221_get_EncodingName_m8ECAAB8E857C7F6E8472DBA1795CCA900D6585BD,
+	CP50222__ctor_mE15C5FDA341D5685F26126844BD3FF0D41211A04,
+	CP50222_get_EncodingName_mCD5DA7B134C0A8460CA3E2371D1A320A087A205B,
+	CP51932__ctor_mC5DDBF730AAEAC1763F8AA99041E4ABEAF340AE8,
+	CP51932_GetByteCount_mA22CA8F290CA8328C1F152D68AC9F72816E9BDB9,
+	CP51932_GetBytes_mC5E7AB275AD02385518442A73C5A19EC6260F2B6,
+	CP51932_GetCharCount_mC7427DB5DB120F3EC586DD144F3FEFF47FF113C2,
+	CP51932_GetChars_m5DA4CF0782F343FAEBA610B51430F57E7E543585,
+	CP51932_GetMaxByteCount_mFD968B99A1DF34DC14278CD6C4CEE682D7E108A6,
+	CP51932_GetMaxCharCount_m9C2B4261D6F822ED6DA00551B3213563C5C982C4,
+	CP51932_GetEncoder_m2144DD171B3CF7A4E9FD4D793A440C9FA23C03AA,
+	CP51932_GetDecoder_m68CE9F75A09B56FD2C237091B2C114BAA9BDD6BE,
+	CP51932_get_BodyName_mD2819AFCCDCEB6DC3775E44948F97C522E4575AC,
+	CP51932_get_EncodingName_mB8A7AB5F338EA60927CDC6BA45108BD3CA8C45F1,
+	CP51932_get_HeaderName_m14858207227DBA5ABCC0847AEB0757D2162C74B0,
+	CP51932_get_IsBrowserDisplay_mCC6522311D061698D060C39879C4EEC6F8303BEB,
+	CP51932_get_IsBrowserSave_m33438624ACE46DBC869C678FEF49977287070B46,
+	CP51932_get_IsMailNewsDisplay_m5AE142ABE4B4363D918C892464B445D404537A7D,
+	CP51932_get_IsMailNewsSave_mC8CF53BAA3767117C2FEC8A57BC5281EE933D7F9,
+	CP51932_get_WebName_m00049C01E537B1030F5AD985EE9057C5D7D0EE91,
+	CP51932Decoder__ctor_mB6737403353AAB422685D83FAB4021E399B0DA5F,
+	CP51932Decoder_GetCharCount_mA65716908B7B98E993D552EA1C32FF2CF59EB9AA,
+	CP51932Decoder_GetCharCount_mA4D31B331734ABB0FBBBB9E97C69ADF5FDDBB255,
+	CP51932Decoder_GetChars_mC811D92B7ADAD8796138C4D7F12D55CB830E0427,
+	CP51932Decoder_GetChars_m5C4288EABBA2E45BB7D03DAD552D351BE17654C6,
+	CP51932Decoder_Insufficient_m63849B819A2F17623866D56C30998F51378971FB,
+	CP51932Encoder__ctor_m5EBC76F4BED3FAF81F8447A0FDE3C6534B39F1C0,
+	CP51932Encoder_GetByteCount_m22C7B8D81E64563913AE60974D0436E3C9651765,
+	CP51932Encoder_GetBytes_mC86F4BCBF4445E21B242F88F5227DFCEF29CEF33,
+	CP51949__ctor_mD285D77B6DF1C18C301DF6AE18CF36C1EE07ECFD,
+	CP51949_get_BodyName_mBC8F3739A159C7387BC174BFE0412096EDA28585,
+	CP51949_get_EncodingName_m80E4717BC9DFF4742D217FEAC81A522C98819E71,
+	CP51949_get_HeaderName_m725E0E0403112A8B42AFDE6515A3030062B4CBFF,
+	CP51949_get_WebName_m604F7FE20B945BFDE8D22F7A67F3905469B2BA05,
+	CP54936__ctor_mE44B4654B99D36BA034FCD986CF7EE62A754CAC9,
+	CP932__ctor_mEFAD48798FF30883B4C7E3B6D77FDB99C7713A35,
+	CP932_GetByteCount_m40D96A2EA91BE6B987B6879321C3B0B0789F8492,
+	CP932_GetBytes_m04AF1B583BC43251BFB10216FA0A6380BA04E75D,
+	CP932_GetCharCount_mA49E8B10B010638DE25F084895524E694205636D,
+	CP932_GetChars_m1BE522E1B3FF413EC018DAFF386BAEB3CB40B204,
+	CP932_GetMaxByteCount_mFA30AB18945BB79E67AA591845EE66F781E00347,
+	CP932_GetMaxCharCount_m7456D56E76FB6ACF4E2927CE4A2AFA1C1C39E481,
+	CP932_GetDecoder_m400DB455FF3FF87C6A9F99F99E8F2CC28EF7F810,
+	CP932_get_BodyName_m9F8B84CC6904A9F09D68496FDFC8F8A1A5C65F78,
+	CP932_get_EncodingName_mCE8DACBF4C463B9BB09ECF8F9BDA4F42FE3B50B9,
+	CP932_get_HeaderName_mD72ADD8BFAAF5714AFE0F4A209BAB51DE6CA9B3F,
+	CP932_get_IsBrowserDisplay_mEE875B49D1F1290A714D227469B0BF5776088078,
+	CP932_get_IsBrowserSave_m6A46AD7A7C121F07A101CA735D5A622A4CB11988,
+	CP932_get_IsMailNewsDisplay_m131EA0DF780706132AB8EF1E0D415B874D916EEB,
+	CP932_get_IsMailNewsSave_mA6C393C6F3607203FEC20109F6DF58B02C14D478,
+	CP932_get_WebName_m5F2E7A1B4156A203143C3FF814B9F8E97C7DEF04,
+	CP932_get_WindowsCodePage_m6409A43961127F34F7C6115D6E7F37D52B4BBEA1,
+	CP932_GetEncoder_m30F25F6EEE89BEAD9EF4C368AC68E08206D59921,
+	CP932Decoder__ctor_m5A7465EB5277A3A2B24153709F873EDFF96B1E45,
+	CP932Decoder_GetCharCount_m0292DCCCE957666674D5570406C8701B236B11D8,
+	CP932Decoder_GetCharCount_mF4C9E35DE0B82106ED9BE556431150BD5C8310B4,
+	CP932Decoder_GetChars_mBEE71E73B982CE5A1F8955575906644CA92DC87B,
+	CP932Decoder_GetChars_m8F91C8363DEFC591317661E474745D413E7873CA,
+	CP936__ctor_m38D2D40CBE67A638521C9C6B05949FB993A37D07,
+	CP936_GetConvert_mA02AB58D04CAE01D81154B96B383066E981A56EB,
+	CP936_GetBytesInternal_mF1029621BAD39B4184EE73850CEE2A0EAF281D13,
+	CP936_GetByteCount_m8519818252CB41D1A8769BE256A0EED6F7FF7C37,
+	CP936_GetBytes_mA4FEC1124664580A83DCC1EE9C665C1BA69E467F,
+	CP936_GetCharCount_mCC9CF514FBAB413B0B43391C13112A72CF5B8251,
+	CP936_GetChars_mFCCD74834F37C535CC665208B319199DB650863F,
+	CP936_GetDecoder_m283E0733C9C41368D179D276AF85102ACBA1DB34,
+	CP936_get_BodyName_m858580F742B31A97AE388695CF112DF026C88A7E,
+	CP936_get_EncodingName_m8183DB94F233325C81B07A7BF839D6A2B66EDC58,
+	CP936_get_HeaderName_mB1D3D5A40E0AF80D02D7A5F51928DD2CC1003D2F,
+	CP936_get_IsBrowserDisplay_m6CB712DA36D859D875E57435C0CDCF854D5CB742,
+	CP936_get_IsBrowserSave_m4DC71E154A6A406FF0DEBDA8C4EE9519BFC4088E,
+	CP936_get_IsMailNewsDisplay_m53B16919DD5E6702CF97082D46A0E3A2EE1F1DB1,
+	CP936_get_IsMailNewsSave_mF4FD4FBB31856D0CE203220A80A58EAECCBD232A,
+	CP936_get_WebName_mBE3DF79C94F8CBC38DF23359F6BA0B4BC6B3BC51,
+	CP936Decoder__ctor_m6A8625C58D5F7B180A29CBDF2BFC7709650DDDF1,
+	CP936Decoder_GetCharCount_m053B9C2DA0B93D1C2517B0FA69502F3C50C745D9,
+	CP936Decoder_GetCharCount_m363685D04DA41F1B3B7382320F56107A761FA993,
+	CP936Decoder_GetChars_mCBF6AB9F2B0B5620CEDCB919E0CD457CABEAAEB6,
+	CP936Decoder_GetChars_mFC37C381659305C406EC33FB46DE03BCC617C3C1,
+	CP949__ctor_m524452736DE893F3256D041C98D184DB6AAF9D59,
+	CP949_get_BodyName_m7AD149C19E51C4B12824A1F1CAC66697C3DF955A,
+	CP949_get_EncodingName_m73D4E1C075CE56EE573846D206D1EC194EB259E4,
+	CP949_get_HeaderName_m3AEE317057743BC9D65E5AB186FC8120D93BF9C6,
+	CP949_get_WebName_m611AE166D65431F411F3D638B60FD09ACC6F04A1,
+	CP950__ctor_m2757AE7C880FFC9DC149DE418F0B2F387E0118DA,
+	CP950_GetConvert_m8F8C2A3649052D123B7F825C34642F3A3135AC67,
+	CP950_GetByteCount_mCA444B3DC1E1BA05202618E49753904F594881C9,
+	CP950_GetBytes_mEF84E5548BC3E76F1572C78A10E72452A9CEA154,
+	CP950_GetChars_mA0C7F2EEE5707ED420E7AB47FA9CFAE67B969AEE,
+	CP950_GetDecoder_m1DAC67955CCD5F32FCBB4F801D4070846B0CF973,
+	CP950_get_BodyName_mEC1D3033D5BA36D458292DB3E53623BA9361918D,
+	CP950_get_EncodingName_m6F3A494ED693C96D9EC37AF02C6908C4855A3C68,
+	CP950_get_HeaderName_mFE2C85BF33B67D6DCB09193E28E6D747082D19B8,
+	CP950_get_WebName_mB5568A48B5ED2228A0B616183D0B79135C943CD3,
+	CP950Decoder__ctor_m48FA73718C9D31A405FF4611FC746D436000D5D8,
+	CP950Decoder_GetCharCount_m9CF51FB32C427A4478CE05A94C62CD5C6E8467AB,
+	CP950Decoder_GetCharCount_mA4CC7322546060EFBF8F3D83DF31C9DD3DC2E620,
+	CP950Decoder_GetChars_m67B87E297DC71B137D3F4355183968DD2651CC93,
+	CP950Decoder_GetChars_mA11354FBE23EF486949DF2FA3B9CDF8594348588,
+	CodeTable__ctor_m65AD52F8466C676EE86F349FD5F6554EA5FD875A,
+	CodeTable_Dispose_m33774A594A2ECE3FA5829D1D22F61DCF69D2F5EE,
+	CodeTable_GetSection_m5F99D2B755DB3F2EBDA7AA289A414A40B6615662,
+	DbcsConvert__ctor_mEEE1698F3FD9410FC6E14B0AA47D68629D3014B7,
+	DbcsConvert__cctor_m1844201D4188C051CD59D501BFDBF875DC149440,
+	DbcsEncoding__ctor_m46F9DE9AF2466F65726D8C24E2AD1E485CC74ACE,
+	DbcsEncoding__ctor_mBB80A67A6AC2278E0466B4B0495F0F74DAE79834,
+	DbcsEncoding_GetByteCount_m6D686F89F1C4C27FE01ADFC03D2D6F94F5F7329D,
+	DbcsEncoding_GetCharCount_m4A398DD86E8AA509183FF71E06B9C5C08318F62D,
+	DbcsEncoding_GetChars_m0C3C9BDF9F15A202FFDA4FFEBC82987D52C19D3D,
+	DbcsEncoding_GetMaxByteCount_m84FA3FB55C648E331D27BFEEB7ACD272C313B501,
+	DbcsEncoding_GetMaxCharCount_m0E2AA5817EA97663D820BA9DC59BFA23804EB442,
+	DbcsEncoding_get_IsBrowserDisplay_m59406DDCA30807BB164C161E46EA7A9A34BE271E,
+	DbcsEncoding_get_IsBrowserSave_m48FB39A30A6930C20620DC057CCF2C86F8D2A9EB,
+	DbcsEncoding_get_IsMailNewsDisplay_m197C57355C4EB8017F2C72C07C8118739FCDD1ED,
+	DbcsEncoding_get_IsMailNewsSave_m6A890A58B47E31D7465A8420FF407E349F12CD10,
+	DbcsDecoder__ctor_mA7695989C93F8C2C8068FEB7CFCA0261DB26A632,
+	DbcsDecoder_CheckRange_m829AD87898C75C08625DF39EC2C13C4F4609B0B7,
+	DbcsDecoder_CheckRange_m22E97465C1930996B54FBCDC3C4CD1602E743D7A,
+	ENCbig5__ctor_m00C9D81925820A1C3A89C7108D85EAD550CEEEDA,
+	ENCeuc_jp__ctor_mE1E06D1D20EB8A61D5BFA02FC4375E21B254BE6B,
+	ENCeuc_kr__ctor_mB8EA5DE2BDDB104790D147EA1162753C59F7AE4C,
+	ENCgb18030__ctor_m3B7F29F7A5CFEC51EEE8D819CBCA76391F0A8F50,
+	ENCgb2312__ctor_m6AA07A8ED455A7FBC29A1FDF01EE2D0BC43BA0EF,
+	ENCiso_2022_jp__ctor_m7FEF72A838E99481011D403853099FD67EE5068E,
+	ENCshift_jis__ctor_m28A5606361B21EA5A24402D69AAF65581DD9661C,
+	ENCuhc__ctor_mA725E63E1F8AD001FF6D38F252BAE944594E6F6D,
+	GB18030Decoder__ctor_mD1773D94E903E1C7E951C2DBF6BF24F05C62971B,
+	GB18030Decoder_GetCharCount_m765C979B2DFA7A93F956AF9FBF58011B6565DC63,
+	GB18030Decoder_GetChars_m8383E2AECC51E84A107180367E7EA547416950E8,
+	GB18030Decoder__cctor_m24A648A1BAE23A15D1C98D3BCD2824B859ACD5EB,
+	GB18030Encoder__ctor_mA6B5AACA42267C6DC9498178CB798FF866C27705,
+	GB18030Encoder_GetByteCount_mCC7B4CF7721DEC87FB00576B1A79A07173DDCD04,
+	GB18030Encoder_GetBytes_m83F7D51D91448A3E921D01DE331EABC1714C9A8C,
+	GB18030Encoder__cctor_m219E8DD0D6A5209AB9BB61AC18080FC328C05E9E,
+	GB18030Encoding__ctor_mCF6EBE64F6DF9BB4A0DB45DFE3E4F1707A72696E,
+	GB18030Encoding_get_EncodingName_mADB39734843F0CAAB8C77D0AB9379B9D07DF9166,
+	GB18030Encoding_get_HeaderName_mBC948B3D2CF735BA5F1BF3922410C353DFCFBA00,
+	GB18030Encoding_get_BodyName_m8C7D8EA5C86BD03C24F2CAEDBBC981A5817D9EA2,
+	GB18030Encoding_get_WebName_m0C8FDD91EAF6C2E82EAB12652E0AC609BAB083C4,
+	GB18030Encoding_get_IsMailNewsDisplay_m23EE36729F69F2056EAB5EEF459A0FC3F203AB96,
+	GB18030Encoding_get_IsMailNewsSave_m6A3704247F03E0D7AB5E92A08ED9D065A6FC807A,
+	GB18030Encoding_get_IsBrowserDisplay_mBC30D0936B2BC030DE54123FADC26F7941F12F0B,
+	GB18030Encoding_get_IsBrowserSave_m58923D5C083AA93DF92FB8EC9970ABC5166408F2,
+	GB18030Encoding_GetMaxByteCount_m62727C2A755E632C36843B066A88494F48FC008F,
+	GB18030Encoding_GetMaxCharCount_m0283402F36E49E9E255FC04312369FD2BB50A7FC,
+	GB18030Encoding_GetByteCount_m4E4B8FDED151DC1ED2070D265DD7EEA4E7E7558F,
+	GB18030Encoding_GetBytes_m8AD2F10AFCD70F4428F69735632C6028F16A54A1,
+	GB18030Encoding_GetCharCount_m56D01E80F31ED7F20FF29988285251FC629094A5,
+	GB18030Encoding_GetChars_mC11DFB43FA695185EDF52D0706867F181956F00D,
+	GB18030Encoding_GetEncoder_mD9DAABDB64A9FCE2D0F2728C399A1517856D89FF,
+	GB18030Encoding_GetDecoder_m3E1108F4BB506B1216A683B97E9A2DFF7DE04A27,
+	GB18030Source__ctor_m558163D7273D1610E4AE13B3B81CA1A379A36103,
+	GB18030Source__cctor_mCE4637E4E21E618B5A800EEA4ED166E81D04E1EA,
+	GB18030Source_Unlinear_m6FCCC5EE7161BB62029BF61148947C2C52C31EAE,
+	GB18030Source_Unlinear_mE57BFD111E56D70DE06599BE20633FA0F19841D4,
+	GB18030Source_FromGBX_mF3D7B1BECFCDEE508EA5F4CE50749293D873B97D,
+	GB18030Source_FromUCSSurrogate_mA5B602BD68EFF3133CA9AF8D8516A885CC34B852,
+	GB18030Source_FromUCS_m0E121D5DB5CE6AE5D9280B6E8CB89AA973A910E4,
+	GB18030Source_FromGBXRaw_m9EDD5388C1462EA1EE85D2F1909AC2D6496F424D,
+	GB18030Source_ToUcsRaw_m12F83E2A93386EEAFFF0E3377DC2B50A7BE2B1D9,
+	GB18030Source_ToGbxRaw_mC1E3F62CB1D355BC557701A272ABDF54C9117D1E,
+	GB18030Map__ctor_m9DE204C5F753540DF0066DF3A4D33AA51A90BD37,
+	ISO2022JPDecoder__ctor_m4AB5E55B0CD3545CEF2B34CDC66437493526410F,
+	ISO2022JPDecoder_GetCharCount_m8381F225784A7BBF96E335B8B9F87CF4E4383381,
+	ISO2022JPDecoder_ToChar_m34E888F90AE4602B9491896E85877EA622335936,
+	ISO2022JPDecoder_GetChars_mAC448B56705744BC30A22AE689B8251CA69289BA,
+	ISO2022JPDecoder_Reset_mE84F60E74DDDED1A47C124BF5A96FC4D7D448A7A,
+	ISO2022JPDecoder__cctor_m162724397221B3CC668DD181B1CDAC1A94221B21,
+	ISO2022JPEncoder__ctor_m4F19CAB7B1F31A7396201F135C2FEB2833FDDAFB,
+	ISO2022JPEncoder_GetByteCount_m6D3A8DB8966DF89ABDCF6A68E8A4BED78CFEF4DB,
+	ISO2022JPEncoder_IsShifted_m32C520225DA986472AB2E1EC4F5888EB405AC2D9,
+	ISO2022JPEncoder_SetShifted_mB0C05F426F4FA30B3CA883825166A6B41C026DD6,
+	ISO2022JPEncoder_SwitchMode_mC80DB03725674D2AEF99701978D76A72D12849D3,
+	ISO2022JPEncoder_GetBytesInternal_m27FDE6A09B61241E486A5A3553749624FCB5EDEB,
+	ISO2022JPEncoder_GetBytes_mDDEE8F0974999195C778BCE77B8BDD4B42B35F8A,
+	ISO2022JPEncoder_Reset_m1DD5A464D7CC4A9D498B241AE248EF952D367F2F,
+	ISO2022JPEncoder__cctor_m489D34ADB24CFE4E9D2B7C88CC2551380690BDCD,
+	ISO2022JPEncoding__ctor_m79332D5795ECFE2969A2A612AF1B5CBC8BA0B12B,
+	ISO2022JPEncoding_get_BodyName_mFE994D2A829DF2FBB8905C0A3109AB8477FFB1C1,
+	ISO2022JPEncoding_get_HeaderName_m4542433407D48CE42B2FAA9C2CDADA08EF27B9A5,
+	ISO2022JPEncoding_get_WebName_m7C81F07C44210FBD1120D91F93B400D2DF916D44,
+	ISO2022JPEncoding_GetMaxByteCount_mC5AF95E7450E60A6D1649DC7C56FA8D640FB7CA6,
+	ISO2022JPEncoding_GetMaxCharCount_m0A11ADE47ACB3C4BA8EE7898A1DA1997712303E7,
+	ISO2022JPEncoding_GetBytesInternal_m5BD7F125B6B84FC0237618CA6DCF5C1C23B47B36,
+	ISO2022JPEncoding_GetByteCount_m1C307D993494D80B61797AA668E81FF0D7A5F80A,
+	ISO2022JPEncoding_GetBytes_mE589BC03CA7E5E89DEB93E7AE67CBE18483528FB,
+	ISO2022JPEncoding_GetCharCount_mCB4473278877AD2CFFB3BAFD69DFA0B4E8DCC9DF,
+	ISO2022JPEncoding_GetChars_mB715886D21CFB7F9829EF6DE4E92BDF7617DB90E,
+	JISConvert__ctor_mAF5124D1ACF4EB3BCB79B73F48CFF513D9B89E7F,
+	JISConvert_get_Convert_m698509E273544FF363D1E6DF17E520E3119034F8,
+	JISConvert__cctor_m9D8DA39AE6805D45330017B0785E1EA3B84EC06C,
+	KoreanEncoding__ctor_mD9E900108C3B6E10197571E880182F839892A872,
+	KoreanEncoding_GetConvert_mF2446D5F88E4D996447C860CED772567BF4362C5,
+	KoreanEncoding_GetByteCount_m2F57B6F4BFA34CD864A9F479CABA6297C4EA8864,
+	KoreanEncoding_GetBytes_m6CCDB511621082B1937497FB3D8B106BCE5F1624,
+	KoreanEncoding_GetCharCount_m6D49F1FF24F669E0DA92B0DD6F67183919DEB092,
+	KoreanEncoding_GetChars_m47DC963EEAAB75043BC77930D57107AF511E3049,
+	KoreanEncoding_GetDecoder_mEAEA1F72B91CB8CBC88588FC8ACEB7CA75CD12DD,
+	KoreanDecoder__ctor_m01E24CC0C4EA5B6970BD920A098C1EB0A397F504,
+	KoreanDecoder_GetCharCount_m840898F3D23B66ECA2ABA5DEE5DABD65EF9490CA,
+	KoreanDecoder_GetCharCount_mCC1DD13FAD21F0604F8D84E69A1958CE806270F6,
+	KoreanDecoder_GetChars_m477A2FEF773706DF30B7AC19AE94CDDA3C679DE8,
+	KoreanDecoder_GetChars_m4FD99CA4664AFB5E6EEBC0CA73E7F35899E51386,
+	CP1254__ctor_mFD6A4744296691C96F7306CEC7D5DDE58C588453,
+	CP1254_GetByteCountImpl_m759CA87BA8E50E1FC0DDA6F134208E4D3CA2468C,
+	CP1254_GetByteCount_m9578C5C2A401FB3BA07386F60E70EC5E70AB202E,
+	CP1254_ToBytes_m7F80CFABCDA03A649E3251DA207805C3E15B1D83,
+	CP1254_GetBytesImpl_m72DB1ED831C3B4C8A99721569A3853D1DBB7A6B9,
+	CP1254__cctor_m59431E486A35832E25FE34D5415D990A0CC2F692,
+	CP1255__ctor_mB29016BF2299E8FFA2E1C9B01C1A417C8796BD13,
+	CP1255_GetByteCountImpl_mA74FE97184ABEEC1B641EAD954CFAB9036477C5A,
+	CP1255_GetByteCount_m357FEBBB6633BDC921445278C02F748A33ED9AB8,
+	CP1255_ToBytes_m0D285E288C090376EDFEE3DF99B890D7A0654DBD,
+	CP1255_GetBytesImpl_mD7E4B92DA338B965336588DB592B859D53DA511B,
+	CP1255__cctor_m44BF8BF8C06EEC78120BB10CA6B6017CE32D7D42,
+	CP1256__ctor_m2D33E2B07149C8C46659A8725C65219B4FACFAC1,
+	CP1256_GetByteCountImpl_mEEBB39676F43F7A9888D159FB4CFBFB8A40C77B4,
+	CP1256_GetByteCount_mE4522A755BE4E30F0483C38F92645F5F3A1BA7F8,
+	CP1256_ToBytes_mD8B9FD806449F072E31304123431CC155191CE45,
+	CP1256_GetBytesImpl_m0D130361420E1F62F833AC931902F26309BBC442,
+	CP1256__cctor_m02BFE60112FF9A3F7776BF8A9A83EACD3B5B1083,
+	CP28596__ctor_m9C873178B60CFC8183FB7E2E5B4AF34E15AAF8F1,
+	CP28596_GetByteCountImpl_m252F65EF3AAE78ED3CBC48123A2E438748D26402,
+	CP28596_GetByteCount_mD0408C008EB0F7E4FBA80DA3B53E80764B6AF123,
+	CP28596_ToBytes_mF538C43B354A80E46B7D47BAB4D68CD0A1969A57,
+	CP28596_GetBytesImpl_mBE4488B350EDA11C0AAB7E38EA954A767008A21D,
+	CP28596__cctor_mD58A9DAFA7DB4DC2E17E7A59259D4EAAFBFA7F59,
+	CP28598__ctor_m21943BDB4D47B72DB80697FD6525383BE207787C,
+	CP28598_GetByteCountImpl_m4C7E6DD06C76F2B3B630D0F32152F9ED3D1C3DF4,
+	CP28598_GetByteCount_mD1AD43C069FC3435C8D612727643EC37B10E8DDD,
+	CP28598_ToBytes_mBF1B316D1488B9A69E5E4F715F698520F4C9A636,
+	CP28598_GetBytesImpl_m5D9453556CA1E8A29222170129CDF3882DB6408F,
+	CP28598__cctor_m7D281631350D272AE2DE55DACD44A3BB0BCF46D9,
+	CP28599__ctor_m879E09E2443A16C1945625A15FD37B4BDC1A497D,
+	CP28599_GetByteCountImpl_m94706B16B9203C783A7F0F38DBC98E9B1D3BEA57,
+	CP28599_GetByteCount_m3D87EA33F10EB62F98AFCED297363FE0CC15150F,
+	CP28599_ToBytes_m8ACBA62C6019A51BC96BAE815829259183228C6F,
+	CP28599_GetBytesImpl_m375A88F90D5A063F59DD7167FC8793EADB018A2A,
+	CP28599__cctor_mC9813D7D829827471C47F84817E12AC30703ECC8,
+	CP38598__ctor_m0877ECAE60A6895CCF74E61950D6CDE3D76EA809,
+	CP38598_GetByteCountImpl_mE12413B6E435CCECACA504D2B9AD113920845FF6,
+	CP38598_GetByteCount_mF4E0277AAA22AB6CCF7D55B3E4576DCC51C1902B,
+	CP38598_ToBytes_m44D1A54EF1314EF651F98B832C766A3FC06E6CB4,
+	CP38598_GetBytesImpl_m20836F0277DA2461593D5334CDE6C716ED6B49EB,
+	CP38598__cctor_m365A04275F7788AFADF9B2DC12E45DEAF5DD5C32,
+	ENCiso_8859_6__ctor_m0B30D45E4DA6498163FB01EA4AB86687BBC4BE04,
+	ENCiso_8859_8__ctor_mDF867AF3C26D011C2C67AA8B06D7A18B9E9A5979,
+	ENCiso_8859_9__ctor_m28D2FD5713597901A889841BB93549B91A946428,
+	ENCwindows_1254__ctor_m911D90BE4AF60681E9D879B43033D29C905E80AB,
+	ENCwindows_1255__ctor_mFA9598910ED8D39F9E804D95CA9C864C796F2D2C,
+	ENCwindows_1256__ctor_m6C891D4D22214D42D200003B7E2800156CA3DE3D,
+	ENCwindows_38598__ctor_m8BAB31E51D66E189E70A17163D12AD3410D2C1ED,
+	CP1251__ctor_mFCCDA603881C9D5A989637B7D4DBAC9A3E720200,
+	CP1251_GetByteCountImpl_m7635F8CEBA1EA427DA1584970F80533B18BD3F91,
+	CP1251_GetByteCount_mDC7A5D00AC343A8A4F9CE58D7550D11F0668E46D,
+	CP1251_ToBytes_m8BA0D7FF00CC909B341F243B17A2B2951EB074A6,
+	CP1251_GetBytesImpl_mA91D25165E34487C76A7D3AC9F01B95622BA8D6E,
+	CP1251__cctor_m30EEAE7B6B4CB8F417C9CBACFEA13577931CFACE,
+	CP1257__ctor_m0D9B5D03B13627412CF9939DFC86D575E837E721,
+	CP1257_GetByteCountImpl_m7AB4709B5CB75333050144B6311DB804D92E4E6D,
+	CP1257_GetByteCount_m03A6933B19C0769313B067CAC0F33715D60B14F7,
+	CP1257_ToBytes_m05896448EFA4003CBC308AECD1C0E840CE21A66E,
+	CP1257_GetBytesImpl_m5A4FB94831A2D5FB66DBB49ABB0F736ED5DDB5C4,
+	CP1257__cctor_m50180416BF33C556FDD74FCF9CFC161572702B23,
+	CP1258__ctor_mC81F5C27B59253B10422490B9F457C0ED61C347A,
+	CP1258_GetByteCountImpl_mCD91E25488D03791934D002CEECDDF5DDDFB4AC0,
+	CP1258_GetByteCount_m34B8D75307F19D822A357FF13CE9BDB79BDBB9CB,
+	CP1258_ToBytes_m57493DE6808DA2ADFD58A89E035EB1E96057B373,
+	CP1258_GetBytesImpl_m6769A79DB0C132A294400E890A40E09DD8879D9F,
+	CP1258__cctor_m19A10BA9A7056CCE5D491E02CF70E43D37D5A90E,
+	CP20866__ctor_m20953633923576619ACEB327777341BE19C054B1,
+	CP20866_GetByteCountImpl_m89A7A87DD8100DD0890F979150506665A5E73495,
+	CP20866_GetByteCount_mF1D77F102E450367685F9D353076CD5C8222F221,
+	CP20866_ToBytes_mD627F437FDD37F054391509629245B94BF05DC28,
+	CP20866_GetBytesImpl_m4A4FF873471FD501D7E03905F42E9138090C8601,
+	CP20866__cctor_m0F9F0977A2CEC956C03C74B0EB369B156B1BF25B,
+	CP21866__ctor_mB27ECA860900EB3C1D03C82C9B36A3145C553FA1,
+	CP21866_GetByteCountImpl_mFBD8E037956EB0F5D5DE94D8162CC54B9C445544,
+	CP21866_GetByteCount_m45C48EF252E3C180688032A0BBDBC7F31BEAF034,
+	CP21866_ToBytes_mB610BA3B1A6E301E1BA2F999441429F97481B2B9,
+	CP21866_GetBytesImpl_m494819D162FDC8BDC1334733310B5E16D3ED882F,
+	CP21866__cctor_m2A65ABED76AC043FD7A9F72B85C3CF03D525E0DB,
+	CP28594__ctor_m8B6CF5E31EF7B66B8C5C6C52AD54F2B18A8BC5D2,
+	CP28594_GetByteCountImpl_mEB12DE2A0AB4B71F14C1A7D1DC17B9112F675484,
+	CP28594_GetByteCount_mAD16787CDC54530FED66926D74D8D06D2D2A1695,
+	CP28594_ToBytes_m4B660B2B56311C8DD1178D3EEC0B1B6AACC4A4A1,
+	CP28594_GetBytesImpl_m34AF2127EFC1DABE736B305F7DE8DBCE0718B784,
+	CP28594__cctor_m97614FA8B501C4648CDFB22EB5B24CE7B5065714,
+	CP28595__ctor_m36A0DF95118BCD754AE6D7F736EEE3A1BF161866,
+	CP28595_GetByteCountImpl_mA5CF5140E05FA97F828B47F58D21B47887E92B24,
+	CP28595_GetByteCount_m211C6F828E3EDAE3C06539193E808917FCBC0BF1,
+	CP28595_ToBytes_mD6E8E4DF4D0C42DF2405460D16B55792E3E313CE,
+	CP28595_GetBytesImpl_mF885F9C77E5AB61FA96273E478AA9E1E8EB2DA64,
+	CP28595__cctor_mBC18BE832F095070828C21671924C2481849B671,
+	CP57002__ctor_mCED3CF785F2304AF216833C0C6181A864B1EDE3A,
+	CP57003__ctor_mA8892E735B6E58FAE521908701421E4490A41A26,
+	CP57004__ctor_m88A88647B929D61FB5F6A74CA79F9B66C71FB6A3,
+	CP57005__ctor_m2EE119E9A14A00823A231CDF9CCEA8F6DF804335,
+	CP57006__ctor_m94C460904E6CC605F6D0E8AC615D4DFDAE0D70AE,
+	CP57007__ctor_m713B193345BD108E2BC14EAE21C831C4138A3388,
+	CP57008__ctor_m88D5353462774E552EC421B30B75E72AB6EABD7F,
+	CP57009__ctor_mB2A2F0A0628E0C7AE37D9C5562C5905CCE80F0C0,
+	CP57010__ctor_mD68C53B8CF5251FA6999DCC36F47D89B8A6ED476,
+	CP57011__ctor_mDB7E411D5711FAF62C2708AC667D960D15782445,
+	CP874__ctor_m58F56E3E169819C7D0631032E28E644C384632FD,
+	CP874_GetByteCountImpl_m0FFD006FD1991FDEBE418269C08022E726A11153,
+	CP874_GetByteCount_m2D630D396020BDAD463989CC9C0C6C912AF80922,
+	CP874_ToBytes_m3C98584D4D7993018E6776FB706B1F84E2690862,
+	CP874_GetBytesImpl_m630F66A88CD1D2FBB460FDDAA6769A087C9CF78B,
+	CP874__cctor_m6070415913516C9127B9388A0A586506BB777D5B,
+	ENCiso_8859_4__ctor_m6F0E3DBB2CD5DCD7F3E798D767592A79DA1BE9ED,
+	ENCiso_8859_5__ctor_mF46ED0CFD8A3DFB39D41DC145BCE9A893F43F625,
+	ENCkoi8_r__ctor_m12A0E13CB002C8448E6BB49C21E5C1F486EECDF3,
+	ENCkoi8_u__ctor_m6D45C33AC48BC3336A6C70A32FB9394E1D717652,
+	ENCwindows_1251__ctor_m244370874DF72249FA01D8337E0B4262AA20481B,
+	ENCwindows_1257__ctor_m2B563BEA13A7F9D375D1DA1EBD8B13AAEA4D21DA,
+	ENCwindows_1258__ctor_m2ECB73B02F26220945D4518ECC4AD7C0A6B7A530,
+	ENCwindows_874__ctor_m32213000F6B10D3CA58BF1571F2A77FBA093D3EA,
+	ENCx_iscii_as__ctor_m24DB817CF3D37134C10ED98576390EBA0CBA2247,
+	ENCx_iscii_be__ctor_mC4AE7418546D86A3400163B0853A63182C19301B,
+	ENCx_iscii_de__ctor_m9AC98585D69A868C50E1A1708E63C567C958B9D5,
+	ENCx_iscii_gu__ctor_mFB87EF25398F3D9224396D91053DEB31D24457DF,
+	ENCx_iscii_ka__ctor_mF623D80CA1DD7748AD135966ECA7A8448639BDA0,
+	ENCx_iscii_ma__ctor_m26BC7019B134C6110CC66C3DEB7E4F964319557B,
+	ENCx_iscii_or__ctor_m8CD629C918EF6EDDC52BE696A3C11F52FE3F9743,
+	ENCx_iscii_pa__ctor_m12913D27763D554227484DEF75BB4907D40A3C80,
+	ENCx_iscii_ta__ctor_m0B6FFBF10A868C33049BB71C81C569D226716328,
+	ENCx_iscii_te__ctor_m053C84B5694D43ADF1C554FB2A5376CC3E7A4FD5,
+	ISCIIEncoding__ctor_m876EC96FBE90C166EF09E7F3132E5CD3B64B5B8A,
+	ISCIIEncoding_GetByteCount_mB11673F258712E2A2A50435076782929B2FC4475,
+	ISCIIEncoding_GetByteCount_m78CCB224740E6B113790E17073BA190FE3847402,
+	ISCIIEncoding_GetByteCountImpl_m10E88731A5B5F966A094E970F2CD62BA1D7AD360,
+	ISCIIEncoding_GetBytesImpl_mE199A07ADBBCEB93061044EF5B461EBC80A9EC08,
+	ISCIIEncoding_GetCharCount_m511FD44BD78BC028769B601C04C10078ECF7724A,
+	ISCIIEncoding_GetChars_mF3148D17AC3AB37D49C70F5205E19E1F45239299,
+	ISCIIEncoding_GetMaxByteCount_m7CDDBDD2A300734BFD3575D4E02791E98C55D80F,
+	ISCIIEncoding_GetMaxCharCount_mFB0E6C49618E934210CF536BD16FF13A4CA037B6,
+	ISCIIEncoding_get_BodyName_m507BF203501E0793C63A54D2F732F3DB755C8429,
+	ISCIIEncoding_get_EncodingName_m989983C6C78947DA682E84D02D84523D846A1969,
+	ISCIIEncoding_get_HeaderName_m986670E379AAAE8AB0D9709395A3060ABFD317B8,
+	ISCIIEncoding_get_WebName_m600263F9BF5F96AEF8D544A5EDEFA1BA49EAAD6F,
+	CP1026__ctor_m39B1953FB2625E91E6381AA1C39B013BB3411263,
+	CP1026_GetByteCountImpl_m4E5731B06379149E73C05821302B0E5CA41D4D3D,
+	CP1026_GetByteCount_mA340B3F82CE6626AF6DFE150858F29976AD775C8,
+	CP1026_ToBytes_mC34DFFA061881B1802F58B1E80C79515B47FD000,
+	CP1026_GetBytesImpl_m44AF3D36BC9B9994870750A460EC30F572BD33CD,
+	CP1026__cctor_m9569DEBC3422A371C46AB5FC16A9B6FE8C7767FF,
+	CP1047__ctor_mA6B8BCD9AAB532982B0203A7EE620A2F8E3AD2EC,
+	CP1047_GetByteCountImpl_m8833AB893D1A82FBB0E1047B74E83196BC323B97,
+	CP1047_GetByteCount_mD71280545EAE05F3D416B9461ED9F9864506AD9F,
+	CP1047_ToBytes_m5DCC6893ECC9F458F82DF9FF554CBA0C149D180F,
+	CP1047_GetBytesImpl_m98CE1CF8F4B3D43C8761311187A7E36C89F4F177,
+	CP1047__cctor_m58FEA58F19D6A8DA48CCD10FDC307DBA2A59683D,
+	CP1140__ctor_m2CF82CF29534CDADB54D19D0E05E2E699351442C,
+	CP1140_GetByteCountImpl_m4824B0E32EEF299929BC4191A12BF84E9FE1BBA2,
+	CP1140_GetByteCount_m529A7B0534256082CB56456CDBEF5C7F5F8BB641,
+	CP1140_ToBytes_m36749A8CB1078A14863792AC5FE6FFC34527F3FF,
+	CP1140_GetBytesImpl_m4DF6B0B3945750FD69987CE2C93D119FBBAE41CE,
+	CP1140__cctor_m7F7001EDD7329A8B636939A79B279DAEE204589A,
+	CP1141__ctor_mB1C445162F8CF354ED7D56A02256B00AAEF9B086,
+	CP1141_GetByteCountImpl_mE7A91B04EC87A6C831779CD719B9E262FBD8C6FE,
+	CP1141_GetByteCount_mD0D58668C8B9C7116D675A80327BC9AF60873225,
+	CP1141_ToBytes_m8E6DCCAEA5223D6380CBB837B2E1FDD0814E5D75,
+	CP1141_GetBytesImpl_m3FBAD858741A2998E3B8261050832C98F006B1ED,
+	CP1141__cctor_m1D197E091B4BA82D8F60641F6292D6854EBFADC2,
+	CP1142__ctor_mB83611C2A8A7DEB705C91635601D6821909183DE,
+	CP1142_GetByteCountImpl_m0F9F15125D9A8FEFBA2415367D02B987A2A8042B,
+	CP1142_GetByteCount_m0BA2038D4C2CFEF9F3AD9149C759253F4B0F585C,
+	CP1142_ToBytes_m53D14BA07F9ED5C25A6E6049C85B5BA9EBBEB33D,
+	CP1142_GetBytesImpl_m907BB5A927854A27288ACAB863A06AA165B6C83B,
+	CP1142__cctor_m677D581C1466A7152BAD9E2A7F06DF632724BFF1,
+	CP1143__ctor_m545371431A8530853B25906A553A8E31E1805E20,
+	CP1143_GetByteCountImpl_m8AB7E59CC2EC0B4EBE3F9494AA72B03CF582FE49,
+	CP1143_GetByteCount_m9112759F87B423E3300769DFFD01F82677F230F7,
+	CP1143_ToBytes_m0C06277A6BEE6F6BD81A67BC7F15621DF91E785D,
+	CP1143_GetBytesImpl_m52094E38DBDEF285AB2B42472445C3150A10542B,
+	CP1143__cctor_m7004EB0CFB5CAA631DE95541406665FEBBCD7D3B,
+	CP1144__ctor_m51B2788C88607B68EB56F8C483C43852806E2FEB,
+	CP1144_GetByteCountImpl_m7B04131E6283DEB9526BF24F11A8AE435943A876,
+	CP1144_GetByteCount_m2DBD8E0EB1D938E23459EEEC807503F19DF4FD43,
+	CP1144_ToBytes_mAE2A830C8FDDB4ED27A291286F8E4E4E754F26CA,
+	CP1144_GetBytesImpl_m60589C68F1629B5A90901840BEB5D25FA615B54D,
+	CP1144__cctor_mFC4EB2C8E73BBB0F3B316A1FB65393846B493CB5,
+	CP1145__ctor_mAB2409045614A7F413331DD4038CC5613911051E,
+	CP1145_GetByteCountImpl_mCEC8661DBAD8D12C2401E0052D0E2B68343FB73E,
+	CP1145_GetByteCount_mE52D4854149C7F0BD7A3E901EEF647FE9C11BDEF,
+	CP1145_ToBytes_m9E4803110AA355E95163EDD3D47D974934010F23,
+	CP1145_GetBytesImpl_mC943EC5EEEFF0E0DC594683F1E1BA4213BB691F3,
+	CP1145__cctor_m0DD35CAC29800541FB762ABB301913DF3FAB80CB,
+	CP1146__ctor_m180465696E08BCB6EC33CC5D89EA23AFD199E9AF,
+	CP1146_GetByteCountImpl_m492DB1D83E7B599A5BA004DE5A774716A2A050DD,
+	CP1146_GetByteCount_m3E5A887651B37C4859EB33AD3354E7D5936B785C,
+	CP1146_ToBytes_mC4D3766DB5CB0023F19975E07A98A5B5E254D915,
+	CP1146_GetBytesImpl_m41E4BCB7CB507C4703724177E1C80C5481584305,
+	CP1146__cctor_m7462F6839B64FB3957D29B35647CF5250CE37796,
+	CP1147__ctor_mEA1FA288ECA6B5AB7FD835476B512A332855820A,
+	CP1147_GetByteCountImpl_mCDA649E61ABE9D9BA0A83F8E74CCD7A6B1352171,
+	CP1147_GetByteCount_m041DDBF43D6AA3B57893B449FDB3B9AEEB6F9684,
+	CP1147_ToBytes_m7670126FDB380C978676AC074FCC504CC033F1F8,
+	CP1147_GetBytesImpl_mCBC1D40CAC99EED6898AE314C5184CF5386EBD77,
+	CP1147__cctor_m31000FDB4D087E738E63F41E122EC261A7C290B1,
+	CP1148__ctor_mF566457669C1C945F3D0CA20E590D472E0EB31C1,
+	CP1148_GetByteCountImpl_m331DD8AA6BC8D01732B10A560BB401BBB1D8A63A,
+	CP1148_GetByteCount_mDC00CEE7CD0148F4935597C3021D12C8414C4AA5,
+	CP1148_ToBytes_m4BA3782920D586AF57BB117D2A9278CD6B5109A2,
+	CP1148_GetBytesImpl_m7CDE958FCEF4A68852BC7D43E9B794A5AA15BB56,
+	CP1148__cctor_m1FA8F131B4551B420CAAE83C3C1930653AE0D9A0,
+	CP1149__ctor_m2411058354D619C2438CFDBD9F26E917C67F5AE0,
+	CP1149_GetByteCountImpl_m40B1EC72150DE57C232E729D21B6FE47617D57C0,
+	CP1149_GetByteCount_m73A6DCF6BA504BD3749742F694CF6A991EA5DA1E,
+	CP1149_ToBytes_m8C8FDF2F2929724CF1DCBDDB88DE84B9BA56706D,
+	CP1149_GetBytesImpl_m1A833A140E8745769F96025E48522B3A5F2DB3C1,
+	CP1149__cctor_m415163D8C11131539873EA1CB5DC4FA8DE77D82C,
+	CP20273__ctor_m6559CA3A7DEE00F239E661A35A5DA1900FAF29FF,
+	CP20273_GetByteCountImpl_mB8AD4A34B0C5CE30E35989FC6275A061B9DE6D8E,
+	CP20273_GetByteCount_mE8BC44BA2705257FEA6F922FB5DAF2CA8928B0F1,
+	CP20273_ToBytes_m8148B170396AC003257738FE156D848412810C83,
+	CP20273_GetBytesImpl_mCF577F077E513931FFCB81003AE9B75A82C9644A,
+	CP20273__cctor_mF4B56B301E66A12ACA4ABF9E8AB80289A5B6E27A,
+	CP20277__ctor_m234EECF9D060901E2465A47D24581417981D2819,
+	CP20277_GetByteCountImpl_mB1BEAC240D57C97F1BB5FAB3973CB63878879620,
+	CP20277_GetByteCount_m07AB0AA9933B3A373F0EE6C844DCB7516C400F6B,
+	CP20277_ToBytes_m2DA3E113D1292DF63DEF4C4936C4768E51CCF557,
+	CP20277_GetBytesImpl_m901169FA5999C79EFDDAFAF56749664D5B9F2EEC,
+	CP20277__cctor_m1F380BEF29D8521A094E2A2195A710C771B37F0C,
+	CP20278__ctor_mCFCECF0493A84404D5F887D19E220083588F99F0,
+	CP20278_GetByteCountImpl_mB484C82A4F4CA395DE0D7B9B94C1545FEDA02850,
+	CP20278_GetByteCount_mB7D657B371972770D0B88EF30A2002156A63F8AD,
+	CP20278_ToBytes_m6559CB941540C86D1D05911E6694BA62AF808002,
+	CP20278_GetBytesImpl_m3B78D7BCFC9D7FCF65E6DF0CE58BFC066D4A7988,
+	CP20278__cctor_m8B9C3A17DA0589E13278EDE475E6A67FF01A10B9,
+	CP20280__ctor_mE015898E516F59A3D99573EC8B8436E85F43F3F4,
+	CP20280_GetByteCountImpl_m60A851531F730ED0306E0A551502234741F2D5F8,
+	CP20280_GetByteCount_m2955BE690CFC8FF5BFE6D04E61DAEBEA857EFB2D,
+	CP20280_ToBytes_m987D00F80F50211115338A61B73892A05345CAAF,
+	CP20280_GetBytesImpl_m16306CBF2E6F98B96084EE67F81FDFCD2E599C5A,
+	CP20280__cctor_mE677987C75B371ABAF483119414A997AA78E467D,
+	CP20284__ctor_mBF1311D6DD9E8E15BD34892158610D296891F551,
+	CP20284_GetByteCountImpl_mDC33D7EBF55925AEA146A2019F27E09C7855261C,
+	CP20284_GetByteCount_m44AF7871813CFA6AF4E3B9FAA9DE532961B694A9,
+	CP20284_ToBytes_m5298BC2959C48F473862557E01E684AF65EDEACE,
+	CP20284_GetBytesImpl_m032024BF60E63DDF26287452F5C45B401E663F7C,
+	CP20284__cctor_m3B45FA12DE312C9CADAEAD8607501E7EE3F2E76D,
+	CP20285__ctor_m569FEAE673839F59C3950E5327044F113371621F,
+	CP20285_GetByteCountImpl_m0145A8D3C9F3B2F78631A1C2C79CE062EEC6DB13,
+	CP20285_GetByteCount_m2EB58DE4501F246C85C4BF32B72F9EB2909682B3,
+	CP20285_ToBytes_m716478A1585F0DDCAC5FF49705F3A24F2A17F18A,
+	CP20285_GetBytesImpl_mF24B6481411012A59C5EF8165FED133D4D8B764F,
+	CP20285__cctor_mEF2F663E12D4A5477E3A92AF450158A264D2CBBD,
+	CP20290__ctor_m8EC53F797E1B8E4C59A3CC60AA507C9F4199B487,
+	CP20290_GetByteCountImpl_m1062AF52704D9E67122B15FA9F88D798B8801258,
+	CP20290_GetByteCount_mC3C787090F0DB28DB6D463F3A068BE293E602625,
+	CP20290_ToBytes_m059146E36AE044B0249C479B8FD99789D0A4B2DB,
+	CP20290_GetBytesImpl_m7FC4F785CCF72EA90FA56D7DBB86A7E424843760,
+	CP20290__cctor_m23646414BEB727FE1E3009934D3C5A5BD4DA20D8,
+	CP20297__ctor_m7C942EC9517839A841C87D2412832EA89F7DB9ED,
+	CP20297_GetByteCountImpl_m97FA131F3EF9F405A4B84EB03FE8853A53103265,
+	CP20297_GetByteCount_m846D641F809142F9E60D14A815F87B86AA72B0FC,
+	CP20297_ToBytes_m5B435BDCD5BA211019BBE22369C77CFD2F3BD55C,
+	CP20297_GetBytesImpl_m4E73B8C90D77D81BC63A171188011F29D229A490,
+	CP20297__cctor_mD34CD69447B38FB41E1A6BE9DE9923EA911EF71C,
+	CP20420__ctor_mE1199075414679B6E9A75A5A0F276EF1B8F3E89F,
+	CP20420_GetByteCountImpl_m18FA19054EE4E4370EB539F9A1066A6D4B5EAC8D,
+	CP20420_GetByteCount_m5E195ED52B3336C62F3545E1D2F8C5D98FE49D8C,
+	CP20420_ToBytes_mDBA07E73492F3571A540EDB2E2830B054FE4190B,
+	CP20420_GetBytesImpl_mBBEA976A24251761A7027BEE914E4B5B1B8FF87B,
+	CP20420__cctor_m410575E8C107463593576EBB3BA005FA6D9E6A4E,
+	CP20424__ctor_m1E85021A71B05CCBB2E6BFED9241C2E19CC1804B,
+	CP20424_GetByteCountImpl_m2BB1A847D4DCADCFFFB760EE27775CA9BF4600D3,
+	CP20424_GetByteCount_m6AA933A082DAADE421BAC82232D7C4833A4F4C4B,
+	CP20424_ToBytes_mFE1CE27487D7D142CDA94BC35FDDA2A1DD2B3BF6,
+	CP20424_GetBytesImpl_m571BCB7057F5A9A408FC9FC70033F7B3A62E59BD,
+	CP20424__cctor_m1FA346CADB4832707E5EE256B34AA9E6B02FE654,
+	CP20871__ctor_m2C9709576B96E37BDCD54AC0015ADEB27FCF2C7F,
+	CP20871_GetByteCountImpl_m061918F6FB9D5FF279622DAE8C6235ADD7516B96,
+	CP20871_GetByteCount_mCFE203D46DD8FA8DB3D87FA93A6F69E552EC9AAD,
+	CP20871_ToBytes_mDD83A5E662D13579D509F31390819353DCBA6132,
+	CP20871_GetBytesImpl_mC46E8A2AD9A16A0D7784495336B31F55B0494203,
+	CP20871__cctor_mD93BCAF84E781091B4EA9CFE99BF9DBFACA511E7,
+	CP21025__ctor_m7991C64C9B7C6CBD2E9644E09BEBC382BF6EAA72,
+	CP21025_GetByteCountImpl_m5B2B6C08F55C43CDE18910853837FDBB2CF5BCBF,
+	CP21025_GetByteCount_mC5118AA109745C3D81D23976221CD213933E5F58,
+	CP21025_ToBytes_mD06C5D425C78A3D85E8678A24BDFBF4628E965FA,
+	CP21025_GetBytesImpl_m6E8F0DCD5328761984E5FEB4880A1D9CB965AB7D,
+	CP21025__cctor_m601615685F537065039C1DE5BDE553B22004213D,
+	CP37__ctor_m980FA509A950BCB28807B6341B3EA7DCF0C88B09,
+	CP37_GetByteCountImpl_m5E81968842DD9EDA5B655B9889FC1599FFF938C7,
+	CP37_GetByteCount_m6A65EA0E8E5975338A583624005647037152AD7C,
+	CP37_ToBytes_mE7E0AC40F6B4FFB0AC93C1196FEF4CFED556F451,
+	CP37_GetBytesImpl_m3571BCAE36C4CFACF07858F58D13902DA814BD0E,
+	CP37__cctor_mFE3E5DAF0ECE7BA7701868A4DA305F3FF90785CE,
+	CP500__ctor_mAAA34E6D6BE50CD4A4E5B549EC6E569D3DF3392B,
+	CP500_GetByteCountImpl_m9801D5F51D055F027615B83955A5E7C6C13F4654,
+	CP500_GetByteCount_m06B3FF5306E1506E5C1B3A31BE4B8C16C0F88189,
+	CP500_ToBytes_m363E2F897F3F9BC0779385F9305E809243BBE072,
+	CP500_GetBytesImpl_mB71D88579743CD47279E4DF343CEDB09BD6C7734,
+	CP500__cctor_mC07A6DC1A725DB9DD8EDBD0E39710F64773347AA,
+	CP708__ctor_mDD6DF5663CDD3DFE9B6FB9CF07772F19861CBDDF,
+	CP708_GetByteCountImpl_m0CCCDE6E604AD8268170708A107FB09D6E322F2F,
+	CP708_GetByteCount_m9FFFE8AC5951D2B0E3B02794B63BC6A5D3640F94,
+	CP708_ToBytes_m12164204CED1ACA3FDCE64232F55DE8859461E4C,
+	CP708_GetBytesImpl_mAD2AE0DC992870FF549C8C59A923F57990D54FAD,
+	CP708__cctor_m6C86FD3ABC1D1AAB279B22DD2F8DB4D49889427F,
+	CP852__ctor_m523BC32DFB989F14A7BD097A161C682C10FFB935,
+	CP852_GetByteCountImpl_m6ED40106AD3074F24B58928AE4947C8EE7A21F2A,
+	CP852_GetByteCount_m9002C9545D03A1A194C6FA553AA02DDF85C01FB6,
+	CP852_ToBytes_mC92505D54077AA5AAEC639358DE313E287A6FA17,
+	CP852_GetBytesImpl_mD88A2E49D6D2D0D3075C7BB4353E1C9A128F4AC9,
+	CP852__cctor_mD5A61BBFC9AC500FB4DD469C0A64174C23E1C28D,
+	CP855__ctor_mD906188E17E7B6B8BFFF378186BFB22118745725,
+	CP855_GetByteCountImpl_m61D4C37E98D15FD786A8C192BD7D2276E071D482,
+	CP855_GetByteCount_m67A1E089C25811815795BF9F84A52549DEE5F64B,
+	CP855_ToBytes_m72E7D755705CDFBE2EB2BAB3361D7A04C8B57A51,
+	CP855_GetBytesImpl_mA610F5B0A2B87EEA2FEC551B96067B26B2DADEC5,
+	CP855__cctor_mB9ACA367D1A3FC7264FA001D1DFD195E3754E634,
+	CP857__ctor_m04B61ACEFC799F5F2954B626398DE8A12FD9A59D,
+	CP857_GetByteCountImpl_m46F07FCFDDEF5A2C31A7340CA70EBF11A8040E8A,
+	CP857_GetByteCount_mB9E944ADC5E4C7617ADB8D3037041468914C52EB,
+	CP857_ToBytes_m8355DEBC4260E99C8ACA2228326EA9C572300232,
+	CP857_GetBytesImpl_m90349E78307F6186D1B7726FA5CBC4D1008576DB,
+	CP857__cctor_m42823BB500D19C758890A94293445FB689EF1AFA,
+	CP858__ctor_m6236434507F11CBD528092D14C4D73D9BC495118,
+	CP858_GetByteCountImpl_m2750D6B4113AE523F8D3C8F9AB1EE023607D7153,
+	CP858_GetByteCount_m61D0180026C88E0A2C91D9CAC39D7A565D0CC9E9,
+	CP858_ToBytes_mF56F8FB0F8D80D71EB731F270DDFF6916AE17424,
+	CP858_GetBytesImpl_m0E1204CB49BC34ACC848200F3E0F2BCD75EA9E50,
+	CP858__cctor_mC2FA30FFDA59BAB09746D6BB19404A1CB471C150,
+	CP862__ctor_m90FB9C114FD3C2A81B11A0A6CFB439FFD976795E,
+	CP862_GetByteCountImpl_m92A41C0AE3E4C18B4801C9976D104DEF26FB3F47,
+	CP862_GetByteCount_m03A02CB0135C7D4EE907D3AFC6129C79C3BA80FE,
+	CP862_ToBytes_m9DB1A883209CB8F54C8F12BAD5006D1FBB7DD703,
+	CP862_GetBytesImpl_m665DEBD1FD33D1742A3E8F48091B245A8C463728,
+	CP862__cctor_mEFD64C6E41603900EC953A6946505C6FE23B521E,
+	CP864__ctor_m49B5EC32DBDCAF5A1A20C0684DF49E5DDABEB7CB,
+	CP864_GetByteCountImpl_m42A05655BF2D003E9DBC5CBA2E3193E2C7973AC7,
+	CP864_GetByteCount_mEA22FD4F46B3F63FC81DE91F04B610B8A5C42DE2,
+	CP864_ToBytes_m5C9EC8A6B95303EE436D71332663241306E345C0,
+	CP864_GetBytesImpl_m9E2B8B893697703D8E9D790BC1D76A73888E70F9,
+	CP864__cctor_m3F8069AF7E1F25B8DE5CCD34BDE7E4F8D0FA4199,
+	CP866__ctor_m3FCE35555BAA03D7C932FCBE2B79E91F284E63D5,
+	CP866_GetByteCountImpl_m176B37F94252AFDC3FF2862657A894CF42718CB2,
+	CP866_GetByteCount_mE74A1C2C3D2B390428B43F1D4BACAE99643674A6,
+	CP866_ToBytes_m0C0361338706E3EEAE333CC0ADC20CF65B35682C,
+	CP866_GetBytesImpl_mFDEB4F5422083738D2598B0418E23557DAF003FF,
+	CP866__cctor_mABDE7715DFCF25FD64FD5FA922D1488B0E4A0455,
+	CP869__ctor_mB2D20D1426BC17530CC5A564452AC737856A64BE,
+	CP869_GetByteCountImpl_mACF222865A306F21391EF527DBE0B23BBE591504,
+	CP869_GetByteCount_mE51A0171AEAA7A4C60AF938FC0797801A7131B10,
+	CP869_ToBytes_m908C126F3B43FB55E8BE2030D6CA0AC5F46E8C81,
+	CP869_GetBytesImpl_m483FA38EE3D6DE1B36CAE1268B7AB19647368553,
+	CP869__cctor_m5D971D483561DD5ACE0E578D0F194BFA918D867C,
+	CP870__ctor_m507DDC6F8831E087004EB888A1C67143783ECBD0,
+	CP870_GetByteCountImpl_mEF3E403BEE9EC361073695E61A4CC48F75FAE416,
+	CP870_GetByteCount_mEE46CEFC5C4CD808CF42FAE6F854D7B2A17B412B,
+	CP870_ToBytes_m729E1F75CFE9A0A93D59FC3025634344DF75D19C,
+	CP870_GetBytesImpl_mA73798F83EA5920EE72D6591A6DF6BFAA3CD9186,
+	CP870__cctor_m421A99BF0940CDDC6B5E122D2E7A35DCFDCA5718,
+	CP875__ctor_m6A44A19EAD24322D08698FC27A0B87FDC08CA459,
+	CP875_GetByteCountImpl_m51CA9E517679109254D2D3A1D621BB9AE13AF6CE,
+	CP875_GetByteCount_m16FE89DA644E0560CA567333DA197DEFE6F7D4AB,
+	CP875_ToBytes_m19DA22B375D56C6DBFEFBF1133BFECB5BD7C75D5,
+	CP875_GetBytesImpl_m7B663B15464BE8503DE366D40C3D0BDF1404F001,
+	CP875__cctor_mD3FFDA27E8FDE077AF09C0DA00C23B97C750474F,
+	ENCasmo_708__ctor_m02C750FD503B711433C5278D06FE4971E4CAE28C,
+	ENCibm00858__ctor_m2FD1BF341BEDBAFF7D7B7CD84284BA8B4C498EC1,
+	ENCibm01140__ctor_m75FD0DC378EB5C3118FE4D36BC0A199C0598C571,
+	ENCibm01141__ctor_m2ACCC2A952ACE7E34C95328E64F8CF9A8C664E84,
+	ENCibm01142__ctor_mD895439E8897B10D2DDC538A2BA34DEFB5A401BB,
+	ENCibm01143__ctor_m7B3553E21A8FE556078BAE6535D8110CCE411CC3,
+	ENCibm037__ctor_m5E42580ED4D04891457E342ED9C695A2A57EC4A8,
+	ENCibm1025__ctor_mC40E6D2023E7781213354C21A4D62FF2069B2912,
+	ENCibm1026__ctor_mAD4D9249065E0A2717F50AB67829DFCBEA8428E1,
+	ENCibm1047__ctor_mCAFD592FFE9519CAD8DE91632F3291ED4BB97504,
+	ENCibm1144__ctor_m52811A23199A731AFF90AB41A7576E27301B5107,
+	ENCibm1145__ctor_m2B060BDA6F7C1075D7C32841F2ED05131EF6947E,
+	ENCibm1146__ctor_mC79A67B38A9D8AA85228D0442FC0CA5F3F9237C3,
+	ENCibm1147__ctor_m026B64307429005248ACC79E7870717D278A6907,
+	ENCibm1148__ctor_m781E9BC274835D6A9185D867013CDEA2C6D466CA,
+	ENCibm1149__ctor_m1FE6F1E6B60863BDF83E25CCE9B5CCF100BF14D3,
+	ENCibm273__ctor_mC481535F1C4B88989D77E50D226516E1B4DD085C,
+	ENCibm277__ctor_mAC42A0A3E4D45A2ED5D7A2EE439F967DBEA40843,
+	ENCibm278__ctor_m535D2A14A32ACD09EDA825C5AA3639705E14A09D,
+	ENCibm280__ctor_m1B6EB348E0332CC447278F7D40A74B7DEEE28975,
+	ENCibm284__ctor_m127A0BF9EA990286CA755D083D8183EAA736D5F0,
+	ENCibm285__ctor_m23D0D5059BC406AEA14D08A968A7126E809D48D0,
+	ENCibm290__ctor_mAAB1E1C9621A198612941F01642B14B3D17453AD,
+	ENCibm297__ctor_m7A53C2A5B579B775088684602E48877781BA58F8,
+	ENCibm420__ctor_mBF03FE908D50792A4131CBAD25E792AE86E650E0,
+	ENCibm424__ctor_m64BFF6216471E9D93A799AB23D834E3EB8AA14A3,
+	ENCibm500__ctor_mE897F64AD305D7872AECAEA73CA8F91BEE80C0EF,
+	ENCibm852__ctor_mE01B95CECA6A8797015758FB20A7B3567840E716,
+	ENCibm855__ctor_mC3AE426068AFBA7715EA6733CD2492D088786208,
+	ENCibm857__ctor_m451CBE46A1C2CB52AD057C8FD7D295E1FCB8EC6B,
+	ENCibm862__ctor_m0B654C0254964E7C2A6DD70EEFCFE8BD6AB17238,
+	ENCibm864__ctor_m6345E14B82B4D7C70468CD4D4958AF104573EA0F,
+	ENCibm866__ctor_m740C1295C12D74C2CFF3D522E09A3D0940E27B57,
+	ENCibm869__ctor_mB6D8CB4BD18CD116516A2D42DAB9D4B4024E07BC,
+	ENCibm870__ctor_m452D011942AFD0DAABDF9FAB0F4D4C36DD04F9FB,
+	ENCibm871__ctor_m6D6BC4C10F407AF2825D2E88CCEC2C5450F80743,
+	ENCibm875__ctor_m87AF81CCFD5FD3F8A05B8AAE05FAA3B3D84338CD,
+	CP10000__ctor_m8157B67CD82EB7747349880739DFDA4F54D32C5C,
+	CP10000_GetByteCountImpl_m92DD1DAEC3B060FA8C37783C875E4BA43546478F,
+	CP10000_GetByteCount_mDFC8DC10FF5CA5C0DF8C8E640D63A3FEE81B54E8,
+	CP10000_ToBytes_m0EB1FDA404B1E46A8243D7EA2013D00550D2917A,
+	CP10000_GetBytesImpl_m61B4F4942161B89358047420065D200AAE7AFE62,
+	CP10000__cctor_m3423BCDC0E505DB599421B7A831ECC7CD4FD4DCC,
+	CP10079__ctor_mC2C7F1B5CEAAEA295AFC5278B8010E7B64319A9B,
+	CP10079_GetByteCountImpl_mAB0E8535E5C8A83AC3D4423F2610FB895D20BD83,
+	CP10079_GetByteCount_mBA93533CF313280CDC36B21214979B917E005922,
+	CP10079_ToBytes_mCF5FD0CF3B6157D0F161F2B9BDFC70A00F7C77D1,
+	CP10079_GetBytesImpl_mA1CEA471BA4906C0B6AAE2D121D289D4E947E059,
+	CP10079__cctor_m4BD2752A6A99B6F17F6A39DBE7A94FEFE8513323,
+	CP1250__ctor_m3C1580456CDEAB7D920CC57780E5AC0772832F23,
+	CP1250_GetByteCountImpl_m5227040BF56FF73DD36AD4836E8C4F90946D616C,
+	CP1250_GetByteCount_m4E3A12A9DDF024E6A6D0FDB4CF7E76BBCFAEC71B,
+	CP1250_ToBytes_m874736DC751863A064DDD724F85C8F6BE2644022,
+	CP1250_GetBytesImpl_m52B0564DC7B84EF743591AA07C69214D60473C45,
+	CP1250__cctor_m2CEE37F2C084EF8A124FD13313B2FF233DD520FA,
+	CP1252__ctor_m99F9402E7BB4CCC1A64F724AC6B51134F1DF322C,
+	CP1252_GetByteCountImpl_m149F31EF5249CF2B7404E429C6B6B1CD2BA82B89,
+	CP1252_GetByteCount_mC889C3D1294505429787BA68CF731104970D99CB,
+	CP1252_ToBytes_mBB717B4A3265D539EFD99B6F80F44B6D8B0C510D,
+	CP1252_GetBytesImpl_mC456254B1B365525769634B948B82DA01261B98B,
+	CP1252__cctor_mA7A1DE162D2599C21EC1DEC849878474D34024E1,
+	CP1253__ctor_m512AA656A5F6DDDA6A7F1366251538C4891D677E,
+	CP1253_GetByteCountImpl_mC37899719BDA35A9F190A9A73BEC43DDEB05222A,
+	CP1253_GetByteCount_m91853223A51C5E4C2DC7176F0971D17B838E2D84,
+	CP1253_ToBytes_m254509698CE71052A36CEC99B2F23DFDADC8FF27,
+	CP1253_GetBytesImpl_m6AC7E7198B3FF2622CA5CF664ADD8EA2C1D9606D,
+	CP1253__cctor_mA42FA2A6F0BC21FFE23672BAF7D182A5B8A2B345,
+	CP28592__ctor_m6024DDB3663DEE2D28FFF3BFF6169B22C1F4CA74,
+	CP28592_GetByteCountImpl_m33AE0973BFF50406724087008650CF059FA62132,
+	CP28592_GetByteCount_mB3B0DC98270450E5E815F38181AE732EE2754FB2,
+	CP28592_ToBytes_m0E5A12C003A99E5E24BD4CD229981B8F31437C0F,
+	CP28592_GetBytesImpl_m21355A2AD4D9F8534E2EF4F42943D45F6A5CCC32,
+	CP28592__cctor_mB7549D5A230938EA53D90757DDF24DAFA82F97FD,
+	CP28593__ctor_m2A95C96C9E7238F2610347F39D43C3B30F2C1E41,
+	CP28593_GetByteCountImpl_mB4068F7AD6DB8964815586B7E40D590B70D9A761,
+	CP28593_GetByteCount_m39E53645BEC640BA0069480426C82E4973D6FDA4,
+	CP28593_ToBytes_m450922791C5CEB23D6CC8546274B2845F59268AF,
+	CP28593_GetBytesImpl_mA232FF0995208EA92C00FEA1FE69E68A5B903D7F,
+	CP28593__cctor_mF82C120DDA552ACED9097781749D14981BD494C1,
+	CP28597__ctor_mDAA893C13ECEE600973914D71E786A740E26DF7E,
+	CP28597_GetByteCountImpl_m3DB6EFDE0CBD7D07D7E8414338474363CFC5B94B,
+	CP28597_GetByteCount_m77B2002026311E1C09A86457A331559091EB6419,
+	CP28597_ToBytes_mCB393080F8BD174C4FDBDDCA58626282A37CE229,
+	CP28597_GetBytesImpl_m08F92C7A4D773BE4D8491453BE615116880951D1,
+	CP28597__cctor_m08A1E253496E16AFBB3660848D9E617C45EC7BD6,
+	CP28605__ctor_m03930B10CC8077355B635936B3034FC4DD5A41B6,
+	CP28605_GetByteCountImpl_m92595A263C2399862EC145005BC5972A1B0266CD,
+	CP28605_GetByteCount_mCB326C5F5D2FE91421C27AA60DBA0F45CA91C359,
+	CP28605_ToBytes_mA8A3F6E5544DD0CD8413CD570CB78AE957AB36A7,
+	CP28605_GetBytesImpl_m99BD867C7B1447C527FB8174DEBB5CF49E9E37CE,
+	CP28605__cctor_m61D018F18599A426BF7D8043F45B04395FABC67A,
+	CP437__ctor_m7BB68489ED05A8CCC42A98D0BC9B265CB9D73787,
+	CP437_GetByteCountImpl_mC98C281BC50B9C17633F5FBE6C9B87C79FE431B6,
+	CP437_GetByteCount_m1EF2269EC19A3E96207741F9CED319BA404D71C6,
+	CP437_ToBytes_mEC2F8C5F59CD3635D47D08AC9FF4EBE9CB55D97C,
+	CP437_GetBytesImpl_mA1897CAB667DDFCAAB0448BDABD100260EECE922,
+	CP437__cctor_mD951B6A59361F683E6B59ABB621A1A1B5C16232A,
+	CP850__ctor_mB8FDB0C502B3FA2DC0F3CABC36B8BB658F111EC4,
+	CP850_GetByteCountImpl_m620A72794B492BE6D736979FF0FFB568151ECEAE,
+	CP850_GetByteCount_m028A6826261E37394D42B877C2FFFC351F235B90,
+	CP850_ToBytes_mBEA959C5AB02173F61731FF00FA8216D6C91A183,
+	CP850_GetBytesImpl_m47BC588BCE3E43DBC658DE2B83BBBEEC0C6B5697,
+	CP850__cctor_m4166E1BBE99E45BE934053D62AC2C1093C13A9CE,
+	CP860__ctor_m1BE73D2C15E33174E4CC4EA9F6080CDD9394E69F,
+	CP860_GetByteCountImpl_m6893F95D736F311177A6C5343B5ACB4A639F195A,
+	CP860_GetByteCount_mA4CAC152D7676B52630391EA592F1E208CF9711C,
+	CP860_ToBytes_m69A52B956E9BCF09BD027F197643E4C29651809A,
+	CP860_GetBytesImpl_m2241D4DA889361EB468B0A366423EE8108B643FF,
+	CP860__cctor_mD0BE90A8A1F5C412FB740070B47397ECB2DDC0CD,
+	CP861__ctor_m9B47EA0BCB100B0B29445FF14D17FF479684AE6E,
+	CP861_GetByteCountImpl_mB8F1EE5C73F43314F56FC24C206343459A6FB706,
+	CP861_GetByteCount_mC6B7272A6A305A798E95F97B5A3A9B1277F70067,
+	CP861_ToBytes_m5799E7C0BC6840E01091792479F37160B62B1336,
+	CP861_GetBytesImpl_m23AE720D2ED8DA53A27691113F4424C01BD5F5E2,
+	CP861__cctor_m27970A4A1D611A0252CFA2A3BE133FCCE97F6FD7,
+	CP863__ctor_mD29B528CF48F682A99145A75DD5DE5B96B5FA9CB,
+	CP863_GetByteCountImpl_m94348F594F1B8D32F92930E006722DD01BF31099,
+	CP863_GetByteCount_m0BA774E3B6069156923C837EC4ADC0C3ED8C6196,
+	CP863_ToBytes_m54570B41F2A0F41EA7C2909F322E7C011380F0F0,
+	CP863_GetBytesImpl_mA747573195630DA91230F7267D418888B7023A18,
+	CP863__cctor_mF07C0E87B0D3416C2F5FC1ECB51EA13DD012B366,
+	CP865__ctor_mA9EB222451B56CE62692C758DFEA853DC61756DE,
+	CP865_GetByteCountImpl_m918A4670B9C9AAFE52576D0415BDD75EC7B6AC06,
+	CP865_GetByteCount_m5DF69D8FA91ADC46B1E398D57091DFD4D899795F,
+	CP865_ToBytes_m28A6FCF375671E907F9FAC192441CBE594E19A68,
+	CP865_GetBytesImpl_m695333033479A048C65931271A0D381BB928247D,
+	CP865__cctor_mBD799161FB39F855A577388760EB96F86E8276FF,
+	ENCibm437__ctor_mA11B73B01D147D123CC8D5B0B75CA11506022F52,
+	ENCibm850__ctor_mBFF82BA48E8B66C9472F606FCA4D4F8DB3FB2AF0,
+	ENCibm860__ctor_m344334C59B41EBCB62C3284247561458A96BA492,
+	ENCibm861__ctor_m7A49B5A5B2466369DEA7D43602905AAEA32D8291,
+	ENCibm863__ctor_mFC5EE03875D8065A88A1AC93E8C636D4A2AE9971,
+	ENCibm865__ctor_m54279F97869DFDB216B63764E97CCBC21E012E2E,
+	ENCiso_8859_15__ctor_m48BB65FF7B25536D8E402149BE41ADD484E738E4,
+	ENCiso_8859_2__ctor_mE24EBBFF2D7107C05D4615F3015224661F7DC401,
+	ENCiso_8859_3__ctor_m515E986853E1D9F901434D539CFD9B448152F8B3,
+	ENCiso_8859_7__ctor_m92A0C1B839456B85C389A2095BF1FD438B8F23DC,
+	ENCmacintosh__ctor_m914CC69508F18F2F6A2538BF641D11B9AF2D4AC8,
+	ENCwindows_1250__ctor_m0FDC810E296899266585500616F98B8C03AC3DB1,
+	ENCwindows_1252__ctor_m5868D13D5484C0AB86497BB0B4FD920777CF363E,
+	ENCwindows_1253__ctor_mFAFA73469CBCF1C14BC1D993677D21C2AD2EA2EC,
+	ENCx_mac_icelandic__ctor_mFF93B546C7635A3F5ABAE300EA27BF8BA81ED8A9,
+	TestGlbLoading_Start_m229C4FD2E620BD7D623DD5712BF23C1874F64D8C,
+	TestGlbLoading__ctor_mC09DE3E34BEE449FC1CF72235E01E5EB752F8629,
+	U3CStartU3Ed__1_MoveNext_m05A51031AB5970938EB6262FE8513C27BEF936B4_AdjustorThunk,
+	U3CStartU3Ed__1_SetStateMachine_m73FB3EEDFBB02588D34F2CA288F4ABA677FAE350_AdjustorThunk,
+	TestGltfLoading_get_Uri_m22B6FD6636BD0B44431A881AFE2F74927AA809DA,
+	TestGltfLoading_Start_m4177BB83451DCE6BA6DD88E96C937AF131E3A074,
+	TestGltfLoading__ctor_m7EDB7901CF07031A332CEDFEF0DC795C6FD72D77,
+	U3CStartU3Ed__5_MoveNext_m5775D6B5D586A088A9F52571A42A8D95C9207235_AdjustorThunk,
+	U3CStartU3Ed__5_SetStateMachine_mAEA4ABE9B07ED81DB6CF3A8B832177D235976A95_AdjustorThunk,
+	InspectorFieldsExample_Awake_m0D33740D048D3FE7DE9AA36284ED88F23A026223,
+	InspectorFieldsExample_Update_m763296B60230060F2E283D96A0F53CAE51DD0684,
+	InspectorFieldsExample__ctor_m76E15B60D6DC1D312BD53B4C3E1F0E06C89BEF71,
+	CustomInteractablesReceiver_get_HideUnityEvents_m807C2ECCDA00259F3A1AF2AF6AC442AEF74942B9,
+	CustomInteractablesReceiver__ctor_mD3C251ACF85A173A08879D3F0E00B462786ADB51,
+	CustomInteractablesReceiver_SetOutput_mE8548A8E8783524282450C8446360425E2616E73,
+	CustomInteractablesReceiver_ClickTimer_m1298CFBF3FE6796BACF46FF363117F6FAF1A2A2B,
+	CustomInteractablesReceiver_VoiceTimer_m75C1FD4A889EA21F9EAD74B3312A896B37D9D629,
+	CustomInteractablesReceiver_OnUpdate_m25D11A4FC30E43629A49197EE2B5AA38FCA30BE2,
+	CustomInteractablesReceiver_OnClick_m98F8E2D7CCEC7CC38A8B2F84E02AB23AD3A89CF8,
+	CustomInteractablesReceiver_OnVoiceCommand_m454AF0061FDBD0482BB778554816A3C1BE99C2A2,
+	U3CClickTimerU3Ed__14__ctor_mBF46CB3C481C8C0B18D78F55A4D3C84B9D184855,
+	U3CClickTimerU3Ed__14_System_IDisposable_Dispose_mC6AB33667F48E00E5000722C1782764360AEFA78,
+	U3CClickTimerU3Ed__14_MoveNext_m1275F6B3624F9DDC2D0581645F694E7F6B7D95CB,
+	U3CClickTimerU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m98C97F1AC3DE65B7D4246C05C40260F96A873E1C,
+	U3CClickTimerU3Ed__14_System_Collections_IEnumerator_Reset_mAFC78C2FC89B078BD1DFE6DC883C14229444E52A,
+	U3CClickTimerU3Ed__14_System_Collections_IEnumerator_get_Current_m0E606D3839D9D5F818C732203A243AB32EDE246F,
+	U3CVoiceTimerU3Ed__15__ctor_m6BB4941D70C6D39824A1597BFBA718657A74709B,
+	U3CVoiceTimerU3Ed__15_System_IDisposable_Dispose_m2447AF9A4331DA2979524315A93FE6A2ECB06105,
+	U3CVoiceTimerU3Ed__15_MoveNext_mCEB20E9DA152E016B73DB3CC85FA7E67695681B1,
+	U3CVoiceTimerU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF3972008F2C63284A477BBE13D6C51AC6302FD5A,
+	U3CVoiceTimerU3Ed__15_System_Collections_IEnumerator_Reset_m31D2ECD0C972E39962060236E43192E6CBB10395,
+	U3CVoiceTimerU3Ed__15_System_Collections_IEnumerator_get_Current_mD0437D6A026286558E97BADA8CB53E809ACDBFC5,
+	BoundaryVisualizationDemo_get_BoundarySystem_m09D4110E9B97EF93D2ED69487E4F8CC1D4FBE5C0,
+	BoundaryVisualizationDemo_Awake_mC9C5771F3D8AD8D65E43732349A1DF6869F830DA,
+	BoundaryVisualizationDemo_Start_mDD4F37D1285AF82E7835042581B13E784CD30EE0,
+	BoundaryVisualizationDemo_Update_mF383A7D4EFA0A7DEE5504230D48E2F988E9971B4,
+	BoundaryVisualizationDemo_OnEnable_mDEC4960492803CE7E841D4F91178721B1C3F24DE,
+	BoundaryVisualizationDemo_OnDisable_mF5CBA59E396DEC6CAB3EF928908078911496A888,
+	BoundaryVisualizationDemo_OnBoundaryVisualizationChanged_m70BB0AFC5CA1804EF33D45BD57A018E2D9E3066A,
+	BoundaryVisualizationDemo_AddMarkers_m5F7A12FF2E1C30208AA156A2B68FFCAD5A1D2A31,
+	BoundaryVisualizationDemo__ctor_m36673756CDC840CF309141318A65008B66888463,
+	BoundingBoxExampleTest_get_InputSystem_mABB9C2D46E36617E60A5801012CD1AFEF557CFFA,
+	BoundingBoxExampleTest_OnEnable_mC3B3991F3C7C6FD6AEF635AC230C69637D69B612,
+	BoundingBoxExampleTest_OnDisable_m310CA870529AE342444914C3D6EC7E7B0F9268C6,
+	BoundingBoxExampleTest_Start_m11B6D0A76896438589B6216C86BC8D9FDAC02FE9,
+	BoundingBoxExampleTest_SetStatus_m692D0961388DBE35E3A6AB8877E496C5205F7BBD,
+	BoundingBoxExampleTest_Sequence_mF27684782BBBC9D3A55AE63B119F33BDF6A99D51,
+	BoundingBoxExampleTest_DebugDrawObjectBounds_mB2EFF468A3E20D943082EFD7ECAD456C67569760,
+	BoundingBoxExampleTest_WaitForSpeechCommand_mA6373F511D753CE02CCFC12524EFA05F5CFD8DA8,
+	BoundingBoxExampleTest_OnSpeechKeywordRecognized_mB912FCA8B148BF5949D66076968C51102E66F326,
+	BoundingBoxExampleTest__ctor_m247F81E02FCBF9D22B28A7287B8263BFBC245314,
+	BoundingBoxExampleTest_U3CSequenceU3Eb__15_0_m14D9B9A3CFB2700041446EAD6D9D94C177212A1B,
+	BoundingBoxExampleTest_U3CSequenceU3Eb__15_1_m4B1EE58CE49E5629390475263A617EC36FF9F5C7,
+	U3CSequenceU3Ed__15__ctor_mB2E4717CAF3FFC83B4EF6175D0914EEF696ECFAE,
+	U3CSequenceU3Ed__15_System_IDisposable_Dispose_m6A3E41EDB7064BFC01F94BF97EAF6722B7F5312C,
+	U3CSequenceU3Ed__15_MoveNext_m7E8C4E0A193DCEC5D1492CD0BA0F285124E2D2CC,
+	U3CSequenceU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m40CC6D16036F7F843EC29B994BCC059CF8AE88AE,
+	U3CSequenceU3Ed__15_System_Collections_IEnumerator_Reset_mE449D3CD0AF6A3876AC3DEBF43F8045F2ED3E4E0,
+	U3CSequenceU3Ed__15_System_Collections_IEnumerator_get_Current_mF421DFD6DEF92DDA98D22941E3C7EA2C6B0B3240,
+	U3CWaitForSpeechCommandU3Ed__17__ctor_m2C3B8621ED34C59832245E1602519CF07C06B22A,
+	U3CWaitForSpeechCommandU3Ed__17_System_IDisposable_Dispose_m3EA26BE2BE617A09DEB850AC2989AA17A20EDAB0,
+	U3CWaitForSpeechCommandU3Ed__17_MoveNext_m605BD0790142E7B898EC16B83EFCD7557F59DA85,
+	U3CWaitForSpeechCommandU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5DA41828A9B51358E6E729C136B0EE2EFF30E1B3,
+	U3CWaitForSpeechCommandU3Ed__17_System_Collections_IEnumerator_Reset_m1E829C1269F966AFAE8B398FC3D66EE0DCCAA218,
+	U3CWaitForSpeechCommandU3Ed__17_System_Collections_IEnumerator_get_Current_m13E78EA31C7E6B7142B46DC2309B738F131DBA9A,
+	ChangeManipulation_Start_mA36F14E84FE69667543CCDB90558FEA37D09EBA1,
+	ChangeManipulation_Update_mF9849F106C858E150ADCB89299512241348D8BCF,
+	ChangeManipulation_TryStopManipulation_m45D8762C5440265CA26DD23CBD83CE1E7EE97855,
+	ChangeManipulation__ctor_m934A332CDAE46D5492EE76D06F86F77EAB0E8044,
+	ClearSpatialObservations_get_SpatialAwarenessSystem_m0CD14724C2C4D449B47093AF5C6A5538D78509EE,
+	ClearSpatialObservations_Start_mD63BBB31AD13D4E93939703A8F39C07CC1D72C18,
+	ClearSpatialObservations_ToggleObservers_mB25018C4FBDCC812B3786F11D39F35B0820EC061,
+	ClearSpatialObservations__ctor_m20ECB2818C7865E83879D13603683D5854127466,
+	ColorChanger_Start_m9BAB1630692327036EDE3D0DAE8E56D81D488640,
+	ColorChanger_Increment_m9783FF292243CC1B1D1891EDBFCD0326A3320C0D,
+	ColorChanger_RandomColor_mFDEEB5DDF3CFA9B7592E59CD22350D171C8E42E4,
+	ColorChanger__ctor_mFDCB5EF0C00F798D36AF03B7175D90CA950846E7,
+	ColorChangerUnityUI_Start_m040ADDADA810531073D83C79E995CDE164F1ABAB,
+	ColorChangerUnityUI_RandomColor_m7BD465AE2F9B3DD0D2B9ED29704CFF1D44E85183,
+	ColorChangerUnityUI__ctor_m85F22CFB6018D1F9A4156DDE7BCA8C60F7D5E7F5,
+	DebugTextOutput_SetTextWithTimestamp_mF9286A60E2E4267BA99D08A8477A730D6244FF8B,
+	DebugTextOutput__ctor_m507204FDF3464B022DEB980965331FF16A9DAE53,
+	DemoSpatialMeshHandler_Start_m89E6DF0320E966AD102BC4D56DD00BE04F9C83D0,
+	DemoSpatialMeshHandler_OnEnable_m9C1F9A6E9DE60C365CA39C286400700B4CD5C325,
+	DemoSpatialMeshHandler_OnDisable_m7462CFEDA74845AEFCA58321CE333504823C2F0A,
+	DemoSpatialMeshHandler_OnDestroy_m4E38931D86C694FDE78C3865C4F800D65FD7ED31,
+	DemoSpatialMeshHandler_RegisterEventHandlers_mB5E2DF77825C8A89CAA601616CA21EB6038BF4CD,
+	DemoSpatialMeshHandler_UnregisterEventHandlers_m5617ADC03565D69D4279F7BD62C2FE8B8B77A835,
+	DemoSpatialMeshHandler_OnObservationAdded_m3E84D1109EF85920C9F27AE80E5882CBF77A52F9,
+	DemoSpatialMeshHandler_OnObservationUpdated_m7916C57B170BB753FC16FDE017753575C77BD198,
+	DemoSpatialMeshHandler_OnObservationRemoved_mC21C7184514E1100DC2D9B428ED9BEC745FF8D9A,
+	DemoSpatialMeshHandler__ctor_m128FF5A42EB7BEF2A1D463B5E6179FF7E8D0EAB4,
+	DemoTouchButton_Awake_m2CE67E7508394C3F991260D40A40570C09B66EF0,
+	DemoTouchButton_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m184A372117F3A2A5B8A7FFA4EC62D302D1A1955E,
+	DemoTouchButton_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_mE694D1795E93098F7CCFA40CD292D8AAC17DDD8E,
+	DemoTouchButton_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m165A1C4C12A3FC1B6FCDD5D6EB92AD94D7C8DA71,
+	DemoTouchButton_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m95567406E97A080541AA0429F142DBBD6547EB31,
+	DemoTouchButton__ctor_m2985C3AFB836DF61F3AF371020E70D4D39307475,
+	DisablePointersExample_SetHandRayEnabled_mD4AD0A3B80259FC78AA22105E8EFAA46943F8E6D,
+	DisablePointersExample_SetRightHandRayEnabled_m739EFF8B8E3FA24012BBFCAA8EA4069AC63043DC,
+	DisablePointersExample_SetLeftHandRayEnabled_mE20543E9AE6D45A41489F27879D9C543B5DEC152,
+	DisablePointersExample_SetControllerRayEnabled_m97EDA80DE8921289BD346AF5B8EB6CBF5CE9F3D4,
+	DisablePointersExample_SetGazeEnabled_mE6649CE4DF80251388A72829210C5D9B6CC7E733,
+	DisablePointersExample_SetGrabEnabled_m46A4FBDC22811F9A6329D7A4CEE5B7650ED2C7CE,
+	DisablePointersExample_SetPokeEnabled_m1C9055C680A5BA0BD90CF656A22B87E12B2B213A,
+	DisablePointersExample_SetVR_m7F7DB370FB8D21A79527E1D487DDD2B0D529B386,
+	DisablePointersExample_SetFingerOnly_m492D87C9941C90FEDACF0379538CFD5C1165CB8D,
+	DisablePointersExample_SetHoloLens1_mBB9F980E1B119CAB19233AD5B720DCAD0F7017AC,
+	DisablePointersExample_SetHoloLens2_mF112D030E71B808FCC1312AE6CFE88B0845A7B51,
+	DisablePointersExample_Start_m2DD78261A4FF43CF5BBCEB9B41F9E6C7BC492BC7,
+	DisablePointersExample_ResetExample_m26285F485E9F7B3C9B2EC91150412C036B843DE7,
+	DisablePointersExample_Update_mD100360F2A5FFE5C696A00A01FDC30EF6EBD7CA3,
+	DisablePointersExample__ctor_mA092B78239106BA00B5449C106EF16F91466D958,
+	AudioFeedbackPlayer_get_Instance_m7EC7DBB489C623BF4958D9463B62E22CC283897E,
+	AudioFeedbackPlayer_set_Instance_m647DF716B71B2CDDF88639D72EB8B5C1911E04F7,
+	AudioFeedbackPlayer_Start_mF117B9EAADE98E3218C1E0331F420E9CF780C8DF,
+	AudioFeedbackPlayer_SetupAudioSource_mCF42885C5DB56404DB4E4BD55193D0A79640412F,
+	AudioFeedbackPlayer_PlaySound_m76D1E94B009FB86CF23E9A927B27DBD75EC92F1F,
+	AudioFeedbackPlayer__ctor_m89703D1AD087573FA697A99725B5C30B794C86A5,
+	BlendOut_Start_m70EC672082EFD160472E1FAFD40818818AD58221,
+	BlendOut_InitialSetup_m409FCE9B603166DCF4513D246B2A236CDA69B5B0,
+	BlendOut_Engage_m42E44FF7233D5F6F78EEDBA424758F5315103730,
+	BlendOut_Disengage_m9399EA4607D87D2A96D84879F293B44C637D324A,
+	BlendOut_DwellSucceeded_m5C886F7BA56C71A974DE56AC92EC2A7031D1055C,
+	BlendOut_Update_mDBE66F454EA646BCF655DD4A97711B578D381049,
+	BlendOut_SlowlyBlendOut_m516D4D8FF65D59C3E1776F9D786D761084F362CE,
+	BlendOut_ChangeTransparency_m1660F63C5A64E7317393E3B05CDC2E572F6AB518,
+	BlendOut_ChangeTransparency_m962677A7694FE44441406201D8D75273C517683E,
+	BlendOut_Materials_BlendOut_m2DDE9236F7CA9E2837D51CE1C3130BCCCDF9CA10,
+	BlendOut__ctor_mEE97C545EDC304F2F19850DC3EA9CFCEBC2AEC77,
+	ChangeRenderMode_ChangeRenderModes_mC2503793B878D475F0533E340689CC6921F455E5,
+	ChangeSize_Start_mB0FCBE67DF7662D25EFA65C79B9177A295CB8C40,
+	ChangeSize_Engage_m2FC6D8702A8657CEFE81080BD88CB7688630F756,
+	ChangeSize_Disengage_m260FC21F5B8A952E24B364DB1D4A5DB21205D5BB,
+	ChangeSize_InitialSetup_mDEDE6F0895BEA2E3CC79D74B76061161946B6ED3,
+	ChangeSize_Update_mEFF4B3CD03CA0CE3B72801EB187771DFCA188209,
+	ChangeSize_OnLookAt_IncreaseTargetSize_m83764E922F648A52AED3CCC7BDE20B01719D67D3,
+	ChangeSize_OnLookAway_ReturnToOriginalTargetSize_m10C8153F2333262372DF88447A7F74DBFD1FB895,
+	ChangeSize_AreWeThereYet_mEA6708406660417E868551AC941B8DF2A3FE1364,
+	ChangeSize__ctor_m64A88C4D7583AF53BB333A6D60E7A51CA6348AB5,
+	ColorTap_Awake_mB66F3D08AA285D8003EBA46029378CBB46686971,
+	ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityFocusHandler_OnFocusEnter_mDB43CDD5B61A5518B8A1616F4D6A68A02B85E826,
+	ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityFocusHandler_OnFocusExit_m45BD9C133B112723F4E7E529B470FBF223EA81F0,
+	ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_mEBB5F36A6EE5C79AC86630279404799F1ECA9B0E,
+	ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m471D849806C3E9FD5420A056CB43B31D715B7856,
+	ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_mFE4F770CB2A296DB1ADE98BDB2861CC7CD6C808C,
+	ColorTap_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m9DC7D80E65CFD3C5108908E02451D9A2336A6E97,
+	ColorTap__ctor_mA5F587DE0C86A80589D3059BBE5EED05B35E3A2D,
+	DoNotRender_Start_m2E8C0F7A91B0CE016798008005B544D09EBA6D25,
+	DoNotRender__ctor_m01E99488AFDCC5B70204EC0FEFD4BAB1DBA2E75D,
+	DrawOnTexture_get_EyeTarget_m76F1932A7EB6B070AC9602157CCFD3F3C47DCF49,
+	DrawOnTexture_Start_mA5E41B8217ED85932E9D78FC91787950AD08935A,
+	DrawOnTexture_OnLookAt_m2B07F8DD80E6C5BCA915AA2FA257576A89F7A2A6,
+	DrawOnTexture_DrawAtThisHitPos_mFE23FA71783DED7B25AE2D18485B8EF7584D78B9,
+	DrawOnTexture_DrawAt_mAE2D55E51E63C0A27739867781965F99FFA43ECA,
+	DrawOnTexture_DrawAt2_mC6A7374862E0A27EE4C9C1BCF40446EE27A3B4F4,
+	DrawOnTexture_DrawAt_m23858F87D5DF80A03379BA9FBA3710AEBFAD9A64,
+	DrawOnTexture_ComputeHeatmapAt_m5A60D91A0E2F8DE7445FF41981297D625E390B49,
+	DrawOnTexture_ComputeHeatmapColorAt_mAC5544C0830C278EB541F37126C39B4A23D78798,
+	DrawOnTexture_get_MyRenderer_m0CB33A91ECBF2248AEAFF02D6787A48F0FB0FB86,
+	DrawOnTexture_get_MyDrawTexture_mAA6E46F1E132919E0096D7ED6DE98140AD83784B,
+	DrawOnTexture_GetCursorPosInTexture_mC9E0F6C45EBD9433B9F9D7CFD8A983842D626657,
+	DrawOnTexture__ctor_mF220822EA934BFB874357A90A2EFEC46F9B82294,
+	U3CComputeHeatmapAtU3Ed__20__ctor_m2864A3C063841CFC20BE961292521813BCF76FDB,
+	U3CComputeHeatmapAtU3Ed__20_System_IDisposable_Dispose_mDA50B146E2886E7F511B895B29AA38D10E4F7766,
+	U3CComputeHeatmapAtU3Ed__20_MoveNext_m4EF3874DA9EA72B926A0E04F4D8E23A55D594C01,
+	U3CComputeHeatmapAtU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m01C7893A02AFFCDC6456FDE0D385DFFFE716677F,
+	U3CComputeHeatmapAtU3Ed__20_System_Collections_IEnumerator_Reset_m39A96F4D1CBAA660BB45722882AF1F27ABA97A56,
+	U3CComputeHeatmapAtU3Ed__20_System_Collections_IEnumerator_get_Current_m4B363E8F634EE8F97684084D7B3E31E5D13C5EAC,
+	U3CDrawAtU3Ed__19__ctor_m7CF2873A972B81873555B45012F508136C18A917,
+	U3CDrawAtU3Ed__19_System_IDisposable_Dispose_m309932CE940BFD40C55C2DB184AE4F25826E775E,
+	U3CDrawAtU3Ed__19_MoveNext_mC0E7AF147175638E0E1FA883B2E99F03F1736F77,
+	U3CDrawAtU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4374EF172F1219769A552184BB2B9086FA9CC180,
+	U3CDrawAtU3Ed__19_System_Collections_IEnumerator_Reset_m71F64B5755BABAB0248632632CE609939C5EF3E0,
+	U3CDrawAtU3Ed__19_System_Collections_IEnumerator_get_Current_m61C9DF5CD61978D691DA93A705FA56234192D15A,
+	DwellSelection_Start_m43C70C94EDFA9995C28CB0EA3E50A9627CC22217,
+	DwellSelection_EtTarget_OnTargetSelected_m736EABF2704585A244FE3E935C25324B6C277523,
+	DwellSelection_EnableDwell_m6F99F3E1F0B0F798AF98523FDA988DEFD139AC72,
+	DwellSelection_DisableDwell_m4313AA318C8DD43F4A4AEC6EFE2D4254FC5B831C,
+	DwellSelection_get_UseDwell_m8B38A5FBD4EC0D2548750C1A01A420654D6D0EA1,
+	DwellSelection_OnEyeFocusStart_m9C717AA57A34D3B28D4A537E9CCABC8B4A5D7447,
+	DwellSelection_OnEyeFocusStay_mD970A1C2AEFA70C96E3FBD9B28194713BC054863,
+	DwellSelection_OnEyeFocusStop_mFAEAA9D085D5DB71626C533A09CA7F66E1C034E0,
+	DwellSelection_StartDwellFeedback_m96898A08B73157B5C6203BFFBB20B34A437EFD8B,
+	DwellSelection_ResetDwellFeedback_m8875E51BC408A20A31EDA751E4FB8D1EF6DC9C6E,
+	DwellSelection_get_SpeedSizeChangePerSecond_mBA6CF3E460259338B5B4BE389F092CD9726D5BCF,
+	DwellSelection_Update_m702019B7A900279204BD34F187EB0203B468E0AF,
+	DwellSelection_ClampVector3_m046274ACFF7AEA3F7AB9600A9ABB84A3BCF8D350,
+	DwellSelection_UpdateTransparency_mBB7B7FFE9FFCA9108AC8A8873C56B2DBF900ED01,
+	DwellSelection_LerpTransparency_m9E5AEC6FADD66B3135FF85A6C6AC0CB7412A2CFE,
+	DwellSelection_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m0BD0AA1B046FD211A54B58B330124107ADE12D0A,
+	DwellSelection_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m3524799211E43C033B29130DB83FD160F5709FD4,
+	DwellSelection_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m6D65149270C109FD3B307801EE95D38FA6E6424D,
+	DwellSelection_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m2C17A71DACF1EDC78D37BD63EF3F5F1741FC47B2,
+	DwellSelection_get_TextureShaderProperty_mF6E79C3BF2F03F70F66E674CA4363C7DA1608DF9,
+	DwellSelection_set_TextureShaderProperty_mF35C365C9F6292CFDAF708D218BBB2BEDE84DA51,
+	DwellSelection__ctor_mA9F2E459BBE2FA26737E7AB6B7EF44207594D96C,
+	DwellSelection__cctor_mC60B91B014F22CEAB219E23A98D7C1D152602826,
+	EyeCalibrationChecker_get_InputSystem_m7DE61E3764E9210D700CF932F8F688D5BBF48B4B,
+	EyeCalibrationChecker_Update_m2DFB882042B6029BE604B76EF6E76CB02BDC8165,
+	EyeCalibrationChecker__ctor_m6666D2B7CC4A732EF160FA4F2577E6C0931952BB,
+	EyeTrackingDemoUtils_GetValidFilename_m6C4B1EF5696517BCA781213FFCFD6F7CB979CC16,
+	EyeTrackingDemoUtils_GetFullName_mD14A1431B480595A897969378E4353977C5FFF53,
+	EyeTrackingDemoUtils_GetFullName_m7272B8F9AD7FA4CA06AEA72F6EB78D140C9D9522,
+	EyeTrackingDemoUtils_Normalize_m9D5EBE52D780A20368D624854435C1C6D8A80AD7,
+	EyeTrackingDemoUtils_VisAngleInDegreesToMeters_mAC247B958CB9C298989267D3CBB0C0DBA35B076B,
+	EyeTrackingDemoUtils_VisAngleInDegreesToMeters_m8124359420AB6211D7BF4A24B809716E9940194E,
+	EyeTrackingDemoUtils_LoadNewScene_m9C9C5A02DF0F06A1BF55F46578513B8510AB92F0,
+	EyeTrackingDemoUtils_LoadNewScene_m5A4B1698875C8739489A9EA380A192A0610F9680,
+	EyeTrackingDemoUtils_GameObject_ChangeColor_mBA2DB961EA6ECB355AF04CAA9169D50C6EC2B4E7,
+	EyeTrackingDemoUtils_GameObject_ChangeTransparency_m35C8C148704D938EB60BE92306BAE62E01058E49,
+	EyeTrackingDemoUtils_GameObject_ChangeTransparency_m04B66E7501121DEF87160373EDB47FDD662044C5,
+	EyeTrackingDemoUtils_Renderers_ChangeTransparency_mF9F5548E6C8904CCF5D2DE0AC1171C548CDBED2E,
+	U3CLoadNewSceneU3Ed__8__ctor_mB860F25D9F6538CBA4FB98500CABF0395DD3D5AA,
+	U3CLoadNewSceneU3Ed__8_System_IDisposable_Dispose_m4916F7075239D6FAB45A74FC6E89BDACBFC656A9,
+	U3CLoadNewSceneU3Ed__8_MoveNext_m2D725016549B7F19FEE9CDA3D6546714A7F9809A,
+	U3CLoadNewSceneU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m28A50107D55102253CD8ECA7F07FB5B577BEF94A,
+	U3CLoadNewSceneU3Ed__8_System_Collections_IEnumerator_Reset_m6DF3E6C202A8FB13BFFCCBBC5806E0DEF5B87C34,
+	U3CLoadNewSceneU3Ed__8_System_Collections_IEnumerator_get_Current_mD6B69C2A6173DAC36F51CAC6F96F8AFA4ED88FA4,
+	FaceUser_Start_mB1EE0C8EF2D07D7B5976DCDE528E0D74F719A7B1,
+	FaceUser_InitialSetup_mAD9D266CD0A0FA398AC28250D729DF682C00F6D7,
+	FaceUser_Update_m1BB807DCAEEF611317CFF573CFBBFF39AB8613A9,
+	FaceUser_TurnToUser_m18CDE4511C5DC053E498BDCB937D5AFE0B5C57A7,
+	FaceUser_ReturnToOriginalRotation_mA719502E66E8C05675B809F72277EDAC7FEB3255,
+	FaceUser_Engage_m1E80D649ACEDE26170A9DF4C9A1B9643C19C29DF,
+	FaceUser_Disengage_m09553E3479433EA7AF6E2F597327FF85E9291631,
+	FaceUser__ctor_m3320D133596C514AE4B37ECE39D98AA4CCA4445B,
+	FollowEyeGaze_get_InputSystem_m27B7480D2C73242EED5C7DB1EDBFE7EC77C76C98,
+	FollowEyeGaze_Update_m425A9B582F7669F1B01F4A7F63D2D7BCC9855F6D,
+	FollowEyeGaze__ctor_mF80CD8859BFC50024569A83F84BD6AFCE2EBB79C,
+	FollowEyeGazeGazeProvider_get_InputSystem_m13CCCFA46E97DF2752F6C45F5F44020A8F86BB29,
+	FollowEyeGazeGazeProvider_Update_m8694B20FCE1B6500FCEF7C3B189A18417EFB892B,
+	FollowEyeGazeGazeProvider__ctor_mE4FC141C178A72C06309A45454EDD88CA3B127CC,
+	GrabReleaseDetector_Awake_m984AB4914A0CEB3D7EEF09125FC8BF315345F341,
+	GrabReleaseDetector_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m92BC682156AF167367C049D3A67D0961F425AC19,
+	GrabReleaseDetector_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m5B2BCEAC2932D0486BBF274BAA823C66493FA32B,
+	GrabReleaseDetector_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m46F0752CE1B5323A7D8A6F95E75329799BD0C459,
+	GrabReleaseDetector_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m21460E54B3F8A21254E1EF601A63905AE86D9673,
+	GrabReleaseDetector__ctor_m289FA0839EF826E516E57E5BA7A735A6E80AC316,
+	HitBehaviorDestroyOnSelect_Start_m63F05785D0E87A190C6190A1F3C375D34FF32979,
+	HitBehaviorDestroyOnSelect_SetUpAudio_m34CF556396EA58E0C679B17052BDE841230E3E73,
+	HitBehaviorDestroyOnSelect_PlayAudioOnHit_m99F9EB8F119E0243A05BE1ACF0D290B84D311B0B,
+	HitBehaviorDestroyOnSelect_PlayAnimationOnHit_m30C66B16C788468246403984F1D2F038248FD7D0,
+	HitBehaviorDestroyOnSelect_TargetSelected_m97ED71E056B2DC4AC04CB0275B0E71C4F209D524,
+	HitBehaviorDestroyOnSelect_HandleTargetGridIterator_m3DF537B8211AB58480AED2C097FA92D45A7848C1,
+	HitBehaviorDestroyOnSelect__ctor_mE48649D4CDC769426FEC23278A66A376A4579C2B,
+	KeepFacingCamera_Awake_mB322E8A30FD7E1751B35780F95321CF7ECFD77AF,
+	KeepFacingCamera_Start_mCCF868CBDE3B93669D1F864AFFA49469B952DEB4,
+	KeepFacingCamera_Update_m88D59553F487A722585A57624ED6F0E30A29B3EB,
+	KeepFacingCamera__ctor_m8D1A46992245BBD25341DD8DB1376ABD0B936366,
+	KeepThisAlive_get_Instance_m0883844BC50436A567A74FC784D76EC3B6926EA3,
+	KeepThisAlive_set_Instance_m43A7F9DFCD4DFC5928984F5E9487095E5A02052B,
+	KeepThisAlive_Awake_m8FC4E2F51DC2A36E39516177CDCA27F64A587D81,
+	KeepThisAlive_Start_mACE04A0639ED6F94B2029702E7B48E097E57D0CC,
+	KeepThisAlive__ctor_m268224B3D562224561CC7EF0B0982B336E88DAE2,
+	LoadAdditiveScene_LoadScene_mB8F8863DB398B368A2034CA57861F2936070DE83,
+	LoadAdditiveScene_LoadScene_m8FD0FE44FB84C2D356AD539C8D0E56274A88FF1A,
+	LoadAdditiveScene_LoadNewScene_mF49C8F9836B9F181EA911CF7C49FEA0C99053509,
+	LoadAdditiveScene__ctor_mF35DFD096128D55291F7DA344CDFB4D523A0CE0F,
+	LoadAdditiveScene__cctor_m2305DE02573D8751E92AACD2010C6504FEC40231,
+	U3CLoadNewSceneU3Ed__6__ctor_m41B02A53D2D005AEB77669610D9FD4D0C2D2FA03,
+	U3CLoadNewSceneU3Ed__6_System_IDisposable_Dispose_m652F94ECACC48A6DC00CE83BBC742D6115953E6C,
+	U3CLoadNewSceneU3Ed__6_MoveNext_m516441797EE7F3FD3147F38F5F4652EA9F3A9CE3,
+	U3CLoadNewSceneU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3F4D30C2F5A99DFECF92913B44181BC7D78D35FD,
+	U3CLoadNewSceneU3Ed__6_System_Collections_IEnumerator_Reset_mD0A86BB4B03EBABAAEE1ED6D3B61FE9756E00968,
+	U3CLoadNewSceneU3Ed__6_System_Collections_IEnumerator_get_Current_m78E7121DD09C762D5CE5447452213C9AF8EFE872,
+	LoadProfilesOnStartup_Start_m33F768CF7B7B2709FE1FC80727F147BCAD40F5D5,
+	LoadProfilesOnStartup_LateUpdate_m8D12ACC357800EBB0F58B0F6646381986B5AAAF4,
+	LoadProfilesOnStartup__ctor_m3CEB4E5F1D7582DEB4D8B962E3AAA98080922960,
+	AsyncHelpers_RunSync_m233DDC27AACB7E45D8634A50E3F5C724F64EF6A9,
+	U3CU3Ec__DisplayClass0_0__ctor_mD9E332713184D420FA5C3130F8D48337E75E4DBB,
+	U3CU3Ec__DisplayClass0_0_U3CRunSyncU3Eb__0_m6CC2C96296388A337F21057BFD54DED0AA09E860,
+	U3CU3CRunSyncU3Eb__0U3Ed_MoveNext_m83EF0B2E83B2E7CD702A0944EAC30AF881D367A5_AdjustorThunk,
+	U3CU3CRunSyncU3Eb__0U3Ed_SetStateMachine_mAC7A6E442691CFBEA8D18DC59FB1F769CB0DAB4A_AdjustorThunk,
+	ExclusiveSynchronizationContext_get_InnerException_m052CEA69E2629CCAECE9C070A98680296E9B2F81,
+	ExclusiveSynchronizationContext_set_InnerException_mC7D60F277ED4880003977789FD35FA1DE9DA6921,
+	ExclusiveSynchronizationContext_Send_m8340905F98625A6BFF960C2974ED1F04748C6BC0,
+	ExclusiveSynchronizationContext_Post_m17095D324131E8E3EC18FF9B534B72103F10D36B,
+	ExclusiveSynchronizationContext_EndMessageLoop_m6D36179AE4BECF714363C611D134907B9BB89E3E,
+	ExclusiveSynchronizationContext_BeginMessageLoop_m53ED264FB623A90D61B1133FFC0CF6641BD98FA6,
+	ExclusiveSynchronizationContext_CreateCopy_mA840D195B395BF2A2BC25496A0EE3A759AF34644,
+	ExclusiveSynchronizationContext__ctor_m6E3538A136FF939908B6556AC0E728F633148257,
+	ExclusiveSynchronizationContext_U3CEndMessageLoopU3Eb__9_0_m22CEB2B195CDA45B1FFABFAC006888FCB68481EE,
+	BasicInputLogger_SetUserName_m9EF23AA33ED2660A66BADF78DD6832E29EC731D7,
+	BasicInputLogger_SetSessionDescr_mED6C4BB8F8CFA8A4B0D2B2087B14FCDDC5C9EEE6,
+	BasicInputLogger_get_LogDirectory_m35DAEEDD871F3D8185ABFCD0D1E00456BA7E2C71,
+	BasicInputLogger_CreateNewLogFile_mFCEF7D4D48D6100215CB2C62F7B9DF06136EC841,
+	BasicInputLogger_CheckIfInitialized_m2E46E9C2896BF9DE5661C9DAD2F3C6BCC8DC3412,
+	BasicInputLogger_ResetLog_m3DC2A532E57DF85B6BDD539A39DEB9724A72DC59,
+	BasicInputLogger_get_FormattedTimeStamp_m7596C7DA5CAB6950DCB10838FD07CBD1B110A512,
+	BasicInputLogger_AddLeadingZeroToSingleDigitIntegers_m438D0DC8664B2DBA6EEB23A37AD9C14F003958F5,
+	BasicInputLogger_Append_m364F14249D4CE030E917A336EBEC106E6E1A3352,
+	BasicInputLogger_LoadLogs_m14AB3095A14197FA630C7FB661E1E4B2C8B4AD69,
+	BasicInputLogger_SaveLogs_m0CBB328FFF40500395EC7995D7C199607D4A8F99,
+	BasicInputLogger_get_Filename_m02F01B498A9C818AC44AC5410AB2A2A8321B65AC,
+	BasicInputLogger_get_FilenameWithTimestamp_m257C1536666194100DCB27EF7B02F76C0E057E35,
+	BasicInputLogger_get_FilenameNoTimestamp_mD9079CE07B185BCCD63C78D428CCF28B36774768,
+	BasicInputLogger_OnDestroy_m594D99190A437C7CE23B6A8329ADBF603A622159,
+	BasicInputLogger__ctor_m780D7EFC80568EA47F297A4CFA62BEDDE9A66B66,
+	U3CCreateNewLogFileU3Ed__14_MoveNext_m56E7CDA71DC9A19BCD60E5693D8360555B00AB59_AdjustorThunk,
+	U3CCreateNewLogFileU3Ed__14_SetStateMachine_mB48F17772B73A244FAC85AD0D4B743E6FA9B1C70_AdjustorThunk,
+	U3CLoadLogsU3Ed__21_MoveNext_mA61159B36136A4E2CB39024C0B8CA9E0A165E534_AdjustorThunk,
+	U3CLoadLogsU3Ed__21_SetStateMachine_m6463E898AADFAD4B1825FBB8EF36BF45F67A3420_AdjustorThunk,
+	U3CSaveLogsU3Ed__22_MoveNext_mECAF6D8A59AB1BF820A22D7BC5BE689C47B3ED34_AdjustorThunk,
+	U3CSaveLogsU3Ed__22_SetStateMachine_m45E515FA76EEC91EF02FA4F8F507435C98B01306_AdjustorThunk,
+	CustomInputLogger_CustomAppend_mEADD6FCA8EC3B40715F8FBB8A645D38C2993D8EC,
+	CustomInputLogger_CreateNewLog_mDECDE5243E38D2AD838A22A966AA703674EB6C65,
+	CustomInputLogger_StartLogging_m41841D9C95A43989E640B1C00FEB5175DD1E7D68,
+	CustomInputLogger_StopLoggingAndSave_m38F0693FB50B498658DBCCE5A224CBA10CB7B1D1,
+	CustomInputLogger_CancelLogging_m1AA77614625A868CE7806412D5EE24D3310F018A,
+	CustomInputLogger__ctor_mA418134FFFEBF1B2BD6FA898378ADBDB9333CA78,
+	InputPointerVisualizer_get_InputSystem_m7A82CF507CC4604288B69F29B795C2EE3FFE4CFD,
+	InputPointerVisualizer_Start_m5A2D1B73E1A8A8389F4F07C063E7C967F47B8276,
+	InputPointerVisualizer_ResetVisualizations_m0EAD5303D5AA0F2291FC10EC8542B5FAC7C2809B,
+	InputPointerVisualizer_InitPointClouds_mAFDF322D5576621A9E0B1D5A36A2B3267CA656B4,
+	InputPointerVisualizer_InitVisArrayObj_m6568B42BC4C2E06F68BD33D1A7735C6E4A2AB099,
+	InputPointerVisualizer_ResetVis_mBC175FA8D776389A64BAFD4ACB65C8B35056B2DE,
+	InputPointerVisualizer_ResetVis_mD9C0F6C301915F443E22E22387A220466478F1EB,
+	InputPointerVisualizer_ResetPointCloudVis_mDCB742A7063808B28F0DB90419EC0910F29ABF5A,
+	InputPointerVisualizer_SetActive_DataVis_mF8827816A00272A834FB8073685085321048EC89,
+	InputPointerVisualizer_SetActive_DataVis_m3CBF5D9425E4C33A42C7F8061207C568F75287CE,
+	InputPointerVisualizer_SetActive_DataVis_m6003EA9F25CB8535FDBDE2E407E652ABD399C40F,
+	InputPointerVisualizer_SetActive_PointCloudVis_mC79B6EDD9545ED76523598E6813E28793AB45910,
+	InputPointerVisualizer_UpdateDataVisPos_m000ABEF9BB9DC0464E0AA74BDFE09A3E919C676E,
+	InputPointerVisualizer_UpdateVis_PointCloud_mD35D118CE6845EC012372DEC6AFCF38D7B1C8ACE,
+	InputPointerVisualizer_UpdateConnectorLines_mA83E0467D94CB0271437C70E913AF3F94D5995E7,
+	InputPointerVisualizer_GetPrevLineIndex_m9D1D3D524FF736B5028E770829DF89E100E4A87E,
+	InputPointerVisualizer_UpdateDataVis_m8CFB9FF511376B0650F2C659319EC6CB1941E413,
+	InputPointerVisualizer_PerformHitTest_mF0FC9F65B059A5482853BF675520D4A431BFCE9A,
+	InputPointerVisualizer_Update_mE99A1D6FF8036C132F2141B6919700F108395AA1,
+	InputPointerVisualizer_IsDwelling_mCFEFEEAFFF67AD87FBC6C22707966AD4160312D8,
+	InputPointerVisualizer_get_AmountOfSamples_mAA40A9741774ABE32066DE133400E72E2B07B975,
+	InputPointerVisualizer_set_AmountOfSamples_mE3BBFD3CA86E54817D402007BF02DA36CEFAFBA4,
+	InputPointerVisualizer_ToggleAppState_m17366F429A3071217DCBD05551A27A1F5C364AE4,
+	InputPointerVisualizer_PauseApp_m4906851AE1A2442AAD153709E5662C21041022B9,
+	InputPointerVisualizer_UnpauseApp_m7D52B705A32C192486BF1E9AAA864FFC32167F0B,
+	InputPointerVisualizer_SetAppState_m9EE9BBED1FE575C05ED15855890227827D9DD68D,
+	InputPointerVisualizer__ctor_m69C1005542E33275855CE5D154CFE3411861A5ED,
+	LogStructure_GetHeaderColumns_mDB0AAA846E8AFC4ACD0C80015B8B09BB5C53E450,
+	LogStructure_GetData_m9042AC1CF1B226A41E9AB73D93F9BA4DC08B1D84,
+	LogStructure__ctor_m403CC40362741E0E9073DAB2AF988917D2AC0D31,
+	LogStructureEyeGaze_get_EyeTrackingProvider_m75914CE4960B464F3443A7FB8C08BE4E2EA18850,
+	LogStructureEyeGaze_GetHeaderColumns_mB3F856C79493C874671E9F682B2D70831692C811,
+	LogStructureEyeGaze_get_InputSystem_m5FC7400F78BC45D1E01C2CF0D41ED1FB3AF2C394,
+	LogStructureEyeGaze_GetData_mCA754523C53254B1BA9ECAD74276A1E31382AF2B,
+	LogStructureEyeGaze__ctor_m4437FC461F88DF3006DB558BF6E3F10B414E663D,
+	UserInputPlayback_Start_mF7314604364860AB42F896163B97E58EF4DF2697,
+	UserInputPlayback_ResetCurrentStream_m983F47C168F7E466131989881300DD69A7AB8652,
+	UserInputPlayback_UWP_Load_m833919F031775C409F0961FCD123EF0E7508A20D,
+	UserInputPlayback_UWP_LoadNewFile_mF4767A2BBD6139049A3EEB6F9C6B1CAC6ED325E8,
+	UserInputPlayback_UWP_FileExists_m2F0B3BC8478E0407E7A92D8EEA4F7DCFDB2BB560,
+	UserInputPlayback_UWP_ReadData_m37AB44219A719C0F089485AB4C2C0748B12B596E,
+	UserInputPlayback_LoadNewFile_m4CAED32ECC7F8755BC74F0C77C351F7D550D56F4,
+	UserInputPlayback_TryParseStringToVector3_mE7629BD0E7A06917B5A31F4769BBBFCECFBC448E,
+	UserInputPlayback_ParseStringToFloat_m0256D683844FD972CEEAB731E932E8E30E499F7E,
+	UserInputPlayback_Load_m0D6BD551659670C8E8F807D423934932DA52C873,
+	UserInputPlayback_LoadInEditor_mA37C4459F3946AF6BF524FE04932DEB7ACEB1898,
+	UserInputPlayback_LoadInUWP_m2D6880A9B2004ADA0A8EF70DE593E35718BF40FE,
+	UserInputPlayback_get_FileName_mF688FBBC13BE88FD975C2E6CF9ED9088122D990B,
+	UserInputPlayback_set_IsPlaying_m0A9006C38F939B8EE2D1FF19611E07313A393D42,
+	UserInputPlayback_get_IsPlaying_mA26042CFA0FF24220DADE2E0D77C50B1AC5D8130,
+	UserInputPlayback_Play_m66C96E33281E5BFBC3FDBBB335DEBB37AC44979F,
+	UserInputPlayback_Pause_m9704B17CDAE234B0B10D6FC442F0EDA494A13C67,
+	UserInputPlayback_Clear_mBDBEC98EF121380B7F27BABB483C335CCA535B59,
+	UserInputPlayback_SpeedUp_m77471390AC84CBC58A332D1E01EB54F9572425A1,
+	UserInputPlayback_SlowDown_m7C151E173BA686F7C9F8763C2C0388CDB1FCBA7E,
+	UserInputPlayback_ShowAllAndFreeze_mC2F7CA71A6D6F6897DF1EC4FB1CBC7E07FF41372,
+	UserInputPlayback_ShowAllAndFreeze_mB1F78B6623D943A7A3AFFE77D01E3DEA3B21592D,
+	UserInputPlayback_ShowHeatmap_m1F694DB4AD8E9F617D39E220A193411DD695C63E,
+	UserInputPlayback_LoadingStatus_Hide_mC62359876F88FF2098F7009F39B306E94AE7BD2A,
+	UserInputPlayback_LoadingStatus_Show_m619908DD864619A866F14445F005F7833D1CAF2B,
+	UserInputPlayback_UpdateLoadingStatus_m5AFE4739BDFB3B791B79A13999571CBA4EF4BCE8,
+	UserInputPlayback_Log_m68C39E48F3DD58ADEAFD1509C248C4C69B642FEB,
+	UserInputPlayback_PopulateHeatmap_m532849B8B0BF6FCED76B4FF172EEC10593EC790D,
+	UserInputPlayback_UpdateStatus_m09C976494AD61F09336515869D202AC7A352B989,
+	UserInputPlayback_AddToCounter_mC5FCEE11E90CFC9A3478090A874A2F99FC665ADF,
+	UserInputPlayback_GetEyeRay_m35E26BB1B2F53072C1FBAC5C4A47205123092452,
+	UserInputPlayback_GetRay_mFD3EC8AFEF63517BFFC3EBB6281160C69BA6CFC8,
+	UserInputPlayback_get_DataIsLoaded_m9971D410D8A7025E9A0621163B0806E80FE16512,
+	UserInputPlayback_UpdateTimestampForNextReplay_m36EE40E6045321D32C4B59C2E06F8F5F4EA11061,
+	UserInputPlayback_UpdateEyeGazeSignal_mCE171015FC9358191B7FDEC83F39071F64D0F6B4,
+	UserInputPlayback_UpdateHeadGazeSignal_m881ABF3F4357938033A0D577C8309F9623C3CC91,
+	UserInputPlayback_UpdateTargetingSignal_m849C5729849B0F546DE2AD32832F92A5FA5127FC,
+	UserInputPlayback_Update_m2E8589B555D8487CD810E714B1656A82FED1D682,
+	UserInputPlayback_PlayNext_m276F64387B21D1115B519A47590CC49CAA6C7809,
+	UserInputPlayback__ctor_mE0C142CADF96593295808C757DF67AF62C6097B0,
+	UserInputPlayback__cctor_mE77851C5E1EA28420F952CB2F786349FF5A4F909,
+	UserInputPlayback_U3CShowAllAndFreezeU3Eb__34_0_m9A4F11994B83E04E2ACCC172FCB8482F47761957,
+	U3CAddToCounterU3Ed__44__ctor_mBF53813257F137F3A479469305EA45D1ECDB6F1E,
+	U3CAddToCounterU3Ed__44_System_IDisposable_Dispose_mF1145D2D271705A10889B5FAA2581A95360A6942,
+	U3CAddToCounterU3Ed__44_MoveNext_m45F2F16F6E156FA59F78EC6F36A603F9CD9618E6,
+	U3CAddToCounterU3Ed__44_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD063AE35EC22689E66991FCF7C0CC17772887CDC,
+	U3CAddToCounterU3Ed__44_System_Collections_IEnumerator_Reset_m34E9E71D91AF2185F9E2CB81A36328E0280C2F0F,
+	U3CAddToCounterU3Ed__44_System_Collections_IEnumerator_get_Current_m9BE812648063C3E74024EC70364471071F74B482,
+	U3CLoadInUWPU3Ed__21_MoveNext_mDD1CB879310BCC1E5CEC38DD7E71982A56087F05_AdjustorThunk,
+	U3CLoadInUWPU3Ed__21_SetStateMachine_mCE0DA0C7EF1F4C34412F2A59D6BE6173B2EA1D69_AdjustorThunk,
+	U3CPopulateHeatmapU3Ed__42__ctor_m922386DF151C7D91648063A1F979ACAE1C928085,
+	U3CPopulateHeatmapU3Ed__42_System_IDisposable_Dispose_mB161A7C60852222875550F7986D58BCCEB00265D,
+	U3CPopulateHeatmapU3Ed__42_MoveNext_m84B3C78F27C89C6EBBF8BD77729F0A67B8B938EF,
+	U3CPopulateHeatmapU3Ed__42_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m94C0845B270CD475606708EA45DEC098044F75CE,
+	U3CPopulateHeatmapU3Ed__42_System_Collections_IEnumerator_Reset_m3BC34BF6C4C8AE5EDC22EA2777629C1A1A159FF0,
+	U3CPopulateHeatmapU3Ed__42_System_Collections_IEnumerator_get_Current_mD088F378EC48E65763BAB7F4B3E0E8216A4CDD0B,
+	U3CUWP_FileExistsU3Ed__14_MoveNext_mC6695867709A2E54F9071C3DA54F7616010C7DE2_AdjustorThunk,
+	U3CUWP_FileExistsU3Ed__14_SetStateMachine_m9668C73E520CB1E5A4571E435AB581CFCB9E18C8_AdjustorThunk,
+	U3CUWP_LoadU3Ed__12_MoveNext_mD092408F18E017BE65322F7E8CD41DBF828D6AC7_AdjustorThunk,
+	U3CUWP_LoadU3Ed__12_SetStateMachine_m547B3D049F360A3431DA7D4BC1D0694302E061CD_AdjustorThunk,
+	U3CUWP_LoadNewFileU3Ed__13_MoveNext_mD547D6355E4D4B0A60F10A306F2C17B36E56BD73_AdjustorThunk,
+	U3CUWP_LoadNewFileU3Ed__13_SetStateMachine_m2012139D83378B4BFCB67199E9A321F0642F1063_AdjustorThunk,
+	U3CUWP_ReadDataU3Ed__15_MoveNext_m4491C0388F3A3B3F2A4B43469626917BE12C2B89_AdjustorThunk,
+	U3CUWP_ReadDataU3Ed__15_SetStateMachine_mAA147CC62E52C849EE8716515786884B2ABF325E_AdjustorThunk,
+	U3CUpdateStatusU3Ed__43__ctor_m29DA4658BD22BF33905A9F9E3B4826198F988CD0,
+	U3CUpdateStatusU3Ed__43_System_IDisposable_Dispose_mE65A5D065006F3B3A5103A5769D65AF608F324DB,
+	U3CUpdateStatusU3Ed__43_MoveNext_m242C0B70B7736DCE27FA7C83E73E2989D0A289A4,
+	U3CUpdateStatusU3Ed__43_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3D71694B8280725DCDF749EE34253946208E4FAD,
+	U3CUpdateStatusU3Ed__43_System_Collections_IEnumerator_Reset_m07645E95B5C440F3FE2D35B256CCEBADD6FE27F5,
+	U3CUpdateStatusU3Ed__43_System_Collections_IEnumerator_get_Current_mA71D43E610296466D2147BD8DBDDE37E98D9885C,
+	UserInputRecorder_get_Instance_mCF6877F81EBC6229EB50702FF98AFB5E99B2A897,
+	UserInputRecorder_GetHeader_mC0D3407AA00DDEF8E4F1E0E206932B607EAB314C,
+	UserInputRecorder_GetData_Part1_mB71C5458A4DBBEF57FC223B1E6DEB9D2E147F886,
+	UserInputRecorder_MergeObjArrays_mDB44514F924AE1C376BADDE9575C41D020E8520D,
+	UserInputRecorder_GetFileName_mE5AB56CC6A2C51F70D48CB1AC2171B2D014ED47B,
+	UserInputRecorder_LimitStringLength_m65C6B3989FCBC828074200240CDA09AF88FEDBD5,
+	UserInputRecorder_GetStringFormat_m501E4F6A9203A846219395290C760F136FD41757,
+	UserInputRecorder_UpdateLog_m66F04FC624FDBA7062C1C2C4F46C445B31DEDBF3,
+	UserInputRecorder_CustomAppend_m82DF6C49BEC1E21C8C14CA1D1D6884FD44F36EBD,
+	UserInputRecorder_UpdateLog_m73D0F0D8FCAB4FD597344423373AD6D6C6C481C9,
+	UserInputRecorder_Update_m88D100EB31EB143766920B7D2DFE3C4B95D70632,
+	UserInputRecorder_OnDestroy_m92D9F3D022A156CDA216C7A26B40EDCEE70530F4,
+	UserInputRecorder__ctor_m4B516056B93324A4B815ABA6EAB5A24E7CE2FBBD,
+	UserInputRecorderFeedback_PlayAudio_m2E5AD3D8362387ABF4E6D280CDA94CFFB1BEDEA7,
+	UserInputRecorderFeedback_UpdateStatusText_m916A0D28E4A5B7DBAE495293804CBBCEA694CA28,
+	UserInputRecorderFeedback_ResetStatusText_m215498E7D70EFC37ADCF6BC915016EE00D3DCC5E,
+	UserInputRecorderFeedback_Update_m151D9F5C7B14165541F2BB381D847CE4E4ABA85A,
+	UserInputRecorderFeedback_StartRecording_m9D0D289EA771C46B8F7A1005ABD4472B03382601,
+	UserInputRecorderFeedback_StopRecording_m64431CDDDC44A193D471C8872FDAC6D8575E0A74,
+	UserInputRecorderFeedback_LoadData_mE8D3B345FA0D0C30B04D965D96AC8338B9A7AA95,
+	UserInputRecorderFeedback_StartReplay_mC3B310F0410ABFC4F609BF527A821B343045C9D3,
+	UserInputRecorderFeedback_PauseReplay_m9F1FC6EABE7CDE43D72D7E4D3DD7B83A34B23FCD,
+	UserInputRecorderFeedback__ctor_mA429AF32DAAC6ECD5BCC4E7F4765E7B70F140085,
+	UserInputRecorderUIController_Start_m13986F7F342561F0ACDBA51D328049B3D0E6AADE,
+	UserInputRecorderUIController_StartRecording_m64DBDD7C9AA1DCF6CFCBAE53D7F5797276EAE441,
+	UserInputRecorderUIController_StopRecording_m4BDCB4E852A0BE89861BB9F90FA8D7E00F0256BB,
+	UserInputRecorderUIController_RecordingUI_Reset_m4F88BB3E04B2FDCE57454003435664681591D4B6,
+	UserInputRecorderUIController_LoadData_m0C6EC91736FC9409EAA4FB66CD291E92FC5FAF5F,
+	UserInputRecorderUIController_ReplayUI_SetActive_m1A752EE5FA6E6EB08BAB0FBC5D36350F230C5618,
+	UserInputRecorderUIController_StartReplay_m458F175F7BDCCDF9C52FB1A18D4404ECDECB1D44,
+	UserInputRecorderUIController_PauseReplay_m9DE49D3ECC3926998D189EAB3825938DA2363439,
+	UserInputRecorderUIController_ResetPlayback_mE851FE5473D12183B3619FDAFF7B9BC1E4C05BA4,
+	UserInputRecorderUIController__ctor_mAD7D44684F098392405C81D148E8BEF196EBCDBB,
+	MoveObjByEyeGaze_get_EyeTrackingProvider_m8D0CDBD7565E9780CE6F16926139F872936B0D16,
+	MoveObjByEyeGaze_get_constrX_mD371508F6D5B0BF1B2AF4E67FDE2EDD6A01BDDEF,
+	MoveObjByEyeGaze_get_constrY_mF13E68803CFB89C34BB2813E0E4F0A2CEECDFC46,
+	MoveObjByEyeGaze_get_constrZ_m670444FC619BF2465632B80A5F31B3C6DC000737,
+	MoveObjByEyeGaze_get_constrMoveCtrl_mD2CC52EAE9C492188EB0CFB4D712C044351318A1,
+	MoveObjByEyeGaze_Start_mED7B15C1C88FA34CD44B32C7E6AA1EC09D8A8037,
+	MoveObjByEyeGaze_Update_m1ABDA77EDDCF4ED2295C32EAE803A9659D59B6C9,
+	MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySpeechHandler_OnSpeechKeywordRecognized_mA5D96319DEC6CEEA9EF3360593EE3AB49C9C086D,
+	MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityHandJointHandler_OnHandJointsUpdated_m57C15B11ADBB2244628F530D564C40E0693C8811,
+	MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySourceStateHandler_OnSourceDetected_mED8BD860AA0D056A183E809B20533A419626E1B5,
+	MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySourceStateHandler_OnSourceLost_m4A3F4DEEF214F29B84AA5351131AAE43925CA9EB,
+	MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_mF081561D788FDD14DBD1AEF7F53B55398C6DF565,
+	MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m51292C38190C7808D21CB7BCB81B53DBFBDA931F,
+	MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m771F66C581858199AC12053C90E2223FF1139583,
+	MoveObjByEyeGaze_SetActiveHand_m99B92290DDF18404A958605B2548E14C933EDA42,
+	MoveObjByEyeGaze_IsActiveHand_mE4065626D7E8536B4CF851941039B8910252AEFE,
+	MoveObjByEyeGaze_HandDrag_Start_m264CA714F269028288F314AFE589888EC6B1C5C1,
+	MoveObjByEyeGaze_HandDrag_Stop_m3609085B1BEB6C63185B510DDCEBC1C247DD0D65,
+	MoveObjByEyeGaze_IsLookingAwayFromTarget_mB70132B6B7C2E606466D3EA7E33F382008246241,
+	MoveObjByEyeGaze_IsLookingAwayFromPreview_mB94F31971AA1C2BA539FEE62EEC9F4BCB684A89F,
+	MoveObjByEyeGaze_IsDestinationPlausible_m709FB592F367962A2E06E0D45BA1C790FDD76A3D,
+	MoveObjByEyeGaze_GetValidPlacemLocation_mD7E0F9E0A992CDFA526F956B50BEA388DC18A0E2,
+	MoveObjByEyeGaze_ActivatePreview_m32025255B5C018ECB5D73B8E11CE2ED41C37AD01,
+	MoveObjByEyeGaze_DeactivatePreview_m3C424B141E916C8E721D16124C2500AAFE171A19,
+	MoveObjByEyeGaze_DragAndDrop_Start_mCDC7AB238D4A4211F4A2D21CFD8E4D6AFA4BC380,
+	MoveObjByEyeGaze_DragAndDrop_Finish_m0FD42DDF9966D4E2EBD65222204E4EA196C855DD,
+	MoveObjByEyeGaze_RelativeMoveUpdate_mE3DB6D334AB06E78E59FF6C7DE078EB47C835C3F,
+	MoveObjByEyeGaze_Angle_InitialGazeToCurrGazeDir_m6E633A9753E7DE8BCA754B1C64A129341B16D6BC,
+	MoveObjByEyeGaze_Angle_ToCurrHitTarget_m0E5DD27E5258B9D8C40ABDD9DA1C74476CC650CA,
+	MoveObjByEyeGaze_HeadIsInMotion_mE8D9A98F26C6FFDC04E4448F86E707E317245B14,
+	MoveObjByEyeGaze_MoveTargetBy_m9675CDB937802D8A9B454F23FCF555DC541B21B4,
+	MoveObjByEyeGaze_UpdateSliderTextOutput_m81BF243ED8B0E5D67507EF5E6713826025129173,
+	MoveObjByEyeGaze_ConstrainMovement_mA1F8CBCE99D70D2FAF718BE4AF95838193D343FB,
+	MoveObjByEyeGaze_OnDrop_SnapToClosestDecimal_m1D65560367FABA048E75BB0B5492C5C3EDD795B0,
+	MoveObjByEyeGaze_MoveTargetTo_m323E6CA1E0FD18108DC2835648421BDD04E44CC3,
+	MoveObjByEyeGaze_ShouldObjBeWarped_m12BEC489EEA06E60FEDFD70E787FE2886C4365D7,
+	MoveObjByEyeGaze_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m7C9BCFDA67C9DDAC4368F9211B03087D38540C22,
+	MoveObjByEyeGaze__ctor_mAE2AB58A689E21312FC47C6CE796D517A7C3F74F,
+	MoveObjByEyeGaze__cctor_m50B9FBB26366B7B328A5409E6A0151DC54153F3B,
+	MoveWithCamera_Update_m84453B97F8DCA494F4F8768B5FBB6C91F80DACCD,
+	MoveWithCamera__ctor_mCB935D4A4CE2F487EE23F369008629B67C715008,
+	OnLoadStartScene_Start_mA7DDB3EB1FCFCF2B8146E5F1604A941CDAD5B9EE,
+	OnLoadStartScene_LoadNewScene_m596FDDBD51FF4924FE173CF23A3F88A8FA1E91F5,
+	OnLoadStartScene__ctor_mC10A9B104F20EA281B4DEC6B5060C3E5BD8FD9B1,
+	OnLookAtRotateByEyeGaze_get_InputSystem_mE8F9A44B23E7DD45C55A2DAA5FE730808400FA1B,
+	OnLookAtRotateByEyeGaze_OnEyeFocusStay_mDD4E5E47CAA30CF116EF57B8D1D70EF1DC067A8C,
+	OnLookAtRotateByEyeGaze_RotateHitTarget_mE0E03031C429983DC7E170790412D9A831FA6258,
+	OnLookAtRotateByEyeGaze_ClampAngleInDegree_mD7106883E5ACA81B340A7D64D76C42A0956F2BCE,
+	OnLookAtRotateByEyeGaze__ctor_m514112D022BF34DBC48EADE08F36ED469981C8DA,
+	OnSelectVisualizerInputController_Awake_m7EFBA9C22E6CF24833638E5F2B8697973243A65E,
+	OnSelectVisualizerInputController_OnTargetSelected_m2257CDFE8C2F768C0754689729943F650956F100,
+	OnSelectVisualizerInputController_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m2A80E3637806B75EC4AF32BAF49B5F6C99D7C831,
+	OnSelectVisualizerInputController_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_mD2271168A5EB6BB881F34599B6238BE9B5F03F2F,
+	OnSelectVisualizerInputController_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m7F2C9E92174CFE8D0091FAD8D1FA3CC92CFACFAC,
+	OnSelectVisualizerInputController_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_mCFFC85EC5CC9C2564E0C2C67A074EAAEF87D3055,
+	OnSelectVisualizerInputController__ctor_m05A49D7083F5D19F8D091438F5240870DA34795F,
+	PanZoomBase_get_EyeSaccadeProvider_m956EF7B360063FC639DEE77A234C863F1B4029E2,
+	PanZoomBase_get_InputSystem_m1A6C73418BCF27A9871693112B6222D3F190C4DF,
+	PanZoomBase_Start_m696B13CC54429E0DDB5B5BD4FF04C9DA64C84396,
+	PanZoomBase_get_CustomColliderSizeOnLookAt_m18411B5D0D761DC0336BF0D0B1FA9B3924D3C371,
+	PanZoomBase_AutoPan_m9DAE468604A7BE2BBBE8A2BBDC0C137AD6E6622F,
+	PanZoomBase_PanHorizontally_mC434C0EA17B472DF3B0713FAC5196A3CF1E1C91D,
+	PanZoomBase_PanVertically_m22726BEA5D1B653D1D8203892F035DB7CD132C7D,
+	PanZoomBase_EnableHandZoom_m4E462584A04ADFAE571930D0B89219C446E24A92,
+	PanZoomBase_DisableHandZoom_m40D967C6CBE9A22698829B77F126321BB2023A1E,
+	PanZoomBase_ZoomStart_m86FC2DC49564EF1685082C8579BE6EC84AF7E8AE,
+	PanZoomBase_ZoomInStart_m0B051B529514AEDEF6A441D8D7BC0800FC3F91C9,
+	PanZoomBase_ZoomOutStart_m2E3BC1FCD41858E3CF386257654962DFA2C22C08,
+	PanZoomBase_ZoomStop_mBA87D459E43B8389D8B02DE80DDA559A268A0DF7,
+	PanZoomBase_NavigationStart_m7341E69A18E0E272086B3167F67D7D43C64E369A,
+	PanZoomBase_NavigationStop_m41CE208878FE56567AB782B772773DA4D8EE7A04,
+	PanZoomBase_NavigationUpdate_m7D2941D784808F4C4F8ABE4BC21BDB2950045B79,
+	PanZoomBase_Update_mE68B47BCF67D99249E8A25DF784282C2E6C09F4A,
+	PanZoomBase_SetSkimProofUpdateSpeed_mCC79364A867D6BF1013FAE4670340EE143D654EE,
+	PanZoomBase_ResetNormFixator_m2F9A885BAA028F5C85042772CCC2DAF84A239579,
+	PanZoomBase_IncrementNormFixator_m26CC480D1ABC5DEF86CAB5EBAEA2E364875BEEC8,
+	PanZoomBase_ResetScroll_OnSaccade_m52F6654EDA406B8DCE96AC130BBAEAA5BC58B034,
+	PanZoomBase_LateUpdate_mDFBD76B5480F81B1A2200607361D209002309C4D,
+	PanZoomBase_AutomaticGazePanning_mD250E9244D8668F94FBBAB2B4B1BAB3C0F293C04,
+	PanZoomBase_get_MyCollider_mA84C8C4C2A2804DEEC525480FBFC93CD9E6AA123,
+	PanZoomBase_set_MyCollider_mDB233F207C1994059DB477B8F0D8BF2E8AE1F2AD,
+	PanZoomBase_PanUpDown_m48637C91D434DA0D2C522A308CA229D2C1FE58DF,
+	PanZoomBase_PanLeftRight_mB40616E7456A17FA2C95E221BF8F3C4FF5B739E9,
+	PanZoomBase_UpdateZoom_m00DF37D6847F7B544DDAE496B6325222034AE0EC,
+	PanZoomBase_LimitScaling_m3584B04144A5A2ED6937FC462A5F06F7A5EB39E5,
+	PanZoomBase_ZoomIn_Timed_m4598F3D42F293BBE29BB037DF8F541A83F8CC6BA,
+	PanZoomBase_ZoomOut_Timed_m1065A23AD665D67C98EF22C1D68E2E5A348D0ABE,
+	PanZoomBase_ZoomAndStop_mF4D5F59EBC6D75C6F4E68130B8076DF50633CE9C,
+	PanZoomBase_StartFocusing_m959C7C6596810E852E6FB23AEDA87F628F856338,
+	PanZoomBase_StopFocusing_mCC73CC2C277AB421BC898AB6F47260D288460C10,
+	PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m6B3E9CC012AC8865169962EA2AA05285EE536839,
+	PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_mCFE03DDA43A7EC34B28270BD5F799DAA5A24CBAA,
+	PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_mAD01885E7B419604F0DD9110C0F9E37B95B45064,
+	PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_mAB369C57C4251DF1D897BDD7A9E579A27EA51AE5,
+	PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityFocusHandler_OnFocusEnter_m43BB24C696924FDAF214ADA82ED2747D50297F1A,
+	PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityFocusHandler_OnFocusExit_mF631029DD0FD040BCAC8B3AAF27A819C9B36CD17,
+	PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySourceStateHandler_OnSourceDetected_m07B9309FA58BC37E4AEFB7BCB8F299FE6FFABFAD,
+	PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySourceStateHandler_OnSourceLost_mD8B2142CEE210806FFA3954870C4873DF4D2088B,
+	PanZoomBase_Microsoft_MixedReality_Toolkit_Input_IMixedRealityHandJointHandler_OnHandJointsUpdated_m57A2E1C96A5C0DC86F9601DFAD094F7E8943487F,
+	PanZoomBase__ctor_m65A0F7BABDBB12AD982FFD6C7C51BE053C7F9530,
+	U3CZoomAndStopU3Ed__81__ctor_m688D0532A3F02C762C04FE1B6F26872B65BA64D2,
+	U3CZoomAndStopU3Ed__81_System_IDisposable_Dispose_m34D96346932909653958A7858487C73254705AC2,
+	U3CZoomAndStopU3Ed__81_MoveNext_mDD06C94002F9BADBF91CCF64901A8D8163FA3789,
+	U3CZoomAndStopU3Ed__81_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m90A4B429779024283644D3DB2BF26313A408660E,
+	U3CZoomAndStopU3Ed__81_System_Collections_IEnumerator_Reset_m7C356EC996F1F1C385A14E873CE298A1E2334696,
+	U3CZoomAndStopU3Ed__81_System_Collections_IEnumerator_get_Current_mDB49EE2D06089E76B93F809DC182D633ED1407C0,
+	PanZoomBaseRectTransf_get_IsValid_m6FCAABCED49D3F0E5E1DDDB7FA485851A9C83B07,
+	PanZoomBaseRectTransf_Initialize_mDCD64BFF82A96B562EAA64CCBB124BA23110C519,
+	PanZoomBaseRectTransf_ComputePanSpeed_mCA43DC21C566CC1BC555A725889DC7071840A606,
+	PanZoomBaseRectTransf_ZoomDir_mF66C319EEE829391B5133240D2FC7CDC06587BD9,
+	PanZoomBaseRectTransf_ZoomIn_m5B27704D6AB71949EAA30D3A589D38C7660999FF,
+	PanZoomBaseRectTransf_ZoomOut_mE8334F1F113D5EF442AE7BE29B9A69DE46EA83EA,
+	PanZoomBaseRectTransf_UpdatePanZoom_m83353C01FD2D09C003A1DB2D724BE0E61F1A011D,
+	PanZoomBaseRectTransf_LimitPanning_mFA448363DDD5994F507E3456D2B41C7AF2A6E6B0,
+	PanZoomBaseRectTransf_ZoomInOut_RectTransform_m1F0AA2C06770BD7B9457F9DF4ACD6F73F1008653,
+	PanZoomBaseRectTransf_UpdateCursorPosInHitBox_mBCA4534A82AF7D807A5128EE4130547D3F51310B,
+	PanZoomBaseRectTransf__ctor_mBDD6EE0CACBA544DAA6698C4DEEEE9BF8F09014F,
+	PanZoomBaseTexture_get_TextureShaderProperty_m3A749A1F9159EA12E0ABA1582E0552E93D56A57D,
+	PanZoomBaseTexture_set_TextureShaderProperty_m9020EF5F2CEDA280BF6810BD03C84F0FADD0078E,
+	PanZoomBaseTexture_get_IsValid_m90D9B973A634E17401E8D37BCA46DACEDBC9F545,
+	PanZoomBaseTexture_Initialize_mCFE17F1C05062592F2707BE630F513E88549FAB5,
+	PanZoomBaseTexture_Initialize_m0DD3A2AFF0CEBF8CB30E4D91BBABFE32F05EAB86,
+	PanZoomBaseTexture_ComputePanSpeed_m7DA2DDB21A887B7280B3CD72F9B3485DD98B6D2D,
+	PanZoomBaseTexture_UpdatePanZoom_mBD748BDEA92BD2B564BE6014F8DD693B725F99C0,
+	PanZoomBaseTexture_ZoomDir_mE5C715080FA4C1B08016EE4DD2CA5909C81C274A,
+	PanZoomBaseTexture_ZoomIn_m6E7E401773DB9EAA655FDD764EF512352E1C3F0E,
+	PanZoomBaseTexture_ZoomOut_mEFEAABDE72ACA5C1F7DD588214EF68A2BA96FC9B,
+	PanZoomBaseTexture_ZoomInOut_m3B817C6D1F5C04F82B803DC418BDD4891F41EA36,
+	PanZoomBaseTexture_UpdateCursorPosInHitBox_m1BC9CBDCA8BFDE858AC59C0EA900D10142B071EC,
+	PanZoomBaseTexture__ctor_mBA4027DF602B326953AB5AEF6FEE1D7FAD96077C,
+	PanZoomRectTransf_Start_m15F3F920924C918A6C742C4A0BEBBFA2D7EC2523,
+	PanZoomRectTransf_Update_mEAA684DD81C5C01D14F9F27651C4462AF3C3D16C,
+	PanZoomRectTransf__ctor_mC2432E8E567FCAD869C544E41DBBB3229537EB3A,
+	PanZoomTexture_Start_mAC392E1F8A26EC23DB72E84B8BDD7B2930368399,
+	PanZoomTexture_Update_mE5F2C025855941D14B6D2C0F37E8A8D886C5D64B,
+	PanZoomTexture__ctor_m99882119C0740D5FF4FB6733B5E88C90278E7E75,
+	ParticleHeatmap_Start_m539BA4F1AFB4C3A7C83E0F90EF58590071299ED2,
+	ParticleHeatmap_SetParticle_mB7F67715D72B681732DECD63731E9E86E2E5B065,
+	ParticleHeatmap_GetPositionOfParticle_mA114FBA53A8522D08C72536751CC85C1B29949C1,
+	ParticleHeatmap_DetermineNormalizedIntensity_mC402BDDF903F5127C9DCB8445334A62D51B75FD6,
+	ParticleHeatmap_UpdateColorForAllParticles_mA0D223548D977852786EB677BDD57571420702DE,
+	ParticleHeatmap_saturate_mC8D170B35E2AA55AA930B80B756E29FB2E10222C,
+	ParticleHeatmap_DisplayParticles_m0B30A71A54AB6445324B0976DA11C777142CFA4D,
+	ParticleHeatmap_ShowHeatmap_m86344918A9A496239AA6E8DB4D537F4986266ABF,
+	ParticleHeatmap_HideHeatmap_m4B26EED245CF467A1E876C05F5A0BF022BFE672C,
+	ParticleHeatmap__ctor_m61E1CBB11275858837F16E4DDED7D245EEDADDDF,
+	ParticleHeatmapParticleData__ctor_m6B562557E8CF79CE877D921BFA778E34D2F58036,
+	RotateWithConstSpeedDir_RotateTarget_m0CB85267A40556C1A41556AB999291B98A2AF291,
+	RotateWithConstSpeedDir__ctor_mB262D658E29D3A1449331F2A4EA668333B4469CA,
+	ScrollRectTransf_Start_m76C2D3084EA1371CEFF0AFC59A79200D283590B6,
+	ScrollRectTransf_UpdatePivot_m511AC0F4E98B8E537A3277EE52614F79D6CDC9CC,
+	ScrollRectTransf_Update_mEC76D0B4B1C573C3447EC06B1776B402B2DBAD47,
+	ScrollRectTransf__ctor_m215A75AEF079F45AE3A7F8795BF424950E8ABCB7,
+	ScrollTexture_Start_m477A67C6C3433037C471989D20E854BB9147E532,
+	ScrollTexture_Update_m93C04352DE3F66BA923BFE8C082AA5E6133F5B95,
+	ScrollTexture__ctor_m8E4E756225AA681194B856B6E35E668F20C044EB,
+	SnapTo__ctor_m9AA9BAD3AE9F57031C53529B50B7A71C2F464096,
+	SpeechVisualFeedback_get_MyTextMesh_m7DD0FC961A310232B458BC6EC7AB94ADD3686920,
+	SpeechVisualFeedback_get_InputSystem_m25136907E7FC6A1A2218787D4AC4C428F682FEC4,
+	SpeechVisualFeedback_UpdateTextMesh_m40CF434263364D64887FD1426848741B172DC834,
+	SpeechVisualFeedback_ShowVisualFeedback_mD6A8B64E388CB4CEB5B1EAC40E38D1A21AB568FB,
+	SpeechVisualFeedback_Update_mDE6E5EDFB424742042C6531596FAD83FA5C822EF,
+	SpeechVisualFeedback_Microsoft_MixedReality_Toolkit_Input_IMixedRealitySpeechHandler_OnSpeechKeywordRecognized_mB3E99F59F71C773FE3BCE50DA4B34B9EA1DCB55A,
+	SpeechVisualFeedback__ctor_m127485527CC1AA14105B102E65CC930047155739,
+	StatusText_get_Instance_mF6984A29F17FC1EAC49BDD8897889CBCF3BA6665,
+	StatusText_Awake_m600ADED9FC8497B9D4B8029856D783385918537B,
+	StatusText_Start_mF0E5DC9CB3279E63A8C71DD576ABA478945BDCB6,
+	StatusText_Log_mE20428AAF8E0838C9CB3D5DD554C89A4403DF618,
+	StatusText__ctor_mA977F88533AA268E8803DD0EC4A8ED6C83C16197,
+	TargetEventArgs_get_HitTarget_m27AC2AE7B41B0F5A3C74B63CF085BE457E698A39,
+	TargetEventArgs_set_HitTarget_m0D0B98A3696455CCFA3AE8DA5D7AF05A81D71B1B,
+	TargetEventArgs__ctor_m3C40A03810DB73994D7CD2F5206A9A98CABA38BB,
+	TargetGroupCreatorRadial_Start_mB4C412B31F2DD78F02C937BA5EE3F8858192A8D4,
+	TargetGroupCreatorRadial_Update_m0E9EE1194B14EE7B00AB588542A7516392494208,
+	TargetGroupCreatorRadial_HideTemplates_mF21A7D23CE1AF9F59F03B85BC98D51B7E6884277,
+	TargetGroupCreatorRadial_CreateNewTargets_RadialLayout_mD1312305731A7E61421D85ED5C49D5E6BED94636,
+	TargetGroupCreatorRadial_get_InstantiatedObjects_m4980FD31641B861744A101E47D0BB0A56026C9D5,
+	TargetGroupCreatorRadial_GetRandomTemplate_m3EA6D3821E0B698078C1805D67A4442EEF04B785,
+	TargetGroupCreatorRadial_InstantiateRadialLayoutedTarget_m5E135C46F2B276476C46BEA71E384E037E62E8C7,
+	TargetGroupCreatorRadial_KeepConstantVisAngleTargetSize_m239BEAC481CA340B90291EFA243C7F7032A1A71C,
+	TargetGroupCreatorRadial_KeepFacingTheCamera_m9306265A4D5830F1F2EE9A92FA0600A4E9E29A3C,
+	TargetGroupCreatorRadial__ctor_m3C296D4D4F34D7EB8DF14D55D4B8315C972B5889,
+	TargetGroupIterator_get_HighlightColor_m81728492E01EE91AAA67586CBB763031A52BECD8,
+	TargetGroupIterator_add_OnAllTargetsSelected_mC719D912FAE5BFE10BB0E63F0CB5BB1525561FDD,
+	TargetGroupIterator_remove_OnAllTargetsSelected_m28359E7E687FF0B97DEF988C99930F8120B7C99E,
+	TargetGroupIterator_add_OnTargetSelected_m848ADE510D7AA7951043D733E562B3B6151563BD,
+	TargetGroupIterator_remove_OnTargetSelected_m34A307724BEDDAD0282EBBB9DD19775DEF4970A9,
+	TargetGroupIterator_Start_mAB7EC751D35D8E52F1980EFAA1EC4B42C4C62855,
+	TargetGroupIterator_Update_m81095DAE214FD126F511F3BC353FA0E74072E55A,
+	TargetGroupIterator_ResetAmountOfTries_m1BBF551A85AD877AAF940D1AF1FADC08D207A56A,
+	TargetGroupIterator_ResetIterator_mC95459306EEFD4FED76F069C48EFE9CFE55312D7,
+	TargetGroupIterator_ProceedToNextTarget_m200AD71C74DBBC1440CA01FBC523BCA15EEE3FF1,
+	TargetGroupIterator_get_CurrentTarget_m5CFEA8700CEBA39683DECDE1731945B525BC9CB5,
+	TargetGroupIterator_get_PreviousTarget_mAA9EE3A6422899855117DC5AF07C622DB99EDA48,
+	TargetGroupIterator_get_CurrentTargetIsValid_m511AEE3F820B4174D885114BE174353906185D5C,
+	TargetGroupIterator_SaveOriginalColors_mD3116A7E71549BBB734818F9F20F7DC66EA8950C,
+	TargetGroupIterator_HighlightTarget_mFC6B884384F10EC6AA0505C8D7B6389A1F88ED57,
+	TargetGroupIterator_HighlightTarget_m9FBEDC00E8FA36079B1E316302804099A824FA2D,
+	TargetGroupIterator_ShowVisualMarkerForCurrTarget_m684C3126EBBCA5E7E44735A1196E8BE13697748E,
+	TargetGroupIterator_HideVisualMarkerForCurrTarget_m1A30E8A106262198D85228010A4B8DB118BF7907,
+	TargetGroupIterator_UnhighlightTarget_m4E0866460CCF3C8AED0CB0DABBFD3C2503AD743D,
+	TargetGroupIterator_ShowHighlights_m14E1D3C213C56763C312610817130BC4B7F8849A,
+	TargetGroupIterator_HideHighlights_mD324DCEB73184D89CF2E41206D5F4D552E7EF9BA,
+	TargetGroupIterator_Fire_OnAllTargetsSelected_m6C8FE70FCDADFCDD9218A2663CF1133CFFF2E15B,
+	TargetGroupIterator_Fire_OnTargetSelected_m826455F7DE5FA46EA4196F406F6FE50D0FF7A8A1,
+	TargetGroupIterator_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerUp_m90645AC83FE457C440EC85E0F453CD8321C039B4,
+	TargetGroupIterator_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDown_m0C772D31A65215330E7C5BF7D63FDD7F6D5EA921,
+	TargetGroupIterator_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerDragged_m526506B1526ED2ACFFB1B4CDC75A539FEBE8668F,
+	TargetGroupIterator_Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointerHandler_OnPointerClicked_m275CBF881A0DC620D4A40CAE35C5DFDD205D535D,
+	TargetGroupIterator__ctor_m04F187F7618451AE5966996263912509BF28CA3C,
+	TargetGroupEventHandler__ctor_m1E5B975929E376BCABC60EF7F5BA02B8511AD439,
+	TargetGroupEventHandler_Invoke_m1A864CFD1FFBDA5199A06C51AA804B6DFF5B2640,
+	TargetGroupEventHandler_BeginInvoke_mDC348E455D31A448384885D4B2C9E7BF25261F49,
+	TargetGroupEventHandler_EndInvoke_m585BD5E07136F70AAAD41B18BDC32DFAA00887B0,
+	TargetMoveToCamera_Start_mED098BDAF8F24CFCD244CA8E705329A0AB6C49D3,
+	TargetMoveToCamera_Update_m0C83BE6312A06B3ABC6ED885CC0FBA888C2B33F1,
+	TargetMoveToCamera_OnEyeFocusStop_mBA7C7893867FEA8BDCA5946B8E53BA03DE728E29,
+	TargetMoveToCamera_OnSelect_m4522A19F424DF78632F20E14779291CBA049983F,
+	TargetMoveToCamera_TransitionToUser_m1EEA29C2ACBF256B3F0A78DCEBEC81BE31836D0B,
+	TargetMoveToCamera_ReturnHome_m8CC53B1CCF6479E40DF8920E8B650F88A2879B49,
+	TargetMoveToCamera_TransitionToCamera_m288DB85D98C6A60C63904AC8754434910FC6867E,
+	TargetMoveToCamera__ctor_m27A0825727F0DF041589152FD4E83807F5B533F3,
+	OnLookAtShowHoverFeedback_Start_m0B4B4436E1071198EDF26E9CB579B6ECD7DB52B9,
+	OnLookAtShowHoverFeedback_Update_mEDC43397300B58EB30C117651311C3D7CBD9ADDE,
+	OnLookAtShowHoverFeedback_OnDestroy_m33CD141545A3A2DF0A246DDBB07E1B328D0F8F3D,
+	OnLookAtShowHoverFeedback_NormalizedInterest_Dwell_m71D1CF35906E08243230AD042056589C06C96D1E,
+	OnLookAtShowHoverFeedback_NormalizedDisinterest_LookAway_m2FFDD812DB71BA0221C4A5BF5B6B0B456A0DBC26,
+	OnLookAtShowHoverFeedback_DestroyLocalFeedback_m1A610DF709E4077D99CFCFD3F71D3243A3D6F041,
+	OnLookAtShowHoverFeedback_ShowFeedback_m82D5F5C7E9CD4B1540D49277377E3EBC1324A6ED,
+	OnLookAtShowHoverFeedback_ShowFeedback_Overlay_mE195ABE35FB34DDEEC50C242A0387E75C07B5FA7,
+	OnLookAtShowHoverFeedback_ShowFeedback_Highlight_mFD617359C9796B31D067EBF978088616A7BD51FD,
+	OnLookAtShowHoverFeedback_TransitionAdjustedInterest_m885C42700BB13E6775D18B17E1CA85943CC3EF50,
+	OnLookAtShowHoverFeedback_get_LookAwayTimeInMs_m8A1B1FE5F9539D5C9F83923E10F3FFB6C479B792,
+	OnLookAtShowHoverFeedback_get_DwellTimeInMs_m1F42A2EF3FBB84D1D8BCF6F3BC302C2B555CBDEB,
+	OnLookAtShowHoverFeedback_OnLookAtStop_m0ADEFE866EE7DB0C251FA708E3B21B5AD617C5F6,
+	OnLookAtShowHoverFeedback_OnLookAtStart_m22E063BA0A76345CBA7749055B5258EF569A38B9,
+	OnLookAtShowHoverFeedback_SaveOriginalColor_m42414AA306116E7DC93E3EB713A3C5EAECB7662E,
+	OnLookAtShowHoverFeedback_GetColorsByProperty_mC85148D2638E2E164665499EC276F72D7FAC6739,
+	OnLookAtShowHoverFeedback_BlendColors_mB5B3830D14198FC34069B47BAA39EC59F684FED6,
+	OnLookAtShowHoverFeedback_divBlendColor_m7E5BEA7C6502634716AA107FAC959A99A2A66BC9,
+	OnLookAtShowHoverFeedback__ctor_m1D38FF01BC7E725C203FB26A21FBE0888D27D868,
+	ToggleGameObject_ShowIt_mC9C8BB52CED663D0FB0EE782065F6D5B4C51B20E,
+	ToggleGameObject_HideIt_m3364769FECB6161493E4B2692CE7FF9D450607CF,
+	ToggleGameObject_ShowIt_m692A42298FD4A4D52673F52EBFAAF7A6E1866457,
+	ToggleGameObject__ctor_m837C8FB48707A732086B356379D60D218076E11B,
+	TransportToRespawnLocation_OnTriggerEnter_m7DB4AF03DE75F52D7456A69C7AAD42D09565E529,
+	TransportToRespawnLocation__ctor_mEB05635341D193E60EB764D67D0C455E5243D286,
+	TriggerOnStartup_Start_mE804888A0F2154C3D4A8FDC4EE35177F7B05B8AA,
+	TriggerOnStartup__ctor_m89B76221DB68F3F4A824677B1C22AB9D5439BEFA,
+	TriggerZonePlaceObjsWithin_Start_mB5044A140A40A05B296E07C49D6BA38A2E327E8D,
+	TriggerZonePlaceObjsWithin_OnTriggerEnter_m461A8B0A37A6523A1D5FFB417605420880741A9C,
+	TriggerZonePlaceObjsWithin_OnTriggerExit_mC9BA7A26563C4FB7B2206025BFF2E98DAEEC938F,
+	TriggerZonePlaceObjsWithin_CheckForCompletion_m3A1D9518E16070C60D09F89E6521D70BE98CBA56,
+	TriggerZonePlaceObjsWithin_TargetDropped_m06C79BDA7934973D9A9C73189DA2199A736E494A,
+	TriggerZonePlaceObjsWithin_AreWeThereYet_m66D601E9F7CE8686341DE818A828205F4AACF927,
+	TriggerZonePlaceObjsWithin__ctor_mC4464E8F6C8257F8C31B5AEFAD03B5F7B553849F,
+	HandInteractionTouch_Start_m7B0D1EE0873AA0970C8535374A7A79869FE69B12,
+	HandInteractionTouch_Microsoft_MixedReality_Toolkit_Input_IMixedRealityTouchHandler_OnTouchCompleted_mB8A00875B07727C7B585B326CB24E66AA1AAF6F6,
+	HandInteractionTouch_Microsoft_MixedReality_Toolkit_Input_IMixedRealityTouchHandler_OnTouchStarted_m568844E6490D624B2156DFE653DCEA96A7C370A7,
+	HandInteractionTouch_Microsoft_MixedReality_Toolkit_Input_IMixedRealityTouchHandler_OnTouchUpdated_mC824C7F47DCFEE96AB0D3AE273B5D4EFFE1FA2F7,
+	HandInteractionTouch__ctor_m3A791AD054F84871947E41D125FADEE4E3C99416,
+	HandInteractionTouchRotate_Microsoft_MixedReality_Toolkit_Input_IMixedRealityTouchHandler_OnTouchUpdated_m065A1A718597E6E3AC557E1A38E7571D2B41CFE6,
+	HandInteractionTouchRotate__ctor_mD1783FE64DD2D45A80860EC36013CD0A67F4B494,
+	InputDataExample_Update_m63764AF34844DBB504FE3BE411322B74654ADA44,
+	InputDataExample_Start_m072A75C9D01A5AABCE2B92B5206509F37DFA556D,
+	InputDataExample__ctor_mD88AA15D6AC03CAB6E8EFB2AE64A28FE1B556602,
+	InputDataExampleGizmo_SetIsDataAvailable_m6076B779648D4D6AF5792FC19263302052EC18F0,
+	InputDataExampleGizmo_Update_m29EBB2368808CC20BC5DB5D832C9A4D9BC92AF14,
+	InputDataExampleGizmo__ctor_mFE0F7BADB0924EEF54A0C4629AC09908A07F4502,
+	LaunchUri_Launch_m036690E6E4EFE31E1F15B16BDF8CF66FFBFC214E,
+	LaunchUri__ctor_m3887936F46F690BDF5598EE28E98F81CCFC54394,
+	U3CU3Ec__DisplayClass0_0__ctor_m0781035DEEC54CF7CCC3334EDE83F50E0852F56D,
+	U3CU3Ec__DisplayClass0_0_U3CLaunchU3Eb__0_mB80D37CAC32FDB233E7B5BB7159454C22F493AAD,
+	U3CU3CLaunchU3Eb__0U3Ed_MoveNext_mA43D2847D879D3271FFEF2A19F5B39C3C2EFA113_AdjustorThunk,
+	U3CU3CLaunchU3Eb__0U3Ed_SetStateMachine_mFE3A667D1025053FC35D3645F42965B9C95EB0B4_AdjustorThunk,
+	LoFiFilterSelection_Start_m9FC6CAA21C5BF0CE6A109DCADEBAA36ED38E87F9,
+	LoFiFilterSelection_OnPointerClicked_m671C2ECDC420344DD1AE2C6B6515ABC33D66C52A,
+	LoFiFilterSelection_OnPointerDown_m2E706794E80D9C29A012DA293313C54F014B362D,
+	LoFiFilterSelection_OnPointerDragged_mD8E7D8DA6C91CA2C57D41B7AEB2147CD57705596,
+	LoFiFilterSelection_OnPointerUp_mD339F2F6C1ACEB2900E5DF3DEC7D89254EA8B6AA,
+	LoFiFilterSelection_SetEmitterMaterial_mF4FD1686EE75EAB23BEE59D81E748580C033DA68,
+	LoFiFilterSelection__ctor_m7BED1751FD7E941B1BA04287B12B62F485DB75DB,
+	MixedRealityCapabilityDemo_get_InputSystem_m86534386B3C2DB595E5F488D7D08F5AAD95BAE70,
+	MixedRealityCapabilityDemo_get_SpatialAwarenessSystem_mDA66D66DB38A59F1A1E108F552AC1A8E77CD763D,
+	MixedRealityCapabilityDemo_Start_mA0DAB1A91503A76EAF5B1A6353174F45092245D0,
+	MixedRealityCapabilityDemo__ctor_mED3CD0CB5A2810B02B03D241BA4243A23FA1A59C,
+	PrimaryPointerHandlerExample_OnEnable_m7178487AFCC82CC433F938E556C77C85C7E1E120,
+	PrimaryPointerHandlerExample_OnPrimaryPointerChanged_m4CB4FB898B3C04569F5B85FE80E4CB6D43D505E1,
+	PrimaryPointerHandlerExample_OnDisable_m7AFB9493707658B27A8E1D8624BB86B33A785BC8,
+	PrimaryPointerHandlerExample__ctor_mCE00FF5A7F3D94460FB6D79461F6A5D19BC307AA,
+	Rotator_Rotate_mE0EC038FCD20C8E4B77EFD655E27EC05B5A7D94C,
+	Rotator__ctor_m69B6AE0D054F87B8F8802A83887DB9DCB5B6F548,
+	ShowSliderValue_OnSliderUpdated_m52D8FCDFE6CCCAE44217B67CD0D9844DB3860BDD,
+	ShowSliderValue__ctor_m858415530C1946100232C0AF54A24944E654A64D,
+	SliderChangeColor_OnSliderUpdatedRed_m51ADB7B04C953DD23B34C6D86B6021A9C06FB47C,
+	SliderChangeColor_OnSliderUpdatedGreen_m61BA23C495309ED30FA374134558AEEF75962045,
+	SliderChangeColor_OnSliderUpdateBlue_m5E16DAD469064548E2BC4199BEF212F3B2F5210E,
+	SliderChangeColor__ctor_m2E8628C8A17A3F682D297A9B432E96405F9EEF2A,
+	SliderLunarLander_OnSliderUpdated_m4822CCC7E9494565A3968274A8A3B3E3AD1D3540,
+	SliderLunarLander__ctor_m54BB01B23348DFF7BB98F24E6BD00CA8E68C6682,
+	SolverExampleManager_get_TrackedType_m1944715EE4DEC7BFB3C61D046DF93A2211F7E07D,
+	SolverExampleManager_set_TrackedType_m53E74D856F20C3964FB7734C723D0E8AC4629863,
+	SolverExampleManager_Awake_mB5739D8908E3BB3B68D2ACCC173C3CB5CACA6B76,
+	SolverExampleManager_SetTrackedHead_m0584C32278C9E6E63ECB2E4A883008D110AA0E61,
+	SolverExampleManager_SetTrackedHands_m54C8B033AAE7EFBD06CA1EC22B95432431783137,
+	SolverExampleManager_SetTrackedCustom_mE5EE6E14E75F338B6E35A2C2E031501AA70C3C5E,
+	SolverExampleManager_SetRadialView_m36A9069BB4ACD6A2457B5809E7F371253F840BB0,
+	SolverExampleManager_SetOrbital_m46E64797BC3F709FE6E9109E9306577BE498BA71,
+	SolverExampleManager_SetSurfaceMagnetism_mCF220D926F5BA9A4BA8C5F1556220B47189B7004,
+	SolverExampleManager_RefreshSolverHandler_m01FD36508344A4C92F8988219E65209AF17FC5A3,
+	SolverExampleManager_DestroySolver_m48D6F18B051B7180B3FDE200B7081FB000C37C60,
+	SolverExampleManager__ctor_mF18039D81824B1B3C079CB86EC74CE44AE098742,
+	SpawnOnPointerEvent_Spawn_m27DE653E86BB63CD45770AA6D9681F41BDBCC6E9,
+	SpawnOnPointerEvent__ctor_m51D7031BF5F8D2EC34D77089F32579AFBB87F950,
+	MaterialMatrix_Awake_m899DC97E01B170BEA171B3218C45B764B0D3F65B,
+	MaterialMatrix_BuildMatrix_m2E173BFBB7F2BD9F1B8A5922CED661C78E5E5294,
+	MaterialMatrix__ctor_mFCCC0A86E66D0E3B69B1C497B366F32E71F752E6,
+	SystemKeyboardExample_Start_m34F489F8290AA52FD9F1A851FFB85244C21D521F,
+	SystemKeyboardExample_OpenSystemKeyboard_mA2D050F2431E7F8954CF2DA12DE78A93BB62535F,
+	SystemKeyboardExample_Update_m56E94A55C73FA4F2751CF9CE0B9F558D50A60083,
+	SystemKeyboardExample__ctor_m54AEE21B06182A1F15666913E4D710A02EC30A1E,
+	SystemKeyboardExample__cctor_m85EDD8830D35FBEE8CB561AE18660DC4FD45C9BE,
+	TetheredPlacement_Start_m80FF5AD54BA244CB1A19134982C8C50B42E9D440,
+	TetheredPlacement_LateUpdate_m1F9E01A1D8083F813CBADA24CED9490765D2BDDA,
+	TetheredPlacement_LockSpawnPoint_mDC2D8EB5423647FF4093F5CCF87F7C4701294613,
+	TetheredPlacement__ctor_m3B74E9A5A7218D59CA8CA9F0E730C1C5AA5B712E,
+	ToggleBoundingBox_Awake_mF7A7F52312158EF33C759BDF07CEFE17864213E9,
+	ToggleBoundingBox_ToggleBoundingBoxActiveState_mF7ED70D92F5CB023F1CA1A471CDBFF6A347E4677,
+	ToggleBoundingBox__ctor_mBA3F69F5F8EBFFE78751409FDB4C2F0CC7FB8645,
+	GestureTester_get_InputSystem_m187437605BF50AFCFE0ACEE7B9AD1051B92F6197,
+	GestureTester_OnEnable_m1AEBD9635BC4DD7C3639B31DADC2AF966559CD6B,
+	GestureTester_OnGestureStarted_m99AD1F7CB63014602A036864008566F5F6954F96,
+	GestureTester_OnGestureUpdated_m2F801176F3D7FADD923B376B08B9B69A99DA7B51,
+	GestureTester_OnGestureUpdated_mA4E0FEE3459A4CD54746B9F41CFD764B736B56F1,
+	GestureTester_OnGestureCompleted_m7BA55026D5A90ABBBFAF08665FC999B51FF2A53B,
+	GestureTester_OnGestureCompleted_m987FB4B29EDCF530E8D9090A5FA352CA3C16EDBA,
+	GestureTester_OnGestureCanceled_m1E7E1A4EBCAA4BADFBA37708148BE003160DBB3F,
+	GestureTester_SetIndicator_mBBEF3B2778355EC5764666520AD37B0321D74BE6,
+	GestureTester_SetIndicator_m34C502C4E3FCD85827A60EE04D70D93DB0282124,
+	GestureTester_ShowRails_mCF129A8FF16AF64CDFA3DBCE67B2D46FE7128AE0,
+	GestureTester_HideRails_m0425C82F44ED310BDD93984FE069CB469EE5AEB1,
+	GestureTester__ctor_m6D8A51E595D4BE89B5BC54ECEF1D28EE88189B9C,
+	GrabTouchExample_Awake_m181AD67E46B89AEB21CAA9CCE52705B554366028,
+	GrabTouchExample_OnInputDown_m7AF64D681FE305D3C12CFCAEFD1D8298817CE12C,
+	GrabTouchExample_OnInputUp_mD9E706A1CD0DC0F89CB760C692CC25AC6AC6ADC6,
+	GrabTouchExample_OnInputPressed_m23290AF6CF8F930D99980B9F4A0A0A17264954CC,
+	GrabTouchExample_OnPositionInputChanged_m03BFE1E25BD2995F1DDE8C4FE4A13791C912594A,
+	GrabTouchExample_OnTouchCompleted_m2728E391184F32A9329811A4752AA8AFC6F914CE,
+	GrabTouchExample_OnTouchStarted_m2CC88085591C364F39D350C2C0DCFAC792EF1F39,
+	GrabTouchExample_OnTouchUpdated_m1C4059682F21CBAAC31796CC41D131C6F21BEBEE,
+	GrabTouchExample__ctor_m8209D04812F7824A8709E1D78D71231F82899F6F,
+	RotateWithPan_OnEnable_mB6F7A43EBF9F34CD5F936594C90AB7EFE2CE739E,
+	RotateWithPan_OnDisable_m66883518AABC5345E433D12E46FA8EB5190A447A,
+	RotateWithPan_OnPanEnded_mE8738486A008CB39A563107E0E3BBFC81D454DB8,
+	RotateWithPan_OnPanning_mAA811EB7489F6A99CA12238E54CB92116719B453,
+	RotateWithPan_OnPanStarted_m7C659AC7BCF0AC71CADFD03982FCC2EEC322D285,
+	RotateWithPan__ctor_m1757F776BD77919F47187B42DFA7BB985F3CB040,
+	BaseDwellSample_Awake_mDC808646183EED8547AAFA9A9679CED192783299,
+	BaseDwellSample_DwellStarted_mB7EEBD2957817138671EBF96BBF735EBC7E59131,
+	BaseDwellSample_DwellIntended_mA749A291434652DE035FADAB5B7173F54C0E656D,
+	BaseDwellSample_DwellCanceled_m28C0C59FA4E404A03FF15A05586F85FE261D4726,
+	BaseDwellSample_DwellCompleted_m407B47B518A5D6DB76230131528E4BE7A0DF81AB,
+	BaseDwellSample_ButtonExecute_m41FC1A7AE453EC9BA902087350847FC79C547324,
+	BaseDwellSample__ctor_m74F15E4F7E52987F2C6EA3FCEC6E0478DD4411AE,
+	CustomDwellHandler_UpdateFillTimer_m550BB123CE2BEBEFCA126774C3F88C3B91F476EC,
+	CustomDwellHandler__ctor_m14AB4329141C71001C7BB6FB505926874AC9C80B,
+	DwellProfileWithDecay_get_AllowDwellDecayOnCancel_m0A8381E852D3C5C6AB4AD332870241A6AD0A92A5,
+	DwellProfileWithDecay_get_TimeToAllowDwellDecay_m44C44AFF7A2793C124533148C314DE1B3828E631,
+	DwellProfileWithDecay__ctor_m452B6249E0ACFF884E43D6D5C7801B8C7D7800B2,
+	InstantDwellSample_Update_mCA4E6319DC6852EFC948973661C9869DBC7A26A0,
+	InstantDwellSample_DwellCompleted_m6305970FB3AD0FA4369FD7CAB2FC0C949A68495D,
+	InstantDwellSample_ButtonExecute_mBCF80275C2AC76DF00971DB15DF9E41BD252BFB0,
+	InstantDwellSample__ctor_m6642AFCD3448A8D25EE4B120548F23E365B84DA6,
+	ListItemDwell_Awake_m563522EDEB0CF76D7EE4D14100CDE439644E56F1,
+	ListItemDwell_Update_m90FB9D26D3E01487F524875A7EB75F915863A3B6,
+	ListItemDwell_DwellCompleted_m285E0FC74AEBA139B998B920340D178061FB1E82,
+	ListItemDwell_ButtonExecute_mDC9AE263D54FD6302219860E9C57D504DC732879,
+	ListItemDwell__ctor_mBB15DABA044C331093CD399E9EBCF8D614949359,
+	ToggleDwellSample_Update_m9948712C8D73DFDF1E4DD9DC8134D082FFF7751C,
+	ToggleDwellSample_DwellIntended_mB4FC662059B33F291464218F10F7CB4559933F07,
+	ToggleDwellSample_DwellCanceled_mE3AE1A4DE5DCC9D91337D5A9517AB8FA64B559D1,
+	ToggleDwellSample_DwellCompleted_m66B03522C4B4C0EEC9CAC12C53B0C38587F7A24E,
+	ToggleDwellSample_ButtonExecute_m3C030E9CFB90AD80AA38F6B7B11CDEE8F2A339E7,
+	ToggleDwellSample__ctor_mAA7EFB84F879B898B37A538A84394580DE81A988,
+	WindowsMixedRealityHandRecorder_get_ReferenceJoint_m99DD86B8EA1D67E987D11EE003236CFBAE8CC73A,
+	WindowsMixedRealityHandRecorder_set_ReferenceJoint_m839FBDE0BA069ACC43E7B4B03ADF91BCA2D9C917,
+	WindowsMixedRealityHandRecorder_get_OutputFileName_mB5C40E4735B6ED7F62C8A547A24440224C96573A,
+	WindowsMixedRealityHandRecorder_RecordLeftHandStart_mB382A131BEB020C514CA4C33D4E13B608C66A1BA,
+	WindowsMixedRealityHandRecorder_RecordRightHandStart_m58C432C7D04B06342CA0501090DA548795B2008E,
+	WindowsMixedRealityHandRecorder_RecordHandStart_m47311E0675F4895CA3997AD3242CA59ED14A8AD7,
+	WindowsMixedRealityHandRecorder_RecordHandStop_m07E1CCE9F376656F5CB943055DB2BF2E6B846E3C,
+	WindowsMixedRealityHandRecorder_StoreRecordedHandPose_m54C1D09D5609666ADB3ABCDDE9F41EAE2AE1BF52,
+	WindowsMixedRealityHandRecorder__ctor_m612D8221755C97A61EAB8356A382BEEAA4B7F962,
+	WindowsMixedRealityHandRecorder__cctor_m5BFEA6BCF51979889D59E386863F60EB8B6B40E3,
+	GestureRecognizerExtensions_UpdateAndResetGestures_m342C58CFDBFC5C9C049290FD168F40A413D91F7E,
+	InteractionSourceExtensions_StartHaptics_m350D7A9CC863DE04A943E5CA853CD2C054A5C65E,
+	InteractionSourceExtensions_StartHaptics_mE03AFAF399D9DCFA9512C68730979BBED46CCE23,
+	InteractionSourceExtensions_StopHaptics_mE9968015844042BD168CE34245771BDEFFDBB650,
+	InteractionSourceExtensions_TryGetRenderableModelAsync_mC9AD1DDBF240B54DEB62BFD459C349D01ED07299,
+	U3CU3Ec__DisplayClass2_0__ctor_m527FC38CE354551F4D175B6CC6EC4F11AE17442A,
+	U3CU3Ec__DisplayClass2_0_U3CStartHapticsU3Eb__0_mB958350E7ACEBB7E9382FD3346753E9419C9EE97,
+	U3CU3Ec__DisplayClass3_0__ctor_mAB59CB806AFEEA8A7630A2E04E24DA5A27356E4B,
+	U3CU3Ec__DisplayClass3_0_U3CStopHapticsU3Eb__0_m7F6FD4423804E4E953E4C64FE8993C034E54F78C,
+	U3CU3Ec__DisplayClass4_0__ctor_m4D27CDB3B0D99E34AF7E96EBF082177C6C220A06,
+	U3CU3Ec__DisplayClass4_0_U3CTryGetRenderableModelAsyncU3Eb__0_mC74B48FC74D84E26A52F32B72C97C222A1721FB8,
+	BaseWindowsMixedRealitySource__ctor_mE7C47697547865A98E71EAF29CE08632107B760A,
+	BaseWindowsMixedRealitySource_get_DefaultLeftHandedInteractions_m8C9EFB997C5320EDD7FAC7F6AFB6438B4B4BAD84,
+	BaseWindowsMixedRealitySource_get_DefaultRightHandedInteractions_m514D8A6CA16B6F7A1C6D3B615C08F5EFC2965DDF,
+	BaseWindowsMixedRealitySource_SetupDefaultInteractions_m8B4FEB0D04AE8B998D00226017D5D547E94A1F82,
+	BaseWindowsMixedRealitySource_get_LastSourceStateReading_mFC19FE5893F100FD85D800947F04EE0ECD40B098,
+	BaseWindowsMixedRealitySource_set_LastSourceStateReading_m00E16395DA64791CA27F9E9F6D70A2BF6C0677BA,
+	BaseWindowsMixedRealitySource_UpdateController_m563750BE36CC05433EFEE89EE035D830A176D43E,
+	BaseWindowsMixedRealitySource_UpdateVelocity_m44C96E98B9668BE7DF1FE112DC87E758960326E1,
+	BaseWindowsMixedRealitySource_UpdateSourceData_mA2FE7800446141AB7CB6138C26E2C277196A213D,
+	BaseWindowsMixedRealitySource_UpdatePointerData_m35CFBB09D30D4B12BB6274C92C6B29D6D456A8E9,
+	BaseWindowsMixedRealitySource_UpdateGripData_m635916473ED5F0D0405F2795418390E57F780B14,
+	BaseWindowsMixedRealitySource_UpdateTriggerData_m3D484FAB9C185EDA0738063C630B1B77A76AB27A,
+	BaseWindowsMixedRealitySource_GetSelectPressedWorkaround_m39EA4A4B3AD626EEB82043D5ABD04338608B74A0,
+	WindowsMixedRealityArticulatedHand__ctor_m53045D2E2678367F15FC62540651EDACA3CCF3AA,
+	WindowsMixedRealityArticulatedHand_get_DefaultInteractions_mF2B56591D01B4BF4C705FB809A48A524213A3A54,
+	WindowsMixedRealityArticulatedHand_TryGetJoint_m9C3D48251112DB2EBF95A6E635427057D315EA07,
+	WindowsMixedRealityArticulatedHand_get_IsInPointingPose_m668FAB4C52F2944F139B59BF2518B12A98B88D8C,
+	WindowsMixedRealityArticulatedHand_get_SpatialInteractionManager_mD60F76B7F314BE76520F6A3F520703FC744B428D,
+	WindowsMixedRealityArticulatedHand_UpdateController_m12177F24D583AD7AC633AEFFF4B055284DF46533,
+	WindowsMixedRealityArticulatedHand_InitializeUVs_m31BBE67E343BC4E8BCA19FF16884FA8A40B30E96,
+	WindowsMixedRealityArticulatedHand_SetHandMeshObserver_m2FA64EEA470519023E883D5E33A5B482BDD4EAC3,
+	WindowsMixedRealityArticulatedHand_UpdateHandData_mAB87C8379E2BDF762727E2E3D579CDCE90D3C40A,
+	WindowsMixedRealityArticulatedHand_UpdateIndexFingerData_m957C0E0CD22FD311781545275E0B9B906E3EE8AD,
+	WindowsMixedRealityArticulatedHand_ConvertHandJointKindToTrackedHandJoint_m492E626BE68A277D72EBA9524D5243AE0D0EA486,
+	WindowsMixedRealityArticulatedHand_UpdateCurrentIndexPose_m6D032721706E07EC7CC1A52057B09883346DE010,
+	WindowsMixedRealityArticulatedHand__cctor_m1953FAA9A459D2CA257279EDCD9A899453F03060,
+	WindowsMixedRealityArticulatedHand_U3Cget_SpatialInteractionManagerU3Eb__9_0_m1845C077412A1E764C03D7F0CE3DFA92747C4DB4,
+	U3CSetHandMeshObserverU3Ed__19_MoveNext_m81B42693575DB07A42E6C31C0B27DF7BD3260DC5_AdjustorThunk,
+	U3CSetHandMeshObserverU3Ed__19_SetStateMachine_m51B9A49BEA6455E7EC78FEA0D6A1DD46B07DA33D_AdjustorThunk,
+	WindowsMixedRealityController__ctor_mACB4562AAC3D6516BDD086232F17177B214734EE,
+	WindowsMixedRealityController_get_DefaultInteractions_mD2C532824D594D2B2B87C2C0CFAA5570D4AAA14D,
+	WindowsMixedRealityController_UpdateController_m9CE5AEF37B28D5D2F7C97C0476D50B9AC5F61D75,
+	WindowsMixedRealityController_UpdateTouchpadData_m33C16A38B6D7984C9459241B548E3D612E1A025A,
+	WindowsMixedRealityController_UpdateThumbstickData_m9CD56385E4990CA8ACA5F2BBDAFFEF518D7F5ED2,
+	WindowsMixedRealityController_UpdateMenuData_mC8F082DDA8B7ED60443AAA947253B4A1F1C3F0AC,
+	WindowsMixedRealityController_EnsureControllerModel_m2EA6C45A56C6D9EC9D54B22ACDA21D6D11830C5C,
+	WindowsMixedRealityController_TryRenderControllerModel_m08E032A5B2C08F63A9345C0B85816CB20197F6C2,
+	WindowsMixedRealityController_CreateControllerModelFromPlatformSDK_m67CC9DEB209F01D0A3C5DF82C3DE4B2B1A304508,
+	WindowsMixedRealityController_TryGetRenderableModelAsync_m6D3B112A47688939F5E50F1B6EA6E9DD515FF58D,
+	U3CU3Ec__DisplayClass12_0__ctor_m95A9A2813702762763DDE95DC81BF71AA4C69148,
+	U3CU3Ec__DisplayClass12_0_U3CTryGetRenderableModelAsyncU3Eb__0_m080CDA3DA2DAA4072BA195FEF846989705D13D3D,
+	U3CCreateControllerModelFromPlatformSDKU3Ed__11_MoveNext_mBD08F03627D267E9DAE7BA7A8729B5E07C90FDB3_AdjustorThunk,
+	U3CCreateControllerModelFromPlatformSDKU3Ed__11_SetStateMachine_m0C8710FC76D984E4A33F30E4130F6FB644915ACE_AdjustorThunk,
+	WindowsMixedRealityDeviceManager__ctor_m565A2919C3ED9F2FBE19BBD495484EDEB578A94F,
+	WindowsMixedRealityDeviceManager_CheckCapability_mC1AE01512AFACD1AFE77E11F02D879DDB14F4528,
+	WindowsMixedRealityDeviceManager_get_LastInteractionManagerStateReading_mA5DF657B57BDA5D94A690F8F9679D193F6C59E01,
+	WindowsMixedRealityDeviceManager_set_LastInteractionManagerStateReading_m3CD3D284480BD90290A3A6C156A8A976C0469A4D,
+	WindowsMixedRealityDeviceManager_GetActiveControllers_m594E46FC22F48D3D75E58DE997F48FFC6C10280C,
+	WindowsMixedRealityDeviceManager_get_GestureRecognizerEnabled_m3A0B9F7ABEDB28C37BF817C4C667C8062655D60D,
+	WindowsMixedRealityDeviceManager_set_GestureRecognizerEnabled_m006B0DCAEE71DA8C37CBBE66E8729BF668F26F6E,
+	WindowsMixedRealityDeviceManager_get_NavigationRecognizerEnabled_mADE412423C7632D8C1424AD9EF940A18DC09E0C7,
+	WindowsMixedRealityDeviceManager_set_NavigationRecognizerEnabled_mE5CC079B43D560393E4D9FE6513D843A5ACA33FD,
+	WindowsMixedRealityDeviceManager_get_GestureSettings_mDC85BFE2B6F776A65EE94EE593CF795D4DF4F70B,
+	WindowsMixedRealityDeviceManager_set_GestureSettings_mF499BFEBCC714FBC645952B15C2B396AD77FF8F9,
+	WindowsMixedRealityDeviceManager_get_NavigationSettings_m2767BB58C9CCE3D360DD025B074EBD3F5D2FC2C0,
+	WindowsMixedRealityDeviceManager_set_NavigationSettings_m541745167C6F0CC9797FBC2E47BD7A8F55E2CE41,
+	WindowsMixedRealityDeviceManager_get_RailsNavigationSettings_m02D1519C7A1DE40D5F886D351ADA67C3A7554BC6,
+	WindowsMixedRealityDeviceManager_set_RailsNavigationSettings_m7DDC181F204D38D7CCAB7291691A2106D7CAF413,
+	WindowsMixedRealityDeviceManager_get_UseRailsNavigation_m7D42070E28FD4142D6BDF2611E174268314AC880,
+	WindowsMixedRealityDeviceManager_set_UseRailsNavigation_mF0D43B563AC8FA9EA4D5D338184BCCE00171479E,
+	WindowsMixedRealityDeviceManager_get_WSAGestureSettings_m14A62179652A7628FD043F1BD9B6FBBB4675F230,
+	WindowsMixedRealityDeviceManager_get_WSANavigationSettings_m38091ED95215DDE438EA44A6F1CA36676462DE42,
+	WindowsMixedRealityDeviceManager_get_WSARailsNavigationSettings_m5AE00C2EE4689FFE1CB60E85F6BE875148D9E3FE,
+	WindowsMixedRealityDeviceManager_Enable_m73EC5015B2E163BFACF0A047ACB1E8AF66CB7A68,
+	WindowsMixedRealityDeviceManager_Update_mAD0F77BA27901CEA63EF3FCEFD252DC38123807D,
+	WindowsMixedRealityDeviceManager_RegisterGestureEvents_m2F883772B9C07CB4CFB33E02CE26C1B6715BF3A8,
+	WindowsMixedRealityDeviceManager_UnregisterGestureEvents_mC630CF04B64F20D431E080945107566568DB1BDF,
+	WindowsMixedRealityDeviceManager_RegisterNavigationEvents_mF71FAB41F414D3B4B4707BAB03572C185CDB2F21,
+	WindowsMixedRealityDeviceManager_UnregisterNavigationEvents_m1410E0D5014B7C12594BEED760B87C799B4CCF11,
+	WindowsMixedRealityDeviceManager_Disable_m31933BD4A29739B57772A6AA3113C4A12F0F6AA5,
+	WindowsMixedRealityDeviceManager_GetController_m5A0DE9437D5AAD54522E38004B376226012F1E4D,
+	WindowsMixedRealityDeviceManager_RemoveController_m31BFA4F4A3E5B922FDBCA1F671445A9486C41A3D,
+	WindowsMixedRealityDeviceManager_InteractionManager_InteractionSourceDetected_m108C68FE89AFB9E3A006BC5CA7BD2CB059B29CE8,
+	WindowsMixedRealityDeviceManager_InteractionManager_InteractionSourcePressed_m538D77E0BCCB94FDCD736DEA6F595CBBDCBB5100,
+	WindowsMixedRealityDeviceManager_InteractionManager_InteractionSourceReleased_m1D431AC8B3C241A6E8262D248B2B2CAD63F50E8D,
+	WindowsMixedRealityDeviceManager_InteractionManager_InteractionSourceLost_m7CA93D2A26F358401D42C900CE317220DD858292,
+	WindowsMixedRealityDeviceManager_GestureRecognizer_HoldStarted_m079AD6324C21C4694062AA02662106F49C75A5D8,
+	WindowsMixedRealityDeviceManager_GestureRecognizer_HoldCompleted_m0793E8439E6943C9E556F8AFFB945CFDEF4CD39A,
+	WindowsMixedRealityDeviceManager_GestureRecognizer_HoldCanceled_mC92CE71DC8A90D78CCF101750F62A435697D6A21,
+	WindowsMixedRealityDeviceManager_GestureRecognizer_ManipulationStarted_m3C6E307AEFF350BF78789511A8F2DF5438E60752,
+	WindowsMixedRealityDeviceManager_GestureRecognizer_ManipulationUpdated_m95D82187DC935AB6F347B21A3F725577892C6BEF,
+	WindowsMixedRealityDeviceManager_GestureRecognizer_ManipulationCompleted_m60C112E77162E7D87F1C7E170C60A0DBBD0D1663,
+	WindowsMixedRealityDeviceManager_GestureRecognizer_ManipulationCanceled_mEB6CC7F8C4E1178ACFF37E1D5639E703AC402DC7,
+	WindowsMixedRealityDeviceManager_GestureRecognizer_Tapped_mD19B51725D5DC8B7733C017091B106B40B1B3CC5,
+	WindowsMixedRealityDeviceManager_NavigationGestureRecognizer_NavigationStarted_mF28AD4655B4550ACD5264CEFD0A57D30ACA5A26F,
+	WindowsMixedRealityDeviceManager_NavigationGestureRecognizer_NavigationUpdated_m0020D0948CF2D7F343FC0A40EA3A4398BCE69245,
+	WindowsMixedRealityDeviceManager_NavigationGestureRecognizer_NavigationCompleted_mB473256175BA663531CACB23028F0EF93E8C6D58,
+	WindowsMixedRealityDeviceManager_NavigationGestureRecognizer_NavigationCanceled_mBCE6E0E8E9815A60DF22DD428153608D3DDD845E,
+	WindowsMixedRealityDeviceManager_UpdateInteractionManagerReading_mCBF6D7F5AD4306E0D4FFE3D93815021B5BDB09F0,
+	WindowsMixedRealityDeviceManager__cctor_m7014A24606362625F24C4BE69B7DC7E3E1494CDA,
+	WindowsMixedRealityEyeGazeDataProvider__ctor_mA233F71CC2DC8BEA8C0461D2BF5897F67A5A1AF2,
+	WindowsMixedRealityEyeGazeDataProvider_get_SmoothEyeTracking_mEF176E15A89CFBAF6103DA4CED00EB075A8E341D,
+	WindowsMixedRealityEyeGazeDataProvider_set_SmoothEyeTracking_mA90B752746484AC10EE86A441C4F1562F69F3793,
+	WindowsMixedRealityEyeGazeDataProvider_get_SaccadeProvider_m5264DC2EE7DF8C054D06E852ABA07EFA0FE794ED,
+	WindowsMixedRealityEyeGazeDataProvider_add_OnSaccade_mD6EE61675587A3DC6D8E2A4FB3E1C1F62B31CE08,
+	WindowsMixedRealityEyeGazeDataProvider_remove_OnSaccade_mCE64933CAD7916A5F71C79EEBC860140A83C1266,
+	WindowsMixedRealityEyeGazeDataProvider_add_OnSaccadeX_mD2ED64DC2C85292D95BB48B96E57DA58F8D2232A,
+	WindowsMixedRealityEyeGazeDataProvider_remove_OnSaccadeX_m154DF1EE530E599C9FB907D9C95B275E95FDBE38,
+	WindowsMixedRealityEyeGazeDataProvider_add_OnSaccadeY_m8DA2E987E40DD232B351D73EFD938ABFAED36FD3,
+	WindowsMixedRealityEyeGazeDataProvider_remove_OnSaccadeY_mF12D0ADF828EAAE7B3CEE481E3F5B07100799F99,
+	WindowsMixedRealityEyeGazeDataProvider_CheckCapability_m42CD81C53C2A9447C460ED2A786426D1D40E5830,
+	WindowsMixedRealityEyeGazeDataProvider_Initialize_m479847D8437C0B92FDB66F8FD6A9C8AE3C913070,
+	WindowsMixedRealityEyeGazeDataProvider_Update_mE6E9EEA7D817630434B86B88E7B6A99939CA8EAA,
+	WindowsMixedRealityEyeGazeDataProvider_ReadProfile_mF4F26654A210BFD34457848F6608F5972A5DBBB5,
+	WindowsMixedRealityEyeGazeDataProvider_AskForETPermission_m9B4CADC259BF5251FD521D5A4B7474C6C0122F6C,
+	WindowsMixedRealityEyeGazeDataProvider_SmoothGaze_mF818761D7C72695BA66B0DAD3AF3B26517A769EB,
+	WindowsMixedRealityEyeGazeDataProvider_IsSaccading_m5F65CD0526140884C59DF92F2B3990087FE6B005,
+	WindowsMixedRealityEyeGazeDataProvider_Post_OnSaccade_m10459E8BDB6BB512B2D87AF895E9D6B21B69256F,
+	WindowsMixedRealityEyeGazeDataProvider_Post_OnSaccadeHorizontally_m4D27A79FE85652A95B031959BA2BD839FD952A3D,
+	WindowsMixedRealityEyeGazeDataProvider_Post_OnSaccadeVertically_m9AED919869FA1F812588D9801884A6E10443CFA1,
+	WindowsMixedRealityEyeGazeDataProvider__cctor_m1334154C0DA9F71C56300A6FA0F5E72F077DE5AF,
+	U3CAskForETPermissionU3Ed__28_MoveNext_mC84E76E39FA6501D58A7A84D3AAE35BCF2C5C550_AdjustorThunk,
+	U3CAskForETPermissionU3Ed__28_SetStateMachine_m710789FAFFA04CF91438B090E5B426DA064E5E85_AdjustorThunk,
+	WindowsMixedRealityGGVHand__ctor_m81F542AF5E11119DB1AEA35148F5DB39C28DA744,
+	WindowsMixedRealityGGVHand_get_DefaultInteractions_m4630203420DB1BC09647A49C0E14FD6F9D219AD7,
+	WindowsMixedRealityUtilities_get_SpatialCoordinateSystem_mA2D4560B7EC78C6E69C06017E0827591606BC28C,
+	WindowsMixedRealityUtilities_SystemVector3ToUnity_m9735F6AFD14C5119EFB72934413449099741E71C,
+	WindowsMixedRealityUtilities_SystemQuaternionToUnity_mE60397640EB0A92449F5358FB589F1B825DD82E4,
+	WindowsMixedRealityUtilities__cctor_m29E59C9FACD6DE3716E0DAAD5A953AEEAFB8C8FD,
+	WindowsMixedRealitySpatialMeshObserver__ctor_m4EFCFA7B26BA7D264BD35D35F29CAA8D022AC6E8,
+	WindowsMixedRealitySpatialMeshObserver_ReadProfile_mDC1B7A683D33287168B60782C1483AB2570B41EC,
+	WindowsMixedRealitySpatialMeshObserver_CheckCapability_m5E9BA51343912547DF4E08A3378384649E6FAA97,
+	WindowsMixedRealitySpatialMeshObserver_Initialize_mA6169B0C7AE4A5DF9C74CF7C79BC8E6E6F9A939A,
+	WindowsMixedRealitySpatialMeshObserver_Reset_mBFF0B5A905407BBE8315CA321BFB12DFE74592D5,
+	WindowsMixedRealitySpatialMeshObserver_Enable_m341436E27C97CF5823476F4A60169E064E108AFA,
+	WindowsMixedRealitySpatialMeshObserver_Update_m37EEA6395E4A7011AE9605D6077DF618351692F2,
+	WindowsMixedRealitySpatialMeshObserver_Disable_m0A12D9ACF77065A364762B11432B94EFE37C338E,
+	WindowsMixedRealitySpatialMeshObserver_Destroy_mDF3028F8234567F0CEAC299B4CF5837E12442E20,
+	WindowsMixedRealitySpatialMeshObserver_get_ObservedObjectParent_m6FB9BFF29242BAEC3A93B8259A73592D62B2783B,
+	WindowsMixedRealitySpatialMeshObserver_Dispose_mFBC9D8DA89DDC81880E158D484923FEFA51B3036,
+	WindowsMixedRealitySpatialMeshObserver_get_DisplayOption_mB1D73BD09A3A1489B917AAD899783C74A5525937,
+	WindowsMixedRealitySpatialMeshObserver_set_DisplayOption_m317A6694C96B963CF35DFEE4D3DC35991324A4DF,
+	WindowsMixedRealitySpatialMeshObserver_get_LevelOfDetail_m092F9CE1CB76EC08FC6FDA956765A8C32F89BA09,
+	WindowsMixedRealitySpatialMeshObserver_set_LevelOfDetail_mAB1814DA1A2E605D3042E418BEF7485C3B71EA3E,
+	WindowsMixedRealitySpatialMeshObserver_LookupTriangleDensity_m1A4F87C59F6732CB9548DDC7C66994A1D150B853,
+	WindowsMixedRealitySpatialMeshObserver_get_Meshes_m5EBF6F22A5D90F05E32E639DE0937A9E407735A9,
+	WindowsMixedRealitySpatialMeshObserver_get_MeshPhysicsLayer_m7348855BC22A7CC03665F656A04008F836ED8F75,
+	WindowsMixedRealitySpatialMeshObserver_set_MeshPhysicsLayer_mF7D8A31438884F53559A97DA60B4E2FD3C685E83,
+	WindowsMixedRealitySpatialMeshObserver_get_MeshPhysicsLayerMask_m9F31D98B6977254F025089CCF1C67CA5287D219E,
+	WindowsMixedRealitySpatialMeshObserver_get_OcclusionMaterial_mD30719679E65F88BF317F10E445AB646971ACB1C,
+	WindowsMixedRealitySpatialMeshObserver_set_OcclusionMaterial_m439C40CCCA20D46989FB55A3E9FCB256D567B5A7,
+	WindowsMixedRealitySpatialMeshObserver_get_RecalculateNormals_m0045B6E6BFA5055483654992C2F6EB7C9F921BF7,
+	WindowsMixedRealitySpatialMeshObserver_set_RecalculateNormals_m70A243FE155983C787ABD8153749C4E5EDD5495E,
+	WindowsMixedRealitySpatialMeshObserver_get_TrianglesPerCubicMeter_mD3EA6CB9750B98E01A074123D7B22D5CDBD05D48,
+	WindowsMixedRealitySpatialMeshObserver_set_TrianglesPerCubicMeter_mF83CC066869F456B8491A6842C94374B6B43A648,
+	WindowsMixedRealitySpatialMeshObserver_get_VisibleMaterial_m968D83ADEA350132D58868A3EB2E71C59B807FE1,
+	WindowsMixedRealitySpatialMeshObserver_set_VisibleMaterial_mCD75C42BD1C6A53A7A34CBB502ABA5142330AC9D,
+	WindowsMixedRealitySpatialMeshObserver_Resume_mCD5A67F5993C9ABE69D52979ED3CBB61542AC7A3,
+	WindowsMixedRealitySpatialMeshObserver_Suspend_mD65003D543C4C8B6FCD478868454E4C22DFB5765,
+	WindowsMixedRealitySpatialMeshObserver_CreateObserver_mAAF5652E7C01AD5E52740583408A017367306658,
+	WindowsMixedRealitySpatialMeshObserver_CleanupObserver_m79FFC884E9C1F5B040BB5CFE80834BA05F426F30,
+	WindowsMixedRealitySpatialMeshObserver_CleanupObservedObjects_mED17BD02DD5B038D7AA331D784EAB6E351232111,
+	WindowsMixedRealitySpatialMeshObserver_DisposeObserver_m18634CB7D733979FBDF476E928F332D093B82231,
+	WindowsMixedRealitySpatialMeshObserver_UpdateObserver_mDA5F61AAA2F5A3186B451422F53E1698355742E8,
+	WindowsMixedRealitySpatialMeshObserver_RequestMesh_m92AA1ACC23FAEC06E1A9EE02F68033B11766E09A,
+	WindowsMixedRealitySpatialMeshObserver_RemoveMeshObject_m9FB525F0F5F90E884F86356248A3A2159190B6D4,
+	WindowsMixedRealitySpatialMeshObserver_ReclaimMeshObject_m5A4C0AFC494F3863DC84C8C69512325FAC39FF57,
+	WindowsMixedRealitySpatialMeshObserver_ConfigureObserverVolume_mF1ADED37FBA77B63659D7662D1816481361CABBE,
+	WindowsMixedRealitySpatialMeshObserver_SurfaceObserver_OnSurfaceChanged_m901DD61E503D7C4D944E523DA53F019A55447977,
+	WindowsMixedRealitySpatialMeshObserver_SurfaceObserver_OnDataReady_mC646437B04BE8BF5F5FEB53D0B2B0C0A562E97A9,
+	WindowsMixedRealitySpatialMeshObserver_ClearObservations_mAF6BF5F773673EF8D57A938B4804F0CB8C94026D,
+	WindowsMixedRealitySpatialMeshObserver_ApplyUpdatedMeshDisplayOption_mE5060DF27AF8E2B8C94CC743F40C10498E182B38,
+	WindowsMixedRealitySpatialMeshObserver_ApplyUpdatedPhysicsLayer_m5B665B0356045C930149A49AC5602DEA1C1B416A,
+	WindowsMixedRealitySpatialMeshObserver__cctor_mDC2077FF1D15B3E4150004F0153BBF6D0B3991DF,
+	U3CU3Ec__cctor_m25F535C0B98A9A9EE1AA318261EEF161A35B7C89,
+	U3CU3Ec__ctor_mB3C3334BAB06DE91EF4B560224184D9C0E0DC3BE,
+	U3CU3Ec_U3C_cctorU3Eb__73_0_mCF026626F323E877F217C1B3E243C8BBBDA7B0BD,
+	U3CU3Ec_U3C_cctorU3Eb__73_1_m8AFE1FDA408C3A71BF1759B4BA67E5B618687904,
+	U3CU3Ec_U3C_cctorU3Eb__73_2_m52D630C4EDB49D484FC5CA1FE27B88480D949B4E,
+	PlayspaceAdapter_Concatenate_m85EC248F8F8FD3CE33CFC91ED1CC8AA68ABCF5E4,
+	PlayspaceAdapter_Update_mE80F82963C8B488556D67F8AB4D090FFFA7B5491,
+	PlayspaceAdapter__ctor_m756B86607C9B40AC96E0E5EDE6E76E8A683C6F70,
+	WindowsDictationInputProvider__ctor_mE813C75A0362C394E50DAD781ACE35118689DC42,
+	WindowsDictationInputProvider_get_IsListening_mD0BB7681BF29793C36321C901A43882CD4F51F55,
+	WindowsDictationInputProvider_set_IsListening_m5088D38E5362A1A5F1248E662454FE52455537A5,
+	WindowsDictationInputProvider_CheckCapability_mA759B1C4690FC8D140F17B022148068D87905155,
+	WindowsDictationInputProvider_StartRecording_mDE646B84BAE9D0F13822DB874D0DEE3810DE88B4,
+	WindowsDictationInputProvider_StopRecording_m2E54FAC6FE4C8E84C357F5BDF3912D37A9353B02,
+	WindowsDictationInputProvider_StartRecordingAsync_m589DD5872344989C877F28863898B6B9BE503CD6,
+	WindowsDictationInputProvider_StopRecordingAsync_m970B34085B1E29671D89FDC39AED49B356598D8C,
+	WindowsDictationInputProvider_Enable_mC85C435F781B24E856FA2D5589F0D5342A12DC12,
+	WindowsDictationInputProvider_Update_m089C4765A4F794D8F7F383084C0F86E0985539DF,
+	WindowsDictationInputProvider_Disable_m3C36CE9BE7EEAFC5F69BE88D5868E8479C351CB9,
+	WindowsDictationInputProvider_Destroy_mCD943619CA4EBE4FF9B7839A8D7C11FE5B5863D3,
+	WindowsDictationInputProvider_Dispose_mBCC52458F9473C5EE879CEBCF8DAD67EA10E8A63,
+	WindowsDictationInputProvider_DictationRecognizer_DictationHypothesis_mAAAA8DDD2F3A94F3C06C5457AE27BACB8FEDF238,
+	WindowsDictationInputProvider_DictationRecognizer_DictationResult_m5EBBA30C99CA9F33A09DBD107141DA17794D3CA9,
+	WindowsDictationInputProvider_DictationRecognizer_DictationComplete_mB73F8B7863759593D8C29CED21711FC64CE1D283,
+	WindowsDictationInputProvider_DictationRecognizer_DictationError_m8B37F8CAE58CEDCFA7AC40D3BDC3C47CA0C13456,
+	U3CU3Ec__cctor_m3A0FE450C38C04A83E5CB2EC3B0722AF4ECD0AAB,
+	U3CU3Ec__ctor_m049465C7577B8DF294977376978A75C4B7D45AB8,
+	U3CU3Ec_U3C_ctorU3Eb__0_0_m23DE4E969F2784FC9BA21403A9FDF7E19FB44649,
+	U3CU3Ec_U3C_ctorU3Eb__0_1_m1C03C46B118BE1156878635D1D8EA7666C57EE39,
+	U3CU3Ec_U3C_ctorU3Eb__0_2_mE0048D6F6879093B6017BB04604AB72FAE428447,
+	U3CU3Ec_U3C_ctorU3Eb__0_3_mA228641EF5CDC00551286593AE8873D6B338A749,
+	U3CDisableU3Ed__26_MoveNext_mED2F01BC7153D1DC09076F57ADD0C630B53CE1CA_AdjustorThunk,
+	U3CDisableU3Ed__26_SetStateMachine_m39E43EC83D9F4BF5BE19A6172FC0CF6F540989B2_AdjustorThunk,
+	U3CStartRecordingU3Ed__6_MoveNext_mFAAE64FCE8BE3BD551220589F70DBF19CC6C7F37_AdjustorThunk,
+	U3CStartRecordingU3Ed__6_SetStateMachine_m0F591FB4CEBC8DC7E764014DA0B712EC3E42CD4F_AdjustorThunk,
+	U3CStartRecordingAsyncU3Ed__8_MoveNext_m8ACBAA4B24C6D8EF7D6A83EDE248057F395F488D_AdjustorThunk,
+	U3CStartRecordingAsyncU3Ed__8_SetStateMachine_mFA0A133F4CB4EAEDE991164C9074DBC9B269662E_AdjustorThunk,
+	U3CStopRecordingU3Ed__7_MoveNext_m59A9F45ED5FA851E08D2FFD761DE560496EB6250_AdjustorThunk,
+	U3CStopRecordingU3Ed__7_SetStateMachine_mA762467979B168D72DB434F4B6D71BEF15EE0B3A_AdjustorThunk,
+	U3CStopRecordingAsyncU3Ed__9_MoveNext_m953AF17C3C8E935B7A850A03FD60E5646874BB20_AdjustorThunk,
+	U3CStopRecordingAsyncU3Ed__9_SetStateMachine_m5BBA170223505C94082441F2397FDBE425837001_AdjustorThunk,
+	WindowsSpeechInputProvider__ctor_mB9F3E5ACFE246E44FE8F65BEA6D528CA552C4731,
+	WindowsSpeechInputProvider_get_Commands_m5E794CB29A7524A9B5F2FEFFD681307D80CFC314,
+	WindowsSpeechInputProvider_get_RecognitionConfidenceLevel_mD0722F8222669F932A114159E2B4AA84BA819C0E,
+	WindowsSpeechInputProvider_set_RecognitionConfidenceLevel_mC9C28B85D91B50F6181C8A832DBC2378B7E6A063,
+	WindowsSpeechInputProvider_get_IsRecognitionActive_m2B883DA5F6D01F3B126CB79655F1D670C79E042E,
+	WindowsSpeechInputProvider_CheckCapability_m867CD85AFA5D2BD0F46C8D381653120813B2A6C2,
+	WindowsSpeechInputProvider_StartRecognition_m9799DAFEC06E5F78EC639BC903A9371B06CF17EF,
+	WindowsSpeechInputProvider_StopRecognition_mEDBAC69B9FE8A1AF26F2E1A817D5D7767E88B69C,
+	WindowsSpeechInputProvider_Enable_m1ACD3641CC2B267B1E646F0200C9EC8A3B87B9BA,
+	WindowsSpeechInputProvider_Update_mBB5369D96CCB392942F764C647F5B9B2CBB58CEA,
+	WindowsSpeechInputProvider_Disable_m73A44C3242B6491D2AEB3D22A4440246CD64FE4D,
+	WindowsSpeechInputProvider_Dispose_mE4A95336C4EFF0BF6F556D9DA7C34483BE6A94A9,
+	WindowsSpeechInputProvider_KeywordRecognizer_OnPhraseRecognized_m76FA2711269633BCD327F0C53648CAE4F576877F,
+	WindowsSpeechInputProvider_OnPhraseRecognized_mD2BA3DF559733CE98DE4EB3F20E6F7550B4F0914,
 	MixedRealityBoundarySystem__ctor_mD178ED38A2F293A4F5C2E788E3BB3152FF607F5C,
 	MixedRealityBoundarySystem_get_Name_m39D67824CBCEA811E587D4D11A03F769428796B2,
 	MixedRealityBoundarySystem_set_Name_m63364CE223F15E57D7D5BB6375290CEF47717264,

@@ -676,7 +676,7 @@ struct IDataReaderFactory_tB30EDD1D169150BD7C2312B7BB5B56E980B7D573;
 // Windows.Storage.Streams.IDataReaderStatics
 struct IDataReaderStatics_t5B69469B2DD36D8C09F211E49FA790E32AAAAB91;
 // Windows.Storage.Streams.IInputStream
-struct IInputStream_t9A06904D0534FEFA9174E580FCA59EDA460E6C6E;
+struct IInputStream_tE16D3C1553F5E6BAC4E7E8D7DE411ADD049B1B13;
 // Windows.Storage.Streams.IRandomAccessStreamWithContentType
 struct IRandomAccessStreamWithContentType_tC0F186291175339B7AA6ED58270C99BD52694F51;
 // Windows.UI.Input.Spatial.ISpatialInteractionManagerStatics
@@ -754,7 +754,7 @@ extern RuntimeClass* IMixedRealityInputSystem_t5CCAA5BAD9D45403FCE5D1B3FEEB2E45B
 extern RuntimeClass* IMixedRealityPointer_tD7C4CF8940EB016597EF8CED76503F0D39A61C53_il2cpp_TypeInfo_var;
 extern RuntimeClass* IMixedRealitySpatialAwarenessObservationHandler_1_tC20E62B4358C8B39FD863ECE3E41CC04425CED8F_il2cpp_TypeInfo_var;
 extern RuntimeClass* IMixedRealitySpatialAwarenessSystem_tE4BAFE2B5651E0CF0E856FD73C51FE942284CF4E_il2cpp_TypeInfo_var;
-extern RuntimeClass* IRandomAccessStream_t3167209CDBC32446EA749FC304E5938F7429CF65_il2cpp_TypeInfo_var;
+extern RuntimeClass* IRandomAccessStream_tF45B1A1FE1DC95209EC2F32A0134C4BCDD756E10_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyCollection_1_t5CB0D1109607C30B622D0A4462E02012846CD803_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyDictionary_2_tB7D8D26E7324CDD1F7BC743BE7F8C1D9E3BF0D71_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_tD09E4FFEC2278BE0392ECF13DA793EA94FB483D1_il2cpp_TypeInfo_var;
@@ -1120,17 +1120,18 @@ struct IAsyncOperationCompletedHandler_1_t137F951405AC76F66334643E3EDA082617B5E3
 struct IAsyncOperationCompletedHandler_1_t1A6E7CEA9EA86565C43B41C2620E20057839B2BD_ComCallableWrapper;
 struct IAsyncOperationCompletedHandler_1_t5BF918C6780EB99410CE9AC0F9EA73D38400B27D_ComCallableWrapper;
 struct IAsyncOperationCompletedHandler_1_t9719B1FBF86256514DC5C3FDE7100119DB6990C5_ComCallableWrapper;
+struct IAsyncOperationWithProgress_2_t9F077679BB6FBB6BF4C0E8B56C7FEF3D661EA792;
 struct IAsyncOperation_1_t2F152F2E077B3BCA812577C0E7A226CD060EE963;
 struct IAsyncOperation_1_tC5CC917D6DD8CB05F1C66F2F61D9005DBC17EE3B;
 struct IAsyncOperation_1_tC65D5FD4E53D53ECDFE9428721B523F309EAB531;
 struct IAsyncOperation_1_tE0525518D784878446961B495B04E168E2C60C9F;
-struct IBuffer_t138DC3231208360495113BAD65F24878902627D0;
+struct IBuffer_t13BCDB1D6DE32F79AB9F9E149514026CA6B4AAEF;
 struct IDataReader_t2D93D264639EC3DC39C86ABFB42E1C3984B63407;
 struct IEyesPose_t5B059BD97655108C64B370CF4403888DCDE38E3B;
 struct IHandMeshObserver_t98875F3F41B9165B8A8EA18EF55F842885DC807D;
 struct IHandMeshVertexState_tB1769E2EFFDA5EBB03E531F6994BE701EAE80610;
 struct IHandPose_t8AD7D3BF33217E85B9CA689DA344E2EABFE4744C;
-struct IInputStream_t9A06904D0534FEFA9174E580FCA59EDA460E6C6E;
+struct IInputStream_tE16D3C1553F5E6BAC4E7E8D7DE411ADD049B1B13;
 struct IPerceptionTimestamp_t5F33F9E30A183CD55EFF379B5377A2861C7FD96E;
 struct IRandomAccessStreamWithContentType_tC0F186291175339B7AA6ED58270C99BD52694F51;
 struct IReference_1_t59BAE58AEE4691B3CB0C85AEC0A0DAD22B3A621D;
@@ -1327,33 +1328,27 @@ struct NOVTABLE IDataReader_t2D93D264639EC3DC39C86ABFB42E1C3984B63407 : Il2CppII
 struct NOVTABLE IDataReaderFactory_tB30EDD1D169150BD7C2312B7BB5B56E980B7D573 : Il2CppIInspectable
 {
 	static const Il2CppGuid IID;
-	virtual il2cpp_hresult_t STDCALL IDataReaderFactory_CreateDataReader_m44E37854399058E1F6DED16EBDE7FFFA29DDF950(IInputStream_t9A06904D0534FEFA9174E580FCA59EDA460E6C6E* ___inputStream0, IDataReader_t2D93D264639EC3DC39C86ABFB42E1C3984B63407** comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IDataReaderFactory_CreateDataReader_m44E37854399058E1F6DED16EBDE7FFFA29DDF950(IInputStream_tE16D3C1553F5E6BAC4E7E8D7DE411ADD049B1B13* ___inputStream0, IDataReader_t2D93D264639EC3DC39C86ABFB42E1C3984B63407** comReturnValue) = 0;
 };
 // Windows.Storage.Streams.IDataReaderStatics
 struct NOVTABLE IDataReaderStatics_t5B69469B2DD36D8C09F211E49FA790E32AAAAB91 : Il2CppIInspectable
 {
 	static const Il2CppGuid IID;
-	virtual il2cpp_hresult_t STDCALL IDataReaderStatics_FromBuffer_mFC8969902B462E1F962DF96E390BD828F0FCDB69(IBuffer_t138DC3231208360495113BAD65F24878902627D0* ___buffer0, IDataReader_t2D93D264639EC3DC39C86ABFB42E1C3984B63407** comReturnValue) = 0;
-};
-// Windows.Storage.Streams.IInputStream
-struct NOVTABLE IInputStream_t9A06904D0534FEFA9174E580FCA59EDA460E6C6E : Il2CppIInspectable
-{
-	static const Il2CppGuid IID;
-	virtual il2cpp_hresult_t STDCALL IInputStream_U24__Stripped0_ReadAsync_mDF2699155D65901AECA9D657448CB6DB1898F5F5() = 0;
+	virtual il2cpp_hresult_t STDCALL IDataReaderStatics_FromBuffer_mFC8969902B462E1F962DF96E390BD828F0FCDB69(IBuffer_t13BCDB1D6DE32F79AB9F9E149514026CA6B4AAEF* ___buffer0, IDataReader_t2D93D264639EC3DC39C86ABFB42E1C3984B63407** comReturnValue) = 0;
 };
 // Windows.Storage.Streams.IRandomAccessStream
-struct NOVTABLE IRandomAccessStream_t3167209CDBC32446EA749FC304E5938F7429CF65 : Il2CppIInspectable
+struct NOVTABLE IRandomAccessStream_tF45B1A1FE1DC95209EC2F32A0134C4BCDD756E10 : Il2CppIInspectable
 {
 	static const Il2CppGuid IID;
 	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_get_Size_mC7C3FD2E620A221E63F7F6AD1E806A68B3E76C03(uint64_t* comReturnValue) = 0;
 	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_U24__Stripped0_put_Size_m5EC6EDD867FCC2575F31F1162F64E4523CCC71AF() = 0;
 	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_U24__Stripped1_GetInputStreamAt_m388AF634AE09958FE81C2155A19F55BEA90CB309() = 0;
 	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_U24__Stripped2_GetOutputStreamAt_m6504781F422B32350AD133FDBE6CAA0CC163DB46() = 0;
-	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_U24__Stripped3_get_Position_m1891D9D397EEB2D80AFA2601EAFDB9943B3A2F75() = 0;
-	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_U24__Stripped4_Seek_mB0255F37193EF95F743893370324E2745CB8D996() = 0;
-	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_U24__Stripped5_CloneStream_m34E61485AD0219A458C0761AF2B5038A07A14668() = 0;
-	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_U24__Stripped6_get_CanRead_m2B69A883323A531C8C491542FA0B148B6A231162() = 0;
-	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_U24__Stripped7_get_CanWrite_m07C1E6054370196A13FA9D93A988AB90F049B384() = 0;
+	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_get_Position_m48DEBF691715522B04ED7539AE7F22041221F646(uint64_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_Seek_m591EC62FCE22806BA0B5A1EFDEA9E58DC63E6D1A(uint64_t ___position0) = 0;
+	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_U24__Stripped3_CloneStream_m0ED461C4E1842886A18CAD2558E106DC8176F502() = 0;
+	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_get_CanRead_mC556996DA2DF65C97288F7474DE32FAD8EBFF2BD(bool* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IRandomAccessStream_get_CanWrite_m494C042532256B5EB0A66ADFBD50C8F3CC8E5580(bool* comReturnValue) = 0;
 };
 // Windows.Storage.Streams.IRandomAccessStreamWithContentType
 struct NOVTABLE IRandomAccessStreamWithContentType_tC0F186291175339B7AA6ED58270C99BD52694F51 : Il2CppIInspectable
@@ -8677,8 +8672,8 @@ struct SurfaceData_t4C48F847E8643D6640786CC364CDB510C7C60C66_marshaled_com
 	int32_t ___bakeCollider_5;
 };
 #endif // SURFACEDATA_T4C48F847E8643D6640786CC364CDB510C7C60C66_H
-#ifndef ASYNCSTATUS_T53CF3803A027F92D24D41E6A852571005D186EEC_H
-#define ASYNCSTATUS_T53CF3803A027F92D24D41E6A852571005D186EEC_H
+#ifndef ASYNCSTATUS_TBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E_H
+#define ASYNCSTATUS_TBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -8686,14 +8681,14 @@ struct SurfaceData_t4C48F847E8643D6640786CC364CDB510C7C60C66_marshaled_com
 #endif
 
 // Windows.Foundation.AsyncStatus
-struct  AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC 
+struct  AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E 
 {
 public:
 	// System.Int32 Windows.Foundation.AsyncStatus::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -8705,7 +8700,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ASYNCSTATUS_T53CF3803A027F92D24D41E6A852571005D186EEC_H
+#endif // ASYNCSTATUS_TBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E_H
 // Windows.Perception.IPerceptionTimestamp
 struct NOVTABLE IPerceptionTimestamp_t5F33F9E30A183CD55EFF379B5377A2861C7FD96E : Il2CppIInspectable
 {
@@ -8849,6 +8844,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SPATIALRAY_T3D16C2F3DEA64DE3AD8ECA0587068A965A552C2B_H
+#ifndef INPUTSTREAMOPTIONS_T84A663CC3616A0D05994D54C1DA6B2E877F7FF82_H
+#define INPUTSTREAMOPTIONS_T84A663CC3616A0D05994D54C1DA6B2E877F7FF82_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Windows.Storage.Streams.InputStreamOptions
+struct  InputStreamOptions_t84A663CC3616A0D05994D54C1DA6B2E877F7FF82 
+{
+public:
+	// System.UInt32 Windows.Storage.Streams.InputStreamOptions::value__
+	uint32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(InputStreamOptions_t84A663CC3616A0D05994D54C1DA6B2E877F7FF82, ___value___2)); }
+	inline uint32_t get_value___2() const { return ___value___2; }
+	inline uint32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(uint32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INPUTSTREAMOPTIONS_T84A663CC3616A0D05994D54C1DA6B2E877F7FF82_H
 #ifndef GAZEINPUTACCESSSTATUS_TE56B1134F343E06D19FF224683D91598329BA7A0_H
 #define GAZEINPUTACCESSSTATUS_TE56B1134F343E06D19FF224683D91598329BA7A0_H
 #ifdef __clang__
@@ -10245,7 +10269,7 @@ struct NOVTABLE ISimpleHapticsController_t79840FA4C5405434AF3AC749C51334EA3A03EC
 	virtual il2cpp_hresult_t STDCALL ISimpleHapticsController_U24__Stripped6_SendHapticFeedbackForPlayCount_m9D6A18EAE98667C55BB2E79A349A2205350C61B1() = 0;
 };
 // Windows.Foundation.IAsyncInfo
-struct NOVTABLE IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86 : Il2CppIInspectable
+struct NOVTABLE IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5 : Il2CppIInspectable
 {
 	static const Il2CppGuid IID;
 	virtual il2cpp_hresult_t STDCALL IAsyncInfo_get_Id_mFB9E7E5D042A091EEA5ADBBB479329CE1248351B(uint32_t* comReturnValue) = 0;
@@ -10378,6 +10402,12 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PERCEPTIONTIMESTAMP_T4C22B3DAA8F2818AD66B75F4D34EEBF75BE8210B_H
+// Windows.Storage.Streams.IInputStream
+struct NOVTABLE IInputStream_tE16D3C1553F5E6BAC4E7E8D7DE411ADD049B1B13 : Il2CppIInspectable
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IInputStream_ReadAsync_mCCC52942D8DECE2C743C51DD683483531F495C88(IBuffer_t13BCDB1D6DE32F79AB9F9E149514026CA6B4AAEF* ___buffer0, uint32_t ___count1, uint32_t ___options2, IAsyncOperationWithProgress_2_t9F077679BB6FBB6BF4C0E8B56C7FEF3D661EA792** comReturnValue) = 0;
+};
 // Windows.UI.Input.Spatial.ISpatialInteractionManagerStatics2
 struct NOVTABLE ISpatialInteractionManagerStatics2_t96BFC05F38D85660B066F863703F736B44FE056E : Il2CppIInspectable
 {
@@ -12444,7 +12474,7 @@ public:
 	// Cached pointer to Windows.Foundation.IAsyncOperation`1<System.UInt32>
 	IAsyncOperation_1_tE0525518D784878446961B495B04E168E2C60C9F* ____iasyncOperation_1_tE0525518D784878446961B495B04E168E2C60C9F;
 	// Cached pointer to Windows.Foundation.IAsyncInfo
-	IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86* ____iasyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86;
+	IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5* ____iasyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5;
 
 public:
 	inline IAsyncOperation_1_tE0525518D784878446961B495B04E168E2C60C9F* get_____iasyncOperation_1_tE0525518D784878446961B495B04E168E2C60C9F()
@@ -12464,18 +12494,18 @@ public:
 		return returnValue;
 	}
 
-	inline IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86* get_____iasyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86()
+	inline IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5* get_____iasyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5()
 	{
-		IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86* returnValue = ____iasyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86;
+		IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5* returnValue = ____iasyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5;
 		if (returnValue == NULL)
 		{
-			const il2cpp_hresult_t hr = identity->QueryInterface(IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86::IID, reinterpret_cast<void**>(&returnValue));
+			const il2cpp_hresult_t hr = identity->QueryInterface(IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5::IID, reinterpret_cast<void**>(&returnValue));
 			il2cpp_codegen_com_raise_exception_if_failed(hr, false);
 
-			if (il2cpp_codegen_atomic_compare_exchange_pointer<IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86>((&____iasyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86), returnValue, NULL) != NULL)
+			if (il2cpp_codegen_atomic_compare_exchange_pointer<IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5>((&____iasyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5), returnValue, NULL) != NULL)
 			{
 				returnValue->Release();
-				returnValue = ____iasyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86;
+				returnValue = ____iasyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5;
 			}
 		}
 		return returnValue;
@@ -12525,10 +12555,10 @@ struct SpatialInteractionManager_tB52E8FC92AC4490E4EBD7BB202C46FB355AA69A7_Stati
 public:
 	// Cached pointer to IActivationFactory
 	Il2CppIActivationFactory* activationFactory;
-	// Cached pointer to Windows.UI.Input.Spatial.ISpatialInteractionManagerStatics
-	ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9* ____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9;
 	// Cached pointer to Windows.UI.Input.Spatial.ISpatialInteractionManagerStatics2
 	ISpatialInteractionManagerStatics2_t96BFC05F38D85660B066F863703F736B44FE056E* ____ispatialInteractionManagerStatics2_t96BFC05F38D85660B066F863703F736B44FE056E;
+	// Cached pointer to Windows.UI.Input.Spatial.ISpatialInteractionManagerStatics
+	ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9* ____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9;
 
 public:
 	inline Il2CppIActivationFactory* get_activationFactory()
@@ -12548,23 +12578,6 @@ public:
 		return returnValue;
 	}
 
-	inline ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9* get_____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9()
-	{
-		ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9* returnValue = ____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9;
-		if (returnValue == NULL)
-		{
-			const il2cpp_hresult_t hr = get_activationFactory()->QueryInterface(ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9::IID, reinterpret_cast<void**>(&returnValue));
-			il2cpp_codegen_com_raise_exception_if_failed(hr, false);
-
-			if (il2cpp_codegen_atomic_compare_exchange_pointer<ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9>((&____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9), returnValue, NULL) != NULL)
-			{
-				returnValue->Release();
-				returnValue = ____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9;
-			}
-		}
-		return returnValue;
-	}
-
 	inline ISpatialInteractionManagerStatics2_t96BFC05F38D85660B066F863703F736B44FE056E* get_____ispatialInteractionManagerStatics2_t96BFC05F38D85660B066F863703F736B44FE056E()
 	{
 		ISpatialInteractionManagerStatics2_t96BFC05F38D85660B066F863703F736B44FE056E* returnValue = ____ispatialInteractionManagerStatics2_t96BFC05F38D85660B066F863703F736B44FE056E;
@@ -12577,6 +12590,23 @@ public:
 			{
 				returnValue->Release();
 				returnValue = ____ispatialInteractionManagerStatics2_t96BFC05F38D85660B066F863703F736B44FE056E;
+			}
+		}
+		return returnValue;
+	}
+
+	inline ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9* get_____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9()
+	{
+		ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9* returnValue = ____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9;
+		if (returnValue == NULL)
+		{
+			const il2cpp_hresult_t hr = get_activationFactory()->QueryInterface(ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9::IID, reinterpret_cast<void**>(&returnValue));
+			il2cpp_codegen_com_raise_exception_if_failed(hr, false);
+
+			if (il2cpp_codegen_atomic_compare_exchange_pointer<ISpatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9>((&____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9), returnValue, NULL) != NULL)
+			{
+				returnValue->Release();
+				returnValue = ____ispatialInteractionManagerStatics_t26E12E181FCAA3FBFEEB07325CD604DF58B638B9;
 			}
 		}
 		return returnValue;
@@ -22472,7 +22502,7 @@ IL_0099:
 		{
 			RuntimeObject* L_16 = V_2;
 			NullCheck(L_16);
-			uint64_t L_17 = InterfaceFuncInvoker0< uint64_t >::Invoke(0 /* System.UInt64 Windows.Storage.Streams.IRandomAccessStream::get_Size() */, IRandomAccessStream_t3167209CDBC32446EA749FC304E5938F7429CF65_il2cpp_TypeInfo_var, L_16);
+			uint64_t L_17 = InterfaceFuncInvoker0< uint64_t >::Invoke(0 /* System.UInt64 Windows.Storage.Streams.IRandomAccessStream::get_Size() */, IRandomAccessStream_tF45B1A1FE1DC95209EC2F32A0134C4BCDD756E10_il2cpp_TypeInfo_var, L_16);
 			if (L_17)
 			{
 				goto IL_00b0;
@@ -22493,7 +22523,7 @@ IL_00b0:
 			// fileBytes = new byte[controllerModelStream.Size];
 			RuntimeObject* L_18 = V_2;
 			NullCheck(L_18);
-			uint64_t L_19 = InterfaceFuncInvoker0< uint64_t >::Invoke(0 /* System.UInt64 Windows.Storage.Streams.IRandomAccessStream::get_Size() */, IRandomAccessStream_t3167209CDBC32446EA749FC304E5938F7429CF65_il2cpp_TypeInfo_var, L_18);
+			uint64_t L_19 = InterfaceFuncInvoker0< uint64_t >::Invoke(0 /* System.UInt64 Windows.Storage.Streams.IRandomAccessStream::get_Size() */, IRandomAccessStream_tF45B1A1FE1DC95209EC2F32A0134C4BCDD756E10_il2cpp_TypeInfo_var, L_18);
 			if ((uint64_t)(L_19) > INTPTR_MAX) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), NULL, U3CCreateControllerModelFromPlatformSDKU3Ed__11_MoveNext_mBD08F03627D267E9DAE7BA7A8729B5E07C90FDB3_RuntimeMethod_var);
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_20 = (ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*)SZArrayNew(ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821_il2cpp_TypeInfo_var, (uint32_t)(((intptr_t)L_19)));
 			__this->set_U3CfileBytesU3E5__2_4(L_20);
@@ -22525,7 +22555,7 @@ IL_00d3:
 				DataReader_t92CE269217524DDA728FF4095997CC6D57EC7E4F * L_24 = __this->get_U3CreaderU3E5__3_6();
 				RuntimeObject* L_25 = V_2;
 				NullCheck(L_25);
-				uint64_t L_26 = InterfaceFuncInvoker0< uint64_t >::Invoke(0 /* System.UInt64 Windows.Storage.Streams.IRandomAccessStream::get_Size() */, IRandomAccessStream_t3167209CDBC32446EA749FC304E5938F7429CF65_il2cpp_TypeInfo_var, L_25);
+				uint64_t L_26 = InterfaceFuncInvoker0< uint64_t >::Invoke(0 /* System.UInt64 Windows.Storage.Streams.IRandomAccessStream::get_Size() */, IRandomAccessStream_tF45B1A1FE1DC95209EC2F32A0134C4BCDD756E10_il2cpp_TypeInfo_var, L_25);
 				NullCheck(L_24);
 				DataReaderLoadOperation_t8353A8A71F516D9DCB18671A8B981983F98D7664 * L_27 = DataReader_LoadAsync_m79F9DC31F4227ED504BDBE0C52EB94FE30D51F9A(L_24, (((int32_t)((uint32_t)L_26))), /*hidden argument*/NULL);
 				TaskAwaiter_1_t4775EBEDF8907030D3D4E4F035D7BC9DD18E8830  L_28 = WindowsRuntimeSystemExtensions_GetAwaiter_TisUInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_m2C6520F6DAA7FA2D998990884CDBFC4BAB46BCA8(L_27, /*hidden argument*/WindowsRuntimeSystemExtensions_GetAwaiter_TisUInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_m2C6520F6DAA7FA2D998990884CDBFC4BAB46BCA8_RuntimeMethod_var);

@@ -163,7 +163,11 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Generics_58.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_59.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Generics_6.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_60.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Generics_7.cpp">
     </ClCompile>
@@ -186,6 +190,16 @@
     <ClCompile Include="Source\il2cppOutput\Bulk_I18N_0.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Microsoft.MixedReality.Toolkit.Async_0.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Microsoft.MixedReality.Toolkit.Demos.Gltf_0.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Microsoft.MixedReality.Toolkit.Demos.InspectorFields_0.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Microsoft.MixedReality.Toolkit.Demos.UX.Interactables_0.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Microsoft.MixedReality.Toolkit.Examples_0.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Microsoft.MixedReality.Toolkit.Examples_1.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Microsoft.MixedReality.Toolkit.Gltf_0.cpp">
     </ClCompile>
@@ -254,6 +268,8 @@
     <ClCompile Include="Source\il2cppOutput\Bulk_mscorlib_16.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_mscorlib_17.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_mscorlib_18.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_mscorlib_2.cpp">
     </ClCompile>
@@ -379,6 +395,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods1.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods10.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods2.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods3.cpp">
@@ -446,6 +464,8 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers29.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers3.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers30.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers4.cpp">
     </ClCompile>
@@ -536,6 +556,12 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_42Table.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_43Table.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_44Table.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_45Table.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_46Table.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_4Table.cpp">
     </ClCompile>
