@@ -47,6 +47,7 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
                 {
                     SpatialAwarenessSystem.SuspendObservers();
                     SpatialAwarenessSystem.ClearObservations();
+                    //Debug.Log("一時停止");
                     clearObservations = false;
                 }
                 else
