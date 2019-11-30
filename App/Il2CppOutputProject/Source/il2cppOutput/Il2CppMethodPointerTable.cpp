@@ -327,6 +327,7 @@ extern "C" void ClearSpatialObservations_get_SpatialAwarenessSystem_m0CD14724C2C
 extern "C" void MixedRealityCapabilityDemo_get_SpatialAwarenessSystem_mDA66D66DB38A59F1A1E108F552AC1A8E77CD763D ();
 extern "C" void MixedRealityToolkit_get_SpatialAwarenessSystem_mAAAF7D9755F3627EE39D67AEBE23BC6D88593BE2 ();
 extern "C" void BaseSpatialObserver_get_SpatialAwarenessSystem_m6ABDB30CC80260B324F7B65C921F100943FB580A ();
+extern "C" void SpatialAwarenessController_get_SpatialAwarenessSystem_m866363763BB554C5FB6416C06B6A56B0D26E19BE ();
 extern "C" void MixedRealityToolkitConfigurationProfile_get_SpatialAwarenessSystemProfile_m8910E1151BAC157CBE82A7A05F4FBD27FD5C4F08 ();
 extern "C" void MixedRealitySpatialAwarenessSystem_get_SpatialAwarenessSystemProfile_m7C972D4042A372D7BFD53E35F0D7626CF3F4F9BD ();
 extern "C" void MixedRealitySpatialAwarenessSystemProfile_get_ObserverConfigurations_m0AF7A14431DDE492EE8B07BAB2AE86C4877476CE ();
@@ -3352,8 +3353,8 @@ extern "C" void ASN1_get_Value_m9BD6239E12A6148AF9507C2F58058C6B8147A079 ();
 extern "C" void BitConverterLE_GetBytes_m406ADCCE048705851CA952B5103A9020BBBDFBDA ();
 extern "C" void BitConverterLE_GetBytes_m1207548B6BC0E2D49DD06D5B3A3AC19C001BDB35 ();
 extern "C" void BitConverterLE_GetBytes_m9428D4A01AC77E50E16D9B738098F2954E5964E0 ();
-extern "C" void BitConverterLE_GetUIntBytes_m871281C3039A5B7DFB56E0F3EBBE22F74135997C ();
 extern "C" void BitConverterLE_GetUIntBytes_m2B688B5F912B4453DD14F1043A3C8E3E171FFF41 ();
+extern "C" void BitConverterLE_GetUIntBytes_m871281C3039A5B7DFB56E0F3EBBE22F74135997C ();
 extern "C" void BitConverterLE_GetULongBytes_mEA155106F6785491F8070F485963C96DA55B83F0 ();
 extern "C" void AppDomain_GetMarshalledDomainObjRef_m2579B1B9662ED4CC23EF52B27B10D955D6DB4C2D ();
 extern "C" void BitConverter_GetBytes_mB7DFC7C4705F916C40527A87C9AA6D0EABC23512 ();
@@ -10267,8 +10268,8 @@ extern "C" void InteractionSource_get_vendorId_m938724EC780851E382186A4DB36D29E8
 extern "C" void SimpleHapticsControllerFeedback_get_Waveform_mC68BE85CE60D8A2018B5D9C5F9A5434E0A7B7543 ();
 extern "C" void IPropertyValue_GetUInt16_mEE71D2389CCEFB98E952C00FB8D6BEC588335A57 ();
 extern "C" void Sprite_get_triangles_m3B0A097930B40C800E0591E5B095D118D2A33D2E ();
-extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m5C1A2CA6703F0D94CE54FF9003154837BB1CDF9A ();
 extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_mDE4C1B254DA56F4B01F2A2C9AC0F946365FFA75D ();
+extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m5C1A2CA6703F0D94CE54FF9003154837BB1CDF9A ();
 extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m7C7DB27BC4297A74A96AC53E1EDD3E7415DFB874 ();
 extern "C" void BaseService_get_Priority_m1D482C1449A657C760CD65F7184FD11C1DAABD22 ();
 extern "C" void MixedRealityBoundarySystem_get_SourceId_m3A758D04E9710EED78CEC14EDDBCF1E5E9249C1C ();
@@ -14995,6 +14996,12 @@ extern "C" void Shaker_Update_mBE44C3BA1F75D064757799810CA846A05E1F50C1 ();
 extern "C" void SmartPhone__ctor_mA69F15E18FC093717672C4DCD587942DB21D30EE ();
 extern "C" void SmartPhone_GetInformationOfEarthquake_m08A165E135159F4EB034D1683D5845255726E8B9 ();
 extern "C" void SmartPhone_Start_m800C18FF9F185D931A44C1773B49D5A60E52602A ();
+extern "C" void SpatialAwarenessController__ctor_m6442A3A092869CD62CF9C1EAA0AF5EF7E9EC8BD3 ();
+extern "C" void SpatialAwarenessController_PauseAndResume_mD78F69ADBC91EE65EB40CE0CBCB49727D9954C56 ();
+extern "C" void SpatialAwarenessController_Start_mD107A90B93E971C0C5830E181C9E069AC7B00022 ();
+extern "C" void SpatialAwarenessController_StartObserver_m4F37B67B81AEC619DA6F38CCDDCFEF13E315ED07 ();
+extern "C" void SpatialAwarenessController_StopObserver_mBAD6BF81E7D8A488E7428D66D499A5EE736D5E57 ();
+extern "C" void SpatialAwarenessController_Update_m58483A401004BD4DFFF7AF6A0744E9BF4C12CB40 ();
 extern "C" void Action__ctor_m570E96B2A0C48BC1DC6788460316191F24572760 ();
 extern "C" void Action_EndInvoke_mBF98F3517165F5FE5633E66420ABC298674EB3D5 ();
 extern "C" void Action_Invoke_mC8D676E5DDF967EC5D23DD0E96FB52AA499817FD ();
@@ -19526,9 +19533,9 @@ extern "C" void TrainingObjectBase_Start_m83ED6E74DD1850829EA5BBDE6A522983B6867F
 extern "C" void TrainingObjectBase_StartSetting_m157699240867087D5E3BC241EE155AB26D4CFECE ();
 extern "C" void TrainingObjectBase_Update_m49D05A3E3F2F6AAD05EDB1C8CBC11FC37668D982 ();
 extern "C" void TrainingObjectBase_set_isClear_mCDB45B771DE18A9B210A66D0617B04D2BA4F9741 ();
+extern "C" void ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A ();
 extern "C" void ThrowStub_ThrowNotSupportedException_mF1DE187697F740D8C18B8966BBEB276878CD86FD ();
 extern "C" void ThrowStub_ThrowNotSupportedException_mA248D7D785682F31CDF02FDC1FAB3173EE1B1E19 ();
-extern "C" void ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A ();
 extern "C" void OnNavMeshPreUpdate__ctor_mD019C429BD8D299B85C320A6EFB2FFEDC3F85F42 ();
 extern "C" void OnNavMeshPreUpdate_EndInvoke_mB55765702AA123A6D7C3DF8DDC597E3DEBC79836 ();
 extern "C" void OnNavMeshPreUpdate_Invoke_mE56CD30B200FECFD94AD4B22923B32BD789D70F0 ();
@@ -24308,7 +24315,7 @@ extern "C" void SpatialPointerPose_TryGetAtTimestamp_m86E035A372E4724987F5D57208
 extern "C" void InputPane_GetForCurrentView_mC70FE8BAFBC2F91A3166DD901A44DB0709538EC2 ();
 extern "C" void IBindableIterable_First_m35A822CD2DF5C55F51539416F98640C7123A6C63 ();
 extern "C" void IBindableVector_GetView_m4C2BFF3B150F6EB8019728B4C2C2AF5879A81B55 ();
-extern const Il2CppMethodPointer g_MethodPointers[24289] = 
+extern const Il2CppMethodPointer g_MethodPointers[24296] = 
 {
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m5C1A2CA6703F0D94CE54FF9003154837BB1CDF9A,
 	Locale_GetText_m41F0CB4E76BAAB1E97D9D92D109C846A8ECC1324,
@@ -48580,6 +48587,13 @@ extern const Il2CppMethodPointer g_MethodPointers[24289] =
 	SmartPhone_Start_m800C18FF9F185D931A44C1773B49D5A60E52602A,
 	SmartPhone_GetInformationOfEarthquake_m08A165E135159F4EB034D1683D5845255726E8B9,
 	SmartPhone__ctor_mA69F15E18FC093717672C4DCD587942DB21D30EE,
+	SpatialAwarenessController_get_SpatialAwarenessSystem_m866363763BB554C5FB6416C06B6A56B0D26E19BE,
+	SpatialAwarenessController_Start_mD107A90B93E971C0C5830E181C9E069AC7B00022,
+	SpatialAwarenessController_Update_m58483A401004BD4DFFF7AF6A0744E9BF4C12CB40,
+	SpatialAwarenessController_StartObserver_m4F37B67B81AEC619DA6F38CCDDCFEF13E315ED07,
+	SpatialAwarenessController_PauseAndResume_mD78F69ADBC91EE65EB40CE0CBCB49727D9954C56,
+	SpatialAwarenessController_StopObserver_mBAD6BF81E7D8A488E7428D66D499A5EE736D5E57,
+	SpatialAwarenessController__ctor_m6442A3A092869CD62CF9C1EAA0AF5EF7E9EC8BD3,
 	TrainingManager_Start_m309AA6EAEF7ACF1C4FFDBF47C757704B96DE8785,
 	TrainingManager_Update_m39FCC1BB7C4E507338841AD3140CF88D3CFD6E36,
 	TrainingManager_Train_mE1F166478507A84C4491919EADD6C707C7A92082,

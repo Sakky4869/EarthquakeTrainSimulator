@@ -20,6 +20,12 @@
 #include "il2cpp-object-internals.h"
 
 
+// Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider
+struct IMixedRealityDataProvider_t811E6AB7DB8CF5ED9F02096D901528EB86B9CD47;
+// Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess
+struct IMixedRealityDataProviderAccess_t8EDB3ADE5066213B543EB035F96F346DEF5FD94C;
+// Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem
+struct IMixedRealitySpatialAwarenessSystem_tE4BAFE2B5651E0CF0E856FD73C51FE942284CF4E;
 // ShakePower
 struct ShakePower_tD805BE77788D0244297CD9C137876E0FC0D46E95;
 // Shaker
@@ -434,6 +440,100 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MONOBEHAVIOUR_T4A60845CF505405AF8BE8C61CC07F75CADEF6429_H
+#ifndef SPATIALAWARENESSCONTROLLER_TCBC29A49251905D091AF2AF591F7F263E31D51DA_H
+#define SPATIALAWARENESSCONTROLLER_TCBC29A49251905D091AF2AF591F7F263E31D51DA_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SpatialAwarenessController
+struct  SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+	// Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem SpatialAwarenessController::spatialAwarenessSystem
+	RuntimeObject* ___spatialAwarenessSystem_4;
+	// Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess SpatialAwarenessController::dataProviderAccess
+	RuntimeObject* ___dataProviderAccess_5;
+	// Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider SpatialAwarenessController::meshObserver
+	RuntimeObject* ___meshObserver_6;
+	// Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider SpatialAwarenessController::spatialObjectMeshObserver
+	RuntimeObject* ___spatialObjectMeshObserver_7;
+	// System.String SpatialAwarenessController::meshObserverName
+	String_t* ___meshObserverName_8;
+	// System.Boolean SpatialAwarenessController::clearObservations
+	bool ___clearObservations_9;
+	// System.Boolean SpatialAwarenessController::startedObserver
+	bool ___startedObserver_10;
+
+public:
+	inline static int32_t get_offset_of_spatialAwarenessSystem_4() { return static_cast<int32_t>(offsetof(SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA, ___spatialAwarenessSystem_4)); }
+	inline RuntimeObject* get_spatialAwarenessSystem_4() const { return ___spatialAwarenessSystem_4; }
+	inline RuntimeObject** get_address_of_spatialAwarenessSystem_4() { return &___spatialAwarenessSystem_4; }
+	inline void set_spatialAwarenessSystem_4(RuntimeObject* value)
+	{
+		___spatialAwarenessSystem_4 = value;
+		Il2CppCodeGenWriteBarrier((&___spatialAwarenessSystem_4), value);
+	}
+
+	inline static int32_t get_offset_of_dataProviderAccess_5() { return static_cast<int32_t>(offsetof(SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA, ___dataProviderAccess_5)); }
+	inline RuntimeObject* get_dataProviderAccess_5() const { return ___dataProviderAccess_5; }
+	inline RuntimeObject** get_address_of_dataProviderAccess_5() { return &___dataProviderAccess_5; }
+	inline void set_dataProviderAccess_5(RuntimeObject* value)
+	{
+		___dataProviderAccess_5 = value;
+		Il2CppCodeGenWriteBarrier((&___dataProviderAccess_5), value);
+	}
+
+	inline static int32_t get_offset_of_meshObserver_6() { return static_cast<int32_t>(offsetof(SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA, ___meshObserver_6)); }
+	inline RuntimeObject* get_meshObserver_6() const { return ___meshObserver_6; }
+	inline RuntimeObject** get_address_of_meshObserver_6() { return &___meshObserver_6; }
+	inline void set_meshObserver_6(RuntimeObject* value)
+	{
+		___meshObserver_6 = value;
+		Il2CppCodeGenWriteBarrier((&___meshObserver_6), value);
+	}
+
+	inline static int32_t get_offset_of_spatialObjectMeshObserver_7() { return static_cast<int32_t>(offsetof(SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA, ___spatialObjectMeshObserver_7)); }
+	inline RuntimeObject* get_spatialObjectMeshObserver_7() const { return ___spatialObjectMeshObserver_7; }
+	inline RuntimeObject** get_address_of_spatialObjectMeshObserver_7() { return &___spatialObjectMeshObserver_7; }
+	inline void set_spatialObjectMeshObserver_7(RuntimeObject* value)
+	{
+		___spatialObjectMeshObserver_7 = value;
+		Il2CppCodeGenWriteBarrier((&___spatialObjectMeshObserver_7), value);
+	}
+
+	inline static int32_t get_offset_of_meshObserverName_8() { return static_cast<int32_t>(offsetof(SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA, ___meshObserverName_8)); }
+	inline String_t* get_meshObserverName_8() const { return ___meshObserverName_8; }
+	inline String_t** get_address_of_meshObserverName_8() { return &___meshObserverName_8; }
+	inline void set_meshObserverName_8(String_t* value)
+	{
+		___meshObserverName_8 = value;
+		Il2CppCodeGenWriteBarrier((&___meshObserverName_8), value);
+	}
+
+	inline static int32_t get_offset_of_clearObservations_9() { return static_cast<int32_t>(offsetof(SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA, ___clearObservations_9)); }
+	inline bool get_clearObservations_9() const { return ___clearObservations_9; }
+	inline bool* get_address_of_clearObservations_9() { return &___clearObservations_9; }
+	inline void set_clearObservations_9(bool value)
+	{
+		___clearObservations_9 = value;
+	}
+
+	inline static int32_t get_offset_of_startedObserver_10() { return static_cast<int32_t>(offsetof(SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA, ___startedObserver_10)); }
+	inline bool get_startedObserver_10() const { return ___startedObserver_10; }
+	inline bool* get_address_of_startedObserver_10() { return &___startedObserver_10; }
+	inline void set_startedObserver_10(bool value)
+	{
+		___startedObserver_10 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SPATIALAWARENESSCONTROLLER_TCBC29A49251905D091AF2AF591F7F263E31D51DA_H
 #ifndef TRAININGMANAGER_T1F7F89B42F2DD509CA547DD48C379F04ED0CBBFD_H
 #define TRAININGMANAGER_T1F7F89B42F2DD509CA547DD48C379F04ED0CBBFD_H
 #ifdef __clang__
@@ -533,21 +633,32 @@ extern const int32_t g_FieldOffsetTable4600[5] =
 	U3CShakeU3Ed__7_t5EFCA5E01C29B859DCAE7EC6E57F4F83DE33F150::get_offset_of_U3CU3E7__wrap1_4(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4601 = { sizeof (SmartPhone_t104BA76738C71D7DBEDBD519735125D6F6803ADC), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4602 = { sizeof (TrainingManager_t1F7F89B42F2DD509CA547DD48C379F04ED0CBBFD), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4602[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4602 = { sizeof (SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4602[7] = 
+{
+	SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA::get_offset_of_spatialAwarenessSystem_4(),
+	SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA::get_offset_of_dataProviderAccess_5(),
+	SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA::get_offset_of_meshObserver_6(),
+	SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA::get_offset_of_spatialObjectMeshObserver_7(),
+	SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA::get_offset_of_meshObserverName_8(),
+	SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA::get_offset_of_clearObservations_9(),
+	SpatialAwarenessController_tCBC29A49251905D091AF2AF591F7F263E31D51DA::get_offset_of_startedObserver_10(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4603 = { sizeof (TrainingManager_t1F7F89B42F2DD509CA547DD48C379F04ED0CBBFD), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4603[1] = 
 {
 	TrainingManager_t1F7F89B42F2DD509CA547DD48C379F04ED0CBBFD::get_offset_of_trainingObjects_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4603 = { sizeof (U3CTrainCorU3Ed__4_t0336481F8C02CCC45B4C34B951C8DA00F86AF945), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4603[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4604 = { sizeof (U3CTrainCorU3Ed__4_t0336481F8C02CCC45B4C34B951C8DA00F86AF945), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4604[4] = 
 {
 	U3CTrainCorU3Ed__4_t0336481F8C02CCC45B4C34B951C8DA00F86AF945::get_offset_of_U3CU3E1__state_0(),
 	U3CTrainCorU3Ed__4_t0336481F8C02CCC45B4C34B951C8DA00F86AF945::get_offset_of_U3CU3E2__current_1(),
 	U3CTrainCorU3Ed__4_t0336481F8C02CCC45B4C34B951C8DA00F86AF945::get_offset_of_U3CU3E4__this_2(),
 	U3CTrainCorU3Ed__4_t0336481F8C02CCC45B4C34B951C8DA00F86AF945::get_offset_of_U3CiU3E5__2_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4604 = { sizeof (TrainingObjectBase_tB72281010F8E5A641F25E43BD18E6E0986ABC887), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4604[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4605 = { sizeof (TrainingObjectBase_tB72281010F8E5A641F25E43BD18E6E0986ABC887), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4605[1] = 
 {
 	TrainingObjectBase_tB72281010F8E5A641F25E43BD18E6E0986ABC887::get_offset_of_U3CisClearU3Ek__BackingField_4(),
 };
