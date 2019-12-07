@@ -6,6 +6,7 @@ public class Shaker : MonoBehaviour
 {
 
     private EarthquakeDataReader dataReader;
+    //[SerializeField] 
     private List<ShakePower> powers;
 
     private Rigidbody rigidPlane;
@@ -15,10 +16,11 @@ public class Shaker : MonoBehaviour
 
     void Start()
     {
+        //Debug.Log("call start");
         dataReader = GameObject.Find("EarthquakeDataReader").GetComponent<EarthquakeDataReader>();
         powers = dataReader.ReadCSVData("2011_03_11_14_46_miyagi");
-        rigidPlane = GameObject.Find("Plane").GetComponent<Rigidbody>();
-        StartCoroutine(Shake(powers));
+        //rigidPlane = GameObject.Find("Plane").GetComponent<Rigidbody>();
+        //StartCoroutine(Shake(powers, "WindowsMixedRealitySpatialMeshObserver"));
     }
 
 
@@ -28,11 +30,21 @@ public class Shaker : MonoBehaviour
         Time.timeScale = timeScale;
     }
 
-    private IEnumerator Shake(List<ShakePower> powers){
+    public void StartShake(List<Rigidbody> rigidbodies)
+    {
+        StartCoroutine(Shake(powers, "WindowsMixedRealitySpatialMeshObserver", rigidbodies));
+    }
+
+    private IEnumerator Shake(List<ShakePower> powers, string objectName, List<Rigidbody> rigidbodies){
         Debug.Log("start");
+
+        //rigidPlane = GameObject.Find(objectName).GetComponent<Rigidbody>();
+
         foreach(ShakePower power in powers){
-            Vector3 force = Vector3.forward * power.ns * powerBias + Vector3.right * power.ew * powerBias + Vector3.up * power.ud * powerBias;
-            rigidPlane.AddForce(force);
+            Vector3 force = new Vector3(power.ns, power.ew, power.ud) * powerBias; 
+                //Vector3.forward * power.ns * powerBias + Vector3.right * power.ew * powerBias + Vector3.up * power.ud * powerBias;
+            foreach(Rigidbody rigid in rigidbodies)
+                rigid.AddForce(force);
             yield return new WaitForSeconds(1 / 100);
         }
         Debug.Log("finish");

@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[System.Serializable]
 public class ShakePower{
-    [HideInInspector] public float ns;
-    [HideInInspector] public float ew;
-    [HideInInspector] public float ud;
+    //[HideInInspector] 
+    public float ns;
+    //[HideInInspector] 
+    public float ew;
+    //[HideInInspector] 
+    public float ud;
 }
 
 public class EarthquakeDataReader : MonoBehaviour
@@ -24,6 +27,7 @@ public class EarthquakeDataReader : MonoBehaviour
     }
 
     public List<ShakePower> ReadCSVData(string fileName){
+        Debug.Log("start reading");
         List<ShakePower> read_data = new List<ShakePower>();
         using(System.IO.StreamReader streamReader = new System.IO.StreamReader(Application.dataPath + "/Data/" + fileName + ".txt")){
             int count = 0;
@@ -34,7 +38,7 @@ public class EarthquakeDataReader : MonoBehaviour
                 if(count >= 8){
                     //読み取ったデータを小数に変換
                     try{
-                        string[] data = streamReader.ReadLine().Split(',');
+                        string[] data = streamReader.ReadLine().Split('\t');
                         ShakePower power = new ShakePower();
                         power.ns = float.Parse(data[0]);
                         power.ew = float.Parse(data[1]);
@@ -46,6 +50,7 @@ public class EarthquakeDataReader : MonoBehaviour
                 }
             }
         }
+        Debug.Log("finish reading");
         return (read_data.Count == 0)? null: read_data;
     }
 

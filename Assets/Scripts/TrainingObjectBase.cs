@@ -20,6 +20,11 @@ public class TrainingObjectBase : MonoBehaviour
         
     }
 
+    public void Call()
+    {
+        Debug.Log("button clicked");
+    }
+
     protected void StartSetting(){
         isClear = false;
     }
