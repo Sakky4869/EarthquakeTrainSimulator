@@ -109,27 +109,29 @@ public class SpatialAwarenessController : MonoBehaviour
 
 
             //各認識オブジェクトを結合させたメッシュを作成する
-            Mesh mesh = new Mesh();
-            List<Vector3> vertices = new List<Vector3>();
+            //List<Vector3> vertices = new List<Vector3>();
+            //List<int> triangles = new List<int>();
             int count = 0;
+            int childrenCount = parentObject.transform.GetComponentsInChildren<MeshFilter>().Length;
+            CombineInstance[] combineInstances = new CombineInstance[childrenCount];
             //頂点情報の取得
             foreach (MeshFilter meshFilter in parentObject.transform.GetComponentsInChildren<MeshFilter>())
             {
-                foreach (Vector3 p in meshFilter.mesh.vertices)
-                {
-                    vertices.Add(p);
-                    count++;
-                }
+
+                combineInstances[count].mesh = meshFilter.sharedMesh;
+                combineInstances[count].transform = Matrix4x4.Translate(meshFilter.transform.position);
+                count++;
+
                 meshFilter.gameObject.SetActive(false);
             }
 
-            mesh.SetVertices(vertices);
-            int[] triangles = new int[count];
-            for(int i = 0; i < count; i++)
-            {
-                triangles[i] = i;
-            }
-            mesh.SetTriangles(triangles,0);
+            Mesh mesh = new Mesh();
+
+            mesh.CombineMeshes(combineInstances);
+
+            //mesh.SetVertices(vertices);
+
+            //mesh.SetTriangles(triangles.ToArray(), subMeshCount);
             //作成　現状、うまくいってない
             MeshFilter filter = GameObject.Find("MeshTest").GetComponent<MeshFilter>();
             filter.mesh = mesh;
