@@ -74,10 +74,10 @@ public class SpatialAwarenessController : MonoBehaviour
 
     }
 
-    public void OnPushButton()
-    {
-        Debug.Log("Pushed Button");
-    }
+    //public void OnPushButton()
+    //{
+    //    Debug.Log("Pushed Button");
+    //}
 
 
     //環境認識オブジェクトを取得し、Rigidbodyを付与
