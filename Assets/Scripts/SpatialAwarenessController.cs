@@ -63,32 +63,20 @@ public class SpatialAwarenessController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             shaker.StartShake(rigidbodies);
-            //GameObject spatialAwareness = GameObject.Find("Spatial Awareness System");
-
-            //if (spatialAwareness != null)
-            //    parentObject = spatialAwareness.transform.GetChild(0).gameObject;
-            //Debug.Log("Get System Parents");
-            
-            
-            //if (parentObject != null)
-            //    Debug.Log(parentObject.transform.childCount);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(EnvironmentSetting());
-            //if(parentObject != null)
-            //{
-            //    foreach(Transform mesh in parentObject.transform.GetComponentsInChildren<Transform>())
-            //    {
-            //        mesh.gameObject.AddComponent<Rigidbody>();
-            //    }
-            //    Debug.Log("Add Rigidbody");
-            //}
         }
 
         
 
+    }
+
+    public void OnPushButton()
+    {
+        Debug.Log("Pushed Button");
     }
 
 
