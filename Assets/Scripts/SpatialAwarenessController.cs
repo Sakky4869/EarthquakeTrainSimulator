@@ -60,15 +60,16 @@ public class SpatialAwarenessController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            shaker.StartShake(rigidbodies);
-        }
+        
+        // if (Input.GetKeyDown(KeyCode.Return))
+        // {
+        //     shaker.StartShake(rigidbodies);
+        // }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(EnvironmentSetting());
-        }
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     StartCoroutine(EnvironmentSetting());
+        // }
 
         
 
@@ -199,6 +200,7 @@ public class SpatialAwarenessController : MonoBehaviour
             {
                 Debug.Log("Resume Observer");
                 spatialAwarenessSystem.ResumeObservers();
+                
                 clearObservations = true;
             }
         }
