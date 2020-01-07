@@ -46,6 +46,7 @@ public class SpatialAwarenessController : MonoBehaviour
         startedObserver = false;
         clearObservations = false;
         shaker = GameObject.Find("Shaker").GetComponent<Shaker>();
+        
     }
 
     #region Memo
@@ -163,12 +164,13 @@ public class SpatialAwarenessController : MonoBehaviour
         {
             Debug.Log("Start Observer");
             spatialAwarenessSystem = CoreServices.SpatialAwarenessSystem;
-            
+
             dataProviderAccess = spatialAwarenessSystem as IMixedRealityDataProviderAccess;
             meshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
             meshObserverName = "Spatial Object Mesh Observer";
             spatialObjectMeshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>(meshObserverName);
-            PauseAndResume();
+            //PauseAndResume();
+            spatialAwarenessSystem.ResumeObservers();
             startedObserver = true;
         }
     }
