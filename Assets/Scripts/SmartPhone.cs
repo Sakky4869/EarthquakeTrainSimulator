@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class SmartPhone : TrainingObjectBase
+public class SmartPhone : InformationDeviceBase
 {
 	
 
@@ -11,11 +11,16 @@ public class SmartPhone : TrainingObjectBase
 	{
 		StartSetting();
 	}
-	
-	protected override void GetInformationOfEarthquake()
+
+	public override void Interact()
 	{
-		base.GetInformationOfEarthquake();
+		base.Interact();
 	}
-	
+
+	protected override void ShowInformationOfEarthquake()
+	{
+
+	}
+
 
 }

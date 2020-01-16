@@ -5,35 +5,37 @@ using UnityEngine;
 public class TrainingObjectBase : MonoBehaviour
 {
 
-    [HideInInspector] public bool isClear{get; private set;}
+    [HideInInspector] public bool isClear { get; private set; }
+    [HideInInspector] public int categoryId;
+    [HideInInspector] public int id;
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void Call()
+    //開始時のセッティング
+    protected void StartSetting()
     {
-        Debug.Log("button clicked");
-    }
-
-    protected void StartSetting(){
         isClear = false;
     }
 
-    private void Clear(){
+    //タスクのクリア時に実行
+    protected void ClearTask()
+    {
         isClear = true;
     }
 
-    protected virtual void GetInformationOfEarthquake(){
-        Clear();
+    //ユーザから何かしらの干渉があった場合に実行
+    public virtual void Interact()
+    {
+        ClearTask();
     }
+
 }
