@@ -10,12 +10,16 @@ public class PlayerUI : MonoBehaviour
 
     //メッセージテキストボックス
     private Text messageText;
+    
+    //TrainingManager
+    private TrainingManager trainingManager;
 
 
     void Start()
     {
         messagePanel = GameObject.Find("MessagePanel");
         messageText = GameObject.Find("MessageText").GetComponent<Text>();
+        trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
     }
 
     void Update()

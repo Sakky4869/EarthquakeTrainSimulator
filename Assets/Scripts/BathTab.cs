@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+* ユーザがバスに入っていたら、ユーザの上に移動し、タスククリア f
+*
+*
+*/
+
 public class BathTab : TrainingObjectBase
 {
 
@@ -39,6 +45,7 @@ public class BathTab : TrainingObjectBase
         if (bath.isPlayerInBath)
         {
             base.Interact();
+            MoveToOverPlayer();
 
         }
     }

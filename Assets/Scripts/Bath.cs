@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+* ユーザが入ったかどうかの判定 f,i
+*
+*
+*/
+
 public class Bath : MonoBehaviour
 {
     [HideInInspector] public bool isPlayerInBath;

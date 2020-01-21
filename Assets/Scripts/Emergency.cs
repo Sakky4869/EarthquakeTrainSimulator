@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#define Editor
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,11 @@ public class Emergency : MonoBehaviour
         flowerVase = GameObject.Find("FlowerVase");
         flowerVase.GetComponent<Rigidbody>().useGravity = false;
         flowerVase.SetActive(false);
+
+#if Editor
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+#endif
     }
 
     // Update is called once per frame
@@ -22,5 +28,7 @@ public class Emergency : MonoBehaviour
             flowerVase.GetComponent<Rigidbody>().velocity = Vector3.zero;
             flowerVase.GetComponent<Rigidbody>().useGravity = true;
         }
+
+
     }
 }

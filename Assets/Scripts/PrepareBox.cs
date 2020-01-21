@@ -1,0 +1,34 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Microsoft.MixedReality.Toolkit.UI;
+
+// 配置する家具の一覧を表示する
+public class PrepareBox : MonoBehaviour
+{
+    [SerializeField]// 配置対象の家具のプレハブ
+    private PrepareObject[] prepareObjects;
+
+    [SerializeField]// 家具配置ボタンのプレハブ
+    private Interactable furnitureButton;
+
+    [SerializeField]
+    private 
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+
+    // 一覧画面に，家具の生成ボタンを配置する
+    // 配置する際は，横に４つずつとする
+    private void SetButtonsToSpawnFurnitures()
+    {
+        int verticalCount = prepareObjects.Length / 4;
+    }
+}
