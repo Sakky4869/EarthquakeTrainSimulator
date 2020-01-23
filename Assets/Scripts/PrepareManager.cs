@@ -11,6 +11,7 @@ public class PrepareManager : MonoBehaviour
     void Start()
     {
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
+       
     }
 
     void Update()

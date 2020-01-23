@@ -9,14 +9,14 @@ public class Emergency : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        flowerVase = GameObject.Find("FlowerVase");
-        flowerVase.GetComponent<Rigidbody>().useGravity = false;
-        flowerVase.SetActive(false);
+        //flowerVase = GameObject.Find("FlowerVase");
+        //flowerVase.GetComponent<Rigidbody>().useGravity = false;
+        //flowerVase.SetActive(false);
 
-#if Editor
+//#if Editor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-#endif
+//#endif
     }
 
     // Update is called once per frame
