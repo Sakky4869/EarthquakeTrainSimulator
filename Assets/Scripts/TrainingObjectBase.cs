@@ -8,6 +8,8 @@ public class TrainingObjectBase : MonoBehaviour
     [HideInInspector] public bool isClear { get; private set; }
     [HideInInspector] public int categoryId;
     [HideInInspector] public int id;
+    public string taskName;
+
 
 
     void Start()

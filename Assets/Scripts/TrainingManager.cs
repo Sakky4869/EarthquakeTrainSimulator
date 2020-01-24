@@ -44,8 +44,14 @@ public class TrainingManager : MonoBehaviour
     	    // Start Training
     	    for(int i = 0; i < trainingObjects.Count; i++)
     	    {
-                if (trainingObjects[i].isClear)
+                // タスクをクリアしたら
+                if (trainingObjects[i].isClear){
+                    // クリア数を増やす
                     clearCount++;
+                    
+                    // タスクリストの表記を変える
+                    
+                }
                 yield return null;
     	    }
             if (clearCount == trainingObjects.Count)
