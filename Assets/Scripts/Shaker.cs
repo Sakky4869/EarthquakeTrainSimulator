@@ -36,7 +36,7 @@ public class Shaker : MonoBehaviour
     }
 
     private IEnumerator Shake(List<ShakePower> powers, string objectName, List<Rigidbody> rigidbodies){
-        Debug.Log("start");
+        // Debug.Log("start");
 
         //rigidPlane = GameObject.Find(objectName).GetComponent<Rigidbody>();
 
@@ -47,6 +47,6 @@ public class Shaker : MonoBehaviour
                 rigid.AddForce(force);
             yield return new WaitForSeconds(1 / 100);
         }
-        Debug.Log("finish");
+        // Debug.Log("finish");
     }
 }

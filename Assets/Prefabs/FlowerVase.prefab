@@ -90,8 +90,7 @@ GameObject:
   - component: {fileID: 8781815413477689146}
   - component: {fileID: 8781815413473551270}
   - component: {fileID: 8781815413472481080}
-  - component: {fileID: 8781815413475412810}
-  - component: {fileID: 8781815413475412813}
+  - component: {fileID: 2789273462039460577}
   m_Layer: 0
   m_Name: FlowerVase
   m_TagString: Untagged
@@ -168,7 +167,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8781815413475465008}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.152766, y: 0.302742, z: 0.152766}
@@ -189,19 +188,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8781815413475412810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8781815413475465008}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8234df3b9b7c8bd4ba32c169bfb04575, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8781815413475412813
+--- !u!114 &2789273462039460577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,32 +197,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8781815413475465008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03daa81ea5f685f4ebf6e32038d058ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 307f8cc2920d57f4b88922f9c9df4e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
-  manipulationType: 2
-  twoHandedManipulationType: 5
-  allowFarManipulation: 1
-  oneHandRotationModeNear: 6
-  oneHandRotationModeFar: 6
-  releaseBehavior: 3
-  constraintOnRotation: 0
-  constraintOnMovement: 0
-  smoothingActive: 1
-  smoothingAmountOneHandManip: 0.001
-  OnManipulationStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  OnManipulationEnded:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
+  categoryId: 0
+  id: 0
 --- !u!1 &8781815413475527214
 GameObject:
   m_ObjectHideFlags: 0

@@ -39,4 +39,9 @@ public class PlayerUI : MonoBehaviour
     {
         messagePanel.SetActive(false);
     }
+
+    // 訓練メニューに追加する
+    public void AddToTrainingMenu(TrainingObjectBase trainingObject){
+
+    }
 }
