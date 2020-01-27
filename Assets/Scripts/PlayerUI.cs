@@ -25,12 +25,14 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]// タスクアイテムの親オブジェクト
     private Transform taskItemParent;
 
+    // private Player player;
 
     void Start()
     {
         messagePanel = GameObject.Find("MessagePanel");
         messageText = GameObject.Find("MessageText").GetComponent<Text>();
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
+        // player = Camera.main.transform.GetComponent<Player>();
     }
 
     void Update()
