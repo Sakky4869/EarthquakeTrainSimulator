@@ -202,6 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categoryId: 0
   id: 0
+  taskName: Task Test
 --- !u!1 &8781815413475527214
 GameObject:
   m_ObjectHideFlags: 0

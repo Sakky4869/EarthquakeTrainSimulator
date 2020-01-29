@@ -234,6 +234,11 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2789273462039460577, guid: 9e64c00596a01404cb6313a7ed4fa04e,
+        type: 3}
+      propertyPath: taskName
+      value: Task Test
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e64c00596a01404cb6313a7ed4fa04e, type: 3}
 --- !u!4 &4436624981596664720 stripped

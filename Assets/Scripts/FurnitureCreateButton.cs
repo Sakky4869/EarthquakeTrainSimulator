@@ -26,7 +26,7 @@ public class FurnitureCreateButton : MonoBehaviour
 
     public void SpawnFurniture(){
         GameObject user = Camera.main.gameObject;
-        Vector3 spawnPos = user.transform.position + user.transform.forward / 2 + transform.up / 2;
+        Vector3 spawnPos = user.transform.position + user.transform.forward / 2 + transform.up / 10;
         GameObject obje = Instantiate(prepareObject.gameObject, spawnPos, Quaternion.identity);
         if (obje.transform.GetChild(0).GetComponent<TrainingObjectBase>() != null)
         {

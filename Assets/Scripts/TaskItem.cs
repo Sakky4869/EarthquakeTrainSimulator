@@ -7,14 +7,14 @@ public class TaskItem : MonoBehaviour, System.IComparable<TaskItem>
 {
     [HideInInspector]
     public int id;
+    // [HideInInspector]
     public TextMeshPro taskText;
-    private Player player;
 
 
 
     void Start()
     {
-        player = Camera.main.transform.GetComponent<Player>();
+
     }
 
     void Update()
@@ -22,23 +22,16 @@ public class TaskItem : MonoBehaviour, System.IComparable<TaskItem>
         
     }
 
-    // タスクリストの表記を完了状態にする
     public void ClearTask(){
         taskText.fontStyle = FontStyles.Strikethrough;
-        player.PlayTaskClearSound();
     }
 
-    // タスクリストの表記をリセットする
-    public void ResetTask(){
-        taskText.fontStyle = FontStyles.Normal;
-    }
-
-
-    // タスクアイテムのリストのソートの際に，Sort()を呼ぶだけでソートされるように，
-    // IComparableのメソッドを実装
     public int CompareTo(TaskItem item){
         if(item == null)
             return 1;
         return this.id - ((TaskItem)item).id;
     }
+
+
+
 }

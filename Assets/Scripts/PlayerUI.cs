@@ -16,6 +16,7 @@ public class PlayerUI : MonoBehaviour
     private TrainingManager trainingManager;
 
     // タスクリストに表示するアイテムのリスト
+    [SerializeField]
     private List<TaskItem> taskItems;
     // タスクアイテム
     [SerializeField]
@@ -25,19 +26,26 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]// タスクアイテムの親オブジェクト
     private Transform taskItemParent;
 
-    // private Player player;
 
     void Start()
     {
-        messagePanel = GameObject.Find("MessagePanel");
-        messageText = GameObject.Find("MessageText").GetComponent<Text>();
+        // messagePanel = GameObject.Find("MessagePanel");
+        // messageText = GameObject.Find("MessageText").GetComponent<Text>();
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
-        // player = Camera.main.transform.GetComponent<Player>();
     }
 
     void Update()
     {
         
+    }
+
+    // タスクアイテムをクリアする
+    public void ClearTask(int id){
+        foreach(TaskItem i in taskItems){
+            if(i.id == id){
+                i.ClearTask();
+            }
+        }
     }
 
     //警告文を表示する
@@ -57,8 +65,15 @@ public class PlayerUI : MonoBehaviour
     // 訓練メニューに追加する
     public void AddToTrainingMenu(TrainingObjectBase trainingObject){
         GameObject item = Instantiate(taskItem.gameObject, transform.position, Quaternion.identity);
+        // Debug.Log(item.name);
         TaskItem tItem = item.GetComponent<TaskItem>();
         tItem.id = trainingObject.id;
+        tItem.taskText.text = trainingObject.taskName;
+        item.transform.SetParent(taskItemParent);
+        item.GetComponent<RectTransform>().localScale = Vector3.one;
+        if(taskItems == null)
+            taskItems = new List<TaskItem>();
+        taskItems.Add(tItem);
         SortItems();
     }
 
@@ -79,14 +94,21 @@ public class PlayerUI : MonoBehaviour
             // 配置先の位置を決定
             targetRect = taskItemBaseTransform;
             Vector3 pos = targetRect.localPosition;
+            pos.x = 0.05f;
             pos.y -= i * distanceOfY;
             targetRect.localPosition = pos;
+            // Debug.Log(pos.x + " , " + pos.y + " , " + pos.z);
 
             // 対応するタスクアイテムを移動
             foreach(RectTransform rectTransform in taskItemParent.transform){
+                if(rectTransform.GetComponent<TaskItem>() == null)
+                    continue;
                 TaskItem item = rectTransform.GetComponent<TaskItem>();
                 if(item.id == taskItems[i].id){
+                    // Debug.Log("call move item");
                     rectTransform.localPosition = pos;
+                    Debug.Log("local position : " + rectTransform.localPosition);
+                    break;
                 }
             }
         }

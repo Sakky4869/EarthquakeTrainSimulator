@@ -7,7 +7,7 @@ public class TrainingObjectBase : MonoBehaviour
 
     [HideInInspector] public bool isClear { get; private set; }
     [HideInInspector] public int categoryId;
-    [HideInInspector] public int id;
+    public int id;
     public string taskName;
 
 
@@ -32,6 +32,7 @@ public class TrainingObjectBase : MonoBehaviour
     protected void ClearTask()
     {
         isClear = true;
+        Camera.main.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<TaskItem>().ClearTask();
     }
 
     //ユーザから何かしらの干渉があった場合に実行

@@ -5,13 +5,14 @@ using UnityEngine;
 public class PrepareManager : MonoBehaviour
 {
     private TrainingManager trainingManager;
+    private PlayerUI playerUI;
 
 
 
     void Start()
     {
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
-
+        playerUI = GameObject.Find("TaskPanel").GetComponent<PlayerUI>();
     }
 
     void Update()
@@ -22,8 +23,12 @@ public class PrepareManager : MonoBehaviour
     // 家具
     public void AddFurniture(PrepareObject pObje)
     {
-        if(pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>() != null)
-            trainingManager.AddTrainingObject(pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>());
+        // Debug.Log(pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>());
+        if(pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>() != null){
+            TrainingObjectBase tob = pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>();
+            trainingManager.AddTrainingObject(tob);
+            playerUI.AddToTrainingMenu(tob);
+        }
     }
 
     // 配置が終わり，訓練を開始する直前に呼び出す
