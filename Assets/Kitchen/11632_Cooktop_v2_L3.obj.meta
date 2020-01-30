@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: d8225b9c00271264a8fa9e3c31813aca
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cooktop_burner
+    100004: Cooktop_cover_burners
+    100006: Cooktop_double_burner
+    100008: Cooktop_gas_stove
+    100010: Cooktop_handle_01
+    100012: Cooktop_handle_02
+    100014: Cooktop_handle_03
+    100016: Cooktop_handle_04
+    100018: Cooktop_handle_05
+    100020: Cooktop_index_01
+    100022: Cooktop_index_02
+    100024: Cooktop_index_03
+    100026: Cooktop_index_04
+    100028: Cooktop_index_05
+    100030: Cooktop_labels
+    100032: Cooktop_stand_01
+    100034: Cooktop_stand_02
+    100036: Cooktop_stand_03
+    400000: //RootNode
+    400002: Cooktop_burner
+    400004: Cooktop_cover_burners
+    400006: Cooktop_double_burner
+    400008: Cooktop_gas_stove
+    400010: Cooktop_handle_01
+    400012: Cooktop_handle_02
+    400014: Cooktop_handle_03
+    400016: Cooktop_handle_04
+    400018: Cooktop_handle_05
+    400020: Cooktop_index_01
+    400022: Cooktop_index_02
+    400024: Cooktop_index_03
+    400026: Cooktop_index_04
+    400028: Cooktop_index_05
+    400030: Cooktop_labels
+    400032: Cooktop_stand_01
+    400034: Cooktop_stand_02
+    400036: Cooktop_stand_03
+    2100000: Cooktop_burnerMat
+    2100002: Cooktop_cover_burnersMat
+    2100004: Cooktop_double_burnerMat
+    2100006: Cooktop_gas_stoveMat
+    2100008: Cooktop_handle_01Mat
+    2100010: Cooktop_handle_02Mat
+    2100012: Cooktop_handle_03Mat
+    2100014: Cooktop_handle_04Mat
+    2100016: Cooktop_handle_05Mat
+    2100018: Cooktop_index_01Mat
+    2100020: Cooktop_index_02Mat
+    2100022: Cooktop_index_03Mat
+    2100024: Cooktop_index_04Mat
+    2100026: Cooktop_index_05Mat
+    2100028: Cooktop_labelsMat
+    2100030: Cooktop_stand_01Mat
+    2100032: Cooktop_stand_02Mat
+    2100034: Cooktop_stand_03Mat
+    2300000: Cooktop_burner
+    2300002: Cooktop_cover_burners
+    2300004: Cooktop_double_burner
+    2300006: Cooktop_gas_stove
+    2300008: Cooktop_handle_01
+    2300010: Cooktop_handle_02
+    2300012: Cooktop_handle_03
+    2300014: Cooktop_handle_04
+    2300016: Cooktop_handle_05
+    2300018: Cooktop_index_01
+    2300020: Cooktop_index_02
+    2300022: Cooktop_index_03
+    2300024: Cooktop_index_04
+    2300026: Cooktop_index_05
+    2300028: Cooktop_labels
+    2300030: Cooktop_stand_01
+    2300032: Cooktop_stand_02
+    2300034: Cooktop_stand_03
+    3300000: Cooktop_burner
+    3300002: Cooktop_cover_burners
+    3300004: Cooktop_double_burner
+    3300006: Cooktop_gas_stove
+    3300008: Cooktop_handle_01
+    3300010: Cooktop_handle_02
+    3300012: Cooktop_handle_03
+    3300014: Cooktop_handle_04
+    3300016: Cooktop_handle_05
+    3300018: Cooktop_index_01
+    3300020: Cooktop_index_02
+    3300022: Cooktop_index_03
+    3300024: Cooktop_index_04
+    3300026: Cooktop_index_05
+    3300028: Cooktop_labels
+    3300030: Cooktop_stand_01
+    3300032: Cooktop_stand_02
+    3300034: Cooktop_stand_03
+    4300000: Cooktop_burner
+    4300002: Cooktop_cover_burners
+    4300004: Cooktop_double_burner
+    4300006: Cooktop_gas_stove
+    4300008: Cooktop_handle_01
+    4300010: Cooktop_handle_02
+    4300012: Cooktop_handle_03
+    4300014: Cooktop_handle_04
+    4300016: Cooktop_handle_05
+    4300018: Cooktop_index_01
+    4300020: Cooktop_index_02
+    4300022: Cooktop_index_03
+    4300024: Cooktop_index_04
+    4300026: Cooktop_index_05
+    4300028: Cooktop_labels
+    4300030: Cooktop_stand_01
+    4300032: Cooktop_stand_02
+    4300034: Cooktop_stand_03
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

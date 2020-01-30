@@ -64,16 +64,30 @@ public class PlayerUI : MonoBehaviour
 
     // 訓練メニューに追加する
     public void AddToTrainingMenu(TrainingObjectBase trainingObject){
+
+        // アイテムを生成
         GameObject item = Instantiate(taskItem.gameObject, transform.position, Quaternion.identity);
-        // Debug.Log(item.name);
+        
+        // タスクアイテムクラスを取得
         TaskItem tItem = item.GetComponent<TaskItem>();
+        
+        // 必要な情報を代入
         tItem.id = trainingObject.id;
         tItem.taskText.text = trainingObject.taskName;
+        trainingObject.taskItem = tItem;
+        
+        // 親オブジェクトの設定
         item.transform.SetParent(taskItemParent);
+        
+        // 大きさの調整
         item.GetComponent<RectTransform>().localScale = Vector3.one;
+        
+        // タスクアイテムリストへの追加
         if(taskItems == null)
             taskItems = new List<TaskItem>();
         taskItems.Add(tItem);
+        
+        // アイテムリストの並べ替え
         SortItems();
     }
 
@@ -97,7 +111,6 @@ public class PlayerUI : MonoBehaviour
             pos.x = 0.05f;
             pos.y -= i * distanceOfY;
             targetRect.localPosition = pos;
-            // Debug.Log(pos.x + " , " + pos.y + " , " + pos.z);
 
             // 対応するタスクアイテムを移動
             foreach(RectTransform rectTransform in taskItemParent.transform){
@@ -113,12 +126,4 @@ public class PlayerUI : MonoBehaviour
             }
         }
     }
-
-    // タスク一覧を初期化する
-    // private void RefreshTaskItemList(){
-    //     while(taskItemParentTransform.childCount != 0){
-    //         // Destroy()
-    //         break;
-    //     }
-    // }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Table : TrainingObjectBase
 {
     private PlayerUI playerUi;
-    private TrainingManager trainingManager;
+    // private TrainingManager trainingManager;
 
     void Start()
     {
@@ -17,7 +17,7 @@ public class Table : TrainingObjectBase
         
     }
 
-    private void StartSetting()
+    protected void StartSetting()
     {
         base.StartSetting();
         playerUi = GameObject.Find("MixedRealityPlayspace").GetComponent<PlayerUI>();

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Door : TrainingObjectBase
 {
-    private TrainingManager trainingManager;
+    // private TrainingManager trainingManager;
+    [SerializeField]
+    private float openSpeed;
 
 
     void Start()
@@ -17,7 +19,7 @@ public class Door : TrainingObjectBase
 
     }
 
-    private void StartSetting()
+    protected void StartSetting()
     {
         base.StartSetting();
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
@@ -30,12 +32,11 @@ public class Door : TrainingObjectBase
 
     private IEnumerator OpenDoorCor()
     {
-        for(int i = 0; i < 90; i++)
-        {
-            transform.Rotate(0, 1 * Time.deltaTime, 0);
+        while(transform.rotation.eulerAngles.y <= 90){
+            transform.Rotate(0, openSpeed * Time.deltaTime, 0);
             yield return null;
         }
-        ClearTask();
+        // ClearTask();
     }
 
     public override void Interact()

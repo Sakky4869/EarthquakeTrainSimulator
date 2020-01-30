@@ -26,6 +26,7 @@ public class PrepareManager : MonoBehaviour
         // Debug.Log(pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>());
         if(pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>() != null){
             TrainingObjectBase tob = pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>();
+            tob.trainingManager = trainingManager;
             trainingManager.AddTrainingObject(tob);
             playerUI.AddToTrainingMenu(tob);
         }

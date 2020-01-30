@@ -31,7 +31,4 @@ public class TaskItem : MonoBehaviour, System.IComparable<TaskItem>
             return 1;
         return this.id - ((TaskItem)item).id;
     }
-
-
-
 }

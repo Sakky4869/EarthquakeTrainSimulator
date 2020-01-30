@@ -5,11 +5,23 @@ using UnityEngine;
 public class TrainingObjectBase : MonoBehaviour
 {
 
-    [HideInInspector] public bool isClear { get; private set; }
-    [HideInInspector] public int categoryId;
+    [HideInInspector] 
+    public bool isClear { get; private set; }
+
+    [HideInInspector] 
+    public int categoryId;
+    
+    [HideInInspector]
+    public TaskItem taskItem;
+
+    [HideInInspector]
+    public TrainingManager trainingManager;
+
     public int id;
+    
     public string taskName;
 
+    
 
 
     void Start()
@@ -32,7 +44,8 @@ public class TrainingObjectBase : MonoBehaviour
     protected void ClearTask()
     {
         isClear = true;
-        Camera.main.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<TaskItem>().ClearTask();
+        taskItem.ClearTask();
+        trainingManager.ClearTask();
     }
 
     //ユーザから何かしらの干渉があった場合に実行

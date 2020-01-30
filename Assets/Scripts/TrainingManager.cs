@@ -4,62 +4,66 @@ using UnityEngine;
 
 public class TrainingManager : MonoBehaviour
 {
-    //訓練オブジェクトのリスト
+    // 訓練オブジェクトのリスト
     [SerializeField] private List<TrainingObjectBase> trainingObjects;
-    //揺れているかどうか
+
+    // 揺れているかどうか
     [HideInInspector] public bool isQuaking;
-    //訓練が終了しているかどうか
+    
+    // 訓練が終了しているかどうか
     [HideInInspector] public bool isFinishedTraining;
+    
+    // 訓練中かどうか
+    private bool isInTraining;
     
     void Start()
     {
-
+        isQuaking = false;
+        isFinishedTraining = false;
+        isInTraining = false;
     }
 
     
     void Update()
     {
-        
+        if(isInTraining)
+        {
+            if(isFinishedTraining){
+                ClearTraining();
+            }
+        }
     }
     
     //訓練オブジェクトをリストへ追加
     public void AddTrainingObject(TrainingObjectBase trainingObject)
     {
+        if(trainingObjects == null)
+            trainingObjects = new List<TrainingObjectBase>();
 		trainingObjects.Add(trainingObject);
 	}
     
     //訓練
     public void Train()
     {
-    	StartCoroutine( TrainCor() );
+    	// StartCoroutine( TrainCor() );
+        Debug.Log("訓練開始");
+        isInTraining = true;
     }
-    
-    //訓練のコルーチン
-    private IEnumerator TrainCor()
-    {
-    	Debug.Log( "Start Training" );
-        int clearCount = 0;
-        while (true)
-        {
-    	    // Start Training
-    	    for(int i = 0; i < trainingObjects.Count; i++)
-    	    {
-                // タスクをクリアしたら
-                if (trainingObjects[i].isClear){
-                    // クリア数を増やす
-                    clearCount++;
-                    
-                    // タスクリストの表記を変える
-                    
-                }
-                yield return null;
-    	    }
-            if (clearCount == trainingObjects.Count)
+
+    // タスククリアの方式を，タスクオブジェクトを監視する形から，タスクオブジェクトがメッセージを送る形式に変更
+    public void ClearTask(){
+        bool isClear = true;
+        foreach(TrainingObjectBase trainingObject in trainingObjects){
+            if(trainingObject.isClear == false)
             {
-                isFinishedTraining = true;
-        	    Debug.Log("Finish Training");
-                yield break;
+                isClear = false;
             }
+        }
+
+        // クリアしていたら
+        if(isClear){
+            Debug.Log("Finished Training");
+            isFinishedTraining = true;
         }
     }
 
@@ -67,5 +71,6 @@ public class TrainingManager : MonoBehaviour
     public void ClearTraining()
     {
         Debug.Log("訓練終了");
+        isInTraining = false;
     } 
 }
