@@ -118,6 +118,7 @@ MonoBehaviour:
   - {fileID: 4921669670633364834, guid: 9c331c426d181704e9bd68f4b137d6a9, type: 3}
   - {fileID: 4352357608335462096, guid: 51cda5fa15bd8964ebb328c914b369e7, type: 3}
   - {fileID: 8365848715408079324, guid: 8aa090bbd4dec9045864e1dd90e023be, type: 3}
+  - {fileID: 9196533577307633687, guid: af3bfb1ac69934e4ba58d63775352cf3, type: 3}
   furnitureButton: {fileID: 9097590677648575783, guid: 51e0c896f2941c2459cf17eccfa1b2bc,
     type: 3}
   boxOperateButton: {fileID: 1333110545140655674}

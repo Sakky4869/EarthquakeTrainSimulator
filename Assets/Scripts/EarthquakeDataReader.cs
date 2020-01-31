@@ -27,7 +27,7 @@ public class EarthquakeDataReader : MonoBehaviour
     }
 
     public List<ShakePower> ReadCSVData(string fileName){
-        Debug.Log("start reading");
+        // Debug.Log("start reading");
         List<ShakePower> read_data = new List<ShakePower>();
         using(System.IO.StreamReader streamReader = new System.IO.StreamReader(Application.dataPath + "/Data/" + fileName + ".txt")){
             int count = 0;
@@ -50,7 +50,7 @@ public class EarthquakeDataReader : MonoBehaviour
                 }
             }
         }
-        Debug.Log("finish reading");
+        // Debug.Log("finish reading");
         return (read_data.Count == 0)? null: read_data;
     }
 

@@ -120,7 +120,7 @@ public class PlayerUI : MonoBehaviour
                 if(item.id == taskItems[i].id){
                     // Debug.Log("call move item");
                     rectTransform.localPosition = pos;
-                    Debug.Log("local position : " + rectTransform.localPosition);
+                    Debug.Log("local position " + taskItems[i].id + " : " + rectTransform.localPosition);
                     break;
                 }
             }
