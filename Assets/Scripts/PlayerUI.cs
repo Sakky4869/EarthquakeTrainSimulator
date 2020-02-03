@@ -97,17 +97,26 @@ public class PlayerUI : MonoBehaviour
         taskItems.Sort();
 
         // 一番上の位置情報
-        RectTransform targetRect = taskItemBaseTransform;
+        RectTransform targetRect = new RectTransform();// taskItemBaseTransform;
+        Vector3 pos = new Vector3(0.01f, 0.25f, 0);
+        Rect rect = new Rect();
+        rect.width = 1;
+        rect.height = 0.1f;
+        Vector3 size = new Vector3(1,1,1);
+        
+
+        // targetRect.localPosition.x = taskItemBaseTransform.y;
 
         // タスクリストの縦の感覚
-        float distanceOfY = 0.1f;
+        float distanceOfY = 0.13f;
 
         // 位置のうち，Y座標の感覚は0.1f
         for(int i = 0; i < taskItems.Count; i++){
 
             // 配置先の位置を決定
+            
             targetRect = taskItemBaseTransform;
-            Vector3 pos = targetRect.localPosition;
+            Vector3 pos = targetRect.position;
             pos.x = 0.05f;
             pos.y -= i * distanceOfY;
             targetRect.localPosition = pos;
@@ -120,7 +129,7 @@ public class PlayerUI : MonoBehaviour
                 if(item.id == taskItems[i].id){
                     // Debug.Log("call move item");
                     rectTransform.localPosition = pos;
-                    Debug.Log("local position " + taskItems[i].id + " : " + rectTransform.localPosition);
+                    Debug.Log("Task Item Base Position " + " : " + taskItemBaseTransform.localPosition);
                     break;
                 }
             }

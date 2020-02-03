@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 715384558083358080}
   - component: {fileID: 715384558083358083}
   m_Layer: 0
-  m_Name: TaskItem (1)
+  m_Name: TaskItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.7
+  m_fontSizeBase: 0.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -20,17 +20,20 @@ public class TV_Controller : InformationDeviceBase
     public void StartSetting()
     {
         base.StartSetting();
-        tv = GameObject.Find("TV").GetComponent<TV>();
+        if(GameObject.Find("TV") != null)
+            tv = GameObject.Find("TV").GetComponent<TV>();
     }
 
     protected override void ShowInformationOfEarthquake()
     {
-        tv.TurnOn();
+        if(tv != null)
+            tv.TurnOn();
     }
 
     public override void Interact()
     {
         base.Interact();
+        ShowInformationOfEarthquake();
     }
 
 }
