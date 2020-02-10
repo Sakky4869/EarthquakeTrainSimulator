@@ -116,10 +116,10 @@ public class PlayerUI : MonoBehaviour
             // 配置先の位置を決定
             
             targetRect = taskItemBaseTransform;
-            Vector3 pos = targetRect.position;
-            pos.x = 0.05f;
-            pos.y -= i * distanceOfY;
-            targetRect.localPosition = pos;
+            Vector3 position = targetRect.position;
+            position.x = 0.05f;
+            position.y -= i * distanceOfY;
+            targetRect.localPosition = position;
 
             // 対応するタスクアイテムを移動
             foreach(RectTransform rectTransform in taskItemParent.transform){

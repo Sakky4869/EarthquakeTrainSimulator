@@ -40,12 +40,14 @@ public class SpatialAwarenessController : MonoBehaviour
 
     private Shaker shaker;
     private List<Rigidbody> rigidbodies;
+    private TrainingManager trainingManager;
     
     void Start()
     {
         startedObserver = false;
         clearObservations = false;
         shaker = GameObject.Find("Shaker").GetComponent<Shaker>();
+        trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
         
     }
 
@@ -172,6 +174,8 @@ public class SpatialAwarenessController : MonoBehaviour
             //PauseAndResume();
             spatialAwarenessSystem.ResumeObservers();
             startedObserver = true;
+            // SpatialAwarenessSystem.Enable();
+            trainingManager.StartAwareness();
         }
     }
 
@@ -197,6 +201,7 @@ public class SpatialAwarenessController : MonoBehaviour
                 Debug.Log("Suspend Observer");
                 spatialAwarenessSystem.SuspendObservers();
                 clearObservations = false;
+                trainingManager.CompleteAwareness();
             }
             else
             {

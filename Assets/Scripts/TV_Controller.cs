@@ -24,6 +24,7 @@ public class TV_Controller : InformationDeviceBase
             tv = GameObject.Find("TV").GetComponent<TV>();
     }
 
+    // テレビをつけて，情報を表示
     protected override void ShowInformationOfEarthquake()
     {
         if(tv != null)

@@ -23,9 +23,9 @@ public class Conro : TrainingObjectBase
     }
 
     public void ControlConro(){
-        fireParticleSystem.SetActive(!isTurnOn);
-        conroControlButton.transform.GetChild(3).GetComponent<TextMeshPro>().text = (isTurnOn)?"Turn Off":"Turn On";
         isTurnOn = !isTurnOn;
+        fireParticleSystem.SetActive(isTurnOn);
+        conroControlButton.transform.GetChild(3).GetComponent<TextMeshPro>().text = (isTurnOn)?"Turn Off":"Turn On";
     }
 
     public override void Interact(){

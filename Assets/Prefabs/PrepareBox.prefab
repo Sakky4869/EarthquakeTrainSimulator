@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1375790863965727857}
   - component: {fileID: 1375790863956066675}
   - component: {fileID: 1375790863963436048}
+  - component: {fileID: 1375790864272085958}
+  - component: {fileID: 1375790864272085957}
   m_Layer: 0
   m_Name: PrepareBox
   m_TagString: Untagged
@@ -123,12 +125,45 @@ MonoBehaviour:
   - {fileID: 7156884639628933821, guid: 247702f33c1716f40a884a1375c6fa60, type: 3}
   - {fileID: 114327464474244916, guid: 66707df028db9434c883fc534aad6d75, type: 3}
   - {fileID: 5054257938044042347, guid: 6b712beffa368614ab244396ce6d76c0, type: 3}
+  - {fileID: 161430627, guid: 6f0fb07399703db4284a50efcd2b527f, type: 3}
+  - {fileID: 4539587932837508136, guid: 21415f92718b3b1438d3c7d39be7e7df, type: 3}
+  - {fileID: 1525857365342185565, guid: 800427724bc29164f88c8854552a4f89, type: 3}
+  - {fileID: 3938859492431393518, guid: b1f0f5a356c3fde4c963ec325d1c36c7, type: 3}
   furnitureButton: {fileID: 9097590677648575783, guid: 51e0c896f2941c2459cf17eccfa1b2bc,
     type: 3}
   boxOperateButton: {fileID: 1333110545140655674}
   furnitureButtonBase: {fileID: 0}
   furniturePanel: {fileID: 1472231979655194521}
   user: {fileID: 0}
+--- !u!65 &1375790864272085958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375790863963468465}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27907363, y: 0.31, z: 0.2023841}
+  m_Center: {x: 0, y: 0.13, z: -0.0029009243}
+--- !u!54 &1375790864272085957
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375790863963468465}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1375790863963468467
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,36 +283,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxOperationButton
       objectReference: {fileID: 0}
-    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1375790863963436048}
-    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OperateBox
-      objectReference: {fileID: 0}
-    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4249060311757736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -327,11 +332,41 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.003
       objectReference: {fileID: 0}
-    - target: {fileID: 1078241679539432, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
+    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1375790863963436048}
+    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OperateBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185804096758482, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1185804096758482, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
+    - target: {fileID: 1078241679539432, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

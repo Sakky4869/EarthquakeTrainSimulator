@@ -6,7 +6,7 @@ public class InformationDeviceBase : TrainingObjectBase
 {
     void Start()
     {
-        
+        // StartSetting();
     }
 
     void Update()
@@ -14,15 +14,17 @@ public class InformationDeviceBase : TrainingObjectBase
         
     }
 
-    protected void StartSetting()
-    {
-        base.StartSetting();
-    }
+    // protected void StartSetting()
+    // {
+    //     base.StartSetting();
+    // }
 
-    protected void ClearTask()
-    {
-        base.ClearTask();
-    }
+    // protected void ClearTask()
+    // {
+    //     base.ClearTask();
+    // }
+
+    
 
     public override void Interact()
     {

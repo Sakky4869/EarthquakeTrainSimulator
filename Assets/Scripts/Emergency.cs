@@ -1,25 +1,26 @@
-﻿#define Editor
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input;
 
 public class Emergency : MonoBehaviour
 {
-    private GameObject flowerVase;
-    // Start is called before the first frame update
-    void Start()
-    {
 
+    private void Awake() {
+        Debug.Log("Awake");    
+        
     }
 
-    // Update is called once per frame
+
+    void Start()
+    {
+        Debug.Log("Start");
+    }
+
+
+
     void Update()
     {
-        // if(Input.GetKeyDown(KeyCode.Return))
-        // {
-        //     GameObject.Find("Door").GetComponent<Door>().OpenDoor();
-        // }
-
 
     }
 }

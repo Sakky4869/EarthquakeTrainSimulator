@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum TrainingPhase{
+    Idle = 0,
+    SpatialAwareness,
+    SpatialAwarenessCompleted,
+    Prepare,
+    InTraining
+}
+
+
+
 public class TrainingManager : MonoBehaviour
 {
     // 訓練オブジェクトのリスト
@@ -15,23 +25,107 @@ public class TrainingManager : MonoBehaviour
     
     // 訓練中かどうか
     private bool isInTraining;
+
+    // 家具の宝箱が出現しているかどうか
+    [HideInInspector] public bool isTreasureBoxSpawned;
+
+    // 訓練システムのフェーズ
+    private TrainingPhase trainingPhase;
+
+    // ログ出力制御変数
+    private bool outLog;
     
     void Start()
     {
         isQuaking = false;
         isFinishedTraining = false;
         isInTraining = false;
+        isTreasureBoxSpawned = false;
+        trainingPhase = TrainingPhase.SpatialAwareness;
+        outLog = false;
+        
     }
 
     
     void Update()
     {
-        if(isInTraining)
-        {
-            if(isFinishedTraining){
-                ClearTraining();
+        // if(isInTraining)
+        // {
+        //     if(isFinishedTraining){
+        //         ClearTraining();
+        //     }
+        // }
+    }
+
+    private IEnumerator TrainingCor(){
+        while(true){
+            yield return null;
+            switch(trainingPhase){
+                case TrainingPhase.Idle:
+                if(!outLog){
+                    outLog = true;
+                    Debug.Log("Training System : Idle");
+                }
+                break;
+                case TrainingPhase.SpatialAwareness:
+                if(!outLog){
+                    outLog = true;
+                    Debug.Log("Training System : SpatialAwareness");
+                }
+                break;
+                case TrainingPhase.SpatialAwarenessCompleted:
+                if(!outLog){
+                    outLog = true;
+                    Debug.Log("Training System : SpatialAwarenessCompleted");
+                }
+                break;
+                case TrainingPhase.Prepare:
+                if(!outLog){
+                    outLog = true;
+                    Debug.Log("Training System : Prepare");
+                }
+                break;
+                case TrainingPhase.InTraining:
+                if(!outLog){
+                    outLog = true;
+                    Debug.Log("Training System : InTraining");
+                }
+                if(isFinishedTraining)
+                    trainingPhase = TrainingPhase.Idle;
+                break;
+                default:
+                break;
             }
+            break;
         }
+    }
+
+    // 環境認識開始
+    public void StartAwareness(){
+        trainingPhase++;
+        // この時点で，トレーニングフェーズはSpatialAwareness
+        outLog = false;
+    }
+
+    // 環境認識完了
+    public void CompleteAwareness(){
+        trainingPhase++;
+        // この時点で，トレーニングフェーズはSpatialAwarenessCompleted
+        outLog = false;
+    }
+
+    // 家具などの設置開始
+    public void StartPrepare(){
+        trainingPhase++;
+        // この時点で，トレーニングフェーズはPrepare
+        outLog = false;
+    }
+
+    // 家具などの設置完了
+    public void CompletePrepare(){
+        trainingPhase++;
+        // この時点で，トレーニングフェーズはInTraining
+        outLog = false;
     }
     
     //訓練オブジェクトをリストへ追加
@@ -43,9 +137,8 @@ public class TrainingManager : MonoBehaviour
 	}
     
     //訓練
-    public void Train()
+    public void StartTraining()
     {
-    	// StartCoroutine( TrainCor() );
         Debug.Log("訓練開始");
         isInTraining = true;
     }
