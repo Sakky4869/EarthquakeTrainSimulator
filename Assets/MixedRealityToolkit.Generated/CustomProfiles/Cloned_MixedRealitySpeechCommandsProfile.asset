@@ -17,35 +17,35 @@ MonoBehaviour:
   recognitionConfidenceLevel: 1
   speechCommands:
   - localizationKey: 
-    keyword: Start Prepare
+    keyword: Prepare Start
     keyCode: 51
     action:
       id: 0
       description: Toggle Profiler
       axisConstraint: 0
   - localizationKey: 
-    keyword: Start Training
+    keyword: Training Start
     keyCode: 116
     action:
       id: 0
       description: Toggle Profiler
       axisConstraint: 0
   - localizationKey: 
-    keyword: Start Scanning
+    keyword: Scan Start
     keyCode: 49
     action:
       id: 0
       description: Toggle Profiler
       axisConstraint: 0
   - localizationKey: 
-    keyword: Complete Scanning
+    keyword: Scan Complete
     keyCode: 50
     action:
       id: 0
       description: Toggle Profiler
       axisConstraint: 0
   - localizationKey: 
-    keyword: Complete Prepare
+    keyword: Prepare Complete
     keyCode: 52
     action:
       id: 0

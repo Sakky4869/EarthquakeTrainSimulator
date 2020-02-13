@@ -96,6 +96,8 @@ public class PlayerUI : MonoBehaviour
         // リスト内を入れ替えながら，UIの位置も入れ替える
         taskItems.Sort();
 
+        Debug.Log(taskItems);
+
         // 一番上の位置情報
         RectTransform targetRect = new RectTransform();// taskItemBaseTransform;
         Vector3 pos = new Vector3(0.01f, 0.25f, 0);
