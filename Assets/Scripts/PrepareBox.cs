@@ -58,6 +58,7 @@ public class PrepareBox : MonoBehaviour
     // 準備箱の操作
     public void OperateBox()
     {
+        Debug.Log("call operate box");
         furniturePanel.SetActive(!isOpened);
         if(isOpened == false){
             SetButtonsToSpawnFurnitures();

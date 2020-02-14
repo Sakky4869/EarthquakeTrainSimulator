@@ -17,36 +17,43 @@ MonoBehaviour:
   recognitionConfidenceLevel: 1
   speechCommands:
   - localizationKey: 
-    keyword: Prepare Start
+    keyword: "\u6E96\u5099\u958B\u59CB"
     keyCode: 51
     action:
       id: 0
       description: Toggle Profiler
       axisConstraint: 0
   - localizationKey: 
-    keyword: Training Start
+    keyword: "\u8A13\u7DF4\u958B\u59CB"
     keyCode: 116
     action:
       id: 0
       description: Toggle Profiler
       axisConstraint: 0
   - localizationKey: 
-    keyword: Scan Start
+    keyword: "\u30B9\u30AD\u30E3\u30F3\u958B\u59CB"
     keyCode: 49
     action:
       id: 0
       description: Toggle Profiler
       axisConstraint: 0
   - localizationKey: 
-    keyword: Scan Complete
+    keyword: "\u30B9\u30AD\u30E3\u30F3\u5B8C\u4E86"
     keyCode: 50
     action:
       id: 0
       description: Toggle Profiler
       axisConstraint: 0
   - localizationKey: 
-    keyword: Prepare Complete
+    keyword: "\u6E96\u5099\u5B8C\u4E86"
     keyCode: 52
+    action:
+      id: 0
+      description: Toggle Profiler
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: "\u30D8\u30EB\u30D7"
+    keyCode: 0
     action:
       id: 0
       description: Toggle Profiler

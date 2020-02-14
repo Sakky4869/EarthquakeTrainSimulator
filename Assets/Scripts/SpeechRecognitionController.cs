@@ -21,7 +21,12 @@ public class SpeechRecognitionController : MonoBehaviour
         if(trainingManager.isTreasureBoxSpawned)
             return;
         Vector3 treasureBoxSpawnPos = Camera.main.gameObject.transform.position + Vector3.up / 10 + Vector3.forward / 10;
-        Instantiate(prepareBox, treasureBoxSpawnPos, Quaternion.identity);
+        GameObject box = Instantiate(prepareBox, treasureBoxSpawnPos, Quaternion.identity);
+        box.transform.LookAt(Camera.main.transform);
+        Quaternion angle = box.transform.rotation;
+        Vector3 angleEu = angle.eulerAngles;
+        angleEu.x = 0;
+        box.transform.rotation = Quaternion.Euler(angleEu);
         trainingManager.StartPrepare();
     }
 
@@ -31,5 +36,10 @@ public class SpeechRecognitionController : MonoBehaviour
 
     public void CompletePrepare(){
         trainingManager.CompletePrepare();
+    }
+
+    public void Test()
+    {
+        Debug.Log("test");
     }
 }

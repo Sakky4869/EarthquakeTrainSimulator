@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+//using TMPro;
 
 public class TaskItem : MonoBehaviour, System.IComparable<TaskItem>
 {
     [HideInInspector]
     public int id;
     // [HideInInspector]
-    public TextMeshPro taskText;
+    public TextMesh taskText;
 
-
+    
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class TaskItem : MonoBehaviour, System.IComparable<TaskItem>
     }
 
     public void ClearTask(){
-        taskText.fontStyle = FontStyles.Strikethrough;
+        taskText.color = Color.clear;
     }
 
     public int CompareTo(TaskItem item){

@@ -8,11 +8,12 @@ public class Player : MonoBehaviour
     private AudioSource soundPlayer;
 
     // タスククリアのときに再生する音
-    [SerializeField]
+    //[SerializeField]
     private AudioClip taskClearSound;
     void Start()
     {
         soundPlayer = GetComponent<AudioSource>();
+        taskClearSound = Resources.Load("Audio/SE/task_clear") as AudioClip;
     }
 
     void Update()
@@ -20,7 +21,14 @@ public class Player : MonoBehaviour
         
     }
 
-    public void PlayTaskClearSound(){
-        soundPlayer.PlayOneShot(taskClearSound);
+    public void PlaySound(string name){
+        switch (name)
+        {
+            case "TaskClear":
+                soundPlayer.PlayOneShot(taskClearSound);
+                break;
+            default:
+                break;
+        }
     }
 }

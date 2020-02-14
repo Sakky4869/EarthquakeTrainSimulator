@@ -18,13 +18,19 @@ public class PlayerUI : MonoBehaviour
     // タスクリストに表示するアイテムのリスト
     [SerializeField]
     private List<TaskItem> taskItems;
+    
     // タスクアイテム
     [SerializeField]
     private TaskItem taskItem;
+    
     [SerializeField]// タスクアイテムの基準のTransform
-    private RectTransform taskItemBaseTransform;
+    private Transform taskItemBaseTransform;
+    
     [SerializeField]// タスクアイテムの親オブジェクト
     private Transform taskItemParent;
+
+    // メッセージを表示中かどうか
+    private bool isMessageActive;
 
 
     void Start()
@@ -32,6 +38,7 @@ public class PlayerUI : MonoBehaviour
         // messagePanel = GameObject.Find("MessagePanel");
         // messageText = GameObject.Find("MessageText").GetComponent<Text>();
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
+        isMessageActive = false;
     }
 
     void Update()
@@ -48,18 +55,48 @@ public class PlayerUI : MonoBehaviour
         }
     }
 
-    //警告文を表示する
+    // 警告文を表示する
     public void ShowMessage(string msg)
     {
+        if (isMessageActive)
+            return;
+        StartCoroutine(ShowMessageCor(msg));
+    }
+
+    // 警告文を表示する
+    public void ShowMessage(string msg, float time)
+    {
+        if (isMessageActive)
+            return;
+        StartCoroutine(ShowMessageCor(msg, time));
+    }
+
+    // 警告文を表示する
+    private IEnumerator ShowMessageCor(string msg, float time)
+    {
+        isMessageActive = true;
         messagePanel.SetActive(true);
         messageText.text = msg;
-        
+        yield return new WaitForSeconds(time);
+        HideMessage();
+    }
+
+    // 警告文を表示する
+    // 表示時間を指定しない場合は1秒間
+    private IEnumerator ShowMessageCor(string msg)
+    {
+        isMessageActive = true;
+        messagePanel.SetActive(true);
+        messageText.text = msg;
+        yield return new WaitForSeconds(1);
+        HideMessage();
     }
 
     //警告文を非表示にする
     public void HideMessage()
     {
         messagePanel.SetActive(false);
+        isMessageActive = false;
     }
 
     // 訓練メニューに追加する
@@ -92,49 +129,69 @@ public class PlayerUI : MonoBehaviour
     }
 
     // タスクアイテムをIDについて昇順に並べ替える
+    // X : -0.4（固定値）
+    // Y : 0.1間隔
     private void SortItems(){
         // リスト内を入れ替えながら，UIの位置も入れ替える
         taskItems.Sort();
 
-        Debug.Log(taskItems);
+        // 念のために並べ替えが正常に行われているかどうかを確認
+        //string outPutData = "";
+        //for(int i = 0; i < taskItems.Count; i++){
+        //    if(i == 0){
+        //        outPutData += taskItems[i].name;
+        //    }else{
+        //        outPutData += ", " + taskItems[i].name;
+        //    }
+        //}
+
+        //Debug.Log(outPutData);
 
         // 一番上の位置情報
-        RectTransform targetRect = new RectTransform();// taskItemBaseTransform;
-        Vector3 pos = new Vector3(0.01f, 0.25f, 0);
-        Rect rect = new Rect();
-        rect.width = 1;
-        rect.height = 0.1f;
-        Vector3 size = new Vector3(1,1,1);
-        
+        Transform targetTransform;
+        Vector3 pos = new Vector3(-0.4f, 0.25f, 0);
+        Vector3 size = new Vector3(0.1f,0.1f,1);
 
-        // targetRect.localPosition.x = taskItemBaseTransform.y;
 
         // タスクリストの縦の感覚
-        float distanceOfY = 0.13f;
+        float distanceOfY = 0.1f;
 
         // 位置のうち，Y座標の感覚は0.1f
         for(int i = 0; i < taskItems.Count; i++){
 
             // 配置先の位置を決定
             
-            targetRect = taskItemBaseTransform;
-            Vector3 position = targetRect.position;
-            position.x = 0.05f;
+            targetTransform = taskItemBaseTransform;
+            Vector3 position = targetTransform.localPosition;
+            position.x = -0.4f;
             position.y -= i * distanceOfY;
-            targetRect.localPosition = position;
+            targetTransform.localPosition = position;
 
-            // 対応するタスクアイテムを移動
-            foreach(RectTransform rectTransform in taskItemParent.transform){
-                if(rectTransform.GetComponent<TaskItem>() == null)
+            // 対応するアイテムを移動
+            foreach(Transform transform in taskItemParent.transform)
+            {
+                if (transform.GetComponent<TaskItem>() == null)
                     continue;
-                TaskItem item = rectTransform.GetComponent<TaskItem>();
-                if(item.id == taskItems[i].id){
-                    // Debug.Log("call move item");
-                    rectTransform.localPosition = pos;
-                    Debug.Log("Task Item Base Position " + " : " + taskItemBaseTransform.localPosition);
+                TaskItem item = transform.GetComponent<TaskItem>();
+                if(item.id == taskItems[i].id)
+                {
+                    transform.localPosition = targetTransform.localPosition;
                     break;
                 }
             }
+
+            // 対応するタスクアイテムを移動
+            //foreach(RectTransform rectTransform in taskItemParent.transform){
+            //    if(rectTransform.GetComponent<TaskItem>() == null)
+            //        continue;
+            //    TaskItem item = rectTransform.GetComponent<TaskItem>();
+            //    if(item.id == taskItems[i].id){
+            //        // Debug.Log("call move item");
+            //        rectTransform.localPosition = pos;
+            //        Debug.Log("Task Item Base Position " + " : " + taskItemBaseTransform.localPosition);
+            //        break;
+            //    }
+            //}
         }
     }
 }

@@ -34,6 +34,12 @@ public class TrainingManager : MonoBehaviour
 
     // ログ出力制御変数
     private bool outLog;
+
+    // プレイヤーのUIのクラス
+    private PlayerUI playerUI;
+
+    // プレイヤーのクラス（SE再生）
+    //private Player player;
     
     void Start()
     {
@@ -41,22 +47,20 @@ public class TrainingManager : MonoBehaviour
         isFinishedTraining = false;
         isInTraining = false;
         isTreasureBoxSpawned = false;
-        trainingPhase = TrainingPhase.SpatialAwareness;
+        trainingPhase = TrainingPhase.Idle;
         outLog = false;
-        
+        StartCoroutine(TrainingCor());
+        playerUI = Camera.main.transform.GetChild(0).GetComponent<PlayerUI>();
+        //player = playerUI.transform.GetComponent<Player>();
     }
 
     
     void Update()
     {
-        // if(isInTraining)
-        // {
-        //     if(isFinishedTraining){
-        //         ClearTraining();
-        //     }
-        // }
+
     }
 
+    // トレーニングシステムのコルーチン
     private IEnumerator TrainingCor(){
         while(true){
             yield return null;
@@ -100,6 +104,35 @@ public class TrainingManager : MonoBehaviour
         }
     }
 
+    // 状況に応じてメッセージを表示する
+    // 基本的にヘルプで使用
+    public void ShowMessage()
+    {
+        string msg = "";
+        switch (trainingPhase)
+        {
+            case TrainingPhase.Idle:
+                msg = "";
+                break;
+            case TrainingPhase.SpatialAwareness:
+
+                break;
+            case TrainingPhase.SpatialAwarenessCompleted:
+
+                break;
+            case TrainingPhase.Prepare:
+
+                break;
+            case TrainingPhase.InTraining:
+
+                break;
+            default:
+                break;
+        }
+
+        
+    }
+
     // 環境認識開始
     public void StartAwareness(){
         trainingPhase++;
@@ -116,6 +149,7 @@ public class TrainingManager : MonoBehaviour
 
     // 家具などの設置開始
     public void StartPrepare(){
+        isTreasureBoxSpawned = true;
         trainingPhase++;
         // この時点で，トレーニングフェーズはPrepare
         outLog = false;
