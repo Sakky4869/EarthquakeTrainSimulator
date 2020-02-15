@@ -8,45 +8,46 @@ public class Shaker : MonoBehaviour
     private EarthquakeDataReader dataReader;
     //[SerializeField] 
     private List<ShakePower> powers;
+    private List<ShakeObject> shakeObjects;
 
-    private Rigidbody rigidPlane;
+    //private Rigidbody rigidPlane;
     [Header("タイムスケール"),SerializeField] private float timeScale = 1;
     [Header("地震のパワーバイアス"),SerializeField] private float powerBias = 1;
 
 
     void Start()
     {
-        //Debug.Log("call start");
         dataReader = GameObject.Find("EarthquakeDataReader").GetComponent<EarthquakeDataReader>();
         powers = dataReader.ReadCSVData("2011_03_11_14_46_miyagi");
-        //rigidPlane = GameObject.Find("Plane").GetComponent<Rigidbody>();
-        //StartCoroutine(Shake(powers, "WindowsMixedRealitySpatialMeshObserver"));
+        shakeObjects = new List<ShakeObject>();
     }
 
 
 
     void Update()
     {
-        Time.timeScale = timeScale;
+
     }
 
-    public void StartShake(List<Rigidbody> rigidbodies)
+    public void AddShakeObject(ShakeObject shakeObject)
     {
-        StartCoroutine(Shake(powers, "WindowsMixedRealitySpatialMeshObserver", rigidbodies));
+        shakeObjects.Add(shakeObject);
     }
 
-    private IEnumerator Shake(List<ShakePower> powers, string objectName, List<Rigidbody> rigidbodies){
-        // Debug.Log("start");
+    public void StartShake()
+    {
+        StartCoroutine(Shake(powers));
+    }
 
-        //rigidPlane = GameObject.Find(objectName).GetComponent<Rigidbody>();
+    private IEnumerator Shake(List<ShakePower> powers){
 
         foreach(ShakePower power in powers){
             Vector3 force = new Vector3(power.ns, power.ew, power.ud) * powerBias; 
-                //Vector3.forward * power.ns * powerBias + Vector3.right * power.ew * powerBias + Vector3.up * power.ud * powerBias;
-            foreach(Rigidbody rigid in rigidbodies)
-                rigid.AddForce(force);
+            foreach(ShakeObject shakeObject in shakeObjects)
+            {
+                shakeObject.Shake(force);
+            }
             yield return new WaitForSeconds(1 / 100);
         }
-        // Debug.Log("finish");
     }
 }

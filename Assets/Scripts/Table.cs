@@ -5,7 +5,6 @@ using UnityEngine;
 public class Table : TrainingObjectBase
 {
     private PlayerUI playerUi;
-    // private TrainingManager trainingManager;
 
     void Start()
     {

@@ -15,11 +15,11 @@ MonoBehaviour:
   isCustomProfile: 1
   startupBehavior: 1
   isStationaryObserver: 0
-  observationExtents: {x: 5, y: 5, z: 5}
+  observationExtents: {x: 10, y: 10, z: 10}
   observerVolumeType: 3
-  updateInterval: 3.5
+  updateInterval: 2
   meshPhysicsLayer: 31
-  levelOfDetail: 2
+  levelOfDetail: -1
   trianglesPerCubicMeter: 50
   recalculateNormals: 1
   displayOption: 1

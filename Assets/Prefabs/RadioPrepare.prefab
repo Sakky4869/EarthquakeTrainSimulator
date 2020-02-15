@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 114327464474244916}
   m_Layer: 0
   m_Name: RadioPrepare
-  m_TagString: Untagged
+  m_TagString: TrainingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: Radio
+  shakeObject: {fileID: 0}
+  trainingObject: {fileID: 7139051762231079211}
 --- !u!1001 &3276167298206099139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -224,6 +226,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.7748508
       objectReference: {fileID: 0}
+    - target: {fileID: 6505396056684717486, guid: 6c7c0a923f0720f4f8f566c056139992,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7c0a923f0720f4f8f566c056139992, type: 3}
 --- !u!4 &828441356852653904 stripped
@@ -232,3 +239,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3276167298206099139}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7139051762231079211 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5648720149100599272, guid: 6c7c0a923f0720f4f8f566c056139992,
+    type: 3}
+  m_PrefabInstance: {fileID: 3276167298206099139}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73abf7b0cdce6464ea5978a8c54aabb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

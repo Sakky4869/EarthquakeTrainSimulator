@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7312920990519589632}
   m_Layer: 0
   m_Name: ConroPrepare
-  m_TagString: Untagged
+  m_TagString: TrainingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: Bath
+  shakeObject: {fileID: 0}
+  trainingObject: {fileID: 6867684857731916436}
 --- !u!1001 &7312920990769983467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -227,3 +229,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7312920990769983467}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6867684857731916436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193515463653133695, guid: 7fe658d2cc70ae74e8e0ca476f3cee02,
+    type: 3}
+  m_PrefabInstance: {fileID: 7312920990769983467}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b38e43232d8da46a6e5483f0c88c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8365848715408079327}
   m_Layer: 0
   m_Name: TablePrepare
-  m_TagString: Untagged
+  m_TagString: TrainingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: Table
+  shakeObject: {fileID: 3970714331618113729}
+  trainingObject: {fileID: 8365848715699414695}
 --- !u!114 &8365848715408079327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,3 +234,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8365848716754490162}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8365848715699414695 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1092941205, guid: 513cfb17d74085845a5ba14064e870e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8365848716754490162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d4990fb6808ec4792138cf605b4c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3970714331618113729 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4828906295659162611, guid: 513cfb17d74085845a5ba14064e870e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8365848716754490162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ca14752d8700d4ab7804b590c3dfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

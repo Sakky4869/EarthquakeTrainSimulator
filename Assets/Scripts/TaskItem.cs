@@ -7,7 +7,6 @@ public class TaskItem : MonoBehaviour, System.IComparable<TaskItem>
 {
     [HideInInspector]
     public int id;
-    // [HideInInspector]
     public TextMesh taskText;
 
     

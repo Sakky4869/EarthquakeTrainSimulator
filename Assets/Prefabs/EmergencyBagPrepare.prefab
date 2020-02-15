@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1525857365342185565}
   m_Layer: 0
   m_Name: EmergencyBagPrepare
-  m_TagString: Untagged
+  m_TagString: TrainingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: EmergencyBag
+  shakeObject: {fileID: 0}
+  trainingObject: {fileID: 1525857364985986877}
 --- !u!1001 &1525857365071929343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -232,3 +234,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1525857365071929343}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1525857364985986877 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 115450050, guid: d41c97288856d544a9c4c333b7f135bf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1525857365071929343}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a8d94a265bc5846927cfcc4d0a7220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

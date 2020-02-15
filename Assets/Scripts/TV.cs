@@ -5,6 +5,7 @@ using UnityEngine;
 public class TV : MonoBehaviour
 {
     //テレビ画面
+    [SerializeField]
     private GameObject tvScreen;
 
 

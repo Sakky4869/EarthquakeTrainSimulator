@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1375790863965727857}
   - component: {fileID: 1375790863956066675}
   - component: {fileID: 1375790863963436048}
-  - component: {fileID: 1375790864272085957}
   m_Layer: 0
   m_Name: PrepareBox
   m_TagString: Untagged
@@ -119,7 +118,6 @@ MonoBehaviour:
   - {fileID: 4921669670633364834, guid: 9c331c426d181704e9bd68f4b137d6a9, type: 3}
   - {fileID: 4352357608335462096, guid: 51cda5fa15bd8964ebb328c914b369e7, type: 3}
   - {fileID: 8365848715408079324, guid: 8aa090bbd4dec9045864e1dd90e023be, type: 3}
-  - {fileID: 8365848715408079324, guid: 8aa090bbd4dec9045864e1dd90e023be, type: 3}
   - {fileID: 114409616210468624, guid: 1ba129377f8089f479edd9e54e295c90, type: 3}
   - {fileID: 7156884639628933821, guid: 247702f33c1716f40a884a1375c6fa60, type: 3}
   - {fileID: 114327464474244916, guid: 66707df028db9434c883fc534aad6d75, type: 3}
@@ -130,26 +128,12 @@ MonoBehaviour:
   - {fileID: 3938859492431393518, guid: b1f0f5a356c3fde4c963ec325d1c36c7, type: 3}
   furnitureButton: {fileID: 9097590677648575783, guid: 51e0c896f2941c2459cf17eccfa1b2bc,
     type: 3}
+  furnitureNecessaryButton: {fileID: 9097590677648575783, guid: a130ab47e72535e4eb0015be1e96e0c2,
+    type: 3}
   boxOperateButton: {fileID: 1333110545140655674}
   furnitureButtonBase: {fileID: 0}
   furniturePanel: {fileID: 1472231979655194521}
   user: {fileID: 0}
---- !u!54 &1375790864272085957
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375790863963468465}
-  serializedVersion: 2
-  m_Mass: 100
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 64
-  m_CollisionDetection: 0
 --- !u!1 &1375790863963468467
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +260,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
         type: 3}
+      propertyPath: VoiceCommand
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
+        type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1375790863963436048}
@@ -298,11 +287,6 @@ PrefabInstance:
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: VoiceCommand
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4249060311757736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -360,11 +344,6 @@ PrefabInstance:
     - target: {fileID: 1185804096758482, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5613911417657003608, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8113455685942058736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
         type: 3}

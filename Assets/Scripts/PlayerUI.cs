@@ -7,10 +7,12 @@ using UnityEngine.UI;
 public class PlayerUI : MonoBehaviour
 {
     //メッセージパネル
+    [SerializeField]
     private GameObject messagePanel;
 
     //メッセージテキストボックス
-    private Text messageText;
+    [SerializeField]
+    private TextMesh messageText;
     
     //TrainingManager
     private TrainingManager trainingManager;
@@ -32,11 +34,23 @@ public class PlayerUI : MonoBehaviour
     // メッセージを表示中かどうか
     private bool isMessageActive;
 
+    private IEnumerator coroutineMethod;
+
+    // SEを再生するAudioSource
+    [SerializeField]
+    private AudioSource sePlayer;
+
+    // タスククリアの音
+    [SerializeField]
+    private AudioClip taskClearSound;
+
+    // 警告音
+    [SerializeField]
+    private AudioClip siren;
+
 
     void Start()
     {
-        // messagePanel = GameObject.Find("MessagePanel");
-        // messageText = GameObject.Find("MessageText").GetComponent<Text>();
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
         isMessageActive = false;
     }
@@ -60,7 +74,17 @@ public class PlayerUI : MonoBehaviour
     {
         if (isMessageActive)
             return;
-        StartCoroutine(ShowMessageCor(msg));
+        if(msg.Length > 18)
+        {
+            string first = msg.Substring(0, 18);
+            string second = msg.Substring(18, msg.Length);
+            msg = first + System.Environment.NewLine + second;
+        }
+
+        coroutineMethod = ShowMessageCor(msg);
+
+
+        StartCoroutine(coroutineMethod);
     }
 
     // 警告文を表示する
@@ -68,7 +92,21 @@ public class PlayerUI : MonoBehaviour
     {
         if (isMessageActive)
             return;
-        StartCoroutine(ShowMessageCor(msg, time));
+        if (msg.Length > 18)
+        {
+            string first = msg.Substring(0, 18);
+            string second = msg.Substring(18, msg.Length);
+            msg = first + System.Environment.NewLine + second;
+        }
+        coroutineMethod = ShowMessageCor(msg, time);
+
+
+        StartCoroutine(coroutineMethod);
+    }
+
+    public IEnumerator ShowMessageCall(string msg)
+    {
+        yield return ShowMessageCor(msg);
     }
 
     // 警告文を表示する
@@ -88,15 +126,18 @@ public class PlayerUI : MonoBehaviour
         isMessageActive = true;
         messagePanel.SetActive(true);
         messageText.text = msg;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         HideMessage();
     }
 
     //警告文を非表示にする
     public void HideMessage()
     {
+        messageText.text = "";
         messagePanel.SetActive(false);
         isMessageActive = false;
+        StopCoroutine(coroutineMethod);
+        coroutineMethod = null;
     }
 
     // 訓練メニューに追加する
@@ -115,9 +156,9 @@ public class PlayerUI : MonoBehaviour
         
         // 親オブジェクトの設定
         item.transform.SetParent(taskItemParent);
-        
+
         // 大きさの調整
-        item.GetComponent<RectTransform>().localScale = Vector3.one;
+        item.GetComponent<Transform>().localScale = new Vector3(0.1f, 0.1f, 1);
         
         // タスクアイテムリストへの追加
         if(taskItems == null)
@@ -135,24 +176,6 @@ public class PlayerUI : MonoBehaviour
         // リスト内を入れ替えながら，UIの位置も入れ替える
         taskItems.Sort();
 
-        // 念のために並べ替えが正常に行われているかどうかを確認
-        //string outPutData = "";
-        //for(int i = 0; i < taskItems.Count; i++){
-        //    if(i == 0){
-        //        outPutData += taskItems[i].name;
-        //    }else{
-        //        outPutData += ", " + taskItems[i].name;
-        //    }
-        //}
-
-        //Debug.Log(outPutData);
-
-        // 一番上の位置情報
-        Transform targetTransform;
-        Vector3 pos = new Vector3(-0.4f, 0.25f, 0);
-        Vector3 size = new Vector3(0.1f,0.1f,1);
-
-
         // タスクリストの縦の感覚
         float distanceOfY = 0.1f;
 
@@ -160,12 +183,10 @@ public class PlayerUI : MonoBehaviour
         for(int i = 0; i < taskItems.Count; i++){
 
             // 配置先の位置を決定
-            
-            targetTransform = taskItemBaseTransform;
-            Vector3 position = targetTransform.localPosition;
+            Vector3 position = taskItemBaseTransform.localPosition;
             position.x = -0.4f;
             position.y -= i * distanceOfY;
-            targetTransform.localPosition = position;
+            position.z = -0.5f;
 
             // 対応するアイテムを移動
             foreach(Transform transform in taskItemParent.transform)
@@ -175,23 +196,38 @@ public class PlayerUI : MonoBehaviour
                 TaskItem item = transform.GetComponent<TaskItem>();
                 if(item.id == taskItems[i].id)
                 {
-                    transform.localPosition = targetTransform.localPosition;
+                    transform.localPosition = position;
+                    transform.rotation = Quaternion.Euler(Vector3.zero);
                     break;
                 }
             }
-
-            // 対応するタスクアイテムを移動
-            //foreach(RectTransform rectTransform in taskItemParent.transform){
-            //    if(rectTransform.GetComponent<TaskItem>() == null)
-            //        continue;
-            //    TaskItem item = rectTransform.GetComponent<TaskItem>();
-            //    if(item.id == taskItems[i].id){
-            //        // Debug.Log("call move item");
-            //        rectTransform.localPosition = pos;
-            //        Debug.Log("Task Item Base Position " + " : " + taskItemBaseTransform.localPosition);
-            //        break;
-            //    }
-            //}
         }
     }
+
+
+    public void Emergency()
+    {
+        StartCoroutine(ShowMessageCor("緊急地震速報です．強い揺れに警戒してください", 8));
+        StartCoroutine(PlayEmergencySound(8));
+    }
+
+    private IEnumerator PlayEmergencySound(float time)
+    {
+        float soundTime = 0;
+        while(soundTime <= time)
+        {
+            if(sePlayer.isPlaying == false)
+            {
+                sePlayer.PlayOneShot(siren);
+            }
+            soundTime += Time.deltaTime;
+            yield return null;
+        }
+
+    }
+
+
+
+
+
 }

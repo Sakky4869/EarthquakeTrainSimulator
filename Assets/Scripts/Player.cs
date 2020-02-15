@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     private AudioSource soundPlayer;
 
     // タスククリアのときに再生する音
-    //[SerializeField]
     private AudioClip taskClearSound;
     void Start()
     {

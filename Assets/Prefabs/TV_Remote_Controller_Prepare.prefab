@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7156884639628933821}
   m_Layer: 0
   m_Name: TV_Remote_Controller_Prepare
-  m_TagString: Untagged
+  m_TagString: TrainingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: Rimokon
+  shakeObject: {fileID: 0}
+  trainingObject: {fileID: 5078016626161857733}
 --- !u!1001 &7156884638905382413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -224,6 +226,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.78236896
       objectReference: {fileID: 0}
+    - target: {fileID: 3218431357780398395, guid: 0882d9dca7123eb4e94f722a09db1a50,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0882d9dca7123eb4e94f722a09db1a50, type: 3}
 --- !u!4 &7258540587572540715 stripped
@@ -232,3 +239,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7156884638905382413}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5078016626161857733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2678200999386022600, guid: 0882d9dca7123eb4e94f722a09db1a50,
+    type: 3}
+  m_PrefabInstance: {fileID: 7156884638905382413}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1a99386514d7047910ba03f52332e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

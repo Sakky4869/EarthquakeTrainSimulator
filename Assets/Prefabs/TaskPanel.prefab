@@ -90,7 +90,7 @@ TextMesh:
   m_Font: {fileID: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294967295
 --- !u!65 &6879556916980182284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -498,10 +498,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae634fc9cd04134492ce32f3c33fde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  messagePanel: {fileID: 0}
+  messageText: {fileID: 0}
   taskItems: []
   taskItem: {fileID: 6580338947495891236, guid: e2f0e9958aaf8414bbb5ee19b31123fe,
     type: 3}
-  taskItemBaseTransform: {fileID: 0}
+  taskItemBaseTransform: {fileID: 1606178912339096634}
   taskItemParent: {fileID: 7299153913192213688}
 --- !u!1 &6282029922013154338
 GameObject:
@@ -529,7 +531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6282029922013154338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 0.35, z: 0}
+  m_LocalPosition: {x: -0.4, y: 0.35, z: -0.5}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 7299153913192213688}
@@ -542,7 +544,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6282029922013154338}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class SmartPhone : InformationDeviceBase
 {
-	
+	[SerializeField]
+	private GameObject screen;
 
 	void Start()
 	{
 		StartSetting();
+		screen.SetActive(false);
 	}
 
 	public override void Interact()
@@ -19,7 +21,7 @@ public class SmartPhone : InformationDeviceBase
 
 	protected override void ShowInformationOfEarthquake()
 	{
-
+		screen.SetActive(true);
 	}
 
 

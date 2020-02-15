@@ -23,7 +23,6 @@ public class PrepareManager : MonoBehaviour
     // 家具
     public void AddFurniture(PrepareObject pObje)
     {
-        // Debug.Log(pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>());
         if(pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>() != null){
             TrainingObjectBase tob = pObje.transform.GetChild(0).GetComponent<TrainingObjectBase>();
             tob.trainingManager = trainingManager;
@@ -41,5 +40,8 @@ public class PrepareManager : MonoBehaviour
             PrepareObject prepareObject = trainingObject.transform.parent.GetComponent<PrepareObject>();
             prepareObject.Prepare();
         }
+
+        // 家具の位置情報と角度情報を保存
+        trainingManager.SaveFurnitureInfo();
     }
 }

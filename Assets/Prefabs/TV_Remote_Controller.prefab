@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2678200999386022600}
   m_Layer: 0
   m_Name: TV_Remote_Controller
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,7 @@ MonoBehaviour:
   trainingManager: {fileID: 0}
   id: 7
   taskName: Get Infomation(TV)
+  tv: {fileID: 114166666520395792, guid: 40cd8a14d092ed649861fd9d2ed17539, type: 3}
 --- !u!1001 &7008362931810082659
 PrefabInstance:
   m_ObjectHideFlags: 0

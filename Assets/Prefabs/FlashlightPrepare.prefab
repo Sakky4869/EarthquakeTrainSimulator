@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 161430627}
   m_Layer: 0
   m_Name: FlashlightPrepare
-  m_TagString: Untagged
+  m_TagString: TrainingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: Flashlight
+  shakeObject: {fileID: 0}
+  trainingObject: {fileID: 2551715357662075079}
 --- !u!1001 &6765868841792510502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -232,3 +234,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6765868841792510502}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2551715357662075079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9118859352436261601, guid: 0b3e606753c1ace459de30b202b3d77a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6765868841792510502}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1ed3fc55dfcbb49a2589c3a5229ae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

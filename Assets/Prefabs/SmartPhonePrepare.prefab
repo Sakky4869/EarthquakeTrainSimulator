@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4539587932837508136}
   m_Layer: 0
   m_Name: SmartPhonePrepare
-  m_TagString: Untagged
+  m_TagString: TrainingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: SmartPhone
+  shakeObject: {fileID: 0}
+  trainingObject: {fileID: 4539587933438650769}
 --- !u!1001 &4539587932661522391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -217,3 +219,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4539587932661522391}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4539587933438650769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1068643910, guid: 42db2464346d91c47b812288879592f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4539587932661522391}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b04637456b92645a0e987bc7d229ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

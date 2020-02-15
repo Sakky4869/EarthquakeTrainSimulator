@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5054257938044042347}
   m_Layer: 0
   m_Name: HelmetPrepare
-  m_TagString: Untagged
+  m_TagString: TrainingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: Helmet
+  shakeObject: {fileID: 0}
+  trainingObject: {fileID: 6318747972158496013}
 --- !u!1001 &6785229499507634066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -232,3 +234,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6785229499507634066}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6318747972158496013 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 691664878122660511, guid: 652589a2599918441b652de7debcb286,
+    type: 3}
+  m_PrefabInstance: {fileID: 6785229499507634066}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566af9ca568159342acd68e58d79978b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

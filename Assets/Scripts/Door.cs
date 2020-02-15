@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Door : TrainingObjectBase
 {
-    // private TrainingManager trainingManager;
     [SerializeField]
     private float openSpeed;
 

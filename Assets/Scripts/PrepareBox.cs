@@ -12,6 +12,8 @@ public class PrepareBox : MonoBehaviour
 
     [SerializeField]// 家具配置ボタンのプレハブ
     private Interactable furnitureButton;
+    [SerializeField]// 必須家具設置ボタンのプレハブ
+    private Interactable furnitureNecessaryButton;
     [SerializeField]// 準備箱の開け閉めのボタン
     private Interactable boxOperateButton;
 
@@ -30,6 +32,7 @@ public class PrepareBox : MonoBehaviour
 
     // PrepareManager
     private PrepareManager prepareManager;
+
 
     void Start()
     {
@@ -58,7 +61,7 @@ public class PrepareBox : MonoBehaviour
     // 準備箱の操作
     public void OperateBox()
     {
-        Debug.Log("call operate box");
+        //Debug.Log("call operate box");
         furniturePanel.SetActive(!isOpened);
         if(isOpened == false){
             SetButtonsToSpawnFurnitures();
@@ -97,18 +100,19 @@ public class PrepareBox : MonoBehaviour
         {
             for (int j = 0; j < 4; j++)
             {
-                // 生成
-                GameObject button = Instantiate(furnitureButton.gameObject, transform.position, Quaternion.identity);
-                
+                GameObject button = null;
+                if(prepareObjects[index].trainingObject == null)
+                    // 生成
+                    button = Instantiate(furnitureButton.gameObject, transform.position, Quaternion.identity);
+                else
+                    button = Instantiate(furnitureNecessaryButton.gameObject, transform.position, Quaternion.identity);
+
                 // 家具生成処理の登録
                 FurnitureCreateButton furnitureCreate = button.GetComponent<FurnitureCreateButton>();
                 furnitureCreate.furnitureIndex = index;
                 furnitureCreate.prepareObject = prepareObjects[index];
                 furnitureCreate.prepareManager = prepareManager;
-
-                // button.GetComponent<Interactable>().OnClick.AddListener(() => {
-                //     furnitureCreate.SpawnFurniture();
-                // });
+                
 
                 // 親オブジェクトの設定
                 button.transform.SetParent(furniturePanel.transform);
@@ -119,8 +123,24 @@ public class PrepareBox : MonoBehaviour
                 // ボタンのテキストを変える（テキストはTextMeshPro）
                 button.transform.GetChild(3).GetComponent<TextMeshPro>().text = prepareObjects[index].furnitureName;
 
+                //// 訓練に必須のオブジェクトであれば，ボタンの色を赤くする
+                //Interactable interactable = button.GetComponent<Interactable>();
+                //if (furnitureCreate.prepareObject.trainingObject != null)
+                //{
+                //    Debug.Log("button change color");
+                    
+                //    //interactable.StateManager.SetStateOff(InteractableStates.InteractableStateEnum.Default);
+                //    //interactable.StateManager.SetStateOn(InteractableStates.InteractableStateEnum.Custom);
+
+                //    //.Profiles[0].Themes[0].Definitions[0].StateProperties[0].Default.Color = Color.red;
+                //}
+                //else
+                //{
+                //    Debug.Log(furnitureCreate.prepareObject.furnitureName);
+                //}
+
                 // ボタンの位置を調整する
-                switch(j){
+                switch (j){
                     case 0:
                     pos.x = 0.011f;
                     break;

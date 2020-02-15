@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7170582700757874053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974900763450148018}
+  m_Layer: 0
+  m_Name: ShakePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1974900763450148018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7170582700757874053}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.23, y: -0.43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8330536091299843920}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8330536091299353216
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,7 +45,7 @@ GameObject:
   - component: {fileID: 5391259286840011528}
   m_Layer: 0
   m_Name: Thin Paperback.1
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +154,7 @@ GameObject:
   - component: {fileID: 8380720652653084461}
   m_Layer: 0
   m_Name: Thin Paperback.1.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +263,7 @@ GameObject:
   - component: {fileID: 7417856953706857772}
   m_Layer: 0
   m_Name: Thin Paperback.3
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,7 +372,7 @@ GameObject:
   - component: {fileID: 1066875133578139755}
   m_Layer: 0
   m_Name: Thin Paperback.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,7 +481,7 @@ GameObject:
   - component: {fileID: 8927445799610642514}
   m_Layer: 0
   m_Name: Thin Paperback.6
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,7 +590,7 @@ GameObject:
   - component: {fileID: 2042771019362267853}
   m_Layer: 0
   m_Name: History Of The World.4
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -669,7 +699,7 @@ GameObject:
   - component: {fileID: 5702076438274015546}
   m_Layer: 0
   m_Name: Mid Thick Hardcover Book.1.3
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -778,7 +808,7 @@ GameObject:
   - component: {fileID: 7578580684671395220}
   m_Layer: 0
   m_Name: Mid Thick Hardcover Book.1.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -887,7 +917,7 @@ GameObject:
   - component: {fileID: 6449369025942866322}
   m_Layer: 0
   m_Name: Mid Thick Hardcover Book.1
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -996,7 +1026,7 @@ GameObject:
   - component: {fileID: 8686178315736560722}
   m_Layer: 0
   m_Name: Mid Thick Hardcover Book.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1105,7 +1135,7 @@ GameObject:
   - component: {fileID: 1438015575667131251}
   m_Layer: 0
   m_Name: Musical Box
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1214,7 +1244,7 @@ GameObject:
   - component: {fileID: 7563821586824741919}
   m_Layer: 0
   m_Name: Paperbox.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1323,7 +1353,7 @@ GameObject:
   - component: {fileID: 6712124300249610601}
   m_Layer: 0
   m_Name: Thin Hardcover.1
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1432,7 +1462,7 @@ GameObject:
   - component: {fileID: 6687029532044212481}
   m_Layer: 0
   m_Name: Thin Hardcover
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1541,7 +1571,7 @@ GameObject:
   - component: {fileID: 7266021788697640952}
   m_Layer: 0
   m_Name: Thin Hardcover.2.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1650,7 +1680,7 @@ GameObject:
   - component: {fileID: 6580316061005709029}
   m_Layer: 0
   m_Name: Thin Hardcover.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1759,7 +1789,7 @@ GameObject:
   - component: {fileID: 8603053259214922672}
   m_Layer: 0
   m_Name: Thin Hardcover.3
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1868,7 +1898,7 @@ GameObject:
   - component: {fileID: 199174667781706536}
   m_Layer: 0
   m_Name: Encyclopedia.1.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1977,7 +2007,7 @@ GameObject:
   - component: {fileID: 2939707780444384651}
   m_Layer: 0
   m_Name: Encyclopedia.1
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2086,7 +2116,7 @@ GameObject:
   - component: {fileID: 9202909393698642075}
   m_Layer: 0
   m_Name: Encyclopedia.3
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2195,7 +2225,7 @@ GameObject:
   - component: {fileID: 6255865226750029414}
   m_Layer: 0
   m_Name: Encyclopedia.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2304,7 +2334,7 @@ GameObject:
   - component: {fileID: 5264640077284052091}
   m_Layer: 0
   m_Name: Encyclopedia.4
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2413,7 +2443,7 @@ GameObject:
   - component: {fileID: 7109443034640787007}
   m_Layer: 0
   m_Name: Encyclopedia.7
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2522,7 +2552,7 @@ GameObject:
   - component: {fileID: 4642603639803747284}
   m_Layer: 0
   m_Name: Gardening.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2631,7 +2661,7 @@ GameObject:
   - component: {fileID: 2633425896509412886}
   m_Layer: 0
   m_Name: Gardening.1
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2740,7 +2770,7 @@ GameObject:
   - component: {fileID: 8807656929308872498}
   m_Layer: 0
   m_Name: History Of The World.3
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2849,7 +2879,7 @@ GameObject:
   - component: {fileID: 2196624299014388982}
   m_Layer: 0
   m_Name: History Of The World.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2958,7 +2988,7 @@ GameObject:
   - component: {fileID: 9058001024797995305}
   m_Layer: 0
   m_Name: History Of The World.1
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3067,7 +3097,7 @@ GameObject:
   - component: {fileID: 7043521520241748405}
   m_Layer: 0
   m_Name: Blue Hardcover Book Texture.2
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3176,7 +3206,7 @@ GameObject:
   - component: {fileID: 2364426834999981972}
   m_Layer: 0
   m_Name: Blue Hardcover Book Texture
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3285,7 +3315,7 @@ GameObject:
   - component: {fileID: 2914923870034718983}
   m_Layer: 0
   m_Name: 70s record player
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3394,7 +3424,7 @@ GameObject:
   - component: {fileID: 7970544434649492211}
   m_Layer: 0
   m_Name: Bookshelf
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3409,7 +3439,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.2249006, y: 0.39650035, z: 0.024593811}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1974900763450148018}
   m_Father: {fileID: 8330536091299843934}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3498,9 +3529,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8330536091299843934}
   - component: {fileID: 8330536091306778790}
+  - component: {fileID: 962575286916994823}
   m_Layer: 0
   m_Name: Bookshelf
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3570,3 +3602,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &962575286916994823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8330536091299353470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ca14752d8700d4ab7804b590c3dfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 7970544434649492211}
+  shakePointObject: {fileID: 7170582700757874053}

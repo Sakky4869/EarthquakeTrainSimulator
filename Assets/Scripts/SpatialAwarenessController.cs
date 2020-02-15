@@ -45,7 +45,7 @@ public class SpatialAwarenessController : MonoBehaviour
     void Start()
     {
         startedObserver = false;
-        clearObservations = false;
+        clearObservations = true;
         shaker = GameObject.Find("Shaker").GetComponent<Shaker>();
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
         
@@ -64,25 +64,7 @@ public class SpatialAwarenessController : MonoBehaviour
     private void Update()
     {
         
-        // if (Input.GetKeyDown(KeyCode.Return))
-        // {
-        //     shaker.StartShake(rigidbodies);
-        // }
-
-        // if (Input.GetKeyDown(KeyCode.Space))
-        // {
-        //     StartCoroutine(EnvironmentSetting());
-        // }
-
-        
-
     }
-
-    //public void OnPushButton()
-    //{
-    //    Debug.Log("Pushed Button");
-    //}
-
 
     //環境認識オブジェクトを取得し、Rigidbodyを付与
     private IEnumerator EnvironmentSetting()
@@ -121,43 +103,14 @@ public class SpatialAwarenessController : MonoBehaviour
 
             mesh.CombineMeshes(combineInstances);
 
-            //mesh.SetVertices(vertices);
-
-            //mesh.SetTriangles(triangles.ToArray(), subMeshCount);
             //作成　現状、うまくいってない
             MeshFilter filter = GameObject.Find("MeshTest").GetComponent<MeshFilter>();
             filter.mesh = mesh;
-
-            //認識オブジェクトのメッシュコライダーの設定を変えて、揺らせるようにする
-            //foreach (MeshCollider mesh in parentObject.transform.GetComponentsInChildren<MeshCollider>())
-            //{
-            //    mesh.convex = true;
-            //    mesh.isTrigger = true;
-            //    Rigidbody r = mesh.transform.gameObject.AddComponent<Rigidbody>();
-            //    r.mass = 30;
-            //    rigidbodies.Add(r);
-            //    Destroy(mesh.transform.GetChild(0).transform.GetComponent<WorldAnchor>());
-            //}
         }
         yield return null;
         Debug.Log("Set Rigidbody to Spatial Meshes");
 
-        //メッシュコライダーのIsTriggerのチェックを外す
-        //foreach (MeshCollider mesh in parentObject.transform.GetComponentsInChildren<MeshCollider>())
-        //{
-        //    mesh.isTrigger = false;
-        //    yield return null;
-        //}
-        //取得したRigidbodyの速度を完全に０にする
-        //foreach (Rigidbody rigidbody in rigidbodies)
-        //{
-        //    rigidbody.velocity = Vector3.zero;
-        //    rigidbody.angularVelocity = Vector3.zero;
-        //}
-        ////Rigidbody rigid = parentObject.AddComponent<Rigidbody>();
         yield return null;
-        //rigid.useGravity = false;
-        
     }
 
     public void StartObserver()
@@ -171,29 +124,14 @@ public class SpatialAwarenessController : MonoBehaviour
             meshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
             meshObserverName = "Spatial Object Mesh Observer";
             spatialObjectMeshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>(meshObserverName);
-            //PauseAndResume();
             spatialAwarenessSystem.ResumeObservers();
             startedObserver = true;
-            // SpatialAwarenessSystem.Enable();
             trainingManager.StartAwareness();
         }
     }
 
     public void PauseAndResume()
     {
-        //if(SpatialAwarenessSystem != null)
-        //{
-        //    if (clearObservations)
-        //    {
-        //        SpatialAwarenessSystem.SuspendObservers();
-        //        clearObservations = false;
-        //    }
-        //    else
-        //    {
-        //        SpatialAwarenessSystem.ResumeObservers();
-        //        clearObservations = true;
-        //    }
-        //}
         if(spatialAwarenessSystem != null)
         {
             if (clearObservations)

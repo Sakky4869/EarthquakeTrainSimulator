@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4352357608335462103}
   m_Layer: 0
   m_Name: DoorPrepare
-  m_TagString: Untagged
+  m_TagString: TrainingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: Door
+  shakeObject: {fileID: 0}
+  trainingObject: {fileID: 4352357607016912836}
 --- !u!114 &4352357608335462103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +226,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1398823731505919075, guid: 8450c6b9fd5cc5f4e9a88f471dc6c26b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8450c6b9fd5cc5f4e9a88f471dc6c26b, type: 3}
 --- !u!4 &4352357607016912837 stripped
@@ -232,3 +239,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4486732107559433811}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4352357607016912836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 153893400748040599, guid: 8450c6b9fd5cc5f4e9a88f471dc6c26b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4486732107559433811}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413ee16b1bac65849914c3c740aafb5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TV_Controller : InformationDeviceBase
 {
+    [SerializeField]
     private TV tv;
 
 
@@ -20,8 +21,8 @@ public class TV_Controller : InformationDeviceBase
     public void StartSetting()
     {
         base.StartSetting();
-        if(GameObject.Find("TV") != null)
-            tv = GameObject.Find("TV").GetComponent<TV>();
+        //if(GameObject.Find("TV") != null)
+        //    tv = GameObject.Find("TV").GetComponent<TV>();
     }
 
     // テレビをつけて，情報を表示
