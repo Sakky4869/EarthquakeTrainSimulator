@@ -166,7 +166,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8958300371119645111}
   - component: {fileID: 9066185070513450279}
-  - component: {fileID: 8987628945021654723}
   m_Layer: 0
   m_Name: Aparment_Door
   m_TagString: Untagged
@@ -212,19 +211,6 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!65 &8987628945021654723
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8960150949641069745}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4858832, y: 2.611988, z: 0.15106297}
-  m_Center: {x: -0.67737794, y: 1.2975931, z: 0.05713415}
 --- !u!1 &8960152200608310437
 GameObject:
   m_ObjectHideFlags: 0

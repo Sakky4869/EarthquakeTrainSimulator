@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SpeechRecognitionController : MonoBehaviour
 {
     private TrainingManager trainingManager;
     // 家具を出現させるための宝箱
     [SerializeField] private GameObject prepareBox;
+
     void Start()
     {
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();

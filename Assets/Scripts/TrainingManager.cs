@@ -8,6 +8,7 @@ public enum TrainingPhase
     SpatialAwareness,
     SpatialAwarenessCompleted,
     Prepare,
+    PrepareCompleted,
     InTraining,
     FinishedTraining
 }
@@ -111,6 +112,25 @@ public class TrainingManager : MonoBehaviour
     // 地震発生プログラム
     private Shaker shaker;
 
+    // PrepareManager
+    private PrepareManager prepareManager;
+
+    private void Awake()
+    {
+        Application.logMessageReceived += LogCallBackHandler;
+    }
+
+    private void LogCallBackHandler(string conditon, string stackTrace, LogType logType)
+    {
+        //WebLogger.SendLog("[Conditon]" + System.Environment.NewLine
+        //    + conditon + System.Environment.NewLine
+        //    + "[StackTrace]" + System.Environment.NewLine
+        //    + stackTrace + System.Environment.NewLine
+        //    + "[Log Type]" + System.Environment.NewLine
+        //    + logType.ToString() + System.Environment.NewLine); 
+        WebLogger.SendLog(conditon);
+    }
+
     void Start()
     {
         isQuaking = false;
@@ -119,6 +139,7 @@ public class TrainingManager : MonoBehaviour
         isTreasureBoxSpawned = false;
         trainingPhase = TrainingPhase.Idle;
         outLog = false;
+        prepareManager = GameObject.Find("PrepareManager").GetComponent<PrepareManager>();
         shaker = GameObject.Find("Shaker").GetComponent<Shaker>();
         StartCoroutine(TrainingCor());
         playerUI = Camera.main.transform.GetChild(0).GetComponent<PlayerUI>();
@@ -128,7 +149,12 @@ public class TrainingManager : MonoBehaviour
 
     void Update()
     {
-
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Return))
+            GameObject.Find("SpeechRecognitionController").GetComponent<SpeechRecognitionController>().SpawnTreasureBox();
+        if (Input.GetKeyDown(KeyCode.Space))
+            CompletePrepare();
+#endif
     }
 
     // トレーニングシステムのコルーチン
@@ -193,32 +219,49 @@ public class TrainingManager : MonoBehaviour
     // 基本的にヘルプで使用
     public void ShowMessage()
     {
+        //WebLogger.SendLog("call_help");
         string msg = "";
         float time = 0;
         switch (trainingPhase)
         {
             case TrainingPhase.Idle:
                 msg = "「スキャン開始」で周囲をスキャン";
+                //WebLogger.SendLog("周囲をスキャン");
                 break;
             case TrainingPhase.SpatialAwareness:
                 msg = "「スキャン完了」と発言し，スキャンを終える";
+                //WebLogger.SendLog("「スキャン完了」と発言し，スキャンを終える");
                 break;
             case TrainingPhase.SpatialAwarenessCompleted:
                 msg = "「準備開始」と発言し，準備を開始する";
+                //WebLogger.SendLog("「準備開始」と発言し，準備を開始する");
                 break;
             case TrainingPhase.Prepare:
+                msg = "「準備完了」と発言し，準備を完了する";
+                //WebLogger.SendLog("「訓練開始」と発言し，訓練を開始する");
+                break;
+            case TrainingPhase.PrepareCompleted:
                 msg = "「訓練開始」と発言し，訓練を開始する";
+                //WebLogger.SendLog("「訓練開始」と発言し，訓練を開始する");
                 break;
             case TrainingPhase.InTraining:
                 msg = "タスクリストをこなしましょう";
+                //WebLogger.SendLog("タスクリストをこなしましょう");
                 break;
             case TrainingPhase.FinishedTraining:
                 msg = "終了する場合は「システム終了」と発言再開する場合は「再開」と発言";
+                //WebLogger.SendLog("終了する場合は「システム終了」と発言再開する場合は「再開」と発言");
                 time = 8;
                 break;
             default:
                 break;
         }
+
+        if(msg != "")
+        {
+            WebLogger.SendLog(msg);
+        }
+
         if (time == 0)
             playerUI.ShowMessage(msg);
         else
@@ -258,9 +301,10 @@ public class TrainingManager : MonoBehaviour
     public void CompletePrepare()
     {
         outLog = false;
-        trainingPhase = TrainingPhase.InTraining;
+        trainingPhase = TrainingPhase.PrepareCompleted;
         playerUI.ShowMessage("準備を終わります");
         // この時点で，トレーニングフェーズはInTraining
+        prepareManager.Prepare();
     }
 
     //訓練オブジェクトをリストへ追加
@@ -285,6 +329,8 @@ public class TrainingManager : MonoBehaviour
     private IEnumerator StartTrainingCor()
     {
         yield return playerUI.ShowMessageCall("訓練を開始します");
+        //家具の位置を角度を保存
+        SaveFurnitureInfo();
         playerUI.Emergency();
     }
 
@@ -315,6 +361,7 @@ public class TrainingManager : MonoBehaviour
     {
         Debug.Log("訓練終了");
         //isInTraining = false;
+        trainingPhase = TrainingPhase.FinishedTraining;
         playerUI.ShowMessage("終了する場合は「システム終了」と発言再開する場合は「再開」と発言", 8);
     }
 

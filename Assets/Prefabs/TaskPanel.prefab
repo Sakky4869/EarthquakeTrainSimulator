@@ -505,6 +505,9 @@ MonoBehaviour:
     type: 3}
   taskItemBaseTransform: {fileID: 1606178912339096634}
   taskItemParent: {fileID: 7299153913192213688}
+  sePlayer: {fileID: 0}
+  taskClearSound: {fileID: 8300000, guid: 3698397b26ccfc54e875e1486c0d9e45, type: 3}
+  siren: {fileID: 8300000, guid: afd21a172ad18d84cbe127ed4a0efb7d, type: 3}
 --- !u!1 &6282029922013154338
 GameObject:
   m_ObjectHideFlags: 0

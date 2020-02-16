@@ -16,11 +16,11 @@ MonoBehaviour:
   startupBehavior: 1
   isStationaryObserver: 0
   observationExtents: {x: 10, y: 10, z: 10}
-  observerVolumeType: 3
-  updateInterval: 2
+  observerVolumeType: 2
+  updateInterval: 3
   meshPhysicsLayer: 31
   levelOfDetail: -1
-  trianglesPerCubicMeter: 50
+  trianglesPerCubicMeter: 60
   recalculateNormals: 1
   displayOption: 1
   visibleMaterial: {fileID: 2100000, guid: a923a5d1aebc7fe449b4ab3289da537b, type: 2}

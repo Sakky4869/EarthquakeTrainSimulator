@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23136804176431804}
   - component: {fileID: 1068643909}
   - component: {fileID: 1068643910}
+  - component: {fileID: 5896658718538302536}
   m_Layer: 0
   m_Name: SmartPhone
   m_TagString: Furniture
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1191933010613832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 1.5232358e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 9.700306, y: 21.505795, z: 6.034727}
   m_Children:
   - {fileID: 2102137595928086061}
   m_Father: {fileID: 0}
@@ -115,6 +116,19 @@ MonoBehaviour:
   id: 6
   taskName: Get Info(SmartPhone)
   screen: {fileID: 5654132427163808240}
+--- !u!65 &5896658718538302536
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191933010613832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06688929, y: 0.0069652298, z: 0.13801868}
+  m_Center: {x: 0, y: 0.0034847574, z: 0.000000029802322}
 --- !u!1 &5654132427163808240
 GameObject:
   m_ObjectHideFlags: 0

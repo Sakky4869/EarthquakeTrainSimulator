@@ -37,7 +37,7 @@ public class PrepareManager : MonoBehaviour
         GameObject[] trainingObjects = GameObject.FindGameObjectsWithTag("TrainingObject");
         foreach (GameObject trainingObject in trainingObjects)
         {
-            PrepareObject prepareObject = trainingObject.transform.parent.GetComponent<PrepareObject>();
+            PrepareObject prepareObject = trainingObject.GetComponent<PrepareObject>();
             prepareObject.Prepare();
         }
 

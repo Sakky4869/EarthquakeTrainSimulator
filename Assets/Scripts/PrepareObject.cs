@@ -43,16 +43,34 @@ public class PrepareObject : MonoBehaviour
     // 訓練オブジェクトおよび家具オブジェクトは、自身の子要素
     private IEnumerator PrepareCor()
     {
+        Transform child = null;
         // 配置するオブジェクトのコライダーの機能を復活させる
-        transform.GetChild(0).GetComponent<BoxCollider>().isTrigger = false;
-        transform.GetChild(0).GetComponent<Rigidbody>().useGravity = false;
+        if (transform.GetComponentInChildren<BoxCollider>() != null)
+        {
+            BoxCollider boxCollider = transform.GetComponentInChildren<BoxCollider>();
+            boxCollider.isTrigger = false;
+            child = boxCollider.transform;
+            
+            //transform.GetComponentInChildren<Rigidbody>().useGravity = false;
+        }else if(transform.GetComponentInChildren<MeshCollider>() != null)
+        {
+            MeshCollider meshCollider = transform.GetComponentInChildren<MeshCollider>();
+            meshCollider.isTrigger = false;
+            child = meshCollider.transform;
+            //transform.GetComponentInChildren<Rigidbody>().useGravity = false;
+        }
+
+        if(transform.GetComponentInChildren<Rigidbody>() != null)
+            transform.GetComponentInChildren<Rigidbody>().useGravity = false;
+
 
         //親子関係を切る
-        transform.GetChild(0).SetParent(null);
-        yield return new WaitForSeconds(0.5f);
+        child.SetParent(null);
+        yield return null;
+        //yield return new WaitForSeconds(0.1f);
 
         //自身を削除
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cloned_MixedRealityToolkitConfigurationProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  targetExperienceScale: 3
+  targetExperienceScale: 4
   enableCameraSystem: 1
   cameraProfile: {fileID: 11400000, guid: 93d9a51119a87cc45943670567909cec, type: 2}
   cameraSystemType:

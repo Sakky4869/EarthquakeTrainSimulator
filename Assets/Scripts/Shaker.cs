@@ -41,6 +41,7 @@ public class Shaker : MonoBehaviour
 
     private IEnumerator Shake(List<ShakePower> powers){
 
+        WebLogger.SendLog("地震開始");
         foreach(ShakePower power in powers){
             Vector3 force = new Vector3(power.ns, power.ew, power.ud) * powerBias; 
             foreach(ShakeObject shakeObject in shakeObjects)

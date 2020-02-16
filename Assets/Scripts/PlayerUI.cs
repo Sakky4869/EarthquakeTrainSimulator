@@ -72,16 +72,30 @@ public class PlayerUI : MonoBehaviour
     // 警告文を表示する
     public void ShowMessage(string msg)
     {
+        //Debug.Log(msg.Length);
         if (isMessageActive)
             return;
+        string message = null;
         if(msg.Length > 18)
         {
             string first = msg.Substring(0, 18);
-            string second = msg.Substring(18, msg.Length);
-            msg = first + System.Environment.NewLine + second;
+            //Debug.Log(msg.Substring(18,msg.Length - 18));
+            string second = msg.Substring(18, msg.Length - 18);
+            message = first + System.Environment.NewLine + second;
         }
 
-        coroutineMethod = ShowMessageCor(msg);
+        if(message == null)
+        {
+            coroutineMethod = ShowMessageCor(msg);
+            //StartCoroutine(ShowMessageCor(msg));
+        }
+        else
+        {
+            coroutineMethod = ShowMessageCor(message);
+            //StartCoroutine(ShowMessageCor(message));
+        }
+
+
 
 
         StartCoroutine(coroutineMethod);
@@ -90,16 +104,28 @@ public class PlayerUI : MonoBehaviour
     // 警告文を表示する
     public void ShowMessage(string msg, float time)
     {
+        //Debug.Log(msg.Length);
         if (isMessageActive)
             return;
+        string message = null;
         if (msg.Length > 18)
         {
             string first = msg.Substring(0, 18);
-            string second = msg.Substring(18, msg.Length);
+            //Debug.Log(msg);
+            string second = msg.Substring(18, msg.Length - 18);
             msg = first + System.Environment.NewLine + second;
         }
-        coroutineMethod = ShowMessageCor(msg, time);
 
+        if (message == null)
+        {
+            coroutineMethod = ShowMessageCor(msg, time);
+            //StartCoroutine(ShowMessageCor(msg, time));
+        }
+        else
+        {
+            coroutineMethod = ShowMessageCor(message, time);
+            //StartCoroutine(ShowMessageCor(message, time));
+        }
 
         StartCoroutine(coroutineMethod);
     }
@@ -136,8 +162,11 @@ public class PlayerUI : MonoBehaviour
         messageText.text = "";
         messagePanel.SetActive(false);
         isMessageActive = false;
-        StopCoroutine(coroutineMethod);
-        coroutineMethod = null;
+        if(coroutineMethod != null)
+        {
+            StopCoroutine(coroutineMethod);
+            coroutineMethod = null;
+        }
     }
 
     // 訓練メニューに追加する
@@ -207,7 +236,7 @@ public class PlayerUI : MonoBehaviour
 
     public void Emergency()
     {
-        StartCoroutine(ShowMessageCor("緊急地震速報です．強い揺れに警戒してください", 8));
+        ShowMessage("緊急地震速報です．　　　　　　　　　強い揺れに警戒してください", 8);
         StartCoroutine(PlayEmergencySound(8));
     }
 
