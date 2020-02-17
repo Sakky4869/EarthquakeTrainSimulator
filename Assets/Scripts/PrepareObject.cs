@@ -47,17 +47,27 @@ public class PrepareObject : MonoBehaviour
         // 配置するオブジェクトのコライダーの機能を復活させる
         if (transform.GetComponentInChildren<BoxCollider>() != null)
         {
+            //Debug.Log("Box Collider");
             BoxCollider boxCollider = transform.GetComponentInChildren<BoxCollider>();
             boxCollider.isTrigger = false;
             child = boxCollider.transform;
+            //Debug.Log(child.gameObject.name);
             
             //transform.GetComponentInChildren<Rigidbody>().useGravity = false;
         }else if(transform.GetComponentInChildren<MeshCollider>() != null)
         {
+            Debug.Log("Mesh Collider");
             MeshCollider meshCollider = transform.GetComponentInChildren<MeshCollider>();
             meshCollider.isTrigger = false;
             child = meshCollider.transform;
             //transform.GetComponentInChildren<Rigidbody>().useGravity = false;
+        }
+
+        // この時点で，一般的なオブジェクトであれば，子オブジェクトが取得できている
+        // 特殊な場合は個別に処理
+        if(transform.GetChild(0).gameObject.name == "Door")
+        {
+            child = transform.GetChild(0);
         }
 
         if(transform.GetComponentInChildren<Rigidbody>() != null)
@@ -70,7 +80,7 @@ public class PrepareObject : MonoBehaviour
         //yield return new WaitForSeconds(0.1f);
 
         //自身を削除
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
 }

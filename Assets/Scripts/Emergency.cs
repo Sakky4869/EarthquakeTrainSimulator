@@ -6,8 +6,8 @@ using Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input;
 public class Emergency : MonoBehaviour
 {
 
-    [SerializeField]
-    private GameObject test;
+    //[SerializeField]
+    //private GameObject test;
 
     void Start()
     {
@@ -18,7 +18,11 @@ public class Emergency : MonoBehaviour
 
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            transform.GetChild(0).SetParent(null);
+            Destroy(gameObject);
+        }
     }
 
 }

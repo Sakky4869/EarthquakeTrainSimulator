@@ -152,7 +152,7 @@ public class TrainingManager : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Return))
             GameObject.Find("SpeechRecognitionController").GetComponent<SpeechRecognitionController>().SpawnTreasureBox();
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.C))
             CompletePrepare();
 #endif
     }
