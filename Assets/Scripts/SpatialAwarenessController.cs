@@ -78,7 +78,6 @@ public class SpatialAwarenessController : MonoBehaviour
         //環境認識オブジェクトの親を取得できたら
         if(parentObject != null)
         {
-            Debug.Log(parentObject.name);
             rigidbodies = new List<Rigidbody>();
 
 
@@ -108,7 +107,6 @@ public class SpatialAwarenessController : MonoBehaviour
             filter.mesh = mesh;
         }
         yield return null;
-        Debug.Log("Set Rigidbody to Spatial Meshes");
 
         yield return null;
     }
@@ -117,7 +115,6 @@ public class SpatialAwarenessController : MonoBehaviour
     {
         if(startedObserver == false)
         {
-            Debug.Log("Start Observer");
             spatialAwarenessSystem = CoreServices.SpatialAwarenessSystem;
 
             dataProviderAccess = spatialAwarenessSystem as IMixedRealityDataProviderAccess;
@@ -136,14 +133,12 @@ public class SpatialAwarenessController : MonoBehaviour
         {
             if (clearObservations)
             {
-                Debug.Log("Suspend Observer");
                 spatialAwarenessSystem.SuspendObservers();
                 clearObservations = false;
                 trainingManager.CompleteAwareness();
             }
             else
             {
-                Debug.Log("Resume Observer");
                 spatialAwarenessSystem.ResumeObservers();
                 
                 clearObservations = true;
@@ -157,7 +152,6 @@ public class SpatialAwarenessController : MonoBehaviour
         {
             if (startedObserver)
             {
-                Debug.Log("Stop Observer");
                 spatialAwarenessSystem.SuspendObservers();
                 spatialAwarenessSystem.ClearObservations();
                 spatialAwarenessSystem.Reset();

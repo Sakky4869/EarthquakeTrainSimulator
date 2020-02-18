@@ -22,7 +22,7 @@ public class SpeechRecognitionController : MonoBehaviour
     public void SpawnTreasureBox(){
         if(trainingManager.isTreasureBoxSpawned)
             return;
-        Vector3 treasureBoxSpawnPos = Camera.main.gameObject.transform.position + Vector3.forward / 10;
+        Vector3 treasureBoxSpawnPos = Camera.main.gameObject.transform.position + Vector3.forward / 2;
         GameObject box = Instantiate(prepareBox, treasureBoxSpawnPos, Quaternion.identity);
         box.transform.LookAt(Camera.main.transform);
         trainingManager.StartPrepare();
@@ -38,6 +38,5 @@ public class SpeechRecognitionController : MonoBehaviour
 
     public void Test()
     {
-        Debug.Log("test");
     }
 }

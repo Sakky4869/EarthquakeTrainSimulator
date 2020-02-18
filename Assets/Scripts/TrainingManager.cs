@@ -169,40 +169,34 @@ public class TrainingManager : MonoBehaviour
                     if (!outLog)
                     {
                         outLog = true;
-                        Debug.Log("Training System : Idle");
                     }
                     break;
                 case TrainingPhase.SpatialAwareness:
                     if (!outLog)
                     {
                         outLog = true;
-                        Debug.Log("Training System : SpatialAwareness");
                     }
                     break;
                 case TrainingPhase.SpatialAwarenessCompleted:
                     if (!outLog)
                     {
                         outLog = true;
-                        Debug.Log("Training System : SpatialAwarenessCompleted");
                     }
                     break;
                 case TrainingPhase.Prepare:
                     if (!outLog)
                     {
                         outLog = true;
-                        Debug.Log("Training System : Prepare");
                     }
                     break;
                 case TrainingPhase.InTraining:
                     if (!outLog)
                     {
                         outLog = true;
-                        Debug.Log("Training System : InTraining");
                     }
                     if (isFinishedTraining)
                     {
                         trainingPhase = TrainingPhase.FinishedTraining;
-                        Debug.Log("Training System : Finished Training");
                     }
                     break;
                 case TrainingPhase.FinishedTraining:
@@ -318,7 +312,6 @@ public class TrainingManager : MonoBehaviour
     //訓練
     public void StartTraining()
     {
-        Debug.Log("訓練開始");
         //isInTraining = true;
         trainingPhase = TrainingPhase.InTraining;
         shaker.StartShake();
@@ -350,7 +343,6 @@ public class TrainingManager : MonoBehaviour
         // クリアしていたら
         if (isClear)
         {
-            Debug.Log("Finished Training");
             isFinishedTraining = true;
             trainingPhase = TrainingPhase.FinishedTraining;
         }
@@ -359,7 +351,6 @@ public class TrainingManager : MonoBehaviour
     //訓練終了
     public void ClearTraining()
     {
-        Debug.Log("訓練終了");
         //isInTraining = false;
         trainingPhase = TrainingPhase.FinishedTraining;
         playerUI.ShowMessage("終了する場合は「システム終了」と発言再開する場合は「再開」と発言", 8);

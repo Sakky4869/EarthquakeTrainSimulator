@@ -44,40 +44,97 @@ public class PrepareObject : MonoBehaviour
     private IEnumerator PrepareCor()
     {
         Transform child = null;
-        // 配置するオブジェクトのコライダーの機能を復活させる
-        if (transform.GetComponentInChildren<BoxCollider>() != null)
+
+        int childCount = transform.childCount;
+
+        for(int i = 0; i < childCount; i++)
         {
-            //Debug.Log("Box Collider");
-            BoxCollider boxCollider = transform.GetComponentInChildren<BoxCollider>();
-            boxCollider.isTrigger = false;
-            child = boxCollider.transform;
-            //Debug.Log(child.gameObject.name);
-            
-            //transform.GetComponentInChildren<Rigidbody>().useGravity = false;
-        }else if(transform.GetComponentInChildren<MeshCollider>() != null)
-        {
-            Debug.Log("Mesh Collider");
-            MeshCollider meshCollider = transform.GetComponentInChildren<MeshCollider>();
-            meshCollider.isTrigger = false;
-            child = meshCollider.transform;
-            //transform.GetComponentInChildren<Rigidbody>().useGravity = false;
+            BoxCollider boxCollider;
+            MeshCollider meshCollider;
+            BoxCollider[] boxColliders;
+            MeshCollider[] meshColliders;
+
+
+            // BoxColliderについて
+            if(transform.GetChild(i).GetComponent<BoxCollider>() != null)
+            {
+                // BoxColliderが1つの場合
+                if((transform.GetChild(i).GetComponents<BoxCollider>().Length == 1))
+                {
+                    //Debug.Log("Box Collider　1つ");
+                    boxCollider = transform.GetChild(i).GetComponent<BoxCollider>();
+                    if(boxCollider.enabled == false)
+                    {
+                        boxCollider.enabled = true;
+                    }
+                }
+                else
+                {
+                    //Debug.Log("Box Collider　複数");
+                    boxColliders = transform.GetChild(i).GetComponents<BoxCollider>();
+                    for(int j = 0; j < boxColliders.Length; j++)
+                    {
+                        if (boxColliders[j].enabled == false)
+                            boxColliders[j].enabled = true;
+                    }
+                }
+
+                // 子オブジェクトを登録
+                child = transform.GetChild(i);
+            }
+
+
+            // MeshColliderについて
+            if(transform.GetChild(i).GetComponent<MeshCollider>() != null)
+            {
+                // MeshColliderが1つの場合
+                if(transform.GetChild(i).GetComponents<MeshCollider>().Length == 1)
+                {
+                    //Debug.Log("Mesh Collider 1つ");
+                    meshCollider = transform.GetChild(i).GetComponent<MeshCollider>();
+                    if(meshCollider.enabled == false)
+                    {
+                        meshCollider.enabled = true;
+                    }
+                }
+                else
+                {
+
+                    meshColliders = transform.GetChild(i).GetComponents<MeshCollider>();
+                    for(int j = 0; j < meshColliders.Length; j++)
+                    {
+                        if(meshColliders[j].enabled == false)
+                        {
+                            meshColliders[j].enabled = true;
+                        }
+                    }
+                }
+
+                if (transform.GetChild(i).GetComponent<Rigidbody>() != null)
+                    transform.GetChild(i).GetComponent<Rigidbody>().useGravity = true;
+
+                // 子オブジェクトの登録
+                child = transform.GetChild(i);
+            }
         }
 
-        // この時点で，一般的なオブジェクトであれば，子オブジェクトが取得できている
-        // 特殊な場合は個別に処理
-        if(transform.GetChild(0).gameObject.name == "Door")
-        {
-            child = transform.GetChild(0);
-        }
 
-        if(transform.GetComponentInChildren<Rigidbody>() != null)
-            transform.GetComponentInChildren<Rigidbody>().useGravity = false;
+        switch (transform.GetChild(0).gameObject.name)
+        {
+            case "Door":
+            case "TV_Remote_Controller":
+            case "Radio":
+                child = transform.GetChild(0);
+                break;
+            default:
+                break;
+        }
 
 
         //親子関係を切る
         child.SetParent(null);
         yield return null;
-        //yield return new WaitForSeconds(0.1f);
+
 
         //自身を削除
         Destroy(gameObject);

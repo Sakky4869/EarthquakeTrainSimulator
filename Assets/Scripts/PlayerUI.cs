@@ -72,14 +72,12 @@ public class PlayerUI : MonoBehaviour
     // 警告文を表示する
     public void ShowMessage(string msg)
     {
-        //Debug.Log(msg.Length);
         if (isMessageActive)
             return;
         string message = null;
         if(msg.Length > 18)
         {
             string first = msg.Substring(0, 18);
-            //Debug.Log(msg.Substring(18,msg.Length - 18));
             string second = msg.Substring(18, msg.Length - 18);
             message = first + System.Environment.NewLine + second;
         }
@@ -104,14 +102,12 @@ public class PlayerUI : MonoBehaviour
     // 警告文を表示する
     public void ShowMessage(string msg, float time)
     {
-        //Debug.Log(msg.Length);
         if (isMessageActive)
             return;
         string message = null;
         if (msg.Length > 18)
         {
             string first = msg.Substring(0, 18);
-            //Debug.Log(msg);
             string second = msg.Substring(18, msg.Length - 18);
             msg = first + System.Environment.NewLine + second;
         }

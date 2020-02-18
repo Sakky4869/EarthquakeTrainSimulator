@@ -48,7 +48,6 @@ public class PrepareBox : MonoBehaviour
     // 家具の生成
     public void SpawnFurniture(int index)
     {
-        // Debug.Log(index);
         user = Camera.main.gameObject;
         Vector3 spawnPos = user.transform.position + (user.transform.forward / 6) + (transform.up / 6);
         GameObject obje = Instantiate(prepareObjects[index].gameObject, spawnPos, Quaternion.identity);
@@ -61,7 +60,6 @@ public class PrepareBox : MonoBehaviour
     // 準備箱の操作
     public void OperateBox()
     {
-        //Debug.Log("call operate box");
         furniturePanel.SetActive(!isOpened);
         if(isOpened == false){
             SetButtonsToSpawnFurnitures();
@@ -127,7 +125,6 @@ public class PrepareBox : MonoBehaviour
                 //Interactable interactable = button.GetComponent<Interactable>();
                 //if (furnitureCreate.prepareObject.trainingObject != null)
                 //{
-                //    Debug.Log("button change color");
                     
                 //    //interactable.StateManager.SetStateOff(InteractableStates.InteractableStateEnum.Default);
                 //    //interactable.StateManager.SetStateOn(InteractableStates.InteractableStateEnum.Custom);
@@ -136,7 +133,6 @@ public class PrepareBox : MonoBehaviour
                 //}
                 //else
                 //{
-                //    Debug.Log(furnitureCreate.prepareObject.furnitureName);
                 //}
 
                 // ボタンの位置を調整する

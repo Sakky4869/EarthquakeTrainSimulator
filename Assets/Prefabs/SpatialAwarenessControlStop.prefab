@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 2640449396862897500}
   - component: {fileID: 3292128288752597635}
   m_Layer: 5
-  m_Name: ButtonHoloLens1
+  m_Name: SpatialAwarenessControlStop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -741,7 +741,7 @@ MonoBehaviour:
   startDimensionIndex: 0
   CanSelect: 1
   CanDeselect: 1
-  VoiceCommand: Select
+  VoiceCommand: 
   voiceRequiresFocus: 1
   profiles:
   - Target: {fileID: 7802217272602730817}

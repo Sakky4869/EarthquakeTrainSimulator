@@ -1063,6 +1063,27 @@ PrefabInstance:
       propertyPath: sePlayer
       value: 
       objectReference: {fileID: 84209859}
+    - target: {fileID: 1003729045, guid: 0d739f0e294b12c46ab734797cf6dad2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003729045, guid: 0d739f0e294b12c46ab734797cf6dad2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0366
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003729045, guid: 0d739f0e294b12c46ab734797cf6dad2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0419
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003729046, guid: 0d739f0e294b12c46ab734797cf6dad2, type: 3}
+      propertyPath: m_Color.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 318033934473404828, guid: 0d739f0e294b12c46ab734797cf6dad2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d739f0e294b12c46ab734797cf6dad2, type: 3}
 --- !u!4 &1703058739 stripped
