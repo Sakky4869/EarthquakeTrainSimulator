@@ -126,7 +126,8 @@ MonoBehaviour:
   taskItem: {fileID: 0}
   trainingManager: {fileID: 0}
   id: 7
-  taskName: Get Infomation(TV)
+  taskName: "\u30C6\u30EC\u30D3\u3067\u60C5\u5831\u53CE\u96C6"
+  playerUI: {fileID: 0}
   tv: {fileID: 114166666520395792, guid: 40cd8a14d092ed649861fd9d2ed17539, type: 3}
 --- !u!1001 &7008362931810082659
 PrefabInstance:

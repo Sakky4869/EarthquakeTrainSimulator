@@ -14,12 +14,12 @@ public class AreaObjectBase : TrainingObjectBase
         
     }
 
-    protected void StartSetting()
+    protected new void StartSetting()
     {
         base.StartSetting();
     }
 
-    protected void ClearTask()
+    protected new void ClearTask()
     {
         base.ClearTask();
     }

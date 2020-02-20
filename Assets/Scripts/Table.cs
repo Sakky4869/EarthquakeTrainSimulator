@@ -16,14 +16,14 @@ public class Table : TrainingObjectBase
         
     }
 
-    protected void StartSetting()
+    protected new void StartSetting()
     {
         base.StartSetting();
-        playerUi = GameObject.Find("MixedRealityPlayspace").GetComponent<PlayerUI>();
+        playerUi = GameObject.Find("TaskPanel").GetComponent<PlayerUI>();
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
     }
 
-    private void ClearTask()
+    private new void ClearTask()
     {
         base.ClearTask();
     }
@@ -44,12 +44,16 @@ public class Table : TrainingObjectBase
     {
         if (other.gameObject.tag != "Player")
             return;
+        if (trainingManager.GetTrainingPhase() != TrainingPhase.InTraining)
+            return;
         Interact();
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag != "Player")
+            return;
+        if (trainingManager.GetTrainingPhase() != TrainingPhase.InTraining)
             return;
         if (trainingManager.isQuaking)
         {

@@ -48229,6 +48229,7 @@ MonoBehaviour:
   trainingManager: {fileID: 0}
   id: 3
   taskName: Turn Off Conro
+  playerUI: {fileID: 0}
   conroControlButton: {fileID: 3380027572694965502}
   fireParticleSystem: {fileID: 0}
 --- !u!1 &7219185022098316916
@@ -48627,11 +48628,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConroControlButton
       objectReference: {fileID: 0}
-    - target: {fileID: 114809329666163580, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: VoiceCommand
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4249060311757736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.186
@@ -48703,11 +48699,6 @@ PrefabInstance:
     - target: {fileID: 1185804096758482, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5613911417657003608, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8113455685942058736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
         type: 3}

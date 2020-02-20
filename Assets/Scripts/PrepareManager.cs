@@ -11,8 +11,11 @@ public class PrepareManager : MonoBehaviour
 
     void Start()
     {
-        trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
-        playerUI = GameObject.Find("TaskPanel").GetComponent<PlayerUI>();
+        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "HoloLensRemote")
+        {
+            trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
+            playerUI = GameObject.Find("TaskPanel").GetComponent<PlayerUI>();
+        }
     }
 
     void Update()
@@ -41,7 +44,8 @@ public class PrepareManager : MonoBehaviour
             prepareObject.Prepare();
         }
 
-        // 家具の位置情報と角度情報を保存
-        trainingManager.SaveFurnitureInfo();
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "HoloLensRemote")
+            // 家具の位置情報と角度情報を保存
+            trainingManager.SaveFurnitureInfo();
     }
 }

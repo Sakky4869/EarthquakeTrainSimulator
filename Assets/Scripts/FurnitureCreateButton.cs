@@ -28,7 +28,7 @@ public class FurnitureCreateButton : MonoBehaviour
     // 家具を生成する
     public void SpawnFurniture(){
         GameObject user = Camera.main.gameObject;
-        Vector3 spawnPos = user.transform.position + user.transform.forward / 2 + transform.up / 10;
+        Vector3 spawnPos = user.transform.position + user.transform.forward  + transform.up / 10;
         GameObject obje = Instantiate(prepareObject.gameObject, spawnPos, Quaternion.identity);
         // 訓練オブジェクトであれば，生成数は1つ限定なので，1度生成したら二度と生成できないようにする
         if (obje.transform.GetChild(0).GetComponent<TrainingObjectBase>() != null)

@@ -8,7 +8,7 @@ public class Radio : TrainingObjectBase
 
     void Start()
     {
-        
+        StartSetting();
     }
 
 
@@ -16,5 +16,11 @@ public class Radio : TrainingObjectBase
     void Update()
     {
         
+    }
+
+    private void Interact()
+    {
+        base.Interact();
+
     }
 }

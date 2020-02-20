@@ -23,13 +23,13 @@ public class BathTab : TrainingObjectBase
         
     }
 
-    public void StartSetting()
+    public new void StartSetting()
     {
         base.StartSetting();
         bath = GameObject.Find("Bath").GetComponent<Bath>();
     }
 
-    private void ClearTask()
+    private new void ClearTask()
     {
         base.ClearTask();
     }

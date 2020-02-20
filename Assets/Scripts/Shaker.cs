@@ -7,7 +7,8 @@ public class Shaker : MonoBehaviour
 
     private EarthquakeDataReader dataReader;
     //[SerializeField] 
-    private List<ShakePower> powers;
+    [HideInInspector]
+    public List<ShakePower> powers;
     private List<ShakeObject> shakeObjects;
 
     //private Rigidbody rigidPlane;
@@ -17,9 +18,10 @@ public class Shaker : MonoBehaviour
 
     void Start()
     {
-        dataReader = GameObject.Find("EarthquakeDataReader").GetComponent<EarthquakeDataReader>();
-        powers = dataReader.ReadCSVData("2011_03_11_14_46_miyagi");
+        //dataReader = GameObject.Find("EarthquakeDataReader").GetComponent<EarthquakeDataReader>();
+        //powers = dataReader.ReadCSVData("2011_03_11_14_46_miyagi");
         shakeObjects = new List<ShakeObject>();
+        Time.timeScale = timeScale;
     }
 
 

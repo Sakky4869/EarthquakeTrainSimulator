@@ -115,20 +115,27 @@ public class TrainingManager : MonoBehaviour
     // PrepareManager
     private PrepareManager prepareManager;
 
+    // PrepareBox
+    private GameObject prepareBox;
+
     private void Awake()
     {
         Application.logMessageReceived += LogCallBackHandler;
+        
     }
 
     private void LogCallBackHandler(string conditon, string stackTrace, LogType logType)
     {
-        //WebLogger.SendLog("[Conditon]" + System.Environment.NewLine
-        //    + conditon + System.Environment.NewLine
-        //    + "[StackTrace]" + System.Environment.NewLine
-        //    + stackTrace + System.Environment.NewLine
-        //    + "[Log Type]" + System.Environment.NewLine
-        //    + logType.ToString() + System.Environment.NewLine); 
-        WebLogger.SendLog(conditon);
+        WebLogger.SendLog("[Conditon]" + System.Environment.NewLine
+            + conditon + System.Environment.NewLine
+            + "[StackTrace]" + System.Environment.NewLine
+            + stackTrace + System.Environment.NewLine + System.Environment.NewLine + System.Environment.NewLine);
+        // エラーが発生したらアプリケーションを止める
+        if(logType == LogType.Error)
+        {
+            playerUI.ShowMessage("エラー発生．システム終了します．　　ごめんなさい．");
+            Application.Quit();
+        }
     }
 
     void Start()
@@ -144,17 +151,30 @@ public class TrainingManager : MonoBehaviour
         StartCoroutine(TrainingCor());
         playerUI = Camera.main.transform.GetChild(0).GetComponent<PlayerUI>();
         infoRoot = new FurnitureInfoRoot();
+        GameObject.Find("Directional Light").GetComponent<Light>().color = new Color(185f / 255f, 185f / 255f, 185f / 255f, 255f / 255f);
     }
 
 
     void Update()
     {
 #if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.Return))
-            GameObject.Find("SpeechRecognitionController").GetComponent<SpeechRecognitionController>().SpawnTreasureBox();
-        if (Input.GetKeyDown(KeyCode.C))
-            CompletePrepare();
+
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //    StartAwareness();
+        //if (Input.GetKeyDown(KeyCode.Alpha2))
+        //    CompleteAwareness();
+        //if (Input.GetKeyDown(KeyCode.Alpha3))
+        //    StartPrepare();
+        //if (Input.GetKeyDown(KeyCode.Alpha4))
+        //    CompletePrepares();
+        if (Input.GetKeyDown(KeyCode.F))
+            isQuaking = false;
 #endif
+    }
+
+    public void MakeIsQuakingFalse()
+    {
+        isQuaking = false;
     }
 
     // トレーニングシステムのコルーチン
@@ -207,6 +227,11 @@ public class TrainingManager : MonoBehaviour
             }
             break;
         }
+    }
+
+    public TrainingPhase GetTrainingPhase()
+    {
+        return trainingPhase;
     }
 
     // 状況に応じてメッセージを表示する
@@ -294,6 +319,12 @@ public class TrainingManager : MonoBehaviour
     // 家具などの設置完了
     public void CompletePrepare()
     {
+        //Debug.Log("call complete prepare");
+        if (trainingPhase == TrainingPhase.PrepareCompleted)
+        {
+            //Debug.Log("Already Prepare Completed");
+            return;
+        }
         outLog = false;
         trainingPhase = TrainingPhase.PrepareCompleted;
         playerUI.ShowMessage("準備を終わります");
@@ -316,12 +347,18 @@ public class TrainingManager : MonoBehaviour
         trainingPhase = TrainingPhase.InTraining;
         shaker.StartShake();
 
+        if(prepareBox == null)
+            prepareBox = GameObject.Find("PrepareBox(Clone)");
+
+        prepareBox.SetActive(false);
+
         StartCoroutine(StartTrainingCor());
     }
 
     private IEnumerator StartTrainingCor()
     {
         yield return playerUI.ShowMessageCall("訓練を開始します");
+        isQuaking = true;
         //家具の位置を角度を保存
         SaveFurnitureInfo();
         playerUI.Emergency();
@@ -344,6 +381,7 @@ public class TrainingManager : MonoBehaviour
         if (isClear)
         {
             isFinishedTraining = true;
+            GameObject.Find("Door").GetComponent<Door>().escapeButton.SetActive(true);
             trainingPhase = TrainingPhase.FinishedTraining;
         }
     }
@@ -366,7 +404,7 @@ public class TrainingManager : MonoBehaviour
     {
         GameObject[] furnitures = GameObject.FindGameObjectsWithTag("Furniture");
         int furnitureCount = furnitures.Length;
-        playerUI.ShowMessage("家具の位置を記録中　個数：" + furnitureCount);
+        //playerUI.ShowMessage("家具の位置を記録中　個数：" + furnitureCount);
         foreach (GameObject furniture in furnitures)
         {
             infoRoot.AddFurniture(furniture);

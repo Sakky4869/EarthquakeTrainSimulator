@@ -7,10 +7,12 @@ public class Door : TrainingObjectBase
     [SerializeField]
     private float openSpeed;
 
+    public GameObject escapeButton;
+
 
     void Start()
     {
-        
+        StartSetting();
     }
 
     void Update()
@@ -18,7 +20,7 @@ public class Door : TrainingObjectBase
 
     }
 
-    protected void StartSetting()
+    protected new void StartSetting()
     {
         base.StartSetting();
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
@@ -35,7 +37,6 @@ public class Door : TrainingObjectBase
             transform.Rotate(0, openSpeed * Time.deltaTime, 0);
             yield return null;
         }
-        // ClearTask();
     }
 
     public override void Interact()
@@ -44,6 +45,7 @@ public class Door : TrainingObjectBase
         if (trainingManager.isQuaking)
         {
             OpenDoor();
+            ClearTask();
         }
         else//揺れが止まっている状態で，タスクがすべてクリアされていたら訓練終了
         {
@@ -54,11 +56,12 @@ public class Door : TrainingObjectBase
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag != "Player")
-            return;
-        Interact();
-    }
-
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.tag != "Player")
+    //        return;
+    //    if (trainingManager.GetTrainingPhase() != TrainingPhase.InTraining)
+    //        return;
+    //    Interact();
+    //}
 }

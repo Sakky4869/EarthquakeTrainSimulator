@@ -110,8 +110,8 @@ MonoBehaviour:
   manipulationType: 2
   twoHandedManipulationType: 5
   allowFarManipulation: 1
-  oneHandRotationModeNear: 6
-  oneHandRotationModeFar: 6
+  oneHandRotationModeNear: 4
+  oneHandRotationModeFar: 4
   releaseBehavior: 3
   constraintOnRotation: 0
   constraintOnMovement: 0
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureName: Bath
+  shakeObject: {fileID: 0}
+  trainingObject: {fileID: 0}
 --- !u!1001 &2356316529339345056
 PrefabInstance:
   m_ObjectHideFlags: 0

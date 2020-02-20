@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1525857365342185560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.01015, y: -0.00044, z: 0.61714}
-  m_LocalScale: {x: 0.17015395, y: 0.047641102, z: 0.2002795}
+  m_LocalScale: {x: 0.34, y: 0.098, z: 0.4}
   m_Children:
   - {fileID: 5730230847352187780}
   m_Father: {fileID: 0}
@@ -110,8 +110,8 @@ MonoBehaviour:
   manipulationType: 2
   twoHandedManipulationType: 5
   allowFarManipulation: 1
-  oneHandRotationModeNear: 6
-  oneHandRotationModeFar: 6
+  oneHandRotationModeNear: 4
+  oneHandRotationModeFar: 4
   releaseBehavior: 3
   constraintOnRotation: 0
   constraintOnMovement: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8234df3b9b7c8bd4ba32c169bfb04575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  furnitureName: EmergencyBag
+  furnitureName: Emergency Bag
   shakeObject: {fileID: 0}
   trainingObject: {fileID: 1525857364985986877}
 --- !u!1001 &1525857365071929343
@@ -210,21 +210,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6532807332478268539, guid: d41c97288856d544a9c4c333b7f135bf,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5877031
-      objectReference: {fileID: 0}
-    - target: {fileID: 6532807332478268539, guid: d41c97288856d544a9c4c333b7f135bf,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.0990279
-      objectReference: {fileID: 0}
-    - target: {fileID: 6532807332478268539, guid: d41c97288856d544a9c4c333b7f135bf,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.49930224
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d41c97288856d544a9c4c333b7f135bf, type: 3}

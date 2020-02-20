@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class TV_Controller : InformationDeviceBase
 {
-    [SerializeField]
     private TV tv;
 
 
     void Start()
     {
-
+        StartSetting();
     }
 
     void Update()
@@ -18,24 +17,21 @@ public class TV_Controller : InformationDeviceBase
         
     }
 
-    public void StartSetting()
+    public new void StartSetting()
     {
         base.StartSetting();
-        //if(GameObject.Find("TV") != null)
-        //    tv = GameObject.Find("TV").GetComponent<TV>();
     }
 
     // テレビをつけて，情報を表示
     protected override void ShowInformationOfEarthquake()
     {
-        if(tv != null)
-            tv.TurnOn();
+        tv = GameObject.Find("TV").GetComponent<TV>();
+        tv.TurnOn();
     }
 
     public override void Interact()
     {
         base.Interact();
-        ShowInformationOfEarthquake();
+        this.ShowInformationOfEarthquake();
     }
-
 }

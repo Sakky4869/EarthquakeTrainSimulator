@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7312920990519589638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.02493, y: -0.04341, z: 0.65552}
-  m_LocalScale: {x: 0.2349864, y: 0.121212006, z: 0.16460113}
+  m_LocalScale: {x: 0.7, y: 0.36, z: 0.5}
   m_Children:
   - {fileID: 95424836437510869}
   m_Father: {fileID: 0}
@@ -110,8 +110,8 @@ MonoBehaviour:
   manipulationType: 2
   twoHandedManipulationType: 5
   allowFarManipulation: 1
-  oneHandRotationModeNear: 6
-  oneHandRotationModeFar: 6
+  oneHandRotationModeNear: 4
+  oneHandRotationModeFar: 4
   releaseBehavior: 3
   constraintOnRotation: 0
   constraintOnMovement: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8234df3b9b7c8bd4ba32c169bfb04575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  furnitureName: Bath
+  furnitureName: Conro
   shakeObject: {fileID: 0}
   trainingObject: {fileID: 6867684857731916436}
 --- !u!1001 &7312920990769983467
@@ -212,11 +212,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7104210578009346522, guid: 7fe658d2cc70ae74e8e0ca476f3cee02,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3389628589625392342, guid: 7fe658d2cc70ae74e8e0ca476f3cee02,
         type: 3}
       propertyPath: m_Mesh
       value: 

@@ -48,11 +48,20 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]
     private AudioClip siren;
 
+    [SerializeField]// BGMを再生するAudioSource
+    private AudioSource bgmPlayer;
+
+    [SerializeField]
+    private AudioClip dinari;
+
+    private Queue<string> helpMessages;
+
 
     void Start()
     {
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
         isMessageActive = false;
+        helpMessages = new Queue<string>();
     }
 
     void Update()
@@ -72,8 +81,10 @@ public class PlayerUI : MonoBehaviour
     // 警告文を表示する
     public void ShowMessage(string msg)
     {
+        helpMessages.Enqueue(msg);
         if (isMessageActive)
             return;
+        string dmsg = helpMessages.Dequeue();
         string message = null;
         if(msg.Length > 18)
         {
@@ -102,24 +113,28 @@ public class PlayerUI : MonoBehaviour
     // 警告文を表示する
     public void ShowMessage(string msg, float time)
     {
+        helpMessages.Enqueue(msg + ":" + time);
         if (isMessageActive)
             return;
+        string[] data = helpMessages.Dequeue().Split(':');
+        msg = data[0];
+        float t = float.Parse(data[1]);
         string message = null;
-        if (msg.Length > 18)
+        if (data.Length > 18)
         {
             string first = msg.Substring(0, 18);
             string second = msg.Substring(18, msg.Length - 18);
-            msg = first + System.Environment.NewLine + second;
+            message = first + System.Environment.NewLine + second;
         }
 
         if (message == null)
         {
-            coroutineMethod = ShowMessageCor(msg, time);
+            coroutineMethod = ShowMessageCor(msg, t);
             //StartCoroutine(ShowMessageCor(msg, time));
         }
         else
         {
-            coroutineMethod = ShowMessageCor(message, time);
+            coroutineMethod = ShowMessageCor(message, t);
             //StartCoroutine(ShowMessageCor(message, time));
         }
 
@@ -163,6 +178,28 @@ public class PlayerUI : MonoBehaviour
             StopCoroutine(coroutineMethod);
             coroutineMethod = null;
         }
+
+        // メッセージキューにまだ入っていた場合
+        if(helpMessages.Count != 0)
+        {
+            // 時間付きメッセージ
+            if (helpMessages.ToArray()[0].Contains(":"))
+            {
+                string[] data = helpMessages.Dequeue().Split(':');
+                coroutineMethod = ShowMessageCor(data[0], float.Parse(data[1]));
+            }
+            else
+            {
+                string data = helpMessages.Dequeue();
+                coroutineMethod = ShowMessageCor(data);
+            }
+            if(coroutineMethod != null)
+            {
+                StartCoroutine(coroutineMethod);
+            }
+        }
+
+
     }
 
     // 訓練メニューに追加する
@@ -229,6 +266,31 @@ public class PlayerUI : MonoBehaviour
         }
     }
 
+    public void PlaySound(string name) 
+    {
+        switch (name)
+        {
+            case "TaskClear":
+                sePlayer.PlayOneShot(taskClearSound);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void PlayBGM(string name)
+    {
+        switch (name)
+        {
+            case "Dinari":
+                bgmPlayer.clip = dinari;
+                bgmPlayer.Play();
+                break;
+            default:
+                break;
+        }
+    }
+
 
     public void Emergency()
     {
@@ -248,7 +310,7 @@ public class PlayerUI : MonoBehaviour
             soundTime += Time.deltaTime;
             yield return null;
         }
-
+        PlayBGM("Dinari");
     }
 
 

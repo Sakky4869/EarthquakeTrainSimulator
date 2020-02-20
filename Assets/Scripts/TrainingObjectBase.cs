@@ -21,8 +21,8 @@ public class TrainingObjectBase : MonoBehaviour
     
     public string taskName;
 
-    private Player player;
-    
+    [SerializeField]
+    private PlayerUI playerUI;
 
 
     void Start()
@@ -39,7 +39,7 @@ public class TrainingObjectBase : MonoBehaviour
     protected void StartSetting()
     {
         isClear = false;
-        player = Camera.main.transform.GetComponent<Player>();
+        playerUI = Camera.main.transform.GetChild(0).GetComponent<PlayerUI>();
     }
 
     //タスクのクリア時に実行
@@ -48,7 +48,8 @@ public class TrainingObjectBase : MonoBehaviour
         isClear = true;
         taskItem.ClearTask();
         trainingManager.ClearTask();
-        player.PlaySound("TaskClear");
+        if(playerUI)
+            playerUI.PlaySound("TaskClear");
     }
 
     //ユーザから何かしらの干渉があった場合に実行

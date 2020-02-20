@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 [System.Serializable]
 public class ShakePower{
@@ -12,9 +13,12 @@ public class ShakePower{
 public class EarthquakeDataReader : MonoBehaviour
 {
 
+    private Shaker shaker;
+
     void Start()
     {
-        
+        shaker = GameObject.Find("Shaker").GetComponent<Shaker>();
+        StartCoroutine(ReadCSVData("2011_03_11_14_46_miyagi"));
     }
 
 
@@ -23,9 +27,53 @@ public class EarthquakeDataReader : MonoBehaviour
         
     }
 
-    public List<ShakePower> ReadCSVData(string fileName){
+    public IEnumerator ReadCSVData(string fileName){
         List<ShakePower> read_data = new List<ShakePower>();
-        using(System.IO.StreamReader streamReader = new System.IO.StreamReader(Application.dataPath + "/Data/" + fileName + ".txt")){
+
+#if UNITY_EDITOR
+        using (System.IO.StreamReader streamReader = new System.IO.StreamReader(Application.dataPath + "/Data/" + fileName + ".txt"))
+        {
+            int count = 0;
+            while (streamReader.Peek() > 0)
+            {
+                count++;
+                //8行目からが揺れのデータなので、それのみを読み取る
+                if (count >= 8)
+                {
+                    //読み取ったデータを小数に変換
+                    try
+                    {
+                        string[] data = streamReader.ReadLine().Split('\t');
+                        ShakePower power = new ShakePower();
+                        power.ns = float.Parse(data[0]);
+                        power.ew = float.Parse(data[1]);
+                        power.ud = float.Parse(data[2]);
+                        read_data.Add(power);
+                    }
+                    catch
+                    {
+                    }
+                }
+            }
+        }
+        yield return null;
+#else
+        DirectoryInfo directory = new DirectoryInfo(Application.persistentDataPath + "/Data");
+        if(directory.Exists == false)
+            directory.Create();
+        if(new FileInfo(Application.persistentDataPath + "/Data/" + fileName + ".txt").Exists == false)
+        {
+            WWW www = new WWW("http://grapefruit.sys.wakayama-u.ac.jp/~sakai/UnityLog/EarthquakeTrainSimulator/" + fileName + ".txt");
+            yield return www;
+
+            if(string.IsNullOrEmpty(www.error))
+            {
+                File.WriteAllBytes(Application.persistentDataPath + "/Data/" + Path.GetFileName(www.url), www.bytes);
+            }
+        }
+
+
+        using (System.IO.StreamReader streamReader = new System.IO.StreamReader(Application.persistentDataPath + "/Data/" + fileName + ".txt")){
             int count = 0;
             while(streamReader.Peek() > 0){
                 count++;
@@ -44,7 +92,10 @@ public class EarthquakeDataReader : MonoBehaviour
                 }
             }
         }
-        return (read_data.Count == 0)? null: read_data;
+#endif
+        shaker.powers = read_data;
+        
+        //return (read_data.Count == 0)? null: read_data;
     }
 
 }

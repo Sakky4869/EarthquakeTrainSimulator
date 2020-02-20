@@ -46,98 +46,198 @@ public class PrepareObject : MonoBehaviour
         Transform child = null;
 
         int childCount = transform.childCount;
+        //Debug.Log(transform.gameObject.name);
 
-        for(int i = 0; i < childCount; i++)
+        if (transform.gameObject.name.Contains("Bookshelf"))
         {
-            BoxCollider boxCollider;
-            MeshCollider meshCollider;
-            BoxCollider[] boxColliders;
-            MeshCollider[] meshColliders;
-
-
-            // BoxColliderについて
-            if(transform.GetChild(i).GetComponent<BoxCollider>() != null)
+            Transform parent = transform.GetChild(0);
+            childCount = parent.childCount;
+            for (int i = 0; i < childCount; i++)
             {
-                // BoxColliderが1つの場合
-                if((transform.GetChild(i).GetComponents<BoxCollider>().Length == 1))
-                {
-                    //Debug.Log("Box Collider　1つ");
-                    boxCollider = transform.GetChild(i).GetComponent<BoxCollider>();
-                    if(boxCollider.enabled == false)
-                    {
-                        boxCollider.enabled = true;
-                    }
-                }
-                else
-                {
-                    //Debug.Log("Box Collider　複数");
-                    boxColliders = transform.GetChild(i).GetComponents<BoxCollider>();
-                    for(int j = 0; j < boxColliders.Length; j++)
-                    {
-                        if (boxColliders[j].enabled == false)
-                            boxColliders[j].enabled = true;
-                    }
-                }
-
-                // 子オブジェクトを登録
-                child = transform.GetChild(i);
-            }
+                BoxCollider boxCollider;
+                MeshCollider meshCollider;
+                BoxCollider[] boxColliders;
+                MeshCollider[] meshColliders;
 
 
-            // MeshColliderについて
-            if(transform.GetChild(i).GetComponent<MeshCollider>() != null)
-            {
-                // MeshColliderが1つの場合
-                if(transform.GetChild(i).GetComponents<MeshCollider>().Length == 1)
+                // BoxColliderについて
+                if (parent.GetChild(i).GetComponent<BoxCollider>() != null)
                 {
-                    //Debug.Log("Mesh Collider 1つ");
-                    meshCollider = transform.GetChild(i).GetComponent<MeshCollider>();
-                    if(meshCollider.enabled == false)
+                    // BoxColliderが1つの場合
+                    if ((parent.GetChild(i).GetComponents<BoxCollider>().Length == 1))
                     {
-                        meshCollider.enabled = true;
-                    }
-                }
-                else
-                {
-
-                    meshColliders = transform.GetChild(i).GetComponents<MeshCollider>();
-                    for(int j = 0; j < meshColliders.Length; j++)
-                    {
-                        if(meshColliders[j].enabled == false)
+                        //Debug.Log("Box Collider　1つ");
+                        boxCollider = parent.GetChild(i).GetComponent<BoxCollider>();
+                        if (boxCollider.enabled == false)
                         {
-                            meshColliders[j].enabled = true;
+                            boxCollider.enabled = true;
                         }
                     }
+                    else
+                    {
+                        //Debug.Log("Box Collider　複数");
+                        boxColliders = parent.GetChild(i).GetComponents<BoxCollider>();
+                        for (int j = 0; j < boxColliders.Length; j++)
+                        {
+                            if (boxColliders[j].enabled == false)
+                                boxColliders[j].enabled = true;
+                        }
+                    }
+
+                    // 子オブジェクトを登録
+                    child = parent.GetChild(i);
+                }
+
+
+                // MeshColliderについて
+                if (parent.GetChild(i).GetComponent<MeshCollider>() != null)
+                {
+                    // MeshColliderが1つの場合
+                    if (parent.GetChild(i).GetComponents<MeshCollider>().Length == 1)
+                    {
+                        //Debug.Log("Mesh Collider 1つ");
+                        meshCollider = parent.GetChild(i).GetComponent<MeshCollider>();
+                        if (meshCollider.enabled == false)
+                        {
+                            meshCollider.enabled = true;
+                        }
+                    }
+                    else
+                    {
+
+                        meshColliders = parent.GetChild(i).GetComponents<MeshCollider>();
+                        for (int j = 0; j < meshColliders.Length; j++)
+                        {
+                            if (meshColliders[j].enabled == false)
+                            {
+                                meshColliders[j].enabled = true;
+                            }
+                        }
+                    }
+
+
+
+                    // 子オブジェクトの登録
+                    child = parent.GetChild(i);
+                }
+
+                if (parent.GetChild(i).GetComponent<Rigidbody>() != null)
+                {
+                    parent.GetChild(i).GetComponent<Rigidbody>().useGravity = true;
+                    parent.GetChild(i).GetComponent<Rigidbody>().mass = 30;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < childCount; i++)
+            {
+                BoxCollider boxCollider;
+                MeshCollider meshCollider;
+                BoxCollider[] boxColliders;
+                MeshCollider[] meshColliders;
+
+
+                // BoxColliderについて
+                if(transform.GetChild(i).GetComponent<BoxCollider>() != null)
+                {
+                    // BoxColliderが1つの場合
+                    if((transform.GetChild(i).GetComponents<BoxCollider>().Length == 1))
+                    {
+                        //Debug.Log("Box Collider　1つ");
+                        boxCollider = transform.GetChild(i).GetComponent<BoxCollider>();
+                        if(boxCollider.enabled == false)
+                        {
+                            boxCollider.enabled = true;
+                        }
+                    }
+                    else
+                    {
+                        //Debug.Log("Box Collider　複数");
+                        boxColliders = transform.GetChild(i).GetComponents<BoxCollider>();
+                        for(int j = 0; j < boxColliders.Length; j++)
+                        {
+                            if (boxColliders[j].enabled == false)
+                                boxColliders[j].enabled = true;
+                        }
+                    }
+
+                    // 子オブジェクトを登録
+                    child = transform.GetChild(i);
+                }
+
+
+                // MeshColliderについて
+                if(transform.GetChild(i).GetComponent<MeshCollider>() != null)
+                {
+                    // MeshColliderが1つの場合
+                    if(transform.GetChild(i).GetComponents<MeshCollider>().Length == 1)
+                    {
+                        //Debug.Log("Mesh Collider 1つ");
+                        meshCollider = transform.GetChild(i).GetComponent<MeshCollider>();
+                        if(meshCollider.enabled == false)
+                        {
+                            meshCollider.enabled = true;
+                        }
+                    }
+                    else
+                    {
+
+                        meshColliders = transform.GetChild(i).GetComponents<MeshCollider>();
+                        for(int j = 0; j < meshColliders.Length; j++)
+                        {
+                            if(meshColliders[j].enabled == false)
+                            {
+                                meshColliders[j].enabled = true;
+                            }
+                        }
+                    }
+
+               
+
+                    // 子オブジェクトの登録
+                    child = transform.GetChild(i);
                 }
 
                 if (transform.GetChild(i).GetComponent<Rigidbody>() != null)
+                {
                     transform.GetChild(i).GetComponent<Rigidbody>().useGravity = true;
+                    transform.GetChild(i).GetComponent<Rigidbody>().mass = 30;
 
-                // 子オブジェクトの登録
-                child = transform.GetChild(i);
+                }
             }
+
         }
 
 
-        switch (transform.GetChild(0).gameObject.name)
-        {
-            case "Door":
-            case "TV_Remote_Controller":
-            case "Radio":
+        //if(childCount != 0)
+        //{
+            switch (transform.GetChild(0).gameObject.name)
+            {
+                case "Door":
+                    transform.GetChild(0).GetChild(1).SetParent(null);
+                    child = transform.GetChild(0);
+                break;
+                case "TV_Remote_Controller":
+                case "Radio":
+                    child = transform.GetChild(0);
+                    break;
+                case "Bookshelf":
                 child = transform.GetChild(0);
                 break;
-            default:
-                break;
-        }
+                default:
+                    break;
+            }
+        //}
 
 
         //親子関係を切る
         child.SetParent(null);
-        yield return null;
 
 
         //自身を削除
         Destroy(gameObject);
+        yield return null;
     }
 
 }

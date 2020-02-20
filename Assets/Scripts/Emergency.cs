@@ -1,17 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input;
 
 public class Emergency : MonoBehaviour
 {
-
-    //[SerializeField]
-    //private GameObject test;
-
     void Start()
     {
-
     }
 
 
@@ -20,8 +14,21 @@ public class Emergency : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            transform.GetChild(0).SetParent(null);
-            Destroy(gameObject);
+            //GameObject.Find("PrepareManager").GetComponent<PrepareManager>().Prepare();
+            //ShakeObject[] shakeObjects = (ShakeObject[])FindObjectsOfType(typeof(ShakeObject));
+            //Shaker shaker = GameObject.Find("Shaker").GetComponent<Shaker>();
+            //foreach (ShakeObject shakeObject in shakeObjects)
+            //{
+            //    shaker.AddShakeObject(shakeObject);
+            //}
+
+            //shaker.StartShake();
+            
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            GameObject.Find("MeshCombiner").GetComponent<MeshCombiner>().Combine();
         }
     }
 
