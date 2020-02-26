@@ -8,6 +8,7 @@ public class ShakePower{
     public float ns;
     public float ew;
     public float ud;
+    public bool flag;
 }
 
 public class EarthquakeDataReader : MonoBehaviour
@@ -43,11 +44,16 @@ public class EarthquakeDataReader : MonoBehaviour
                     //読み取ったデータを小数に変換
                     try
                     {
-                        string[] data = streamReader.ReadLine().Split('\t');
                         ShakePower power = new ShakePower();
-                        power.ns = float.Parse(data[0]);
-                        power.ew = float.Parse(data[1]);
-                        power.ud = float.Parse(data[2]);
+                        string rawData = streamReader.ReadLine();
+                        power.flag = (rawData.Contains("flag"));
+                        if (power.flag == false)
+                        {
+                            string[] data = rawData.Split('\t');
+                            power.ns = float.Parse(data[0]);
+                            power.ew = float.Parse(data[1]);
+                            power.ud = float.Parse(data[2]);
+                        }
                         read_data.Add(power);
                     }
                     catch
@@ -81,11 +87,16 @@ public class EarthquakeDataReader : MonoBehaviour
                 if(count >= 8){
                     //読み取ったデータを小数に変換
                     try{
-                        string[] data = streamReader.ReadLine().Split('\t');
                         ShakePower power = new ShakePower();
-                        power.ns = float.Parse(data[0]);
-                        power.ew = float.Parse(data[1]);
-                        power.ud = float.Parse(data[2]);
+                        string rawData = streamReader.ReadLine();
+                        power.flag = (rawData.Contains("flag"));
+                        if (power.flag == false)
+                        {
+                            string[] data = rawData.Split('\t');
+                            power.ns = float.Parse(data[0]);
+                            power.ew = float.Parse(data[1]);
+                            power.ud = float.Parse(data[2]);
+                        }
                         read_data.Add(power);
                     }catch{
                     }
@@ -94,8 +105,9 @@ public class EarthquakeDataReader : MonoBehaviour
         }
 #endif
         shaker.powers = read_data;
-        
+
         //return (read_data.Count == 0)? null: read_data;
+        //shaker.StartShake();
     }
 
 }

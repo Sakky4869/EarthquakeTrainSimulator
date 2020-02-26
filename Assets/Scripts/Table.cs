@@ -5,10 +5,11 @@ using UnityEngine;
 public class Table : TrainingObjectBase
 {
     private PlayerUI playerUi;
+    
 
     void Start()
     {
-        
+        StartSetting();
     }
 
     void Update()
@@ -23,14 +24,15 @@ public class Table : TrainingObjectBase
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
     }
 
-    private new void ClearTask()
-    {
-        base.ClearTask();
-    }
+    //private new void ClearTask()
+    //{
+    //    base.ClearTask();
+    //}
 
     public override void Interact()
     {
-        base.Interact();
+        //base.Interact();
+
         ShowMessage("揺れがおさまるまでそのまま！");
     }
 
@@ -47,7 +49,29 @@ public class Table : TrainingObjectBase
         if (trainingManager.GetTrainingPhase() != TrainingPhase.InTraining)
             return;
         Interact();
+        if(trainingManager.isQuaking == false)
+        {
+            playerUi.ShowMessage("揺れが収まりました");
+            ClearTask();
+        }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag != "Player")
+            return;
+        if (trainingManager.GetTrainingPhase() != TrainingPhase.InTraining)
+            return;
+        if(trainingManager.isQuaking == false)
+        {
+            if(isClear == false)
+            {
+                playerUi.ShowMessage("揺れが収まりました");
+                ClearTask();
+            }
+        }
+    }
+
 
     private void OnTriggerExit(Collider other)
     {

@@ -157,24 +157,21 @@ public class TrainingManager : MonoBehaviour
 
     void Update()
     {
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
 
-        //if (Input.GetKeyDown(KeyCode.Alpha1))
-        //    StartAwareness();
-        //if (Input.GetKeyDown(KeyCode.Alpha2))
-        //    CompleteAwareness();
-        //if (Input.GetKeyDown(KeyCode.Alpha3))
-        //    StartPrepare();
-        //if (Input.GetKeyDown(KeyCode.Alpha4))
-        //    CompletePrepares();
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            StartAwareness();
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            CompleteAwareness();
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+            StartPrepare();
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+            CompletePrepare();
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+            StartTraining();
         if (Input.GetKeyDown(KeyCode.F))
             isQuaking = false;
-#endif
-    }
-
-    public void MakeIsQuakingFalse()
-    {
-        isQuaking = false;
+//#endif
     }
 
     // トレーニングシステムのコルーチン

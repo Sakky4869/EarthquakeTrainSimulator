@@ -84,7 +84,7 @@ public class PlayerUI : MonoBehaviour
         helpMessages.Enqueue(msg);
         if (isMessageActive)
             return;
-        string dmsg = helpMessages.Dequeue();
+        msg = helpMessages.Dequeue();
         string message = null;
         if(msg.Length > 18)
         {
