@@ -124,8 +124,8 @@ MonoBehaviour:
   - {fileID: 5054257938044042347, guid: 6b712beffa368614ab244396ce6d76c0, type: 3}
   - {fileID: 161430627, guid: 6f0fb07399703db4284a50efcd2b527f, type: 3}
   - {fileID: 4539587932837508136, guid: 21415f92718b3b1438d3c7d39be7e7df, type: 3}
-  - {fileID: 1525857365342185565, guid: 800427724bc29164f88c8854552a4f89, type: 3}
   - {fileID: 3938859492431393518, guid: b1f0f5a356c3fde4c963ec325d1c36c7, type: 3}
+  - {fileID: 0}
   furnitureButton: {fileID: 9097590677648575783, guid: 51e0c896f2941c2459cf17eccfa1b2bc,
     type: 3}
   furnitureNecessaryButton: {fileID: 9097590677648575783, guid: a130ab47e72535e4eb0015be1e96e0c2,
@@ -344,6 +344,11 @@ PrefabInstance:
     - target: {fileID: 1185804096758482, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613911417657003608, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8113455685942058736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c,
         type: 3}

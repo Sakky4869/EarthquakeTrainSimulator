@@ -101,6 +101,7 @@ public class PlayerUI : MonoBehaviour
         else
         {
             coroutineMethod = ShowMessageCor(message);
+            WebLogger.SendLog("メッセージ：" + System.Environment.NewLine + message);
             //StartCoroutine(ShowMessageCor(message));
         }
 
@@ -135,6 +136,7 @@ public class PlayerUI : MonoBehaviour
         else
         {
             coroutineMethod = ShowMessageCor(message, t);
+            WebLogger.SendLog("メッセージ：" + System.Environment.NewLine + message);
             //StartCoroutine(ShowMessageCor(message, time));
         }
 
@@ -291,10 +293,21 @@ public class PlayerUI : MonoBehaviour
         }
     }
 
+    public void StopBGM(string name)
+    {
+        switch (name)
+        {
+            case "Dinari":
+                bgmPlayer.Stop();
+                break;
+            default:
+                break;
+        }
+    }
 
     public void Emergency()
     {
-        ShowMessage("緊急地震速報です．　　　　　　　　　強い揺れに警戒してください", 8);
+        ShowMessage("緊急地震速報です．" + System.Environment.NewLine + "強い揺れに警戒してください", 8);
         StartCoroutine(PlayEmergencySound(8));
     }
 

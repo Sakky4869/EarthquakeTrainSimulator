@@ -12,17 +12,17 @@ public class SpatialAwarenessController : MonoBehaviour
     #region MRTK関係
     private IMixedRealitySpatialAwarenessSystem spatialAwarenessSystem;
 
-    private IMixedRealitySpatialAwarenessSystem SpatialAwarenessSystem
-    {
-        get
-        {
-            if(spatialAwarenessSystem == null)
-            {
-                MixedRealityServiceRegistry.TryGetService<IMixedRealitySpatialAwarenessSystem>(out spatialAwarenessSystem);
-            }
-            return spatialAwarenessSystem;
-        }
-    }
+    //private IMixedRealitySpatialAwarenessSystem SpatialAwarenessSystem
+    //{
+    //    get
+    //    {
+    //        if(spatialAwarenessSystem == null)
+    //        {
+    //            MixedRealityServiceRegistry.TryGetService<IMixedRealitySpatialAwarenessSystem>(out spatialAwarenessSystem);
+    //        }
+    //        return spatialAwarenessSystem;
+    //    }
+    //}
 
     private IMixedRealityDataProviderAccess dataProviderAccess;
 
@@ -111,16 +111,20 @@ public class SpatialAwarenessController : MonoBehaviour
         yield return null;
     }
 
+    // 環境認識を開始するメソッド
     public void StartObserver()
     {
+        // 環境認識を開始したかどうかのフラグ（念のため）
         if(startedObserver == false)
         {
+            // CoreServicesを使い，環境認識のシステムに素早くアクセス
             spatialAwarenessSystem = CoreServices.SpatialAwarenessSystem;
 
+            // DataProviderAccessへのキャストにより，データプロバイダへアクセス
             dataProviderAccess = spatialAwarenessSystem as IMixedRealityDataProviderAccess;
             meshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
-            meshObserverName = "Spatial Object Mesh Observer";
-            spatialObjectMeshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>(meshObserverName);
+            //meshObserverName = "Spatial Object Mesh Observer";
+            //spatialObjectMeshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>(meshObserverName);
             spatialAwarenessSystem.ResumeObservers();
             startedObserver = true;
             trainingManager.StartAwareness();

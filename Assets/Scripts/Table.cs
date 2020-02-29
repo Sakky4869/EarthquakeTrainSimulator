@@ -24,11 +24,6 @@ public class Table : TrainingObjectBase
         trainingManager = GameObject.Find("TrainingManager").GetComponent<TrainingManager>();
     }
 
-    //private new void ClearTask()
-    //{
-    //    base.ClearTask();
-    //}
-
     public override void Interact()
     {
         //base.Interact();
@@ -40,6 +35,11 @@ public class Table : TrainingObjectBase
     private void ShowMessage(string msg)
     {
         playerUi.ShowMessage(msg);
+    }
+
+    private void ShowMessage(string msg, float time)
+    {
+        playerUi.ShowMessage(msg, time);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -81,7 +81,8 @@ public class Table : TrainingObjectBase
             return;
         if (trainingManager.isQuaking)
         {
-            ShowMessage("戻って！危ない！");
+            playerUi.HideMessage();
+            ShowMessage("戻って！危ない！", 1.5f);
         }
         else
         {

@@ -17,6 +17,13 @@ public class Shaker : MonoBehaviour
 
     private TrainingManager trainingManager;
 
+    [SerializeField]
+    private Rigidbody vaseRigid;
+    [SerializeField]
+    private Rigidbody bookshelfRigid;
+    [SerializeField]
+    private Rigidbody shakeTarget;
+
 
     void Start()
     {
@@ -45,6 +52,28 @@ public class Shaker : MonoBehaviour
     }
 
     private IEnumerator Shake(List<ShakePower> powers){
+        // 揺らす対象のオブジェクトをリストに格納
+        ShakeObject[] objes = FindObjectsOfType<ShakeObject>();
+        foreach(ShakeObject s in objes)
+        {
+            AddShakeObject(s);
+        }
+
+        yield return null;
+
+        // 最初に初期情報を登録
+        foreach(ShakeObject shake in shakeObjects)
+        {
+            if (shake.gameObject.name.Contains("Bookshelf"))
+            {
+                shake.SaveFirstPos(bookshelfRigid);
+            }else if (shake.gameObject.name.Contains("Vase"))
+            {
+                shake.SaveFirstPos(vaseRigid);
+            }
+        }
+
+        yield return null;
 
         //WebLogger.SendLog("地震開始");
         foreach (ShakePower power in powers){
@@ -52,16 +81,27 @@ public class Shaker : MonoBehaviour
             if (power.flag == true)
             {
                 trainingManager.isQuaking = false;
-                //GameObject.Find("TaskPanel").GetComponent<PlayerUI>().ShowMessage("地震終わり", 10);
-                //WebLogger.SendLog("地震おわり");
+                GameObject.Find("TaskPanel").GetComponent<PlayerUI>().StopBGM("Dinari");
                 yield break;
             }
             else
             {
-                Vector3 force = new Vector3(power.ns, power.ew, power.ud) * powerBias; 
+                // 力を加えるベクトルの生成
+                Vector3 force = new Vector3(power.ns, power.ew, power.ud) * powerBias;
+
+                // 揺らす対象のみ揺らす
+                shakeTarget.AddForce(force);
+
                 foreach(ShakeObject shakeObject in shakeObjects)
                 {
-                    shakeObject.Shake(force);
+                    // オブジェクトが本棚だった場合
+                    if (shakeObject.gameObject.name.Contains("Bookshelf"))
+                    {
+                        shakeObject.Shake(bookshelfRigid);
+                    }else if (shakeObject.gameObject.name.Contains("Vase"))
+                    {
+                        shakeObject.Shake(vaseRigid);
+                    }
                 }
             }
             yield return new WaitForSeconds(1 / 100);

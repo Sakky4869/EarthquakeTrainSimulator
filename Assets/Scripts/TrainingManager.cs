@@ -25,6 +25,7 @@ public class FurnitureInfoRoot
     public void AddFurniture(GameObject furniture)
     {
         FurnitureInfomation info = new FurnitureInfomation(furniture.name, furniture.transform.position, furniture.transform.rotation);
+        info.id = furniture.GetInstanceID();
         infos.Add(info);
     }
 }
@@ -35,6 +36,9 @@ public class FurnitureInfomation
     // 家具の名前
     public string name;
 
+    // 家具のID
+    public int id;
+
     // 家具の位置
     public FurniturePosition pos;
 
@@ -44,6 +48,7 @@ public class FurnitureInfomation
     public FurnitureInfomation(string name, Vector3 pos, Quaternion rot)
     {
         this.name = name;
+        //this.id = TrainingManager.furnitureIdMax++;
         this.pos = new FurniturePosition(pos);
         this.rot = new FurnitureRotation(rot);
     }
@@ -118,6 +123,8 @@ public class TrainingManager : MonoBehaviour
     // PrepareBox
     private GameObject prepareBox;
 
+    public static int furnitureIdMax;
+
     private void Awake()
     {
         Application.logMessageReceived += LogCallBackHandler;
@@ -159,18 +166,20 @@ public class TrainingManager : MonoBehaviour
     {
 //#if UNITY_EDITOR
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            StartAwareness();
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-            CompleteAwareness();
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-            StartPrepare();
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-            CompletePrepare();
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-            StartTraining();
-        if (Input.GetKeyDown(KeyCode.F))
-            isQuaking = false;
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //    StartAwareness();
+        //if (Input.GetKeyDown(KeyCode.Alpha2))
+        //    CompleteAwareness();
+        //if (Input.GetKeyDown(KeyCode.Alpha3))
+        //    StartPrepare();
+        //if (Input.GetKeyDown(KeyCode.Alpha4))
+        //    CompletePrepare();
+        //if (Input.GetKeyDown(KeyCode.Alpha5))
+        //    StartTraining();
+        //if (Input.GetKeyDown(KeyCode.F))
+        //    isQuaking = false;
+        //if (Input.GetKeyDown(KeyCode.R))
+        //    ReloadSystem();
 //#endif
     }
 
@@ -386,9 +395,10 @@ public class TrainingManager : MonoBehaviour
     //訓練終了
     public void ClearTraining()
     {
+        playerUI.ShowMessage("訓練完了です．お疲れ様でした．");
         //isInTraining = false;
         trainingPhase = TrainingPhase.FinishedTraining;
-        playerUI.ShowMessage("終了する場合は「システム終了」と発言再開する場合は「再開」と発言", 8);
+        playerUI.ShowMessage("終了する場合は「システム終了」と発言" + System.Environment.NewLine + "再開する場合は「再開」と発言", 8);
     }
 
     public void SaveFurnitureInfo()
@@ -399,8 +409,10 @@ public class TrainingManager : MonoBehaviour
     // 訓練開始直前に，配置したオブジェクトの位置と角度の情報を保存
     private IEnumerator SaveFurnitureInfoCor()
     {
+        // IDの最大値を初期化
+        furnitureIdMax = 0;
         GameObject[] furnitures = GameObject.FindGameObjectsWithTag("Furniture");
-        int furnitureCount = furnitures.Length;
+        //int furnitureCount = furnitures.Length;
         //playerUI.ShowMessage("家具の位置を記録中　個数：" + furnitureCount);
         foreach (GameObject furniture in furnitures)
         {
@@ -427,10 +439,15 @@ public class TrainingManager : MonoBehaviour
             foreach(FurnitureInfomation info in infoRoot.infos)
             {
                 // 名前が一致したら，その家具の位置と角度を元に戻す
-                if(furniture.name == info.name)
+                if(furniture.GetInstanceID() == info.id)
                 {
                     furniture.transform.position = new Vector3((float)info.pos.x, (float)info.pos.y, (float)info.pos.z);
                     furniture.transform.rotation = Quaternion.Euler((float)info.rot.x, (float)info.rot.y, (float)info.rot.z);
+                    if (furniture.GetComponent<Rigidbody>() != null)
+                    {
+                        furniture.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                        furniture.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+                    }
                 }
             }
             yield return null;

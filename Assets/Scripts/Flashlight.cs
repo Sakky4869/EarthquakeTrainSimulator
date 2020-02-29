@@ -7,11 +7,9 @@ public class Flashlight : TrainingObjectBase
     // ライトをつけるときに，移動する場所のオブジェクト
     private Transform playerHeadTransform;
 
-    // フラッシュライトのオブジェクト
-    private Flashlight_PRO flashlight_PRO;
     void Start()
     {
-        flashlight_PRO = GetComponent<Flashlight_PRO>();
+        //flashlight_PRO = GetComponent<Flashlight_PRO>();
     }
 
     void Update()
@@ -22,8 +20,9 @@ public class Flashlight : TrainingObjectBase
     // ユーザが触れたら，正面にライトを点灯
     public override void Interact(){
         base.Interact();
-        transform.position = playerHeadTransform.position;
-        flashlight_PRO.Change_Intensivity(80);
-        flashlight_PRO.Switch();
+        //transform.position = playerHeadTransform.position;
+        gameObject.SetActive(false);
+        //flashlight_PRO.Change_Intensivity(80);
+        //flashlight_PRO.Switch();
     }
 }

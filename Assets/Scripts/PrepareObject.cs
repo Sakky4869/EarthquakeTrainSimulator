@@ -125,6 +125,7 @@ public class PrepareObject : MonoBehaviour
                 {
                     parent.GetChild(i).GetComponent<Rigidbody>().useGravity = true;
                     parent.GetChild(i).GetComponent<Rigidbody>().mass = 30;
+                    parent.GetChild(i).GetComponent<Rigidbody>().isKinematic = false;
                 }
             }
         }
