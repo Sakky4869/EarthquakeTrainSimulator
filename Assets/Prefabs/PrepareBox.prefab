@@ -125,7 +125,6 @@ MonoBehaviour:
   - {fileID: 161430627, guid: 6f0fb07399703db4284a50efcd2b527f, type: 3}
   - {fileID: 4539587932837508136, guid: 21415f92718b3b1438d3c7d39be7e7df, type: 3}
   - {fileID: 3938859492431393518, guid: b1f0f5a356c3fde4c963ec325d1c36c7, type: 3}
-  - {fileID: 0}
   furnitureButton: {fileID: 9097590677648575783, guid: 51e0c896f2941c2459cf17eccfa1b2bc,
     type: 3}
   furnitureNecessaryButton: {fileID: 9097590677648575783, guid: a130ab47e72535e4eb0015be1e96e0c2,
